@@ -1,0 +1,24 @@
+{
+  "mcpServers": {
+    "omnikernel": {
+      "command": "python",
+      "args": [
+        "-m",
+        "omnikernel.mcp_server"
+      ],
+      "env": {
+        "PYTHONUNBUFFERED": "1"
+      }
+    },
+    "agentshield": {
+      "command": "python",
+      "args": [
+        "-m",
+        "agentshield.mcp_server"
+      ],
+      "env": {
+        "PYTHONUNBUFFERED": "1"
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "omnikernel"
+version = "5.0.0"
+description = "Autonomous VibeCoding OS & Neural Context Compressor for Cursor & Claude Code. Slices boilerplate and eliminates token taxes."
+readme = "README.md"
+authors = [{ name = "DevSuperSuite Labs" }]
+license = { text = "Proprietary Commercial" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Compilers",
+    "Topic :: Security"
+]
+dependencies = []
+
+[project.scripts]
+omnikernel = "omnikernel.cli:main"

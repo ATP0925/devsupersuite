@@ -16,12 +16,17 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 SHIELD_PATH = REPO_ROOT / "build" / "DevSuperSuite" / "agent-shield"
-if str(SHIELD_PATH) not in sys.path:
-    sys.path.insert(0, str(SHIELD_PATH))
+OMNI_PATH = REPO_ROOT / "build" / "DevSuperSuite" / "omni-kernel"
+for p in [str(SHIELD_PATH), str(OMNI_PATH)]:
+    if p not in sys.path:
+        sys.path.insert(0, p)
 
 from agentshield.scanner import ShieldScanner, calculate_shannon_entropy
 from agentshield.anonymizer import GitAnonymizer
-from agentshield.mcp_server import create_tools_manifest, handle_scan_code_snippet, handle_verify_shield_policy
+from agentshield.mcp_server import create_tools_manifest as create_shield_manifest, handle_scan_code_snippet, handle_verify_shield_policy
+from omnikernel.compressor import ASTContextCompressor
+from omnikernel.invariants import InvariantGuard
+from omnikernel.mcp_server import create_tools_manifest as create_omni_manifest, handle_calculate_roi_savings
 
 
 class TestAICompanyHarness(unittest.TestCase):
@@ -31,7 +36,7 @@ class TestAICompanyHarness(unittest.TestCase):
 
     def test_01_mcp_tools_manifest(self):
         """Validates that MCP tools manifest conforms to Anthropic/MCP standards."""
-        tools = create_tools_manifest()
+        tools = create_shield_manifest()
         tool_names = [t["name"] for t in tools]
         self.assertIn("scan_code_snippet", tool_names)
         self.assertIn("anonymize_git_identity", tool_names)
@@ -40,6 +45,12 @@ class TestAICompanyHarness(unittest.TestCase):
         for t in tools:
             self.assertIn("inputSchema", t)
             self.assertEqual(t["inputSchema"]["type"], "object")
+
+        omni_tools = create_omni_manifest()
+        omni_names = [t["name"] for t in omni_tools]
+        self.assertIn("compress_context", omni_names)
+        self.assertIn("audit_patch_invariants", omni_names)
+        self.assertIn("calculate_roi_savings", omni_names)
 
     def test_02_mcp_secret_detection(self):
         """Verifies MCP tool blocks leaked API keys and flags them as LEAK_DETECTED."""
@@ -108,8 +119,47 @@ class TestAICompanyHarness(unittest.TestCase):
             names = zf.namelist()
             self.assertTrue(any("live-voice-responder" in n for n in names))
             self.assertTrue(any("agent-shield" in n for n in names))
+            self.assertTrue(any("omni-kernel" in n for n in names))
             self.assertTrue(any("Setup_DevSuite.bat" in n for n in names))
             self.assertTrue(any("mcp_server.py" in n for n in names))
+
+    def test_07_omnikernel_ast_compression(self):
+        """Verifies OmniKernel AST compressor reduces tokens while preserving signatures."""
+        sample_code = '''
+def handle_transaction(tx_id: str, amount: float) -> bool:
+    """Verifies transaction validity and executes ledger write."""
+    log_info("Starting tx", tx_id)
+    if amount <= 0:
+        raise ValueError("Invalid amount")
+    db = get_database_connection()
+    tx = db.begin()
+    res = tx.execute("UPDATE accounts SET balance = balance + :amt", {"amt": amount})
+    tx.commit()
+    return True
+'''
+        comp = ASTContextCompressor()
+        compressed, metrics = comp.compress_python(sample_code)
+        self.assertIn("handle_transaction", compressed)
+        self.assertIn("OmniKernel", compressed)
+        self.assertGreater(metrics["tokens_saved"], 0)
+        self.assertGreaterEqual(metrics["compression_ratio_pct"], 35.0)
+
+    def test_08_omnikernel_invariant_guard(self):
+        """Verifies InvariantGuard detects test deletion and security bypasses."""
+        orig = "def test_auth(): pass\ndef test_db(): pass"
+        bad_patch = "def test_auth(): pass\nverify = False"
+        audit = InvariantGuard.audit_patch(orig, bad_patch)
+        self.assertEqual(audit["status"], "VIOLATIONS_FOUND")
+        rules_triggered = [v["rule"] for v in audit["violations"]]
+        self.assertIn("INVARIANT_TEST_PRESERVATION", rules_triggered)
+        self.assertIn("INVARIANT_SECURITY_BYPASS", rules_triggered)
+
+    def test_09_omnikernel_roi_calculator(self):
+        """Verifies OmniKernel financial savings calculation."""
+        res = handle_calculate_roi_savings({"daily_turns": 100, "avg_tokens_per_turn": 4000})
+        self.assertGreater(res["monthly_dollar_savings_usd"], 0.0)
+        self.assertGreater(res["annual_dollar_savings_usd"], 0.0)
+        self.assertIn("ROI", res["roi_on_license"])
 
 
 if __name__ == "__main__":
