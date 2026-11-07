@@ -4,8 +4,9 @@
 
 ## 1. Payment Settlement Destinations
 - **Domestic (India UPI / QR Instant Settlement)**:
-  - **UPI ID**: `9975944612@upi` (GPay / PhonePe / Paytm / BHIM)
-  - **Payee Name**: Pratik Atpadkar
+  - **UPI ID**: `atpadkarmaruti-1@okhdfcbank` (Google Pay / PhonePe / Paytm / BHIM)
+  - **Payee Name**: Maruti Atpadkar
+  - **Mobile No**: `9975944612`
   - **Pricing**: ₹1,499 (Solo Dev) / ₹4,999 (Team Agency Pack)
 - **International (Gumroad / LemonSqueezy / Stripe)**:
   - **Product Title**: `DevSuperSuite: Hands-Free Voice Coding + API Leak Shield`
