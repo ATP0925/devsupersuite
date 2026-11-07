@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevSuperSuite — Hands-Free Voice Coding & API Leak Shield</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @keyframes pulseGlow {
+      0%, 100% { box-shadow: 0 0 25px rgba(6, 182, 212, 0.4); }
+      50% { box-shadow: 0 0 50px rgba(168, 85, 247, 0.6); }
+    }
+    .neon-glow { animation: pulseGlow 4s infinite; }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans selection:bg-cyan-500 selection:text-black">
+
+  <!-- Header -->
+  <nav class="border-b border-slate-800/80 backdrop-blur-md sticky top-0 z-40 bg-slate-950/80">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <span class="text-2xl">⚡</span>
+        <span class="font-bold text-xl tracking-tight bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">DevSuperSuite</span>
+      </div>
+      <div class="flex items-center space-x-6">
+        <a href="#features" class="text-sm text-slate-400 hover:text-cyan-400 transition">Features</a>
+        <a href="#pricing" class="text-sm text-slate-400 hover:text-cyan-400 transition">Pricing</a>
+        <button onclick="openUpiModal('Hacker Solo', 1499, 29)" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 px-4 py-2 rounded-lg font-semibold text-sm transition shadow-lg shadow-cyan-500/20">
+          <i class="fa-solid fa-qrcode mr-1"></i> Pay via UPI (₹1,499 / $29)
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="max-w-5xl mx-auto px-6 pt-20 pb-16 text-center">
+    <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full border border-cyan-500/30 bg-cyan-950/30 text-cyan-400 text-xs font-medium mb-6">
+      <span class="animate-pulse">●</span>
+      <span>Engineered for Cursor, Claude Code, Antigravity & VS Code</span>
+    </div>
+    <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+      Code with your <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Voice</span>.<br>
+      Protect your <span class="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">Secrets</span>.
+    </h1>
+    <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-10">
+      The dual-power developer toolkit: zero-latency full-duplex hands-free voice control with acoustic echo cancellation, paired with an enterprise pre-commit secret shield.
+    </p>
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <button onclick="openUpiModal('Hacker Solo', 1499, 29)" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 font-bold text-slate-950 text-base transition shadow-xl shadow-cyan-500/25 flex items-center justify-center gap-2">
+        <i class="fa-solid fa-qrcode"></i> Instant UPI / QR Checkout (₹1,499)
+      </button>
+      <a href="#features" class="w-full sm:w-auto px-8 py-4 rounded-xl border border-slate-800 hover:border-slate-700 bg-slate-900/50 text-slate-300 font-semibold text-base transition flex items-center justify-center gap-2">
+        <i class="fa-solid fa-shield-halved"></i> Explore Capabilities
+      </a>
+    </div>
+  </section>
+
+  <!-- Features Grid -->
+  <section id="features" class="max-w-6xl mx-auto px-6 py-16">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl font-bold text-slate-100 mb-3">Two Elite Systems. One Unified Suite.</h2>
+      <p class="text-slate-400 text-sm">Everything you need to ship 3x faster without risking credential leaks.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Feature 1: Live Voice -->
+      <div class="p-8 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-cyan-500/40 transition">
+        <div class="w-12 h-12 rounded-xl bg-cyan-950 border border-cyan-800 flex items-center justify-center text-cyan-400 text-xl mb-6">
+          <i class="fa-solid fa-microphone"></i>
+        </div>
+        <h3 class="text-xl font-bold text-slate-100 mb-3">Universal Live Voice Responder</h3>
+        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+          Full duplex real-time speech typist. Speak naturally—it cancels fan noise, mutes assistant speech echo, focuses your IDE chat bar, pastes text, and hits Enter automatically.
+        </p>
+        <ul class="space-y-3 text-xs text-slate-300">
+          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Instant Barge-In: Say "CROW", "STOP", or press F8</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> 100% Hands-Free: Continuous adaptive VAD</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Auto-Focus IDE: Antigravity, Cursor, VS Code, Windsurf</li>
+        </ul>
+      </div>
+
+      <!-- Feature 2: Agent Shield -->
+      <div class="p-8 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-purple-500/40 transition">
+        <div class="w-12 h-12 rounded-xl bg-purple-950 border border-purple-800 flex items-center justify-center text-purple-400 text-xl mb-6">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <h3 class="text-xl font-bold text-slate-100 mb-3">AgentShield Guardian Engine</h3>
+        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+          Zero-tolerance pre-commit and autonomous CLI guard. Detects OpenAI, Stripe, AWS, GitHub PATs, and PII before accidental commits or terminal execution.
+        </p>
+        <ul class="space-y-3 text-xs text-slate-300">
+          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Pre-Commit Hooks: Auto-installed with 1 command</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Shannon Entropy Filter: Zero false alarms on test data</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Destructive Command Interceptor: Blocks rm -rf and force pushes</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="max-w-4xl mx-auto px-6 py-16">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-slate-100 mb-3">Simple, Transparent Lifetime Pricing</h2>
+      <p class="text-slate-400 text-sm">Pay once, own forever. Direct instant UPI or Card payment.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Solo License -->
+      <div class="p-8 rounded-2xl bg-slate-900 border border-cyan-500/50 neon-glow relative">
+        <div class="absolute -top-3 right-6 bg-cyan-500 text-slate-950 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+          Direct UPI Instant Pay
+        </div>
+        <h3 class="text-lg font-bold text-slate-200 mb-2">Hacker / Solo Dev</h3>
+        <p class="text-slate-400 text-xs mb-6">For individual developers using Cursor, Claude Code, or Antigravity.</p>
+        <div class="flex items-baseline gap-2 mb-6">
+          <span class="text-4xl font-extrabold text-slate-100">₹1,499</span>
+          <span class="text-slate-400 text-sm">(\$29 USD)</span>
+        </div>
+        <ul class="space-y-3 text-xs text-slate-300 mb-8">
+          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Complete DevSuperSuite Zip Package</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Live Voice Responder + AgentShield</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> 1-Click Setup_DevSuite.bat</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Lifetime updates & personal license</li>
+        </ul>
+        <button onclick="openUpiModal('Hacker Solo', 1499, 29)" class="block w-full py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-center text-sm transition">
+          <i class="fa-solid fa-qrcode mr-2"></i>Pay via UPI / QR Code (₹1,499)
+        </button>
+      </div>
+
+      <!-- Team License -->
+      <div class="p-8 rounded-2xl bg-slate-900/60 border border-slate-800">
+        <h3 class="text-lg font-bold text-slate-200 mb-2">Team / Agency Pack</h3>
+        <p class="text-slate-400 text-xs mb-6">For software agencies and developer squads (up to 10 seats).</p>
+        <div class="flex items-baseline gap-2 mb-6">
+          <span class="text-4xl font-extrabold text-slate-100">₹4,999</span>
+          <span class="text-slate-400 text-sm">(\$99 USD)</span>
+        </div>
+        <ul class="space-y-3 text-xs text-slate-300 mb-8">
+          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> 10 Developer Commercial Licenses</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Priority Discord & Email Support</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Custom PII & Security Pattern Consultation</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Enterprise Deployment Guide</li>
+        </ul>
+        <button onclick="openUpiModal('Team Agency', 4999, 99)" class="block w-full py-3 rounded-xl border border-slate-700 hover:border-slate-600 bg-slate-800 text-slate-200 font-bold text-center text-sm transition">
+          <i class="fa-solid fa-qrcode mr-2"></i>Pay via UPI / QR Code (₹4,999)
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- UPI Checkout Modal -->
+  <div id="upiModal" class="fixed inset-0 bg-black/85 backdrop-blur-md flex items-center justify-center z-50 hidden px-4">
+    <div class="bg-slate-900 border border-cyan-500/60 rounded-3xl max-w-md w-full p-6 text-center relative shadow-2xl">
+      <button onclick="closeUpiModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-xl">✕</button>
+      
+      <div class="flex items-center justify-center space-x-2 text-cyan-400 text-sm font-semibold mb-2">
+        <i class="fa-solid fa-shield-halved"></i>
+        <span>Direct UPI Instant Settlement</span>
+      </div>
+      <h3 id="modalPlanName" class="text-2xl font-bold text-white mb-1">Hacker Solo License</h3>
+      <p id="modalPlanPrice" class="text-cyan-400 font-extrabold text-2xl mb-4">₹1,499</p>
+
+      <!-- Dynamic QR Code -->
+      <div class="bg-white p-3 rounded-2xl inline-block mx-auto mb-4 shadow-lg">
+        <img id="qrCodeImg" src="" alt="Scan UPI QR" class="w-48 h-48 mx-auto">
+      </div>
+
+      <!-- UPI Receiver Info -->
+      <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 text-xs text-left mb-4">
+        <div class="flex justify-between py-1">
+          <span class="text-slate-400">UPI ID / Number:</span>
+          <span class="font-mono text-cyan-400 font-bold select-all">9975944612@upi</span>
+        </div>
+        <div class="flex justify-between py-1">
+          <span class="text-slate-400">Supported Apps:</span>
+          <span class="text-slate-200">GPay, PhonePe, Paytm, BHIM</span>
+        </div>
+      </div>
+
+      <!-- Direct Pay Link Button (Mobile / Windows) -->
+      <a id="directPayBtn" href="#" class="block w-full py-3 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 font-bold text-slate-950 rounded-xl text-sm transition mb-4 shadow-lg shadow-emerald-500/20">
+        <i class="fa-solid fa-mobile-screen-button mr-2"></i>Open in UPI App (1-Click)
+      </a>
+
+      <!-- UTR Verification -->
+      <div class="text-left mb-4">
+        <label class="text-xs text-slate-400 block mb-1">Enter 12-Digit UTR / Transaction No. after payment:</label>
+        <div class="flex gap-2">
+          <input type="text" id="utrInput" placeholder="e.g. 431289045612" class="flex-1 bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-cyan-500 font-mono">
+          <button onclick="verifyPayment()" class="px-4 py-2 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold rounded-lg text-sm transition">Verify</button>
+        </div>
+      </div>
+
+      <!-- Instant Download Box (Revealed after UTR or instant skip) -->
+      <div id="downloadArea" class="hidden bg-emerald-950/40 border border-emerald-500/40 rounded-xl p-4 text-center">
+        <p class="text-emerald-400 font-bold text-sm mb-2">🎉 Payment Verified! Download Unlocked:</p>
+        <a href="../dist/DevSuperSuite_Commercial_v1.0.zip" download class="inline-flex items-center gap-2 px-6 py-2.5 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold rounded-lg text-sm transition shadow-lg">
+          <i class="fa-solid fa-download"></i> Download DevSuperSuite_v1.0.zip (Instant)
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-900 py-8 text-center text-xs text-slate-500">
+    <p>© 2026 DevSuperSuite Inc. Built for high-velocity AI engineering. Direct Merchant UPI: 9975944612.</p>
+  </footer>
+
+  <script>
+    const UPI_ID = "9975944612@upi";
+    const PAYEE_NAME = "Pratik Atpadkar";
+
+    function openUpiModal(planName, amountInr, amountUsd) {
+      document.getElementById('modalPlanName').innerText = planName + " License";
+      document.getElementById('modalPlanPrice').innerText = "₹" + amountInr + " (" + "$" + amountUsd + " USD)";
+      
+      const upiUrl = `upi://pay?pa=${encodeURIComponent(UPI_ID)}&pn=${encodeURIComponent(PAYEE_NAME)}&am=${amountInr}&cu=INR&tn=${encodeURIComponent(planName + " License")}`;
+      const qrApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=${encodeURIComponent(upiUrl)}`;
+      
+      document.getElementById('qrCodeImg').src = qrApiUrl;
+      document.getElementById('directPayBtn').href = upiUrl;
+      document.getElementById('downloadArea').classList.add('hidden');
+      document.getElementById('utrInput').value = '';
+      
+      document.getElementById('upiModal').classList.remove('hidden');
+    }
+
+    function closeUpiModal() {
+      document.getElementById('upiModal').classList.add('hidden');
+    }
+
+    function verifyPayment() {
+      const utr = document.getElementById('utrInput').value.trim();
+      if (!utr || utr.length < 6) {
+        alert("Please enter a valid Transaction Ref / UTR number from your payment app (GPay / PhonePe / Paytm).");
+        return;
+      }
+      document.getElementById('downloadArea').classList.remove('hidden');
+    }
+  </script>
+
+</body>
+</html>

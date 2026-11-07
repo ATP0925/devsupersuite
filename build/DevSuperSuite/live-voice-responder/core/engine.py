@@ -1,0 +1,577 @@
+"""
+Universal Full-Duplex Multimodal Live Voice Engine
+Compatible with Claude Code, Cursor, OpenAI Codex, Google Antigravity, and Local AI.
+Features auto-failover: Gemini Multimodal Live API (when key present) OR
+Universal Zero-Config Speech-to-Text with direct Antigravity Chat auto-injection.
+"""
+
+import os
+import sys
+import time
+import asyncio
+import threading
+import tempfile
+import urllib.request
+import json
+import numpy as np
+from typing import Optional, Callable
+from .config import LiveVoiceConfig
+from .audio_stream import AudioStreamManager
+from .interruption import InterruptionCoordinator, ConversationState
+from .fallback_tts import FallbackTTS
+from .tools import execute_system_command, read_workspace_file, inject_agent_chat, parse_spoken_enter
+
+class UniversalLiveVoiceEngine:
+    def __init__(
+        self,
+        config: Optional[LiveVoiceConfig] = None,
+        on_transcript: Optional[Callable[[str, str], None]] = None,
+        on_state_change: Optional[Callable[[ConversationState], None]] = None,
+        on_energy: Optional[Callable[[float], None]] = None
+    ):
+        self.config = config or LiveVoiceConfig.load()
+        self.on_transcript = on_transcript
+        self.on_state_change = on_state_change
+        self.on_energy = on_energy
+
+        self.coordinator = InterruptionCoordinator(on_state_change=self._handle_state_change)
+        self.audio_mgr = AudioStreamManager(
+            input_rate=self.config.audio.input_sample_rate,
+            output_rate=self.config.audio.output_sample_rate,
+            chunk_size=self.config.audio.chunk_size,
+            vad_energy_threshold=self.config.audio.vad_threshold_energy,
+            input_device=getattr(self.config.audio, "input_device_index", None),
+            output_device=getattr(self.config.audio, "output_device_index", None),
+            on_interruption=self._handle_barge_in
+        )
+        self.fallback_tts = FallbackTTS(
+            primary_voice=self.config.offline_tts.primary_voice,
+            fallback_voice=self.config.offline_tts.fallback_voice
+        )
+
+        self._running = False
+        self._session = None
+        self.is_muted = False
+        self._hotkey_listener = None
+        self._pending_user_transcript = ""
+
+    def toggle_mute(self, source: str = "hotkey") -> bool:
+        """Toggles mic mute on/off with audio cue and visual state update."""
+        self.is_muted = not self.is_muted
+        def _play_feedback(muted: bool):
+            try:
+                import winsound
+                if muted:
+                    winsound.Beep(420, 150)
+                else:
+                    winsound.Beep(850, 150)
+            except Exception:
+                pass
+
+        threading.Thread(target=_play_feedback, args=(self.is_muted,), daemon=True).start()
+
+        if self.is_muted:
+            self.coordinator.set_state(ConversationState.MUTED)
+            if self.on_state_change:
+                self.on_state_change(ConversationState.MUTED)
+            if self.on_energy:
+                self.on_energy(0.0)
+            if self.on_transcript:
+                self.on_transcript("System", f"🔇 Microphone PAUSED via {source}. (Press F9 to Resume)")
+        else:
+            self.coordinator.set_state(ConversationState.LISTENING)
+            if self.on_state_change:
+                self.on_state_change(ConversationState.LISTENING)
+            if self.on_transcript:
+                self.on_transcript("System", f"🎙️ Microphone ACTIVE via {source}. Bolo Boss!")
+        return self.is_muted
+
+    def interrupt_speech(self, reason: str = "Barge-in"):
+        """Instantly terminates any active TTS audio playback, clears speaking lock, and restores mic."""
+        import tempfile, subprocess
+        lock_path = os.path.join(tempfile.gettempdir(), "live_voice_agent_speaking.lock")
+        abort_path = os.path.join(tempfile.gettempdir(), "live_voice_barge_in.signal")
+
+        # 1. Create abort signal
+        try:
+            with open(abort_path, "w", encoding="utf-8") as f:
+                f.write(str(time.time()))
+        except Exception:
+            pass
+
+        # 2. Kill playback process if recorded in lock file
+        if os.path.exists(lock_path):
+            try:
+                with open(lock_path, "r", encoding="utf-8") as lf:
+                    content = lf.read().strip()
+                lock_data = json.loads(content) if content.startswith("{") else {"timestamp": float(content or 0)}
+                pid = lock_data.get("pid")
+                if pid and pid != os.getpid():
+                    subprocess.run(["taskkill", "/F", "/T", "/PID", str(pid)], capture_output=True, timeout=2)
+            except Exception:
+                pass
+            try:
+                os.remove(lock_path)
+            except Exception:
+                pass
+
+        # 3. Stop fallback TTS and flush audio manager
+        if hasattr(self, "fallback_tts") and hasattr(self.fallback_tts, "stop"):
+            self.fallback_tts.stop()
+        self.audio_mgr.flush_playback()
+
+        # 4. State transition
+        self.coordinator.trigger_interruption()
+        if self.on_state_change:
+            self.on_state_change(ConversationState.INTERRUPTED)
+
+        if self.on_transcript:
+            self.on_transcript("System", f"[bold yellow]⚡ [BARGE-IN / INTERRUPTED: {reason}] Chup ho gaya! Sun raha hoon, bolo Boss...[/bold yellow]")
+
+        # 5. Acoustic confirmation chirp
+        try:
+            import winsound
+            winsound.Beep(880, 50)
+        except Exception:
+            pass
+
+    def _setup_global_hotkey(self):
+        """Registers F8 (Barge-in / Stop speaking), F9 (Toggle Mute), and Esc global hotkeys."""
+        try:
+            from pynput import keyboard
+            def on_press(key):
+                try:
+                    lock_path = os.path.join(tempfile.gettempdir(), "live_voice_agent_speaking.lock")
+                    is_locked = os.path.exists(lock_path)
+                    if key in (keyboard.Key.f8, keyboard.Key.esc):
+                        if is_locked or self.audio_mgr.is_playing:
+                            self.interrupt_speech(reason="F8 / Escape Hotkey")
+                    elif key in (keyboard.Key.f9, keyboard.Key.pause):
+                        self.toggle_mute(source="F9 Hotkey")
+                except Exception:
+                    pass
+
+            self._hotkey_listener = keyboard.Listener(on_press=on_press)
+            self._hotkey_listener.daemon = True
+            self._hotkey_listener.start()
+        except Exception as e:
+            print(f"[Warning] Hotkey listener could not start: {e}")
+
+    def _handle_state_change(self, state: ConversationState):
+        if self.on_state_change:
+            self.on_state_change(state)
+
+    def _handle_barge_in(self):
+        """Called immediately when user speaks while audio is playing."""
+        self.interrupt_speech(reason="Audio Playback Barge-In")
+
+    async def _gemini_audio_send_loop(self, session):
+        from google.genai import types
+        while self._running:
+            if self.is_muted:
+                _ = self.audio_mgr.get_input_chunk(timeout=0.05)
+                self.coordinator.set_state(ConversationState.MUTED)
+                if self.on_energy:
+                    self.on_energy(0.0)
+                await asyncio.sleep(0.05)
+                continue
+
+            chunk = self.audio_mgr.get_input_chunk(timeout=0.05)
+            if chunk and len(chunk) > 0:
+                pcm_arr = np.frombuffer(chunk, dtype=np.int16).astype(np.float32) / 32767.0
+                rms = np.sqrt(np.mean(pcm_arr**2)) if len(pcm_arr) > 0 else 0.0
+                if self.on_energy:
+                    self.on_energy(rms)
+                try:
+                    await session.send_realtime_input(
+                        audio=types.Blob(data=chunk, mime_type="audio/pcm;rate=16000")
+                    )
+                except Exception:
+                    pass
+            await asyncio.sleep(0.01)
+
+    async def _gemini_audio_receive_loop(self, session):
+        try:
+            async for response in session.receive():
+                if not self._running:
+                    break
+
+                server_content = getattr(response, "server_content", None)
+                if not server_content:
+                    tool_call = getattr(response, "tool_call", None)
+                    if tool_call:
+                        await self._handle_gemini_tool_call(session, tool_call)
+                    continue
+
+                if getattr(server_content, "interrupted", False):
+                    self._handle_barge_in()
+                    continue
+
+                # User transcript (English letters) - buffer until turn_complete
+                input_tx = getattr(server_content, "input_transcription", None)
+                if input_tx and hasattr(input_tx, "text") and input_tx.text:
+                    tx_text = input_tx.text.strip()
+                    if tx_text:
+                        self._pending_user_transcript = tx_text
+                        self.coordinator.start_user_turn()
+                        if self.on_transcript:
+                            self.on_transcript("Boss", tx_text)
+
+                # Agent transcript
+                output_tx = getattr(server_content, "output_transcription", None)
+                if output_tx and hasattr(output_tx, "text") and output_tx.text:
+                    tx_text = output_tx.text.strip()
+                    if tx_text:
+                        if self.on_transcript:
+                            self.on_transcript("Agent", tx_text)
+
+                # Output streaming audio
+                model_turn = getattr(server_content, "model_turn", None)
+                if model_turn:
+                    self.coordinator.start_agent_speaking()
+                    for part in getattr(model_turn, "parts", []):
+                        inline = getattr(part, "inline_data", None)
+                        if inline and getattr(inline, "data", None):
+                            self.audio_mgr.feed_output_audio(inline.data)
+
+                if getattr(server_content, "turn_complete", False):
+                    # Inject buffered user transcript on turn completion
+                    if self._pending_user_transcript:
+                        clean_tx, was_spoken_enter = parse_spoken_enter(self._pending_user_transcript)
+                        if clean_tx:
+                            inject_agent_chat(clean_tx, target_hint=self.config.target_agent, force_enter=True)
+                        elif was_spoken_enter:
+                            # Just press Enter in the active agent (no text to paste)
+                            inject_agent_chat("", target_hint=self.config.target_agent, force_enter=True)
+                        self._pending_user_transcript = ""
+                    self.coordinator.finish_turn()
+
+        except asyncio.CancelledError:
+            pass
+        except Exception as e:
+            if self._running:
+                print(f"[Streaming Error]: {e}")
+
+    async def _handle_gemini_tool_call(self, session, tool_call):
+        from google.genai import types
+        function_calls = getattr(tool_call, "function_calls", [])
+        function_responses = []
+
+        for fc in function_calls:
+            name = getattr(fc, "name", "")
+            args = getattr(fc, "args", {}) or {}
+            call_id = getattr(fc, "id", "")
+
+            result = {}
+            if name == "execute_system_command":
+                cmd = args.get("command", "")
+                result = execute_system_command(cmd)
+            elif name == "read_workspace_file":
+                fp = args.get("file_path", "")
+                result = read_workspace_file(fp)
+            elif name in ("inject_agent_chat", "inject_antigravity_chat"):
+                msg = args.get("message", "")
+                result = inject_agent_chat(msg, target_hint=self.config.target_agent)
+
+            function_responses.append(
+                types.FunctionResponse(
+                    id=call_id,
+                    name=name,
+                    response=result
+                )
+            )
+
+        if function_responses:
+            await session.send_tool_response(function_responses=function_responses)
+
+    async def start(self):
+        """Dispatches to Gemini Live if key is present, otherwise runs Universal STT Listener."""
+        provider = self.config.resolve_active_provider()
+        has_gemini_key = bool(os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY"))
+
+        if provider == "gemini" and has_gemini_key:
+            print("\n[Live Voice Engine] Provider: [bold cyan]GEMINI 3.1 FLASH LIVE (Native Audio)[/bold cyan]")
+            await self._start_gemini_duplex()
+        else:
+            print("\n[Live Voice Engine] Provider: [bold cyan]UNIVERSAL HANDS-FREE STT (English Letters Mode)[/bold cyan]")
+            await self._start_universal_listener()
+
+    async def _start_gemini_duplex(self):
+        from google import genai
+        from google.genai import types
+
+        api_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
+        client = genai.Client(api_key=api_key)
+
+        tools_def = [
+            types.Tool(function_declarations=[
+                types.FunctionDeclaration(
+                    name="execute_system_command",
+                    description="Run PowerShell or terminal command for Boss.",
+                    parameters=types.Schema(
+                        type="OBJECT",
+                        properties={"command": types.Schema(type="STRING", description="Command to execute.")},
+                        required=["command"]
+                    )
+                ),
+                types.FunctionDeclaration(
+                    name="read_workspace_file",
+                    description="Read contents of any workspace file.",
+                    parameters=types.Schema(
+                        type="OBJECT",
+                        properties={"file_path": types.Schema(type="STRING", description="File path.")},
+                        required=["file_path"]
+                    )
+                ),
+                types.FunctionDeclaration(
+                    name="inject_agent_chat",
+                    description="Inject message into Claude Code, Cursor, Codex, or Antigravity Chat.",
+                    parameters=types.Schema(
+                        type="OBJECT",
+                        properties={"message": types.Schema(type="STRING", description="Text to send.")},
+                        required=["message"]
+                    )
+                )
+            ])
+        ]
+
+        live_config = types.LiveConnectConfig(
+            response_modalities=[types.Modality.AUDIO],
+            speech_config=types.SpeechConfig(
+                voice_config=types.VoiceConfig(
+                    prebuilt_voice_config=types.PrebuiltVoiceConfig(
+                        voice_name=self.config.engine.voice_name
+                    )
+                )
+            ),
+            system_instruction=types.Content(
+                parts=[types.Part(text=self.config.persona.system_instruction)]
+            ),
+            input_audio_transcription=types.AudioTranscriptionConfig(),
+            output_audio_transcription=types.AudioTranscriptionConfig(),
+            tools=tools_def
+        )
+
+        self._running = True
+        self._setup_global_hotkey()
+        self.audio_mgr.start()
+        print(f"Connecting to {self.config.engine.live_model}...")
+
+        try:
+            async with client.aio.live.connect(
+                model=self.config.engine.live_model,
+                config=live_config
+            ) as session:
+                self._session = session
+                print("✅ Duplex Voice Stream Active. Speak naturally Boss!\n")
+                send_task = asyncio.create_task(self._gemini_audio_send_loop(session))
+                receive_task = asyncio.create_task(self._gemini_audio_receive_loop(session))
+                await asyncio.gather(send_task, receive_task)
+        finally:
+            self.stop()
+
+    def _transcribe_raw_pcm(self, pcm_bytes: bytes) -> Optional[str]:
+        """Transcribes PCM bytes into clean English letters via Google Speech Recognition."""
+        if not pcm_bytes or len(pcm_bytes) < 8000:
+            return None
+        try:
+            import speech_recognition as sr
+            recognizer = sr.Recognizer()
+            audio_obj = sr.AudioData(pcm_bytes, self.config.audio.input_sample_rate, 2)
+            # Use en-IN for English letters transcription (Hinglish/Indian English in Latin script)
+            lang = self.config.persona.language or "en-IN"
+            text = recognizer.recognize_google(audio_obj, language=lang)
+            return text.strip() if text else None
+        except Exception:
+            try:
+                import speech_recognition as sr
+                recognizer = sr.Recognizer()
+                audio_obj = sr.AudioData(pcm_bytes, self.config.audio.input_sample_rate, 2)
+                return recognizer.recognize_google(audio_obj, language="en-US").strip()
+            except Exception:
+                return None
+
+    async def _start_universal_listener(self):
+        """Continuous Hands-Free VAD with DSP Fan-Noise Cancellation & Instant English Text Output."""
+        from .dsp import AdaptiveNoiseGate
+
+        self._running = True
+        self._setup_global_hotkey()
+        self.audio_mgr.start()
+        print("🎙️ [Mic Active - DSP Noise Filtered] Bolo Boss! Laptop fan aur room noise cancel ho raha hai.")
+        print("💡 [Pro Tip] Press 'F9' to Pause/Mute anytime, or say 'mute mic'!\n")
+        self.fallback_tts.speak(f"{self.config.persona.callsign}, noise filter active hai. F9 dabake mute kar sakte ho.")
+
+        silence_sec = getattr(self.config.audio, "silence_duration_seconds", 0.55)
+        noise_gate = AdaptiveNoiseGate(
+            sample_rate=self.config.audio.input_sample_rate,
+            silence_timeout=silence_sec,
+            min_speech_duration=0.20,
+            max_speech_duration=6.0
+        )
+        audio_buffer = bytearray()
+        barge_in_buffer = bytearray()
+        lock_path = os.path.join(tempfile.gettempdir(), "live_voice_agent_speaking.lock")
+        if os.path.exists(lock_path):
+            try:
+                os.remove(lock_path)
+            except Exception:
+                pass
+
+        try:
+            while self._running:
+                # 0. User Mute / Pause Mode: complete mic silence, zero CPU/bandwidth usage
+                if self.is_muted:
+                    _ = self.audio_mgr.get_input_chunk(timeout=0.05)
+                    self.coordinator.set_state(ConversationState.MUTED)
+                    if self.on_energy:
+                        self.on_energy(0.0)
+                    audio_buffer.clear()
+                    barge_in_buffer.clear()
+                    await asyncio.sleep(0.05)
+                    continue
+
+                # Echo cancellation: check speaking lock with active PID validation & acoustic reverb window
+                is_speaking_locked = False
+                if os.path.exists(lock_path):
+                    try:
+                        with open(lock_path, "r", encoding="utf-8") as lf:
+                            content = lf.read().strip()
+                        lock_data = json.loads(content) if content.startswith("{") else {"timestamp": float(content or 0)}
+                        pid = lock_data.get("pid")
+                        ts = lock_data.get("timestamp", 0)
+
+                        pid_alive = False
+                        if pid:
+                            try:
+                                import ctypes
+                                PROCESS_QUERY_LIMITED_INFORMATION = 0x1000
+                                h = ctypes.windll.kernel32.OpenProcess(PROCESS_QUERY_LIMITED_INFORMATION, False, pid)
+                                if h:
+                                    ctypes.windll.kernel32.CloseHandle(h)
+                                    pid_alive = True
+                            except Exception:
+                                pass
+
+                        lock_age = time.time() - ts
+                        if (pid_alive and lock_age < 12.0) or (not pid and lock_age < 6.0):
+                            is_speaking_locked = True
+                        else:
+                            try:
+                                os.remove(lock_path)
+                            except Exception:
+                                pass
+                    except Exception:
+                        pass
+
+                if is_speaking_locked or self.audio_mgr.is_playing:
+                    self.coordinator.set_state(ConversationState.SPEAKING)
+                    audio_buffer.clear()
+
+                    # Voice Interruption & Wake-Word ("CROW", "STOP", "SUNO", "BOSS") during speech
+                    intr_chunk = self.audio_mgr.get_input_chunk(timeout=0.03)
+                    if intr_chunk and len(intr_chunk) > 0:
+                        pcm_bytes = intr_chunk[:len(intr_chunk) - (len(intr_chunk) % 2)]
+                        pcm_raw = np.frombuffer(pcm_bytes, dtype=np.int16).astype(np.float32) / 32767.0
+                        pcm_filtered = noise_gate.filter.filter_chunk(pcm_raw)
+                        chunk_rms = float(np.sqrt(np.mean(pcm_filtered**2))) if len(pcm_filtered) > 0 else 0.0
+
+                        # If user speaks forcefully / loudly over the speaker output
+                        if chunk_rms > 0.028:
+                            barge_in_buffer.extend(intr_chunk)
+                            if len(barge_in_buffer) >= 8000:  # ~0.25s of speech
+                                captured_barge = bytes(barge_in_buffer)
+                                barge_in_buffer.clear()
+                                loop = asyncio.get_running_loop()
+                                spoken_cmd = await loop.run_in_executor(None, self._transcribe_raw_pcm, captured_barge)
+                                if spoken_cmd:
+                                    cmd_low = spoken_cmd.lower().strip()
+                                    barge_keywords = [
+                                        "crow", "kro", "krow", "cro", "stop", "suno", "boss", "ruko",
+                                        "wait", "hold", "pause", "bhai", "chup", "shant", "listen"
+                                    ]
+                                    if any(k in cmd_low for k in barge_keywords) or chunk_rms > 0.060:
+                                        self.interrupt_speech(reason=f"Voice Command '{spoken_cmd}'")
+                                        audio_buffer.clear()
+                                        continue
+                        else:
+                            barge_in_buffer.clear()
+
+                    await asyncio.sleep(0.01)
+                    continue
+
+                chunk = self.audio_mgr.get_input_chunk(timeout=0.04)
+                if not chunk or len(chunk) == 0:
+                    await asyncio.sleep(0.005)
+                    continue
+
+                is_speaking, just_finished, rms = noise_gate.process_chunk(chunk)
+                if self.on_energy:
+                    self.on_energy(rms)
+
+                if is_speaking:
+                    if len(audio_buffer) == 0:
+                        self.coordinator.start_user_turn()
+                    audio_buffer.extend(chunk)
+
+                if just_finished:
+                    self.coordinator.start_processing()
+                    captured = bytes(audio_buffer)
+                    audio_buffer.clear()
+
+                    if len(captured) >= 6000:  # ~0.19s minimum (captures quick words)
+                        loop = asyncio.get_running_loop()
+                        text = await loop.run_in_executor(None, self._transcribe_raw_pcm, captured)
+                        if text and text.strip():
+                            raw_low = text.strip().lower()
+                            unmute_triggers = ["unmute mic", "unmute", "resume mic", "start listening", "mic on"]
+                            if raw_low in unmute_triggers or any(t == raw_low for t in unmute_triggers):
+                                if self.is_muted:
+                                    self.toggle_mute(source="Voice Command")
+                                    if self.on_transcript:
+                                        self.on_transcript("Boss", f"{text.strip()} [bold green]🎙️ [MIC RESUMED][/bold green]")
+                                    self.coordinator.finish_turn()
+                                    continue
+
+                            mute_triggers = [
+                                "mute mic", "pause mic", "stop listening", "pause listening",
+                                "mute please", "mic mute", "mic pause", "mute karo", "pause karo"
+                            ]
+                            if raw_low in ("mute", "pause") or any(t == raw_low for t in mute_triggers):
+                                if self.on_transcript:
+                                    self.on_transcript("Boss", f"{text.strip()} [bold red]🔇 [VOICE PAUSE TRIGGERED][/bold red]")
+                                self.toggle_mute(source="Voice Command")
+                                self.coordinator.finish_turn()
+                                continue
+
+                            clean_tx, was_spoken_enter = parse_spoken_enter(text.strip())
+                            tag = " [bold green]⚡ [VOICE ENTER][/bold green]" if was_spoken_enter else ""
+                            # 1. Display on terminal in English letters!
+                            if self.on_transcript:
+                                self.on_transcript("Boss", f"{clean_tx}{tag}")
+
+                            # 2. Immediately inject into Antigravity Chat & hit Enter!
+                            if clean_tx:
+                                inject_agent_chat(clean_tx, target_hint=self.config.target_agent, force_enter=True)
+                            elif was_spoken_enter:
+                                # Just press Enter in the active agent (no text to paste)
+                                inject_agent_chat("", target_hint=self.config.target_agent, force_enter=True)
+
+                    self.coordinator.finish_turn()
+
+                await asyncio.sleep(0.005)
+        finally:
+            self.stop()
+
+    def stop(self):
+        self._running = False
+        if self._hotkey_listener:
+            try:
+                self._hotkey_listener.stop()
+            except Exception:
+                pass
+        self.audio_mgr.stop()
+        self.coordinator.finish_turn()
+        print("[Live Voice Engine] Stopped cleanly.")
+
+GeminiLiveEngine = UniversalLiveVoiceEngine
