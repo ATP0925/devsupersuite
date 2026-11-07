@@ -6,12 +6,5 @@ __pycache__/
 !landing_page/og-image.png
 *.json
 !package.json
-click_*.py
-set_*.py
-save_*.py
-embed_*.py
-exec_*.py
-get_*.py
-update_*.py
-package_*.py
-sync_*.py
+*.py
+!package_product.py
