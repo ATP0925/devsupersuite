@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "agentshield": {
+      "command": "python",
+      "args": [
+        "-m",
+        "agentshield.mcp_server"
+      ],
+      "env": {
+        "PYTHONUNBUFFERED": "1"
+      }
+    }
+  }
+}

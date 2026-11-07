@@ -6,7 +6,16 @@ __pycache__/
 !landing_page/og-image.png
 *.json
 !package.json
+!qr_data.json
+!announcement_payload.json
+!discussion_payload.json
+!.cursor/mcp.json
+!.mcp.json
+!build/DevSuperSuite/agent-shield/mcp_template.json
 *.py
 !package_product.py
+!generate_orange_og.py
+!build/DevSuperSuite/**
+!tests/**
 
 .vercel

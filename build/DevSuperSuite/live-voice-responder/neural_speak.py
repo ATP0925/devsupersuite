@@ -76,7 +76,7 @@ def sanitize_and_normalize_speech(text: str) -> str:
     text = re.sub(r'^\s*[-*•]\s+', '', text, flags=re.MULTILINE)
 
     # 5. Enforce Boss Persona Integrity (Replace any accidental colloquialisms)
-    text = re.sub(r'\b(haan\s+bhai|bhai|pratik\s+bhai|dost|yaar|buddy)\b', 'Boss', text, flags=re.IGNORECASE)
+    text = re.sub(r'\b(haan\s+bhai|bhai|dost|yaar|buddy)\b', 'Boss', text, flags=re.IGNORECASE)
 
     # Ensure respectful Boss prefix if missing
     text_stripped = text.strip()
