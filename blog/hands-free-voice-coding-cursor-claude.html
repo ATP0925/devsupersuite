@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Architecture of Zero-Latency Voice Coding — DevSuperSuite Engineering</title>
-  <meta name="title" content="The Architecture of Zero-Latency Voice Coding — DevSuperSuite Engineering">
-  <meta name="description" content="How we engineered full-duplex acoustic echo cancellation, voice barge-in, and 110ms neural streaming for hands-free coding in Cursor and Claude Code.">
-  <meta name="keywords" content="voice coding cursor, claude code hands free, webrtc voice developer, acoustic echo cancellation python, voice barge in coding">
+  <title>Zero-Latency Voice Coding Architecture — DevSuperSuite</title>
+  <meta name="title" content="Zero-Latency Voice Coding Architecture — DevSuperSuite">
+  <meta name="description" content="Technical breakdown of WebRTC Acoustic Echo Cancellation and voice barge-in for AI IDEs.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://atp0925.github.io/devsupersuite/blog/hands-free-voice-coding-cursor-claude.html">
   <meta property="og:title" content="The Architecture of Zero-Latency Voice Coding for AI IDEs">
@@ -14,102 +13,88 @@
   <meta property="og:image" content="https://atp0925.github.io/devsupersuite/og-image.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&family=Space+Grotesk:wght@500;700;900&display=swap');
+    body { font-family: 'Space Grotesk', sans-serif; background-color: #000; color: #fff; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+  </style>
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans selection:bg-purple-500 selection:text-white">
+<body class="bg-black text-white selection:bg-[#ff5500] selection:text-black min-h-screen">
 
   <!-- Nav -->
-  <nav class="border-b border-slate-800/80 backdrop-blur-md sticky top-0 z-40 bg-slate-950/80">
-    <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
-      <a href="../index.html" class="flex items-center space-x-3 text-purple-400 hover:text-purple-300 font-semibold transition">
-        <span>← Back to DevSuperSuite Store</span>
+  <nav class="border-b border-neutral-800 bg-black/90 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between font-mono text-xs">
+      <a href="../index.html" class="flex items-center space-x-2 text-[#ff5500] hover:text-white font-bold uppercase transition">
+        <span>← [ DEVSUPERSUITE STORE ]</span>
       </a>
       <div class="flex items-center space-x-4">
-        <a href="../index.html#demo" class="text-xs bg-slate-800 hover:bg-slate-700 text-purple-300 px-3 py-1.5 rounded-lg transition border border-purple-500/30">
-          <i class="fa-solid fa-play mr-1"></i> Try Live Demo
+        <a href="../index.html#demo" class="px-3 py-1.5 bg-neutral-900 hover:bg-neutral-800 text-neutral-300 border border-neutral-700 uppercase">
+          // LIVE PLAYGROUND
         </a>
-        <a href="https://gumroad.com/l/tlzdco" target="_blank" class="text-xs bg-purple-500 hover:bg-purple-400 text-white font-bold px-3 py-1.5 rounded-lg transition shadow-md shadow-purple-500/20">
-          Get DevSuperSuite ($29)
+        <a href="https://gumroad.com/l/tlzdco" target="_blank" class="px-3 py-1.5 bg-[#ff5500] hover:bg-[#ff6a00] text-black font-black uppercase">
+          BUY ($29)
         </a>
       </div>
     </div>
   </nav>
 
   <!-- Article -->
-  <article class="max-w-3xl mx-auto px-6 py-12 leading-relaxed">
-    <div class="mb-8">
-      <span class="text-xs font-mono uppercase tracking-wider text-purple-400 bg-purple-950/50 border border-purple-800/60 px-3 py-1 rounded-full">Audio Systems & Neural Streaming</span>
-      <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight mt-4 mb-4 text-white">
-        The Architecture of Zero-Latency Voice Coding for AI IDEs
+  <article class="max-w-3xl mx-auto px-6 py-14 leading-relaxed">
+    <div class="mb-8 font-mono">
+      <span class="text-xs uppercase tracking-widest text-[#ff5500] border border-[#ff5500] px-2 py-0.5">
+        DISPATCH // AUDIO_DSP_SYSTEMS
+      </span>
+      <h1 class="text-3xl md:text-5xl font-black uppercase tracking-tight mt-4 mb-3 text-white">
+        THE ARCHITECTURE OF ZERO-LATENCY VOICE CODING FOR AI IDES
       </h1>
-      <p class="text-slate-400 text-sm">Published by <strong class="text-slate-200">DevSuperSuite Engineering Labs</strong> • 5 min read</p>
+      <p class="text-neutral-500 text-xs">BY DEVSUPERSUITE LABS • 5 MIN READ • FULL-DUPLEX AUDIO</p>
     </div>
 
-    <div class="prose prose-invert max-w-none space-y-6 text-slate-300">
-      <p class="text-lg text-slate-200">
-        Typing architectural prompts into Cursor or Claude Code 150 times a day causes severe cognitive friction and wrist fatigue. While generic dictation tools exist, they fail miserably for programmers.
+    <div class="space-y-6 text-neutral-300 font-mono text-xs md:text-sm leading-relaxed">
+      <p class="text-white text-sm md:text-base">
+        Typing complex architectural prompts into Cursor or Claude Code 150 times a day causes severe cognitive disruption and RSI wrist strain. Generic speech-to-text dictation tools fail in developer environments.
       </p>
 
-      <h2 class="text-2xl font-bold text-white mt-8 mb-3">The 3 Hard Engineering Problems of Voice Coding</h2>
+      <h2 class="text-xl md:text-2xl font-black text-white uppercase mt-8 pt-4 border-t border-neutral-800">
+        // THE 3 HARD AUDIO PROBLEMS IN CODING
+      </h2>
       
       <div class="space-y-4">
-        <div class="p-4 rounded-xl bg-slate-900 border border-slate-800">
-          <h4 class="text-purple-400 font-bold text-base mb-1">1. Acoustic Feedback & Speaker Loopback</h4>
-          <p class="text-xs text-slate-300">
-            When your IDE speaks or plays audio responses, naive microphones record the speaker output and feed it back into the STT model, causing hilarious and frustrating infinite hallucination loops.
-          </p>
+        <div class="p-4 bg-neutral-950 border border-neutral-800">
+          <span class="text-[#ff5500] font-bold block mb-1">01. SPEAKER ECHO FEEDBACK LOOPS</span>
+          <p class="text-neutral-400">When your machine speaks or plays notification sounds, a naive microphone captures the audio output and loops it back into the model, triggering infinite speech hallucination storms.</p>
         </div>
 
-        <div class="p-4 rounded-xl bg-slate-900 border border-slate-800">
-          <h4 class="text-purple-400 font-bold text-base mb-1">2. Latency Thresholds (The 200ms Rule)</h4>
-          <p class="text-xs text-slate-300">
-            If audio turnaround takes more than 300ms, speech feels robotic. Developers lose their train of thought. A real voice coding assistant must operate in under 120ms round-trip.
-          </p>
+        <div class="p-4 bg-neutral-950 border border-neutral-800">
+          <span class="text-[#ff5500] font-bold block mb-1">02. LATENCY CEILING (&gt; 200MS FAILS)</span>
+          <p class="text-neutral-400">If voice turnaround exceeds 200ms, speech interaction feels broken. Developers lose flow state. DevSuperSuite delivers an end-to-end 110ms turnaround pipeline.</p>
         </div>
 
-        <div class="p-4 rounded-xl bg-slate-900 border border-slate-800">
-          <h4 class="text-purple-400 font-bold text-base mb-1">3. The Interruption (Barge-In) Paradox</h4>
-          <p class="text-xs text-slate-300">
-            If an AI begins generating a flawed approach, you cannot wait 15 seconds for it to finish. You need to speak over it immediately and have it silence instantly.
-          </p>
+        <div class="p-4 bg-neutral-950 border border-neutral-800">
+          <span class="text-[#ff5500] font-bold block mb-1">03. DETERMINISTIC VOICE BARGE-IN</span>
+          <p class="text-neutral-400">If an AI begins generating an incorrect approach, waiting 15 seconds is painful. Saying "CROW" cuts assistant playback in under 15ms.</p>
         </div>
       </div>
 
-      <h2 class="text-2xl font-bold text-white mt-8 mb-3">How Live Voice Responder Solves This</h2>
-      <p>
-        In <strong>Live Voice Responder</strong>, we built a dedicated audio pipeline using WebRTC DSP algorithms:
-      </p>
-
-      <ul class="list-disc pl-6 space-y-2 text-slate-300">
-        <li><strong>Full-Duplex AEC (Acoustic Echo Cancellation):</strong> Subdivides the incoming capture buffer and subtracts the reference speaker buffer in frequency domain with -44.2 dB attenuation. You can blast music through your speakers and speak calmly; only your voice gets captured.</li>
-        <li><strong>Voice Activity Detection (VAD) with Energy Thresholding:</strong> Instantly discriminates between typing clatter, desk thumps, and genuine vocal phonemes.</li>
-        <li><strong>Deterministic "CROW" Voice Barge-In:</strong> A micro-neural phoneme detector continuously listens for your stop keyword ("CROW" or press F8). When detected, audio playback terminates in &lt;15ms.</li>
-      </ul>
-
-      <div class="my-8 p-6 rounded-2xl bg-gradient-to-br from-slate-900 to-purple-950/40 border border-purple-500/30 text-center">
-        <h3 class="text-xl font-bold text-white mb-2">Simulate The Voice Pipeline In Real-Time</h3>
-        <p class="text-slate-300 text-sm mb-4">Experience the waveform audio engine and simulate voice barge-in right now in the interactive sandbox.</p>
-        <a href="../index.html#demo" class="inline-flex items-center space-x-2 bg-purple-500 hover:bg-purple-400 text-white font-bold px-6 py-2.5 rounded-xl transition shadow-lg shadow-purple-500/20">
-          <span>Test Voice Simulator</span>
-          <i class="fa-solid fa-microphone ml-1"></i>
+      <div class="my-10 p-6 bg-black border-2 border-[#ff5500] text-center">
+        <h3 class="text-lg font-black text-white uppercase mb-2">SIMULATE THE VOICE ENGINE</h3>
+        <p class="text-neutral-400 text-xs mb-4">Experience acoustic echo cancellation and instant IDE chat injection in the sandbox.</p>
+        <a href="../index.html#demo" class="inline-block px-6 py-3 bg-[#ff5500] hover:bg-[#ff6a00] text-black font-black uppercase text-xs tracking-wider">
+          OPEN VOICE SIMULATOR →
         </a>
       </div>
 
-      <h2 class="text-2xl font-bold text-white mt-8 mb-3">Direct IDE Integration</h2>
-      <p>
-        Once transcription completes, Live Voice Responder uses Win32 window focus targeting to identify your active Cursor, VS Code, or Antigravity window, formats the prompt cleanly, injects it into the prompt input, and simulates the Enter keypress—allowing 100% hands-off iteration.
-      </p>
-
-      <div class="border-t border-slate-800 pt-8 mt-12 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="border-t border-neutral-800 pt-8 mt-12 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div>
-          <h4 class="text-lg font-bold text-white">Code faster without touching your keyboard</h4>
-          <p class="text-xs text-slate-400">Included in DevSuperSuite Commercial v1.0. Lifetime license $29 / ₹1,499.</p>
+          <h4 class="text-base font-bold text-white uppercase">CODE HANDS-FREE TODAY</h4>
+          <p class="text-xs text-neutral-500">DevSuperSuite Commercial v1.0 • Lifetime License $29 / ₹1,499</p>
         </div>
         <div class="flex items-center space-x-3">
-          <a href="../index.html" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white rounded-lg text-sm font-semibold transition border border-slate-700">
-            View Pricing
+          <a href="../index.html#pricing" class="px-4 py-2 bg-neutral-900 border border-neutral-700 text-white font-bold uppercase text-xs">
+            VIEW PRICING
           </a>
-          <a href="https://gumroad.com/l/tlzdco" target="_blank" class="px-5 py-2 bg-purple-500 hover:bg-purple-400 text-white rounded-lg text-sm font-bold transition shadow-lg shadow-purple-500/20">
-            Buy Now
+          <a href="https://gumroad.com/l/tlzdco" target="_blank" class="px-4 py-2 bg-[#ff5500] hover:bg-[#ff6a00] text-black font-black uppercase text-xs">
+            BUY NOW
           </a>
         </div>
       </div>
@@ -117,8 +102,8 @@
   </article>
 
   <!-- Footer -->
-  <footer class="border-t border-slate-900 mt-16 py-8 text-center text-xs text-slate-500">
-    <p>© 2026 DevSuperSuite Official. Built for high-velocity software engineers.</p>
+  <footer class="border-t border-neutral-800 py-8 text-center text-xs text-neutral-600 font-mono">
+    © 2026 DEVSUPERSUITE OFFICIAL • HIGH-VELOCITY DEVELOPER ACCELERATION
   </footer>
 
 </body>

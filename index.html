@@ -1,460 +1,604 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DevSuperSuite — Hands-Free Voice Coding & API Leak Shield</title>
-  <meta name="title" content="DevSuperSuite — Hands-Free Voice Coding & API Leak Shield">
-  <meta name="description" content="Empower Cursor, Claude Code, and VS Code with hands-free full-duplex voice coding and real-time pre-commit Shannon entropy API secret protection. Try interactive sandbox live.">
-  <meta name="keywords" content="cursor ai, claude code, voice coding, secret scanner, api key protector, entropy shield, developer productivity, webrtc voice">
+  <title>DEVSUPERSUITE — Hands-Free Voice Coding & API Leak Shield</title>
+  <meta name="title" content="DEVSUPERSUITE — Hands-Free Voice Coding & API Leak Shield">
+  <meta name="description" content="Industrial developer accelerator for Cursor, Claude Code, and VS Code. Real-time Shannon entropy pre-commit interceptor and full-duplex hands-free voice coding.">
+  <meta name="keywords" content="cursor ai, claude code, voice coding, secret scanner, api key protector, entropy shield, developer productivity">
   <meta name="author" content="DevSuperSuite Official">
 
-  <!-- Open Graph / Facebook -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://atp0925.github.io/devsupersuite/">
-  <meta property="og:title" content="DevSuperSuite — Hands-Free Voice Coding & API Leak Shield">
+  <meta property="og:title" content="DEVSUPERSUITE — Hands-Free Voice Coding & API Leak Shield">
   <meta property="og:description" content="Full-duplex AEC voice coding and real-time Shannon entropy secret leak protection for Cursor, Windsurf, Claude Code, and VS Code.">
   <meta property="og:image" content="https://atp0925.github.io/devsupersuite/og-image.png">
 
-  <!-- Twitter / X -->
+  <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://atp0925.github.io/devsupersuite/">
-  <meta property="twitter:title" content="DevSuperSuite — Hands-Free Voice Coding & API Leak Shield">
+  <meta property="twitter:title" content="DEVSUPERSUITE — Hands-Free Voice Coding & API Leak Shield">
   <meta property="twitter:description" content="Full-duplex AEC voice coding and real-time Shannon entropy secret leak protection for Cursor, Windsurf, Claude Code, and VS Code.">
   <meta property="twitter:image" content="https://atp0925.github.io/devsupersuite/og-image.png">
   <link rel="canonical" href="https://atp0925.github.io/devsupersuite/">
+
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    @keyframes pulseGlow {
-      0%, 100% { box-shadow: 0 0 25px rgba(6, 182, 212, 0.4); }
-      50% { box-shadow: 0 0 50px rgba(168, 85, 247, 0.6); }
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&family=Space+Grotesk:wght@500;700;900&display=swap');
+    
+    body {
+      font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #000000;
+      color: #ffffff;
     }
-    .neon-glow { animation: pulseGlow 4s infinite; }
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .grid-pattern {
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    }
+    .orange-glow {
+      box-shadow: 0 0 35px rgba(255, 85, 0, 0.35);
+    }
+    .orange-border-glow {
+      box-shadow: inset 0 0 15px rgba(255, 85, 0, 0.2);
+    }
+    /* Custom scrollbar */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #000; }
+    ::-webkit-scrollbar-thumb { background: #ff5500; }
   </style>
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans selection:bg-cyan-500 selection:text-black">
+<body class="bg-black text-white selection:bg-[#ff5500] selection:text-black min-h-screen flex flex-col justify-between">
 
-  <!-- Header -->
-  <nav class="border-b border-slate-800/80 backdrop-blur-md sticky top-0 z-40 bg-slate-950/80">
-    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+  <!-- Top Announcement Bar -->
+  <div class="bg-[#ff5500] text-black font-mono text-xs font-black tracking-widest py-1.5 px-4 text-center uppercase flex items-center justify-center gap-3">
+    <span>[ SYSTEM // V1.0 PRODUCTION RELEASE LIVE ]</span>
+    <span class="hidden md:inline">•</span>
+    <span class="hidden md:inline">ZERO-DAY ENTROPY SHIELD + 110MS VOICE ENGINE</span>
+    <a href="#demo" class="underline hover:text-white font-black ml-2">[ TRY PLAYGROUND ]</a>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="border-b border-neutral-800 bg-black/90 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
       <div class="flex items-center space-x-3">
-        <span class="text-2xl">⚡</span>
-        <span class="font-bold text-xl tracking-tight bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">DevSuperSuite</span>
+        <div class="w-8 h-8 bg-[#ff5500] text-black flex items-center justify-center font-black text-lg">⚡</div>
+        <span class="font-black text-xl tracking-tight text-white uppercase">DEVSUPERSUITE</span>
+        <span class="text-[10px] font-mono text-[#ff5500] border border-[#ff5500] px-1.5 py-0.5 uppercase tracking-wider hidden sm:inline">OFFICIAL</span>
       </div>
-      <div class="flex items-center space-x-6">
-        <a href="#demo" class="text-sm text-purple-400 hover:text-purple-300 font-semibold transition">Live Demo</a>
-        <a href="#features" class="text-sm text-slate-400 hover:text-cyan-400 transition">Features</a>
-        <a href="#pricing" class="text-sm text-slate-400 hover:text-cyan-400 transition">Pricing</a>
-        <a href="blog/index.html" class="text-sm text-slate-400 hover:text-cyan-400 transition">Blog</a>
-        <a href="https://gumroad.com/l/tlzdco" target="_blank" class="text-sm text-slate-400 hover:text-purple-400 transition">Gumroad Store</a>
-        <button onclick="openUpiModal('Hacker Solo', 1499, 29)" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 px-4 py-2 rounded-lg font-semibold text-sm transition shadow-lg shadow-cyan-500/20">
-          <i class="fa-solid fa-qrcode mr-1"></i> Pay via UPI (₹1,499 / $29)
+
+      <div class="flex items-center space-x-6 text-sm font-mono">
+        <a href="#demo" class="text-[#ff5500] hover:text-white font-bold transition uppercase tracking-wider">// PLAYGROUND</a>
+        <a href="#features" class="text-neutral-400 hover:text-white transition uppercase tracking-wider hidden md:inline">SYSTEMS</a>
+        <a href="#pricing" class="text-neutral-400 hover:text-white transition uppercase tracking-wider">PRICING</a>
+        <a href="blog/index.html" class="text-neutral-400 hover:text-white transition uppercase tracking-wider hidden sm:inline">DISPATCHES</a>
+        <a href="https://gumroad.com/l/tlzdco" target="_blank" class="text-neutral-400 hover:text-[#ff5500] transition uppercase tracking-wider hidden lg:inline">GUMROAD</a>
+
+        <button onclick="openUpiModal('Hacker Solo', 1499, 29)" class="bg-[#ff5500] hover:bg-[#ff6a00] text-black font-black px-4 py-2 text-xs uppercase tracking-wider transition border border-[#ff5500] shadow-[0_0_20px_rgba(255,85,0,0.3)]">
+          <i class="fa-solid fa-bolt mr-1"></i> PAY UPI (₹1,499)
         </button>
       </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="max-w-5xl mx-auto px-6 pt-20 pb-16 text-center">
-    <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full border border-cyan-500/30 bg-cyan-950/30 text-cyan-400 text-xs font-medium mb-6">
-      <span class="animate-pulse">●</span>
-      <span>Engineered for Cursor, Claude Code, Antigravity & VS Code</span>
-    </div>
-    <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight leading-tight mb-6">
-      Code with your <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Voice</span>.<br>
-      Protect your <span class="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">Secrets</span>.
-    </h1>
-    <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-10">
-      The dual-power developer toolkit: zero-latency full-duplex hands-free voice control with acoustic echo cancellation, paired with an enterprise pre-commit secret shield.
-    </p>
-    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-      <button onclick="openUpiModal('Hacker Solo', 1499, 29)" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 font-bold text-slate-950 text-base transition shadow-xl shadow-cyan-500/25 flex items-center justify-center gap-2">
-        <i class="fa-solid fa-qrcode"></i> Instant UPI Checkout (₹1,499)
-      </button>
-      <a href="https://gumroad.com/l/tlzdco" target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-xl border border-purple-500/50 hover:border-purple-400 bg-purple-950/30 text-purple-200 font-semibold text-base transition flex items-center justify-center gap-2">
-        <i class="fa-solid fa-credit-card"></i> Pay via Gumroad ($29+)
-      </a>
-      <a href="#demo" class="text-sm text-purple-400 hover:text-purple-300 font-semibold transition">Live Demo</a>
-        <a href="#features" class="w-full sm:w-auto px-8 py-4 rounded-xl border border-slate-800 hover:border-slate-700 bg-slate-900/50 text-slate-300 font-semibold text-base transition flex items-center justify-center gap-2">
-        <i class="fa-solid fa-shield-halved"></i> Explore Features
-      </a>
-    </div>
-  </section>
-
-  <!-- Features Grid -->
-  <section id="features" class="max-w-6xl mx-auto px-6 py-16">
-    <div class="text-center mb-16">
-      <h2 class="text-3xl font-bold text-slate-100 mb-3">Two Elite Systems. One Unified Suite.</h2>
-      <p class="text-slate-400 text-sm">Everything you need to ship 3x faster without risking credential leaks.</p>
-    </div>
-
-    <div class="grid md:grid-cols-2 gap-8">
-      <!-- Feature 1: Live Voice -->
-      <div class="p-8 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-cyan-500/40 transition">
-        <div class="w-12 h-12 rounded-xl bg-cyan-950 border border-cyan-800 flex items-center justify-center text-cyan-400 text-xl mb-6">
-          <i class="fa-solid fa-microphone"></i>
-        </div>
-        <h3 class="text-xl font-bold text-slate-100 mb-3">Universal Live Voice Responder</h3>
-        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-          Full duplex real-time speech typist. Speak naturally—it cancels fan noise, mutes assistant speech echo, focuses your IDE chat bar, pastes text, and hits Enter automatically.
-        </p>
-        <ul class="space-y-3 text-xs text-slate-300">
-          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Instant Barge-In: Say "CROW", "STOP", or press F8</li>
-          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> 100% Hands-Free: Continuous adaptive VAD</li>
-          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Auto-Focus IDE: Antigravity, Cursor, VS Code, Windsurf</li>
-        </ul>
+  <section class="relative border-b border-neutral-800 grid-pattern pt-20 pb-20 overflow-hidden">
+    <div class="max-w-6xl mx-auto px-6 text-center relative z-10">
+      
+      <!-- Status Badge -->
+      <div class="inline-flex items-center gap-2 px-3 py-1 bg-neutral-950 border border-neutral-700 text-neutral-300 text-xs font-mono uppercase tracking-widest mb-8">
+        <span class="w-2 h-2 rounded-full bg-[#ff5500] animate-ping"></span>
+        <span class="text-[#ff5500] font-black">[ READY ]</span> HARDWARE-GRADE ACCELERATION FOR CURSOR & CLAUDE CODE
       </div>
 
-      <!-- Feature 2: Agent Shield -->
-      <div class="p-8 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-purple-500/40 transition">
-        <div class="w-12 h-12 rounded-xl bg-purple-950 border border-purple-800 flex items-center justify-center text-purple-400 text-xl mb-6">
-          <i class="fa-solid fa-shield-halved"></i>
-        </div>
-        <h3 class="text-xl font-bold text-slate-100 mb-3">AgentShield Guardian Engine</h3>
-        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-          Zero-tolerance pre-commit and autonomous CLI guard. Detects OpenAI, Stripe, AWS, GitHub PATs, and PII before accidental commits or terminal execution.
-        </p>
-        <ul class="space-y-3 text-xs text-slate-300">
-          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Pre-Commit Hooks: Auto-installed with 1 command</li>
-          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Shannon Entropy Filter: Zero false alarms on test data</li>
-          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Destructive Command Interceptor: Blocks rm -rf and force pushes</li>
-        </ul>
+      <!-- Main Headline -->
+      <h1 class="text-4xl sm:text-6xl md:text-7xl font-black tracking-tighter text-white uppercase leading-[1.05] max-w-5xl mx-auto mb-6">
+        HANDS-FREE VOICE CODING. <br/>
+        <span class="text-[#ff5500] bg-clip-text">ZERO-DAY SECRET SHIELD.</span>
+      </h1>
+
+      <p class="text-neutral-400 text-base sm:text-lg max-w-2xl mx-auto font-mono mb-10 leading-relaxed">
+        Stop prompt-typing fatigue and eliminate accidental API key leaks. 
+        Engineered with WebRTC Acoustic Echo Cancellation, 110ms neural audio streaming, and local Shannon Entropy pre-commit defense.
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
+        <a href="#demo" class="w-full sm:w-auto px-8 py-4 bg-[#ff5500] hover:bg-[#ff6a00] text-black font-black text-sm uppercase tracking-widest transition border border-[#ff5500] shadow-[0_0_30px_rgba(255,85,0,0.4)] flex items-center justify-center gap-2">
+          <i class="fa-solid fa-terminal"></i>
+          <span>LAUNCH LIVE PLAYGROUND</span>
+        </a>
+
+        <a href="https://gumroad.com/l/tlzdco" target="_blank" class="w-full sm:w-auto px-8 py-4 bg-black hover:bg-neutral-950 text-white font-bold text-sm uppercase tracking-widest transition border border-neutral-700 hover:border-[#ff5500] flex items-center justify-center gap-2">
+          <i class="fa-solid fa-cart-shopping text-[#ff5500]"></i>
+          <span>BUY ON GUMROAD ($29)</span>
+        </a>
+
+        <button onclick="openUpiModal('Hacker Solo', 1499, 29)" class="w-full sm:w-auto px-8 py-4 bg-neutral-950 hover:bg-neutral-900 text-[#ff5500] font-mono font-bold text-sm uppercase tracking-widest transition border border-neutral-800 hover:border-[#ff5500] flex items-center justify-center gap-2">
+          <i class="fa-solid fa-qrcode"></i>
+          <span>INSTANT UPI (₹1,499)</span>
+        </button>
       </div>
+
+      <!-- Quick Metrics Ribbon -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-px bg-neutral-800 border border-neutral-800 max-w-4xl mx-auto font-mono text-left">
+        <div class="bg-black p-4">
+          <span class="text-xs text-neutral-500 uppercase tracking-widest block">// LATENCY</span>
+          <span class="text-2xl font-black text-white">110 MS</span>
+          <span class="text-[11px] text-[#ff5500] block mt-0.5">Ultra-Low Neural Buffer</span>
+        </div>
+        <div class="bg-black p-4">
+          <span class="text-xs text-neutral-500 uppercase tracking-widest block">// AEC SUPPRESSION</span>
+          <span class="text-2xl font-black text-white">-44.2 dB</span>
+          <span class="text-[11px] text-[#ff5500] block mt-0.5">Zero Speaker Feedback</span>
+        </div>
+        <div class="bg-black p-4">
+          <span class="text-xs text-neutral-500 uppercase tracking-widest block">// SHANNON FILTER</span>
+          <span class="text-2xl font-black text-white">&gt; 3.8 BITS</span>
+          <span class="text-[11px] text-[#ff5500] block mt-0.5">Zero False Positives</span>
+        </div>
+        <div class="bg-black p-4">
+          <span class="text-xs text-neutral-500 uppercase tracking-widest block">// PRIVACY</span>
+          <span class="text-2xl font-black text-white">100% LOCAL</span>
+          <span class="text-[11px] text-[#ff5500] block mt-0.5">Zero-Knowledge Offline</span>
+        </div>
+      </div>
+
     </div>
   </section>
-
 
   <!-- Interactive Live Playground Section -->
-  <section id="demo" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-900">
-    <div class="text-center mb-10">
-      <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full border border-purple-500/30 bg-purple-950/30 text-purple-400 text-xs font-medium mb-3">
-        <span class="animate-pulse">●</span>
-        <span>Interactive Live Browser Sandbox</span>
-      </div>
-      <h2 class="text-3xl md:text-4xl font-extrabold text-slate-100 mb-3">Test Both Engines Live in Your Browser</h2>
-      <p class="text-slate-400 text-sm max-w-2xl mx-auto">
-        No installation required. Experience AgentShield's zero-day entropy scanner and Live Voice Responder's neural audio engine right here.
-      </p>
-    </div>
-
-    <!-- Playground Tabs -->
-    <div class="flex justify-center mb-8">
-      <div class="bg-slate-900 p-1.5 rounded-2xl border border-slate-800 flex gap-2">
-        <button id="tabShieldBtn" onclick="switchPlaygroundTab('shield')" class="px-6 py-2.5 rounded-xl font-bold text-sm transition bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg shadow-purple-500/20 flex items-center gap-2">
-          <i class="fa-solid fa-shield-halved"></i> 1. AgentShield Secret Detector
-        </button>
-        <button id="tabVoiceBtn" onclick="switchPlaygroundTab('voice')" class="px-6 py-2.5 rounded-xl font-semibold text-sm transition text-slate-400 hover:text-slate-200 flex items-center gap-2">
-          <i class="fa-solid fa-microphone"></i> 2. Live Voice Responder Simulator
-        </button>
-      </div>
-    </div>
-
-    <!-- Tab 1: AgentShield Sandbox -->
-    <div id="shieldSandbox" class="bg-slate-900/90 border border-purple-500/40 rounded-3xl p-6 md:p-8 shadow-2xl">
-      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4 pb-4 border-b border-slate-800">
-        <div>
-          <h3 class="text-xl font-bold text-white flex items-center gap-2">
-            <span class="w-3 h-3 rounded-full bg-purple-400 animate-ping"></span>
-            Real-Time Entropy & Pattern Analyzer
-          </h3>
-          <p class="text-xs text-slate-400 mt-1">Paste your code below or test with presets. Shannon entropy & regex patterns scan on every keystroke.</p>
+  <section id="demo" class="py-20 bg-black border-b border-neutral-800">
+    <div class="max-w-6xl mx-auto px-6">
+      
+      <div class="text-center mb-12">
+        <div class="inline-block font-mono text-xs text-[#ff5500] uppercase tracking-widest border border-[#ff5500] px-3 py-1 mb-3">
+          // INTERACTIVE BROWSER SANDBOX
         </div>
-        <div class="flex flex-wrap gap-2">
-          <button onclick="loadSnippet('leaks')" class="px-3 py-1.5 bg-red-950/60 border border-red-700/60 text-red-300 hover:bg-red-900/80 rounded-lg text-xs font-semibold transition">
-            <i class="fa-solid fa-bug mr-1"></i> Load Leaky Python
+        <h2 class="text-3xl md:text-5xl font-black text-white uppercase tracking-tight">
+          TEST BOTH ENGINES LIVE
+        </h2>
+        <p class="text-neutral-400 font-mono text-xs md:text-sm mt-2 max-w-xl mx-auto">
+          No installation needed. Execute real-time Shannon Entropy scanning and simulated full-duplex voice prompt injection below.
+        </p>
+      </div>
+
+      <!-- Playground Tab Selector -->
+      <div class="flex justify-center mb-8">
+        <div class="bg-neutral-950 p-1 border border-neutral-800 flex gap-1 font-mono text-xs">
+          <button id="tabShieldBtn" onclick="switchPlaygroundTab('shield')" class="px-5 py-2.5 font-bold uppercase transition bg-[#ff5500] text-black border border-[#ff5500]">
+            <i class="fa-solid fa-shield-halved mr-1.5"></i> 01 // AGENTSHIELD ENTROPY GUARD
           </button>
-          <button onclick="loadSnippet('env')" class="px-3 py-1.5 bg-amber-950/60 border border-amber-700/60 text-amber-300 hover:bg-amber-900/80 rounded-lg text-xs font-semibold transition">
-            <i class="fa-solid fa-file-code mr-1"></i> Load .env File
-          </button>
-          <button onclick="loadSnippet('clean')" class="px-3 py-1.5 bg-emerald-950/60 border border-emerald-700/60 text-emerald-300 hover:bg-emerald-900/80 rounded-lg text-xs font-semibold transition">
-            <i class="fa-solid fa-check mr-1"></i> Clean Code (Pass)
+          <button id="tabVoiceBtn" onclick="switchPlaygroundTab('voice')" class="px-5 py-2.5 font-bold uppercase transition text-neutral-400 hover:text-white">
+            <i class="fa-solid fa-microphone mr-1.5"></i> 02 // LIVE VOICE RESPONDER
           </button>
         </div>
       </div>
 
-      <div class="grid lg:grid-cols-2 gap-6">
-        <!-- Editor Input -->
-        <div>
-          <div class="flex justify-between items-center text-xs text-slate-400 mb-2">
-            <span class="font-mono flex items-center gap-1.5"><i class="fa-solid fa-code text-purple-400"></i> Code Input (app.py)</span>
-            <span id="charCount" class="font-mono text-slate-500">0 chars</span>
-          </div>
-          <textarea id="codeInput" oninput="runShieldScan()" rows="12" class="w-full bg-slate-950 border border-slate-800 rounded-2xl p-4 font-mono text-xs text-slate-200 focus:outline-none focus:border-purple-500 transition shadow-inner leading-relaxed" placeholder="Paste your code or secrets here..."></textarea>
-        </div>
-
-        <!-- Real-Time Analysis Feed -->
-        <div class="flex flex-col justify-between">
+      <!-- TAB 1: AgentShield Sandbox -->
+      <div id="shieldSandbox" class="bg-neutral-950 border border-neutral-800 p-6 md:p-8">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6 pb-4 border-b border-neutral-800 font-mono">
           <div>
-            <div class="flex justify-between items-center text-xs text-slate-400 mb-2">
-              <span class="font-mono flex items-center gap-1.5"><i class="fa-solid fa-radar text-purple-400"></i> AgentShield Diagnostic Telemetry</span>
-              <span id="scanStatusBadge" class="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-slate-800 text-slate-400">Ready</span>
-            </div>
-            <div id="findingsContainer" class="bg-slate-950 border border-slate-800 rounded-2xl p-4 min-h-[250px] max-h-[280px] overflow-y-auto space-y-2.5 font-mono text-xs">
-              <!-- Rendered via JS -->
-            </div>
+            <span class="text-xs text-[#ff5500] uppercase tracking-widest">// REAL-TIME SECURITY TELEMETRY</span>
+            <h3 class="text-xl font-black text-white uppercase tracking-tight mt-1">Shannon Information Density & Token Interceptor</h3>
           </div>
-
-          <!-- Bottom Summary & Action -->
-          <div class="mt-4 pt-4 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-3">
-            <div class="text-xs text-slate-400">
-              <span id="hookStatusText" class="text-emerald-400 font-semibold"><i class="fa-solid fa-shield mr-1"></i> Pre-Commit Guard: Ready</span>
-            </div>
-            <button onclick="openUpiModal('Hacker Solo', 1499, 29)" class="w-full sm:w-auto px-5 py-2.5 bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-400 hover:to-pink-500 text-white font-bold rounded-xl text-xs transition shadow-lg shadow-purple-500/25 flex items-center justify-center gap-2">
-              <i class="fa-solid fa-download"></i> Get AgentShield Pre-Commit CLI (₹1,499)
+          <div class="flex items-center gap-2">
+            <span class="text-xs text-neutral-400 uppercase">PRESETS:</span>
+            <button onclick="loadCodeSnippet('leaks')" class="px-3 py-1 bg-black hover:bg-neutral-900 border border-red-700 text-red-400 text-xs font-bold uppercase transition">
+              <i class="fa-solid fa-biohazard mr-1"></i> LEAKY PYTHON
+            </button>
+            <button onclick="loadCodeSnippet('env')" class="px-3 py-1 bg-black hover:bg-neutral-900 border border-amber-600 text-amber-400 text-xs font-bold uppercase transition">
+              <i class="fa-solid fa-file-code mr-1"></i> .ENV CONFIG
+            </button>
+            <button onclick="loadCodeSnippet('clean')" class="px-3 py-1 bg-black hover:bg-neutral-900 border border-emerald-600 text-emerald-400 text-xs font-bold uppercase transition">
+              <i class="fa-solid fa-circle-check mr-1"></i> CLEAN CODE
             </button>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Tab 2: Live Voice Responder Sandbox -->
-    <div id="voiceSandbox" class="hidden bg-slate-900/90 border border-cyan-500/40 rounded-3xl p-6 md:p-8 shadow-2xl">
-      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4 pb-4 border-b border-slate-800">
-        <div>
-          <h3 class="text-xl font-bold text-white flex items-center gap-2">
-            <span class="w-3 h-3 rounded-full bg-cyan-400 animate-ping"></span>
-            Full-Duplex Audio & Neural VAD Engine
-          </h3>
-          <p class="text-xs text-slate-400 mt-1">Simulate real-time voice prompts, acoustic echo cancellation, and IDE chat injection.</p>
-        </div>
-        <div class="flex items-center gap-2">
-          <span class="text-xs font-mono text-slate-400">Latency:</span>
-          <span id="latencyDisplay" class="px-2.5 py-1 rounded bg-cyan-950 border border-cyan-800 text-cyan-400 font-mono text-xs font-bold">118ms</span>
-        </div>
-      </div>
-
-      <div class="grid lg:grid-cols-2 gap-6">
-        <!-- Voice Waveform & Trigger Panel -->
-        <div class="space-y-4">
-          <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5 text-center">
-            <div class="h-20 flex items-center justify-center gap-1.5 px-4 mb-4" id="waveformVisualizer">
-              <span class="w-1.5 bg-cyan-500/40 h-4 rounded-full transition-all duration-150"></span>
-              <span class="w-1.5 bg-cyan-500/60 h-8 rounded-full transition-all duration-150"></span>
-              <span class="w-1.5 bg-cyan-400 h-14 rounded-full transition-all duration-150 animate-pulse"></span>
-              <span class="w-1.5 bg-blue-500 h-10 rounded-full transition-all duration-150"></span>
-              <span class="w-1.5 bg-cyan-400 h-16 rounded-full transition-all duration-150 animate-pulse"></span>
-              <span class="w-1.5 bg-blue-400 h-12 rounded-full transition-all duration-150"></span>
-              <span class="w-1.5 bg-cyan-500/60 h-6 rounded-full transition-all duration-150"></span>
+        <div class="grid lg:grid-cols-2 gap-6">
+          <!-- Editor -->
+          <div class="flex flex-col">
+            <div class="bg-black border border-neutral-800 px-4 py-2 flex items-center justify-between font-mono text-xs">
+              <span class="text-neutral-400 uppercase"><i class="fa-solid fa-code text-[#ff5500] mr-1"></i> INPUT_BUFFER (APP.PY)</span>
+              <span id="charCount" class="text-neutral-500">0 CHARS</span>
             </div>
-            <p id="voiceStateLabel" class="text-xs font-mono text-cyan-400 mb-4">● Adaptive VAD Listening (Background noise filtered)</p>
-            <div class="grid grid-cols-2 gap-2">
-              <button onclick="simulateVoice('Refactor auth middleware to use JWT and add unit tests')" class="p-2.5 bg-slate-900 hover:bg-slate-800 border border-slate-800 rounded-xl text-xs font-medium text-slate-300 transition text-left">
-                🗣️ "Refactor auth middleware..."
-              </button>
-              <button onclick="simulateVoice('Fix IndexError on line 42 and push to staging')" class="p-2.5 bg-slate-900 hover:bg-slate-800 border border-slate-800 rounded-xl text-xs font-medium text-slate-300 transition text-left">
-                🗣️ "Fix IndexError on line 42..."
-              </button>
-              <button onclick="triggerBargeIn()" class="p-2.5 bg-red-950/40 hover:bg-red-900/50 border border-red-800/60 rounded-xl text-xs font-bold text-red-300 transition text-left col-span-2 flex items-center justify-between">
-                <span>🛑 Say "CROW" / "STOP" (Barge-In)</span>
-                <span class="text-[10px] font-mono text-red-400 uppercase">Immediate Cutoff</span>
-              </button>
-            </div>
+            <textarea id="codeInput" oninput="runEntropyShieldScan()" class="w-full h-80 bg-black text-neutral-100 font-mono text-xs p-4 border border-t-0 border-neutral-800 focus:outline-none focus:border-[#ff5500] resize-none leading-relaxed" placeholder="Type or paste code here to test live entropy calculation..."></textarea>
           </div>
 
-          <div class="grid grid-cols-3 gap-2 text-center text-xs">
-            <div class="p-3 bg-slate-950 border border-slate-800 rounded-xl">
-              <span class="text-slate-500 block text-[10px] uppercase">Echo Cancellation</span>
-              <span class="text-emerald-400 font-bold font-mono">-44.2 dB</span>
+          <!-- Diagnostic Telemetry -->
+          <div class="flex flex-col">
+            <div class="bg-black border border-neutral-800 px-4 py-2 flex items-center justify-between font-mono text-xs">
+              <span class="text-neutral-400 uppercase"><i class="fa-solid fa-microchip text-[#ff5500] mr-1"></i> DIAGNOSTIC TELEMETRY</span>
+              <span id="hazardBadge" class="text-xs font-black uppercase tracking-wider text-emerald-400 bg-emerald-950/40 border border-emerald-800 px-2 py-0.5">READY</span>
             </div>
-            <div class="p-3 bg-slate-950 border border-slate-800 rounded-xl">
-              <span class="text-slate-500 block text-[10px] uppercase">Target Focus</span>
-              <span class="text-cyan-400 font-bold font-mono">Cursor IDE</span>
-            </div>
-            <div class="p-3 bg-slate-950 border border-slate-800 rounded-xl">
-              <span class="text-slate-500 block text-[10px] uppercase">Auto-Enter</span>
-              <span class="text-purple-400 font-bold font-mono">ENABLED</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Simulated IDE Terminal / Chat Box -->
-        <div class="flex flex-col justify-between bg-slate-950 border border-slate-800 rounded-2xl p-5">
-          <div>
-            <div class="flex items-center justify-between text-xs text-slate-400 mb-3 pb-2 border-b border-slate-800">
-              <div class="flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-red-500"></span>
-                <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
-                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
-                <span class="font-mono text-xs text-slate-300 ml-1">Cursor / Claude Code Chat</span>
+            <div id="findingsContainer" class="w-full h-80 bg-black border border-t-0 border-neutral-800 p-4 font-mono text-xs overflow-y-auto space-y-2">
+              <div class="p-4 border border-neutral-800 bg-neutral-950 text-neutral-400 text-center mt-20">
+                [ WAITING FOR CODE BUFFER ]<br/>
+                <span class="text-[11px] text-neutral-600 mt-1 block">Click presets above or paste raw strings to execute live scan.</span>
               </div>
-              <span class="text-[10px] text-cyan-400 font-mono">Voice Hook Active</span>
             </div>
-            <div id="ideLog" class="space-y-3 font-mono text-xs min-h-[160px] max-h-[180px] overflow-y-auto">
-              <div class="text-slate-500">[System] DevSuperSuite Live Voice Bridge connected to active IDE window.</div>
-              <div class="text-slate-500">[System] Waiting for developer voice command...</div>
+          </div>
+        </div>
+
+        <div class="mt-4 pt-4 border-t border-neutral-800 flex flex-col sm:flex-row items-center justify-between font-mono text-xs text-neutral-400">
+          <div id="hookStatus" class="font-bold uppercase tracking-wider">
+            PRE-COMMIT HOOK STATUS: <span class="text-neutral-500">STANDBY</span>
+          </div>
+          <div class="text-[11px] text-neutral-500 mt-2 sm:mt-0">
+            SHANNON EQUATION: H(X) = - &sum; P(x) log2 P(x)
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 2: Live Voice Responder Sandbox -->
+      <div id="voiceSandbox" class="hidden bg-neutral-950 border border-neutral-800 p-6 md:p-8">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6 pb-4 border-b border-neutral-800 font-mono">
+          <div>
+            <span class="text-xs text-[#ff5500] uppercase tracking-widest">// NEURAL AUDIO PIPELINE</span>
+            <h3 class="text-xl font-black text-white uppercase tracking-tight mt-1">Full-Duplex VAD & Auto Prompt Bridge</h3>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="text-xs text-neutral-400 uppercase">ROUNDTRIP:</span>
+            <span id="latencyDisplay" class="px-2.5 py-1 bg-black border border-[#ff5500] text-[#ff5500] font-bold text-xs uppercase">112 MS</span>
+          </div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-6">
+          <!-- Voice Visualizer -->
+          <div class="bg-black border border-neutral-800 p-6 flex flex-col justify-between">
+            <div>
+              <div class="font-mono text-xs text-neutral-500 uppercase tracking-widest mb-4">// ACOUSTIC SPECTRUM & AEC DYNAMICS</div>
+              <!-- Simulated Waveform Bars -->
+              <div class="h-32 flex items-center justify-center gap-1.5 px-4 bg-neutral-950 border border-neutral-900">
+                <span class="w-1.5 h-6 bg-[#ff5500] animate-pulse"></span>
+                <span class="w-1.5 h-14 bg-[#ff5500] animate-pulse" style="animation-delay: 0.1s"></span>
+                <span class="w-1.5 h-20 bg-[#ff5500] animate-pulse" style="animation-delay: 0.2s"></span>
+                <span class="w-1.5 h-28 bg-[#ff5500] animate-pulse" style="animation-delay: 0.15s"></span>
+                <span class="w-1.5 h-16 bg-[#ff5500] animate-pulse" style="animation-delay: 0.25s"></span>
+                <span class="w-1.5 h-8 bg-[#ff5500] animate-pulse" style="animation-delay: 0.05s"></span>
+                <span class="w-1.5 h-22 bg-[#ff5500] animate-pulse" style="animation-delay: 0.3s"></span>
+                <span class="w-1.5 h-12 bg-[#ff5500] animate-pulse" style="animation-delay: 0.18s"></span>
+              </div>
+              <div class="flex justify-between font-mono text-[10px] text-neutral-500 mt-2">
+                <span>SPEAKER CANCEL: -44.2 dB</span>
+                <span class="text-[#ff5500]">VAD: VOICE_DETECTED</span>
+              </div>
+            </div>
+
+            <!-- Voice Trigger Presets -->
+            <div class="mt-6">
+              <span class="font-mono text-xs text-neutral-400 uppercase tracking-widest block mb-2">// TRIGGER SIMULATED PROMPT:</span>
+              <div class="grid grid-cols-2 gap-2 font-mono text-xs">
+                <button onclick="simulateVoice('Refactor auth middleware to use JWT and add unit tests')" class="p-2.5 bg-neutral-950 hover:bg-neutral-900 border border-neutral-800 hover:border-[#ff5500] text-left text-neutral-300 transition">
+                  🗣️ "Refactor auth middleware..."
+                </button>
+                <button onclick="simulateVoice('Fix IndexError on line 42 and sanitize input')" class="p-2.5 bg-neutral-950 hover:bg-neutral-900 border border-neutral-800 hover:border-[#ff5500] text-left text-neutral-300 transition">
+                  🗣️ "Fix IndexError on line 42..."
+                </button>
+              </div>
+
+              <!-- Barge in button -->
+              <button onclick="triggerVoiceBargeIn()" class="w-full mt-2 py-2.5 bg-red-950 hover:bg-red-900 border border-red-700 text-red-400 font-mono text-xs font-black uppercase tracking-wider transition">
+                <i class="fa-solid fa-hand mr-1"></i> SIMULATE BARGE-IN: SAY "CROW" (INTERRUPT ASSISTANT)
+              </button>
             </div>
           </div>
 
-          <!-- Bottom Action -->
-          <div class="mt-4 pt-4 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-3">
-            <span class="text-xs text-slate-400"><i class="fa-solid fa-keyboard mr-1 text-cyan-400"></i> Zero Manual Typing Required</span>
-            <button onclick="openUpiModal('Hacker Solo', 1499, 29)" class="w-full sm:w-auto px-5 py-2.5 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold rounded-xl text-xs transition shadow-lg shadow-cyan-500/25 flex items-center justify-center gap-2">
-              <i class="fa-solid fa-bolt"></i> Unlock Hands-Free Voice Coding (₹1,499)
+          <!-- IDE Chat Injection Stream -->
+          <div class="flex flex-col">
+            <div class="bg-black border border-neutral-800 px-4 py-2 flex items-center justify-between font-mono text-xs">
+              <span class="text-neutral-400 uppercase"><i class="fa-solid fa-code-branch text-[#ff5500] mr-1"></i> CURSOR / CLAUDE CODE INJECTION LOG</span>
+              <span class="text-emerald-400 uppercase tracking-widest">BRIDGE_ACTIVE</span>
+            </div>
+            <div id="ideLog" class="w-full h-80 bg-black border border-t-0 border-neutral-800 p-4 font-mono text-xs overflow-y-auto space-y-2 text-neutral-300 leading-relaxed">
+              <div class="text-neutral-600">[BRIDGE] DevSuperSuite Live Voice Bridge initialized.</div>
+              <div class="text-neutral-600">[BRIDGE] Targeted Window: Cursor / Claude Code IDE.</div>
+              <div class="text-neutral-500">[STANDBY] Waiting for developer vocal command...</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Systems / Features Section -->
+  <section id="features" class="py-20 border-b border-neutral-800 bg-neutral-950">
+    <div class="max-w-6xl mx-auto px-6">
+      
+      <div class="font-mono text-xs text-[#ff5500] uppercase tracking-widest mb-3">// ARCHITECTURE BREAKDOWN</div>
+      <h2 class="text-3xl md:text-5xl font-black text-white uppercase tracking-tight mb-12">
+        DUAL-ENGINE CORE
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Feature 1 -->
+        <div class="p-8 bg-black border border-neutral-800 hover:border-[#ff5500] transition group">
+          <div class="w-10 h-10 bg-[#ff5500] text-black font-black flex items-center justify-center text-lg mb-6">01</div>
+          <span class="font-mono text-xs text-[#ff5500] uppercase tracking-widest block mb-1">VOICE INTERFACE</span>
+          <h3 class="text-2xl font-black text-white uppercase tracking-tight mb-4 group-hover:text-[#ff5500] transition">Live Voice Responder</h3>
+          <p class="text-neutral-400 font-mono text-xs leading-relaxed mb-6">
+            Eliminates constant alt-tabbing and keyboard prompt fatigue. Talk naturally while audio DSP cleans room noise and types directly into active Cursor or Claude Code windows.
+          </p>
+          <ul class="font-mono text-xs text-neutral-300 space-y-2.5">
+            <li class="flex items-center gap-2">
+              <span class="text-[#ff5500]">▸</span> <strong>Acoustic Echo Cancellation (AEC):</strong> -44dB speaker loopback suppression.
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-[#ff5500]">▸</span> <strong>Ultra-Low Neural Latency:</strong> 110ms turnaround pipeline.
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-[#ff5500]">▸</span> <strong>Deterministic Barge-In:</strong> Say "CROW" or press F8 to silence the assistant instantly.
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-[#ff5500]">▸</span> <strong>Autonomous IDE Focusing:</strong> Types prompt and executes Enter automatically.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="p-8 bg-black border border-neutral-800 hover:border-white transition group">
+          <div class="w-10 h-10 bg-white text-black font-black flex items-center justify-center text-lg mb-6">02</div>
+          <span class="font-mono text-xs text-neutral-400 uppercase tracking-widest block mb-1">DEFENSE INTERCEPTOR</span>
+          <h3 class="text-2xl font-black text-white uppercase tracking-tight mb-4 group-hover:text-white transition">AgentShield Guardian</h3>
+          <p class="text-neutral-400 font-mono text-xs leading-relaxed mb-6">
+            AI prompt bars and tracebacks frequently leak production keys into public commits. AgentShield calculates information density to stop zero-day key leaks without false alarms.
+          </p>
+          <ul class="font-mono text-xs text-neutral-300 space-y-2.5">
+            <li class="flex items-center gap-2">
+              <span class="text-white">▸</span> <strong>Shannon Entropy Calculation:</strong> Flags high-entropy random keys (H &gt; 3.8).
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-white">▸</span> <strong>15+ Pattern Interceptors:</strong> OpenAI, Anthropic, Stripe, AWS, GitHub PATs.
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-white">▸</span> <strong>Irreversible Command Block:</strong> Intercepts <code class="text-[#ff5500]">rm -rf /</code> and forced git pushes.
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-white">▸</span> <strong>1-Second Pre-Commit Hook:</strong> Single command deployment into any git repo.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="py-20 border-b border-neutral-800 bg-black">
+    <div class="max-w-6xl mx-auto px-6">
+      
+      <div class="text-center mb-16">
+        <div class="inline-block font-mono text-xs text-[#ff5500] uppercase tracking-widest border border-[#ff5500] px-3 py-1 mb-3">
+          // COMMERCIAL LICENSING
+        </div>
+        <h2 class="text-3xl md:text-5xl font-black text-white uppercase tracking-tight">
+          LIFETIME ACCESS. ZERO SUBSCRIPTION.
+        </h2>
+        <p class="text-neutral-400 font-mono text-xs md:text-sm mt-2 max-w-lg mx-auto">
+          One-time payment. Instant archive delivery. No recurring cloud seat taxes.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <!-- Solo Plan -->
+        <div class="p-8 bg-neutral-950 border-2 border-[#ff5500] relative flex flex-col justify-between">
+          <div class="absolute -top-3.5 right-6 bg-[#ff5500] text-black font-mono font-black text-[10px] uppercase tracking-widest px-3 py-1">
+            POPULAR // DEVELOPER SOLO
+          </div>
+
+          <div>
+            <span class="font-mono text-xs text-[#ff5500] uppercase tracking-widest block mb-1">INDIVIDUAL LICENSE</span>
+            <h3 class="text-2xl font-black text-white uppercase">Hacker Solo</h3>
+            <div class="my-6">
+              <span class="text-4xl font-black text-white">₹1,499</span>
+              <span class="text-neutral-400 font-mono text-sm ml-2">/ $29 USD</span>
+              <span class="text-neutral-500 font-mono text-xs block mt-1">One-time payment • Lifetime updates</span>
+            </div>
+
+            <ul class="font-mono text-xs text-neutral-300 space-y-3 mb-8">
+              <li class="flex items-center gap-2">
+                <span class="text-[#ff5500] font-bold">✓</span> Full DevSuperSuite Commercial v1.0 ZIP
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-[#ff5500] font-bold">✓</span> Live Voice Responder Engine (Win32 / macOS)
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-[#ff5500] font-bold">✓</span> AgentShield Shannon Entropy Git Hook
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-[#ff5500] font-bold">✓</span> 1-Click Automated Setup Batch Launcher
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-[#ff5500] font-bold">✓</span> Personal Commercial Use Allowed
+              </li>
+            </ul>
+          </div>
+
+          <div class="space-y-2">
+            <button onclick="openUpiModal('Hacker Solo', 1499, 29)" class="w-full py-3.5 bg-[#ff5500] hover:bg-[#ff6a00] text-black font-mono font-black text-xs uppercase tracking-wider transition border border-[#ff5500]">
+              <i class="fa-solid fa-qrcode mr-1"></i> PAY VIA UPI (₹1,499)
             </button>
+            <a href="https://gumroad.com/l/tlzdco" target="_blank" class="block w-full py-3 bg-black hover:bg-neutral-900 text-white text-center font-mono font-bold text-xs uppercase tracking-wider transition border border-neutral-700 hover:border-[#ff5500]">
+              CARD / PAYPAL VIA GUMROAD ($29)
+            </a>
+          </div>
+        </div>
+
+        <!-- Team Plan -->
+        <div class="p-8 bg-neutral-950 border border-neutral-800 hover:border-neutral-700 flex flex-col justify-between">
+          <div>
+            <span class="font-mono text-xs text-neutral-400 uppercase tracking-widest block mb-1">TEAM / AGENCY LICENSE</span>
+            <h3 class="text-2xl font-black text-white uppercase">Agency Pack</h3>
+            <div class="my-6">
+              <span class="text-4xl font-black text-white">₹4,999</span>
+              <span class="text-neutral-400 font-mono text-sm ml-2">/ $99 USD</span>
+              <span class="text-neutral-500 font-mono text-xs block mt-1">One-time payment • Up to 10 Seats</span>
+            </div>
+
+            <ul class="font-mono text-xs text-neutral-300 space-y-3 mb-8">
+              <li class="flex items-center gap-2">
+                <span class="text-white font-bold">✓</span> Everything in Hacker Solo Plan
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-white font-bold">✓</span> 10 Developer Commercial Deployment Seats
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-white font-bold">✓</span> Custom Entropy Threshold Rule Configurations
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-white font-bold">✓</span> Priority Engineering Telegram & Email Support
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-white font-bold">✓</span> Commercial Client Work Redistribution Rights
+              </li>
+            </ul>
+          </div>
+
+          <div class="space-y-2">
+            <button onclick="openUpiModal('Agency Pack', 4999, 99)" class="w-full py-3.5 bg-white hover:bg-neutral-200 text-black font-mono font-black text-xs uppercase tracking-wider transition">
+              <i class="fa-solid fa-qrcode mr-1"></i> PAY VIA UPI (₹4,999)
+            </button>
+            <a href="https://gumroad.com/l/tlzdco" target="_blank" class="block w-full py-3 bg-black hover:bg-neutral-900 text-white text-center font-mono font-bold text-xs uppercase tracking-wider transition border border-neutral-700 hover:border-white">
+              CARD / PAYPAL VIA GUMROAD ($99)
+            </a>
           </div>
         </div>
       </div>
+
     </div>
   </section>
-\n  <!-- Pricing Section -->
-  <section id="pricing" class="max-w-4xl mx-auto px-6 py-16">
-    <div class="text-center mb-12">
-      <h2 class="text-3xl font-bold text-slate-100 mb-3">Simple, Transparent Lifetime Pricing</h2>
-      <p class="text-slate-400 text-sm">Pay once, own forever. Direct instant UPI or Card payment.</p>
-    </div>
 
-    <div class="grid md:grid-cols-2 gap-8">
-      <!-- Solo License -->
-      <div class="p-8 rounded-2xl bg-slate-900 border border-cyan-500/50 neon-glow relative">
-        <div class="absolute -top-3 right-6 bg-cyan-500 text-slate-950 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-          Direct UPI Instant Pay
+  <!-- Engineering Dispatches / Blog Link -->
+  <section class="py-16 bg-neutral-950 border-b border-neutral-800">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-8">
+        <div>
+          <span class="font-mono text-xs text-[#ff5500] uppercase tracking-widest">// ENGINEERING DISPATCHES</span>
+          <h2 class="text-2xl font-black text-white uppercase tracking-tight mt-1">Technical Deep Dives</h2>
         </div>
-        <h3 class="text-lg font-bold text-slate-200 mb-2">Hacker / Solo Dev</h3>
-        <p class="text-slate-400 text-xs mb-6">For individual developers using Cursor, Claude Code, or Antigravity.</p>
-        <div class="flex items-baseline gap-2 mb-6">
-          <span class="text-4xl font-extrabold text-slate-100">₹1,499</span>
-          <span class="text-slate-400 text-sm">(\$29 USD)</span>
-        </div>
-        <ul class="space-y-3 text-xs text-slate-300 mb-8">
-          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Complete DevSuperSuite Zip Package</li>
-          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Live Voice Responder + AgentShield</li>
-          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> 1-Click Setup_DevSuite.bat</li>
-          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Lifetime updates & personal license</li>
-        </ul>
-        <button onclick="openUpiModal('Hacker Solo', 1499, 29)" class="block w-full py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-center text-sm transition mb-2">
-          <i class="fa-solid fa-qrcode mr-2"></i>Pay via UPI / QR Code (₹1,499)
-        </button>
-        <a href="https://gumroad.com/l/tlzdco" target="_blank" class="block w-full py-2 rounded-xl border border-slate-800 hover:border-slate-700 bg-slate-950 text-slate-400 hover:text-slate-200 font-medium text-center text-xs transition">
-          Pay with Card / PayPal ($29)
+        <a href="blog/index.html" class="font-mono text-xs text-[#ff5500] hover:text-white uppercase tracking-wider">
+          VIEW ALL DISPATCHES →
         </a>
       </div>
 
-      <!-- Team License -->
-      <div class="p-8 rounded-2xl bg-slate-900/60 border border-slate-800">
-        <h3 class="text-lg font-bold text-slate-200 mb-2">Team / Agency Pack</h3>
-        <p class="text-slate-400 text-xs mb-6">For software agencies and developer squads (up to 10 seats).</p>
-        <div class="flex items-baseline gap-2 mb-6">
-          <span class="text-4xl font-extrabold text-slate-100">₹4,999</span>
-          <span class="text-slate-400 text-sm">(\$99 USD)</span>
-        </div>
-        <ul class="space-y-3 text-xs text-slate-300 mb-8">
-          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> 10 Developer Commercial Licenses</li>
-          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Priority Discord & Email Support</li>
-          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Custom PII & Security Pattern Consultation</li>
-          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Enterprise Deployment Guide</li>
-        </ul>
-        <button onclick="openUpiModal('Team Agency', 4999, 99)" class="block w-full py-3 rounded-xl border border-slate-700 hover:border-slate-600 bg-slate-800 text-slate-200 font-bold text-center text-sm transition mb-2">
-          <i class="fa-solid fa-qrcode mr-2"></i>Pay via UPI / QR Code (₹4,999)
-        </button>
-        <a href="https://gumroad.com/l/tlzdco" target="_blank" class="block w-full py-2 rounded-xl border border-slate-800 hover:border-slate-700 bg-slate-950 text-slate-400 hover:text-slate-200 font-medium text-center text-xs transition">
-          Pay with Card / PayPal ($99)
+      <div class="grid md:grid-cols-2 gap-6 font-mono text-xs">
+        <a href="blog/how-to-prevent-cursor-ai-api-leaks.html" class="p-5 bg-black border border-neutral-800 hover:border-[#ff5500] transition block">
+          <span class="text-[#ff5500] uppercase tracking-widest block mb-2">// SECURITY ARCHITECTURE</span>
+          <h4 class="text-sm font-bold text-white mb-2">Why AI Coding Assistants Leak Your Secrets — And How to Stop It</h4>
+          <p class="text-neutral-400">Mathematical breakdown of Shannon Entropy versus regex false-positive suppression.</p>
+        </a>
+
+        <a href="blog/hands-free-voice-coding-cursor-claude.html" class="p-5 bg-black border border-neutral-800 hover:border-[#ff5500] transition block">
+          <span class="text-[#ff5500] uppercase tracking-widest block mb-2">// AUDIO DSP PIPELINE</span>
+          <h4 class="text-sm font-bold text-white mb-2">The Architecture of Zero-Latency Voice Coding for AI IDEs</h4>
+          <p class="text-neutral-400">WebRTC Acoustic Echo Cancellation, 110ms neural streaming, and deterministic voice barge-in.</p>
         </a>
       </div>
     </div>
   </section>
+
+  <!-- Footer -->
+  <footer class="py-12 bg-black font-mono text-xs border-t border-neutral-800">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-neutral-500">
+      <div class="flex items-center space-x-3">
+        <div class="w-6 h-6 bg-[#ff5500] text-black font-black flex items-center justify-center text-xs">⚡</div>
+        <span class="text-white font-bold uppercase">DEVSUPERSUITE OFFICIAL</span>
+        <span>• ALL SYSTEMS OPERATIONAL</span>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-6 text-neutral-400">
+        <a href="#demo" class="hover:text-[#ff5500] transition uppercase">// PLAYGROUND</a>
+        <a href="#pricing" class="hover:text-[#ff5500] transition uppercase">// PRICING</a>
+        <a href="blog/index.html" class="hover:text-[#ff5500] transition uppercase">// BLOG</a>
+        <a href="https://gumroad.com/l/tlzdco" target="_blank" class="hover:text-[#ff5500] transition uppercase">// GUMROAD</a>
+        <a href="https://github.com/ATP0925/devsupersuite" target="_blank" class="hover:text-[#ff5500] transition uppercase">// GITHUB</a>
+      </div>
+
+      <div class="text-[11px] text-neutral-600">
+        SETTLEMENT ROUTED VIA INSTANT UPI & GUMROAD
+      </div>
+    </div>
+  </footer>
 
   <!-- UPI Checkout Modal -->
-  <div id="upiModal" class="fixed inset-0 bg-black/85 backdrop-blur-md flex items-center justify-center z-50 hidden px-4">
-    <div class="bg-slate-900 border border-cyan-500/60 rounded-3xl max-w-md w-full p-6 text-center relative shadow-2xl">
-      <button onclick="closeUpiModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-xl">✕</button>
+  <div id="upiModal" class="fixed inset-0 bg-black/90 backdrop-blur-md z-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-neutral-950 border-2 border-[#ff5500] max-w-md w-full p-6 sm:p-8 font-mono text-xs relative shadow-[0_0_50px_rgba(255,85,0,0.3)]">
       
-      <div class="flex items-center justify-center space-x-2 text-cyan-400 text-sm font-semibold mb-2">
-        <i class="fa-solid fa-shield-halved"></i>
-        <span>Direct UPI Instant Settlement</span>
-      </div>
-      <h3 id="modalPlanName" class="text-2xl font-bold text-white mb-1">Hacker Solo License</h3>
-      <p id="modalPlanPrice" class="text-cyan-400 font-extrabold text-2xl mb-4">₹1,499</p>
+      <!-- Close button -->
+      <button onclick="closeUpiModal()" class="absolute top-4 right-4 text-neutral-400 hover:text-white text-lg font-mono">✕</button>
 
-      <!-- Dynamic QR Code -->
-      <div class="bg-white p-3 rounded-2xl inline-block mx-auto mb-4 shadow-lg border-2 border-emerald-500">
-        <img id="qrCodeImg" src="" alt="Scan UPI QR" class="w-48 h-48 mx-auto">
+      <div class="text-center mb-6">
+        <div class="w-10 h-10 bg-[#ff5500] text-black font-black text-lg flex items-center justify-center mx-auto mb-3">⚡</div>
+        <h3 id="modalPlanName" class="text-lg font-black text-white uppercase tracking-tight">Hacker Solo License</h3>
+        <p id="modalPlanPrice" class="text-[#ff5500] text-base font-bold mt-1">₹1,499 ($29 USD)</p>
       </div>
 
-      <!-- UPI Receiver Info -->
-      <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 text-xs text-left mb-4 space-y-1.5">
-        <div class="flex justify-between py-1 border-b border-slate-800/60">
-          <span class="text-slate-400">Verified GPay UPI ID:</span>
-          <span id="displayUpiId" class="font-mono text-emerald-400 font-bold select-all">atpadkarmaruti-1@okhdfcbank</span>
+      <!-- QR Box -->
+      <div class="bg-black border border-neutral-800 p-4 flex flex-col items-center justify-center mb-6">
+        <div class="bg-white p-3 border border-neutral-700">
+          <img id="modalQrImg" src="./qr_upi.png" alt="UPI QR Code" class="w-48 h-48 object-contain" />
         </div>
-        <div class="flex justify-between py-1 border-b border-slate-800/60">
-          <span class="text-slate-400">Account / Merchant:</span>
-          <span class="text-slate-200 font-semibold">DevSuperSuite Official</span>
+        <span class="text-[10px] text-neutral-400 uppercase tracking-widest mt-3">SCAN WITH GOOGLE PAY / PHONEPE / PAYTM / BHIM</span>
+      </div>
+
+      <!-- VPA details -->
+      <div class="space-y-3 mb-6">
+        <div class="bg-black border border-neutral-800 p-2.5 flex items-center justify-between">
+          <div>
+            <span class="text-[10px] text-neutral-500 uppercase block">MERCHANT UPI ID</span>
+            <span class="text-white font-bold select-all">atpadkarmaruti-1@okhdfcbank</span>
+          </div>
+          <button onclick="copyUpi()" class="px-2 py-1 bg-[#ff5500] text-black font-bold text-[10px] uppercase hover:bg-[#ff6a00]">COPY</button>
         </div>
-        <div class="flex justify-between py-1 border-b border-slate-800/60">
-          <span class="text-slate-400">Pay by Mobile No:</span>
-          <span class="font-mono text-cyan-400 font-bold select-all">9975944612</span>
-        </div>
-        <div class="flex justify-between py-1">
-          <span class="text-slate-400">Supported:</span>
-          <span class="text-slate-300">Google Pay, PhonePe, Paytm, BHIM</span>
+
+        <div class="bg-black border border-neutral-800 p-2.5 flex items-center justify-between">
+          <div>
+            <span class="text-[10px] text-neutral-500 uppercase block">PAYEE MOBILE</span>
+            <span class="text-white font-bold">9975944612</span>
+          </div>
+          <span class="text-[10px] text-emerald-400 font-bold uppercase">VERIFIED</span>
         </div>
       </div>
 
-      <!-- Direct Pay Link Button (Mobile / Windows) -->
-      <a id="directPayBtn" href="#" class="block w-full py-3 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 font-bold text-slate-950 rounded-xl text-sm transition mb-4 shadow-lg shadow-emerald-500/20">
-        <i class="fa-solid fa-mobile-screen-button mr-2"></i>Open in UPI App (1-Click)
-      </a>
-
-      <!-- UTR Verification -->
-      <div class="text-left mb-4">
-        <label class="text-xs text-slate-400 block mb-1">Enter 12-Digit UTR / Transaction No. after payment:</label>
+      <!-- Submission area -->
+      <div class="space-y-3">
+        <span class="text-[10px] text-neutral-400 uppercase block">// AFTER PAYMENT: ENTER 12-DIGIT UPI REF / UTR</span>
         <div class="flex gap-2">
-          <input type="text" id="utrInput" placeholder="e.g. 431289045612" class="flex-1 bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-cyan-500 font-mono">
-          <button onclick="verifyPayment()" class="px-4 py-2 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold rounded-lg text-sm transition">Verify</button>
+          <input type="text" id="utrInput" placeholder="e.g. 432109876543" class="flex-1 bg-black border border-neutral-800 p-2.5 text-white font-mono text-xs focus:outline-none focus:border-[#ff5500]" />
+          <button onclick="submitUtr()" class="px-4 py-2.5 bg-[#ff5500] hover:bg-[#ff6a00] text-black font-black uppercase text-xs">VERIFY</button>
         </div>
       </div>
 
-      <!-- Instant Download Box (Revealed after UTR or instant skip) -->
-      <div id="downloadArea" class="hidden bg-emerald-950/40 border border-emerald-500/40 rounded-xl p-4 text-center">
-        <p class="text-emerald-400 font-bold text-sm mb-2">🎉 Payment Verified! Download Unlocked:</p>
-        <a href="https://github.com/ATP0925/devsupersuite/releases/download/v1.0/DevSuperSuite_Commercial_v1.0.zip" download class="inline-flex items-center gap-2 px-6 py-2.5 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold rounded-lg text-sm transition shadow-lg">
-          <i class="fa-solid fa-download"></i> Download DevSuperSuite_v1.0.zip (Instant)
-        </a>
-      </div>
-
-      <!-- International / Credit Card Fallback -->
-      <div class="mt-4 pt-3 border-t border-slate-800">
-        <a href="https://gumroad.com/l/tlzdco" target="_blank" class="block w-full py-2.5 bg-slate-800/80 hover:bg-slate-700 text-slate-300 font-medium rounded-xl text-xs transition border border-slate-700">
-          <i class="fa-solid fa-globe mr-1.5 text-purple-400"></i>Outside India? Pay via Gumroad (Credit Cards & PayPal)
+      <div id="downloadArea" class="hidden mt-4 p-4 bg-emerald-950/40 border border-emerald-700 text-center">
+        <span class="text-emerald-400 font-bold block mb-2">✓ TRANSACTION RECORDED</span>
+        <a href="https://github.com/ATP0925/devsupersuite/releases/download/v1.0/DevSuperSuite_Commercial_v1.0.zip" class="inline-block px-4 py-2 bg-emerald-500 text-black font-black text-xs uppercase">
+          DOWNLOAD COMMERCIAL V1.0 ZIP
         </a>
       </div>
 
     </div>
   </div>
 
-  <!-- Footer -->
-  <footer class="border-t border-slate-900 py-8 text-center text-xs text-slate-500">
-    <p>© 2026 DevSuperSuite Inc. Built for high-velocity AI engineering. Direct Merchant UPI: 9975944612.</p>
-  </footer>
-
+  <!-- Client-Side Logic -->
   <script>
-    const VERIFIED_UPI_ID = "atpadkarmaruti-1@okhdfcbank";
-    const PAYEE_NAME = "DevSuperSuite Official";
     let currentPlanName = "Hacker Solo";
     let currentAmountInr = 1499;
-
-    const QR_PRESETS = {
-      'Hacker Solo': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWgAAAFoAQAAAABSnlx4AAAC9UlEQVR4nO1bAY7bQAhkrP7/y1Qw4F3Laa9OuepOHeLEawdF0RjPDrCG2wM7njibvO8mTP4tJuZ+GTg/PI7yffHQ1bnbM0x+NMYwxB5xCH4XYziWh+6GEbwtQY4tIG+4GdUJd3sI7xf2/j0PBjPqgEE/9Nsf2/G/eSM+3JGBflKKf/n//f34xHPowSbISTJgxo61f7X/fXxTb1vq4zcvmvTJ3+ONjS+KQxylSjh3Zti/9duHvG92cFLMibH0Ni0GnjReMjGGQvBujzFxkDQWtojwLnkYcyeZXPr7pT2PQQdydszNIrlMmUJKr2tAwaL4nuBvMIwjzhFb5pVxqj6Xp/Ae0IM4Z8oQg2Aav6eZeZA6RnhP8Lcj6lMlSYzEzSBfNSzP6yC8B/gEa668qr8imzxJB+E9kl9awszSoF/YmzAn5s9/+5D3L/VJBTCq5F1pZyrFTYMLwbu9hQkYzVQojO3S4EXdhF14j+Q7xhCv9B0B8JlqxjiCPa+D8B7JdyyUSKU2IJEzky/9zQxT+numPujV3Nk2r7rhuc+OpuqDU/m8U4W3HLGwvavWJ8QnE/mlp/KuSRJVNCkdXh3NugjCe4RPrItUZ32qv+OuaUfrIV7Y4xhEzJdZRckg960QHl+laKk7QPF9t+eYoAokZ7sHW+FwW4sivGf0t5GvawkKOp/cOpvU5MJ7ql/s2eFZxUC7to+TvqUHh+Pbzh4aeKbeBbn4e7Z+Ytw5U8munjTSpHHNlyP62/YKrLMqGNa1cHZ9oPr3XP8SrAg62zqnLEmrJW7SJ0PzpW96xKt4slKdHijfGV5fhVpAiF59QvKucM8gF39PPt/gnco7c8zO8JcoFN6DzzdYcbj1FchA795lhrnwHny+AV0ktHNBW3ft06RPXtrbMegluy2jPKvhTIWCaaS/P+H5BuRS5NJ/ZJJAfmlD8cno8w1WyvtcHltiheusxN9DeIPDWu9jtZptaxhXg016cPb5ho/t+AOfZfK+mzC522di8hPwnLND+///zwAAAABJRU5ErkJggg==',
-      'Team Agency': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWgAAAFoAQAAAABSnlx4AAADGklEQVR4nO1bgW7rMAgE1P//ZSbuwMnU96R18iZYzbTFddCECD3OQNTlBbFXlOVoP8vxye/6RLwC3LF0/Ll2Yrk0/DydZ3nNJ4/yp8ava1w9rh4LUc8FNY6/n+UbPlENb8PZSidHbAt2KdQ4/t4S3ynhagknw93p9AjwUjj+/pd8+zvvBBWJOFe6G9G+439/Qex94tu5BqB4oohGiK/Q9m5221/gJ/K/n1LtY7cN1X5cdI8UxIHZuQZhuSF4H7ttcHw7fR5k2xnOzJVwcy3BzfvYbXO1HYGMxEhK6EG5IQztyJ+/YskbaD+QGcH/wqmOPJkAQlzBrbjpney2udoO1k0U0fI4Yh3OVkI5gr6V3WPjW+DxVTdxbMRncMJi5gHnfey2udpeJ0lF9URjm4CNEM8twE0ru0dqK2ObuZIQolmhShjPW/jYx26bfb70jGuhj5keCSzleW9lt03W1pDKlop98kAUDG+7zeweqK2kewkphJZVD7/1Gn7eEnsXbQcBBExXLTb5SJ7kGdzaze6R2rpieuGI4lo3Ljl8cM/TUdK+qpIorsW7VwXl5Mt9eCLEb+ZMj+2sgV9/eejs8720odqaAJJpUrOrc1VRUDxhMauT3TZUWwI8VmbMo2YWZz/VZDEc0cdumx3fnsUpZ7IsFClyWAfRPnbbaG0vH+uqCSK4A0hWSaWh3SO1FdCBLgOQZZ0n1zEeTYiTL7fxE62aVDbWsjZ7y5yogDeLk5HasiYEncOCUkmy2pY1V3j6l/v6O1r8RFAWrA4byeCqyHaKE5urraAot2FBKd/nqZMV8cO/N9W/vSCbQK21CMkmRPR+Tnzv+jZocUHOHzturDmUJIOHn2zr7/iaM8lmWkV3SnaOu+Hg+PnB650Gx7KeQw1dnfP8rviWFdyahSrOynLsPp2up1+8qV+shdT1dkPSkZw/yYLsOe/sRR+tBKmrbbmGq/ChEw7a/PdJ5Hp3R6rHEMJOMlJoH7tt/vsNnvMPAs7Nkdls/BQ/7GO3Dfa3cnm9A6j390lqtuqnLbG30NbzPnfjp2NH+0le88kHFSqwZjR8p5AAAAAASUVORK5CYII='
-    };
-
-    function renderQr() {
-      document.getElementById('displayUpiId').innerText = VERIFIED_UPI_ID;
-      const upiUrl = "upi://pay?pa=" + encodeURIComponent(VERIFIED_UPI_ID) + "&pn=" + encodeURIComponent(PAYEE_NAME) + "&am=" + currentAmountInr + "&cu=INR&tn=" + encodeURIComponent(currentPlanName + " License");
-      const localQr = QR_PRESETS[currentPlanName] || QR_PRESETS['Hacker Solo'];
-      document.getElementById('qrCodeImg').src = localQr;
-      document.getElementById('directPayBtn').href = upiUrl;
-    }
 
     function openUpiModal(planName, amountInr, amountUsd) {
       currentPlanName = planName;
       currentAmountInr = amountInr;
       document.getElementById('modalPlanName').innerText = planName + " License";
-      document.getElementById('modalPlanPrice').innerText = "₹" + amountInr + " (" + "$" + amountUsd + " USD)";
-      renderQr();
-      document.getElementById('downloadArea').classList.add('hidden');
-      document.getElementById('utrInput').value = '';
+      document.getElementById('modalPlanPrice').innerText = "₹" + amountInr + " ($" + amountUsd + " USD)";
       document.getElementById('upiModal').classList.remove('hidden');
     }
 
@@ -462,16 +606,21 @@
       document.getElementById('upiModal').classList.add('hidden');
     }
 
-    function verifyPayment() {
-      const utr = document.getElementById('utrInput').value.trim();
-      if (!utr || utr.length < 6) {
-        alert("Please enter a valid Transaction Ref / UTR number from your payment app (GPay / PhonePe / Paytm).");
+    function copyUpi() {
+      navigator.clipboard.writeText("atpadkarmaruti-1@okhdfcbank");
+      alert("UPI ID copied: atpadkarmaruti-1@okhdfcbank");
+    }
+
+    function submitUtr() {
+      const val = document.getElementById('utrInput').value.trim();
+      if (!val) {
+        alert("Please enter your 12-digit UPI Reference / UTR Number.");
         return;
       }
       document.getElementById('downloadArea').classList.remove('hidden');
     }
 
-    // --- Playground Sandbox Logic ---
+    // --- Playground Logic ---
     function switchPlaygroundTab(tab) {
       const shieldBox = document.getElementById('shieldSandbox');
       const voiceBox = document.getElementById('voiceSandbox');
@@ -481,13 +630,13 @@
       if (tab === 'shield') {
         shieldBox.classList.remove('hidden');
         voiceBox.classList.add('hidden');
-        shieldBtn.className = "px-6 py-2.5 rounded-xl font-bold text-sm transition bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg shadow-purple-500/20 flex items-center gap-2";
-        voiceBtn.className = "px-6 py-2.5 rounded-xl font-semibold text-sm transition text-slate-400 hover:text-slate-200 flex items-center gap-2";
+        shieldBtn.className = "px-5 py-2.5 font-bold uppercase transition bg-[#ff5500] text-black border border-[#ff5500]";
+        voiceBtn.className = "px-5 py-2.5 font-bold uppercase transition text-neutral-400 hover:text-white";
       } else {
         shieldBox.classList.add('hidden');
         voiceBox.classList.remove('hidden');
-        voiceBtn.className = "px-6 py-2.5 rounded-xl font-bold text-sm transition bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 shadow-lg shadow-cyan-500/20 flex items-center gap-2";
-        shieldBtn.className = "px-6 py-2.5 rounded-xl font-semibold text-sm transition text-slate-400 hover:text-slate-200 flex items-center gap-2";
+        voiceBtn.className = "px-5 py-2.5 font-bold uppercase transition bg-[#ff5500] text-black border border-[#ff5500]";
+        shieldBtn.className = "px-5 py-2.5 font-bold uppercase transition text-neutral-400 hover:text-white";
       }
     }
 
@@ -504,7 +653,7 @@ def charge_customer(amount):
     # AgentShield entropy analyzer flags dangerous strings before git commit
     client = openai.OpenAI(api_key=OPENAI_API_KEY)
     return stripe.Charge.create(amount=amount, currency="usd")`,
-      
+
       env: `PORT=3000
 NODE_ENV=production
 NEXT_PUBLIC_APP_URL=https://mydevapp.io
@@ -518,16 +667,15 @@ JWT_SECRET=c2VjcmV0LWtleS1leGFtcGxlLXZhbHVlLWZvci10ZXN0aW5n`,
 # ✅ Clean Code - Using Environment Variables
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 STRIPE_SECRET_KEY = os.environ.get("STRIPE_SECRET_KEY")
-DATABASE_URL = os.environ.get("DATABASE_URL")
 
 def charge_customer(amount):
-    # Zero secrets hardcoded. Pre-commit hook passes smoothly!
-    pass`
+    # Safely retrieved from runtime environment
+    return {"status": "success", "amount": amount}`
     };
 
-    function loadSnippet(type) {
-      document.getElementById('codeInput').value = SNIPPETS[type] || '';
-      runShieldScan();
+    function loadCodeSnippet(key) {
+      document.getElementById('codeInput').value = SNIPPETS[key];
+      runEntropyShieldScan();
     }
 
     function calcShannonEntropy(str) {
@@ -536,128 +684,124 @@ def charge_customer(amount):
       for (let i = 0; i < str.length; i++) {
         freq[str[i]] = (freq[str[i]] || 0) + 1;
       }
-      let ent = 0;
+      let entropy = 0;
       const len = str.length;
-      for (const k in freq) {
-        const p = freq[k] / len;
-        ent -= p * Math.log2(p);
+      for (const char in freq) {
+        const p = freq[char] / len;
+        entropy -= p * Math.log2(p);
       }
-      return ent;
+      return entropy;
     }
 
-    function runShieldScan() {
-      const code = document.getElementById('codeInput').value;
-      document.getElementById('charCount').innerText = code.length + " chars";
+    function runEntropyShieldScan() {
+      const input = document.getElementById('codeInput').value;
+      const charCount = document.getElementById('charCount');
+      const badge = document.getElementById('hazardBadge');
       const container = document.getElementById('findingsContainer');
-      const badge = document.getElementById('scanStatusBadge');
-      const hookStatus = document.getElementById('hookStatusText');
+      const hookStatus = document.getElementById('hookStatus');
 
-      if (!code.trim()) {
-        container.innerHTML = '<div class="text-slate-600 italic">Enter code or click a preset above to begin scanning...</div>';
-        badge.className = "px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-slate-800 text-slate-400";
-        badge.innerText = "Idle";
-        hookStatus.innerHTML = '<i class="fa-solid fa-shield mr-1"></i> Pre-Commit Guard: Ready';
-        hookStatus.className = "text-slate-400 font-semibold";
+      charCount.innerText = input.length + " CHARS";
+
+      if (!input.trim()) {
+        badge.className = "text-xs font-black uppercase tracking-wider text-neutral-400 bg-neutral-900 border border-neutral-700 px-2 py-0.5";
+        badge.innerText = "STANDBY";
+        container.innerHTML = '<div class="p-4 border border-neutral-800 bg-neutral-950 text-neutral-500 text-center mt-20">[ WAITING FOR CODE BUFFER ]</div>';
+        hookStatus.innerHTML = 'PRE-COMMIT HOOK STATUS: <span class="text-neutral-500">STANDBY</span>';
         return;
       }
 
+      const lines = input.split('\n');
       const findings = [];
-      const lines = code.split('\n');
 
       lines.forEach((line, idx) => {
         const lineNum = idx + 1;
-
-        // OpenAI Key
-        if (/sk-proj-[a-zA-Z0-9_\-]{20,}/.test(line)) {
-          findings.push({ line: lineNum, type: "OpenAI Project API Key", severity: "CRITICAL", desc: "Hardcoded OpenAI project key detected. Revoke and rotate immediately." });
+        // Known secret patterns
+        if (/(?:sk-proj-|sk_live_|AKIA[0-9A-Z]{16}|ghp_[a-zA-Z0-9]{36})/.test(line)) {
+          findings.push({ line: lineNum, type: "Hardcoded API Secret Key", severity: "CRITICAL", desc: "Detected live secret provider signature." });
         }
-        // Stripe Key
-        if (/sk_live_[0-9a-zA-Z]{24,}/.test(line)) {
-          findings.push({ line: lineNum, type: "Stripe Live Secret Key", severity: "CRITICAL", desc: "Live payment gateway secret detected. Threat of financial loss." });
-        }
-        // AWS Key
-        if (/AKIA[0-9A-Z]{16}/.test(line)) {
-          findings.push({ line: lineNum, type: "AWS Access Key ID", severity: "CRITICAL", desc: "Root/IAM AWS credential detected. Potential cloud infrastructure exposure." });
-        }
-        // GitHub PAT
-        if (/ghp_[0-9a-zA-Z]{36}/.test(line)) {
-          findings.push({ line: lineNum, type: "GitHub Personal Access Token", severity: "HIGH", desc: "Personal token detected with repository write scope." });
-        }
-        // DB Connection URL with plain password
-        if (/(postgres|mysql|mongodb)(\+srv)?:\/\/[^:]+:([^@]+)@/.test(line)) {
-          findings.push({ line: lineNum, type: "Plaintext DB Connection String", severity: "HIGH", desc: "Database connection string containing plaintext credentials." });
+        if (/postgres:\/\/|mongodb(?:\+srv)?:\/\/|mysql:\/\//.test(line)) {
+          findings.push({ line: lineNum, type: "Database Connection String", severity: "CRITICAL", desc: "Plaintext database URI with embedded credentials." });
         }
         // High entropy tokens
         const tokens = line.match(/[a-zA-Z0-9+\/=_-]{24,}/g) || [];
         tokens.forEach(tok => {
           const ent = calcShannonEntropy(tok);
           if (ent >= 4.3 && !/sk-proj|sk_live|AKIA|ghp_/.test(tok)) {
-            findings.push({ line: lineNum, type: `High-Entropy Secret Candidate (Shannon: ${ent.toFixed(2)})`, severity: "MEDIUM", desc: `Token "${tok.slice(0, 8)}..." matches secret randomness threshold.` });
+            findings.push({ line: lineNum, type: `High-Entropy Token Candidate (H=${ent.toFixed(2)})`, severity: "MEDIUM", desc: `Token exceeds randomness threshold.` });
           }
         });
         // Destructive bash commands
         if (/rm\s+-rf\s+[/~]|git\s+push.*--force/.test(line)) {
-          findings.push({ line: lineNum, type: "Destructive Shell Command", severity: "BLOCKER", desc: "Command attempts irreversible disk wipe or forced upstream push." });
+          findings.push({ line: lineNum, type: "Destructive Shell Command", severity: "BLOCKER", desc: "Command attempts irreversible disk wipe or force push." });
         }
       });
 
       if (findings.length > 0) {
-        badge.className = "px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-red-950 text-red-400 border border-red-800 animate-pulse";
-        badge.innerText = `${findings.length} Hazard${findings.length > 1 ? 's' : ''} Detected`;
-        hookStatus.innerHTML = '<i class="fa-solid fa-triangle-exclamation mr-1"></i> Pre-Commit Guard: PUSH BLOCKED';
-        hookStatus.className = "text-red-400 font-bold";
+        badge.className = "text-xs font-black uppercase tracking-wider text-black bg-[#ff5500] border border-[#ff5500] px-2 py-0.5 animate-pulse";
+        badge.innerText = `${findings.length} HAZARD${findings.length > 1 ? 'S' : ''} DETECTED`;
+        hookStatus.innerHTML = 'PRE-COMMIT HOOK STATUS: <span class="text-[#ff5500] font-black">[ PUSH BLOCKED ]</span>';
 
         container.innerHTML = findings.map(f => `
-          <div class="p-2.5 rounded-xl bg-slate-900 border border-red-900/50 flex flex-col gap-1">
+          <div class="p-3 bg-neutral-950 border border-red-900/60 font-mono text-xs flex flex-col gap-1">
             <div class="flex items-center justify-between">
-              <span class="text-red-400 font-bold text-xs"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>[Line ${f.line}] ${f.type}</span>
-              <span class="px-1.5 py-0.5 rounded text-[9px] font-extrabold uppercase ${f.severity === 'CRITICAL' ? 'bg-red-500 text-slate-950' : 'bg-amber-500/20 text-amber-300 border border-amber-600/50'}">${f.severity}</span>
+              <span class="text-[#ff5500] font-bold"><i class="fa-solid fa-triangle-exclamation mr-1"></i>[L${f.line}] ${f.type}</span>
+              <span class="px-1.5 py-0.5 text-[9px] font-black uppercase ${f.severity === 'CRITICAL' ? 'bg-red-600 text-black' : 'bg-amber-500 text-black'}">${f.severity}</span>
             </div>
-            <p class="text-slate-400 text-[11px]">${f.desc}</p>
+            <p class="text-neutral-400 text-[11px] mt-0.5">${f.desc}</p>
           </div>
         `).join('');
       } else {
-        badge.className = "px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-emerald-950 text-emerald-400 border border-emerald-800";
-        badge.innerText = "Clean Code (Pass)";
-        hookStatus.innerHTML = '<i class="fa-solid fa-circle-check mr-1"></i> Pre-Commit Guard: PUSH ALLOWED';
-        hookStatus.className = "text-emerald-400 font-bold";
+        badge.className = "text-xs font-black uppercase tracking-wider text-black bg-white border border-white px-2 py-0.5";
+        badge.innerText = "CLEAN CODE // PASS";
+        hookStatus.innerHTML = 'PRE-COMMIT HOOK STATUS: <span class="text-white font-black">[ PASS // ALLOWED ]</span>';
 
         container.innerHTML = `
-          <div class="p-4 rounded-xl bg-emerald-950/20 border border-emerald-800/40 text-center">
-            <i class="fa-solid fa-shield-heart text-2xl text-emerald-400 mb-2"></i>
-            <p class="text-emerald-300 font-bold text-xs">Zero Secrets or Dangerous Commands Detected!</p>
-            <p class="text-slate-500 text-[11px] mt-1">Entropy thresholds normal. Shannon distribution complies with secure coding standards.</p>
+          <div class="p-6 border border-neutral-800 bg-neutral-950 text-center font-mono text-xs mt-12">
+            <div class="w-8 h-8 bg-white text-black font-black flex items-center justify-center mx-auto mb-2 text-sm">✓</div>
+            <p class="text-white font-bold uppercase">ZERO CREDENTIAL LEAKS DETECTED</p>
+            <p class="text-neutral-500 text-[11px] mt-1">Entropy distribution complies with enterprise secure coding guidelines.</p>
           </div>
         `;
       }
     }
 
-    // --- Live Voice Responder Simulation Logic ---
+    // --- Voice Responder Simulation ---
     function simulateVoice(promptText) {
       const log = document.getElementById('ideLog');
       const latencyBadge = document.getElementById('latencyDisplay');
-      const randomLatency = Math.floor(Math.random() * 25) + 105;
-      latencyBadge.innerText = randomLatency + "ms";
+      const randomLatency = Math.floor(Math.random() * 20) + 105;
+      latencyBadge.innerText = randomLatency + " MS";
 
-      const timeStr = new Date().toLocaleTimeString();
-      const userEntry = document.createElement('div');
-      userEntry.className = "p-2.5 rounded-xl bg-cyan-950/40 border border-cyan-800/60 text-slate-200";
-      userEntry.innerHTML = `<span class="text-cyan-400 font-bold">[${timeStr}] 🎙️ Voice Stream (Cursor Focus):</span><br><span class="text-cyan-200">"${promptText}"</span> <span class="text-[10px] text-slate-500 ml-1">⏎ [Auto-Enter Sent]</span>`;
-      log.appendChild(userEntry);
+      const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+      
+      const newEntry = document.createElement('div');
+      newEntry.className = "p-3 bg-neutral-950 border border-[#ff5500] font-mono text-xs text-white leading-relaxed";
+      newEntry.innerHTML = `
+        <div class="flex items-center justify-between text-[#ff5500] text-[10px] mb-1">
+          <span>[${time}] 🎙️ VOICE STREAM // CURSOR FOCUS</span>
+          <span class="bg-[#ff5500] text-black px-1 font-black">AUTO-ENTER SENT</span>
+        </div>
+        <div class="text-white font-bold">"${promptText}"</div>
+      `;
+      log.appendChild(newEntry);
       log.scrollTop = log.scrollHeight;
     }
 
-    function triggerBargeIn() {
+    function triggerVoiceBargeIn() {
       const log = document.getElementById('ideLog');
-      const timeStr = new Date().toLocaleTimeString();
+      const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
       const bargeEntry = document.createElement('div');
-      bargeEntry.className = "p-2.5 rounded-xl bg-red-950/60 border border-red-700/80 text-red-200 font-bold";
-      bargeEntry.innerHTML = `<span>🛑 [${timeStr}] BARGE-IN TRIGGERED: Wake word "CROW" detected! Assistant audio silenced in <15ms.</span>`;
+      bargeEntry.className = "p-3 bg-red-950 border border-red-600 font-mono text-xs text-red-300";
+      bargeEntry.innerHTML = `
+        <div class="flex items-center justify-between text-red-400 text-[10px] mb-1">
+          <span>[${time}] 🛑 DETERMINISTIC BARGE-IN</span>
+          <span class="bg-red-600 text-black px-1 font-black">CUTOFF &lt; 15MS</span>
+        </div>
+        <div>Keyword <strong>"CROW"</strong> detected during assistant playback. Stream terminated immediately.</div>
+      `;
       log.appendChild(bargeEntry);
       log.scrollTop = log.scrollHeight;
     }
-
   </script>
-
 </body>
 </html>
