@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why AI Coding Assistants Leak Your Secrets — DevSuperSuite Engineering</title>
+  <meta name="title" content="Why AI Coding Assistants Leak Your Secrets — DevSuperSuite Engineering">
+  <meta name="description" content="An in-depth technical analysis on how AI IDE chat bars leak API tokens into git histories, and how Shannon Entropy pre-commit filters stop zero-day exposures.">
+  <meta name="keywords" content="cursor ai leak, api key leak, claude code security, shannon entropy secret scan, pre-commit hook">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://atp0925.github.io/devsupersuite/blog/how-to-prevent-cursor-ai-api-leaks.html">
+  <meta property="og:title" content="Why AI Coding Assistants Leak Your Secrets — And How to Stop It">
+  <meta property="og:description" content="Technical guide on Shannon Entropy token filtering and pre-commit secret interception for AI developers.">
+  <meta property="og:image" content="https://atp0925.github.io/devsupersuite/og-image.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans selection:bg-cyan-500 selection:text-black">
+
+  <!-- Nav -->
+  <nav class="border-b border-slate-800/80 backdrop-blur-md sticky top-0 z-40 bg-slate-950/80">
+    <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="../index.html" class="flex items-center space-x-3 text-cyan-400 hover:text-cyan-300 font-semibold transition">
+        <span>← Back to DevSuperSuite Store</span>
+      </a>
+      <div class="flex items-center space-x-4">
+        <a href="../index.html#demo" class="text-xs bg-slate-800 hover:bg-slate-700 text-purple-300 px-3 py-1.5 rounded-lg transition border border-purple-500/30">
+          <i class="fa-solid fa-play mr-1"></i> Try Live Demo
+        </a>
+        <a href="https://gumroad.com/l/tlzdco" target="_blank" class="text-xs bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-3 py-1.5 rounded-lg transition shadow-md shadow-cyan-500/20">
+          Get DevSuperSuite ($29)
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Article -->
+  <article class="max-w-3xl mx-auto px-6 py-12 leading-relaxed">
+    <div class="mb-8">
+      <span class="text-xs font-mono uppercase tracking-wider text-cyan-400 bg-cyan-950/50 border border-cyan-800/60 px-3 py-1 rounded-full">Security Architecture</span>
+      <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight mt-4 mb-4 text-white">
+        Why AI Coding Assistants Leak Your Secrets — And How to Stop It
+      </h1>
+      <p class="text-slate-400 text-sm">Published by <strong class="text-slate-200">DevSuperSuite Engineering Labs</strong> • 6 min read</p>
+    </div>
+
+    <div class="prose prose-invert max-w-none space-y-6 text-slate-300">
+      <p class="text-lg text-slate-200">
+        AI coding agents like Cursor, Claude Code, Windsurf, and Copilot have revolutionized developer throughput. However, they have silently introduced one of the most dangerous attack surfaces in modern engineering: <strong>accidental token leakage into chat context and version control.</strong>
+      </p>
+
+      <div class="p-4 rounded-xl bg-slate-900 border border-rose-500/30">
+        <h4 class="text-rose-400 font-bold text-sm mb-1"><i class="fa-solid fa-triangle-exclamation mr-1"></i> The AI Prompt Leak Mechanism</h4>
+        <p class="text-xs text-slate-300">
+          Developers frequently copy full terminal stack traces, server outputs, or temporary test scripts directly into AI chat bars. If your traceback contains <code>Authorization: Bearer sk-...</code> or an active <code>.env</code> block, that secret is now transmitted to external cloud inference endpoints, indexed in conversation cache, and often suggested back into committed source files.
+        </p>
+      </div>
+
+      <h2 class="text-2xl font-bold text-white mt-8 mb-3">Why Standard Regex Scanners Fail</h2>
+      <p>
+        Traditional regex scanners rely on fixed prefixes (e.g. <code>sk_live_</code>). While useful for recognized services, attackers and modern vendors frequently use high-entropy random hex or base64 strings without predictable prefixes.
+      </p>
+      <p>
+        Conversely, naive high-entropy regex generates unbearable false positives on standard Git commit hashes, UUIDs, base64 font data, and minified bundles. When a pre-commit hook generates 20 false alarms a day, engineers disable it with <code>git commit --no-verify</code>.
+      </p>
+
+      <h2 class="text-2xl font-bold text-white mt-8 mb-3">The Solution: Shannon Entropy Information Density</h2>
+      <p>
+        In <strong>AgentShield</strong> (part of DevSuperSuite), we combine weighted token categorization with Shannon entropy quantification:
+      </p>
+
+      <div class="p-5 rounded-xl bg-slate-900 font-mono text-sm border border-cyan-500/20 text-cyan-300 overflow-x-auto">
+        H(X) = - &sum; [ P(x_i) &times; log2 P(x_i) ]
+      </div>
+
+      <p>
+        For any candidate alphanumeric token longer than 20 characters:
+      </p>
+      <ul class="list-disc pl-6 space-y-2 text-slate-300">
+        <li><strong>Standard English words / Code symbols:</strong> Entropy typically ranges from 1.5 to 2.8 bits/char.</li>
+        <li><strong>High-entropy cryptographic keys (OpenAI, Stripe, AWS Secret):</strong> Entropy consistently exceeds <strong>3.8 to 4.5 bits/char</strong> due to pseudo-random uniform character distribution.</li>
+      </ul>
+
+      <div class="my-8 p-6 rounded-2xl bg-gradient-to-br from-slate-900 to-cyan-950/40 border border-cyan-500/30 text-center">
+        <h3 class="text-xl font-bold text-white mb-2">Test This Live In Your Browser</h3>
+        <p class="text-slate-300 text-sm mb-4">You can test the real-time entropy calculator and regex interceptor with zero installation right now.</p>
+        <a href="../index.html#demo" class="inline-flex items-center space-x-2 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-6 py-2.5 rounded-xl transition shadow-lg shadow-cyan-500/20">
+          <span>Launch Interactive Sandbox</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <h2 class="text-2xl font-bold text-white mt-8 mb-3">Zero-Knowledge Offline Execution</h2>
+      <p>
+        AgentShield operates 100% locally. No code, keys, or telemetry are ever transmitted to any remote server. It hooks directly into your Git lifecycle via a native 1-second pre-commit script:
+      </p>
+
+      <pre class="bg-slate-900 p-4 rounded-xl border border-slate-800 text-slate-200 text-xs font-mono overflow-x-auto">
+# 1-second installation into any local repository:
+$ python -m agent_shield install-hook
+
+# When an accidental leak is staged:
+[AgentShield] FATAL: High-entropy secret detected in src/config.py!
+[AgentShield] Match: OpenAI API Key (H=4.12 bits/char)
+[AgentShield] Staged commit aborted. Your keys remain safe.</pre>
+
+      <div class="border-t border-slate-800 pt-8 mt-12 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div>
+          <h4 class="text-lg font-bold text-white">Protect your repositories today</h4>
+          <p class="text-xs text-slate-400">Available as part of DevSuperSuite Commercial v1.0. Lifetime license $29 / ₹1,499.</p>
+        </div>
+        <div class="flex items-center space-x-3">
+          <a href="../index.html" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white rounded-lg text-sm font-semibold transition border border-slate-700">
+            View Pricing
+          </a>
+          <a href="https://gumroad.com/l/tlzdco" target="_blank" class="px-5 py-2 bg-cyan-500 hover:bg-cyan-400 text-slate-950 rounded-lg text-sm font-bold transition shadow-lg shadow-cyan-500/20">
+            Buy Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-900 mt-16 py-8 text-center text-xs text-slate-500">
+    <p>© 2026 DevSuperSuite Official. Built for high-velocity software engineers.</p>
+  </footer>
+
+</body>
+</html>

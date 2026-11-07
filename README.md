@@ -5,13 +5,21 @@
 **Engineered for high-velocity engineers using Cursor, Claude Code, Antigravity, and VS Code.**
 
 [![Release](https://img.shields.io/badge/Release-v1.0-cyan?style=for-the-badge&logo=github)](https://github.com/ATP0925/devsupersuite/releases/tag/v1.0)
-[![Live Gateway](https://img.shields.io/badge/Live_Store-GitHub_Pages-blue?style=for-the-badge)](https://atp0925.github.io/devsupersuite/)
+[![Interactive Demo](https://img.shields.io/badge/Playground-Live_Browser_Sandbox-cyan?style=for-the-badge&logo=googlechrome)](https://atp0925.github.io/devsupersuite/#demo)
+[![Gumroad Store](https://img.shields.io/badge/Gumroad_Store-Instant_Delivery-pink?style=for-the-badge&logo=gumroad)](https://gumroad.com/l/tlzdco)
 [![UPI Verified](https://img.shields.io/badge/Instant_UPI-Verified_GPay-emerald?style=for-the-badge&logo=google-pay)](https://atp0925.github.io/devsupersuite/)
 [![License](https://img.shields.io/badge/License-Commercial_Solo-purple?style=for-the-badge)](https://atp0925.github.io/devsupersuite/)
 
----
+<br/>
 
-### [🚀 Open Live Web & Instant Payment Gateway](https://atp0925.github.io/devsupersuite/)
+<a href="https://atp0925.github.io/devsupersuite/#demo">
+  <img src="./og-image.png" alt="DevSuperSuite Banner" width="850" />
+</a>
+
+<br/><br/>
+
+### [🎮 Try Interactive Live Sandbox in Your Browser](https://atp0925.github.io/devsupersuite/#demo)
+### [🛒 Gumroad Instant Checkout ($29 / $99)](https://gumroad.com/l/tlzdco)
 ### [📦 Download v1.0 Release Archive (ZIP)](https://github.com/ATP0925/devsupersuite/releases/download/v1.0/DevSuperSuite_Commercial_v1.0.zip)
 
 </div>
@@ -26,13 +34,23 @@ DevSuperSuite merges two critical productivity powers into a unified 1-click dev
 - **Full-Duplex Hands-Free Voice Coding**: Talk naturally while your IDE types and submits prompts directly into Cursor, Claude Code, or Antigravity chats.
 - **Acoustic Echo Cancellation & DSP Filtering**: Ignores background fan and keyboard noise; mutes audio output loopback.
 - **Voice Barge-In**: Say *"CROW"* or press `F8` to interrupt the assistant instantly mid-speech.
-- **Ultra-low latency** neural audio streaming pipeline.
+- **Ultra-low latency** neural audio streaming pipeline (~110ms).
 
 ### 2. 🛡️ AgentShield (Zero-Day API Leak Protection)
 - **Entropy & Pattern Secret Scanner**: Detects 15+ API key patterns (OpenAI, Anthropic, Stripe, AWS, GitHub PATs, JWTs, PII).
-- **Shannon Entropy Sanitizer**: Eliminates false positives by calculating character information density.
+- **Shannon Entropy Sanitizer**: Eliminates false positives by calculating character information density ($H(X) = -\sum P(x) \log_2 P(x)$).
 - **Destructive Command Interception**: Blocks accidental destructive commands (`rm -rf /`, `git push --force`) in agent sessions.
 - **1-Second Git Hook**: Installs pre-commit prevention into any repository instantly.
+
+---
+
+## 🎮 Try The Live Browser Sandbox
+
+Experience DevSuperSuite's capabilities live before downloading:
+- **Real-Time Shannon Entropy Analyzer**: Paste any code or select pre-loaded leaky snippets (Stripe, OpenAI, AWS, destructive shell commands) to watch AgentShield block them in real-time.
+- **Full-Duplex Voice Simulation**: Experience continuous neural audio visualizer with barge-in interruption.
+
+👉 **[Launch Interactive Playground (No Install Required)](https://atp0925.github.io/devsupersuite/#demo)**
 
 ---
 
@@ -87,6 +105,6 @@ python -m agent_shield install-hook
 
 ## 📞 Support & Verification
 - **Web Store & Payment Portal**: [https://atp0925.github.io/devsupersuite/](https://atp0925.github.io/devsupersuite/)
+- **Gumroad Checkout**: [https://gumroad.com/l/tlzdco](https://gumroad.com/l/tlzdco)
 - **Direct GitHub Releases**: [https://github.com/ATP0925/devsupersuite/releases](https://github.com/ATP0925/devsupersuite/releases)
 - **Issues & Inquiries**: Open an issue on this repository or reach DevSuperSuite Support (`9975944612`).
-
