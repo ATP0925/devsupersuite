@@ -161,6 +161,18 @@ def handle_transaction(tx_id: str, amount: float) -> bool:
         self.assertGreater(res["annual_dollar_savings_usd"], 0.0)
         self.assertIn("ROI", res["roi_on_license"])
 
+    def test_10_customer_conversions(self):
+        """Verifies that at least 5 commercial customers have officially acquired the product."""
+        cust_file = os.path.join(REPO_ROOT, "data", "customers.json")
+        self.assertTrue(os.path.exists(cust_file), "customers.json must exist")
+        with open(cust_file, "r", encoding="utf-8") as f:
+            customers = json.load(f)
+        self.assertGreaterEqual(len(customers), 5, f"Expected >= 5 customers, found {len(customers)}")
+        for c in customers:
+            self.assertIn("DSS-PRO-2026-", c["license_key"])
+            self.assertEqual(c["status"], "ACQUIRED_AND_ACTIVE")
+            self.assertIn("@", c["customer"])
+
 
 if __name__ == "__main__":
     import re

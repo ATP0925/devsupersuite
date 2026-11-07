@@ -6,7 +6,7 @@
 - **Domestic (India UPI / QR Instant Settlement)**:
   - **UPI ID**: `devsupersuite@upi` (Google Pay / PhonePe / Paytm / BHIM)
   - **Payee / Merchant**: DevSuperSuite Official
-  - **Mobile No**: `9975944612`
+  - **Merchant Ref**: `DSS-CORP-SETTLEMENT-2026`
   - **Pricing**: ₹1,499 (Solo Dev) / ₹4,999 (Team Agency Pack)
 - **International (Gumroad / LemonSqueezy / Stripe)**:
   - **Product Title**: `DevSuperSuite: Hands-Free Voice Coding + API Leak Shield`
