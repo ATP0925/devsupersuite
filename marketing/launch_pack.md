@@ -5,7 +5,7 @@
 ## 1. Payment Settlement Destinations
 - **Domestic (India UPI / QR Instant Settlement)**:
   - **UPI ID**: `atpadkarmaruti-1@okhdfcbank` (Google Pay / PhonePe / Paytm / BHIM)
-  - **Payee Name**: Maruti Atpadkar
+  - **Payee / Merchant**: DevSuperSuite Official
   - **Mobile No**: `9975944612`
   - **Pricing**: ₹1,499 (Solo Dev) / ₹4,999 (Team Agency Pack)
 - **International (Gumroad / LemonSqueezy / Stripe)**:
@@ -91,5 +91,5 @@
 > You can check out the 60-second video demo and download here: [Link]
 > 
 > Best,
-> Pratik Atpadkar
+> DevSuperSuite Engineering Team
 

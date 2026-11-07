@@ -52,7 +52,7 @@ You can acquire a lifetime commercial license directly via UPI with 0 platform f
 <img src="./qr_upi.png" alt="Scan to Pay via UPI" width="220" />
 
 **Verified Merchant UPI ID:** `atpadkarmaruti-1@okhdfcbank`  
-**Account Holder:** Maruti Atpadkar  
+**Merchant Organization:** DevSuperSuite Official  
 **Mobile / Pay by Number:** `9975944612`  
 **Supported Apps:** Google Pay, PhonePe, Paytm, BHIM, Amazon Pay
 
@@ -88,4 +88,5 @@ python -m agent_shield install-hook
 ## 📞 Support & Verification
 - **Web Store & Payment Portal**: [https://atp0925.github.io/devsupersuite/](https://atp0925.github.io/devsupersuite/)
 - **Direct GitHub Releases**: [https://github.com/ATP0925/devsupersuite/releases](https://github.com/ATP0925/devsupersuite/releases)
-- **Issues & Inquiries**: Open an issue on this repository or contact Maruti Atpadkar (`9975944612`).
+- **Issues & Inquiries**: Open an issue on this repository or reach DevSuperSuite Support (`9975944612`).
+
