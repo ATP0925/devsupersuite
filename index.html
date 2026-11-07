@@ -222,11 +222,16 @@
     let currentPlanName = "Hacker Solo";
     let currentAmountInr = 1499;
 
+    const QR_PRESETS = {
+      'Hacker Solo': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWgAAAFoAQAAAABSnlx4AAAC9UlEQVR4nO1bAY7bQAhkrP7/y1Qw4F3Laa9OuepOHeLEawdF0RjPDrCG2wM7njibvO8mTP4tJuZ+GTg/PI7yffHQ1bnbM0x+NMYwxB5xCH4XYziWh+6GEbwtQY4tIG+4GdUJd3sI7xf2/j0PBjPqgEE/9Nsf2/G/eSM+3JGBflKKf/n//f34xHPowSbISTJgxo61f7X/fXxTb1vq4zcvmvTJ3+ONjS+KQxylSjh3Zti/9duHvG92cFLMibH0Ni0GnjReMjGGQvBujzFxkDQWtojwLnkYcyeZXPr7pT2PQQdydszNIrlMmUJKr2tAwaL4nuBvMIwjzhFb5pVxqj6Xp/Ae0IM4Z8oQg2Aav6eZeZA6RnhP8Lcj6lMlSYzEzSBfNSzP6yC8B/gEa668qr8imzxJB+E9kl9awszSoF/YmzAn5s9/+5D3L/VJBTCq5F1pZyrFTYMLwbu9hQkYzVQojO3S4EXdhF14j+Q7xhCv9B0B8JlqxjiCPa+D8B7JdyyUSKU2IJEzky/9zQxT+numPujV3Nk2r7rhuc+OpuqDU/m8U4W3HLGwvavWJ8QnE/mlp/KuSRJVNCkdXh3NugjCe4RPrItUZ32qv+OuaUfrIV7Y4xhEzJdZRckg960QHl+laKk7QPF9t+eYoAokZ7sHW+FwW4sivGf0t5GvawkKOp/cOpvU5MJ7ql/s2eFZxUC7to+TvqUHh+Pbzh4aeKbeBbn4e7Z+Ytw5U8munjTSpHHNlyP62/YKrLMqGNa1cHZ9oPr3XP8SrAg62zqnLEmrJW7SJ0PzpW96xKt4slKdHijfGV5fhVpAiF59QvKucM8gF39PPt/gnco7c8zO8JcoFN6DzzdYcbj1FchA795lhrnwHny+AV0ktHNBW3ft06RPXtrbMegluy2jPKvhTIWCaaS/P+H5BuRS5NJ/ZJJAfmlD8cno8w1WyvtcHltiheusxN9DeIPDWu9jtZptaxhXg016cPb5ho/t+AOfZfK+mzC522di8hPwnLND+///zwAAAABJRU5ErkJggg==',
+      'Team Agency': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWgAAAFoAQAAAABSnlx4AAADGklEQVR4nO1bgW7rMAgE1P//ZSbuwMnU96R18iZYzbTFddCECD3OQNTlBbFXlOVoP8vxye/6RLwC3LF0/Ll2Yrk0/DydZ3nNJ4/yp8ava1w9rh4LUc8FNY6/n+UbPlENb8PZSidHbAt2KdQ4/t4S3ynhagknw93p9AjwUjj+/pd8+zvvBBWJOFe6G9G+439/Qex94tu5BqB4oohGiK/Q9m5221/gJ/K/n1LtY7cN1X5cdI8UxIHZuQZhuSF4H7ttcHw7fR5k2xnOzJVwcy3BzfvYbXO1HYGMxEhK6EG5IQztyJ+/YskbaD+QGcH/wqmOPJkAQlzBrbjpney2udoO1k0U0fI4Yh3OVkI5gr6V3WPjW+DxVTdxbMRncMJi5gHnfey2udpeJ0lF9URjm4CNEM8twE0ru0dqK2ObuZIQolmhShjPW/jYx26bfb70jGuhj5keCSzleW9lt03W1pDKlop98kAUDG+7zeweqK2kewkphJZVD7/1Gn7eEnsXbQcBBExXLTb5SJ7kGdzaze6R2rpieuGI4lo3Ljl8cM/TUdK+qpIorsW7VwXl5Mt9eCLEb+ZMj+2sgV9/eejs8720odqaAJJpUrOrc1VRUDxhMauT3TZUWwI8VmbMo2YWZz/VZDEc0cdumx3fnsUpZ7IsFClyWAfRPnbbaG0vH+uqCSK4A0hWSaWh3SO1FdCBLgOQZZ0n1zEeTYiTL7fxE62aVDbWsjZ7y5yogDeLk5HasiYEncOCUkmy2pY1V3j6l/v6O1r8RFAWrA4byeCqyHaKE5urraAot2FBKd/nqZMV8cO/N9W/vSCbQK21CMkmRPR+Tnzv+jZocUHOHzturDmUJIOHn2zr7/iaM8lmWkV3SnaOu+Hg+PnB650Gx7KeQw1dnfP8rviWFdyahSrOynLsPp2up1+8qV+shdT1dkPSkZw/yYLsOe/sRR+tBKmrbbmGq/ChEw7a/PdJ5Hp3R6rHEMJOMlJoH7tt/vsNnvMPAs7Nkdls/BQ/7GO3Dfa3cnm9A6j390lqtuqnLbG30NbzPnfjp2NH+0le88kHFSqwZjR8p5AAAAAASUVORK5CYII='
+    };
+
     function renderQr() {
       document.getElementById('displayUpiId').innerText = VERIFIED_UPI_ID;
-      const upiUrl = `upi://pay?pa=${encodeURIComponent(VERIFIED_UPI_ID)}&pn=${encodeURIComponent(PAYEE_NAME)}&am=${currentAmountInr}&cu=INR&tn=${encodeURIComponent(currentPlanName + " License")}`;
-      const qrApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=${encodeURIComponent(upiUrl)}`;
-      document.getElementById('qrCodeImg').src = qrApiUrl;
+      const upiUrl = "upi://pay?pa=" + encodeURIComponent(VERIFIED_UPI_ID) + "&pn=" + encodeURIComponent(PAYEE_NAME) + "&am=" + currentAmountInr + "&cu=INR&tn=" + encodeURIComponent(currentPlanName + " License");
+      const localQr = QR_PRESETS[currentPlanName] || QR_PRESETS['Hacker Solo'];
+      document.getElementById('qrCodeImg').src = localQr;
       document.getElementById('directPayBtn').href = upiUrl;
     }
 
