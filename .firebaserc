@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "omni-agent-atp0925"
+  },
+  "targets": {
+    "omni-agent-atp0925": {
+      "hosting": {
+        "devsupersuite": [
+          "devsupersuite"
+        ]
+      }
+    }
+  }
+}

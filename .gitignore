@@ -12,6 +12,8 @@ __pycache__/
 !.cursor/mcp.json
 !.mcp.json
 !build/DevSuperSuite/agent-shield/mcp_template.json
+!firebase.json
+!.firebaserc
 *.py
 !package_product.py
 !generate_orange_og.py
@@ -19,3 +21,4 @@ __pycache__/
 !tests/**
 
 .vercel
+.firebase/
