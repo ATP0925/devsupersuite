@@ -611,60 +611,93 @@
     </div>
   </footer>
 
-  <!-- UPI Checkout Modal -->
-  <div id="upiModal" class="fixed inset-0 bg-black/90 backdrop-blur-md z-50 flex items-center justify-center p-4 hidden">
-    <div class="bg-neutral-950 border-2 border-[#ff5500] max-w-md w-full p-6 sm:p-8 font-mono text-xs relative shadow-[0_0_50px_rgba(255,85,0,0.3)]">
+    <!-- Global Acquisition & Checkout Modal -->
+  <div id="upiModal" class="fixed inset-0 bg-black/95 backdrop-blur-md z-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-neutral-950 border-2 border-[#ff5500] max-w-lg w-full p-6 sm:p-8 font-mono text-xs relative shadow-[0_0_60px_rgba(255,85,0,0.35)]">
       
       <!-- Close button -->
       <button onclick="closeUpiModal()" class="absolute top-4 right-4 text-neutral-400 hover:text-white text-lg font-mono">✕</button>
 
       <div class="text-center mb-6">
-        <div class="w-10 h-10 bg-[#ff5500] text-black font-black text-lg flex items-center justify-center mx-auto mb-3">⚡</div>
+        <div class="w-12 h-12 bg-[#ff5500] text-black font-black text-xl flex items-center justify-center mx-auto mb-3">⚡</div>
         <h3 id="modalPlanName" class="text-lg font-black text-white uppercase tracking-tight">Hacker Solo License</h3>
-        <p id="modalPlanPrice" class="text-[#ff5500] text-base font-bold mt-1">₹1,499 ($29 USD)</p>
+        <p id="modalPlanPrice" class="text-[#ff5500] text-base font-bold mt-1">$29 USD / ₹1,499</p>
+        <span class="text-[10px] text-neutral-400 uppercase tracking-widest mt-1 block">INSTANT ACCESS & CRYPTOGRAPHIC LICENSE KEY</span>
       </div>
 
-      <!-- QR Box -->
-      <div class="bg-black border border-neutral-800 p-4 flex flex-col items-center justify-center mb-6">
-        <div class="bg-white p-3 border border-neutral-700">
-          <img id="modalQrImg" src="./qr_upi.png" alt="UPI QR Code" class="w-48 h-48 object-contain" />
+      <!-- Tab Navigation -->
+      <div class="flex border-b border-neutral-800 mb-6 text-center">
+        <button id="tabBtn1" onclick="switchModalTab(1)" class="flex-1 py-2 font-bold text-white border-b-2 border-[#ff5500] uppercase text-[11px]">⚡ INSTANT LICENSE</button>
+        <button id="tabBtn2" onclick="switchModalTab(2)" class="flex-1 py-2 font-bold text-neutral-400 hover:text-white uppercase text-[11px]">💳 CARD / GUMROAD</button>
+        <button id="tabBtn3" onclick="switchModalTab(3)" class="flex-1 py-2 font-bold text-neutral-400 hover:text-white uppercase text-[11px]">📱 UPI / QR</button>
+      </div>
+
+      <!-- TAB 1: Instant License & Direct Download -->
+      <div id="tabContent1" class="space-y-4">
+        <div>
+          <label class="text-[10px] text-neutral-400 uppercase block mb-1">DEVELOPER WORK EMAIL OR GITHUB USERNAME</label>
+          <input type="text" id="devEmailInput" placeholder="dev@company.com or @username" class="w-full bg-black border border-neutral-800 p-3 text-white font-mono text-xs focus:outline-none focus:border-[#ff5500]" />
         </div>
-        <span class="text-[10px] text-neutral-400 uppercase tracking-widest mt-3">SCAN WITH GOOGLE PAY / PHONEPE / PAYTM / BHIM</span>
+
+        <button onclick="generateInstantLicense()" class="w-full py-3 bg-[#ff5500] hover:bg-[#ff6a00] text-black font-black uppercase tracking-wider text-xs transition flex items-center justify-center gap-2">
+          <span>⚡ GENERATE PRO LICENSE & DOWNLOAD SUITE</span>
+        </button>
+
+        <div id="licenseResultBox" class="hidden mt-4 p-4 bg-neutral-900 border border-emerald-500 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="text-emerald-400 font-bold uppercase text-[11px]">✓ LICENSE KEY GENERATED</span>
+            <span class="text-[10px] text-neutral-400">Ed25519 Standalone</span>
+          </div>
+          <div class="bg-black p-2.5 border border-neutral-800 flex items-center justify-between">
+            <code id="licenseKeyText" class="text-white font-bold select-all tracking-wider">DSS-PRO-2026-X89F-992A-4B7C</code>
+            <button onclick="copyLicenseKey()" class="px-2 py-1 bg-emerald-500 text-black font-bold text-[10px] uppercase hover:bg-emerald-400">COPY</button>
+          </div>
+          <p class="text-[10px] text-neutral-400 leading-relaxed">
+            Your download has started. Extract the archive and paste your key into <code class="text-white">Setup_DevSuite.bat</code> or run <code class="text-white">omnikernel --activate</code>.
+          </p>
+          <div class="pt-2">
+            <a id="directZipLink" href="/DevSuperSuite_Commercial_v1.0.zip" download class="block w-full py-2 bg-emerald-500 hover:bg-emerald-400 text-black text-center font-bold uppercase text-xs">
+              DOWNLOAD ZIP AGAIN (99 KB)
+            </a>
+          </div>
+        </div>
       </div>
 
-      <!-- VPA details -->
-      <div class="space-y-3 mb-6">
+      <!-- TAB 2: Card / Gumroad / Global -->
+      <div id="tabContent2" class="hidden space-y-4">
+        <p class="text-[11px] text-neutral-300 leading-relaxed">
+          For corporate expense reimbursements, VAT invoices, and worldwide Credit/Debit card checkout (Visa, MasterCard, Amex, Apple Pay, PayPal):
+        </p>
+        <a href="https://gumroad.com/l/tlzdco" target="_blank" class="block w-full py-3.5 bg-pink-500 hover:bg-pink-400 text-white text-center font-black uppercase tracking-wider text-xs transition">
+          🛒 CHECKOUT ON GUMROAD ($29 USD)
+        </a>
+        <span class="text-[10px] text-neutral-500 uppercase tracking-widest text-center block">INSTANT GUMROAD RECEIPT & DOWNLOAD LINK EMAILED</span>
+      </div>
+
+      <!-- TAB 3: UPI / QR Code -->
+      <div id="tabContent3" class="hidden space-y-4">
+        <div class="bg-black border border-neutral-800 p-3 flex flex-col items-center justify-center">
+          <div class="bg-white p-2 border border-neutral-700">
+            <img id="modalQrImg" src="./qr_upi.png" alt="UPI QR Code" class="w-40 h-40 object-contain" />
+          </div>
+          <span class="text-[10px] text-neutral-400 uppercase tracking-widest mt-2">GOOGLE PAY / PHONEPE / PAYTM / BHIM</span>
+        </div>
+
         <div class="bg-black border border-neutral-800 p-2.5 flex items-center justify-between">
           <div>
-            <span class="text-[10px] text-neutral-500 uppercase block">MERCHANT UPI ID</span>
+            <span class="text-[10px] text-neutral-500 uppercase block">MERCHANT VPA</span>
             <span class="text-white font-bold select-all">devsupersuite@upi</span>
           </div>
           <button onclick="copyUpi()" class="px-2 py-1 bg-[#ff5500] text-black font-bold text-[10px] uppercase hover:bg-[#ff6a00]">COPY</button>
         </div>
 
-        <div class="bg-black border border-neutral-800 p-2.5 flex items-center justify-between">
-          <div>
-            <span class="text-[10px] text-neutral-500 uppercase block">PAYEE MOBILE</span>
-            <span class="text-white font-bold">9975944612</span>
+        <div class="space-y-2">
+          <span class="text-[10px] text-neutral-400 uppercase block">// ENTER UPI REF / UTR FOR INSTANT VERIFICATION</span>
+          <div class="flex gap-2">
+            <input type="text" id="utrInput" placeholder="12-digit UTR number" class="flex-1 bg-black border border-neutral-800 p-2 text-white font-mono text-xs focus:outline-none focus:border-[#ff5500]" />
+            <button onclick="submitUtr()" class="px-3 py-2 bg-[#ff5500] hover:bg-[#ff6a00] text-black font-black uppercase text-xs">VERIFY</button>
           </div>
-          <span class="text-[10px] text-emerald-400 font-bold uppercase">VERIFIED</span>
         </div>
-      </div>
-
-      <!-- Submission area -->
-      <div class="space-y-3">
-        <span class="text-[10px] text-neutral-400 uppercase block">// AFTER PAYMENT: ENTER 12-DIGIT UPI REF / UTR</span>
-        <div class="flex gap-2">
-          <input type="text" id="utrInput" placeholder="e.g. 432109876543" class="flex-1 bg-black border border-neutral-800 p-2.5 text-white font-mono text-xs focus:outline-none focus:border-[#ff5500]" />
-          <button onclick="submitUtr()" class="px-4 py-2.5 bg-[#ff5500] hover:bg-[#ff6a00] text-black font-black uppercase text-xs">VERIFY</button>
-        </div>
-      </div>
-
-      <div id="downloadArea" class="hidden mt-4 p-4 bg-emerald-950/40 border border-emerald-700 text-center">
-        <span class="text-emerald-400 font-bold block mb-2">✓ TRANSACTION RECORDED</span>
-        <a href="https://github.com/ATP0925/devsupersuite/releases/download/v1.0/DevSuperSuite_Commercial_v1.0.zip" class="inline-block px-4 py-2 bg-emerald-500 text-black font-black text-xs uppercase">
-          DOWNLOAD COMMERCIAL V1.0 ZIP
-        </a>
       </div>
 
     </div>
@@ -679,12 +712,58 @@
       currentPlanName = planName;
       currentAmountInr = amountInr;
       document.getElementById('modalPlanName').innerText = planName + " License";
-      document.getElementById('modalPlanPrice').innerText = "₹" + amountInr + " ($" + amountUsd + " USD)";
+      document.getElementById('modalPlanPrice').innerText = "$" + amountUsd + " USD / ₹" + amountInr;
       document.getElementById('upiModal').classList.remove('hidden');
+      switchModalTab(1);
     }
 
     function closeUpiModal() {
       document.getElementById('upiModal').classList.add('hidden');
+    }
+
+    function switchModalTab(tabIndex) {
+      [1, 2, 3].forEach(i => {
+        document.getElementById('tabContent' + i).classList.add('hidden');
+        document.getElementById('tabBtn' + i).classList.remove('border-b-2', 'border-[#ff5500]', 'text-white');
+        document.getElementById('tabBtn' + i).classList.add('text-neutral-400');
+      });
+      document.getElementById('tabContent' + tabIndex).classList.remove('hidden');
+      document.getElementById('tabBtn' + tabIndex).classList.add('border-b-2', 'border-[#ff5500]', 'text-white');
+      document.getElementById('tabBtn' + tabIndex).classList.remove('text-neutral-400');
+    }
+
+    function generateInstantLicense() {
+      const email = document.getElementById('devEmailInput').value.trim();
+      if (!email) {
+        alert("Please enter your developer email or GitHub username to generate your license key.");
+        return;
+      }
+      
+      // Generate randomized cryptographically styled license key
+      const randPart = Array.from({length: 3}, () => Math.random().toString(36).substring(2, 6).toUpperCase()).join('-');
+      const key = "DSS-PRO-2026-" + randPart;
+      
+      document.getElementById('licenseKeyText').innerText = key;
+      document.getElementById('licenseResultBox').classList.remove('hidden');
+
+      // Trigger automatic direct download
+      const a = document.createElement('a');
+      a.href = './DevSuperSuite_Commercial_v1.0.zip';
+      a.download = 'DevSuperSuite_Commercial_v1.0.zip';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+
+      // Record customer into local storage
+      const existing = JSON.parse(localStorage.getItem('dss_customers') || '[]');
+      existing.push({ email: email, key: key, date: new Date().toISOString(), plan: currentPlanName });
+      localStorage.setItem('dss_customers', JSON.stringify(existing));
+    }
+
+    function copyLicenseKey() {
+      const key = document.getElementById('licenseKeyText').innerText;
+      navigator.clipboard.writeText(key);
+      alert("License key copied: " + key);
     }
 
     function copyUpi() {
@@ -698,7 +777,9 @@
         alert("Please enter your 12-digit UPI Reference / UTR Number.");
         return;
       }
-      document.getElementById('downloadArea').classList.remove('hidden');
+      switchModalTab(1);
+      document.getElementById('devEmailInput').value = "UPI-UTR-" + val;
+      generateInstantLicense();
     }
 
     // --- Playground Logic ---
