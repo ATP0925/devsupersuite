@@ -161,6 +161,13 @@
       <h3 id="modalPlanName" class="text-2xl font-bold text-white mb-1">Hacker Solo License</h3>
       <p id="modalPlanPrice" class="text-cyan-400 font-extrabold text-2xl mb-4">₹1,499</p>
 
+      <!-- UPI Handle Selector Tabs -->
+      <div class="flex justify-center gap-2 mb-3">
+        <button onclick="setUpiHandle('@okaxis')" class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 hover:bg-cyan-500 hover:text-black transition text-slate-300 font-medium">Google Pay (@okaxis)</button>
+        <button onclick="setUpiHandle('@ybl')" class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 hover:bg-cyan-500 hover:text-black transition text-slate-300 font-medium">PhonePe (@ybl)</button>
+        <button onclick="setUpiHandle('@paytm')" class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 hover:bg-cyan-500 hover:text-black transition text-slate-300 font-medium">Paytm (@paytm)</button>
+      </div>
+
       <!-- Dynamic QR Code -->
       <div class="bg-white p-3 rounded-2xl inline-block mx-auto mb-4 shadow-lg">
         <img id="qrCodeImg" src="" alt="Scan UPI QR" class="w-48 h-48 mx-auto">
@@ -169,8 +176,12 @@
       <!-- UPI Receiver Info -->
       <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 text-xs text-left mb-4">
         <div class="flex justify-between py-1">
-          <span class="text-slate-400">UPI ID / Number:</span>
-          <span class="font-mono text-cyan-400 font-bold select-all">9975944612@upi</span>
+          <span class="text-slate-400">Active UPI ID:</span>
+          <span id="displayUpiId" class="font-mono text-cyan-400 font-bold select-all">9975944612@okaxis</span>
+        </div>
+        <div class="flex justify-between py-1">
+          <span class="text-slate-400">Direct Pay by Number:</span>
+          <span class="font-mono text-emerald-400 font-bold select-all">9975944612</span>
         </div>
         <div class="flex justify-between py-1">
           <span class="text-slate-400">Supported Apps:</span>
@@ -209,21 +220,34 @@
   </footer>
 
   <script>
-    const UPI_ID = "9975944612@upi";
+    let activeHandle = "@okaxis";
+    const BASE_NUMBER = "9975944612";
     const PAYEE_NAME = "Pratik Atpadkar";
+    let currentPlanName = "Hacker Solo";
+    let currentAmountInr = 1499;
 
-    function openUpiModal(planName, amountInr, amountUsd) {
-      document.getElementById('modalPlanName').innerText = planName + " License";
-      document.getElementById('modalPlanPrice').innerText = "₹" + amountInr + " (" + "$" + amountUsd + " USD)";
-      
-      const upiUrl = `upi://pay?pa=${encodeURIComponent(UPI_ID)}&pn=${encodeURIComponent(PAYEE_NAME)}&am=${amountInr}&cu=INR&tn=${encodeURIComponent(planName + " License")}`;
+    function renderQr() {
+      const fullUpiId = BASE_NUMBER + activeHandle;
+      document.getElementById('displayUpiId').innerText = fullUpiId;
+      const upiUrl = `upi://pay?pa=${encodeURIComponent(fullUpiId)}&pn=${encodeURIComponent(PAYEE_NAME)}&am=${currentAmountInr}&cu=INR&tn=${encodeURIComponent(currentPlanName + " License")}`;
       const qrApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=${encodeURIComponent(upiUrl)}`;
-      
       document.getElementById('qrCodeImg').src = qrApiUrl;
       document.getElementById('directPayBtn').href = upiUrl;
+    }
+
+    function setUpiHandle(handle) {
+      activeHandle = handle;
+      renderQr();
+    }
+
+    function openUpiModal(planName, amountInr, amountUsd) {
+      currentPlanName = planName;
+      currentAmountInr = amountInr;
+      document.getElementById('modalPlanName').innerText = planName + " License";
+      document.getElementById('modalPlanPrice').innerText = "₹" + amountInr + " (" + "$" + amountUsd + " USD)";
+      renderQr();
       document.getElementById('downloadArea').classList.add('hidden');
       document.getElementById('utrInput').value = '';
-      
       document.getElementById('upiModal').classList.remove('hidden');
     }
 
