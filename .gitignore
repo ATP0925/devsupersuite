@@ -8,3 +8,5 @@ __pycache__/
 !package.json
 *.py
 !package_product.py
+
+.vercel
