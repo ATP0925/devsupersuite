@@ -1,0 +1,94 @@
+{
+  "organization": "DevSuperSuite Solutions Architecture / OmniKernel Labs",
+  "contact": "solutions@devsupersuite.com",
+  "billing_period": "2026-11",
+  "currency": "USD",
+  "summary": {
+    "total_spend": 24852.87,
+    "potential_savings": 4731.27,
+    "average_idle_waste_pct": 19.04
+  },
+  "tenants": [
+    {
+      "tenant_id": "TENANT-CORE-ENG",
+      "department_name": "Core Software Engineering",
+      "namespace": "tenant-core-eng",
+      "cloud_provider": "AWS",
+      "cluster_id": "eks-us-east-1",
+      "vcpu_cost": 1891.23,
+      "ram_cost": 830.68,
+      "gpu_cost": 7154.0,
+      "total_monthly_cost": 9875.91,
+      "right_sized_monthly_cost": 8429.2,
+      "potential_monthly_savings": 1446.71,
+      "idle_waste_percentage": 14.65,
+      "recommendation": {
+        "target_vcpu": 28,
+        "target_ram_gib": 138,
+        "target_gpu_count": 4,
+        "target_gpu_slice": "full"
+      }
+    },
+    {
+      "tenant_id": "TENANT-DATA-SCIENCE",
+      "department_name": "Data Science & ML Research",
+      "namespace": "tenant-data-science",
+      "cloud_provider": "GCP",
+      "cluster_id": "gke-us-central1",
+      "vcpu_cost": 3597.44,
+      "ram_cost": 1569.79,
+      "gpu_cost": 6257.14,
+      "total_monthly_cost": 11424.37,
+      "right_sized_monthly_cost": 10314.48,
+      "potential_monthly_savings": 1109.89,
+      "idle_waste_percentage": 9.72,
+      "recommendation": {
+        "target_vcpu": 98,
+        "target_ram_gib": 425,
+        "target_gpu_count": 8,
+        "target_gpu_slice": "2g.20gb"
+      }
+    },
+    {
+      "tenant_id": "TENANT-PLATFORM-INFRA",
+      "department_name": "Platform & Site Reliability",
+      "namespace": "tenant-platform-infra",
+      "cloud_provider": "Azure",
+      "cluster_id": "aks-westeurope-1",
+      "vcpu_cost": 962.43,
+      "ram_cost": 420.48,
+      "gpu_cost": 1489.2,
+      "total_monthly_cost": 2872.11,
+      "right_sized_monthly_cost": 1073.73,
+      "potential_monthly_savings": 1798.39,
+      "idle_waste_percentage": 62.62,
+      "recommendation": {
+        "target_vcpu": 15,
+        "target_ram_gib": 60,
+        "target_gpu_count": 2,
+        "target_gpu_slice": "2g.20gb"
+      }
+    },
+    {
+      "tenant_id": "TENANT-SEC-PRIVACY",
+      "department_name": "Security & Privacy Compliance",
+      "namespace": "tenant-security-privacy",
+      "cloud_provider": "AWS",
+      "cluster_id": "eks-us-east-1",
+      "vcpu_cost": 472.81,
+      "ram_cost": 207.67,
+      "gpu_cost": 0.0,
+      "total_monthly_cost": 680.48,
+      "right_sized_monthly_cost": 304.2,
+      "potential_monthly_savings": 376.28,
+      "idle_waste_percentage": 55.3,
+      "recommendation": {
+        "target_vcpu": 7,
+        "target_ram_gib": 30,
+        "target_gpu_count": 0,
+        "target_gpu_slice": "full"
+      }
+    }
+  ],
+  "generated_at": "2026-11-08T11:33:21.570649+00:00"
+}

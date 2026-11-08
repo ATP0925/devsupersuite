@@ -1,0 +1,315 @@
+{
+  "manifest_meta": {
+    "engine": "DevSuperSuite Multi-Platform Social Backlink Network & Syndication Pipeline",
+    "version": "1.0.0",
+    "brand_entity": "DevSuperSuite Community Outreach",
+    "contact_email": "outreach@devsupersuite.com",
+    "canonical_domain": "https://devsupersuite.web.app",
+    "checkout_url": "https://gumroad.com/l/tlzdco",
+    "launch_coupon": "DSS-DEVREL-BACKLINK",
+    "vip_price": "$24",
+    "compliance": "100% Brand Anonymity Protocol Verified | Zero Founder Personal Disclosures"
+  },
+  "platforms_matrix": [
+    {
+      "platform_id": "PL-REDDIT",
+      "name": "Reddit",
+      "domain_authority": 91,
+      "link_attribute": "nofollow_ugc",
+      "developer_reach": "11.8M+",
+      "primary_channels": ["r/programming", "r/rust", "r/LocalLLaMA", "r/devops", "r/webdev", "r/cursor"],
+      "optimal_posting_window_utc": "13:00 - 16:00 UTC",
+      "rate_limit_policy": "Max 1 high-value discussion post per subreddit every 72 hours"
+    },
+    {
+      "platform_id": "PL-HN",
+      "name": "Hacker News",
+      "domain_authority": 89,
+      "link_attribute": "nofollow",
+      "developer_reach": "5.2M+",
+      "primary_channels": ["Show HN", "Ask HN", "Technical Submissions", "Comment Threads"],
+      "optimal_posting_window_utc": "14:00 - 17:00 UTC",
+      "rate_limit_policy": "Max 1 Show HN launch submission every 14 days; real-time technical comment replies"
+    },
+    {
+      "platform_id": "PL-DEVTO",
+      "name": "Dev.to",
+      "domain_authority": 84,
+      "link_attribute": "dofollow_canonical",
+      "developer_reach": "2.8M+",
+      "primary_channels": ["#programming", "#webdev", "#ai", "#devops", "#discuss"],
+      "optimal_posting_window_utc": "12:00 - 15:00 UTC",
+      "rate_limit_policy": "Canonical rel=canonical links with direct publication API"
+    },
+    {
+      "platform_id": "PL-HASHNODE",
+      "name": "Hashnode",
+      "domain_authority": 82,
+      "link_attribute": "dofollow_canonical",
+      "developer_reach": "1.9M+",
+      "primary_channels": ["Engineering Blogs", "Local-First Architecture", "DevOps"],
+      "optimal_posting_window_utc": "11:00 - 14:00 UTC",
+      "rate_limit_policy": "Custom domain canonical URL synchronization with GraphQL API"
+    },
+    {
+      "platform_id": "PL-MEDIUM",
+      "name": "Medium",
+      "domain_authority": 95,
+      "link_attribute": "dofollow_canonical",
+      "developer_reach": "18.5M+",
+      "primary_channels": ["Towards Data Science", "Better Programming", "Level Up Coding"],
+      "optimal_posting_window_utc": "13:00 - 17:00 UTC",
+      "rate_limit_policy": "Import API with canonical_url header parameter"
+    },
+    {
+      "platform_id": "PL-SUBSTACK",
+      "name": "Substack",
+      "domain_authority": 92,
+      "link_attribute": "dofollow",
+      "developer_reach": "3.5M+",
+      "primary_channels": ["Systems Engineering Weekly", "Local Silicon Dispatch"],
+      "optimal_posting_window_utc": "14:00 - 18:00 UTC",
+      "rate_limit_policy": "Weekly technical deep-dive dispatch"
+    },
+    {
+      "platform_id": "PL-LOBSTERS",
+      "name": "Lobste.rs",
+      "domain_authority": 68,
+      "link_attribute": "dofollow",
+      "developer_reach": "450k+",
+      "primary_channels": ["programming", "rust", "compilers", "security"],
+      "optimal_posting_window_utc": "15:00 - 19:00 UTC",
+      "rate_limit_policy": "Invitational maintainer submission with zero marketing copy"
+    },
+    {
+      "platform_id": "PL-LEMMY",
+      "name": "Lemmy",
+      "domain_authority": 74,
+      "link_attribute": "dofollow_federated",
+      "developer_reach": "680k+",
+      "primary_channels": ["!programming@lemmy.ml", "!rust@fediverse.observer", "!privacy@lemmy.world"],
+      "optimal_posting_window_utc": "12:00 - 16:00 UTC",
+      "rate_limit_policy": "Decentralized ActivityPub federation; open-source engineering focus"
+    }
+  ],
+  "anchor_text_distribution_matrix": {
+    "total_target_backlinks": 120,
+    "categories": [
+      {
+        "category_name": "Branded Exact",
+        "ratio_percent": 25,
+        "anchors": [
+          "DevSuperSuite",
+          "DevSuperSuite Local AST Engine",
+          "DevSuperSuite AgentShield",
+          "DevSuperSuite Pro Lifetime"
+        ]
+      },
+      {
+        "category_name": "Topical Partial Match",
+        "ratio_percent": 30,
+        "anchors": [
+          "Tree-sitter concrete syntax tree pruning",
+          "sub-0.8ms Shannon entropy API key shield",
+          "pre-commit test suite invariant guard",
+          "local-first developer tooling architecture",
+          "sub-110ms duplex terminal voice coding"
+        ]
+      },
+      {
+        "category_name": "Functional / Value-Add",
+        "ratio_percent": 25,
+        "anchors": [
+          "interactive client-side WebAssembly browser sandbox",
+          "test prompt bloat reduction in browser",
+          "live Shannon entropy calculator",
+          "zero-signup WebAssembly developer workbench"
+        ]
+      },
+      {
+        "category_name": "Naked URL",
+        "ratio_percent": 15,
+        "anchors": [
+          "https://devsupersuite.web.app",
+          "devsupersuite.web.app",
+          "https://devsupersuite.web.app/blog"
+        ]
+      },
+      {
+        "category_name": "Generic Reference",
+        "ratio_percent": 5,
+        "anchors": [
+          "technical benchmark and source code",
+          "full systems engineering breakdown",
+          "read the architecture paper"
+        ]
+      }
+    ]
+  },
+  "cross_posting_schedule": [
+    {
+      "day_offset": 1,
+      "article_id": "ART-01",
+      "title": "Why LLMs hallucinate on 100k-line codebases and how we fixed it with SIMD Tree-sitter",
+      "slug": "why-llms-hallucinate-100k-line-codebases-simd-tree-sitter",
+      "platforms": ["PL-DEVTO", "PL-HASHNODE"],
+      "canonical_url": "https://devsupersuite.web.app/blog/why-llms-hallucinate-100k-line-codebases-simd-tree-sitter",
+      "utm_campaign": "art01_syndication_wave1"
+    },
+    {
+      "day_offset": 2,
+      "article_id": "ART-01",
+      "title": "Why LLMs hallucinate on 100k-line codebases and how we fixed it with SIMD Tree-sitter",
+      "slug": "why-llms-hallucinate-100k-line-codebases-simd-tree-sitter",
+      "platforms": ["PL-REDDIT", "PL-HN"],
+      "canonical_url": "https://devsupersuite.web.app/blog/why-llms-hallucinate-100k-line-codebases-simd-tree-sitter",
+      "utm_campaign": "art01_community_wave"
+    },
+    {
+      "day_offset": 3,
+      "article_id": "ART-02",
+      "title": "Building a pre-commit invariant guard: Stopping autonomous coding agents from deleting tests",
+      "slug": "building-precommit-invariant-guard-stopping-agents-deleting-tests",
+      "platforms": ["PL-DEVTO", "PL-MEDIUM"],
+      "canonical_url": "https://devsupersuite.web.app/blog/building-precommit-invariant-guard-stopping-agents-deleting-tests",
+      "utm_campaign": "art02_syndication_wave1"
+    },
+    {
+      "day_offset": 4,
+      "article_id": "ART-02",
+      "title": "Building a pre-commit invariant guard: Stopping autonomous coding agents from deleting tests",
+      "slug": "building-precommit-invariant-guard-stopping-agents-deleting-tests",
+      "platforms": ["PL-LOBSTERS", "PL-LEMMY"],
+      "canonical_url": "https://devsupersuite.web.app/blog/building-precommit-invariant-guard-stopping-agents-deleting-tests",
+      "utm_campaign": "art02_federated_wave"
+    },
+    {
+      "day_offset": 5,
+      "article_id": "ART-03",
+      "title": "The death of $20/month AI SaaS seat taxes: The engineering case for local-first developer tooling",
+      "slug": "death-of-20-month-ai-saas-seat-taxes-local-first-tooling",
+      "platforms": ["PL-HASHNODE", "PL-SUBSTACK"],
+      "canonical_url": "https://devsupersuite.web.app/blog/death-of-20-month-ai-saas-seat-taxes-local-first-tooling",
+      "utm_campaign": "art03_editorial_wave"
+    },
+    {
+      "day_offset": 6,
+      "article_id": "ART-03",
+      "title": "The death of $20/month AI SaaS seat taxes: The engineering case for local-first developer tooling",
+      "slug": "death-of-20-month-ai-saas-seat-taxes-local-first-tooling",
+      "platforms": ["PL-REDDIT", "PL-HN"],
+      "canonical_url": "https://devsupersuite.web.app/blog/death-of-20-month-ai-saas-seat-taxes-local-first-tooling",
+      "utm_campaign": "art03_community_wave"
+    },
+    {
+      "day_offset": 7,
+      "article_id": "ART-04",
+      "title": "Inside AgentShield: Catching Shannon entropy credential leaks in CPU registers under 0.8ms",
+      "slug": "inside-agentshield-shannon-entropy-credential-leaks-cpu-registers",
+      "platforms": ["PL-DEVTO", "PL-MEDIUM"],
+      "canonical_url": "https://devsupersuite.web.app/blog/inside-agentshield-shannon-entropy-credential-leaks-cpu-registers",
+      "utm_campaign": "art04_syndication_wave1"
+    },
+    {
+      "day_offset": 8,
+      "article_id": "ART-04",
+      "title": "Inside AgentShield: Catching Shannon entropy credential leaks in CPU registers under 0.8ms",
+      "slug": "inside-agentshield-shannon-entropy-credential-leaks-cpu-registers",
+      "platforms": ["PL-LOBSTERS", "PL-REDDIT"],
+      "canonical_url": "https://devsupersuite.web.app/blog/inside-agentshield-shannon-entropy-credential-leaks-cpu-registers",
+      "utm_campaign": "art04_security_wave"
+    },
+    {
+      "day_offset": 9,
+      "article_id": "ART-05",
+      "title": "Hands-free voice coding: Sub-110ms duplex audio with acoustic echo cancellation in terminal",
+      "slug": "hands-free-voice-coding-sub-110ms-duplex-audio-echo-cancellation-terminal",
+      "platforms": ["PL-DEVTO", "PL-HASHNODE"],
+      "canonical_url": "https://devsupersuite.web.app/blog/hands-free-voice-coding-sub-110ms-duplex-audio-echo-cancellation-terminal",
+      "utm_campaign": "art05_syndication_wave1"
+    },
+    {
+      "day_offset": 10,
+      "article_id": "ART-05",
+      "title": "Hands-free voice coding: Sub-110ms duplex audio with acoustic echo cancellation in terminal",
+      "slug": "hands-free-voice-coding-sub-110ms-duplex-audio-echo-cancellation-terminal",
+      "platforms": ["PL-LEMMY", "PL-SUBSTACK"],
+      "canonical_url": "https://devsupersuite.web.app/blog/hands-free-voice-coding-sub-110ms-duplex-audio-echo-cancellation-terminal",
+      "utm_campaign": "art05_voice_wave"
+    }
+  ],
+  "keyword_listener_triggers": [
+    {
+      "trigger_id": "KEY-01",
+      "keyword_pattern": "(token bloat|token billing blowout|cursor token limit|costly prompt)",
+      "severity": "CRITICAL",
+      "response_sla_mins": 10,
+      "topic": "Context-Window Attention Sink Dilution & Tree-Sitter Pruning",
+      "recommended_action": "Inject AST pruning benchmark showing 83.6% token reduction and link to browser sandbox",
+      "template_reference": "HOOK-01"
+    },
+    {
+      "trigger_id": "KEY-02",
+      "keyword_pattern": "(cursor composer hallucinating|lost in the middle|model forgets schema)",
+      "severity": "HIGH",
+      "response_sla_mins": 15,
+      "topic": "Attention Softmax Normalization across Large Repositories",
+      "recommended_action": "Explain softmax(QK^T / sqrt(d_k)) probability dispersion across 80k tokens",
+      "template_reference": "HOOK-02"
+    },
+    {
+      "trigger_id": "KEY-03",
+      "keyword_pattern": "(claude code error|agent deleted my test|agent commented out assertions)",
+      "severity": "CRITICAL",
+      "response_sla_mins": 8,
+      "topic": "Deterministic Pre-Commit AST Test Suite Invariance",
+      "recommended_action": "Demonstrate AST assertion density gate N_staged >= N_baseline blocking test deletions",
+      "template_reference": "HOOK-07"
+    },
+    {
+      "trigger_id": "KEY-04",
+      "keyword_pattern": "(git secret commit|leaked api key|anthropic key exposed|stripe secret in git)",
+      "severity": "EMERGENCY",
+      "response_sla_mins": 5,
+      "topic": "AgentShield Shannon Entropy Credential Interception",
+      "recommended_action": "Explain H(X) >= 4.50 bits/char vs UUID false alarms and sub-0.8ms SIMD execution",
+      "template_reference": "HOOK-05"
+    },
+    {
+      "trigger_id": "KEY-05",
+      "keyword_pattern": "(gitleaks false positive|regex pre-commit slow|skip pre-commit no-verify)",
+      "severity": "HIGH",
+      "response_sla_mins": 12,
+      "topic": "Eliminating Alert Fatigue via Syntax-Scoped AST Scanning",
+      "recommended_action": "Provide comparison showing 0.78ms SIMD scan with zero false alarms on hex UUIDs",
+      "template_reference": "HOOK-05"
+    },
+    {
+      "trigger_id": "KEY-06",
+      "keyword_pattern": "(ai saas seat tax|20 dollar a month seat|subscription fatigue|ai tool bloat)",
+      "severity": "HIGH",
+      "response_sla_mins": 20,
+      "topic": "Local-First Developer Economics vs Cloud SaaS Proxies",
+      "recommended_action": "Share 50-developer $100k savings financial model and local M3/M4 silicon benchmarks",
+      "template_reference": "HOOK-03"
+    },
+    {
+      "trigger_id": "KEY-07",
+      "keyword_pattern": "(voice coding latency|whisper slow in terminal|talking to my editor)",
+      "severity": "MEDIUM",
+      "response_sla_mins": 30,
+      "topic": "Sub-110ms Local Duplex Neural Voice Coding in Pure Rust",
+      "recommended_action": "Break down 110ms latency budget and acoustic echo cancellation (NLMS)",
+      "template_reference": "XT-05"
+    },
+    {
+      "trigger_id": "KEY-08",
+      "keyword_pattern": "(rag vs ast|vector search for code|code chunking embedding)",
+      "severity": "HIGH",
+      "response_sla_mins": 15,
+      "topic": "Concrete Syntax Trees vs Naive 500-Token Vector Chunking",
+      "recommended_action": "Explain why source code is a directed acyclic graph and requires compiler parsing",
+      "template_reference": "HOOK-01"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "metadata": {
+    "generated_at": "2026-11-08T11:33:35.086814+00:00",
+    "reporting_entity": "DevSuperSuite Group",
+    "department": "DevSuperSuite Global Treasury Desk",
+    "treasury_contact": "treasury@devsupersuite.com",
+    "sweep_policy": "Zero-Balance Depository Float Sweep > $50,000"
+  },
+  "liquidity_buffers_audit": {
+    "total_treasury_capital_usd": 125000.0,
+    "current_depository_cash_usd": 125000.0,
+    "target_depository_float_threshold_usd": 50000.0,
+    "monthly_operating_burn_usd": 1800.0,
+    "daily_operating_burn_usd": 60.0,
+    "mandatory_runway_days": 45,
+    "mandatory_45d_cash_required_usd": 2700.0,
+    "depository_retained_runway_days": 833.3,
+    "runway_mandate_satisfied": true,
+    "surplus_capital_to_sweep_usd": 75000.0
+  },
+  "sovereign_cash_sweep": {
+    "pre_sweep_depository_cash_usd": 125000.0,
+    "sweep_threshold_usd": 50000.0,
+    "total_swept_to_sovereign_paper_usd": 75000.0,
+    "retained_depository_operating_float_usd": 50000.0,
+    "blended_sovereign_apy_pct": 5.02,
+    "annualized_accrued_yield_usd": 3765.0,
+    "daily_accrued_yield_usd": 10.32,
+    "yield_band_compliant": true,
+    "sovereign_tranches": [
+      {
+        "instrument": "U.S. Treasury Bills (4-Week Bill)",
+        "tenor_days": 28,
+        "apy_pct": 4.95,
+        "allocation_usd": 40000.0,
+        "annual_yield_usd": 1980.0,
+        "custodian": "BNY Mellon (Direct Fedwire Book-Entry Trust)"
+      },
+      {
+        "instrument": "U.S. Treasury Bills (13-Week / 3-Month Bill)",
+        "tenor_days": 91,
+        "apy_pct": 5.1,
+        "allocation_usd": 35000.0,
+        "annual_yield_usd": 1785.0,
+        "custodian": "BNY Mellon (Direct Fedwire Book-Entry Trust)"
+      }
+    ],
+    "post_sweep_depositories": [
+      {
+        "institution": "JPMorgan Chase Bank, N.A.",
+        "role": "Primary Operating & Wire Clearing Account",
+        "post_sweep_balance_usd": 30000.0,
+        "fdic_insurance_limit_usd": 250000.0,
+        "insurance_coverage_status": "100% FULLY INSURED (UNDER $250K LIMIT)"
+      },
+      {
+        "institution": "State Street Bank and Trust Company",
+        "role": "Secondary Depository & International FX Clearing",
+        "post_sweep_balance_usd": 20000.0,
+        "fdic_insurance_limit_usd": 250000.0,
+        "insurance_coverage_status": "100% FULLY INSURED (UNDER $250K LIMIT)"
+      }
+    ]
+  },
+  "custodian_stress_testing": {
+    "custodian_exposure_matrix": [
+      {
+        "institution": "The Bank of New York Mellon (BNY Mellon)",
+        "asset_class": "U.S. Sovereign Treasury Bills (Direct Custody)",
+        "balance_usd": 75000.0,
+        "regulatory_protection": "Segregated Fedwire Book-Entry Trust (100% Sovereign Backed)",
+        "insurance_ceiling_usd": "UNLIMITED_SOVEREIGN_TRUST",
+        "is_compliant_under_250k": true,
+        "exposure_pct": 60.0
+      },
+      {
+        "institution": "JPMorgan Chase Bank, N.A.",
+        "asset_class": "Commercial Depository Float",
+        "balance_usd": 30000.0,
+        "regulatory_protection": "FDIC Insured Depository",
+        "insurance_ceiling_usd": 250000.0,
+        "is_compliant_under_250k": true,
+        "exposure_pct": 24.0
+      },
+      {
+        "institution": "State Street Bank and Trust Company",
+        "asset_class": "Secondary Commercial Depository Float",
+        "balance_usd": 20000.0,
+        "regulatory_protection": "FDIC Insured Depository",
+        "insurance_ceiling_usd": 250000.0,
+        "is_compliant_under_250k": true,
+        "exposure_pct": 16.0
+      }
+    ],
+    "all_custodians_under_250k_limit": true,
+    "bank_run_stress_test": {
+      "scenario": "CRITICAL_TIER_1_COMMERCIAL_BANK_DEFAULT",
+      "frozen_counterparty": "JPMorgan Chase Bank ($30,000.00 USD temporarily frozen)",
+      "fdic_recovery_expectation": "100% full recovery up to $250,000 statutory limit",
+      "immediate_surviving_depository_cash_usd": 20000.0,
+      "immediate_surviving_runway_days": 333.3,
+      "sovereign_tbills_insulated_usd": 75000.0,
+      "total_surviving_liquidity_usd": 95000.0,
+      "total_surviving_runway_days": 1583.3,
+      "runway_mandate_survived": true,
+      "verdict": "PASS_ZERO_OPERATIONAL_CONTRACTION",
+      "affirmation": "Secondary depository cash at State Street ($20,000.00) alone provides 333.3 days of runway, exceeding the 45-day mandate 7.4x over, while BNY Mellon sovereign T-Bills ($75,000.00) are 100% insulated in segregated book-entry custody."
+    }
+  }
+}

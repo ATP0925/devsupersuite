@@ -1,0 +1,108 @@
+{
+  "version": "1.0.0",
+  "governing_entity": "DevSuperSuite Revenue Operations (growth@devsupersuite.com)",
+  "compliance_protocol": "100% Brand Anonymity - Zero Founder Personal Identifiers",
+  "last_updated": "2026-11-08T11:26:21.776047+00:00",
+  "dispatched_licenses": [
+    {
+      "dispatch_id": "DISP-GUM-882101",
+      "order_id": "GUM-TLZD-881029",
+      "gateway": "GUMROAD",
+      "customer_email": "dev.lead@datadoghq.com",
+      "plan_name": "Pro Lifetime License",
+      "amount_paid": 29.0,
+      "currency": "USD",
+      "license_key": "DSS-PRO-881029-A1B2C3D4E5F6",
+      "signature_hex": "e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4",
+      "dispatched_at": "2026-11-08T16:40:00Z",
+      "status": "PROVISIONED_AND_DISPATCHED",
+      "email_payload": {
+        "recipient": "dev.lead@datadoghq.com",
+        "subject": "[DevSuperSuite] Your Pro Lifetime License Key & Commercial Suite Access",
+        "download_url": "https://devsupersuite.web.app/DevSuperSuite_Commercial_v1.0.zip",
+        "cli_one_liner": "curl -fsSL https://devsupersuite.web.app/install.sh | bash",
+        "license_key": "DSS-PRO-881029-A1B2C3D4E5F6"
+      }
+    },
+    {
+      "dispatch_id": "DISP-UPI-120938",
+      "order_id": "UPI-431589102934",
+      "gateway": "UPI_DOMESTIC",
+      "utr": "431589102934",
+      "customer_email": "engineer.bangalore@flipkart.com",
+      "plan_name": "Pro Lifetime License",
+      "amount_paid": 1499.0,
+      "currency": "INR",
+      "license_key": "DSS-PRO-431589-98F1BC72A012",
+      "signature_hex": "1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+      "dispatched_at": "2026-11-08T16:45:00Z",
+      "status": "PROVISIONED_AND_DISPATCHED",
+      "email_payload": {
+        "recipient": "engineer.bangalore@flipkart.com",
+        "subject": "[DevSuperSuite] Your Pro Lifetime License Key & Commercial Suite Access",
+        "download_url": "https://devsupersuite.web.app/DevSuperSuite_Commercial_v1.0.zip",
+        "cli_one_liner": "curl -fsSL https://devsupersuite.web.app/install.sh | bash",
+        "license_key": "DSS-PRO-431589-98F1BC72A012"
+      }
+    },
+    {
+      "dispatch_id": "DISP-B7916632",
+      "order_id": "UPI-990011223344",
+      "gateway": "UPI_DOMESTIC",
+      "utr": "990011223344",
+      "customer_email": "cli.dev@co.com",
+      "plan_name": "Pro Lifetime License",
+      "amount_paid": 1499.0,
+      "currency": "INR",
+      "license_key": "DSS-PRO-A4527A21-B9B0603E79A1",
+      "signature_hex": "b9b0603e79a13761ba6383027ec2cb959c2131056ecffe3251f0976823d138a6d85cda4f81219b45050dd5f7cd8e9a86586d7d8a71a7e2b74cdbff953aac9306",
+      "dispatched_at": "2026-11-08T11:26:21.632051+00:00",
+      "status": "PROVISIONED_AND_DISPATCHED",
+      "email_payload": {
+        "recipient": "cli.dev@co.com",
+        "subject": "[DevSuperSuite] Your Pro Lifetime License Key & Instant Onboarding Access",
+        "body_plain": "Hello Developer,\n\nThank you for your purchase of DevSuperSuite Pro Lifetime License.\nYour transaction (UPI_DOMESTIC Order ID: UPI-990011223344) has been verified and settled in full.\n\n================================================================================\nYOUR ED25519 CRYPTOGRAPHIC LICENSE KEY:\nDSS-PRO-A4527A21-B9B0603E79A1\n================================================================================\n\n1-CLICK CLI INSTALLATION (LINUX / MACOS):\n  curl -fsSL https://devsupersuite.web.app/install.sh | bash\n\n1-CLICK CLI INSTALLATION (WINDOWS POWERSHELL):\n  irm https://devsupersuite.web.app/install.ps1 | iex\n\nDIRECT COMMERCIAL SUITE DOWNLOAD:\n  https://devsupersuite.web.app/DevSuperSuite_Commercial_v1.0.zip\n\nOFFLINE AIR-GAP ACTIVATION:\n  omnikernel --activate --key DSS-PRO-A4527A21-B9B0603E79A1\n\nSECURITY & PRIVACY GUARANTEE:\nDevSuperSuite executes 100% locally via WebAssembly and offline binaries. Zero telemetry, zero external token egress, and zero cloud AST inspection.\n\nNeed architecture triage or enterprise team seat upgrades?\nContact our solutions engineering desk: enterprise@devsupersuite.com\n\nBest regards,\nDevSuperSuite Revenue Operations\ngrowth@devsupersuite.com | https://devsupersuite.web.app\n",
+        "body_html": "<div style=\"font-family: monospace; max-width: 600px; background: #0a0a0a; color: #fff; padding: 24px; border: 2px solid #ff5500;\">\n  <div style=\"border-bottom: 1px solid #333; padding-bottom: 12px; margin-bottom: 16px;\">\n    <h2 style=\"color: #ff5500; margin: 0; font-size: 20px;\">\u26a1 DEVSUPERSUITE LICENSE ACTIVATION</h2>\n    <p style=\"color: #888; margin: 4px 0 0 0; font-size: 12px;\">Order #UPI-990011223344 Verified via UPI_DOMESTIC</p>\n  </div>\n  <p style=\"font-size: 14px; line-height: 1.5;\">Your license for <strong>Pro Lifetime License</strong> is ready for instant deployment.</p>\n  <div style=\"background: #000; border: 1px solid #ff5500; padding: 16px; margin: 20px 0; text-align: center;\">\n    <span style=\"color: #888; font-size: 11px; display: block; margin-bottom: 6px;\">STANDALONE ED25519 KEY</span>\n    <code style=\"color: #00ff88; font-size: 16px; font-weight: bold; letter-spacing: 1px;\">DSS-PRO-A4527A21-B9B0603E79A1</code>\n  </div>\n  <div style=\"margin: 20px 0;\">\n    <a href=\"https://devsupersuite.web.app/DevSuperSuite_Commercial_v1.0.zip\" style=\"display: block; background: #ff5500; color: #000; text-align: center; padding: 12px; text-decoration: none; font-weight: bold; font-size: 14px;\">DOWNLOAD COMMERCIAL SUITE (ZIP) \u2794</a>\n  </div>\n  <div style=\"background: #111; padding: 12px; font-size: 12px; color: #aaa; margin-top: 16px;\">\n    <p style=\"margin: 0 0 6px 0; color: #fff;\"><strong>Quick CLI Install:</strong></p>\n    <code>curl -fsSL https://devsupersuite.web.app/install.sh | bash</code>\n  </div>\n  <p style=\"font-size: 11px; color: #666; margin-top: 24px;\">Governing Authority: DevSuperSuite Revenue Operations (growth@devsupersuite.com)</p>\n</div>",
+        "license_key": "DSS-PRO-A4527A21-B9B0603E79A1",
+        "download_url": "https://devsupersuite.web.app/DevSuperSuite_Commercial_v1.0.zip",
+        "cli_one_liner": "curl -fsSL https://devsupersuite.web.app/install.sh | bash",
+        "dispatch_timestamp": "2026-11-08T11:26:21.632032+00:00"
+      }
+    },
+    {
+      "dispatch_id": "DISP-5145C5DD",
+      "order_id": "GUM-CLI-901",
+      "gateway": "GUMROAD",
+      "customer_email": "cli@test.com",
+      "plan_name": "DevSuperSuite Pro Lifetime License",
+      "amount_paid": 29.0,
+      "currency": "USD",
+      "license_key": "DSS-PRO-7EBCCA04-FC535574C148",
+      "signature_hex": "fc535574c148c32e7bfb074f4caea881099730074c66f80bb419300a7c0b2414558304740898944390e6e8e7cee8515714543676d209eda048da065c5cd3500f",
+      "dispatched_at": "2026-11-08T11:26:21.776044+00:00",
+      "status": "PROVISIONED_AND_DISPATCHED",
+      "email_payload": {
+        "recipient": "cli@test.com",
+        "subject": "[DevSuperSuite] Your DevSuperSuite Pro Lifetime License Key & Instant Onboarding Access",
+        "body_plain": "Hello Developer,\n\nThank you for your purchase of DevSuperSuite DevSuperSuite Pro Lifetime License.\nYour transaction (GUMROAD Order ID: GUM-CLI-901) has been verified and settled in full.\n\n================================================================================\nYOUR ED25519 CRYPTOGRAPHIC LICENSE KEY:\nDSS-PRO-7EBCCA04-FC535574C148\n================================================================================\n\n1-CLICK CLI INSTALLATION (LINUX / MACOS):\n  curl -fsSL https://devsupersuite.web.app/install.sh | bash\n\n1-CLICK CLI INSTALLATION (WINDOWS POWERSHELL):\n  irm https://devsupersuite.web.app/install.ps1 | iex\n\nDIRECT COMMERCIAL SUITE DOWNLOAD:\n  https://devsupersuite.web.app/DevSuperSuite_Commercial_v1.0.zip\n\nOFFLINE AIR-GAP ACTIVATION:\n  omnikernel --activate --key DSS-PRO-7EBCCA04-FC535574C148\n\nSECURITY & PRIVACY GUARANTEE:\nDevSuperSuite executes 100% locally via WebAssembly and offline binaries. Zero telemetry, zero external token egress, and zero cloud AST inspection.\n\nNeed architecture triage or enterprise team seat upgrades?\nContact our solutions engineering desk: enterprise@devsupersuite.com\n\nBest regards,\nDevSuperSuite Revenue Operations\ngrowth@devsupersuite.com | https://devsupersuite.web.app\n",
+        "body_html": "<div style=\"font-family: monospace; max-width: 600px; background: #0a0a0a; color: #fff; padding: 24px; border: 2px solid #ff5500;\">\n  <div style=\"border-bottom: 1px solid #333; padding-bottom: 12px; margin-bottom: 16px;\">\n    <h2 style=\"color: #ff5500; margin: 0; font-size: 20px;\">\u26a1 DEVSUPERSUITE LICENSE ACTIVATION</h2>\n    <p style=\"color: #888; margin: 4px 0 0 0; font-size: 12px;\">Order #GUM-CLI-901 Verified via GUMROAD</p>\n  </div>\n  <p style=\"font-size: 14px; line-height: 1.5;\">Your license for <strong>DevSuperSuite Pro Lifetime License</strong> is ready for instant deployment.</p>\n  <div style=\"background: #000; border: 1px solid #ff5500; padding: 16px; margin: 20px 0; text-align: center;\">\n    <span style=\"color: #888; font-size: 11px; display: block; margin-bottom: 6px;\">STANDALONE ED25519 KEY</span>\n    <code style=\"color: #00ff88; font-size: 16px; font-weight: bold; letter-spacing: 1px;\">DSS-PRO-7EBCCA04-FC535574C148</code>\n  </div>\n  <div style=\"margin: 20px 0;\">\n    <a href=\"https://devsupersuite.web.app/DevSuperSuite_Commercial_v1.0.zip\" style=\"display: block; background: #ff5500; color: #000; text-align: center; padding: 12px; text-decoration: none; font-weight: bold; font-size: 14px;\">DOWNLOAD COMMERCIAL SUITE (ZIP) \u2794</a>\n  </div>\n  <div style=\"background: #111; padding: 12px; font-size: 12px; color: #aaa; margin-top: 16px;\">\n    <p style=\"margin: 0 0 6px 0; color: #fff;\"><strong>Quick CLI Install:</strong></p>\n    <code>curl -fsSL https://devsupersuite.web.app/install.sh | bash</code>\n  </div>\n  <p style=\"font-size: 11px; color: #666; margin-top: 24px;\">Governing Authority: DevSuperSuite Revenue Operations (growth@devsupersuite.com)</p>\n</div>",
+        "license_key": "DSS-PRO-7EBCCA04-FC535574C148",
+        "download_url": "https://devsupersuite.web.app/DevSuperSuite_Commercial_v1.0.zip",
+        "cli_one_liner": "curl -fsSL https://devsupersuite.web.app/install.sh | bash",
+        "dispatch_timestamp": "2026-11-08T11:26:21.776031+00:00"
+      }
+    }
+  ],
+  "redeemed_utrs": {
+    "431589102934": {
+      "license_key": "DSS-PRO-431589-98F1BC72A012",
+      "customer_email": "engineer.bangalore@flipkart.com",
+      "redeemed_at": "2026-11-08T16:45:00Z"
+    },
+    "990011223344": {
+      "license_key": "DSS-PRO-A4527A21-B9B0603E79A1",
+      "customer_email": "cli.dev@co.com",
+      "redeemed_at": "2026-11-08T11:26:21.632054+00:00"
+    }
+  }
+}

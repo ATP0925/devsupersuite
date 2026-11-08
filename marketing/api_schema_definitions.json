@@ -1,0 +1,224 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "OmniKernel 5.2-LTS Microservices API Specification",
+    "version": "5.2.0-LTS",
+    "description": "Standardized OpenAPI 3.1 & gRPC-compatible schema definitions for DevSuperSuite and OmniKernel local compiler microservices.",
+    "contact": {
+      "name": "DevSuperSuite Official",
+      "email": "press@devsupersuite.com",
+      "url": "https://devsupersuite.web.app"
+    },
+    "license": {
+      "name": "DevSuperSuite Pro Lifetime Commercial License",
+      "url": "https://gumroad.com/l/tlzdco"
+    }
+  },
+  "servers": [
+    {
+      "url": "http://127.0.0.1:8443",
+      "description": "Local Silicon Loopback Daemon (Zero Egress)"
+    },
+    {
+      "url": "unix:///var/run/omnikernel/daemon.sock",
+      "description": "UNIX Domain Socket (In-Process IPC)"
+    }
+  ],
+  "paths": {
+    "/v1/slicer/slice": {
+      "post": {
+        "summary": "Slice source code buffer into typed AST interface stubs",
+        "operationId": "sliceSourceFile",
+        "tags": ["AST Context Slicer"],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SliceRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful AST context slice extraction",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SliceResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Syntax error in source buffer preventing CST parsing"
+          }
+        }
+      }
+    },
+    "/v1/entropy/scan": {
+      "post": {
+        "summary": "Scan buffer for high-entropy secrets and verify test invariants",
+        "operationId": "scanEntropy",
+        "tags": ["AgentShield Invariant Guard"],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EntropyScanRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Buffer clean. Zero secrets detected and test invariants preserved."
+          },
+          "422": {
+            "description": "Invariant security breach detected (secret leak or test deletion)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EntropyScanBreachResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/raft/status": {
+      "get": {
+        "summary": "Retrieve local Raft cluster consensus and leader status",
+        "operationId": "getRaftStatus",
+        "tags": ["Raft Consensus Failover"],
+        "responses": {
+          "200": {
+            "description": "Active cluster topology and leader term status",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RaftStatusResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/vault/attest": {
+      "post": {
+        "summary": "Hardware-rooted TPM 2.0 PCR attestation and offline Ed25519 unsealing",
+        "operationId": "attestHardwareVault",
+        "tags": ["Vault Secret Provider"],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VaultAttestationRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Hardware validated and license unsealed offline",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/VaultAttestationResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "SliceRequest": {
+        "type": "object",
+        "required": ["filePath", "language", "content"],
+        "properties": {
+          "filePath": { "type": "string", "example": "src/orders/router.go" },
+          "language": { "type": "string", "enum": ["go", "rust", "cpp", "python", "typescript", "java"] },
+          "content": { "type": "string" },
+          "options": {
+            "type": "object",
+            "properties": {
+              "stripFunctionBodies": { "type": "boolean", "default": true },
+              "preserveDocstrings": { "type": "boolean", "default": true },
+              "preserveTypeAnnotations": { "type": "boolean", "default": true },
+              "maxDepth": { "type": "integer", "default": 8 }
+            }
+          }
+        }
+      },
+      "SliceResponse": {
+        "type": "object",
+        "properties": {
+          "status": { "type": "string", "example": "SUCCESS" },
+          "filePath": { "type": "string" },
+          "originalTokens": { "type": "integer", "example": 1480 },
+          "slicedTokens": { "type": "integer", "example": 234 },
+          "tokenReductionPct": { "type": "number", "example": 84.19 },
+          "parseLatencyMs": { "type": "number", "example": 1.14 },
+          "slicedContent": { "type": "string" }
+        }
+      },
+      "EntropyScanRequest": {
+        "type": "object",
+        "required": ["targetBuffer"],
+        "properties": {
+          "targetBuffer": { "type": "string" },
+          "threshold": { "type": "number", "default": 4.50 },
+          "enforceTestPreservation": { "type": "boolean", "default": true },
+          "gitDiffContext": { "type": "string" }
+        }
+      },
+      "EntropyScanBreachResponse": {
+        "type": "object",
+        "properties": {
+          "status": { "type": "string", "example": "INVARIANT_BREACH" },
+          "exitCode": { "type": "integer", "enum": [1, 2] },
+          "verdict": { "type": "string", "example": "REJECTED" },
+          "calculatedEntropy": { "type": "number", "example": 4.88 },
+          "violatingToken": { "type": "string" },
+          "remediation": { "type": "string" }
+        }
+      },
+      "RaftStatusResponse": {
+        "type": "object",
+        "properties": {
+          "clusterId": { "type": "string", "example": "dss-cluster-01" },
+          "nodeId": { "type": "string", "example": "node-101" },
+          "state": { "type": "string", "enum": ["LEADER", "FOLLOWER", "CANDIDATE"] },
+          "currentTerm": { "type": "integer", "example": 42 },
+          "commitIndex": { "type": "integer", "example": 18452 }
+        }
+      },
+      "VaultAttestationRequest": {
+        "type": "object",
+        "required": ["tpmRegisters", "nonce"],
+        "properties": {
+          "tpmRegisters": { "type": "array", "items": { "type": "integer" }, "example": [0, 2, 4, 7] },
+          "nonce": { "type": "string" }
+        }
+      },
+      "VaultAttestationResponse": {
+        "type": "object",
+        "properties": {
+          "hardwareRooted": { "type": "boolean", "example": true },
+          "fipsStatus": { "type": "string", "example": "FIPS_140_3_LEVEL_3_COMPLIANT" },
+          "tpmPcrDigest": { "type": "string" },
+          "licenseTier": { "type": "string", "example": "PRO_LIFETIME" },
+          "offlineVerified": { "type": "boolean", "example": true }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# DevSuperSuite Tech Services - Multi-Cluster ServiceExport & ServiceImport
+# ClusterSet Cross-Cluster DNS Resolution (*.clusterset.local)
+# Contact: DevSuperSuite Solutions Architecture (solutions@devsupersuite.com)
+# ═══════════════════════════════════════════════════════════════════════════════
+apiVersion: multicluster.x-k8s.io/v1alpha1
+kind: ServiceExport
+metadata:
+  name: devsupersuite-ast-proxy
+  namespace: devsupersuite-system
+  labels:
+    app.kubernetes.io/name: devsupersuite-ast-proxy
+    app.kubernetes.io/part-of: devsupersuite-federation
+---
+apiVersion: multicluster.x-k8s.io/v1alpha1
+kind: ServiceImport
+metadata:
+  name: devsupersuite-ast-proxy
+  namespace: devsupersuite-system
+  labels:
+    app.kubernetes.io/name: devsupersuite-ast-proxy
+spec:
+  type: ClusterSetIP
+  ports:
+  - name: https
+    protocol: TCP
+    port: 443
+  - name: grpc-mtls
+    protocol: TCP
+    port: 8443
+  sessionAffinity: None

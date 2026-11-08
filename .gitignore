@@ -31,3 +31,10 @@ __pycache__/
 
 .vercel
 .firebase/
+
+# Enforce Python bytecode exclusions after all unignores
+*.pyc
+**/*.pyc
+__pycache__/
+**/__pycache__/**
+

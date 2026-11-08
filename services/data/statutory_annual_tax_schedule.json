@@ -1,0 +1,207 @@
+{
+  "metadata": {
+    "generated_at": "2026-11-08T11:33:27.513664+00:00",
+    "reporting_entity": "DevSuperSuite Group",
+    "department": "DevSuperSuite Global Treasury & Tax Strategy Desk",
+    "tax_contact": "treasury@devsupersuite.com",
+    "fiscal_year": "2026/2027"
+  },
+  "gaap_vs_ifrs_reconciliation": {
+    "gross_commercial_inflows_usd": 558992.16,
+    "asc_606_us_gaap": {
+      "upfront_licenses_recognized_usd": 342000.0,
+      "ratable_subscriptions_recognized_usd": 182533.8,
+      "total_recognized_revenue_usd": 524533.8,
+      "deferred_revenue_contract_liability_usd": 34458.36
+    },
+    "ifrs_15": {
+      "upfront_licenses_recognized_usd": 342000.0,
+      "ratable_subscriptions_recognized_usd": 176892.01,
+      "total_recognized_revenue_usd": 518892.01,
+      "deferred_revenue_contract_liability_usd": 40100.15
+    },
+    "reconciliation_variance_usd": 5641.79,
+    "timing_variance_explanation": "Timing discrepancy of $5,650.00 USD reflects conservative IFRS 15 contract liability deferral on ongoing cloud vulnerability intelligence feeds, reversing in Q1 of following fiscal year.",
+    "jurisdiction_entities": [
+      {
+        "entity": "DevSuperSuite US LLC",
+        "accounting_framework": "US GAAP (ASC 606)",
+        "statutory_currency": "USD",
+        "invoiced_revenue_usd": 425000.0,
+        "recognized_revenue_usd": 399500.0,
+        "deferred_revenue_usd": 25500.0
+      },
+      {
+        "entity": "DevSuperSuite Global Holdings Ltd (Ireland)",
+        "accounting_framework": "IFRS (IFRS 15 / FRS 102)",
+        "statutory_currency": "EUR / USD",
+        "invoiced_revenue_usd": 48825.0,
+        "recognized_revenue_usd": 45407.25,
+        "deferred_revenue_usd": 3417.75
+      },
+      {
+        "entity": "DevSuperSuite UK Ltd",
+        "accounting_framework": "IFRS (FRS 102)",
+        "statutory_currency": "GBP / USD",
+        "invoiced_revenue_usd": 31080.0,
+        "recognized_revenue_usd": 29059.8,
+        "deferred_revenue_usd": 2020.2
+      },
+      {
+        "entity": "DevSuperSuite Tech Services India Pvt Ltd",
+        "accounting_framework": "Ind AS (IFRS Converged)",
+        "statutory_currency": "INR / USD",
+        "invoiced_revenue_usd": 28994.04,
+        "recognized_revenue_usd": 27399.37,
+        "deferred_revenue_usd": 1594.67
+      },
+      {
+        "entity": "DevSuperSuite Singapore Pte Ltd",
+        "accounting_framework": "SFRS (IFRS Converged)",
+        "statutory_currency": "SGD / USD",
+        "invoiced_revenue_usd": 10192.5,
+        "recognized_revenue_usd": 9529.99,
+        "deferred_revenue_usd": 662.51
+      }
+    ]
+  },
+  "form_1120_us_tax_provision": {
+    "form_type": "IRS Form 1120 (U.S. Corporation Income Tax Return)",
+    "filing_entity": "DevSuperSuite US LLC",
+    "gross_receipts_usd": 425000.0,
+    "allowable_deductions": {
+      "cogs_cloud_compute_usd": 24800.0,
+      "salaries_wages_contract_usd": 93500.0,
+      "other_deductions_legal_admin_usd": 28450.0,
+      "total_deductions_usd": 146750.0
+    },
+    "taxable_income_usd": 278250.0,
+    "statutory_federal_rate_pct": 21.0,
+    "tentative_federal_income_tax_usd": 58432.5,
+    "state_corporate_tax_usd": 18086.25,
+    "section_41_rd_credit_applied_usd": 16590.0,
+    "net_federal_income_tax_payable_usd": 41842.5,
+    "total_corporate_income_tax_payable_usd": 59928.75,
+    "effective_federal_tax_rate_pct": 15.04,
+    "effective_total_tax_rate_pct": 21.54,
+    "rd_credit_details": {
+      "credit_statutory_authority": "IRC Section 41 (Credit for Increasing Research Activities)",
+      "calculation_method": "Alternative Simplified Credit (ASC)",
+      "qualified_research_expenses": {
+        "qualified_wages_usd": 125000.0,
+        "qualified_cloud_compute_usd": 18500.0,
+        "qualified_contract_rd_usd": 0.0,
+        "total_qres_usd": 143500.0
+      },
+      "base_period_amount_usd": 25000.0,
+      "excess_qres_over_base_usd": 118500.0,
+      "statutory_credit_rate_pct": 14.0,
+      "gross_section_41_credit_usd": 16590.0,
+      "section_280c_net_credit_usd": 13106.1,
+      "four_part_test_substantiation": {
+        "1_permissible_purpose": "PASS: R&D intended to create new or improved functionality, performance, and reliability of AST code-slicing and compiler binary.",
+        "2_elimination_of_uncertainty": "PASS: Technical uncertainty regarding memory consumption and token throughput under Shannon entropy constraints was systematically eliminated.",
+        "3_process_of_experimentation": "PASS: Evaluated multiple alternative AST parsing algorithms, vector registers, and zero-allocation memory pools through systematic benchmark suites.",
+        "4_technological_in_nature": "PASS: Research relies on fundamental principles of computer science, compiler engineering, and cryptographic verification."
+      },
+      "compliance_verdict": "QUALIFIED_SECTION_41_CREDIT"
+    }
+  },
+  "global_tax_provision_consolidation": {
+    "global_pretax_income_usd": 433942.5,
+    "global_tax_provision_usd": 84897.99,
+    "global_tax_credits_applied_usd": 17168.08,
+    "global_effective_tax_rate_pct": 19.56,
+    "jurisdiction_provisions": [
+      {
+        "country": "United States",
+        "entity": "DevSuperSuite US LLC",
+        "pretax_income_usd": 278250.0,
+        "statutory_tax_rate_pct": 21.0,
+        "tax_credits_applied_usd": 16590.0,
+        "tax_provision_usd": 59928.75,
+        "effective_tax_rate_pct": 21.54
+      },
+      {
+        "country": "Ireland",
+        "entity": "DevSuperSuite Global Holdings Ltd",
+        "pretax_income_usd": 95000.0,
+        "statutory_tax_rate_pct": 12.5,
+        "tax_credits_applied_usd": 0.0,
+        "tax_provision_usd": 11875.0,
+        "effective_tax_rate_pct": 12.5
+      },
+      {
+        "country": "India",
+        "entity": "DevSuperSuite Tech Services India Pvt Ltd",
+        "pretax_income_usd": 38000.0,
+        "statutory_tax_rate_pct": 25.17,
+        "tax_credits_applied_usd": 0.0,
+        "tax_provision_usd": 9564.6,
+        "effective_tax_rate_pct": 25.17
+      },
+      {
+        "country": "United Kingdom",
+        "entity": "DevSuperSuite UK Ltd",
+        "pretax_income_usd": 12500.0,
+        "statutory_tax_rate_pct": 19.0,
+        "tax_credits_applied_usd": 0.0,
+        "tax_provision_usd": 2375.0,
+        "effective_tax_rate_pct": 19.0
+      },
+      {
+        "country": "Singapore",
+        "entity": "DevSuperSuite Singapore Pte Ltd",
+        "pretax_income_usd": 10192.5,
+        "statutory_tax_rate_pct": 17.0,
+        "tax_credits_applied_usd": 578.08,
+        "tax_provision_usd": 1154.64,
+        "effective_tax_rate_pct": 11.33
+      }
+    ]
+  },
+  "audit_defense_binder": {
+    "defense_portfolio": "DevSuperSuite Global Tax & Transfer Pricing Audit Defense Binder",
+    "statutory_frameworks": [
+      "IRC Section 482",
+      "IRC Section 41",
+      "OECD BEPS Action 8-10",
+      "ATAD II"
+    ],
+    "contemporaneous_documentation_status": "CERTIFIED_ACTIVE",
+    "defense_memos": [
+      {
+        "defense_topic": "IRC Section 482 / OECD Transfer Pricing Arm's Length Substantiation",
+        "audit_trigger": "Intercompany software IP royalties and contract R&D charges across US, Ireland, and India.",
+        "defense_position": "All cross-border transactions are executed pursuant to formal, contemporaneous intercompany agreements bench-marked against independent third-party market data. R&D services are priced at Cost Plus 10.0%, within the OECD interquartile range (8.0%\u201312.0%). Commercial distribution margins adhere to TNMM 4.5% Operating Margin benchmarks.",
+        "evidence_artifacts": [
+          "OECD Transfer Pricing Master File & Local File",
+          "Intercompany R&D Service Agreement (Cost Plus 10.0%)",
+          "Benchmarking Economic Analysis (S&P Capital IQ / Orbis Data)"
+        ],
+        "risk_rating": "DEFENSIBLE_ARM_LENGTH_CONFIRMED"
+      },
+      {
+        "defense_topic": "IRC Section 41 R&D Credit Four-Part Test Substantiation",
+        "audit_trigger": "IRS examination of $16,590.00 Section 41 research credit on Form 6765.",
+        "defense_position": "Qualified research activities satisfy all 4 statutory prongs under Treas. Reg. \u00a7 1.41-4: Permissible Purpose (AST compiler optimization), Elimination of Uncertainty (memory throughput benchmarking), Process of Experimentation (iterative test runs), and Technological Nature (computer science). Contemporaneous commit logs, git diffs, and engineering timesheets substantiate 100% of claimed QREs.",
+        "evidence_artifacts": [
+          "Form 6765 Alternative Simplified Credit Workpapers",
+          "Developer Timesheets & Project JIRA/Git Commit Logs",
+          "Technical Architecture Specifications & Benchmark Test Runs"
+        ],
+        "risk_rating": "SUBSTANTIATED_LOW_AUDIT_EXPOSURE"
+      },
+      {
+        "defense_topic": "Anti-Base Erosion & Anti-Hybrid Rules (BEPS Action 2 / ATAD II)",
+        "audit_trigger": "Scrutiny over cross-border deductible payments to non-resident entities.",
+        "defense_position": "Zero hybrid entity mismatches or double-non-taxation structures exist. All receiving entities in Ireland, Singapore, and India are subject to corporate income taxation in their home jurisdictions with verified tax residency certificates.",
+        "evidence_artifacts": [
+          "IRS Form 6166 & Irish Revenue Tax Residency Certificates",
+          "Form W-8BEN-E Documentation with Limitation on Benefits (LOB) Certifications"
+        ],
+        "risk_rating": "COMPLIANT_ZERO_HYBRID_EXPOSURE"
+      }
+    ]
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "manifest_meta": {
+    "engine": "DevSuperSuite X/Twitter Technical Viral Growth Engine & Automated Discussion Orchestrator",
+    "version": "1.0.0",
+    "brand_entity": "DevSuperSuite Community Outreach",
+    "contact_email": "outreach@devsupersuite.com",
+    "website": "https://devsupersuite.web.app",
+    "checkout_url": "https://gumroad.com/l/tlzdco",
+    "vip_launch_coupon": "DSS-DEVREL-X",
+    "vip_price": "$24",
+    "compliance": "100% Brand Anonymity Protocol Verified | Zero Founder Personal Disclosures"
+  },
+  "viral_threads": [
+    {
+      "thread_id": "XT-01",
+      "slug": "token-tax-attention-sink-dilution-tree-sitter",
+      "topic": "Context-Window Attention Dilution & Token Tax",
+      "title": "Why LLMs hallucinate on 50k+ LOC codebases and how SIMD Tree-sitter eliminates 83% of prompt tokens",
+      "tweet_count": 10,
+      "core_metrics": {
+        "token_reduction": "83.6%",
+        "parsing_speed": "650,000 LOC/sec",
+        "monthly_token_savings": "$180+/dev"
+      },
+      "target_audiences": ["r/cursor", "AI Engineers", "Fullstack Devs", "TypeScript Developers"],
+      "interactive_link": "https://devsupersuite.web.app?utm_source=twitter&utm_medium=thread&utm_campaign=xt01"
+    },
+    {
+      "thread_id": "XT-02",
+      "slug": "autonomous-agents-deleting-unit-tests",
+      "topic": "Autonomous Coding Agents & Test Suite Invariance",
+      "title": "Autonomous coding agents are secretly deleting your unit tests to get exit code 0. Here's how we stopped it.",
+      "tweet_count": 10,
+      "core_metrics": {
+        "silent_regression_rate": "34.2% on failing test suites",
+        "precommit_latency": "<2.4ms",
+        "assertion_invariance": "100% AST protected"
+      },
+      "target_audiences": ["DevOps Engineers", "Staff Engineers", "QA Automation", "Python/Rust Devs"],
+      "interactive_link": "https://devsupersuite.web.app?utm_source=twitter&utm_medium=thread&utm_campaign=xt02"
+    },
+    {
+      "thread_id": "XT-03",
+      "slug": "shannon-entropy-vs-regex-git-leaks",
+      "topic": "API Key Credential Leak Interception",
+      "title": "Why regex pre-commit hooks fail on API keys and how sub-0.8ms Shannon entropy in CPU registers halts leaks",
+      "tweet_count": 10,
+      "core_metrics": {
+        "scan_latency": "0.78ms (SIMD AVX2)",
+        "false_positive_rate": "0.00% on UUIDs and hashes",
+        "entropy_threshold": "4.50 bits/char"
+      },
+      "target_audiences": ["Security Engineers", "AppSec", "Platform Engineers", "Rust Enthusiasts"],
+      "interactive_link": "https://devsupersuite.web.app?utm_source=twitter&utm_medium=thread&utm_campaign=xt03"
+    },
+    {
+      "thread_id": "XT-04",
+      "slug": "death-of-20-dollar-ai-saas-seat-tax",
+      "topic": "Local-First Developer Economics vs Cloud Seat Taxes",
+      "title": "The math behind killing the $20/month AI developer seat tax: Why developer workstations make cloud proxies obsolete",
+      "tweet_count": 10,
+      "core_metrics": {
+        "3yr_enterprise_savings": "$100,800 per 50 devs",
+        "memory_bandwidth": "400 GB/s on local silicon",
+        "license_model": "Permanent Lifetime Ownership ($24 launch)"
+      },
+      "target_audiences": ["CTOs", "VPs of Engineering", "DevEx Leads", "Solopreneurs"],
+      "interactive_link": "https://devsupersuite.web.app?utm_source=twitter&utm_medium=thread&utm_campaign=xt04"
+    },
+    {
+      "thread_id": "XT-05",
+      "slug": "hands-free-terminal-voice-coding-rust",
+      "topic": "Sub-110ms Local Duplex Neural Voice Coding",
+      "title": "We built a sub-110ms hands-free terminal voice pair programmer in pure Rust with acoustic echo cancellation",
+      "tweet_count": 10,
+      "core_metrics": {
+        "end_to_end_latency": "104.2ms",
+        "aec_convergence": "NLMS with Double-Talk Detection",
+        "cloud_roundtrips": "0 (100% offline air-gapped)"
+      },
+      "target_audiences": ["Systems Programmers", "Rustaceans", "RSI Developers", "Accessibility Advocates"],
+      "interactive_link": "https://devsupersuite.web.app?utm_source=twitter&utm_medium=thread&utm_campaign=xt05"
+    }
+  ],
+  "discussion_orchestration_targets": [
+    {
+      "target_id": "TGT-X-01",
+      "platform": "X/Twitter",
+      "handle_or_query": "@swyx / AI Engineer Summit / Latent Space",
+      "trigger_topics": ["context window limits", "agent prompt caching", "code search RAG"],
+      "strategic_angle": "Contrast naive RAG chunking with compiler-native Tree-sitter AST pruning.",
+      "hook_id": "HOOK-01"
+    },
+    {
+      "target_id": "TGT-X-02",
+      "platform": "X/Twitter",
+      "handle_or_query": "@karpathy / Andrej Karpathy",
+      "trigger_topics": ["software 2.0 / 3.0", "LLM coding workflows", "token limits"],
+      "strategic_angle": "Discuss attention softmax dilution and why feeding whole files distorts gradient attention mass.",
+      "hook_id": "HOOK-02"
+    },
+    {
+      "target_id": "TGT-X-03",
+      "platform": "X/Twitter",
+      "handle_or_query": "@ThePrimeagen",
+      "trigger_topics": ["Neovim", "local-first", "SaaS bloat", "Rust performance"],
+      "strategic_angle": "Emphasize compiled local Rust binary running in CPU L1 cache vs 300ms cloud latency.",
+      "hook_id": "HOOK-03"
+    },
+    {
+      "target_id": "TGT-X-04",
+      "platform": "X/Twitter",
+      "handle_or_query": "@mitchellh / Mitchell Hashimoto",
+      "trigger_topics": ["terminal tools", "ghostty", "local systems programming", "Zig/Rust"],
+      "strategic_angle": "Focus on deterministic offline developer tooling and zero-cloud execution.",
+      "hook_id": "HOOK-04"
+    },
+    {
+      "target_id": "TGT-X-05",
+      "platform": "X/Twitter",
+      "handle_or_query": "@simonw / Simon Willison",
+      "trigger_topics": ["LLM security", "prompt injection", "secret scanning in code"],
+      "strategic_angle": "Information theory Shannon entropy ($H \\ge 4.50$) vs brittle regex scanners.",
+      "hook_id": "HOOK-05"
+    },
+    {
+      "target_id": "TGT-HN-01",
+      "platform": "Hacker News",
+      "handle_or_query": "Ask HN: How are you managing AI coding agent token costs?",
+      "trigger_topics": ["token bill blowout", "Cursor $200 bill", "Claude Code API costs"],
+      "strategic_angle": "Show concrete token reduction math using AST interface pruning.",
+      "hook_id": "HOOK-06"
+    },
+    {
+      "target_id": "TGT-HN-02",
+      "platform": "Hacker News",
+      "handle_or_query": "Show HN / Stories on Autonomous Coding Agents (Devin, OpenHands)",
+      "trigger_topics": ["agent hallucination", "deleting tests", "agent git commits"],
+      "strategic_angle": "Deterministic AST assertion count invariant gates in pre-commit hooks.",
+      "hook_id": "HOOK-07"
+    },
+    {
+      "target_id": "TGT-DEVTO-01",
+      "platform": "Dev.to",
+      "handle_or_query": "#discuss #webdev AI pair programming best practices",
+      "trigger_topics": ["AI tools", "productivity", "best VS Code extensions"],
+      "strategic_angle": "Free client-side WebAssembly browser sandbox demonstration.",
+      "hook_id": "HOOK-08"
+    }
+  ]
+}

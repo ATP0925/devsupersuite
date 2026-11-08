@@ -3,9 +3,9 @@
     "organization": "DevSuperSuite Official",
     "authority": "Directorate of QA Automation & Security Compliance",
     "classification": "Sovereign Enterprise Security Telemetry (Restricted)",
-    "generated_at": "2026-11-08T11:14:12.004324+00:00",
+    "generated_at": "2026-11-08T11:33:24.252270+00:00",
     "target_repository": "agent-commerce",
-    "sha256_digest": "61e0f57aef66632b4427d4ca359abf08b8ca58c522bf7413ab60ec9bd156cb49"
+    "sha256_digest": "dd5dcfcb68e1a14f324affe0da63cfebc781c92ca85d9c045a634fc3caa8535b"
   },
   "enterprise_trust_index": {
     "composite_score": 100.0,
@@ -18,8 +18,8 @@
       "weight_percentage": 20,
       "score": 100.0,
       "metrics": {
-        "total_suites": 70,
-        "total_tests": 654,
+        "total_suites": 74,
+        "total_tests": 695,
         "pass_rate_percentage": 100.0,
         "fail_count": 0,
         "skipped_count": 0,
@@ -247,6 +247,12 @@
             "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
+            "module": "test_k8s_federation_controller.py",
+            "test_count": 10,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
             "module": "test_k8s_operator.py",
             "test_count": 12,
             "status": "PASS",
@@ -255,6 +261,12 @@
           {
             "module": "test_license_activation.py",
             "test_count": 9,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_license_autopilot_engine.py",
+            "test_count": 13,
             "status": "PASS",
             "coverage_domain": "Core Architecture & MCP Harness"
           },
@@ -275,6 +287,12 @@
             "test_count": 15,
             "status": "PASS",
             "coverage_domain": "Air-Gapped Isolation & Orchestration"
+          },
+          {
+            "module": "test_pqc_migration_engine.py",
+            "test_count": 10,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
             "module": "test_quality_of_earnings.py",
@@ -391,6 +409,12 @@
             "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
+            "module": "test_statutory_tax_defense_engine.py",
+            "test_count": 8,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
             "module": "test_stride_threat_modeling.py",
             "test_count": 10,
             "status": "PASS",
@@ -478,7 +502,7 @@
       "weight_percentage": 15,
       "score": 100.0,
       "metrics": {
-        "redos_execution_time_ms": 0.0061,
+        "redos_execution_time_ms": 0.0136,
         "redos_ceiling_limit_ms": 1.0,
         "redos_immunity": "PASS",
         "ast_max_recursion_depth": 30,
