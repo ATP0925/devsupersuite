@@ -35,6 +35,22 @@ DevSuperSuite solves the four most expensive bottlenecks in AI-assisted software
 
 ---
 
+## ⚡ 1-Click Terminal Installation (Zero Dependencies)
+
+### Windows (PowerShell):
+```powershell
+irm https://devsupersuite.web.app/install.ps1 | iex
+```
+
+### macOS & Linux (Bash/Zsh):
+```bash
+curl -sSL https://devsupersuite.web.app/install.sh | bash
+```
+
+Installs `omnikernel` (AST context slicer) and `agentshield` (pre-commit secret scanner) directly into your user PATH in under 3 seconds.
+
+---
+
 ## 🎮 Live Interactive Playground (No Install Required)
 
 Test the AST slicer, entropy scanner, and ROI calculator in real-time on our Google Cloud CDN:  
