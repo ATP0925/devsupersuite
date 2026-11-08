@@ -1,0 +1,57 @@
+{
+  "manifest_id": "IAC-PLAN-2026-DC943B8C7B64",
+  "governing_entity": "DevSuperSuite Cloud Architecture / OmniKernel Labs",
+  "contact_email": "cloud@devsupersuite.com",
+  "customer_organization": "General Dynamics Land Systems",
+  "generated_at": "2026-11-08T10:21:11.650391+00:00",
+  "master_plan_checksum": "dc943b8c7b642ffea894ff62d62c8722542c68df24d1277cfae8381dca446920",
+  "compliance_standards": [
+    "NIST SP 800-171 Rev 2",
+    "CMMC 2.0 Level 2",
+    "FedRAMP High Sovereign Baseline",
+    "ITAR 22 CFR \u00a7\u00a7 120-130",
+    "SOC 2 Type II Trust Services Criteria"
+  ],
+  "security_invariants": {
+    "zero_public_egress": "ENFORCED",
+    "kms_cmk_hardware_security_module": "ENFORCED",
+    "private_api_endpoints_only": "ENFORCED",
+    "workload_identity_least_privilege": "ENFORCED"
+  },
+  "modules": {
+    "aws": {
+      "target_platform": "AWS GovCloud (US) / Commercial EKS",
+      "files_hashed": 4,
+      "module_checksum": "56b1f8e77edc5be30117c0c15020fd23f081ff5eb653a082cc2be7387ef8297e",
+      "files": {
+        "main.tf": "ee79582c8e381c187ebf505ddbbff8769caa5e22d4e8bc2e252376cf286d79ad",
+        "outputs.tf": "7d95f6b78164d0da434360519533843f7b60cf53154f9affd838a646e377cf62",
+        "security_groups.tf": "c7ba57b0189031ad0675539929543a65b35a9b98c6ea94857b91fdb4fc2f7fda",
+        "variables.tf": "fbb30be86ac143a824f519ce08b7f3e54310d814be3710baa0ca82b2efc88ec7"
+      }
+    },
+    "gcp": {
+      "target_platform": "Google Cloud Private GKE / Cloud KMS",
+      "files_hashed": 4,
+      "module_checksum": "a807a2724e99824e413da03992cc30b83598404afcfa16f47187011417efc4eb",
+      "files": {
+        "main.tf": "55f9bfacf9dd57c0e92e1e084dfc2b2f6e21708fe3529807abe15f5043bd0be8",
+        "outputs.tf": "fe0b826987240296a8c63ab5207e25096b7e582ad8c942d248f207f840a7c773",
+        "security.tf": "5c3ecda3ecf2c264abe4a85fbdfea33cbe9f0bd4c3059dac1bb149cc5146ef21",
+        "variables.tf": "985da6960e0c76b21c3f92dc6f3265c209d6a7226686181b8c3327de17668b8f"
+      }
+    },
+    "azure": {
+      "target_platform": "Azure Sovereign AKS / Azure Key Vault",
+      "files_hashed": 4,
+      "module_checksum": "b88be5a4f51655988a8f848dbfd3071f154ef28e0504211153b5779c51d05b90",
+      "files": {
+        "main.tf": "6a046977931bbe4905c5e22e365767535bf6bff0d0dcd8a0181089e5ac5649a1",
+        "network_security.tf": "2e39b447055c5805ace1beb98eac4bad1b743517e62369bf91ea19a29bf28722",
+        "outputs.tf": "535464773d923ad8efebd83cb4d67191174b67e65c4422931a63881d0e5d927d",
+        "variables.tf": "83b895711a189b5af9c669a9873a2402a9bd9f2db24fc6862966df8d5b81a312"
+      }
+    }
+  },
+  "arb_approval_state": "PRE_APPROVED_AIRGAP_CERTIFIED"
+}

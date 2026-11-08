@@ -1,0 +1,30 @@
+apiVersion: "cilium.io/v2"
+kind: CiliumNetworkPolicy
+metadata:
+  name: "cilium-billing-ledger-policy"
+  namespace: "billing-reconciliation"
+  labels:
+    app.kubernetes.io/part-of: "devsupersuite"
+    security.devsupersuite.com/tier: "financial-ledger"
+spec:
+  description: "eBPF microsegmentation for billing and reconciliation. Isolated ledger; zero access from compute workers."
+  endpointSelector:
+    matchLabels:
+      app.kubernetes.io/name: "reconciliation-engine"
+  ingress:
+    - fromEndpoints:
+        - matchLabels:
+            app.kubernetes.io/name: "ingress-gateway"
+            io.kubernetes.pod.namespace: "ingress-gateway"
+      toPorts:
+        - ports:
+            - port: "8082"
+              protocol: TCP
+          rules:
+            http:
+              - method: "POST"
+                path: "/v1/webhooks/payment"
+  egress: [] # Absolute Zero Egress
+  enableDefaultDeny:
+    ingress: true
+    egress: true

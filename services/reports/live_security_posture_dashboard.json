@@ -3,9 +3,9 @@
     "organization": "DevSuperSuite Official",
     "authority": "Directorate of QA Automation & Security Compliance",
     "classification": "Sovereign Enterprise Security Telemetry (Restricted)",
-    "generated_at": "2026-11-08T10:19:32.167055+00:00",
+    "generated_at": "2026-11-08T10:22:26.861077+00:00",
     "target_repository": "agent-commerce",
-    "sha256_digest": "c643ec39d288c96bd6dfaa07881dec4124097cb25d2f5ca0f4209d6ee7fd6359"
+    "sha256_digest": "af779e16876f8e7e83161b17a4491c2cf3838b06a847be1762e8d3c025bb04e2"
   },
   "enterprise_trust_index": {
     "composite_score": 100.0,
@@ -18,8 +18,8 @@
       "weight_percentage": 20,
       "score": 100.0,
       "metrics": {
-        "total_suites": 27,
-        "total_tests": 247,
+        "total_suites": 31,
+        "total_tests": 288,
         "pass_rate_percentage": 100.0,
         "fail_count": 0,
         "skipped_count": 0,
@@ -56,6 +56,12 @@
           },
           {
             "module": "test_checkout_recovery.py",
+            "test_count": 10,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_churn_prediction.py",
             "test_count": 10,
             "status": "PASS",
             "coverage_domain": "Core Architecture & MCP Harness"
@@ -121,8 +127,20 @@
             "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
+            "module": "test_iac_orchestration.py",
+            "test_count": 14,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
             "module": "test_license_activation.py",
             "test_count": 9,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_multi_currency_treasury_sweep.py",
+            "test_count": 8,
             "status": "PASS",
             "coverage_domain": "Core Architecture & MCP Harness"
           },
@@ -185,6 +203,12 @@
             "test_count": 8,
             "status": "PASS",
             "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_ztna_microsegmentation.py",
+            "test_count": 9,
+            "status": "PASS",
+            "coverage_domain": "Conversion Optimization & UX Invariants"
           }
         ]
       }
@@ -220,7 +244,7 @@
       "weight_percentage": 15,
       "score": 100.0,
       "metrics": {
-        "redos_execution_time_ms": 0.0155,
+        "redos_execution_time_ms": 0.0072,
         "redos_ceiling_limit_ms": 1.0,
         "redos_immunity": "PASS",
         "ast_max_recursion_depth": 30,

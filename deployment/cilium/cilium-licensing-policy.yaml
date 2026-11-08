@@ -1,0 +1,30 @@
+apiVersion: "cilium.io/v2"
+kind: CiliumNetworkPolicy
+metadata:
+  name: "cilium-licensing-enclave-policy"
+  namespace: "licensing-auth"
+  labels:
+    app.kubernetes.io/part-of: "devsupersuite"
+    security.devsupersuite.com/tier: "enclave-security"
+spec:
+  description: "eBPF microsegmentation for licensing authority. Isolated enclave with zero egress."
+  endpointSelector:
+    matchLabels:
+      app.kubernetes.io/name: "license-authenticator"
+  ingress:
+    - fromEndpoints:
+        - matchLabels:
+            app.kubernetes.io/name: "ingress-gateway"
+            io.kubernetes.pod.namespace: "ingress-gateway"
+      toPorts:
+        - ports:
+            - port: "8443"
+              protocol: TCP
+          rules:
+            http:
+              - method: "POST"
+                path: "/v1/license/verify"
+  egress: [] # Absolute Zero Egress
+  enableDefaultDeny:
+    ingress: true
+    egress: true

@@ -1,0 +1,64 @@
+apiVersion: "cilium.io/v2"
+kind: CiliumNetworkPolicy
+metadata:
+  name: "cilium-omnikernel-microsegmentation"
+  namespace: "omnikernel-compute"
+  labels:
+    app.kubernetes.io/part-of: "devsupersuite"
+    security.devsupersuite.com/tier: "restricted-compute"
+spec:
+  description: "Strict eBPF microsegmentation for OmniKernel compute workers. Zero WAN egress, zero lateral pivot to billing/licensing."
+  endpointSelector:
+    matchLabels:
+      app.kubernetes.io/name: "omnikernel"
+  ingress:
+    # Allow mTLS ingress strictly from Ingress Gateway
+    - fromEndpoints:
+        - matchLabels:
+            app.kubernetes.io/name: "ingress-gateway"
+            io.kubernetes.pod.namespace: "ingress-gateway"
+      toPorts:
+        - ports:
+            - port: "8080"
+              protocol: TCP
+            - port: "8081"
+              protocol: TCP
+          rules:
+            http:
+              - method: "POST"
+                path: "/v1/omnikernel/execute"
+              - method: "GET"
+                path: "/healthz"
+    # Allow intra-namespace agent communication
+    - fromEndpoints:
+        - matchLabels:
+            io.kubernetes.pod.namespace: "omnikernel-compute"
+      toPorts:
+        - ports:
+            - port: "9090"
+              protocol: TCP
+  egress:
+    # Strictly allow egress only to MCP service mesh
+    - toEndpoints:
+        - matchLabels:
+            app.kubernetes.io/name: "mcp-server"
+            io.kubernetes.pod.namespace: "mcp-service-mesh"
+      toPorts:
+        - ports:
+            - port: "8080"
+              protocol: TCP
+    # Allow cluster internal DNS
+    - toEndpoints:
+        - matchLabels:
+            k8s-app: "kube-dns"
+            io.kubernetes.pod.namespace: "kube-system"
+      toPorts:
+        - ports:
+            - port: "53"
+              protocol: UDP
+            - port: "53"
+              protocol: TCP
+  # Explicit Default-Deny for all other ingress and egress
+  enableDefaultDeny:
+    ingress: true
+    egress: true
