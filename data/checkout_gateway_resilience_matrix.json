@@ -52,7 +52,7 @@
       "error_rate_pct": 0.2,
       "consecutive_failures": 0,
       "uptime_sla_pct": 99.94,
-      "last_health_check": "2026-11-08T12:00:59.227173+00:00",
+      "last_health_check": "2026-11-08T12:38:09.689883+00:00",
       "active_traffic_pct": 100.0
     },
     "STRIPE_DIRECT": {
@@ -62,7 +62,7 @@
       "error_rate_pct": 0.05,
       "consecutive_failures": 0,
       "uptime_sla_pct": 99.99,
-      "last_health_check": "2026-11-08T12:00:59.227173+00:00",
+      "last_health_check": "2026-11-08T12:38:09.689883+00:00",
       "active_traffic_pct": 0.0
     },
     "PAYPAL_EXPRESS": {
@@ -72,7 +72,7 @@
       "error_rate_pct": 0.4,
       "consecutive_failures": 0,
       "uptime_sla_pct": 99.95,
-      "last_health_check": "2026-11-08T12:00:59.227173+00:00",
+      "last_health_check": "2026-11-08T12:38:09.689883+00:00",
       "active_traffic_pct": 0.0
     }
   }

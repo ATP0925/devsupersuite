@@ -1,0 +1,1073 @@
+{
+  "organization": "DevSuperSuite Solutions Architecture / OmniKernel Labs",
+  "contact": "scif@devsupersuite.com",
+  "created_at": "2026-11-08T12:08:21.103304+00:00",
+  "transfers": [
+    {
+      "transfer_id": "DIODE-TX-2026-3DFD9A4F",
+      "timestamp": "2026-11-08T12:08:47.705535+00:00",
+      "classification": "TOP SECRET//SCI",
+      "source_enclave": "COMMERCIAL-INGEST-VPC-US-EAST",
+      "destination_scif": "SCIF-FACILITY-ALPHA-VAULT-01",
+      "original_filename": "scif_analytics_worker.py",
+      "sanitized_filename": "scif_analytics_worker.py",
+      "cdr_status": "PASSED",
+      "threats_detected": [],
+      "actions_taken": [
+        "AST_SYNTAX_PARSED_AND_VALIDATED"
+      ],
+      "original_size_bytes": 149,
+      "sanitized_size_bytes": 149,
+      "cryptographic_verification": {
+        "pre_sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+        "post_sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+        "pre_blake3_merkle_root": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e",
+        "post_blake3_merkle_root": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e",
+        "digests_match": true
+      },
+      "optical_telemetry": {
+        "received_optical_power_dbm": -1.48,
+        "transmitted_chunks": 2,
+        "received_valid_chunks": 2,
+        "dropped_chunks": 0,
+        "fec_recovered_chunks": 0,
+        "loss_rate_simulated": 0.05,
+        "optical_return_backscatter_dbm": -99.9,
+        "reverse_channel_status": "PHYSICALLY_DISCONNECTED"
+      },
+      "slsa_provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "scif_analytics_worker.py",
+            "digest": {
+              "sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+              "blake3": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://devsupersuite.com/scif/optical-diode-ingestion/v1",
+            "externalParameters": {
+              "transfer_id": "DIODE-TX-2026-3DFD9A4F",
+              "diode_hardware_serial": "DSS-DIODE-10G-OPT-8839",
+              "security_classification": "TOP SECRET//SCI"
+            },
+            "systemParameters": {
+              "organization": "DevSuperSuite Solutions Architecture / OmniKernel Labs",
+              "contact": "scif@devsupersuite.com",
+              "unidirectional_airgap_verified": true
+            }
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://devsupersuite.com/scif/optical-diode-gateway"
+            },
+            "metadata": {
+              "invocationId": "DIODE-TX-2026-3DFD9A4F",
+              "startedOn": "2026-11-08T12:08:47.705522+00:00",
+              "finishedOn": "2026-11-08T12:08:47.705522+00:00"
+            }
+          }
+        }
+      }
+    },
+    {
+      "transfer_id": "DIODE-TX-2026-67EF1A3F",
+      "timestamp": "2026-11-08T12:10:07.316851+00:00",
+      "classification": "TOP SECRET//SCI",
+      "source_enclave": "COMMERCIAL-INGEST-VPC-US-EAST",
+      "destination_scif": "SCIF-FACILITY-ALPHA-VAULT-01",
+      "original_filename": "scif_analytics_worker.py",
+      "sanitized_filename": "scif_analytics_worker.py",
+      "cdr_status": "PASSED",
+      "threats_detected": [],
+      "actions_taken": [
+        "AST_SYNTAX_PARSED_AND_VALIDATED"
+      ],
+      "original_size_bytes": 149,
+      "sanitized_size_bytes": 149,
+      "cryptographic_verification": {
+        "pre_sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+        "post_sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+        "pre_blake3_merkle_root": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e",
+        "post_blake3_merkle_root": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e",
+        "digests_match": true
+      },
+      "optical_telemetry": {
+        "received_optical_power_dbm": -1.48,
+        "transmitted_chunks": 2,
+        "received_valid_chunks": 2,
+        "dropped_chunks": 0,
+        "fec_recovered_chunks": 0,
+        "loss_rate_simulated": 0.05,
+        "optical_return_backscatter_dbm": -99.9,
+        "reverse_channel_status": "PHYSICALLY_DISCONNECTED"
+      },
+      "slsa_provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "scif_analytics_worker.py",
+            "digest": {
+              "sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+              "blake3": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://devsupersuite.com/scif/optical-diode-ingestion/v1",
+            "externalParameters": {
+              "transfer_id": "DIODE-TX-2026-67EF1A3F",
+              "diode_hardware_serial": "DSS-DIODE-10G-OPT-8839",
+              "security_classification": "TOP SECRET//SCI"
+            },
+            "systemParameters": {
+              "organization": "DevSuperSuite Solutions Architecture / OmniKernel Labs",
+              "contact": "scif@devsupersuite.com",
+              "unidirectional_airgap_verified": true
+            }
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://devsupersuite.com/scif/optical-diode-gateway"
+            },
+            "metadata": {
+              "invocationId": "DIODE-TX-2026-67EF1A3F",
+              "startedOn": "2026-11-08T12:10:07.316835+00:00",
+              "finishedOn": "2026-11-08T12:10:07.316835+00:00"
+            }
+          }
+        }
+      }
+    },
+    {
+      "transfer_id": "DIODE-TX-2026-EE372DCD",
+      "timestamp": "2026-11-08T12:10:27.189246+00:00",
+      "classification": "TOP SECRET//SCI",
+      "source_enclave": "COMMERCIAL-INGEST-VPC-US-EAST",
+      "destination_scif": "SCIF-FACILITY-ALPHA-VAULT-01",
+      "original_filename": "scif_analytics_worker.py",
+      "sanitized_filename": "scif_analytics_worker.py",
+      "cdr_status": "PASSED",
+      "threats_detected": [],
+      "actions_taken": [
+        "AST_SYNTAX_PARSED_AND_VALIDATED"
+      ],
+      "original_size_bytes": 149,
+      "sanitized_size_bytes": 149,
+      "cryptographic_verification": {
+        "pre_sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+        "post_sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+        "pre_blake3_merkle_root": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e",
+        "post_blake3_merkle_root": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e",
+        "digests_match": true
+      },
+      "optical_telemetry": {
+        "received_optical_power_dbm": -1.48,
+        "transmitted_chunks": 2,
+        "received_valid_chunks": 2,
+        "dropped_chunks": 0,
+        "fec_recovered_chunks": 0,
+        "loss_rate_simulated": 0.05,
+        "optical_return_backscatter_dbm": -99.9,
+        "reverse_channel_status": "PHYSICALLY_DISCONNECTED"
+      },
+      "slsa_provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "scif_analytics_worker.py",
+            "digest": {
+              "sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+              "blake3": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://devsupersuite.com/scif/optical-diode-ingestion/v1",
+            "externalParameters": {
+              "transfer_id": "DIODE-TX-2026-EE372DCD",
+              "diode_hardware_serial": "DSS-DIODE-10G-OPT-8839",
+              "security_classification": "TOP SECRET//SCI"
+            },
+            "systemParameters": {
+              "organization": "DevSuperSuite Solutions Architecture / OmniKernel Labs",
+              "contact": "scif@devsupersuite.com",
+              "unidirectional_airgap_verified": true
+            }
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://devsupersuite.com/scif/optical-diode-gateway"
+            },
+            "metadata": {
+              "invocationId": "DIODE-TX-2026-EE372DCD",
+              "startedOn": "2026-11-08T12:10:27.189234+00:00",
+              "finishedOn": "2026-11-08T12:10:27.189234+00:00"
+            }
+          }
+        }
+      }
+    },
+    {
+      "transfer_id": "DIODE-TX-2026-410E2F5F",
+      "timestamp": "2026-11-08T12:10:35.604761+00:00",
+      "classification": "TOP SECRET//SCI",
+      "source_enclave": "COMMERCIAL-INGEST-VPC-US-EAST",
+      "destination_scif": "SCIF-FACILITY-ALPHA-VAULT-01",
+      "original_filename": "scif_analytics_worker.py",
+      "sanitized_filename": "scif_analytics_worker.py",
+      "cdr_status": "PASSED",
+      "threats_detected": [],
+      "actions_taken": [
+        "AST_SYNTAX_PARSED_AND_VALIDATED"
+      ],
+      "original_size_bytes": 149,
+      "sanitized_size_bytes": 149,
+      "cryptographic_verification": {
+        "pre_sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+        "post_sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+        "pre_blake3_merkle_root": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e",
+        "post_blake3_merkle_root": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e",
+        "digests_match": true
+      },
+      "optical_telemetry": {
+        "received_optical_power_dbm": -1.48,
+        "transmitted_chunks": 2,
+        "received_valid_chunks": 2,
+        "dropped_chunks": 0,
+        "fec_recovered_chunks": 0,
+        "loss_rate_simulated": 0.05,
+        "optical_return_backscatter_dbm": -99.9,
+        "reverse_channel_status": "PHYSICALLY_DISCONNECTED"
+      },
+      "slsa_provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "scif_analytics_worker.py",
+            "digest": {
+              "sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+              "blake3": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://devsupersuite.com/scif/optical-diode-ingestion/v1",
+            "externalParameters": {
+              "transfer_id": "DIODE-TX-2026-410E2F5F",
+              "diode_hardware_serial": "DSS-DIODE-10G-OPT-8839",
+              "security_classification": "TOP SECRET//SCI"
+            },
+            "systemParameters": {
+              "organization": "DevSuperSuite Solutions Architecture / OmniKernel Labs",
+              "contact": "scif@devsupersuite.com",
+              "unidirectional_airgap_verified": true
+            }
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://devsupersuite.com/scif/optical-diode-gateway"
+            },
+            "metadata": {
+              "invocationId": "DIODE-TX-2026-410E2F5F",
+              "startedOn": "2026-11-08T12:10:35.604747+00:00",
+              "finishedOn": "2026-11-08T12:10:35.604747+00:00"
+            }
+          }
+        }
+      }
+    },
+    {
+      "transfer_id": "DIODE-TX-2026-9D8D16C5",
+      "timestamp": "2026-11-08T12:10:43.291175+00:00",
+      "classification": "TOP SECRET//SCI",
+      "source_enclave": "COMMERCIAL-INGEST-VPC-US-EAST",
+      "destination_scif": "SCIF-FACILITY-ALPHA-VAULT-01",
+      "original_filename": "scif_analytics_worker.py",
+      "sanitized_filename": "scif_analytics_worker.py",
+      "cdr_status": "PASSED",
+      "threats_detected": [],
+      "actions_taken": [
+        "AST_SYNTAX_PARSED_AND_VALIDATED"
+      ],
+      "original_size_bytes": 149,
+      "sanitized_size_bytes": 149,
+      "cryptographic_verification": {
+        "pre_sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+        "post_sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+        "pre_blake3_merkle_root": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e",
+        "post_blake3_merkle_root": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e",
+        "digests_match": true
+      },
+      "optical_telemetry": {
+        "received_optical_power_dbm": -1.48,
+        "transmitted_chunks": 2,
+        "received_valid_chunks": 2,
+        "dropped_chunks": 0,
+        "fec_recovered_chunks": 0,
+        "loss_rate_simulated": 0.05,
+        "optical_return_backscatter_dbm": -99.9,
+        "reverse_channel_status": "PHYSICALLY_DISCONNECTED"
+      },
+      "slsa_provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "scif_analytics_worker.py",
+            "digest": {
+              "sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+              "blake3": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://devsupersuite.com/scif/optical-diode-ingestion/v1",
+            "externalParameters": {
+              "transfer_id": "DIODE-TX-2026-9D8D16C5",
+              "diode_hardware_serial": "DSS-DIODE-10G-OPT-8839",
+              "security_classification": "TOP SECRET//SCI"
+            },
+            "systemParameters": {
+              "organization": "DevSuperSuite Solutions Architecture / OmniKernel Labs",
+              "contact": "scif@devsupersuite.com",
+              "unidirectional_airgap_verified": true
+            }
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://devsupersuite.com/scif/optical-diode-gateway"
+            },
+            "metadata": {
+              "invocationId": "DIODE-TX-2026-9D8D16C5",
+              "startedOn": "2026-11-08T12:10:43.291162+00:00",
+              "finishedOn": "2026-11-08T12:10:43.291162+00:00"
+            }
+          }
+        }
+      }
+    },
+    {
+      "transfer_id": "DIODE-TX-2026-7B3E8ED6",
+      "timestamp": "2026-11-08T12:11:18.777502+00:00",
+      "classification": "TOP SECRET//SCI",
+      "source_enclave": "COMMERCIAL-INGEST-VPC-US-EAST",
+      "destination_scif": "SCIF-FACILITY-ALPHA-VAULT-01",
+      "original_filename": "scif_analytics_worker.py",
+      "sanitized_filename": "scif_analytics_worker.py",
+      "cdr_status": "PASSED",
+      "threats_detected": [],
+      "actions_taken": [
+        "AST_SYNTAX_PARSED_AND_VALIDATED"
+      ],
+      "original_size_bytes": 149,
+      "sanitized_size_bytes": 149,
+      "cryptographic_verification": {
+        "pre_sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+        "post_sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+        "pre_blake3_merkle_root": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e",
+        "post_blake3_merkle_root": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e",
+        "digests_match": true
+      },
+      "optical_telemetry": {
+        "received_optical_power_dbm": -1.48,
+        "transmitted_chunks": 2,
+        "received_valid_chunks": 2,
+        "dropped_chunks": 0,
+        "fec_recovered_chunks": 0,
+        "loss_rate_simulated": 0.05,
+        "optical_return_backscatter_dbm": -99.9,
+        "reverse_channel_status": "PHYSICALLY_DISCONNECTED"
+      },
+      "slsa_provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "scif_analytics_worker.py",
+            "digest": {
+              "sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+              "blake3": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://devsupersuite.com/scif/optical-diode-ingestion/v1",
+            "externalParameters": {
+              "transfer_id": "DIODE-TX-2026-7B3E8ED6",
+              "diode_hardware_serial": "DSS-DIODE-10G-OPT-8839",
+              "security_classification": "TOP SECRET//SCI"
+            },
+            "systemParameters": {
+              "organization": "DevSuperSuite Solutions Architecture / OmniKernel Labs",
+              "contact": "scif@devsupersuite.com",
+              "unidirectional_airgap_verified": true
+            }
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://devsupersuite.com/scif/optical-diode-gateway"
+            },
+            "metadata": {
+              "invocationId": "DIODE-TX-2026-7B3E8ED6",
+              "startedOn": "2026-11-08T12:11:18.777488+00:00",
+              "finishedOn": "2026-11-08T12:11:18.777488+00:00"
+            }
+          }
+        }
+      }
+    },
+    {
+      "transfer_id": "DIODE-TX-2026-50C2DCA4",
+      "timestamp": "2026-11-08T12:11:57.537163+00:00",
+      "classification": "TOP SECRET//SCI",
+      "source_enclave": "COMMERCIAL-INGEST-VPC-US-EAST",
+      "destination_scif": "SCIF-FACILITY-ALPHA-VAULT-01",
+      "original_filename": "scif_analytics_worker.py",
+      "sanitized_filename": "scif_analytics_worker.py",
+      "cdr_status": "PASSED",
+      "threats_detected": [],
+      "actions_taken": [
+        "AST_SYNTAX_PARSED_AND_VALIDATED"
+      ],
+      "original_size_bytes": 149,
+      "sanitized_size_bytes": 149,
+      "cryptographic_verification": {
+        "pre_sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+        "post_sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+        "pre_blake3_merkle_root": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e",
+        "post_blake3_merkle_root": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e",
+        "digests_match": true
+      },
+      "optical_telemetry": {
+        "received_optical_power_dbm": -1.48,
+        "transmitted_chunks": 2,
+        "received_valid_chunks": 2,
+        "dropped_chunks": 0,
+        "fec_recovered_chunks": 0,
+        "loss_rate_simulated": 0.05,
+        "optical_return_backscatter_dbm": -99.9,
+        "reverse_channel_status": "PHYSICALLY_DISCONNECTED"
+      },
+      "slsa_provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "scif_analytics_worker.py",
+            "digest": {
+              "sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+              "blake3": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://devsupersuite.com/scif/optical-diode-ingestion/v1",
+            "externalParameters": {
+              "transfer_id": "DIODE-TX-2026-50C2DCA4",
+              "diode_hardware_serial": "DSS-DIODE-10G-OPT-8839",
+              "security_classification": "TOP SECRET//SCI"
+            },
+            "systemParameters": {
+              "organization": "DevSuperSuite Solutions Architecture / OmniKernel Labs",
+              "contact": "scif@devsupersuite.com",
+              "unidirectional_airgap_verified": true
+            }
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://devsupersuite.com/scif/optical-diode-gateway"
+            },
+            "metadata": {
+              "invocationId": "DIODE-TX-2026-50C2DCA4",
+              "startedOn": "2026-11-08T12:11:57.537152+00:00",
+              "finishedOn": "2026-11-08T12:11:57.537152+00:00"
+            }
+          }
+        }
+      }
+    },
+    {
+      "transfer_id": "DIODE-TX-2026-D69CADD5",
+      "timestamp": "2026-11-08T12:13:44.510374+00:00",
+      "classification": "TOP SECRET//SCI",
+      "source_enclave": "COMMERCIAL-INGEST-VPC-US-EAST",
+      "destination_scif": "SCIF-FACILITY-ALPHA-VAULT-01",
+      "original_filename": "scif_analytics_worker.py",
+      "sanitized_filename": "scif_analytics_worker.py",
+      "cdr_status": "PASSED",
+      "threats_detected": [],
+      "actions_taken": [
+        "AST_SYNTAX_PARSED_AND_VALIDATED"
+      ],
+      "original_size_bytes": 149,
+      "sanitized_size_bytes": 149,
+      "cryptographic_verification": {
+        "pre_sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+        "post_sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+        "pre_blake3_merkle_root": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e",
+        "post_blake3_merkle_root": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e",
+        "digests_match": true
+      },
+      "optical_telemetry": {
+        "received_optical_power_dbm": -1.48,
+        "transmitted_chunks": 2,
+        "received_valid_chunks": 2,
+        "dropped_chunks": 0,
+        "fec_recovered_chunks": 0,
+        "loss_rate_simulated": 0.05,
+        "optical_return_backscatter_dbm": -99.9,
+        "reverse_channel_status": "PHYSICALLY_DISCONNECTED"
+      },
+      "slsa_provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "scif_analytics_worker.py",
+            "digest": {
+              "sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+              "blake3": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://devsupersuite.com/scif/optical-diode-ingestion/v1",
+            "externalParameters": {
+              "transfer_id": "DIODE-TX-2026-D69CADD5",
+              "diode_hardware_serial": "DSS-DIODE-10G-OPT-8839",
+              "security_classification": "TOP SECRET//SCI"
+            },
+            "systemParameters": {
+              "organization": "DevSuperSuite Solutions Architecture / OmniKernel Labs",
+              "contact": "scif@devsupersuite.com",
+              "unidirectional_airgap_verified": true
+            }
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://devsupersuite.com/scif/optical-diode-gateway"
+            },
+            "metadata": {
+              "invocationId": "DIODE-TX-2026-D69CADD5",
+              "startedOn": "2026-11-08T12:13:44.510360+00:00",
+              "finishedOn": "2026-11-08T12:13:44.510360+00:00"
+            }
+          }
+        }
+      }
+    },
+    {
+      "transfer_id": "DIODE-TX-2026-314D4B97",
+      "timestamp": "2026-11-08T12:14:09.059172+00:00",
+      "classification": "TOP SECRET//SCI",
+      "source_enclave": "COMMERCIAL-INGEST-VPC-US-EAST",
+      "destination_scif": "SCIF-FACILITY-ALPHA-VAULT-01",
+      "original_filename": "scif_analytics_worker.py",
+      "sanitized_filename": "scif_analytics_worker.py",
+      "cdr_status": "PASSED",
+      "threats_detected": [],
+      "actions_taken": [
+        "AST_SYNTAX_PARSED_AND_VALIDATED"
+      ],
+      "original_size_bytes": 149,
+      "sanitized_size_bytes": 149,
+      "cryptographic_verification": {
+        "pre_sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+        "post_sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+        "pre_blake3_merkle_root": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e",
+        "post_blake3_merkle_root": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e",
+        "digests_match": true
+      },
+      "optical_telemetry": {
+        "received_optical_power_dbm": -1.48,
+        "transmitted_chunks": 2,
+        "received_valid_chunks": 2,
+        "dropped_chunks": 0,
+        "fec_recovered_chunks": 0,
+        "loss_rate_simulated": 0.05,
+        "optical_return_backscatter_dbm": -99.9,
+        "reverse_channel_status": "PHYSICALLY_DISCONNECTED"
+      },
+      "slsa_provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "scif_analytics_worker.py",
+            "digest": {
+              "sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+              "blake3": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://devsupersuite.com/scif/optical-diode-ingestion/v1",
+            "externalParameters": {
+              "transfer_id": "DIODE-TX-2026-314D4B97",
+              "diode_hardware_serial": "DSS-DIODE-10G-OPT-8839",
+              "security_classification": "TOP SECRET//SCI"
+            },
+            "systemParameters": {
+              "organization": "DevSuperSuite Solutions Architecture / OmniKernel Labs",
+              "contact": "scif@devsupersuite.com",
+              "unidirectional_airgap_verified": true
+            }
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://devsupersuite.com/scif/optical-diode-gateway"
+            },
+            "metadata": {
+              "invocationId": "DIODE-TX-2026-314D4B97",
+              "startedOn": "2026-11-08T12:14:09.059160+00:00",
+              "finishedOn": "2026-11-08T12:14:09.059160+00:00"
+            }
+          }
+        }
+      }
+    },
+    {
+      "transfer_id": "DIODE-TX-2026-EB69A29A",
+      "timestamp": "2026-11-08T12:16:46.453951+00:00",
+      "classification": "TOP SECRET//SCI",
+      "source_enclave": "COMMERCIAL-INGEST-VPC-US-EAST",
+      "destination_scif": "SCIF-FACILITY-ALPHA-VAULT-01",
+      "original_filename": "scif_analytics_worker.py",
+      "sanitized_filename": "scif_analytics_worker.py",
+      "cdr_status": "PASSED",
+      "threats_detected": [],
+      "actions_taken": [
+        "AST_SYNTAX_PARSED_AND_VALIDATED"
+      ],
+      "original_size_bytes": 149,
+      "sanitized_size_bytes": 149,
+      "cryptographic_verification": {
+        "pre_sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+        "post_sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+        "pre_blake3_merkle_root": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e",
+        "post_blake3_merkle_root": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e",
+        "digests_match": true
+      },
+      "optical_telemetry": {
+        "received_optical_power_dbm": -1.48,
+        "transmitted_chunks": 2,
+        "received_valid_chunks": 2,
+        "dropped_chunks": 0,
+        "fec_recovered_chunks": 0,
+        "loss_rate_simulated": 0.05,
+        "optical_return_backscatter_dbm": -99.9,
+        "reverse_channel_status": "PHYSICALLY_DISCONNECTED"
+      },
+      "slsa_provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "scif_analytics_worker.py",
+            "digest": {
+              "sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+              "blake3": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://devsupersuite.com/scif/optical-diode-ingestion/v1",
+            "externalParameters": {
+              "transfer_id": "DIODE-TX-2026-EB69A29A",
+              "diode_hardware_serial": "DSS-DIODE-10G-OPT-8839",
+              "security_classification": "TOP SECRET//SCI"
+            },
+            "systemParameters": {
+              "organization": "DevSuperSuite Solutions Architecture / OmniKernel Labs",
+              "contact": "scif@devsupersuite.com",
+              "unidirectional_airgap_verified": true
+            }
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://devsupersuite.com/scif/optical-diode-gateway"
+            },
+            "metadata": {
+              "invocationId": "DIODE-TX-2026-EB69A29A",
+              "startedOn": "2026-11-08T12:16:46.453939+00:00",
+              "finishedOn": "2026-11-08T12:16:46.453939+00:00"
+            }
+          }
+        }
+      }
+    },
+    {
+      "transfer_id": "DIODE-TX-2026-800D296F",
+      "timestamp": "2026-11-08T12:17:47.075901+00:00",
+      "classification": "TOP SECRET//SCI",
+      "source_enclave": "COMMERCIAL-INGEST-VPC-US-EAST",
+      "destination_scif": "SCIF-FACILITY-ALPHA-VAULT-01",
+      "original_filename": "scif_analytics_worker.py",
+      "sanitized_filename": "scif_analytics_worker.py",
+      "cdr_status": "PASSED",
+      "threats_detected": [],
+      "actions_taken": [
+        "AST_SYNTAX_PARSED_AND_VALIDATED"
+      ],
+      "original_size_bytes": 149,
+      "sanitized_size_bytes": 149,
+      "cryptographic_verification": {
+        "pre_sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+        "post_sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+        "pre_blake3_merkle_root": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e",
+        "post_blake3_merkle_root": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e",
+        "digests_match": true
+      },
+      "optical_telemetry": {
+        "received_optical_power_dbm": -1.48,
+        "transmitted_chunks": 2,
+        "received_valid_chunks": 2,
+        "dropped_chunks": 0,
+        "fec_recovered_chunks": 0,
+        "loss_rate_simulated": 0.05,
+        "optical_return_backscatter_dbm": -99.9,
+        "reverse_channel_status": "PHYSICALLY_DISCONNECTED"
+      },
+      "slsa_provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "scif_analytics_worker.py",
+            "digest": {
+              "sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+              "blake3": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://devsupersuite.com/scif/optical-diode-ingestion/v1",
+            "externalParameters": {
+              "transfer_id": "DIODE-TX-2026-800D296F",
+              "diode_hardware_serial": "DSS-DIODE-10G-OPT-8839",
+              "security_classification": "TOP SECRET//SCI"
+            },
+            "systemParameters": {
+              "organization": "DevSuperSuite Solutions Architecture / OmniKernel Labs",
+              "contact": "scif@devsupersuite.com",
+              "unidirectional_airgap_verified": true
+            }
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://devsupersuite.com/scif/optical-diode-gateway"
+            },
+            "metadata": {
+              "invocationId": "DIODE-TX-2026-800D296F",
+              "startedOn": "2026-11-08T12:17:47.075890+00:00",
+              "finishedOn": "2026-11-08T12:17:47.075890+00:00"
+            }
+          }
+        }
+      }
+    },
+    {
+      "transfer_id": "DIODE-TX-2026-50CF7D8D",
+      "timestamp": "2026-11-08T12:18:53.334289+00:00",
+      "classification": "TOP SECRET//SCI",
+      "source_enclave": "COMMERCIAL-INGEST-VPC-US-EAST",
+      "destination_scif": "SCIF-FACILITY-ALPHA-VAULT-01",
+      "original_filename": "scif_analytics_worker.py",
+      "sanitized_filename": "scif_analytics_worker.py",
+      "cdr_status": "PASSED",
+      "threats_detected": [],
+      "actions_taken": [
+        "AST_SYNTAX_PARSED_AND_VALIDATED"
+      ],
+      "original_size_bytes": 149,
+      "sanitized_size_bytes": 149,
+      "cryptographic_verification": {
+        "pre_sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+        "post_sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+        "pre_blake3_merkle_root": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e",
+        "post_blake3_merkle_root": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e",
+        "digests_match": true
+      },
+      "optical_telemetry": {
+        "received_optical_power_dbm": -1.48,
+        "transmitted_chunks": 2,
+        "received_valid_chunks": 2,
+        "dropped_chunks": 0,
+        "fec_recovered_chunks": 0,
+        "loss_rate_simulated": 0.05,
+        "optical_return_backscatter_dbm": -99.9,
+        "reverse_channel_status": "PHYSICALLY_DISCONNECTED"
+      },
+      "slsa_provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "scif_analytics_worker.py",
+            "digest": {
+              "sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+              "blake3": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://devsupersuite.com/scif/optical-diode-ingestion/v1",
+            "externalParameters": {
+              "transfer_id": "DIODE-TX-2026-50CF7D8D",
+              "diode_hardware_serial": "DSS-DIODE-10G-OPT-8839",
+              "security_classification": "TOP SECRET//SCI"
+            },
+            "systemParameters": {
+              "organization": "DevSuperSuite Solutions Architecture / OmniKernel Labs",
+              "contact": "scif@devsupersuite.com",
+              "unidirectional_airgap_verified": true
+            }
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://devsupersuite.com/scif/optical-diode-gateway"
+            },
+            "metadata": {
+              "invocationId": "DIODE-TX-2026-50CF7D8D",
+              "startedOn": "2026-11-08T12:18:53.334277+00:00",
+              "finishedOn": "2026-11-08T12:18:53.334277+00:00"
+            }
+          }
+        }
+      }
+    },
+    {
+      "transfer_id": "DIODE-TX-2026-75EDF922",
+      "timestamp": "2026-11-08T12:21:59.696165+00:00",
+      "classification": "TOP SECRET//SCI",
+      "source_enclave": "COMMERCIAL-INGEST-VPC-US-EAST",
+      "destination_scif": "SCIF-FACILITY-ALPHA-VAULT-01",
+      "original_filename": "scif_analytics_worker.py",
+      "sanitized_filename": "scif_analytics_worker.py",
+      "cdr_status": "PASSED",
+      "threats_detected": [],
+      "actions_taken": [
+        "AST_SYNTAX_PARSED_AND_VALIDATED"
+      ],
+      "original_size_bytes": 149,
+      "sanitized_size_bytes": 149,
+      "cryptographic_verification": {
+        "pre_sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+        "post_sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+        "pre_blake3_merkle_root": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e",
+        "post_blake3_merkle_root": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e",
+        "digests_match": true
+      },
+      "optical_telemetry": {
+        "received_optical_power_dbm": -1.48,
+        "transmitted_chunks": 2,
+        "received_valid_chunks": 2,
+        "dropped_chunks": 0,
+        "fec_recovered_chunks": 0,
+        "loss_rate_simulated": 0.05,
+        "optical_return_backscatter_dbm": -99.9,
+        "reverse_channel_status": "PHYSICALLY_DISCONNECTED"
+      },
+      "slsa_provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "scif_analytics_worker.py",
+            "digest": {
+              "sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+              "blake3": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://devsupersuite.com/scif/optical-diode-ingestion/v1",
+            "externalParameters": {
+              "transfer_id": "DIODE-TX-2026-75EDF922",
+              "diode_hardware_serial": "DSS-DIODE-10G-OPT-8839",
+              "security_classification": "TOP SECRET//SCI"
+            },
+            "systemParameters": {
+              "organization": "DevSuperSuite Solutions Architecture / OmniKernel Labs",
+              "contact": "scif@devsupersuite.com",
+              "unidirectional_airgap_verified": true
+            }
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://devsupersuite.com/scif/optical-diode-gateway"
+            },
+            "metadata": {
+              "invocationId": "DIODE-TX-2026-75EDF922",
+              "startedOn": "2026-11-08T12:21:59.696154+00:00",
+              "finishedOn": "2026-11-08T12:21:59.696154+00:00"
+            }
+          }
+        }
+      }
+    },
+    {
+      "transfer_id": "DIODE-TX-2026-C46B6380",
+      "timestamp": "2026-11-08T12:36:41.298236+00:00",
+      "classification": "TOP SECRET//SCI",
+      "source_enclave": "COMMERCIAL-INGEST-VPC-US-EAST",
+      "destination_scif": "SCIF-FACILITY-ALPHA-VAULT-01",
+      "original_filename": "scif_analytics_worker.py",
+      "sanitized_filename": "scif_analytics_worker.py",
+      "cdr_status": "PASSED",
+      "threats_detected": [],
+      "actions_taken": [
+        "AST_SYNTAX_PARSED_AND_VALIDATED"
+      ],
+      "original_size_bytes": 149,
+      "sanitized_size_bytes": 149,
+      "cryptographic_verification": {
+        "pre_sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+        "post_sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+        "pre_blake3_merkle_root": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e",
+        "post_blake3_merkle_root": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e",
+        "digests_match": true
+      },
+      "optical_telemetry": {
+        "received_optical_power_dbm": -1.48,
+        "transmitted_chunks": 2,
+        "received_valid_chunks": 2,
+        "dropped_chunks": 0,
+        "fec_recovered_chunks": 0,
+        "loss_rate_simulated": 0.05,
+        "optical_return_backscatter_dbm": -99.9,
+        "reverse_channel_status": "PHYSICALLY_DISCONNECTED"
+      },
+      "slsa_provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "scif_analytics_worker.py",
+            "digest": {
+              "sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+              "blake3": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://devsupersuite.com/scif/optical-diode-ingestion/v1",
+            "externalParameters": {
+              "transfer_id": "DIODE-TX-2026-C46B6380",
+              "diode_hardware_serial": "DSS-DIODE-10G-OPT-8839",
+              "security_classification": "TOP SECRET//SCI"
+            },
+            "systemParameters": {
+              "organization": "DevSuperSuite Solutions Architecture / OmniKernel Labs",
+              "contact": "scif@devsupersuite.com",
+              "unidirectional_airgap_verified": true
+            }
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://devsupersuite.com/scif/optical-diode-gateway"
+            },
+            "metadata": {
+              "invocationId": "DIODE-TX-2026-C46B6380",
+              "startedOn": "2026-11-08T12:36:41.298224+00:00",
+              "finishedOn": "2026-11-08T12:36:41.298224+00:00"
+            }
+          }
+        }
+      }
+    },
+    {
+      "transfer_id": "DIODE-TX-2026-A5A474AA",
+      "timestamp": "2026-11-08T12:38:32.327086+00:00",
+      "classification": "TOP SECRET//SCI",
+      "source_enclave": "COMMERCIAL-INGEST-VPC-US-EAST",
+      "destination_scif": "SCIF-FACILITY-ALPHA-VAULT-01",
+      "original_filename": "scif_analytics_worker.py",
+      "sanitized_filename": "scif_analytics_worker.py",
+      "cdr_status": "PASSED",
+      "threats_detected": [],
+      "actions_taken": [
+        "AST_SYNTAX_PARSED_AND_VALIDATED"
+      ],
+      "original_size_bytes": 149,
+      "sanitized_size_bytes": 149,
+      "cryptographic_verification": {
+        "pre_sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+        "post_sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+        "pre_blake3_merkle_root": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e",
+        "post_blake3_merkle_root": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e",
+        "digests_match": true
+      },
+      "optical_telemetry": {
+        "received_optical_power_dbm": -1.48,
+        "transmitted_chunks": 2,
+        "received_valid_chunks": 2,
+        "dropped_chunks": 0,
+        "fec_recovered_chunks": 0,
+        "loss_rate_simulated": 0.05,
+        "optical_return_backscatter_dbm": -99.9,
+        "reverse_channel_status": "PHYSICALLY_DISCONNECTED"
+      },
+      "slsa_provenance": {
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+          {
+            "name": "scif_analytics_worker.py",
+            "digest": {
+              "sha3_512": "f70fb4c00c5935ecc3dd4f7e5da9fb737e84e59eff0e3489554138e38a9fcef8282343bf3945b71838b19881a243d486a3b9a209a8c464ddc78a4fbdd3827709",
+              "blake3": "887cdfe3b143f0dfa9e034e58b9e44a0c5882cec245188b2589daeeddf35fe5e"
+            }
+          }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+          "buildDefinition": {
+            "buildType": "https://devsupersuite.com/scif/optical-diode-ingestion/v1",
+            "externalParameters": {
+              "transfer_id": "DIODE-TX-2026-A5A474AA",
+              "diode_hardware_serial": "DSS-DIODE-10G-OPT-8839",
+              "security_classification": "TOP SECRET//SCI"
+            },
+            "systemParameters": {
+              "organization": "DevSuperSuite Solutions Architecture / OmniKernel Labs",
+              "contact": "scif@devsupersuite.com",
+              "unidirectional_airgap_verified": true
+            }
+          },
+          "runDetails": {
+            "builder": {
+              "id": "https://devsupersuite.com/scif/optical-diode-gateway"
+            },
+            "metadata": {
+              "invocationId": "DIODE-TX-2026-A5A474AA",
+              "startedOn": "2026-11-08T12:38:32.327070+00:00",
+              "finishedOn": "2026-11-08T12:38:32.327070+00:00"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "last_updated": "2026-11-08T12:38:32.327538+00:00"
+}

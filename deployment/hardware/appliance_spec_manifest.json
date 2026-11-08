@@ -3,7 +3,7 @@
   "metadata": {
     "manifest_version": "1.0.0",
     "reference": "DSS-HARDWARE-APPLIANCE-2026-V1",
-    "generated_at": "2026-11-08T12:01:14.787891+00:00",
+    "generated_at": "2026-11-08T12:38:26.006284+00:00",
     "organization": "DevSuperSuite Solutions Architecture / OmniKernel Labs",
     "contact": "solutions@devsupersuite.com",
     "technical_contact": "hardware@devsupersuite.com"
@@ -108,7 +108,7 @@
   "reference_configurations": {
     "sovereign_1u_tier1": {
       "configuration_metadata": {
-        "generated_at": "2026-11-08T12:01:14.787835+00:00",
+        "generated_at": "2026-11-08T12:38:26.006233+00:00",
         "reference": "DSS-HARDWARE-APPLIANCE-2026-V1",
         "organization": "DevSuperSuite Solutions Architecture / OmniKernel Labs",
         "contact": "solutions@devsupersuite.com",
@@ -174,7 +174,7 @@
     },
     "sovereign_2u_tier2": {
       "configuration_metadata": {
-        "generated_at": "2026-11-08T12:01:14.787865+00:00",
+        "generated_at": "2026-11-08T12:38:26.006261+00:00",
         "reference": "DSS-HARDWARE-APPLIANCE-2026-V1",
         "organization": "DevSuperSuite Solutions Architecture / OmniKernel Labs",
         "contact": "solutions@devsupersuite.com",
@@ -240,7 +240,7 @@
     },
     "sovereign_scif_tier3": {
       "configuration_metadata": {
-        "generated_at": "2026-11-08T12:01:14.787883+00:00",
+        "generated_at": "2026-11-08T12:38:26.006277+00:00",
         "reference": "DSS-HARDWARE-APPLIANCE-2026-V1",
         "organization": "DevSuperSuite Solutions Architecture / OmniKernel Labs",
         "contact": "solutions@devsupersuite.com",

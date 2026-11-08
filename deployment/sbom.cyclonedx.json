@@ -1,38 +1,25 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:2447efaf-23ad-57b8-acf7-d5ee6ba6b008",
+  "serialNumber": "urn:uuid:dss-sbom-1418f7ee8ac94a261d6f6a7f16986a4d",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-08T12:01:27.319938+00:00",
+    "timestamp": "2026-11-08T12:38:44.306091+00:00",
     "tools": [
       {
         "vendor": "DevSuperSuite Official",
-        "name": "CycloneDX-SLSA Validator Engine",
-        "version": "2.0.0"
-      }
-    ],
-    "authors": [
-      {
-        "name": "DevSuperSuite Information Security",
-        "email": "infosec@devsupersuite.com"
+        "name": "DevSuperSuite-SBOM-Engine",
+        "version": "5.2.0"
       }
     ],
     "component": {
       "type": "application",
-      "name": "agent-commerce",
-      "version": "2.4.0",
-      "purl": "pkg:generic/agent-commerce@2.4.0",
-      "supplier": {
-        "name": "DevSuperSuite Tech Services",
-        "url": [
-          "https://devsupersuite.com"
-        ]
-      },
+      "name": "DevSuperSuite-Enterprise-Airgap",
+      "version": "5.2.0-LTS",
       "licenses": [
         {
           "license": {
-            "id": "Proprietary"
+            "id": "Proprietary-Commercial"
           }
         }
       ]
@@ -40,158 +27,169 @@
   },
   "components": [
     {
-      "type": "library",
-      "name": "flask",
-      "version": "3.0.3",
-      "purl": "pkg:pypi/flask@3.0.3",
-      "cpe": "cpe:2.3:a:palletsprojects:flask:3.0.3:*:*:*:*:*:*:*",
+      "type": "application",
+      "bom-ref": "dss-core-omnikernel-ast-compiler",
+      "name": "omnikernel-ast-compiler",
+      "version": "5.2.0-airgap",
       "supplier": {
-        "name": "Pallets Projects"
+        "name": "DevSuperSuite Official",
+        "url": [
+          "https://devsupersuite.web.app"
+        ]
       },
-      "licenses": [
-        {
-          "license": {
-            "id": "BSD-3-Clause"
-          }
-        }
-      ],
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "4b68ff5287f3b5ad083c27e8a939e0eb8627bcbfdb40e3a6c117070da827a4d6"
+          "content": "c5ce645e077762283cdd0f8c4e057796d1408978bd18c24cecb1cda57702ef82"
+        },
+        {
+          "alg": "SHA-512",
+          "content": "e4c7315966f8cf37c99c82981bd9a41806c95e8fb2190a54431ca3f90c61afaf72e7909f133e7baf08818bdfc3ed843ed4361ef0f9243a9821523971e3d315fe"
         }
       ],
-      "scope": "required"
-    },
-    {
-      "type": "library",
-      "name": "pydantic",
-      "version": "2.7.4",
-      "purl": "pkg:pypi/pydantic@2.7.4",
-      "cpe": "cpe:2.3:a:pydantic:pydantic:2.7.4:*:*:*:*:*:*:*",
-      "supplier": {
-        "name": "Pydantic Services Inc."
-      },
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "Proprietary-Commercial"
           }
         }
       ],
+      "purl": "pkg:generic/devsupersuite/omnikernel-ast-compiler@5.2.0"
+    },
+    {
+      "type": "application",
+      "bom-ref": "dss-core-omnikernel-invariant-guard",
+      "name": "omnikernel-invariant-guard",
+      "version": "5.2.0-airgap",
+      "supplier": {
+        "name": "DevSuperSuite Official",
+        "url": [
+          "https://devsupersuite.web.app"
+        ]
+      },
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "18cfc75908cfd6006f1d2e1c944415893d56a73c1c73ecfe9242d93e15779c4a"
+          "content": "5096b05380ea3780e2ed7d5b595017ca0406479ba486767f4c71f9cbac077b7d"
+        },
+        {
+          "alg": "SHA-512",
+          "content": "1a7d2bc88045ebb22facdd1775ab2fa15e5ef7b38d50f1bb00cc147e2b08f292b0d05946946d7ad3fa9fdebe9cb80b8636780420e6be871019dd9fa63fbdcf1f"
         }
       ],
-      "scope": "required"
-    },
-    {
-      "type": "library",
-      "name": "cryptography",
-      "version": "42.0.8",
-      "purl": "pkg:pypi/cryptography@42.0.8",
-      "cpe": "cpe:2.3:a:cryptography_authority:cryptography:42.0.8:*:*:*:*:*:*:*",
-      "supplier": {
-        "name": "Python Cryptographic Authority"
-      },
       "licenses": [
         {
           "license": {
-            "id": "Apache-2.0"
+            "id": "Proprietary-Commercial"
           }
         }
       ],
+      "purl": "pkg:generic/devsupersuite/omnikernel-invariant-guard@5.2.0"
+    },
+    {
+      "type": "application",
+      "bom-ref": "dss-core-agentshield-entropy-scanner",
+      "name": "agentshield-entropy-scanner",
+      "version": "5.2.0-airgap",
+      "supplier": {
+        "name": "DevSuperSuite Official",
+        "url": [
+          "https://devsupersuite.web.app"
+        ]
+      },
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "8a04918e7d7f9c8d506925fcbb1559868f11a87754ffb49e6f0b4d4dc0a6a4e3"
+          "content": "816575ad38fa9cf0bcaa8ec4c61b00d0fbc0b3ebf0cfe5adfc9bf5c5ac030832"
+        },
+        {
+          "alg": "SHA-512",
+          "content": "2afaf830c8d3d891411601e357393d622e79d222037d2e2d4e9bccbf6c771fe722688966c25f169af8784ca930edb0d23d6216f10b0128b5ab21bb5199a96261"
         }
       ],
-      "scope": "required"
-    },
-    {
-      "type": "library",
-      "name": "requests",
-      "version": "2.32.3",
-      "purl": "pkg:pypi/requests@2.32.3",
-      "cpe": "cpe:2.3:a:python-requests:requests:2.32.3:*:*:*:*:*:*:*",
-      "supplier": {
-        "name": "PSF Requests Team"
-      },
       "licenses": [
         {
           "license": {
-            "id": "Apache-2.0"
+            "id": "Proprietary-Commercial"
           }
         }
       ],
+      "purl": "pkg:generic/devsupersuite/agentshield-entropy-scanner@5.2.0"
+    },
+    {
+      "type": "application",
+      "bom-ref": "dss-core-agentshield-command-gate",
+      "name": "agentshield-command-gate",
+      "version": "5.2.0-airgap",
+      "supplier": {
+        "name": "DevSuperSuite Official",
+        "url": [
+          "https://devsupersuite.web.app"
+        ]
+      },
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "563914a513d2f92c007eab56359d60272fa18b6bfa8d9f2023348039f42b604d"
+          "content": "57aea174af032747766c25f6126ab7ced9d6babf101a4f67cfff0a28dc212cbc"
+        },
+        {
+          "alg": "SHA-512",
+          "content": "c7aeea5a76d304e156506e59e00ca4e6df5d0f61e0a4a69c2202f182015a2fe26a426496582c625391f9df8b4a5af38868b42d49e0570011fc0ef51b03a0fe8b"
         }
       ],
-      "scope": "required"
-    },
-    {
-      "type": "library",
-      "name": "pytest",
-      "version": "9.2.0",
-      "purl": "pkg:pypi/pytest@9.2.0",
-      "cpe": "cpe:2.3:a:pytest:pytest:9.2.0:*:*:*:*:*:*:*",
-      "supplier": {
-        "name": "Pytest Development Team"
-      },
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "Proprietary-Commercial"
           }
         }
       ],
+      "purl": "pkg:generic/devsupersuite/agentshield-command-gate@5.2.0"
+    },
+    {
+      "type": "application",
+      "bom-ref": "dss-core-mcp-enterprise-server",
+      "name": "mcp-enterprise-server",
+      "version": "5.2.0-airgap",
+      "supplier": {
+        "name": "DevSuperSuite Official",
+        "url": [
+          "https://devsupersuite.web.app"
+        ]
+      },
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "40ce3818e87e146efce55f28b495251a34a8174f884a44b1c2b5bc1a6c1170b2"
+          "content": "877031e15c3b4e8e7f4c3f65b0f706472808e1e05173a25238a2e7e9f9179201"
+        },
+        {
+          "alg": "SHA-512",
+          "content": "3815ecc2f0e05e58dc5d7445404e8b5e37cca90e228841d9bafd9f97fff77d5d52ee4c897550bf4612012bd247a05bbb0a92495a225296300bc0f824da1f13e9"
         }
       ],
-      "scope": "optional"
-    },
-    {
-      "type": "library",
-      "name": "numpy",
-      "version": "1.26.4",
-      "purl": "pkg:pypi/numpy@1.26.4",
-      "cpe": "cpe:2.3:a:numpy:numpy:1.26.4:*:*:*:*:*:*:*",
-      "supplier": {
-        "name": "NumPy Developers"
-      },
       "licenses": [
         {
           "license": {
-            "id": "BSD-3-Clause"
+            "id": "Proprietary-Commercial"
           }
         }
       ],
-      "hashes": [
-        {
-          "alg": "SHA-256",
-          "content": "df7a64112ce8d937a28e930db18c64bb52b02888cf3e2840049e29a2879cfdf4"
-        }
-      ],
-      "scope": "required"
+      "purl": "pkg:generic/devsupersuite/mcp-enterprise-server@5.2.0"
     },
     {
       "type": "library",
+      "bom-ref": "pypi-google-genai",
       "name": "google-genai",
       "version": "1.0.0",
-      "purl": "pkg:pypi/google-genai@1.0.0",
-      "cpe": "cpe:2.3:a:google:google-genai:1.0.0:*:*:*:*:*:*:*",
       "supplier": {
         "name": "Google LLC"
       },
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "cf0c5edf674126cc584c91aa4c6aaf69c3c12ba1987e251f8e92d24d55fb9546"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -199,54 +197,260 @@
           }
         }
       ],
+      "purl": "pkg:pypi/google-genai@1.0.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pypi-sounddevice",
+      "name": "sounddevice",
+      "version": "0.4.6",
+      "supplier": {
+        "name": "Matthias Geier"
+      },
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          "content": "a882aedeebbd2cf84028ee3b200a2aa886bb420773c1d1413507c62eb48288f7"
         }
       ],
-      "scope": "required"
-    }
-  ],
-  "dependencies": [
-    {
-      "ref": "pkg:generic/agent-commerce@2.4.0",
-      "dependsOn": [
-        "pkg:pypi/flask@3.0.3",
-        "pkg:pypi/pydantic@2.7.4",
-        "pkg:pypi/cryptography@42.0.8",
-        "pkg:pypi/requests@2.32.3",
-        "pkg:pypi/numpy@1.26.4",
-        "pkg:pypi/google-genai@1.0.0"
-      ]
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/sounddevice@0.4.6"
     },
     {
-      "ref": "pkg:pypi/flask@3.0.3",
-      "dependsOn": []
+      "type": "library",
+      "bom-ref": "pypi-numpy",
+      "name": "numpy",
+      "version": "1.24.0",
+      "supplier": {
+        "name": "NumPy Developers"
+      },
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "25606c75fe696edc96b6fd397bfd93dcacc5347e80ca218e934895a65317abfa"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/numpy@1.24.0"
     },
     {
-      "ref": "pkg:pypi/pydantic@2.7.4",
-      "dependsOn": []
+      "type": "library",
+      "bom-ref": "pypi-scipy",
+      "name": "scipy",
+      "version": "1.10.0",
+      "supplier": {
+        "name": "SciPy Developers"
+      },
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "a402aa37195683fc7b94c51828c30739f29d634d1537c382d7b48f5fb1fe1950"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/scipy@1.10.0"
     },
     {
-      "ref": "pkg:pypi/cryptography@42.0.8",
-      "dependsOn": []
+      "type": "library",
+      "bom-ref": "pypi-edge-tts",
+      "name": "edge-tts",
+      "version": "6.1.0",
+      "supplier": {
+        "name": "Jordan Chen"
+      },
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "e4c7e267fb3efb2a5548c02e480c86d76e9948716ff74221e0ab275a20dade8c"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/edge-tts@6.1.0"
     },
     {
-      "ref": "pkg:pypi/requests@2.32.3",
-      "dependsOn": []
+      "type": "library",
+      "bom-ref": "pypi-gtts",
+      "name": "gtts",
+      "version": "2.5.0",
+      "supplier": {
+        "name": "Pierre Nicolas Durette"
+      },
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "573ece1732742f7d6ae9e14a2e7ca83d462d67922d683b8937e2a4b609dd37a7"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/gTTS@2.5.0"
     },
     {
-      "ref": "pkg:pypi/pytest@9.2.0",
-      "dependsOn": []
+      "type": "library",
+      "bom-ref": "pypi-speechrecognition",
+      "name": "speechrecognition",
+      "version": "3.10.0",
+      "supplier": {
+        "name": "Anthony Zhang"
+      },
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "ee6d09a6e753b12a00bc13a491d17c883001c73c1c955978c3fa17515f7eb073"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/SpeechRecognition@3.10.0"
     },
     {
-      "ref": "pkg:pypi/numpy@1.26.4",
-      "dependsOn": []
+      "type": "library",
+      "bom-ref": "pypi-flask",
+      "name": "flask",
+      "version": "3.0.0",
+      "supplier": {
+        "name": "Pallets Projects"
+      },
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "6c9e3c88b2a287a9be2dedf378624f0c8b2ad6564c7a2a9ede0644ae97198755"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/flask@3.0.0"
     },
     {
-      "ref": "pkg:pypi/google-genai@1.0.0",
-      "dependsOn": []
+      "type": "library",
+      "bom-ref": "pypi-websockets",
+      "name": "websockets",
+      "version": "12.0",
+      "supplier": {
+        "name": "Aymeric Augustin"
+      },
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "11998f45fdfaa01f4e2666fb802cd8752bc13aa1da7cb12e701482882d33715b"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/websockets@12.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pypi-rich",
+      "name": "rich",
+      "version": "13.7.0",
+      "supplier": {
+        "name": "Will McGugan"
+      },
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "e23ec672ed5763689ee7c31f79e125ae71339a9f6eb96448bee1624b6091310c"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/rich@13.7.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pypi-pynput",
+      "name": "pynput",
+      "version": "1.7.6",
+      "supplier": {
+        "name": "Moses Palm\u00e9r"
+      },
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "980739bf06d522d3a94ddb1c321657eeb6eb717f88e65d1edcb9b96b07c746c7"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/pynput@1.7.6"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pypi-pywin32",
+      "name": "pywin32",
+      "version": "306",
+      "supplier": {
+        "name": "Mark Hammond"
+      },
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "cd8063f4e36016f30e8aaa7e52f6157825c2c19850d534355da9c81ed1afb72f"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "PSF-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/pywin32@306"
     }
   ]
 }

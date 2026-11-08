@@ -143,3 +143,4 @@ python services/sbom_cyclonedx_slsa_validator.py --export-all
 ---
 **Maintained By**: DevSuperSuite Information Security (`infosec@devsupersuite.com`)  
 **Distribution**: Sovereign Enterprise Supply Chain Governance Only - Strict Brand Anonymity
+

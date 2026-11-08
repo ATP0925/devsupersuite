@@ -1,6 +1,6 @@
 {
   "title": "DevSuperSuite Air-Gapped TPM 2.0 PCR Quote Attestation Manifest",
-  "generated_at": "2026-11-08T11:58:35.851481+00:00",
+  "generated_at": "2026-11-08T12:38:45.995603+00:00",
   "authority": "DevSuperSuite Cryptographic Engineering (cryptography@devsupersuite.com)",
   "attestation_status": "AIR_GAP_INTEGRITY_VERIFIED",
   "hardware_ek_profile": {
@@ -18,7 +18,7 @@
     "status": "AIR_GAP_INTEGRITY_VERIFIED",
     "manufacturer": "Infineon Technologies (OPTIGA)",
     "firmware_version": "0xf001600000000",
-    "clock_seconds": 1794139115,
+    "clock_seconds": 1794141525,
     "safe_clock": true,
     "composite_pcr_digest": "df489f709ffe4734545e6f2fe4c54a4de8c4f01bb4669f0136cedf4200584596",
     "golden_baseline_match": true,
@@ -28,7 +28,7 @@
       "PCR4": true,
       "PCR7": true
     },
-    "ak_fingerprint": "3f7b46c221db5cf6ba0f51edd5c1cf1e6d01e69d02e0810af814a9c4a334c4b1",
+    "ak_fingerprint": "8a272da267a134a7521af64b10e5b51ea93197dbab2377162c12d62c3d191e23",
     "ek_serial_number": "TPM20-SN-1DEF3C802BC6"
   },
   "golden_baseline_pcrs": {

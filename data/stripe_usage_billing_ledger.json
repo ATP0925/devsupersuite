@@ -2,7 +2,7 @@
   "version": "1.0.0",
   "governing_entity": "DevSuperSuite Revenue Operations (growth@devsupersuite.com)",
   "compliance_protocol": "100% Brand Anonymity - Zero Founder Personal Identifiers",
-  "last_updated": "2026-11-08T11:58:33.568913+00:00",
+  "last_updated": "2026-11-08T12:38:44.096347+00:00",
   "customers": [
     {
       "customer_id": "cus_dss_a98cae40579f",
@@ -122,6 +122,295 @@
         "entropy_checks": 0,
         "voice_minutes": 0
       }
+    },
+    {
+      "customer_id": "cus_dss_aa18ed0eb69f",
+      "subscription_id": "sub_dss_583a922a8605",
+      "company_name": "Booz Allen Hamilton",
+      "domain": "boozallen.com",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "status": "ACTIVE",
+      "current_period_start": "2026-11-01",
+      "current_period_end": "2026-12-08",
+      "created_at": "2026-11-08T12:01:33.137896+00:00",
+      "aggregated_usage": {
+        "ast_queries": 120000,
+        "entropy_checks": 0,
+        "voice_minutes": 0
+      }
+    },
+    {
+      "customer_id": "cus_dss_c1572a308b4b",
+      "subscription_id": "sub_dss_8186c8caf1a6",
+      "company_name": "Booz Allen Hamilton",
+      "domain": "boozallen.com",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "status": "ACTIVE",
+      "current_period_start": "2026-11-01",
+      "current_period_end": "2026-12-08",
+      "created_at": "2026-11-08T12:02:07.175245+00:00",
+      "aggregated_usage": {
+        "ast_queries": 120000,
+        "entropy_checks": 0,
+        "voice_minutes": 0
+      }
+    },
+    {
+      "customer_id": "cus_dss_8188aec2221f",
+      "subscription_id": "sub_dss_b88319d1cedf",
+      "company_name": "Booz Allen Hamilton",
+      "domain": "boozallen.com",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "status": "ACTIVE",
+      "current_period_start": "2026-11-01",
+      "current_period_end": "2026-12-08",
+      "created_at": "2026-11-08T12:04:20.446569+00:00",
+      "aggregated_usage": {
+        "ast_queries": 120000,
+        "entropy_checks": 0,
+        "voice_minutes": 0
+      }
+    },
+    {
+      "customer_id": "cus_dss_5a2a080c03b2",
+      "subscription_id": "sub_dss_c52f648a6783",
+      "company_name": "Booz Allen Hamilton",
+      "domain": "boozallen.com",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "status": "ACTIVE",
+      "current_period_start": "2026-11-01",
+      "current_period_end": "2026-12-08",
+      "created_at": "2026-11-08T12:05:15.269538+00:00",
+      "aggregated_usage": {
+        "ast_queries": 120000,
+        "entropy_checks": 0,
+        "voice_minutes": 0
+      }
+    },
+    {
+      "customer_id": "cus_dss_48a1de4ff4a6",
+      "subscription_id": "sub_dss_9697ca671f0b",
+      "company_name": "Booz Allen Hamilton",
+      "domain": "boozallen.com",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "status": "ACTIVE",
+      "current_period_start": "2026-11-01",
+      "current_period_end": "2026-12-08",
+      "created_at": "2026-11-08T12:05:30.007831+00:00",
+      "aggregated_usage": {
+        "ast_queries": 120000,
+        "entropy_checks": 0,
+        "voice_minutes": 0
+      }
+    },
+    {
+      "customer_id": "cus_dss_116f5b1ba1b5",
+      "subscription_id": "sub_dss_1310f0a80d36",
+      "company_name": "Booz Allen Hamilton",
+      "domain": "boozallen.com",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "status": "ACTIVE",
+      "current_period_start": "2026-11-01",
+      "current_period_end": "2026-12-08",
+      "created_at": "2026-11-08T12:06:09.105722+00:00",
+      "aggregated_usage": {
+        "ast_queries": 120000,
+        "entropy_checks": 0,
+        "voice_minutes": 0
+      }
+    },
+    {
+      "customer_id": "cus_dss_52ecd56f6642",
+      "subscription_id": "sub_dss_bc8fe40cd154",
+      "company_name": "Booz Allen Hamilton",
+      "domain": "boozallen.com",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "status": "ACTIVE",
+      "current_period_start": "2026-11-01",
+      "current_period_end": "2026-12-08",
+      "created_at": "2026-11-08T12:06:56.655419+00:00",
+      "aggregated_usage": {
+        "ast_queries": 120000,
+        "entropy_checks": 0,
+        "voice_minutes": 0
+      }
+    },
+    {
+      "customer_id": "cus_dss_5454c2fd1867",
+      "subscription_id": "sub_dss_3c1de846a489",
+      "company_name": "Booz Allen Hamilton",
+      "domain": "boozallen.com",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "status": "ACTIVE",
+      "current_period_start": "2026-11-01",
+      "current_period_end": "2026-12-08",
+      "created_at": "2026-11-08T12:09:30.247293+00:00",
+      "aggregated_usage": {
+        "ast_queries": 120000,
+        "entropy_checks": 0,
+        "voice_minutes": 0
+      }
+    },
+    {
+      "customer_id": "cus_dss_472834055e46",
+      "subscription_id": "sub_dss_2871d76e92b7",
+      "company_name": "Booz Allen Hamilton",
+      "domain": "boozallen.com",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "status": "ACTIVE",
+      "current_period_start": "2026-11-01",
+      "current_period_end": "2026-12-08",
+      "created_at": "2026-11-08T12:10:25.969499+00:00",
+      "aggregated_usage": {
+        "ast_queries": 120000,
+        "entropy_checks": 0,
+        "voice_minutes": 0
+      }
+    },
+    {
+      "customer_id": "cus_dss_83521e3d3910",
+      "subscription_id": "sub_dss_221803f1c078",
+      "company_name": "Booz Allen Hamilton",
+      "domain": "boozallen.com",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "status": "ACTIVE",
+      "current_period_start": "2026-11-01",
+      "current_period_end": "2026-12-08",
+      "created_at": "2026-11-08T12:12:09.013946+00:00",
+      "aggregated_usage": {
+        "ast_queries": 120000,
+        "entropy_checks": 0,
+        "voice_minutes": 0
+      }
+    },
+    {
+      "customer_id": "cus_dss_3f7e4c73c2dc",
+      "subscription_id": "sub_dss_94213be9e3ca",
+      "company_name": "Booz Allen Hamilton",
+      "domain": "boozallen.com",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "status": "ACTIVE",
+      "current_period_start": "2026-11-01",
+      "current_period_end": "2026-12-08",
+      "created_at": "2026-11-08T12:14:00.553584+00:00",
+      "aggregated_usage": {
+        "ast_queries": 120000,
+        "entropy_checks": 0,
+        "voice_minutes": 0
+      }
+    },
+    {
+      "customer_id": "cus_dss_c452a04f4fc1",
+      "subscription_id": "sub_dss_dd2e33c9eb70",
+      "company_name": "Booz Allen Hamilton",
+      "domain": "boozallen.com",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "status": "ACTIVE",
+      "current_period_start": "2026-11-01",
+      "current_period_end": "2026-12-08",
+      "created_at": "2026-11-08T12:14:20.098345+00:00",
+      "aggregated_usage": {
+        "ast_queries": 120000,
+        "entropy_checks": 0,
+        "voice_minutes": 0
+      }
+    },
+    {
+      "customer_id": "cus_dss_101cb58d0c55",
+      "subscription_id": "sub_dss_51052c9b0470",
+      "company_name": "Booz Allen Hamilton",
+      "domain": "boozallen.com",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "status": "ACTIVE",
+      "current_period_start": "2026-11-01",
+      "current_period_end": "2026-12-08",
+      "created_at": "2026-11-08T12:17:59.405276+00:00",
+      "aggregated_usage": {
+        "ast_queries": 120000,
+        "entropy_checks": 0,
+        "voice_minutes": 0
+      }
+    },
+    {
+      "customer_id": "cus_dss_e2fc397931c8",
+      "subscription_id": "sub_dss_d81c4d8230ba",
+      "company_name": "Booz Allen Hamilton",
+      "domain": "boozallen.com",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "status": "ACTIVE",
+      "current_period_start": "2026-11-01",
+      "current_period_end": "2026-12-08",
+      "created_at": "2026-11-08T12:19:06.245153+00:00",
+      "aggregated_usage": {
+        "ast_queries": 120000,
+        "entropy_checks": 0,
+        "voice_minutes": 0
+      }
+    },
+    {
+      "customer_id": "cus_dss_e5d48521e3b0",
+      "subscription_id": "sub_dss_92a7b7b06127",
+      "company_name": "Booz Allen Hamilton",
+      "domain": "boozallen.com",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "status": "ACTIVE",
+      "current_period_start": "2026-11-01",
+      "current_period_end": "2026-12-08",
+      "created_at": "2026-11-08T12:22:11.168347+00:00",
+      "aggregated_usage": {
+        "ast_queries": 120000,
+        "entropy_checks": 0,
+        "voice_minutes": 0
+      }
+    },
+    {
+      "customer_id": "cus_dss_f53c05b4dda2",
+      "subscription_id": "sub_dss_3416ea92d4fc",
+      "company_name": "Booz Allen Hamilton",
+      "domain": "boozallen.com",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "status": "ACTIVE",
+      "current_period_start": "2026-11-01",
+      "current_period_end": "2026-12-08",
+      "created_at": "2026-11-08T12:36:55.073780+00:00",
+      "aggregated_usage": {
+        "ast_queries": 120000,
+        "entropy_checks": 0,
+        "voice_minutes": 0
+      }
+    },
+    {
+      "customer_id": "cus_dss_68a46f0568a3",
+      "subscription_id": "sub_dss_bacca0848ce5",
+      "company_name": "Booz Allen Hamilton",
+      "domain": "boozallen.com",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "status": "ACTIVE",
+      "current_period_start": "2026-11-01",
+      "current_period_end": "2026-12-08",
+      "created_at": "2026-11-08T12:38:43.811698+00:00",
+      "aggregated_usage": {
+        "ast_queries": 120000,
+        "entropy_checks": 0,
+        "voice_minutes": 0
+      }
     }
   ],
   "usage_events": [
@@ -220,6 +509,142 @@
       "quantity": 120000,
       "idempotency_key": "idem_cus_dss_c8a057654261_ast_queries_c65cb949",
       "timestamp": "2026-11-08T11:58:33.368760+00:00"
+    },
+    {
+      "event_id": "mrec_f4a29df0e1e5",
+      "customer_id": "cus_dss_aa18ed0eb69f",
+      "metric_name": "ast_queries",
+      "quantity": 120000,
+      "idempotency_key": "idem_cus_dss_aa18ed0eb69f_ast_queries_3bc7d5c0",
+      "timestamp": "2026-11-08T12:01:33.261580+00:00"
+    },
+    {
+      "event_id": "mrec_b2b7e24060c8",
+      "customer_id": "cus_dss_c1572a308b4b",
+      "metric_name": "ast_queries",
+      "quantity": 120000,
+      "idempotency_key": "idem_cus_dss_c1572a308b4b_ast_queries_528286af",
+      "timestamp": "2026-11-08T12:02:07.284146+00:00"
+    },
+    {
+      "event_id": "mrec_44d39e91d744",
+      "customer_id": "cus_dss_8188aec2221f",
+      "metric_name": "ast_queries",
+      "quantity": 120000,
+      "idempotency_key": "idem_cus_dss_8188aec2221f_ast_queries_fa574745",
+      "timestamp": "2026-11-08T12:04:20.576302+00:00"
+    },
+    {
+      "event_id": "mrec_af353a04fe69",
+      "customer_id": "cus_dss_5a2a080c03b2",
+      "metric_name": "ast_queries",
+      "quantity": 120000,
+      "idempotency_key": "idem_cus_dss_5a2a080c03b2_ast_queries_60ed9ea9",
+      "timestamp": "2026-11-08T12:05:15.401227+00:00"
+    },
+    {
+      "event_id": "mrec_f25405efb83a",
+      "customer_id": "cus_dss_48a1de4ff4a6",
+      "metric_name": "ast_queries",
+      "quantity": 120000,
+      "idempotency_key": "idem_cus_dss_48a1de4ff4a6_ast_queries_d3cb9e5f",
+      "timestamp": "2026-11-08T12:05:30.120385+00:00"
+    },
+    {
+      "event_id": "mrec_74d9bee68197",
+      "customer_id": "cus_dss_116f5b1ba1b5",
+      "metric_name": "ast_queries",
+      "quantity": 120000,
+      "idempotency_key": "idem_cus_dss_116f5b1ba1b5_ast_queries_3930ca2a",
+      "timestamp": "2026-11-08T12:06:09.212704+00:00"
+    },
+    {
+      "event_id": "mrec_7d822622033d",
+      "customer_id": "cus_dss_52ecd56f6642",
+      "metric_name": "ast_queries",
+      "quantity": 120000,
+      "idempotency_key": "idem_cus_dss_52ecd56f6642_ast_queries_fe1337b0",
+      "timestamp": "2026-11-08T12:06:56.760580+00:00"
+    },
+    {
+      "event_id": "mrec_56a0809dba65",
+      "customer_id": "cus_dss_5454c2fd1867",
+      "metric_name": "ast_queries",
+      "quantity": 120000,
+      "idempotency_key": "idem_cus_dss_5454c2fd1867_ast_queries_e12a0b74",
+      "timestamp": "2026-11-08T12:09:30.352390+00:00"
+    },
+    {
+      "event_id": "mrec_8d522fbb2a86",
+      "customer_id": "cus_dss_472834055e46",
+      "metric_name": "ast_queries",
+      "quantity": 120000,
+      "idempotency_key": "idem_cus_dss_472834055e46_ast_queries_cb7c4b59",
+      "timestamp": "2026-11-08T12:10:26.078130+00:00"
+    },
+    {
+      "event_id": "mrec_b04ec9b0cf67",
+      "customer_id": "cus_dss_83521e3d3910",
+      "metric_name": "ast_queries",
+      "quantity": 120000,
+      "idempotency_key": "idem_cus_dss_83521e3d3910_ast_queries_700cd5c9",
+      "timestamp": "2026-11-08T12:12:09.118272+00:00"
+    },
+    {
+      "event_id": "mrec_66ebc73ee5d1",
+      "customer_id": "cus_dss_3f7e4c73c2dc",
+      "metric_name": "ast_queries",
+      "quantity": 120000,
+      "idempotency_key": "idem_cus_dss_3f7e4c73c2dc_ast_queries_cbfbf7f9",
+      "timestamp": "2026-11-08T12:14:00.692809+00:00"
+    },
+    {
+      "event_id": "mrec_df8709284e81",
+      "customer_id": "cus_dss_c452a04f4fc1",
+      "metric_name": "ast_queries",
+      "quantity": 120000,
+      "idempotency_key": "idem_cus_dss_c452a04f4fc1_ast_queries_fef41eb7",
+      "timestamp": "2026-11-08T12:14:20.214905+00:00"
+    },
+    {
+      "event_id": "mrec_3a37f9a86b1e",
+      "customer_id": "cus_dss_101cb58d0c55",
+      "metric_name": "ast_queries",
+      "quantity": 120000,
+      "idempotency_key": "idem_cus_dss_101cb58d0c55_ast_queries_5e178ef7",
+      "timestamp": "2026-11-08T12:17:59.503389+00:00"
+    },
+    {
+      "event_id": "mrec_48515521ea9b",
+      "customer_id": "cus_dss_e2fc397931c8",
+      "metric_name": "ast_queries",
+      "quantity": 120000,
+      "idempotency_key": "idem_cus_dss_e2fc397931c8_ast_queries_cc034f86",
+      "timestamp": "2026-11-08T12:19:06.352516+00:00"
+    },
+    {
+      "event_id": "mrec_3d5f38e9d2c4",
+      "customer_id": "cus_dss_e5d48521e3b0",
+      "metric_name": "ast_queries",
+      "quantity": 120000,
+      "idempotency_key": "idem_cus_dss_e5d48521e3b0_ast_queries_940e2a40",
+      "timestamp": "2026-11-08T12:22:11.260937+00:00"
+    },
+    {
+      "event_id": "mrec_81fda30ecb30",
+      "customer_id": "cus_dss_f53c05b4dda2",
+      "metric_name": "ast_queries",
+      "quantity": 120000,
+      "idempotency_key": "idem_cus_dss_f53c05b4dda2_ast_queries_fe3dcb88",
+      "timestamp": "2026-11-08T12:36:55.175122+00:00"
+    },
+    {
+      "event_id": "mrec_4ba246072233",
+      "customer_id": "cus_dss_68a46f0568a3",
+      "metric_name": "ast_queries",
+      "quantity": 120000,
+      "idempotency_key": "idem_cus_dss_68a46f0568a3_ast_queries_4d06f90e",
+      "timestamp": "2026-11-08T12:38:43.908419+00:00"
     }
   ],
   "invoices": [
@@ -450,6 +875,652 @@
       "created_at": "2026-11-08T11:58:33.470351+00:00",
       "due_date": "2026-11-22",
       "payment_intent": "pi_dss_61295a63948042"
+    },
+    {
+      "invoice_id": "in_dss_cec5a3716bca45",
+      "customer_id": "cus_dss_aa18ed0eb69f",
+      "subscription_id": "sub_dss_583a922a8605",
+      "company_name": "Booz Allen Hamilton",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "base_fee_usd": 29.0,
+      "total_overage_usd": 20.0,
+      "total_invoice_usd": 49.0,
+      "breakdown": {
+        "ast_queries": {
+          "reported": 120000,
+          "included": 100000,
+          "overage_units": 20000,
+          "unit_rate_usd": 0.001,
+          "charge_usd": 20.0
+        },
+        "entropy_checks": {
+          "reported": 0,
+          "included": 50000,
+          "overage_units": 0,
+          "unit_rate_usd": 0.0005,
+          "charge_usd": 0.0
+        },
+        "voice_minutes": {
+          "reported": 0,
+          "included": 500,
+          "overage_units": 0,
+          "unit_rate_usd": 0.02,
+          "charge_usd": 0.0
+        }
+      },
+      "status": "PAID",
+      "created_at": "2026-11-08T12:01:33.385313+00:00",
+      "due_date": "2026-11-22",
+      "payment_intent": "pi_dss_de6b0dbfe2884b"
+    },
+    {
+      "invoice_id": "in_dss_7d92741c76bd47",
+      "customer_id": "cus_dss_c1572a308b4b",
+      "subscription_id": "sub_dss_8186c8caf1a6",
+      "company_name": "Booz Allen Hamilton",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "base_fee_usd": 29.0,
+      "total_overage_usd": 20.0,
+      "total_invoice_usd": 49.0,
+      "breakdown": {
+        "ast_queries": {
+          "reported": 120000,
+          "included": 100000,
+          "overage_units": 20000,
+          "unit_rate_usd": 0.001,
+          "charge_usd": 20.0
+        },
+        "entropy_checks": {
+          "reported": 0,
+          "included": 50000,
+          "overage_units": 0,
+          "unit_rate_usd": 0.0005,
+          "charge_usd": 0.0
+        },
+        "voice_minutes": {
+          "reported": 0,
+          "included": 500,
+          "overage_units": 0,
+          "unit_rate_usd": 0.02,
+          "charge_usd": 0.0
+        }
+      },
+      "status": "PAID",
+      "created_at": "2026-11-08T12:02:07.388782+00:00",
+      "due_date": "2026-11-22",
+      "payment_intent": "pi_dss_e31b984b0a4045"
+    },
+    {
+      "invoice_id": "in_dss_67c10cd254df40",
+      "customer_id": "cus_dss_8188aec2221f",
+      "subscription_id": "sub_dss_b88319d1cedf",
+      "company_name": "Booz Allen Hamilton",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "base_fee_usd": 29.0,
+      "total_overage_usd": 20.0,
+      "total_invoice_usd": 49.0,
+      "breakdown": {
+        "ast_queries": {
+          "reported": 120000,
+          "included": 100000,
+          "overage_units": 20000,
+          "unit_rate_usd": 0.001,
+          "charge_usd": 20.0
+        },
+        "entropy_checks": {
+          "reported": 0,
+          "included": 50000,
+          "overage_units": 0,
+          "unit_rate_usd": 0.0005,
+          "charge_usd": 0.0
+        },
+        "voice_minutes": {
+          "reported": 0,
+          "included": 500,
+          "overage_units": 0,
+          "unit_rate_usd": 0.02,
+          "charge_usd": 0.0
+        }
+      },
+      "status": "PAID",
+      "created_at": "2026-11-08T12:04:20.695980+00:00",
+      "due_date": "2026-11-22",
+      "payment_intent": "pi_dss_233453eb88ad4b"
+    },
+    {
+      "invoice_id": "in_dss_9f3b69b341f943",
+      "customer_id": "cus_dss_5a2a080c03b2",
+      "subscription_id": "sub_dss_c52f648a6783",
+      "company_name": "Booz Allen Hamilton",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "base_fee_usd": 29.0,
+      "total_overage_usd": 20.0,
+      "total_invoice_usd": 49.0,
+      "breakdown": {
+        "ast_queries": {
+          "reported": 120000,
+          "included": 100000,
+          "overage_units": 20000,
+          "unit_rate_usd": 0.001,
+          "charge_usd": 20.0
+        },
+        "entropy_checks": {
+          "reported": 0,
+          "included": 50000,
+          "overage_units": 0,
+          "unit_rate_usd": 0.0005,
+          "charge_usd": 0.0
+        },
+        "voice_minutes": {
+          "reported": 0,
+          "included": 500,
+          "overage_units": 0,
+          "unit_rate_usd": 0.02,
+          "charge_usd": 0.0
+        }
+      },
+      "status": "PAID",
+      "created_at": "2026-11-08T12:05:15.524982+00:00",
+      "due_date": "2026-11-22",
+      "payment_intent": "pi_dss_acb4d669046f4c"
+    },
+    {
+      "invoice_id": "in_dss_22021163dd0b41",
+      "customer_id": "cus_dss_48a1de4ff4a6",
+      "subscription_id": "sub_dss_9697ca671f0b",
+      "company_name": "Booz Allen Hamilton",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "base_fee_usd": 29.0,
+      "total_overage_usd": 20.0,
+      "total_invoice_usd": 49.0,
+      "breakdown": {
+        "ast_queries": {
+          "reported": 120000,
+          "included": 100000,
+          "overage_units": 20000,
+          "unit_rate_usd": 0.001,
+          "charge_usd": 20.0
+        },
+        "entropy_checks": {
+          "reported": 0,
+          "included": 50000,
+          "overage_units": 0,
+          "unit_rate_usd": 0.0005,
+          "charge_usd": 0.0
+        },
+        "voice_minutes": {
+          "reported": 0,
+          "included": 500,
+          "overage_units": 0,
+          "unit_rate_usd": 0.02,
+          "charge_usd": 0.0
+        }
+      },
+      "status": "PAID",
+      "created_at": "2026-11-08T12:05:30.231184+00:00",
+      "due_date": "2026-11-22",
+      "payment_intent": "pi_dss_018b23465a614a"
+    },
+    {
+      "invoice_id": "in_dss_4b78fa68b22b4f",
+      "customer_id": "cus_dss_116f5b1ba1b5",
+      "subscription_id": "sub_dss_1310f0a80d36",
+      "company_name": "Booz Allen Hamilton",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "base_fee_usd": 29.0,
+      "total_overage_usd": 20.0,
+      "total_invoice_usd": 49.0,
+      "breakdown": {
+        "ast_queries": {
+          "reported": 120000,
+          "included": 100000,
+          "overage_units": 20000,
+          "unit_rate_usd": 0.001,
+          "charge_usd": 20.0
+        },
+        "entropy_checks": {
+          "reported": 0,
+          "included": 50000,
+          "overage_units": 0,
+          "unit_rate_usd": 0.0005,
+          "charge_usd": 0.0
+        },
+        "voice_minutes": {
+          "reported": 0,
+          "included": 500,
+          "overage_units": 0,
+          "unit_rate_usd": 0.02,
+          "charge_usd": 0.0
+        }
+      },
+      "status": "PAID",
+      "created_at": "2026-11-08T12:06:09.319946+00:00",
+      "due_date": "2026-11-22",
+      "payment_intent": "pi_dss_87c15121270a44"
+    },
+    {
+      "invoice_id": "in_dss_f1d002867f0d4c",
+      "customer_id": "cus_dss_52ecd56f6642",
+      "subscription_id": "sub_dss_bc8fe40cd154",
+      "company_name": "Booz Allen Hamilton",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "base_fee_usd": 29.0,
+      "total_overage_usd": 20.0,
+      "total_invoice_usd": 49.0,
+      "breakdown": {
+        "ast_queries": {
+          "reported": 120000,
+          "included": 100000,
+          "overage_units": 20000,
+          "unit_rate_usd": 0.001,
+          "charge_usd": 20.0
+        },
+        "entropy_checks": {
+          "reported": 0,
+          "included": 50000,
+          "overage_units": 0,
+          "unit_rate_usd": 0.0005,
+          "charge_usd": 0.0
+        },
+        "voice_minutes": {
+          "reported": 0,
+          "included": 500,
+          "overage_units": 0,
+          "unit_rate_usd": 0.02,
+          "charge_usd": 0.0
+        }
+      },
+      "status": "PAID",
+      "created_at": "2026-11-08T12:06:56.866571+00:00",
+      "due_date": "2026-11-22",
+      "payment_intent": "pi_dss_db44a6b6ad3e40"
+    },
+    {
+      "invoice_id": "in_dss_f2b0c9bb07c948",
+      "customer_id": "cus_dss_5454c2fd1867",
+      "subscription_id": "sub_dss_3c1de846a489",
+      "company_name": "Booz Allen Hamilton",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "base_fee_usd": 29.0,
+      "total_overage_usd": 20.0,
+      "total_invoice_usd": 49.0,
+      "breakdown": {
+        "ast_queries": {
+          "reported": 120000,
+          "included": 100000,
+          "overage_units": 20000,
+          "unit_rate_usd": 0.001,
+          "charge_usd": 20.0
+        },
+        "entropy_checks": {
+          "reported": 0,
+          "included": 50000,
+          "overage_units": 0,
+          "unit_rate_usd": 0.0005,
+          "charge_usd": 0.0
+        },
+        "voice_minutes": {
+          "reported": 0,
+          "included": 500,
+          "overage_units": 0,
+          "unit_rate_usd": 0.02,
+          "charge_usd": 0.0
+        }
+      },
+      "status": "PAID",
+      "created_at": "2026-11-08T12:09:30.455455+00:00",
+      "due_date": "2026-11-22",
+      "payment_intent": "pi_dss_e5e0e20f17224f"
+    },
+    {
+      "invoice_id": "in_dss_4fe8d88d729e45",
+      "customer_id": "cus_dss_472834055e46",
+      "subscription_id": "sub_dss_2871d76e92b7",
+      "company_name": "Booz Allen Hamilton",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "base_fee_usd": 29.0,
+      "total_overage_usd": 20.0,
+      "total_invoice_usd": 49.0,
+      "breakdown": {
+        "ast_queries": {
+          "reported": 120000,
+          "included": 100000,
+          "overage_units": 20000,
+          "unit_rate_usd": 0.001,
+          "charge_usd": 20.0
+        },
+        "entropy_checks": {
+          "reported": 0,
+          "included": 50000,
+          "overage_units": 0,
+          "unit_rate_usd": 0.0005,
+          "charge_usd": 0.0
+        },
+        "voice_minutes": {
+          "reported": 0,
+          "included": 500,
+          "overage_units": 0,
+          "unit_rate_usd": 0.02,
+          "charge_usd": 0.0
+        }
+      },
+      "status": "PAID",
+      "created_at": "2026-11-08T12:10:26.184122+00:00",
+      "due_date": "2026-11-22",
+      "payment_intent": "pi_dss_c4a7a69e6e9b43"
+    },
+    {
+      "invoice_id": "in_dss_ad95777757ab45",
+      "customer_id": "cus_dss_83521e3d3910",
+      "subscription_id": "sub_dss_221803f1c078",
+      "company_name": "Booz Allen Hamilton",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "base_fee_usd": 29.0,
+      "total_overage_usd": 20.0,
+      "total_invoice_usd": 49.0,
+      "breakdown": {
+        "ast_queries": {
+          "reported": 120000,
+          "included": 100000,
+          "overage_units": 20000,
+          "unit_rate_usd": 0.001,
+          "charge_usd": 20.0
+        },
+        "entropy_checks": {
+          "reported": 0,
+          "included": 50000,
+          "overage_units": 0,
+          "unit_rate_usd": 0.0005,
+          "charge_usd": 0.0
+        },
+        "voice_minutes": {
+          "reported": 0,
+          "included": 500,
+          "overage_units": 0,
+          "unit_rate_usd": 0.02,
+          "charge_usd": 0.0
+        }
+      },
+      "status": "PAID",
+      "created_at": "2026-11-08T12:12:09.221775+00:00",
+      "due_date": "2026-11-22",
+      "payment_intent": "pi_dss_ce0dc070d23b41"
+    },
+    {
+      "invoice_id": "in_dss_c59eaa1c576c42",
+      "customer_id": "cus_dss_3f7e4c73c2dc",
+      "subscription_id": "sub_dss_94213be9e3ca",
+      "company_name": "Booz Allen Hamilton",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "base_fee_usd": 29.0,
+      "total_overage_usd": 20.0,
+      "total_invoice_usd": 49.0,
+      "breakdown": {
+        "ast_queries": {
+          "reported": 120000,
+          "included": 100000,
+          "overage_units": 20000,
+          "unit_rate_usd": 0.001,
+          "charge_usd": 20.0
+        },
+        "entropy_checks": {
+          "reported": 0,
+          "included": 50000,
+          "overage_units": 0,
+          "unit_rate_usd": 0.0005,
+          "charge_usd": 0.0
+        },
+        "voice_minutes": {
+          "reported": 0,
+          "included": 500,
+          "overage_units": 0,
+          "unit_rate_usd": 0.02,
+          "charge_usd": 0.0
+        }
+      },
+      "status": "PAID",
+      "created_at": "2026-11-08T12:14:00.809921+00:00",
+      "due_date": "2026-11-22",
+      "payment_intent": "pi_dss_417b68280da04e"
+    },
+    {
+      "invoice_id": "in_dss_f45578eeb3c946",
+      "customer_id": "cus_dss_c452a04f4fc1",
+      "subscription_id": "sub_dss_dd2e33c9eb70",
+      "company_name": "Booz Allen Hamilton",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "base_fee_usd": 29.0,
+      "total_overage_usd": 20.0,
+      "total_invoice_usd": 49.0,
+      "breakdown": {
+        "ast_queries": {
+          "reported": 120000,
+          "included": 100000,
+          "overage_units": 20000,
+          "unit_rate_usd": 0.001,
+          "charge_usd": 20.0
+        },
+        "entropy_checks": {
+          "reported": 0,
+          "included": 50000,
+          "overage_units": 0,
+          "unit_rate_usd": 0.0005,
+          "charge_usd": 0.0
+        },
+        "voice_minutes": {
+          "reported": 0,
+          "included": 500,
+          "overage_units": 0,
+          "unit_rate_usd": 0.02,
+          "charge_usd": 0.0
+        }
+      },
+      "status": "PAID",
+      "created_at": "2026-11-08T12:14:20.318882+00:00",
+      "due_date": "2026-11-22",
+      "payment_intent": "pi_dss_18c1f94679df46"
+    },
+    {
+      "invoice_id": "in_dss_5b1748dca3e646",
+      "customer_id": "cus_dss_101cb58d0c55",
+      "subscription_id": "sub_dss_51052c9b0470",
+      "company_name": "Booz Allen Hamilton",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "base_fee_usd": 29.0,
+      "total_overage_usd": 20.0,
+      "total_invoice_usd": 49.0,
+      "breakdown": {
+        "ast_queries": {
+          "reported": 120000,
+          "included": 100000,
+          "overage_units": 20000,
+          "unit_rate_usd": 0.001,
+          "charge_usd": 20.0
+        },
+        "entropy_checks": {
+          "reported": 0,
+          "included": 50000,
+          "overage_units": 0,
+          "unit_rate_usd": 0.0005,
+          "charge_usd": 0.0
+        },
+        "voice_minutes": {
+          "reported": 0,
+          "included": 500,
+          "overage_units": 0,
+          "unit_rate_usd": 0.02,
+          "charge_usd": 0.0
+        }
+      },
+      "status": "PAID",
+      "created_at": "2026-11-08T12:17:59.610210+00:00",
+      "due_date": "2026-11-22",
+      "payment_intent": "pi_dss_c89d75efd3de40"
+    },
+    {
+      "invoice_id": "in_dss_6c1417f48bb24d",
+      "customer_id": "cus_dss_e2fc397931c8",
+      "subscription_id": "sub_dss_d81c4d8230ba",
+      "company_name": "Booz Allen Hamilton",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "base_fee_usd": 29.0,
+      "total_overage_usd": 20.0,
+      "total_invoice_usd": 49.0,
+      "breakdown": {
+        "ast_queries": {
+          "reported": 120000,
+          "included": 100000,
+          "overage_units": 20000,
+          "unit_rate_usd": 0.001,
+          "charge_usd": 20.0
+        },
+        "entropy_checks": {
+          "reported": 0,
+          "included": 50000,
+          "overage_units": 0,
+          "unit_rate_usd": 0.0005,
+          "charge_usd": 0.0
+        },
+        "voice_minutes": {
+          "reported": 0,
+          "included": 500,
+          "overage_units": 0,
+          "unit_rate_usd": 0.02,
+          "charge_usd": 0.0
+        }
+      },
+      "status": "PAID",
+      "created_at": "2026-11-08T12:19:06.471703+00:00",
+      "due_date": "2026-11-22",
+      "payment_intent": "pi_dss_5a9a1e5b444f47"
+    },
+    {
+      "invoice_id": "in_dss_e874c338ff824b",
+      "customer_id": "cus_dss_e5d48521e3b0",
+      "subscription_id": "sub_dss_92a7b7b06127",
+      "company_name": "Booz Allen Hamilton",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "base_fee_usd": 29.0,
+      "total_overage_usd": 20.0,
+      "total_invoice_usd": 49.0,
+      "breakdown": {
+        "ast_queries": {
+          "reported": 120000,
+          "included": 100000,
+          "overage_units": 20000,
+          "unit_rate_usd": 0.001,
+          "charge_usd": 20.0
+        },
+        "entropy_checks": {
+          "reported": 0,
+          "included": 50000,
+          "overage_units": 0,
+          "unit_rate_usd": 0.0005,
+          "charge_usd": 0.0
+        },
+        "voice_minutes": {
+          "reported": 0,
+          "included": 500,
+          "overage_units": 0,
+          "unit_rate_usd": 0.02,
+          "charge_usd": 0.0
+        }
+      },
+      "status": "PAID",
+      "created_at": "2026-11-08T12:22:11.354411+00:00",
+      "due_date": "2026-11-22",
+      "payment_intent": "pi_dss_92221541513c4a"
+    },
+    {
+      "invoice_id": "in_dss_ab7aab090b4b46",
+      "customer_id": "cus_dss_f53c05b4dda2",
+      "subscription_id": "sub_dss_3416ea92d4fc",
+      "company_name": "Booz Allen Hamilton",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "base_fee_usd": 29.0,
+      "total_overage_usd": 20.0,
+      "total_invoice_usd": 49.0,
+      "breakdown": {
+        "ast_queries": {
+          "reported": 120000,
+          "included": 100000,
+          "overage_units": 20000,
+          "unit_rate_usd": 0.001,
+          "charge_usd": 20.0
+        },
+        "entropy_checks": {
+          "reported": 0,
+          "included": 50000,
+          "overage_units": 0,
+          "unit_rate_usd": 0.0005,
+          "charge_usd": 0.0
+        },
+        "voice_minutes": {
+          "reported": 0,
+          "included": 500,
+          "overage_units": 0,
+          "unit_rate_usd": 0.02,
+          "charge_usd": 0.0
+        }
+      },
+      "status": "PAID",
+      "created_at": "2026-11-08T12:36:55.274557+00:00",
+      "due_date": "2026-11-22",
+      "payment_intent": "pi_dss_50e9496043f44f"
+    },
+    {
+      "invoice_id": "in_dss_dcb74f9c93aa4f",
+      "customer_id": "cus_dss_68a46f0568a3",
+      "subscription_id": "sub_dss_bacca0848ce5",
+      "company_name": "Booz Allen Hamilton",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "base_fee_usd": 29.0,
+      "total_overage_usd": 20.0,
+      "total_invoice_usd": 49.0,
+      "breakdown": {
+        "ast_queries": {
+          "reported": 120000,
+          "included": 100000,
+          "overage_units": 20000,
+          "unit_rate_usd": 0.001,
+          "charge_usd": 20.0
+        },
+        "entropy_checks": {
+          "reported": 0,
+          "included": 50000,
+          "overage_units": 0,
+          "unit_rate_usd": 0.0005,
+          "charge_usd": 0.0
+        },
+        "voice_minutes": {
+          "reported": 0,
+          "included": 500,
+          "overage_units": 0,
+          "unit_rate_usd": 0.02,
+          "charge_usd": 0.0
+        }
+      },
+      "status": "PAID",
+      "created_at": "2026-11-08T12:38:44.003547+00:00",
+      "due_date": "2026-11-22",
+      "payment_intent": "pi_dss_442e8903cc6c4a"
     }
   ],
   "webhook_events": [
@@ -482,6 +1553,108 @@
       "event_type": "invoice.payment_succeeded",
       "handled_status": "INVOICE_MARKED_PAID",
       "processed_at": "2026-11-08T11:58:33.568901+00:00"
+    },
+    {
+      "event_id": "evt_cli_4f261efe",
+      "event_type": "invoice.payment_succeeded",
+      "handled_status": "INVOICE_MARKED_PAID",
+      "processed_at": "2026-11-08T12:01:33.506908+00:00"
+    },
+    {
+      "event_id": "evt_cli_5cc22684",
+      "event_type": "invoice.payment_succeeded",
+      "handled_status": "INVOICE_MARKED_PAID",
+      "processed_at": "2026-11-08T12:02:07.490438+00:00"
+    },
+    {
+      "event_id": "evt_cli_5d14edae",
+      "event_type": "invoice.payment_succeeded",
+      "handled_status": "INVOICE_MARKED_PAID",
+      "processed_at": "2026-11-08T12:04:20.815973+00:00"
+    },
+    {
+      "event_id": "evt_cli_c2cdc029",
+      "event_type": "invoice.payment_succeeded",
+      "handled_status": "INVOICE_MARKED_PAID",
+      "processed_at": "2026-11-08T12:05:15.645195+00:00"
+    },
+    {
+      "event_id": "evt_cli_effc7f20",
+      "event_type": "invoice.payment_succeeded",
+      "handled_status": "INVOICE_MARKED_PAID",
+      "processed_at": "2026-11-08T12:05:30.345761+00:00"
+    },
+    {
+      "event_id": "evt_cli_534a5787",
+      "event_type": "invoice.payment_succeeded",
+      "handled_status": "INVOICE_MARKED_PAID",
+      "processed_at": "2026-11-08T12:06:09.425133+00:00"
+    },
+    {
+      "event_id": "evt_cli_376d89f2",
+      "event_type": "invoice.payment_succeeded",
+      "handled_status": "INVOICE_MARKED_PAID",
+      "processed_at": "2026-11-08T12:06:56.967274+00:00"
+    },
+    {
+      "event_id": "evt_cli_b0a0f4de",
+      "event_type": "invoice.payment_succeeded",
+      "handled_status": "INVOICE_MARKED_PAID",
+      "processed_at": "2026-11-08T12:09:30.556532+00:00"
+    },
+    {
+      "event_id": "evt_cli_a9b2a6d4",
+      "event_type": "invoice.payment_succeeded",
+      "handled_status": "INVOICE_MARKED_PAID",
+      "processed_at": "2026-11-08T12:10:26.293992+00:00"
+    },
+    {
+      "event_id": "evt_cli_e06dc110",
+      "event_type": "invoice.payment_succeeded",
+      "handled_status": "INVOICE_MARKED_PAID",
+      "processed_at": "2026-11-08T12:12:09.331505+00:00"
+    },
+    {
+      "event_id": "evt_cli_750ab16d",
+      "event_type": "invoice.payment_succeeded",
+      "handled_status": "INVOICE_MARKED_PAID",
+      "processed_at": "2026-11-08T12:14:00.931370+00:00"
+    },
+    {
+      "event_id": "evt_cli_be0cf98c",
+      "event_type": "invoice.payment_succeeded",
+      "handled_status": "INVOICE_MARKED_PAID",
+      "processed_at": "2026-11-08T12:14:20.422210+00:00"
+    },
+    {
+      "event_id": "evt_cli_49fb165f",
+      "event_type": "invoice.payment_succeeded",
+      "handled_status": "INVOICE_MARKED_PAID",
+      "processed_at": "2026-11-08T12:17:59.708926+00:00"
+    },
+    {
+      "event_id": "evt_cli_f9f451f3",
+      "event_type": "invoice.payment_succeeded",
+      "handled_status": "INVOICE_MARKED_PAID",
+      "processed_at": "2026-11-08T12:19:06.576815+00:00"
+    },
+    {
+      "event_id": "evt_cli_6e2e9aa1",
+      "event_type": "invoice.payment_succeeded",
+      "handled_status": "INVOICE_MARKED_PAID",
+      "processed_at": "2026-11-08T12:22:11.452731+00:00"
+    },
+    {
+      "event_id": "evt_cli_ebbc4c2b",
+      "event_type": "invoice.payment_succeeded",
+      "handled_status": "INVOICE_MARKED_PAID",
+      "processed_at": "2026-11-08T12:36:55.371996+00:00"
+    },
+    {
+      "event_id": "evt_cli_25c2a16f",
+      "event_type": "invoice.payment_succeeded",
+      "handled_status": "INVOICE_MARKED_PAID",
+      "processed_at": "2026-11-08T12:38:44.096335+00:00"
     }
   ]
 }

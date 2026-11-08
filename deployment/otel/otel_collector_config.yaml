@@ -1,0 +1,67 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# DevSuperSuite Enterprise OpenTelemetry Collector Configuration (v0.100+)
+# Reference: DSS-EBPF-OTEL-COLLECTOR-2026-V1 | Organization: DevSuperSuite Solutions Architecture / OmniKernel Labs
+# Contact: solutions@devsupersuite.com / telemetry@devsupersuite.com
+# ═══════════════════════════════════════════════════════════════════════════════
+
+receivers:
+  ebpf:
+    probes:
+      - kprobe/sock_sendmsg
+      - kretprobe/sock_recvmsg
+      - tracepoint/syscalls/sys_enter_connect
+    socket_tracing:
+      extract_w3c_tracecontext: true
+      filter_localhost: false
+    max_cpu_overhead_percent: 1.2
+
+  otlp:
+    protocols:
+      grpc:
+        endpoint: 0.0.0.0:4317
+      http:
+        endpoint: 0.0.0.0:4318
+
+processors:
+  batch:
+    send_batch_size: 1024
+    timeout: 1s
+
+  memory_limiter:
+    check_interval: 1s
+    limit_percentage: 80
+    spike_limit_percentage: 20
+
+  transform:
+    error_mode: ignore
+    trace_statements:
+      - set(attributes["telemetry.distro"], "devsupersuite-ebpf-otel")
+      - set(attributes["governance.reference"], "DSS-EBPF-OTEL-COLLECTOR-2026-V1")
+
+exporters:
+  file/ring_buffer:
+    path: /var/log/otel/encrypted_ring_buffer.json
+    flush_interval: 5s
+
+  otlp/upstream:
+    endpoint: https://telemetry.devsupersuite.internal:4317
+    tls:
+      ca_file: /etc/ssl/certs/devsupersuite-root-ca.crt
+      cert_file: /etc/ssl/certs/otel-client.crt
+      key_file: /etc/ssl/private/otel-client.key
+
+service:
+  telemetry:
+    logs:
+      level: info
+    metrics:
+      address: 0.0.0.0:8888
+  pipelines:
+    traces:
+      receivers: [ebpf, otlp]
+      processors: [memory_limiter, batch, transform]
+      exporters: [file/ring_buffer, otlp/upstream]
+    metrics:
+      receivers: [ebpf, otlp]
+      processors: [memory_limiter, batch]
+      exporters: [file/ring_buffer, otlp/upstream]

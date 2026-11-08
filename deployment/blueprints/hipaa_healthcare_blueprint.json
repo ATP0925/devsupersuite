@@ -8,7 +8,7 @@
     "contact": "solutions@devsupersuite.com",
     "compliance_contact": "compliance@devsupersuite.com",
     "version": "1.0.0",
-    "updated_at": "2026-11-08T12:00:22.399965+00:00"
+    "updated_at": "2026-11-08T12:38:47.638181+00:00"
   },
   "regulatory_frameworks": [
     {
@@ -53,7 +53,7 @@
   "executed_baa_template": {
     "baa_contract_id": "BAA-DSS-20261108-70514F",
     "status": "EXECUTED_ACTIVE",
-    "execution_date": "2026-11-08T12:00:22.399865+00:00",
+    "execution_date": "2026-11-08T12:38:47.638105+00:00",
     "covered_entity": {
       "name": "Hospital Health System",
       "ein": "12-3456789",
@@ -73,6 +73,6 @@
       "Business Associate shall ensure that any subcontractors that create, receive, maintain, or transmit ePHI agree to the same restrictions.",
       "At termination, Business Associate shall destroy or return all PHI received from Covered Entity (NIST SP 800-88 Rev 1 compliant)."
     ],
-    "cryptographic_signature": "447d3a222d68a8e08b10b9ce6d91bb6d5245ca311a593e3182314c8ae0d1689b"
+    "cryptographic_signature": "fcb0fe85e4081cdb242178ed1e3f5a6d3a41e53f2234757e9ab54fe877b1ee06"
   }
 }

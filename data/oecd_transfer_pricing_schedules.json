@@ -1,6 +1,6 @@
 {
   "binder_id": "DSS-OECD-TP-2026-DOSSIER",
-  "generation_timestamp": "2026-11-08T12:01:20.472129+00:00",
+  "generation_timestamp": "2026-11-08T12:38:31.763938+00:00",
   "commercial_principal": "DevSuperSuite Tech Services Corporation",
   "treasury_desk": "DevSuperSuite Global Treasury Desk",
   "treasury_email": "treasury@devsupersuite.com",
@@ -14,7 +14,7 @@
     "global_unrelated_revenues_usd": 558992.16
   },
   "cost_sharing_arrangement": {
-    "csa_audit_timestamp": "2026-11-08T12:01:20.472086+00:00",
+    "csa_audit_timestamp": "2026-11-08T12:38:31.763895+00:00",
     "regulatory_framework": "Treas. Reg. \u00a7 1.482-7 / OECD BEPS Action 8-10 Chapter VI",
     "csa_agreement_title": "Master Software Intangibles Cost-Sharing & Co-Development Agreement",
     "annual_intangible_development_costs_usd": 125000.0,
@@ -48,7 +48,7 @@
     }
   },
   "arm_length_benchmarks": {
-    "benchmark_timestamp": "2026-11-08T12:01:20.472105+00:00",
+    "benchmark_timestamp": "2026-11-08T12:38:31.763914+00:00",
     "overall_alp_compliance": "CONFIRMED_ARM_LENGTH",
     "safe_harbor_standards": "OECD Guidelines 2022 / US IRC Section 482",
     "benchmarks": {
@@ -88,7 +88,7 @@
     }
   },
   "dempe_analysis": {
-    "dempe_timestamp": "2026-11-08T12:01:20.472119+00:00",
+    "dempe_timestamp": "2026-11-08T12:38:31.763928+00:00",
     "bepps_action": "OECD BEPS Action 8-10 (Aligning Transfer Pricing Outcomes with Value Creation)",
     "dempe_categories": {
       "DEVELOPMENT": {

@@ -122,3 +122,4 @@ JSON streaming formatted with monotonic nanosecond timestamps, container metadat
 - **Escalation Path**: Any `BLOCK_SIGKILL` event generates an immediate P1 alert in the Security Operations Center (SOC).
 - **Forensic Preservation**: Offending process memory dumps and socket buffers are persisted to encrypted evidence stores (`/services/reports/`).
 - **Governing Body**: DevSuperSuite Official (`infosec@devsupersuite.com`).
+

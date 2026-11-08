@@ -1,0 +1,164 @@
+{
+  "dossier_id": "DSS-TREASURY-CAPALLOC-2026-DOSSIER",
+  "entity_name": "DevSuperSuite Tech Services Corporation",
+  "desk_title": "DevSuperSuite Global Tax & Treasury Desk",
+  "official_contact": "treasury@devsupersuite.com",
+  "timestamp": "2026-11-08T12:38:46.422144+00:00",
+  "allocations": {
+    "total_capital_usd": 650000.0,
+    "tier1_operating_cash": {
+      "usd_master": 50000.0,
+      "eur_local": 10000.0,
+      "eur_usd_equivalent": 10850.0,
+      "sgd_local": 15000.0,
+      "sgd_usd_equivalent": 11325.0,
+      "total_tier1_usd": 72175.0,
+      "allocation_pct": 11.1,
+      "target_balance_usd": 50000.0
+    },
+    "tier2_sovereign_yield_reserve": {
+      "us_tbill_4w_usd": 175000.0,
+      "us_tbill_13w_usd": 175000.0,
+      "total_tier2_usd": 350000.0,
+      "allocation_pct": 53.85,
+      "weighted_apy_pct": 5.1499999999999995,
+      "annualized_interest_income_usd": 18025.0
+    },
+    "tier3_strategic_defense_reserve": {
+      "scif_appliance_inventory_usd": 120000.0,
+      "enterprise_rd_defense_usd": 107825.0,
+      "total_tier3_usd": 227825.0,
+      "allocation_pct": 35.05
+    },
+    "basel_iii_metrics": {
+      "hqla_usd": 422175.0,
+      "stressed_30d_outflow_usd": 150000.0,
+      "lcr_ratio_pct": 281.45,
+      "lcr_threshold_pct": 140.0,
+      "lcr_compliant": true,
+      "asf_usd": 650000.0,
+      "rsf_usd": 220000.0,
+      "nsfr_ratio_pct": 295.45,
+      "nsfr_threshold_pct": 120.0,
+      "nsfr_compliant": true
+    }
+  },
+  "raroc_capital_budgeting": {
+    "initiatives": {
+      "SCIF_HARDWARE_INVENTORY_RUN": {
+        "title": "Enterprise Air-Gap Hardware SCIF Appliance Run",
+        "economic_capital_usd": 100000.0,
+        "expected_revenue_usd": 165000.0,
+        "operating_costs_usd": 105000.0,
+        "expected_losses_usd": 5000.0,
+        "net_risk_adjusted_return_usd": 55000.0,
+        "raroc_pct": 55.0,
+        "hurdle_rate_pct": 20.0,
+        "hurdle_spread_pct": 35.0,
+        "eva_usd": 35000.0,
+        "status": "APPROVED"
+      },
+      "PROPRIETARY_AI_CORE_RD": {
+        "title": "Proprietary Air-Gap AI Engine & Algorithmic R&D Expansion",
+        "economic_capital_usd": 75000.0,
+        "expected_revenue_usd": 140000.0,
+        "operating_costs_usd": 90000.0,
+        "expected_losses_usd": 8000.0,
+        "net_risk_adjusted_return_usd": 42000.0,
+        "raroc_pct": 56.0,
+        "hurdle_rate_pct": 20.0,
+        "hurdle_spread_pct": 36.0,
+        "eva_usd": 27000.0,
+        "status": "APPROVED"
+      },
+      "GLOBAL_CHANNEL_ALLIANCE_MDF": {
+        "title": "Global Channel Partner Alliance & Market Development Fund",
+        "economic_capital_usd": 50000.0,
+        "expected_revenue_usd": 80000.0,
+        "operating_costs_usd": 58000.0,
+        "expected_losses_usd": 4500.0,
+        "net_risk_adjusted_return_usd": 17500.0,
+        "raroc_pct": 35.0,
+        "hurdle_rate_pct": 20.0,
+        "hurdle_spread_pct": 15.0,
+        "eva_usd": 7500.0,
+        "status": "APPROVED"
+      }
+    },
+    "portfolio_summary": {
+      "total_economic_capital_usd": 225000.0,
+      "total_risk_adjusted_return_usd": 114500.0,
+      "portfolio_raroc_pct": 50.89,
+      "hurdle_rate_pct": 20.0,
+      "portfolio_eva_usd": 69502.5,
+      "all_approved": true
+    }
+  },
+  "stress_testing": {
+    "all_stress_scenarios_passed": true,
+    "scenarios": {
+      "scenario_a_arr_contraction": {
+        "name": "Scenario A: 40% Sudden ARR Contraction",
+        "arr_drop_pct": 40.0,
+        "baseline_monthly_revenue_usd": 41666.67,
+        "stressed_monthly_revenue_usd": 25000.0,
+        "monthly_operating_burn_usd": 20000.0,
+        "net_monthly_operating_cashflow_usd": 5000.0,
+        "extreme_downside_net_burn_usd": 7000.0,
+        "liquid_hqla_reserve_usd": 422175.0,
+        "stressed_runway_months": 60.3,
+        "capital_dilution_required": false,
+        "conclusion": "PASSED - Over 60 months stressed runway without external financing."
+      },
+      "scenario_b_banking_freeze": {
+        "name": "Scenario B: 90-Day Banking Crisis Liquidity Freeze",
+        "freeze_duration_days": 90,
+        "ireland_emea_buffer_eur": 10000.0,
+        "ireland_90d_burn_eur": 4500.0,
+        "ireland_surplus_eur": 5500.0,
+        "ireland_solvency_passed": true,
+        "singapore_apac_buffer_sgd": 15000.0,
+        "singapore_90d_burn_sgd": 5400.0,
+        "singapore_surplus_sgd": 9600.0,
+        "singapore_solvency_passed": true,
+        "custodial_bankruptcy_remote_t_bills_usd": 350000.0,
+        "fdic_insured_operating_cash_usd": 50000.0,
+        "counterparty_default_loss_usd": 0.0,
+        "conclusion": "PASSED - All regional hubs self-sustaining for > 180 days with zero contagion."
+      },
+      "scenario_c_fx_volatility": {
+        "name": "Scenario C: Catastrophic FX Volatility (+15% USD Rally)",
+        "usd_appreciation_pct": 15.0,
+        "pre_shock_foreign_usd_equivalent": 22175.0,
+        "post_shock_foreign_usd_equivalent": 19282.5,
+        "gross_fx_translation_drag_usd": 2892.5,
+        "forward_hedging_offset_usd": 2314.0,
+        "net_unhedged_fx_impact_usd": 578.5,
+        "impact_on_total_capital_pct": 0.089,
+        "conclusion": "PASSED - 80% dynamic hedging absorbs shock; net drag < 0.10% of group capital."
+      }
+    }
+  },
+  "rebalancing": {
+    "rebalance_required": true,
+    "tier1_current_usd": 72175.0,
+    "tier1_target_usd": 50000.0,
+    "excess_working_capital_usd": 22175.0,
+    "rebalance_actions": [
+      {
+        "action": "SWEEP_TIER1_TO_TIER2",
+        "amount_usd": 22175.0,
+        "target_instrument": "US_TREASURY_BILL_13W",
+        "yield_benefit_annual_usd": 1142.01,
+        "rationale": "Sweep excess Tier 1 cash ($22,175.00) above $50k operating floor to 5.15% APY 13W T-Bills."
+      }
+    ],
+    "post_rebalance_projected_yield_usd": 19167.01
+  },
+  "compliance_attestation": {
+    "basel_iii_lcr_compliant": true,
+    "basel_iii_nsfr_compliant": true,
+    "all_stress_tests_passed": true,
+    "brand_anonymity_verified": true
+  }
+}

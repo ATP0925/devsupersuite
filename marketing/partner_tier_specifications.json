@@ -1,0 +1,246 @@
+{
+  "$schema": "https://devsupersuite.com/schemas/partner-tier-specifications-v1.json",
+  "document_id": "DSS-PARTNER-TIERS-2026-V1",
+  "title": "DevSuperSuite & OmniKernel 5.2-LTS Enterprise Partner Program Tier Specifications & GSI Commercial Framework",
+  "published_by": "DevSuperSuite Partner Alliances Directorate",
+  "authority_email": "alliances@devsupersuite.com",
+  "effective_date": "2026-11-08",
+  "brand_anonymity_verified": true,
+  "services_multiplier_benchmark": 7.2,
+  "partner_tiers": [
+    {
+      "tier_id": "TIER-CIP",
+      "tier_name": "Certified Implementation Partner (CIP)",
+      "target_integrators": [
+        "Regional Systems Integrators",
+        "Boutique Cloud Consultancies",
+        "DevOps & Platform Engineering Practices",
+        "Regional Value-Added Resellers (VARs)"
+      ],
+      "commercial_margin_percentage": 20.0,
+      "hardware_appliance_margin_percentage": 10.0,
+      "annual_booking_commitment_usd": 250000,
+      "certified_staff_minimums": {
+        "DSS_CAPE": 2,
+        "DSS_CZTE": 0,
+        "DSS_CHAS": 0,
+        "total_certified_headcount": 2
+      },
+      "deal_registration": {
+        "portal_access": "Standard",
+        "exclusivity_window_days": 90,
+        "margin_protection": true,
+        "approval_sla_hours": 24
+      },
+      "support_sla": {
+        "ticketing_tier": "Standard Partner Desk",
+        "first_response_hours": 24,
+        "escalation_channel": "alliances@devsupersuite.com"
+      },
+      "co_marketing_and_enablement": {
+        "mdf_percentage": 0.0,
+        "sandbox_sandpit_access": true,
+        "partner_portal_listing": true,
+        "joint_executive_briefing_support": false
+      }
+    },
+    {
+      "tier_id": "TIER-SES",
+      "tier_name": "Sovereign SCIF Enclave Specialist (SES)",
+      "target_integrators": [
+        "Booz Allen Hamilton",
+        "Leidos",
+        "General Dynamics Information Technology",
+        "Lockheed Martin Systems Integration",
+        "CACI International",
+        "Northrop Grumman Mission Systems"
+      ],
+      "commercial_margin_percentage": 28.0,
+      "hardware_appliance_margin_percentage": 20.0,
+      "annual_booking_commitment_usd": 1500000,
+      "certified_staff_minimums": {
+        "DSS_CAPE": 0,
+        "DSS_CZTE": 4,
+        "DSS_CHAS": 2,
+        "total_certified_headcount": 6
+      },
+      "deal_registration": {
+        "portal_access": "Priority Defense & Classified Enclave Desk",
+        "exclusivity_window_days": 120,
+        "margin_protection": true,
+        "approval_sla_hours": 12
+      },
+      "support_sla": {
+        "ticketing_tier": "Priority Defense Enclave Support",
+        "first_response_hours": 4,
+        "escalation_channel": "security@devsupersuite.com"
+      },
+      "co_marketing_and_enablement": {
+        "mdf_percentage": 3.0,
+        "sandbox_sandpit_access": true,
+        "partner_portal_listing": true,
+        "classified_scif_loaner_appliances": true,
+        "joint_executive_briefing_support": true
+      }
+    },
+    {
+      "tier_id": "TIER-ESA",
+      "tier_name": "Elite Systems Alliance (ESA)",
+      "target_integrators": [
+        "Accenture",
+        "Deloitte Consulting",
+        "Capgemini",
+        "PricewaterhouseCoopers (PwC)",
+        "Ernst & Young (EY)",
+        "KPMG",
+        "Wipro",
+        "Cognizant"
+      ],
+      "commercial_margin_percentage": 35.0,
+      "hardware_appliance_margin_percentage": 25.0,
+      "annual_booking_commitment_usd": 5000000,
+      "certified_staff_minimums": {
+        "DSS_CAPE": 4,
+        "DSS_CZTE": 4,
+        "DSS_CHAS": 2,
+        "total_certified_headcount": 10
+      },
+      "deal_registration": {
+        "portal_access": "Executive Concierge & Global Deal Desk",
+        "exclusivity_window_days": 120,
+        "margin_protection": true,
+        "approval_sla_hours": 8
+      },
+      "support_sla": {
+        "ticketing_tier": "Dedicated Executive Co-Sell Pod & Level-3 Escalation",
+        "first_response_hours": 2,
+        "escalation_channel": "alliances@devsupersuite.com"
+      },
+      "co_marketing_and_enablement": {
+        "mdf_percentage": 5.0,
+        "sandbox_sandpit_access": true,
+        "partner_portal_listing": true,
+        "classified_scif_loaner_appliances": true,
+        "dedicated_solutions_architect": true,
+        "joint_executive_briefing_support": true,
+        "omnikernel_steering_council_seat": true
+      }
+    }
+  ],
+  "certification_tracks": [
+    {
+      "track_code": "DSS-CAPE",
+      "exam_code": "CAPE-501",
+      "name": "DevSuperSuite Certified AST Performance Engineer",
+      "primary_discipline": "Systems AST Context Slicing, SIMD Vectorization & Monorepo Scaling",
+      "prerequisites": "Proficiency in Rust, C++, or Go; Tree-sitter grammar fundamentals; LSP knowledge.",
+      "examination_format": {
+        "theory_mcq_duration_minutes": 90,
+        "practical_lab_duration_hours": 3,
+        "total_questions": 60,
+        "passing_score_percentage": 80.0,
+        "credential_validity_months": 24
+      },
+      "core_modules": [
+        "Module 1: Tree-sitter Concrete Syntax Tree vs Abstract Syntax Tree Grammars",
+        "Module 2: AVX-512 & NEON SIMD Vectorization of Lexical Token Streams",
+        "Module 3: Dual-Plane Context Topology: Control Plane Extraction (-83.6% Tokens)",
+        "Module 4: Arena Allocation (bumpalo), Zero-Copy Serialization & Memory Tuning"
+      ]
+    },
+    {
+      "track_code": "DSS-CZTE",
+      "exam_code": "CZTE-601",
+      "name": "DevSuperSuite Certified Zero-Telemetry Enclave Architect",
+      "primary_discipline": "SCIF Air-Gap Hardening, In-Kernel eBPF Socket Filtering & Hardware Root of Trust",
+      "prerequisites": "Enterprise security or cleared defense background; Linux kernel tracing; TPM 2.0; Cryptography.",
+      "examination_format": {
+        "theory_mcq_duration_minutes": 90,
+        "practical_lab_duration_hours": 4,
+        "total_questions": 60,
+        "passing_score_percentage": 80.0,
+        "credential_validity_months": 24
+      },
+      "core_modules": [
+        "Module 1: ICD 705 SCIF Enclave & Air-Gap Physical/Logical Architecture",
+        "Module 2: In-Kernel eBPF Socket Interception (sys_enter_connect & 0.00 KB Egress)",
+        "Module 3: Hardware Root of Trust: TPM 2.0 PCR Quote Attestation & FIPS 140-3 HSM",
+        "Module 4: NIST FIPS 203 (ML-KEM-768) PQC Key Encapsulation & AgentShield Invariants"
+      ]
+    },
+    {
+      "track_code": "DSS-CHAS",
+      "exam_code": "CHAS-701",
+      "name": "DevSuperSuite Certified Hardware Appliance Specialist",
+      "primary_discipline": "Bare-Metal Silicon Provisioning, Apple Silicon/NVIDIA Acceleration & Optical Diode Transfer",
+      "prerequisites": "Data center engineering or systems infrastructure background; PKCS#11; hardware enclaves.",
+      "examination_format": {
+        "theory_mcq_duration_minutes": 90,
+        "practical_lab_duration_hours": 3,
+        "total_questions": 50,
+        "passing_score_percentage": 80.0,
+        "credential_validity_months": 24
+      },
+      "core_modules": [
+        "Module 1: Bare-Metal Silicon Acceleration: Apple Silicon NEON & NVIDIA CUDA/TensorRT",
+        "Module 2: Unidirectional Optical Data Diode Architecture & Physical Layer Configuration",
+        "Module 3: PKCS#11 Cryptoki Integration, Slot Mapping & Hardware Key Lifecycle",
+        "Module 4: SLSA Level 3 Hermetic Builds, CycloneDX v1.6 SBOM & Firmware Attestation"
+      ]
+    }
+  ],
+  "joint_sow_blueprints": [
+    {
+      "sow_id": "SOW-AST-ACCELERATION",
+      "name": "Enterprise AST Acceleration & Token Tax Reduction",
+      "target_client_profile": "Enterprise engineering fleets (250–1,000 devs) spending >$40k/mo on cloud tokens",
+      "engagement_duration_weeks": 6,
+      "fixed_services_fee_usd": 350000,
+      "recommended_staffing": "1 Lead Architect (CAPE), 2 Systems Engineers, 1 DevEx Consultant",
+      "deliverables": [
+        "Repository AST profiling & baseline token spend audit",
+        "Golden image packaging across Jamf Pro and Microsoft Intune",
+        "Custom Tree-sitter query rules for proprietary schema contracts",
+        "Verification of 83.6% token tax reduction on master billing ledger",
+        "Final Executive Briefing (QBR) proving sub-21-day amortization"
+      ]
+    },
+    {
+      "sow_id": "SOW-SCIF-AIRGAP",
+      "name": "Sovereign SCIF Air-Gap Transformation",
+      "target_client_profile": "Defense prime, aerospace prime, or intelligence agency under ICD 705 mandates",
+      "engagement_duration_weeks": 12,
+      "fixed_services_fee_usd": 850000,
+      "recommended_staffing": "1 Principal Enclave Architect (CZTE), 1 Hardware Specialist (CHAS), 2 Cleared Engineers, 1 FSO Lead",
+      "deliverables": [
+        "SCIF perimeter inspection & unidirectional optical data diode setup",
+        "Linux in-kernel eBPF socket monitoring module deployment (0.00 KB egress)",
+        "TPM 2.0 PCR quote hardware attestation and PKCS#11 HSM integration",
+        "NIST FIPS 203 ML-KEM-768 post-quantum key encapsulation transition",
+        "Authorization to Operate (ATO) formal security package delivery"
+      ]
+    },
+    {
+      "sow_id": "SOW-DEVEX-VOICE",
+      "name": "Global Monorepo DevEx & Duplex Voice Rollout",
+      "target_client_profile": "Multinational engineering organization (1,000–5,000 devs) suffering developer fatigue",
+      "engagement_duration_weeks": 8,
+      "fixed_services_fee_usd": 550000,
+      "recommended_staffing": "1 Lead Architect (CAPE), 2 Voice DSP Engineers, 2 DevEx Specialists",
+      "deliverables": [
+        "Decommissioning legacy 2GB+ Electron extensions in favor of 142MB OmniKernel daemons",
+        "Global deployment of sub-110ms duplex voice coding engines",
+        "Hands-free voice coding masterclasses and developer hackathons",
+        "Ergonomic wellness study documenting >30% keystroke reduction and 42 min/day saved"
+      ]
+    }
+  ],
+  "alliance_contacts": {
+    "partner_alliances_desk": "alliances@devsupersuite.com",
+    "commercial_deal_desk": "sales@devsupersuite.com",
+    "certification_board": "alliances@devsupersuite.com",
+    "defense_security_directorate": "security@devsupersuite.com",
+    "interactive_alliances_portal": "https://devsupersuite.web.app/#alliances",
+    "commercial_pro_storefront_lifetime": "https://gumroad.com/l/tlzdco"
+  }
+}

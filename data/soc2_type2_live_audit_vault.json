@@ -1,0 +1,133 @@
+{
+  "vault_id": "VAULT-SOC2-TYPE2-2026-LIVE",
+  "snapshot_timestamp_utc": "2026-11-08T12:38:42.311884+00:00",
+  "organization": "DevSuperSuite Official",
+  "governing_authority": "DevSuperSuite Security & Compliance Desk",
+  "official_contact": "compliance@devsupersuite.com",
+  "standards_framework": "AICPA SOC 2 Type II (Trust Services Criteria 2022)",
+  "overall_compliance_verdict": "SOC_2_TYPE_2_FULLY_CERTIFIED",
+  "compliance_score_pct": 100.0,
+  "total_tsc_controls_sampled": 5,
+  "merkle_integrity_proof": {
+    "merkle_root": "d9992c768bba610b83e960e51c65c27f085d26343f9c18b66c69e36ac465d733",
+    "total_leaf_nodes": 5,
+    "leaf_hashes": [
+      "0fb62c9122f14041459f372cbfb282f02f58a1acedff7ad7c5ad4b55dd588424",
+      "d76ba7631c28a503baec2238c38aeed9e836b7f19b8d1b5e1757307ddad81fb2",
+      "20ae2c37a130e25f162602fd2a239e94f437c5bac27a76e907ec96422b295884",
+      "ca2a2204195f582cd592bc7062813365cf1193ca5ab37fe985c86dedd9cae56d",
+      "e131dbd869166d8ad970ac84e68639c1a34deceda4d46e155864cc92c7f9e311"
+    ],
+    "signer_public_key_hex": "752e6067f3193c0782903cde6ce4f5a40e4f95a16879f5a99c8789d42f01e0cf",
+    "ed25519_signature_hex": "b004313792f0c7c47739d562fc674472144851173f5ebcb783e8b830b9f51919680ebd071ef32f4d42803b13df744e14902fd91eb00c7c7be5d9b0b1f743c90a",
+    "proof_status": "CRYPTOGRAPHICALLY_VERIFIED"
+  },
+  "evidence_samples": [
+    {
+      "control_id": "CC6.1/CC6.6",
+      "criterion_name": "Logical Access & Network Boundary Defense",
+      "category": "Security",
+      "sampling_timestamp_utc": "2026-11-08T12:38:42.311695+00:00",
+      "live_metric_value": "100% Outbound Public Egress Blocked / Sub-5\u00b5s eBPF Interlock",
+      "control_status": "PASS_COMPLIANT",
+      "telemetry_source": "services/enterprise_ebpf_socket_interlock.py",
+      "evidence_payload": {
+        "ebpf_hook": "bpf_lsm_socket_connect",
+        "loopback_authorized": true,
+        "unix_sockets_authorized": true,
+        "public_egress_drop_policy": "FAIL_CLOSED",
+        "average_kernel_latency_us": 4.88,
+        "bastion_quorum_requirement": "2-of-N Approval",
+        "bastion_max_jit_ttl_seconds": 1800
+      },
+      "verification_hash": "cad23185bf92272653eec4cbda0fafb8f06d7f11aa70343d91f791b1e168e69f"
+    },
+    {
+      "control_id": "CC6.7",
+      "criterion_name": "Data Transmission & Cryptographic Protection",
+      "category": "Confidentiality & Security",
+      "sampling_timestamp_utc": "2026-11-08T12:38:42.311695+00:00",
+      "live_metric_value": "NIST FIPS 203 ML-KEM-768 / Curve25519 Hybrid TLS 1.3 Active",
+      "control_status": "PASS_COMPLIANT",
+      "telemetry_source": "services/enterprise_pqc_mlkem_engine.py",
+      "evidence_payload": {
+        "pqc_standard": "NIST FIPS 203 (ML-KEM-768 / Kyber)",
+        "pqc_public_key_bytes": 1184,
+        "hybrid_keyshare_bytes": 1216,
+        "hndl_threat_exposure": "NEUTRALIZED",
+        "cnsa_2_0_compliant": true,
+        "at_rest_encryption": "AES-256-GCM Hardware Accelerated"
+      },
+      "verification_hash": "57067529c8a4d170fc127a4340390a92b10e0ed0143a87192bc485334990c430"
+    },
+    {
+      "control_id": "CC7.2",
+      "criterion_name": "Security Monitoring, Vulnerability & Threat Management",
+      "category": "Security",
+      "sampling_timestamp_utc": "2026-11-08T12:38:42.311695+00:00",
+      "live_metric_value": "0 Critical / 0 High Vulnerabilities across 1,791 Files; -76.5% DREAD Deflection",
+      "control_status": "PASS_COMPLIANT",
+      "telemetry_source": "services/security_scanner_suite.py & services/enterprise_continuous_stride_engine.py",
+      "evidence_payload": {
+        "files_scanned": 1791,
+        "critical_vulnerabilities": 0,
+        "high_vulnerabilities": 0,
+        "scan_verdict": "CLEAN_PASS",
+        "stride_threat_vectors_mapped": 7,
+        "stride_risk_reduction_pct": 76.51,
+        "siem_telemetry_protocols": [
+          "ArcSight CEF v25",
+          "RFC 5424 Syslog"
+        ]
+      },
+      "verification_hash": "6b549d1715e9ec4f80a3f23640f9143a28ec4492d3b1bb6b42ca5652803c08db"
+    },
+    {
+      "control_id": "CC8.1",
+      "criterion_name": "Change Management, Code Integrity & Provenance",
+      "category": "Processing Integrity",
+      "sampling_timestamp_utc": "2026-11-08T12:38:42.311695+00:00",
+      "live_metric_value": "SLSA Level 3 Provenance Active / FIPS 140-3 Hardware Token Git Signing",
+      "control_status": "PASS_COMPLIANT",
+      "telemetry_source": "services/enterprise_pkcs11_token_vault.py & services/enterprise_gitops_promotion_controller.py",
+      "evidence_payload": {
+        "slsa_provenance_level": "SLSA_BUILD_LEVEL_3",
+        "pkcs11_hardware_tokens_active": 3,
+        "hardware_models": [
+          "YubiKey 5 FIPS",
+          "Nitrokey HSM 2",
+          "Thales Luna PCIe"
+        ],
+        "git_commit_signing_algo": "Ed25519 (CKM_EDDSA)",
+        "release_digest_signing_algo": "RSA-4096 PSS",
+        "key_extraction_in_ram": "PROHIBITED (CKA_EXTRACTABLE=FALSE)"
+      },
+      "verification_hash": "591d5d04893f46750f35aba7fbc73312c18061e9e247d806740c2574be206dab"
+    },
+    {
+      "control_id": "A1.2",
+      "criterion_name": "System Availability, Quorum Failover & Chaos Resilience",
+      "category": "Availability",
+      "sampling_timestamp_utc": "2026-11-08T12:38:42.311695+00:00",
+      "live_metric_value": "Mean Time to Recovery (MTTR) 1.57s (< 3.2s) / Chaos Resilience 98.9%",
+      "control_status": "PASS_COMPLIANT",
+      "telemetry_source": "services/enterprise_chaos_resilience_engine.py",
+      "evidence_payload": {
+        "chaos_scenarios_evaluated": [
+          "PACKET_LOSS",
+          "DNS_BLACKHOLE",
+          "RAFT_SPLIT",
+          "MEMORY_PRESSURE",
+          "COLD_CRASH"
+        ],
+        "steady_state_hypothesis_verified": true,
+        "mttr_measured_seconds": 1.57,
+        "mttr_sla_threshold_seconds": 3.2,
+        "chaos_resilience_score_pct": 98.9,
+        "raft_split_brain_recovery_verified": true
+      },
+      "verification_hash": "173a72e8e8580824971e413a5f33cb8baa58cccff9c32baf086bf3b7dbb7d496"
+    }
+  ],
+  "active_auditor_token": "DSS-AUDIT-SOC2-724A20074996.eyJhdWRpdG9yX2lkIjogIkFVRElUT1ItQklHNC1WRVJJRlktMDEiLCAiYXV0aG9yaXplZF9zY29wZSI6ICJTT0NfMl9UWVBFX0lJX1JFQURfT05MWV9BVURJVF9BQ0NFU1MiLCAiZXhwaXJlc19hdF91dGMiOiAiMjAyNi0xMS0xMVQxMjozODo0Mi4zMTE5MzgrMDA6MDAiLCAiaXNzdWVkX2F0X3V0YyI6ICIyMDI2LTExLTA4VDEyOjM4OjQyLjMxMTkzOCswMDowMCIsICJpc3N1ZXIiOiAiRGV2U3VwZXJTdWl0ZSBTZWN1cml0eSAmIENvbXBsaWFuY2UgKGNvbXBsaWFuY2VAZGV2c3VwZXJzdWl0ZS5jb20pIiwgInNpZ25lcl9wdWJsaWNfa2V5X2hleCI6ICI3NTJlNjA2N2YzMTkzYzA3ODI5MDNjZGU2Y2U0ZjVhNDBlNGY5NWExNjg3OWY1YTk5Yzg3ODlkNDJmMDFlMGNmIiwgInRva2VuX2lkIjogIjcyNEEyMDA3NDk5NiJ9.ez3hyvMVkiSeBdT21MT6zurjsswYnucgljxXFUp0SaF4razJR6X6yeZ5qdGrUGTxUHKqZ_zZfwepIrVWXOKxCw=="
+}

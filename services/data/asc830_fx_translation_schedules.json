@@ -1,0 +1,137 @@
+{
+  "binder_id": "DSS-ASC830-2026-FX-BINDER",
+  "generation_timestamp": "2026-11-08T12:38:07.830317+00:00",
+  "commercial_principal": "DevSuperSuite Tech Services Corporation",
+  "treasury_desk": "DevSuperSuite Global Treasury Desk",
+  "treasury_email": "treasury@devsupersuite.com",
+  "executive_summary": {
+    "consolidated_assets_usd": 644376.79,
+    "consolidated_liabilities_usd": 33870.0,
+    "consolidated_equity_usd": 610506.79,
+    "pnl_fx_gain_recognized_usd": 578.85,
+    "accumulated_oci_cta_usd": 1218.52,
+    "balance_sheet_proof": "ZERO_VARIANCE_BALANCED"
+  },
+  "functional_currency_audit": {
+    "audit_timestamp": "2026-11-08T12:38:07.830271+00:00",
+    "standard": "FASB ASC 830-10 (Functional Currency Determination)",
+    "consolidated_reporting_currency": "USD",
+    "entity_audits": {
+      "US_PARENT": {
+        "entity_name": "DevSuperSuite Tech Services Corporation",
+        "jurisdiction": "United States (Delaware)",
+        "functional_currency": "USD",
+        "reporting_currency": "USD",
+        "translation_required": false,
+        "primary_economic_environment": "Domestic US Dollar Economy",
+        "economic_indicators_assessment": {
+          "cash_flow_indicator": "Primary operational float denominated in USD",
+          "sales_price_indicator": "Customer contracts and invoicing priced in USD",
+          "sales_market_indicator": "Active local market presence and regional sales channels",
+          "expense_indicator": "Local payroll, data centers, and compliance paid in USD",
+          "financing_indicator": "Autonomous operational self-funding from regional licensing collections"
+        },
+        "accounting_method": "CONSOLIDATION_FUNCTIONAL"
+      },
+      "IE_EMEA": {
+        "entity_name": "DevSuperSuite EMEA Limited",
+        "jurisdiction": "Ireland (Dublin)",
+        "functional_currency": "EUR",
+        "reporting_currency": "USD",
+        "translation_required": true,
+        "primary_economic_environment": "Local EUR Commercial Territory",
+        "economic_indicators_assessment": {
+          "cash_flow_indicator": "Primary operational float denominated in EUR",
+          "sales_price_indicator": "Customer contracts and invoicing priced in EUR",
+          "sales_market_indicator": "Active local market presence and regional sales channels",
+          "expense_indicator": "Local payroll, data centers, and compliance paid in EUR",
+          "financing_indicator": "Autonomous operational self-funding from regional licensing collections"
+        },
+        "accounting_method": "CURRENT_RATE_METHOD_ASC830"
+      },
+      "SG_APAC": {
+        "entity_name": "DevSuperSuite APAC Pte. Ltd.",
+        "jurisdiction": "Singapore",
+        "functional_currency": "SGD",
+        "reporting_currency": "USD",
+        "translation_required": true,
+        "primary_economic_environment": "Local SGD Commercial Territory",
+        "economic_indicators_assessment": {
+          "cash_flow_indicator": "Primary operational float denominated in SGD",
+          "sales_price_indicator": "Customer contracts and invoicing priced in SGD",
+          "sales_market_indicator": "Active local market presence and regional sales channels",
+          "expense_indicator": "Local payroll, data centers, and compliance paid in SGD",
+          "financing_indicator": "Autonomous operational self-funding from regional licensing collections"
+        },
+        "accounting_method": "CURRENT_RATE_METHOD_ASC830"
+      }
+    }
+  },
+  "pnl_remeasurements": {
+    "remeasurement_timestamp": "2026-11-08T12:38:07.830293+00:00",
+    "accounting_treatment": "ASC 830-20 (Immediate P&L Recognition in Net Income)",
+    "remeasurement_entries": [
+      {
+        "entity": "DevSuperSuite EMEA Limited",
+        "monetary_item": "USD Nostro Clearing Deposit & Trade Receivables",
+        "local_fx_gain_eur": 450.0,
+        "spot_rate": 1.085,
+        "consolidated_pnl_fx_gain_usd": 488.25
+      },
+      {
+        "entity": "DevSuperSuite APAC Pte. Ltd.",
+        "monetary_item": "Cross-Border Trade Settlements & JPY Clearing",
+        "local_fx_gain_sgd": 120.0,
+        "spot_rate": 0.755,
+        "consolidated_pnl_fx_gain_usd": 90.6
+      }
+    ],
+    "total_net_income_fx_gain_usd": 578.85
+  },
+  "asc830_translations": {
+    "translation_timestamp": "2026-11-08T12:38:07.830315+00:00",
+    "accounting_method": "FASB ASC 830-30 Current Rate Translation Method",
+    "subsidiary_translations": {
+      "IE_EMEA": {
+        "entity_name": "DevSuperSuite EMEA Limited",
+        "functional_currency": "EUR",
+        "spot_rate": 1.085,
+        "historical_rate": 1.05,
+        "average_rate": 1.072,
+        "total_assets_usd": 85072.5,
+        "total_liabilities_usd": 36062.5,
+        "share_capital_usd": 10500.0,
+        "retained_earnings_usd": 37702.78,
+        "cumulative_translation_adjustment_cta_usd": 807.21,
+        "total_equity_and_oci_usd": 49009.99,
+        "balance_sheet_proof_variance_usd": 0.01
+      },
+      "SG_APAC": {
+        "entity_name": "DevSuperSuite APAC Pte. Ltd.",
+        "functional_currency": "SGD",
+        "spot_rate": 0.755,
+        "historical_rate": 0.73,
+        "average_rate": 0.742,
+        "total_assets_usd": 34060.0,
+        "total_liabilities_usd": 13657.5,
+        "share_capital_usd": 3650.0,
+        "retained_earnings_usd": 16341.2,
+        "cumulative_translation_adjustment_cta_usd": 411.3,
+        "total_equity_and_oci_usd": 20402.5,
+        "balance_sheet_proof_variance_usd": 0.0
+      }
+    },
+    "consolidated_balance_sheet": {
+      "reporting_currency": "USD",
+      "consolidated_assets_usd": 644376.79,
+      "consolidated_liabilities_usd": 33870.0,
+      "consolidated_capital_and_apic_usd": 125000.0,
+      "consolidated_retained_earnings_usd": 484288.27,
+      "accumulated_other_comprehensive_income_cta_usd": 1218.52,
+      "consolidated_stockholders_equity_usd": 610506.79,
+      "accounting_equilibrium_variance_usd": 0.0,
+      "balance_sheet_status": "ZERO_VARIANCE_BALANCED"
+    }
+  },
+  "audit_attestation": "The DevSuperSuite Global Treasury Desk certifies that all foreign currency transactions and financial statement translations comply with US GAAP FASB ASC 830. Monetary items were properly remeasured through Net Income, and current rate translation adjustments are recorded in Accumulated Other Comprehensive Income (AOCI) with zero balance sheet discrepancy."
+}

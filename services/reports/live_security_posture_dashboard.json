@@ -3,9 +3,9 @@
     "organization": "DevSuperSuite Official",
     "authority": "Directorate of QA Automation & Security Compliance",
     "classification": "Sovereign Enterprise Security Telemetry (Restricted)",
-    "generated_at": "2026-11-08T12:01:28.750875+00:00",
+    "generated_at": "2026-11-08T12:38:40.055043+00:00",
     "target_repository": "agent-commerce",
-    "sha256_digest": "8e835d5c2f4c7cec53dd40a9fa0515de700d859d6f27d157e47c631e5d86f79e"
+    "sha256_digest": "45d121c7e65562d8f544c26ccd2116ea273af84acf96773441148ca6c4bf7c5a"
   },
   "enterprise_trust_index": {
     "composite_score": 100.0,
@@ -18,8 +18,8 @@
       "weight_percentage": 20,
       "score": 100.0,
       "metrics": {
-        "total_suites": 108,
-        "total_tests": 1104,
+        "total_suites": 125,
+        "total_tests": 1316,
         "pass_rate_percentage": 100.0,
         "fail_count": 0,
         "skipped_count": 0,
@@ -62,6 +62,12 @@
           },
           {
             "module": "test_asc606_revrec.py",
+            "test_count": 12,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_asc830_fx_translation.py",
             "test_count": 12,
             "status": "PASS",
             "coverage_domain": "Core Architecture & MCP Harness"
@@ -145,6 +151,12 @@
             "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
+            "module": "test_continuous_stride.py",
+            "test_count": 12,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
             "module": "test_contract_lifecycle_engine.py",
             "test_count": 13,
             "status": "PASS",
@@ -181,6 +193,12 @@
             "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
+            "module": "test_dunning_gateway.py",
+            "test_count": 14,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
             "module": "test_dynamic_checkout_gateway.py",
             "test_count": 13,
             "status": "PASS",
@@ -191,6 +209,12 @@
             "test_count": 9,
             "status": "PASS",
             "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_ebpf_opentelemetry_collector.py",
+            "test_count": 11,
+            "status": "PASS",
+            "coverage_domain": "Real-Time DevSecOps Telemetry"
           },
           {
             "module": "test_ebpf_siem_forensics.py",
@@ -289,6 +313,12 @@
             "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
+            "module": "test_fips_memory_sanitization.py",
+            "test_count": 12,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
             "module": "test_funnel_monitor.py",
             "test_count": 2,
             "status": "PASS",
@@ -319,6 +349,12 @@
             "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
+            "module": "test_github_trending.py",
+            "test_count": 11,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
             "module": "test_gitops_delivery_controller.py",
             "test_count": 10,
             "status": "PASS",
@@ -327,6 +363,12 @@
           {
             "module": "test_gitops_promotion_controller.py",
             "test_count": 14,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_hackernews_launch.py",
+            "test_count": 11,
             "status": "PASS",
             "coverage_domain": "Core Architecture & MCP Harness"
           },
@@ -355,6 +397,12 @@
             "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
+            "module": "test_iso27001_soa.py",
+            "test_count": 12,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
             "module": "test_k8s_federation_controller.py",
             "test_count": 10,
             "status": "PASS",
@@ -375,6 +423,12 @@
           {
             "module": "test_license_autopilot_engine.py",
             "test_count": 13,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_license_coterm_proration.py",
+            "test_count": 14,
             "status": "PASS",
             "coverage_domain": "Core Architecture & MCP Harness"
           },
@@ -409,8 +463,26 @@
             "coverage_domain": "Financial Engine & Statutory Ledgers"
           },
           {
+            "module": "test_oecd_pillar_two_globe.py",
+            "test_count": 12,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
             "module": "test_oecd_transfer_pricing.py",
             "test_count": 12,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_optical_diode_gateway.py",
+            "test_count": 17,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_partner_revshare_commission.py",
+            "test_count": 14,
             "status": "PASS",
             "coverage_domain": "Core Architecture & MCP Harness"
           },
@@ -419,6 +491,12 @@
             "test_count": 9,
             "status": "PASS",
             "coverage_domain": "Real-Time DevSecOps Telemetry"
+          },
+          {
+            "module": "test_pkcs11_hsm_custody_controller.py",
+            "test_count": 14,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
             "module": "test_pkcs11_token_vault.py",
@@ -547,6 +625,12 @@
             "coverage_domain": "Regulatory Compliance & Invariants"
           },
           {
+            "module": "test_soc2_evidence_vault.py",
+            "test_count": 12,
+            "status": "PASS",
+            "coverage_domain": "Regulatory Compliance & Invariants"
+          },
+          {
             "module": "test_social_proof_toast.py",
             "test_count": 8,
             "status": "PASS",
@@ -573,6 +657,12 @@
           {
             "module": "test_spiffe_spire_workload_identity.py",
             "test_count": 10,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_stackoverflow_knowledge.py",
+            "test_count": 11,
             "status": "PASS",
             "coverage_domain": "Core Architecture & MCP Harness"
           },
@@ -637,6 +727,12 @@
             "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
+            "module": "test_treasury_capital_allocation.py",
+            "test_count": 12,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
             "module": "test_vault_secret_manager.py",
             "test_count": 8,
             "status": "PASS",
@@ -651,6 +747,12 @@
           {
             "module": "test_vertical_solution_blueprints.py",
             "test_count": 12,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_youtube_production.py",
+            "test_count": 11,
             "status": "PASS",
             "coverage_domain": "Core Architecture & MCP Harness"
           },
@@ -706,7 +808,7 @@
       "weight_percentage": 15,
       "score": 100.0,
       "metrics": {
-        "redos_execution_time_ms": 0.014,
+        "redos_execution_time_ms": 0.007,
         "redos_ceiling_limit_ms": 1.0,
         "redos_immunity": "PASS",
         "ast_max_recursion_depth": 30,

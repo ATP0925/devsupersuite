@@ -1,5 +1,5 @@
 # ⚡ DevSuperSuite Official: Stripe Usage-Based Billing & Metered Invoicing Report
-**Audit Timestamp:** 2026-11-08 11:58:33 UTC  
+**Audit Timestamp:** 2026-11-08 12:38:44 UTC  
 **Governing Authority:** DevSuperSuite Revenue Operations (`growth@devsupersuite.com`)  
 **Strict Compliance:** 100% Brand Anonymity • Zero Founder Personal Identifiers  
 
@@ -7,13 +7,13 @@
 
 ## 1. Executive Metered Billing Telemetry
 
-- **Active Metered Customers:** **7 Accounts**
-- **Contracted Base ARR:** **$7,728.00 USD**
-- **Total Monthly Invoiced Volume:** **$1,077.00 USD**
-- **Usage Overages Billed:** **$433.00 USD**
-- **Total Settled & Collected:** **$952.00 USD**
-- **Total Metered Events Processed:** **12 Usage Records**
-  * AST Queries Parsed: **2,119,500**
+- **Active Metered Customers:** **24 Accounts**
+- **Contracted Base ARR:** **$13,644.00 USD**
+- **Total Monthly Invoiced Volume:** **$1,910.00 USD**
+- **Usage Overages Billed:** **$773.00 USD**
+- **Total Settled & Collected:** **$1,785.00 USD**
+- **Total Metered Events Processed:** **29 Usage Records**
+  * AST Queries Parsed: **4,159,500**
   * Shannon Entropy Secret Checks: **674,200**
   * Offline Voice Minutes: **7,000 min**
 
@@ -39,6 +39,23 @@
 | `cus_dss_23329da2ab65` | **Booz Allen Hamilton** | `TEAM_PRO` | $29.00 | **+$20.00** | **$49.00** | `PAID` |
 | `cus_dss_85419f68e1cf` | **Booz Allen Hamilton** | `TEAM_PRO` | $29.00 | **+$20.00** | **$49.00** | `PAID` |
 | `cus_dss_c8a057654261` | **Booz Allen Hamilton** | `TEAM_PRO` | $29.00 | **+$20.00** | **$49.00** | `PAID` |
+| `cus_dss_aa18ed0eb69f` | **Booz Allen Hamilton** | `TEAM_PRO` | $29.00 | **+$20.00** | **$49.00** | `PAID` |
+| `cus_dss_c1572a308b4b` | **Booz Allen Hamilton** | `TEAM_PRO` | $29.00 | **+$20.00** | **$49.00** | `PAID` |
+| `cus_dss_8188aec2221f` | **Booz Allen Hamilton** | `TEAM_PRO` | $29.00 | **+$20.00** | **$49.00** | `PAID` |
+| `cus_dss_5a2a080c03b2` | **Booz Allen Hamilton** | `TEAM_PRO` | $29.00 | **+$20.00** | **$49.00** | `PAID` |
+| `cus_dss_48a1de4ff4a6` | **Booz Allen Hamilton** | `TEAM_PRO` | $29.00 | **+$20.00** | **$49.00** | `PAID` |
+| `cus_dss_116f5b1ba1b5` | **Booz Allen Hamilton** | `TEAM_PRO` | $29.00 | **+$20.00** | **$49.00** | `PAID` |
+| `cus_dss_52ecd56f6642` | **Booz Allen Hamilton** | `TEAM_PRO` | $29.00 | **+$20.00** | **$49.00** | `PAID` |
+| `cus_dss_5454c2fd1867` | **Booz Allen Hamilton** | `TEAM_PRO` | $29.00 | **+$20.00** | **$49.00** | `PAID` |
+| `cus_dss_472834055e46` | **Booz Allen Hamilton** | `TEAM_PRO` | $29.00 | **+$20.00** | **$49.00** | `PAID` |
+| `cus_dss_83521e3d3910` | **Booz Allen Hamilton** | `TEAM_PRO` | $29.00 | **+$20.00** | **$49.00** | `PAID` |
+| `cus_dss_3f7e4c73c2dc` | **Booz Allen Hamilton** | `TEAM_PRO` | $29.00 | **+$20.00** | **$49.00** | `PAID` |
+| `cus_dss_c452a04f4fc1` | **Booz Allen Hamilton** | `TEAM_PRO` | $29.00 | **+$20.00** | **$49.00** | `PAID` |
+| `cus_dss_101cb58d0c55` | **Booz Allen Hamilton** | `TEAM_PRO` | $29.00 | **+$20.00** | **$49.00** | `PAID` |
+| `cus_dss_e2fc397931c8` | **Booz Allen Hamilton** | `TEAM_PRO` | $29.00 | **+$20.00** | **$49.00** | `PAID` |
+| `cus_dss_e5d48521e3b0` | **Booz Allen Hamilton** | `TEAM_PRO` | $29.00 | **+$20.00** | **$49.00** | `PAID` |
+| `cus_dss_f53c05b4dda2` | **Booz Allen Hamilton** | `TEAM_PRO` | $29.00 | **+$20.00** | **$49.00** | `PAID` |
+| `cus_dss_68a46f0568a3` | **Booz Allen Hamilton** | `TEAM_PRO` | $29.00 | **+$20.00** | **$49.00** | `PAID` |
 
 ---
 

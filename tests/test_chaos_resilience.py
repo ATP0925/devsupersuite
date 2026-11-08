@@ -202,3 +202,4 @@ class TestEnterpriseChaosResilience:
             assert "DevSuperSuite" in content, (
                 f"Missing corporate brand DevSuperSuite in {file_path.name}"
             )
+

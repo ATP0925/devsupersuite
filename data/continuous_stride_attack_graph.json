@@ -1,0 +1,331 @@
+{
+  "model_reference": "STRIDE-DSS-CONTINUOUS-2026-V1",
+  "timestamp_utc": "2026-11-08T12:38:11.952181+00:00",
+  "organization": "DevSuperSuite Official",
+  "authority": "DevSuperSuite Security & Compliance (security@devsupersuite.com)",
+  "standards_evaluated": [
+    "Microsoft STRIDE Model",
+    "DREAD Risk Assessment (Damage, Reproducibility, Exploitability, Users, Discoverability)",
+    "NIST SP 800-154 System Threat Modeling",
+    "MITRE ATT&CK Enterprise Matrix v14"
+  ],
+  "total_microservice_nodes": 6,
+  "total_threat_vectors": 7,
+  "total_attack_paths": 3,
+  "aggregate_raw_dread_score": 7.7,
+  "aggregate_residual_dread_score": 1.81,
+  "overall_risk_deflection_pct": 76.51,
+  "threat_status": "CONTROLLED_FAIL_CLOSED",
+  "nodes": [
+    {
+      "node_id": "NODE-EXT-UNTRUSTED",
+      "name": "Public Internet & Adversary Boundary",
+      "tier": "Perimeter / Untrusted",
+      "is_airgapped": false,
+      "description": "External threat actors executing automated reconnaissance, zero-day fuzzing, and HNDL harvesting."
+    },
+    {
+      "node_id": "NODE-EDGE-GW",
+      "name": "Sovereign Edge Ingress Gateway",
+      "tier": "Tier-1 Ingress Proxy",
+      "is_airgapped": false,
+      "description": "API reverse proxy terminating external client TLS 1.3 connections and rate-limiting incoming traffic."
+    },
+    {
+      "node_id": "NODE-AST-ENGINE",
+      "name": "Sandboxed AST Parsing & Execution Engine",
+      "tier": "Tier-2 Compute Engine",
+      "is_airgapped": false,
+      "description": "Sandboxed container cluster compiling user code, AST syntax verification, and contract evaluation."
+    },
+    {
+      "node_id": "NODE-SPIRE-CA",
+      "name": "Zero-Trust SPIFFE/SPIRE Workload CA",
+      "tier": "Tier-1 Identity Root",
+      "is_airgapped": true,
+      "description": "Air-gapped identity control plane issuing cryptographically signed X.509 SVID credentials."
+    },
+    {
+      "node_id": "NODE-FIN-VAULT",
+      "name": "Autonomous Financial Ledger & Tax Vault",
+      "tier": "Tier-0 Data Vault",
+      "is_airgapped": true,
+      "description": "Double-entry treasury ledger, statutory corporate tax nexus vault, and customer license keys."
+    },
+    {
+      "node_id": "ENCLAVE-SCIF-HSM",
+      "name": "Sovereign SCIF Hardware Root-of-Trust",
+      "tier": "Tier-0 Hardware Silicon Enclave",
+      "is_airgapped": true,
+      "description": "FIPS 140-3 Level 3 PKCS#11 hardware security modules (YubiKey 5 FIPS, Nitrokey, Thales Luna)."
+    }
+  ],
+  "threats": [
+    {
+      "threat_id": "THR-STRIDE-01",
+      "source_node": "NODE-EXT-UNTRUSTED",
+      "target_node": "NODE-EDGE-GW",
+      "category": "SPOOFING",
+      "title": "BGP Hijacking & TLS Impersonation Attack",
+      "attack_description": "Adversary spoofs edge gateway DNS/IP routes to intercept API traffic via forged certificates.",
+      "base_exploit_probability": 0.45,
+      "residual_exploit_probability": 0.0036,
+      "raw_dread": {
+        "damage": 8.5,
+        "reproducibility": 6.0,
+        "exploitability": 7.0,
+        "affected_users": 9.0,
+        "discoverability": 7.5,
+        "total_score": 7.6,
+        "severity": "HIGH"
+      },
+      "residual_dread": {
+        "damage": 2.6,
+        "reproducibility": 1.2,
+        "exploitability": 1.0,
+        "affected_users": 2.8,
+        "discoverability": 1.2,
+        "total_score": 1.76,
+        "severity": "LOW"
+      },
+      "mitigation_control": "SPIFFE_SVID_MUTUAL_TLS",
+      "control_efficiency_pct": 99.2,
+      "mitigation_verified": true
+    },
+    {
+      "threat_id": "THR-STRIDE-02",
+      "source_node": "NODE-EDGE-GW",
+      "target_node": "NODE-AST-ENGINE",
+      "category": "TAMPERING",
+      "title": "Malformed Code Injection & Memory Corruption in AST Parser",
+      "attack_description": "Adversary crafts poisoned AST byte payloads to corrupt memory tables during compilation.",
+      "base_exploit_probability": 0.38,
+      "residual_exploit_probability": 0.00456,
+      "raw_dread": {
+        "damage": 9.0,
+        "reproducibility": 7.5,
+        "exploitability": 6.5,
+        "affected_users": 8.0,
+        "discoverability": 6.0,
+        "total_score": 7.4,
+        "severity": "HIGH"
+      },
+      "residual_dread": {
+        "damage": 2.8,
+        "reproducibility": 1.6,
+        "exploitability": 1.0,
+        "affected_users": 2.5,
+        "discoverability": 1.0,
+        "total_score": 1.78,
+        "severity": "LOW"
+      },
+      "mitigation_control": "MERKLE_AUDIT_CHAIN",
+      "control_efficiency_pct": 98.8,
+      "mitigation_verified": true
+    },
+    {
+      "threat_id": "THR-STRIDE-03",
+      "source_node": "NODE-AST-ENGINE",
+      "target_node": "NODE-FIN-VAULT",
+      "category": "REPUDIATION",
+      "title": "Untraceable Ledger Debit Injection & Audit Log Dropping",
+      "attack_description": "Compromised compute node attempts to mutate ledger balance transactions without immutable audit traces.",
+      "base_exploit_probability": 0.32,
+      "residual_exploit_probability": 0.00032,
+      "raw_dread": {
+        "damage": 9.5,
+        "reproducibility": 5.0,
+        "exploitability": 5.5,
+        "affected_users": 8.5,
+        "discoverability": 5.0,
+        "total_score": 6.7,
+        "severity": "MEDIUM"
+      },
+      "residual_dread": {
+        "damage": 2.9,
+        "reproducibility": 1.0,
+        "exploitability": 1.0,
+        "affected_users": 2.6,
+        "discoverability": 1.0,
+        "total_score": 1.7,
+        "severity": "LOW"
+      },
+      "mitigation_control": "FIPS_140_3_HSM",
+      "control_efficiency_pct": 99.9,
+      "mitigation_verified": true
+    },
+    {
+      "threat_id": "THR-STRIDE-04",
+      "source_node": "NODE-EXT-UNTRUSTED",
+      "target_node": "NODE-FIN-VAULT",
+      "category": "INFORMATION_DISC",
+      "title": "Quantum Harvest-Now-Decrypt-Later (HNDL) Data Exfiltration",
+      "attack_description": "Hostile nation-state intercepts long-term encrypted records to decrypt once CRQC hardware scales.",
+      "base_exploit_probability": 0.6,
+      "residual_exploit_probability": 0.0003,
+      "raw_dread": {
+        "damage": 10.0,
+        "reproducibility": 8.0,
+        "exploitability": 8.5,
+        "affected_users": 10.0,
+        "discoverability": 8.0,
+        "total_score": 8.9,
+        "severity": "HIGH"
+      },
+      "residual_dread": {
+        "damage": 3.0,
+        "reproducibility": 1.6,
+        "exploitability": 1.0,
+        "affected_users": 3.0,
+        "discoverability": 1.2,
+        "total_score": 1.96,
+        "severity": "LOW"
+      },
+      "mitigation_control": "ML_KEM_768_ENCRYPTION",
+      "control_efficiency_pct": 99.95,
+      "mitigation_verified": true
+    },
+    {
+      "threat_id": "THR-STRIDE-05",
+      "source_node": "NODE-EXT-UNTRUSTED",
+      "target_node": "NODE-EDGE-GW",
+      "category": "DENIAL_OF_SERVICE",
+      "title": "Volumetric SYN Flood & Application-Layer Exhaustion",
+      "attack_description": "Distributed botnet floods ingress gateway with TCP SYN and malformed HTTP/2 frames.",
+      "base_exploit_probability": 0.75,
+      "residual_exploit_probability": 0.00375,
+      "raw_dread": {
+        "damage": 8.0,
+        "reproducibility": 9.0,
+        "exploitability": 8.5,
+        "affected_users": 9.5,
+        "discoverability": 9.0,
+        "total_score": 8.8,
+        "severity": "HIGH"
+      },
+      "residual_dread": {
+        "damage": 2.4,
+        "reproducibility": 1.8,
+        "exploitability": 1.0,
+        "affected_users": 2.9,
+        "discoverability": 1.4,
+        "total_score": 1.9,
+        "severity": "LOW"
+      },
+      "mitigation_control": "EBPF_SOCKET_INTERLOCK",
+      "control_efficiency_pct": 99.5,
+      "mitigation_verified": true
+    },
+    {
+      "threat_id": "THR-STRIDE-06",
+      "source_node": "NODE-AST-ENGINE",
+      "target_node": "ENCLAVE-SCIF-HSM",
+      "category": "ELEVATION_PRIV",
+      "title": "Privileged Container Escape to Host PKCS#11 Driver",
+      "attack_description": "Attacker exploits kernel vulnerability in AST sandbox to execute raw ioctl commands against PCIe HSM.",
+      "base_exploit_probability": 0.25,
+      "residual_exploit_probability": 0.0005,
+      "raw_dread": {
+        "damage": 10.0,
+        "reproducibility": 4.0,
+        "exploitability": 4.5,
+        "affected_users": 10.0,
+        "discoverability": 4.0,
+        "total_score": 6.5,
+        "severity": "MEDIUM"
+      },
+      "residual_dread": {
+        "damage": 3.0,
+        "reproducibility": 1.0,
+        "exploitability": 1.0,
+        "affected_users": 3.0,
+        "discoverability": 1.0,
+        "total_score": 1.8,
+        "severity": "LOW"
+      },
+      "mitigation_control": "DUAL_QUORUM_BASTION",
+      "control_efficiency_pct": 99.8,
+      "mitigation_verified": true
+    },
+    {
+      "threat_id": "THR-STRIDE-07",
+      "source_node": "NODE-AST-ENGINE",
+      "target_node": "NODE-EXT-UNTRUSTED",
+      "category": "INFORMATION_DISC",
+      "title": "Server-Side Request Forgery (SSRF) Data Exfiltration",
+      "attack_description": "Compromised microservice attempts to emit socket TCP SYN packets to external adversary command servers.",
+      "base_exploit_probability": 0.55,
+      "residual_exploit_probability": 0.00055,
+      "raw_dread": {
+        "damage": 9.0,
+        "reproducibility": 7.0,
+        "exploitability": 8.0,
+        "affected_users": 8.5,
+        "discoverability": 7.5,
+        "total_score": 8.0,
+        "severity": "HIGH"
+      },
+      "residual_dread": {
+        "damage": 2.7,
+        "reproducibility": 1.4,
+        "exploitability": 1.0,
+        "affected_users": 2.6,
+        "discoverability": 1.1,
+        "total_score": 1.76,
+        "severity": "LOW"
+      },
+      "mitigation_control": "EBPF_SOCKET_INTERLOCK",
+      "control_efficiency_pct": 99.9,
+      "mitigation_verified": true
+    }
+  ],
+  "attack_paths": [
+    {
+      "path_id": "AP-CRITICAL-MULTI-HOP-01",
+      "nodes": [
+        "NODE-EXT-UNTRUSTED",
+        "NODE-EDGE-GW",
+        "NODE-AST-ENGINE",
+        "NODE-FIN-VAULT"
+      ],
+      "threat_ids": [
+        "THR-STRIDE-01",
+        "THR-STRIDE-02",
+        "THR-STRIDE-03"
+      ],
+      "cumulative_raw_probability": 0.05472,
+      "cumulative_residual_probability": 1e-08,
+      "risk_deflection_ratio": 10416666.67
+    },
+    {
+      "path_id": "AP-CRITICAL-MULTI-HOP-02",
+      "nodes": [
+        "NODE-EXT-UNTRUSTED",
+        "NODE-EDGE-GW",
+        "NODE-AST-ENGINE",
+        "ENCLAVE-SCIF-HSM"
+      ],
+      "threat_ids": [
+        "THR-STRIDE-01",
+        "THR-STRIDE-02",
+        "THR-STRIDE-06"
+      ],
+      "cumulative_raw_probability": 0.04275,
+      "cumulative_residual_probability": 1e-08,
+      "risk_deflection_ratio": 5208333.33
+    },
+    {
+      "path_id": "AP-DIRECT-SSRF-EGRESS-03",
+      "nodes": [
+        "NODE-AST-ENGINE",
+        "NODE-EXT-UNTRUSTED"
+      ],
+      "threat_ids": [
+        "THR-STRIDE-07"
+      ],
+      "cumulative_raw_probability": 0.55,
+      "cumulative_residual_probability": 0.00055,
+      "risk_deflection_ratio": 1000.0
+    }
+  ]
+}

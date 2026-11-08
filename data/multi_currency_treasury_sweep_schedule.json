@@ -1,6 +1,6 @@
 {
   "binder_id": "DSS-TREASURY-SWEEP-2026-BINDER",
-  "generation_timestamp": "2026-11-08T12:01:12.653632+00:00",
+  "generation_timestamp": "2026-11-08T12:38:24.143354+00:00",
   "commercial_principal": "DevSuperSuite Tech Services Corporation",
   "treasury_desk": "DevSuperSuite Global Treasury Desk",
   "treasury_email": "treasury@devsupersuite.com",
@@ -14,7 +14,7 @@
     "overall_var_mitigation_pct": 81.25
   },
   "balance_audit": {
-    "audit_timestamp": "2026-11-08T12:01:12.653378+00:00",
+    "audit_timestamp": "2026-11-08T12:38:24.143162+00:00",
     "treasury_desk": "DevSuperSuite Global Treasury Desk",
     "commercial_principal": "DevSuperSuite Tech Services Corporation",
     "total_accounts_audited": 5,
@@ -105,7 +105,7 @@
     }
   },
   "fx_hedging_simulation": {
-    "simulation_timestamp": "2026-11-08T12:01:12.653516+00:00",
+    "simulation_timestamp": "2026-11-08T12:38:24.143240+00:00",
     "tenor_days": 90,
     "total_non_usd_hedged_usd": 93277.44,
     "total_non_usd_spot_executed_usd": 22116.85,
@@ -195,7 +195,7 @@
     }
   },
   "sweep_executions": {
-    "execution_timestamp": "2026-11-08T12:01:12.653577+00:00",
+    "execution_timestamp": "2026-11-08T12:38:24.143298+00:00",
     "clearing_institution": "BNY Mellon Sovereign Custody / Federal Reserve Bank of New York",
     "settlement_currency": "USD",
     "total_accounts_swept": 5,
@@ -260,7 +260,7 @@
     ]
   },
   "sovereign_yield_model": {
-    "calculation_timestamp": "2026-11-08T12:01:12.653629+00:00",
+    "calculation_timestamp": "2026-11-08T12:38:24.143351+00:00",
     "sovereign_benchmark_apy_pct": 5.18,
     "total_swept_capital_pool_usd": 494394.29,
     "annual_interest_yield_usd": 25609.62,

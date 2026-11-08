@@ -1,0 +1,178 @@
+{
+  "version": "1.0.0",
+  "governing_authority": "DevSuperSuite Partner Commercial Desk (alliances@devsupersuite.com)",
+  "brand_anonymity_protocol": "STRICT_100_PERCENT_COMPLIANT",
+  "last_updated": "2026-11-08T12:17:21.588857+00:00",
+  "partners": [
+    {
+      "partner_id": "PARTNER-AFS-01",
+      "partner_name": "Accenture Federal Services LLC",
+      "tier": "ESA",
+      "country": "US",
+      "currency": "USD",
+      "tax_form_status": "W-9_VERIFIED",
+      "has_certified_treaty": true,
+      "payout_rail": "CORPORATE_FEDWIRE_ACH",
+      "banking_coordinates": {
+        "bank_name": "JPMorgan Chase Bank N.A.",
+        "routing_ach": "021000021",
+        "account_last4": "8841"
+      }
+    },
+    {
+      "partner_id": "PARTNER-TCS-02",
+      "partner_name": "Tata Consultancy Services SI",
+      "tier": "SES",
+      "country": "IN",
+      "currency": "INR",
+      "tax_form_status": "W-8BEN-E_CERTIFIED",
+      "has_certified_treaty": true,
+      "payout_rail": "DIRECT_DOMESTIC_UPI_NEFT",
+      "banking_coordinates": {
+        "bank_name": "State Bank of India (Commercial Hub)",
+        "ifsc_code": "SBIN0001234",
+        "account_last4": "5512",
+        "upi_vpa": "tcs.alliances@icici"
+      }
+    },
+    {
+      "partner_id": "PARTNER-CAP-03",
+      "partner_name": "Capgemini Deutschland GmbH",
+      "tier": "SES",
+      "country": "DE",
+      "currency": "EUR",
+      "tax_form_status": "W-8BEN-E_CERTIFIED",
+      "has_certified_treaty": true,
+      "payout_rail": "SEPA_CREDIT_TRANSFER",
+      "banking_coordinates": {
+        "bank_name": "Deutsche Bank AG",
+        "iban_last4": "DE7741",
+        "bic": "DEUTDEDDFXX"
+      }
+    },
+    {
+      "partner_id": "PARTNER-DTT-04",
+      "partner_name": "Deloitte Touche Tohmatsu UK",
+      "tier": "CIP",
+      "country": "GB",
+      "currency": "GBP",
+      "tax_form_status": "W-8BEN-E_CERTIFIED",
+      "has_certified_treaty": true,
+      "payout_rail": "BACS_CHAPS_DIRECT",
+      "banking_coordinates": {
+        "bank_name": "Barclays Bank UK PLC",
+        "sort_code": "20-00-00",
+        "account_last4": "3390"
+      }
+    },
+    {
+      "partner_id": "PARTNER-NCS-05",
+      "partner_name": "NCS Group Singapore Pte Ltd",
+      "tier": "CIP",
+      "country": "SG",
+      "currency": "SGD",
+      "tax_form_status": "MISSING_W8BENE",
+      "has_certified_treaty": false,
+      "payout_rail": "FAST_GIRO_TRANSFER",
+      "banking_coordinates": {
+        "bank_name": "DBS Bank Singapore",
+        "swift": "DBSSSGSGXXX",
+        "account_last4": "1129"
+      }
+    }
+  ],
+  "deals": [
+    {
+      "deal_id": "DEAL-LOCK-101",
+      "partner_id": "PARTNER-AFS-01",
+      "prospect_organization": "Raytheon Missile Systems",
+      "software_arr_usd": 120000.0,
+      "hardware_usd": 30000.0,
+      "registration_date": "2026-08-01",
+      "lock_expiration_date": "2026-11-29",
+      "status": "CONVERTED_SETTLED",
+      "cash_collected_date": "2026-10-15",
+      "currency": "USD"
+    },
+    {
+      "deal_id": "DEAL-LOCK-202",
+      "partner_id": "PARTNER-TCS-02",
+      "prospect_organization": "Bharat Defense Cyber Unit",
+      "software_arr_usd": 80000.0,
+      "hardware_usd": 20000.0,
+      "registration_date": "2026-08-15",
+      "lock_expiration_date": "2026-12-13",
+      "status": "CONVERTED_SETTLED",
+      "cash_collected_date": "2026-10-28",
+      "currency": "INR"
+    },
+    {
+      "deal_id": "DEAL-LOCK-303",
+      "partner_id": "PARTNER-CAP-03",
+      "prospect_organization": "Deutsche Bahn Digitale",
+      "software_arr_usd": 50000.0,
+      "hardware_usd": 0.0,
+      "registration_date": "2026-09-01",
+      "lock_expiration_date": "2026-12-30",
+      "status": "CONVERTED_SETTLED",
+      "cash_collected_date": "2026-11-02",
+      "currency": "EUR"
+    },
+    {
+      "deal_id": "DEAL-LOCK-404",
+      "partner_id": "PARTNER-DTT-04",
+      "prospect_organization": "Rolls-Royce SMR Enclave",
+      "software_arr_usd": 60000.0,
+      "hardware_usd": 0.0,
+      "registration_date": "2026-10-01",
+      "lock_expiration_date": "2027-01-29",
+      "status": "LOCKED_EXCLUSIVE",
+      "cash_collected_date": null,
+      "currency": "GBP"
+    },
+    {
+      "deal_id": "DEAL-LOCK-505",
+      "partner_id": "PARTNER-NCS-05",
+      "prospect_organization": "Singapore GovTech Enclave",
+      "software_arr_usd": 40000.0,
+      "hardware_usd": 0.0,
+      "registration_date": "2026-09-10",
+      "lock_expiration_date": "2027-01-08",
+      "status": "CONVERTED_SETTLED",
+      "cash_collected_date": "2026-11-05",
+      "currency": "SGD"
+    }
+  ],
+  "payout_tokens": [
+    {
+      "payout_token_id": "PAYOUT-PARTNER-AC4A95A0",
+      "partner_id": "PARTNER-AFS-01",
+      "deal_id": "DEAL-LOCK-101",
+      "gross_commission_usd": 52500.0,
+      "withholding_tax_usd": 0.0,
+      "net_payout_usd": 52500.0,
+      "currency": "USD",
+      "net_payout_local": 52500.0,
+      "reporting_form": "FORM_1099_NEC",
+      "issued_at": "2026-10-16T10:00:00Z",
+      "signature": "f4a215db1b142ec3c4c82ee0cd7f0f523d8d0012a3c5408dc92a6b2a8eb5d743",
+      "status": "DISBURSED_SETTLED",
+      "authority": "DevSuperSuite Partner Commercial Desk (alliances@devsupersuite.com)"
+    },
+    {
+      "payout_token_id": "PAYOUT-PARTNER-ABCD97B8",
+      "partner_id": "PARTNER-TCS-02",
+      "deal_id": "DEAL-LOCK-202",
+      "gross_commission_usd": 26400.0,
+      "withholding_tax_usd": 3960.0,
+      "net_payout_usd": 22440.0,
+      "currency": "INR",
+      "net_payout_local": 1941060.0,
+      "reporting_form": "FORM_1042_S",
+      "issued_at": "2026-10-29T14:30:00Z",
+      "signature": "b1c6d0f526e05e6556524abbb2f6216c5f553dc98c22b973c1917e66aa0de4d3",
+      "status": "DISBURSED_SETTLED",
+      "authority": "DevSuperSuite Partner Commercial Desk (alliances@devsupersuite.com)"
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "binder_id": "DSS-OECD-PILLAR2-2026-DOSSIER",
+  "generation_timestamp": "2026-11-08T12:38:31.132542+00:00",
+  "commercial_principal": "DevSuperSuite Tech Services Corporation",
+  "tax_desk": "DevSuperSuite Global Tax & Treasury",
+  "tax_contact": "treasury@devsupersuite.com",
+  "global_minimum_rate_pct": 15.0,
+  "executive_summary": {
+    "total_jurisdictions_evaluated": 3,
+    "us_etr_pct": 24.5,
+    "ireland_etr_pct": 12.5,
+    "singapore_etr_pct": 10.0,
+    "total_group_sbie_usd": 23532.73,
+    "gross_top_up_tax_usd": 0.0,
+    "qdmtt_domestic_coverage_usd": 0.0,
+    "final_iir_tax_payable_usd": 0.0,
+    "safe_harbour_election": "DE_MINIMIS_SAFE_HARBOUR_FULLY_QUALIFIED"
+  },
+  "jurisdictional_etrs": {
+    "audit_timestamp": "2026-11-08T12:38:31.132453+00:00",
+    "standard": "OECD Pillar Two GloBE Model Rules (Article 5.1)",
+    "global_minimum_rate_pct": 15.0,
+    "jurisdiction_etrs": {
+      "UNITED_STATES": {
+        "jurisdiction_code": "US",
+        "tax_residency": "United States (Delaware)",
+        "globe_net_income_usd": 385200.0,
+        "adjusted_covered_taxes_usd": 94374.0,
+        "calculated_globe_etr_pct": 24.5,
+        "oecd_minimum_rate_pct": 15.0,
+        "gross_top_up_tax_percentage": 0.0,
+        "is_low_taxed_jurisdiction": false,
+        "qdmt_status": "NOT_APPLICABLE"
+      },
+      "IRELAND": {
+        "jurisdiction_code": "IE",
+        "tax_residency": "Ireland (Dublin)",
+        "globe_net_income_usd": 4186.0,
+        "adjusted_covered_taxes_usd": 523.25,
+        "calculated_globe_etr_pct": 12.5,
+        "oecd_minimum_rate_pct": 15.0,
+        "gross_top_up_tax_percentage": 2.5,
+        "is_low_taxed_jurisdiction": true,
+        "qdmt_status": "DOMESTIC_TOPUP_ACTIVE"
+      },
+      "SINGAPORE": {
+        "jurisdiction_code": "SG",
+        "tax_residency": "Singapore",
+        "globe_net_income_usd": 1715.66,
+        "adjusted_covered_taxes_usd": 171.57,
+        "calculated_globe_etr_pct": 10.0,
+        "oecd_minimum_rate_pct": 15.0,
+        "gross_top_up_tax_percentage": 5.0,
+        "is_low_taxed_jurisdiction": true,
+        "qdmt_status": "DOMESTIC_TOPUP_ACTIVE"
+      }
+    }
+  },
+  "substance_based_income_exclusion": {
+    "sbie_timestamp": "2026-11-08T12:38:31.132476+00:00",
+    "regulatory_basis": "OECD GloBE Article 5.3 & Article 9.2 Transition Rates (2026)",
+    "payroll_rate_pct": 9.8,
+    "tangible_rate_pct": 7.8,
+    "total_group_sbie_usd": 23532.73,
+    "jurisdiction_sbie": {
+      "UNITED_STATES": {
+        "jurisdiction_code": "US",
+        "eligible_payroll_costs_usd": 145000.0,
+        "payroll_carveout_pct": 9.8,
+        "payroll_carveout_amount_usd": 14210.0,
+        "eligible_tangible_assets_usd": 35000.0,
+        "tangible_carveout_pct": 7.8,
+        "tangible_carveout_amount_usd": 2730.0,
+        "total_sbie_carveout_usd": 16940.0,
+        "globe_net_income_usd": 385200.0,
+        "excess_profit_usd": 368260.0,
+        "sbie_coverage_pct": 4.4
+      },
+      "IRELAND": {
+        "jurisdiction_code": "IE",
+        "eligible_payroll_costs_usd": 34720.0,
+        "payroll_carveout_pct": 9.8,
+        "payroll_carveout_amount_usd": 3402.56,
+        "eligible_tangible_assets_usd": 16275.0,
+        "tangible_carveout_pct": 7.8,
+        "tangible_carveout_amount_usd": 1269.45,
+        "total_sbie_carveout_usd": 4672.01,
+        "globe_net_income_usd": 4186.0,
+        "excess_profit_usd": 0.0,
+        "sbie_coverage_pct": 111.61
+      },
+      "SINGAPORE": {
+        "jurisdiction_code": "SG",
+        "eligible_payroll_costs_usd": 13590.0,
+        "payroll_carveout_pct": 9.8,
+        "payroll_carveout_amount_usd": 1331.82,
+        "eligible_tangible_assets_usd": 7550.0,
+        "tangible_carveout_pct": 7.8,
+        "tangible_carveout_amount_usd": 588.9,
+        "total_sbie_carveout_usd": 1920.72,
+        "globe_net_income_usd": 1715.66,
+        "excess_profit_usd": 0.0,
+        "sbie_coverage_pct": 111.95
+      }
+    }
+  },
+  "transitional_safe_harbours": {
+    "safe_harbour_timestamp": "2026-11-08T12:38:31.132499+00:00",
+    "regulatory_framework": "OECD Transitional CbCR Safe Harbour Guidance (2024-2026)",
+    "safe_harbour_year": 2026,
+    "simplified_etr_benchmark_pct": 17.0,
+    "jurisdiction_safe_harbours": {
+      "UNITED_STATES": {
+        "jurisdiction_code": "US",
+        "total_revenue_eur": 424193.55,
+        "profit_before_tax_eur": 355023.04,
+        "de_minimis_test": {
+          "passed": true,
+          "criteria": "Revenue < \u20ac10,000,000 and Profit < \u20ac1,000,000"
+        },
+        "simplified_etr_test": {
+          "passed": true,
+          "tested_etr_pct": 24.5,
+          "threshold_pct": 17.0
+        },
+        "routine_profits_test": {
+          "passed": false,
+          "profit_usd": 385200.0,
+          "sbie_usd": 16940.0
+        },
+        "safe_harbour_elected": true,
+        "effective_top_up_tax_payable_usd": 0.0
+      },
+      "IRELAND": {
+        "jurisdiction_code": "IE",
+        "total_revenue_eur": 83870.97,
+        "profit_before_tax_eur": 3858.06,
+        "de_minimis_test": {
+          "passed": true,
+          "criteria": "Revenue < \u20ac10,000,000 and Profit < \u20ac1,000,000"
+        },
+        "simplified_etr_test": {
+          "passed": false,
+          "tested_etr_pct": 12.5,
+          "threshold_pct": 17.0
+        },
+        "routine_profits_test": {
+          "passed": true,
+          "profit_usd": 4186.0,
+          "sbie_usd": 4672.01
+        },
+        "safe_harbour_elected": true,
+        "effective_top_up_tax_payable_usd": 0.0
+      },
+      "SINGAPORE": {
+        "jurisdiction_code": "SG",
+        "total_revenue_eur": 35937.47,
+        "profit_before_tax_eur": 1581.25,
+        "de_minimis_test": {
+          "passed": true,
+          "criteria": "Revenue < \u20ac10,000,000 and Profit < \u20ac1,000,000"
+        },
+        "simplified_etr_test": {
+          "passed": false,
+          "tested_etr_pct": 10.0,
+          "threshold_pct": 17.0
+        },
+        "routine_profits_test": {
+          "passed": true,
+          "profit_usd": 1715.66,
+          "sbie_usd": 1920.72
+        },
+        "safe_harbour_elected": true,
+        "effective_top_up_tax_payable_usd": 0.0
+      }
+    }
+  },
+  "top_up_tax_schedule": {
+    "top_up_calculation_timestamp": "2026-11-08T12:38:31.132538+00:00",
+    "global_minimum_rate_pct": 15.0,
+    "total_gross_top_up_tax_usd": 0.0,
+    "total_domestic_qdmtt_absorbed_usd": 0.0,
+    "total_iir_parent_tax_payable_usd": 0.0,
+    "safe_harbour_total_protection_applied": true,
+    "jurisdictions": {
+      "UNITED_STATES": {
+        "jurisdiction_code": "US",
+        "globe_net_income_usd": 385200.0,
+        "sbie_carveout_usd": 16940.0,
+        "excess_profit_usd": 368260.0,
+        "globe_etr_pct": 24.5,
+        "top_up_tax_rate_pct": 0.0,
+        "gross_top_up_tax_usd": 0.0,
+        "qdmtt_domestic_offset_usd": 0.0,
+        "iir_parent_residual_tax_usd": 0.0,
+        "transitional_safe_harbour_relief": true,
+        "final_net_top_up_tax_due_usd": 0.0
+      },
+      "IRELAND": {
+        "jurisdiction_code": "IE",
+        "globe_net_income_usd": 4186.0,
+        "sbie_carveout_usd": 4672.01,
+        "excess_profit_usd": 0.0,
+        "globe_etr_pct": 12.5,
+        "top_up_tax_rate_pct": 2.5,
+        "gross_top_up_tax_usd": 0.0,
+        "qdmtt_domestic_offset_usd": 0.0,
+        "iir_parent_residual_tax_usd": 0.0,
+        "transitional_safe_harbour_relief": true,
+        "final_net_top_up_tax_due_usd": 0.0
+      },
+      "SINGAPORE": {
+        "jurisdiction_code": "SG",
+        "globe_net_income_usd": 1715.66,
+        "sbie_carveout_usd": 1920.72,
+        "excess_profit_usd": 0.0,
+        "globe_etr_pct": 10.0,
+        "top_up_tax_rate_pct": 5.0,
+        "gross_top_up_tax_usd": 0.0,
+        "qdmtt_domestic_offset_usd": 0.0,
+        "iir_parent_residual_tax_usd": 0.0,
+        "transitional_safe_harbour_relief": true,
+        "final_net_top_up_tax_due_usd": 0.0
+      }
+    }
+  },
+  "compliance_attestation": "The DevSuperSuite Global Tax & Treasury Desk certifies that this OECD Pillar Two GloBE Dossier rigorously computes jurisdictional Effective Tax Rates (ETRs), Substance-Based Income Exclusions (SBIE), and Qualified Domestic Minimum Top-up Taxes (QDMTT) in full alignment with the OECD Model Rules and Transitional CbCR Safe Harbour guidance."
+}

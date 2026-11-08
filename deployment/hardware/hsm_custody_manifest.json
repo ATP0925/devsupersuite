@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "organization": "DevSuperSuite Solutions Architecture / OmniKernel Labs",
+    "contact": "hsm@devsupersuite.com",
+    "generated_at": "2026-11-08T12:38:33.139609+00:00",
+    "fips_certification": "FIPS 140-3 Level 4 Physical Tamper Enclave"
+  },
+  "appliance": {
+    "model": "DevSuperSuite QuantumVault-HSM-L4",
+    "serial_number": "DSS-HSM-FIPS-L4-9912",
+    "chassis": "Mil-Spec Sealed Alloy with Active Conductive Barrier Mesh",
+    "tamper_response_time": "< 50 nanoseconds (Hardware Shunt to Ground)",
+    "operational_temperature_range": "-40C to +85C",
+    "voltage_monitoring_tolerance": "3.3V +/- 0.35V",
+    "mtbf_hours": 450000
+  },
+  "cryptographic_mechanisms": {
+    "pkcs11_standard": "OASIS PKCS#11 v3.0 Cryptoki",
+    "non_extractable_enforcement": "CKA_EXTRACTABLE=CK_FALSE, CKA_SENSITIVE=CK_TRUE",
+    "symmetric_ciphers": [
+      "AES-256-GCM (NIST SP 800-38D)"
+    ],
+    "hash_functions": [
+      "NIST SHA3-512 (FIPS 202)",
+      "BLAKE3 Hierarchical Merkle Root"
+    ],
+    "asymmetric_signatures": [
+      "Ed25519 (RFC 8032)",
+      "RSA-4096"
+    ],
+    "post_quantum_algorithms": [
+      "NIST FIPS 203 ML-KEM-1024 Lattice KEM"
+    ],
+    "key_splitting": "M-of-N Shamir's Secret Sharing over GF(2^256 - 189)"
+  },
+  "fips_140_3_compliance": {
+    "level": "Level 4 (Physical Security, Environmental Failure Testing, Zeroization)",
+    "kat_routines": [
+      "AES-256-GCM",
+      "SHA3-512",
+      "Ed25519",
+      "ML-KEM-1024"
+    ],
+    "power_on_self_test": "Mandatory prior to operational state transition"
+  }
+}

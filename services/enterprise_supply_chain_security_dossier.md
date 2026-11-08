@@ -115,8 +115,8 @@ DevSuperSuite container images and binaries adhere to **SLSA (Supply-chain Level
       "zeroEgress": true
     },
     "metadata": {
-      "buildInvocationId": "DSS-SLSA3-61672d563e9a",
-      "buildStartedOn": "2026-11-08T11:58:33.801913+00:00",
+      "buildInvocationId": "DSS-SLSA3-1418f7ee8ac9",
+      "buildStartedOn": "2026-11-08T12:38:44.306091+00:00",
       "completeness": {
         "arguments": true,
         "environment": true,

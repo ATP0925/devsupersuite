@@ -1,0 +1,222 @@
+{
+  "$schema": "https://devsupersuite.com/schemas/enterprise-qbr-metrics-manifest-v1.json",
+  "document_id": "DSS-QBR-MANIFEST-2026-V1",
+  "title": "DevSuperSuite & OmniKernel 5.2-LTS Enterprise QBR Account Telemetry & NRR Expansion Database",
+  "published_by": "DevSuperSuite Customer Success Group",
+  "authority_email": "success@devsupersuite.com",
+  "effective_date": "2026-11-08",
+  "brand_anonymity_verified": true,
+  "portfolio_summary": {
+    "total_strategic_accounts": 4,
+    "weighted_average_nrr_percentage": 149.92,
+    "total_expansion_contract_value_usd": 4020000.0,
+    "total_annual_token_avoidance_usd": 4860000.0,
+    "total_annual_labor_acceleration_usd": 3200000.0,
+    "average_capital_payback_days": 15.6,
+    "zero_telemetry_guarantee_verified": true
+  },
+  "accounts": [
+    {
+      "account_id": "QBR-ACC-WALLSTREET-01",
+      "entity_name": "Tier-1 Wall Street Investment Bank & Quantitative Trading Desk",
+      "sector": "Quantitative Finance & High-Frequency Trading (HFT)",
+      "expansion_metrics": {
+        "pilot_seats": 50,
+        "expanded_seats": 250,
+        "seat_growth_multiplier": 5.0,
+        "net_revenue_retention_percentage": 142.5
+      },
+      "avoided_cost_accounting": {
+        "pre_deploy_prompt_tokens": 4820,
+        "omnikernel_sliced_tokens": 780,
+        "token_reduction_percentage": 83.82,
+        "quarterly_llm_api_savings_usd": 530000.0,
+        "annualized_token_savings_usd": 2120000.0,
+        "capital_amortization_days": 14.2
+      },
+      "engineering_velocity": {
+        "pre_deploy_latency_ms": 920.0,
+        "post_deploy_latency_ms": 64.0,
+        "latency_reduction_percentage": 93.04,
+        "monorepo_lines_of_code": 45000000,
+        "primary_languages": ["C++20", "Rust"]
+      },
+      "compliance_and_governance": {
+        "audited_egress_bytes": 0.00,
+        "frameworks_satisfied": [
+          "SEC Rule 17a-4 (Electronic Records)",
+          "FINRA Rule 4511 (Books and Records)",
+          "FINRA Regulatory Notice 21-25 (Algo Governance)"
+        ],
+        "zero_day_leaks_prevented": 100
+      },
+      "commercial_expansion_contract": {
+        "expansion_deal_value_usd": 750000.0,
+        "contract_term_years": 3,
+        "annual_license_fee_usd": 250000.0,
+        "pre_payment_discount_percentage": 15.0,
+        "status": "APPROVED_FOR_RATIFICATION"
+      }
+    },
+    {
+      "account_id": "QBR-ACC-DEFENSE-02",
+      "entity_name": "Fortune 50 Defense Prime Contractor (SCIF Enclave)",
+      "sector": "Defense Aerospace, Avionics Guidance & Autonomous Systems",
+      "expansion_metrics": {
+        "pilot_seats": 1,
+        "expanded_seats": 4,
+        "seat_growth_multiplier": 4.0,
+        "net_revenue_retention_percentage": 165.0
+      },
+      "avoided_cost_accounting": {
+        "annual_labor_acceleration_value_usd": 3200000.0,
+        "avoided_breach_and_compliance_liabilities_usd": 15000000.0,
+        "token_reduction_percentage": 84.21,
+        "capital_amortization_days": 12.5
+      },
+      "engineering_velocity": {
+        "legacy_refactoring_speedup_multiplier": 3.8,
+        "ast_parse_latency_ms": 42.0,
+        "monorepo_lines_of_code": 38000000,
+        "primary_languages": ["Ada 95/2012", "C", "C++"]
+      },
+      "compliance_and_governance": {
+        "audited_egress_bytes": 0.00,
+        "frameworks_satisfied": [
+          "DoD CMMC 2.0 Level 3",
+          "Intelligence Community Directive 705 (ICD 705 SCIF)",
+          "FAA/DoD DO-178C Level A (Avionics Safety)",
+          "NIST FIPS 140-3 Level 3 HSM",
+          "NIST FIPS 203 (ML-KEM-768) Post-Quantum Cryptography"
+        ],
+        "blocked_agent_test_deletions": 44
+      },
+      "commercial_expansion_contract": {
+        "expansion_deal_value_usd": 1450000.0,
+        "contract_term_years": 3,
+        "annual_license_fee_usd": 483333.33,
+        "pre_payment_discount_percentage": 15.0,
+        "status": "APPROVED_FOR_RATIFICATION"
+      }
+    },
+    {
+      "account_id": "QBR-ACC-HEALTH-03",
+      "entity_name": "Global Healthcare & Clinical Genomics Platform",
+      "sector": "Telehealth, Whole-Genome Sequencing & Bioinformatics",
+      "expansion_metrics": {
+        "pilot_seats": 40,
+        "expanded_seats": 620,
+        "seat_growth_multiplier": 15.5,
+        "net_revenue_retention_percentage": 138.2
+      },
+      "avoided_cost_accounting": {
+        "annual_llm_api_savings_usd": 890000.0,
+        "avoided_hipaa_violation_penalties_usd": 5000000.0,
+        "token_reduction_percentage": 83.10,
+        "capital_amortization_days": 16.5
+      },
+      "engineering_velocity": {
+        "voice_synthesis_latency_ms": 58.0,
+        "voice_speedup_factor": 21.55,
+        "daily_keystroke_reduction_percentage": 38.42,
+        "rsi_wrist_strain_relief_percentage": 91.0,
+        "monorepo_lines_of_code": 12000000,
+        "primary_languages": ["Python", "Next.js", "C++"]
+      },
+      "compliance_and_governance": {
+        "audited_egress_bytes": 0.00,
+        "frameworks_satisfied": [
+          "HIPAA Security Rule (45 CFR Part 160 & Part 164)",
+          "HITECH Act",
+          "GDPR Article 9 (Special Categories / Genetic Data)"
+        ],
+        "zero_day_ephi_breaches": 0
+      },
+      "commercial_expansion_contract": {
+        "expansion_deal_value_usd": 620000.0,
+        "contract_term_years": 3,
+        "annual_license_fee_usd": 206666.67,
+        "pre_payment_discount_percentage": 15.0,
+        "status": "APPROVED_FOR_RATIFICATION"
+      }
+    },
+    {
+      "account_id": "QBR-ACC-SAAS-04",
+      "entity_name": "Hypergrowth Multi-Tenant SaaS Unicorn",
+      "sector": "Enterprise B2B Cloud Infrastructure & Microservices",
+      "expansion_metrics": {
+        "pilot_seats": 250,
+        "expanded_seats": 1800,
+        "seat_growth_multiplier": 7.2,
+        "net_revenue_retention_percentage": 154.0
+      },
+      "avoided_cost_accounting": {
+        "annual_llm_api_savings_usd": 1850000.0,
+        "monthly_api_savings_usd": 183920.0,
+        "token_reduction_percentage": 83.60,
+        "capital_amortization_days": 15.2
+      },
+      "engineering_velocity": {
+        "pre_deploy_pr_merge_hours": 76.8,
+        "post_deploy_pr_merge_hours": 4.5,
+        "pr_merge_acceleration_percentage": 94.14,
+        "monorepo_lines_of_code": 65000000,
+        "microservices_count": 5000,
+        "primary_languages": ["Go", "TypeScript", "Python", "Java", "Rust"]
+      },
+      "compliance_and_governance": {
+        "audited_egress_bytes": 0.00,
+        "frameworks_satisfied": [
+          "SOC 2 Type II (Confidentiality & Availability)",
+          "ISO/IEC 27001:2022 (InfoSec Management)",
+          "NIST SP 800-207 (Zero Trust Architecture)"
+        ],
+        "zero_day_leaks_prevented": 100
+      },
+      "commercial_expansion_contract": {
+        "expansion_deal_value_usd": 1200000.0,
+        "contract_term_years": 3,
+        "annual_license_fee_usd": 400000.0,
+        "pre_payment_discount_percentage": 15.0,
+        "status": "APPROVED_FOR_RATIFICATION"
+      }
+    }
+  ],
+  "qbr_operational_scorecards": {
+    "financial_roi_module": {
+      "metric_evaluated": "Net Direct LLM Token API Billing Avoidance",
+      "verification_method": "Comparison of customer AWS Bedrock / Azure OpenAI invoices against baseline",
+      "reporting_cadence": "Quarterly Ledger Review"
+    },
+    "engineering_velocity_module": {
+      "metric_evaluated": "PR Cycle Time, AST Parse Latency, Resident Memory RSS",
+      "verification_method": "Git repository commit-to-merge telemetry and omnikernel-bench",
+      "reporting_cadence": "Sprint-by-Sprint Health Profile"
+    },
+    "zero_trust_security_module": {
+      "metric_evaluated": "Outbound WAN Sockets, FIPS 140-3 HSM Health, TPM 2.0 PCR Quotes",
+      "verification_method": "In-kernel eBPF packet tracepoint capture and bpftool audit",
+      "reporting_cadence": "Continuous Automated Logging"
+    }
+  },
+  "msa_multi_year_expansion_templates": {
+    "clause_1_term_price_lock": "Licensor freezes annual enterprise site license fees for 36 consecutive months with 15% upfront pre-payment discount.",
+    "clause_2_unlimited_nodes": "Licensee granted right to deploy unlimited developer workstation nodes within designated division.",
+    "clause_3_zero_egress_warranty": "Licensor warrants zero outbound network sockets required on ports 80, 443, or 53.",
+    "clause_4_pqc_resilience": "Licensor warrants all session key exchanges comply with NIST FIPS 203 ML-KEM-768."
+  },
+  "account_health_diagnostic_thresholds": {
+    "ast_parse_latency_red_flag_ms": 5.0,
+    "token_reduction_floor_percentage": 75.0,
+    "maximum_tolerated_false_positives_weekly": 0,
+    "maximum_tolerated_invariant_overrides_weekly": 5
+  },
+  "contact_endpoints": {
+    "customer_success_directorate": "success@devsupersuite.com",
+    "commercial_deal_desk": "sales@devsupersuite.com",
+    "defense_security_operations": "security@devsupersuite.com",
+    "partner_alliances_desk": "alliances@devsupersuite.com",
+    "interactive_sandbox_url": "https://devsupersuite.web.app/#enterprise",
+    "commercial_pro_storefront_lifetime": "https://gumroad.com/l/tlzdco"
+  }
+}

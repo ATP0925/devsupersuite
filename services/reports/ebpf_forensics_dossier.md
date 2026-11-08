@@ -1,7 +1,7 @@
 # DevSuperSuite Tech Services - Real-Time eBPF Forensics & SIEM Dossier
 
 **Document Reference**: `DSS-EBPF-SIEM-2026-V1`  
-**Audit Execution Timestamp**: `2026-11-08 12:01:05 UTC`  
+**Audit Execution Timestamp**: `2026-11-08 12:38:16 UTC`  
 **Classification**: Sovereign Enterprise Kernel Telemetry & Containment (Tier-1 Restricted)  
 **Issuing Authority**: Directorate of QA Automation & Office of the CSCO, DevSuperSuite Official  
 **Contact**: DevSuperSuite Information Security (`infosec@devsupersuite.com`)  
@@ -37,11 +37,11 @@ Compliance Determination:              100% CONTAINMENT VERIFIED
 
 | Event ID | Timestamp (ISO) | Probe Type | Comm / PID | Target Resource | Verdict | Latency (μs) | Forensic SHA-256 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :---: | :--- |
-| `EVT-EBPF-000001` | `2026-11-08T12:01:05.346888+00:00` | `sys_enter_connect` | `mcp-daemon[1042]` | `auth.devsupersuite.io:443` | `ALLOW` | `3.100` | `ceec71a5a3d08c44...` |
-| `EVT-EBPF-000002` | `2026-11-08T12:01:05.347001+00:00` | `sys_enter_connect` | `rogue-payload[3819]` | `198.51.100.23:4444` | **`BLOCK_SIGKILL`** | `4.250` | `ff7caaaa713efb29...` |
-| `EVT-EBPF-000003` | `2026-11-08T12:01:05.347017+00:00` | `sys_enter_execve` | `sh[3820]` | `/usr/bin/nc` | **`BLOCK_SIGKILL`** | `0.510` | `59e3704b4bf7ff34...` |
-| `EVT-EBPF-000004` | `2026-11-08T12:01:05.347029+00:00` | `security_file_open` | `python3[3821]` | `/etc/shadow` | **`BLOCK_SIGKILL`** | `0.600` | `92a6e1b8c38bb0fa...` |
-| `EVT-EBPF-000005` | `2026-11-08T12:01:05.347042+00:00` | `security_file_open` | `ast-parser[2048]` | `/workspace/src/compiler.ts` | `ALLOW` | `2.700` | `2fe279b78ca00f6b...` |
+| `EVT-EBPF-000001` | `2026-11-08T12:38:16.365070+00:00` | `sys_enter_connect` | `mcp-daemon[1042]` | `auth.devsupersuite.io:443` | `ALLOW` | `4.900` | `9a91d5f34b4e0852...` |
+| `EVT-EBPF-000002` | `2026-11-08T12:38:16.365200+00:00` | `sys_enter_connect` | `rogue-payload[3819]` | `198.51.100.23:4444` | **`BLOCK_SIGKILL`** | `4.250` | `e9957d89257494ca...` |
+| `EVT-EBPF-000003` | `2026-11-08T12:38:16.365219+00:00` | `sys_enter_execve` | `sh[3820]` | `/usr/bin/nc` | **`BLOCK_SIGKILL`** | `0.800` | `5e24937f7b762797...` |
+| `EVT-EBPF-000004` | `2026-11-08T12:38:16.365231+00:00` | `security_file_open` | `python3[3821]` | `/etc/shadow` | **`BLOCK_SIGKILL`** | `0.400` | `11a1d956a39366c5...` |
+| `EVT-EBPF-000005` | `2026-11-08T12:38:16.365248+00:00` | `security_file_open` | `ast-parser[2048]` | `/workspace/src/compiler.ts` | `ALLOW` | `3.400` | `e468c8a8636d6836...` |
 
 ---
 
@@ -76,7 +76,7 @@ DevSuperSuite's Enterprise SIEM Exporter dispatches telemetry simultaneously acr
 
 2. **RFC 5424 Syslog Protocol**:
    ```
-   <130>1 2026-11-08T12:01:05.347791+00:00 devsupersuite-node01 ebpf-forensics 3819 EVT-EBPF-000002 [forensics@48577 probe="sys_enter_connect" comm="rogue-payload" target="198.51.100.23:4444" verdict="BLOCK_SIGKILL" latency_us="4.250" hash="..."] Kernel interception: rogue-payload[3819] -> 198.51.100.23:4444 verdict=BLOCK_SIGKILL action=SIGKILL_TRANSMITTED
+   <130>1 2026-11-08T12:38:16.366115+00:00 devsupersuite-node01 ebpf-forensics 3819 EVT-EBPF-000002 [forensics@48577 probe="sys_enter_connect" comm="rogue-payload" target="198.51.100.23:4444" verdict="BLOCK_SIGKILL" latency_us="4.250" hash="..."] Kernel interception: rogue-payload[3819] -> 198.51.100.23:4444 verdict=BLOCK_SIGKILL action=SIGKILL_TRANSMITTED
    ```
 
 3. **High-Fidelity NDJSON**: Formatted directly for Elastic Common Schema (ECS), Splunk HTTP Event Collector (HEC), and Datadog Log API.

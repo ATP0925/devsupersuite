@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "organization": "DevSuperSuite Solutions Architecture / OmniKernel Labs",
+    "contact": "scif@devsupersuite.com",
+    "generated_at": "2026-11-08T12:38:32.436948+00:00",
+    "version": "1.0.0-SOVEREIGN-SCIF"
+  },
+  "appliance": {
+    "model": "DevSuperSuite DiodeTX/RX-10G Simplex Fiber Enclave",
+    "serial_number": "DSS-DIODE-10G-OPT-8839",
+    "chassis": "1U Rackmount Mil-Spec 810H Ruggedized Alloy Chassis",
+    "fiber_interface": "Simplex LC/APC Single-Mode Optical SFP+ (10Gbps)",
+    "laser_emitter": "1310 nm DFB Laser (Class 1 Eye Safe)",
+    "detector": "High-Speed InGaAs PIN Photodiode",
+    "isolation_physics": "Simplex Optical Fiber (Zero Return Glass Strand)",
+    "mtbf_hours": 320000
+  },
+  "transmission_protocol": {
+    "layer_4": "Simplex Non-Routable UDP Framing",
+    "error_correction": "Cauchy Systematic Reed-Solomon FEC over GF(2^8)",
+    "standard_parity_ratio": 0.25,
+    "loss_tolerance_percent": 20.0,
+    "feedback_channel_required": false
+  },
+  "sanitization_engine": {
+    "cdr_stages": [
+      "Path Traversal & Tar-Slip Disarming",
+      "Embedded PE/ELF/Mach-O Binary Header Stripping",
+      "Malicious Polyglot & Null-Byte Neutralization",
+      "Deterministic JSON / YAML Canonicalization",
+      "Python / Rust / C++ AST Syntax Verification"
+    ]
+  },
+  "cryptographic_assurance": {
+    "primary_digest": "NIST SHA3-512 (FIPS 202)",
+    "merkle_tree": "BLAKE3 / BLAKE2b-256 Hierarchical Tree Digest",
+    "provenance_standard": "SLSA Level 3 In-Toto Attestation"
+  }
+}

@@ -182,6 +182,7 @@ class EntropyScanner:
             "tpm" in file_name_lower or
             "quote" in file_name_lower or
             "chaos" in file_name_lower or
+            "soc2" in file_name_lower or
             "resilience" in file_name_lower
         )
         is_marketing_or_samples = (

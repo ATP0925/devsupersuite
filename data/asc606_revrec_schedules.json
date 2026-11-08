@@ -1,6 +1,6 @@
 {
   "binder_id": "DSS-ASC606-2026-REVREC-BINDER",
-  "generation_timestamp": "2026-11-08T12:01:31.502156+00:00",
+  "generation_timestamp": "2026-11-08T12:38:07.322308+00:00",
   "commercial_principal": "DevSuperSuite Tech Services Corporation",
   "treasury_desk": "DevSuperSuite Global Treasury Desk",
   "treasury_email": "treasury@devsupersuite.com",
@@ -13,7 +13,7 @@
     "year_1_deferred_revenue_liability_usd": 49579.09
   },
   "ssp_allocations": {
-    "allocation_timestamp": "2026-11-08T12:01:31.501512+00:00",
+    "allocation_timestamp": "2026-11-08T12:38:07.322055+00:00",
     "accounting_standard": "US GAAP ASC 606 / IFRS 15",
     "allocation_methodology": "Relative Fair Value Standalone Selling Price (SSP)",
     "total_contracts_analyzed": 4,
@@ -199,7 +199,7 @@
     ]
   },
   "monthly_waterfall": {
-    "waterfall_timestamp": "2026-11-08T12:01:31.501740+00:00",
+    "waterfall_timestamp": "2026-11-08T12:38:07.322167+00:00",
     "total_contract_value_usd": 168797.6,
     "max_horizon_months": 36,
     "year_1_recognized_revenue_usd": 119218.51,

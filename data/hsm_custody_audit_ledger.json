@@ -1,0 +1,940 @@
+{
+  "organization": "DevSuperSuite Solutions Architecture / OmniKernel Labs",
+  "contact": "hsm@devsupersuite.com",
+  "created_at": "2026-11-08T12:15:02.929527+00:00",
+  "genesis_hash": "b71d24776d19e553292993cb78d7ac53ed0f3b4f09e529d198432a5a4b95937928c48435534e5500e5ac36f15fa9d4d0c0cd3bb015a8987ba36b747d56fb60f7",
+  "events": [
+    {
+      "entry_id": "HSM-EVT-ACEB86C0",
+      "timestamp": "2026-11-08T12:15:02.932709+00:00",
+      "event_type": "POST_INITIALIZATION_SUCCESS",
+      "operator_role": "SECURITY_OFFICER",
+      "hsm_state": "STATE_OPERATIONAL",
+      "previous_hash": "b71d24776d19e553292993cb78d7ac53ed0f3b4f09e529d198432a5a4b95937928c48435534e5500e5ac36f15fa9d4d0c0cd3bb015a8987ba36b747d56fb60f7",
+      "details": {
+        "post_timestamp": "2026-11-08T12:15:02.930504+00:00",
+        "overall_status": "ALL_KATS_PASSED",
+        "fips_level": "FIPS 140-3 Level 4 Physical Security",
+        "algorithms_verified": {
+          "AES-256-GCM": {
+            "status": "PASS",
+            "vector": "NIST SP 800-38D Case 13"
+          },
+          "SHA3-512": {
+            "status": "PASS",
+            "vector": "NIST FIPS 202 ('abc')"
+          },
+          "Ed25519": {
+            "status": "PASS",
+            "vector": "RFC 8032 Vector 1"
+          },
+          "ML-KEM-1024": {
+            "status": "PASS",
+            "vector": "NIST FIPS 203 Lattice Encapsulation"
+          }
+        }
+      },
+      "entry_hash": "c993c406639921dad167e1b86e96c015c6d194026fc4f26ed69ce5fb655cbb0fa38fa49ccb2c641ecedc8028ec03f64c759d14ca57aec6b59896c19ba066e86d"
+    },
+    {
+      "entry_id": "HSM-EVT-1BD42D3F",
+      "timestamp": "2026-11-08T12:15:07.984524+00:00",
+      "event_type": "SHAMIR_KEY_CEREMONY_COMPLETED",
+      "operator_role": "SECURITY_OFFICER_QUORUM",
+      "hsm_state": "STATE_INITIALIZING",
+      "previous_hash": "c993c406639921dad167e1b86e96c015c6d194026fc4f26ed69ce5fb655cbb0fa38fa49ccb2c641ecedc8028ec03f64c759d14ca57aec6b59896c19ba066e86d",
+      "details": {
+        "ceremony_id": "CEREMONY-C34CB67D",
+        "threshold_m": 3,
+        "total_n": 5,
+        "shares_distributed": 5,
+        "prime_field": "GF(2^256 - 189)",
+        "timestamp": "2026-11-08T12:15:07.984208+00:00"
+      },
+      "entry_hash": "636fc8dce69c4d28ede3e8d115821eb5ad9fc33090d7e6f7c512eaf110160df7ff14b6e23bc776c5aed1ac16d2f6d5269495f2eaaed52a4d58daf6b5fc74c2d2"
+    },
+    {
+      "entry_id": "HSM-EVT-44605315",
+      "timestamp": "2026-11-08T12:15:13.010996+00:00",
+      "event_type": "POST_INITIALIZATION_SUCCESS",
+      "operator_role": "SECURITY_OFFICER",
+      "hsm_state": "STATE_OPERATIONAL",
+      "previous_hash": "636fc8dce69c4d28ede3e8d115821eb5ad9fc33090d7e6f7c512eaf110160df7ff14b6e23bc776c5aed1ac16d2f6d5269495f2eaaed52a4d58daf6b5fc74c2d2",
+      "details": {
+        "post_timestamp": "2026-11-08T12:15:13.007245+00:00",
+        "overall_status": "ALL_KATS_PASSED",
+        "fips_level": "FIPS 140-3 Level 4 Physical Security",
+        "algorithms_verified": {
+          "AES-256-GCM": {
+            "status": "PASS",
+            "vector": "NIST SP 800-38D Case 13"
+          },
+          "SHA3-512": {
+            "status": "PASS",
+            "vector": "NIST FIPS 202 ('abc')"
+          },
+          "Ed25519": {
+            "status": "PASS",
+            "vector": "RFC 8032 Vector 1"
+          },
+          "ML-KEM-1024": {
+            "status": "PASS",
+            "vector": "NIST FIPS 203 Lattice Encapsulation"
+          }
+        }
+      },
+      "entry_hash": "170e13033b0e48c948fb4fb50df540420291cf030a8eb347eef6762d3be06d0d816adc8b75fef1619f32bf21f874cbe87738acde73d230030bc80c75be9f4a80"
+    },
+    {
+      "entry_id": "HSM-EVT-BC7B09B5",
+      "timestamp": "2026-11-08T12:15:13.014228+00:00",
+      "event_type": "TAMPER_DETECTED_ATOMIC_ZEROIZATION",
+      "operator_role": "ACTIVE_TAMPER_CIRCUIT",
+      "hsm_state": "STATE_TAMPER_ZEROIZED",
+      "previous_hash": "170e13033b0e48c948fb4fb50df540420291cf030a8eb347eef6762d3be06d0d816adc8b75fef1619f32bf21f874cbe87738acde73d230030bc80c75be9f4a80",
+      "details": {
+        "status": "ATOMIC_ZEROIZATION_COMPLETE",
+        "state": "STATE_TAMPER_ZEROIZED",
+        "zeroization_time_nanoseconds": 11900.0,
+        "within_50ns_sla": false,
+        "cause": "CHASSIS_MICRO_SWITCH_INTRUSION",
+        "timestamp": "2026-11-08T12:15:13.013958+00:00"
+      },
+      "entry_hash": "2a5698560ade52dc02db0db269a2fb0242c2514c899d642641d10095c1223422e3c7a5afbb0a9f519a7e9b6c943ef8d9d346a6bb85332783a4e6021523f49e07"
+    },
+    {
+      "entry_id": "HSM-EVT-97418B62",
+      "timestamp": "2026-11-08T12:15:28.964755+00:00",
+      "event_type": "POST_INITIALIZATION_SUCCESS",
+      "operator_role": "SECURITY_OFFICER",
+      "hsm_state": "STATE_OPERATIONAL",
+      "previous_hash": "2a5698560ade52dc02db0db269a2fb0242c2514c899d642641d10095c1223422e3c7a5afbb0a9f519a7e9b6c943ef8d9d346a6bb85332783a4e6021523f49e07",
+      "details": {
+        "post_timestamp": "2026-11-08T12:15:28.961953+00:00",
+        "overall_status": "ALL_KATS_PASSED",
+        "fips_level": "FIPS 140-3 Level 4 Physical Security",
+        "algorithms_verified": {
+          "AES-256-GCM": {
+            "status": "PASS",
+            "vector": "NIST SP 800-38D Case 13"
+          },
+          "SHA3-512": {
+            "status": "PASS",
+            "vector": "NIST FIPS 202 ('abc')"
+          },
+          "Ed25519": {
+            "status": "PASS",
+            "vector": "RFC 8032 Vector 1"
+          },
+          "ML-KEM-1024": {
+            "status": "PASS",
+            "vector": "NIST FIPS 203 Lattice Encapsulation"
+          }
+        }
+      },
+      "entry_hash": "a80c887d472732f379aaa7a2d5161ca99a56ec2dbc67d694a2f5321c9ada033cb8b69d275ebca304bebac0fee04e7961e8a09d51fc51558561e27c54fe8157dd"
+    },
+    {
+      "entry_id": "HSM-EVT-144A68B0",
+      "timestamp": "2026-11-08T12:15:28.967415+00:00",
+      "event_type": "TAMPER_DETECTED_ATOMIC_ZEROIZATION",
+      "operator_role": "ACTIVE_TAMPER_CIRCUIT",
+      "hsm_state": "STATE_TAMPER_ZEROIZED",
+      "previous_hash": "a80c887d472732f379aaa7a2d5161ca99a56ec2dbc67d694a2f5321c9ada033cb8b69d275ebca304bebac0fee04e7961e8a09d51fc51558561e27c54fe8157dd",
+      "details": {
+        "status": "ATOMIC_ZEROIZATION_COMPLETE",
+        "state": "STATE_TAMPER_ZEROIZED",
+        "zeroization_time_nanoseconds": 38.7,
+        "within_50ns_sla": true,
+        "cause": "CHASSIS_MICRO_SWITCH_INTRUSION",
+        "timestamp": "2026-11-08T12:15:28.967210+00:00"
+      },
+      "entry_hash": "161ee95dff5ec4d0e798de4c8fabf8dad1b979f626b063de817d772b675b15bbe8f9a4ea8d5b1ddb9f52ac37a175668c9716c2f52ea2a901596b4cb761bff87c"
+    },
+    {
+      "entry_id": "HSM-EVT-6428889D",
+      "timestamp": "2026-11-08T12:16:26.562019+00:00",
+      "event_type": "POST_INITIALIZATION_SUCCESS",
+      "operator_role": "SECURITY_OFFICER",
+      "hsm_state": "STATE_OPERATIONAL",
+      "previous_hash": "161ee95dff5ec4d0e798de4c8fabf8dad1b979f626b063de817d772b675b15bbe8f9a4ea8d5b1ddb9f52ac37a175668c9716c2f52ea2a901596b4cb761bff87c",
+      "details": {
+        "post_timestamp": "2026-11-08T12:16:26.559973+00:00",
+        "overall_status": "ALL_KATS_PASSED",
+        "fips_level": "FIPS 140-3 Level 4 Physical Security",
+        "algorithms_verified": {
+          "AES-256-GCM": {
+            "status": "PASS",
+            "vector": "NIST SP 800-38D Case 13"
+          },
+          "SHA3-512": {
+            "status": "PASS",
+            "vector": "NIST FIPS 202 ('abc')"
+          },
+          "Ed25519": {
+            "status": "PASS",
+            "vector": "RFC 8032 Vector 1"
+          },
+          "ML-KEM-1024": {
+            "status": "PASS",
+            "vector": "NIST FIPS 203 Lattice Encapsulation"
+          }
+        }
+      },
+      "entry_hash": "e6942ddcc967739643f1e96599fa92a963f9b3e720563d0f8591b9dde0e2cee9705eefcde885d849c1fd0b068092c1c6a96f5b1098e0a52dfce57ff53ebc33ba"
+    },
+    {
+      "entry_id": "HSM-EVT-F4F787C2",
+      "timestamp": "2026-11-08T12:16:26.714447+00:00",
+      "event_type": "SHAMIR_KEY_CEREMONY_COMPLETED",
+      "operator_role": "SECURITY_OFFICER_QUORUM",
+      "hsm_state": "STATE_INITIALIZING",
+      "previous_hash": "e6942ddcc967739643f1e96599fa92a963f9b3e720563d0f8591b9dde0e2cee9705eefcde885d849c1fd0b068092c1c6a96f5b1098e0a52dfce57ff53ebc33ba",
+      "details": {
+        "ceremony_id": "CEREMONY-7DF291F3",
+        "threshold_m": 3,
+        "total_n": 5,
+        "shares_distributed": 5,
+        "prime_field": "GF(2^256 - 189)",
+        "timestamp": "2026-11-08T12:16:26.714056+00:00"
+      },
+      "entry_hash": "77d06142ac45c59270cff0d344b81699aa02532a7fd50e7c9c73923c3b1386bbb4b39fb0fe703cff1819a78cb83447c33be7f1ff668ac2a3f327159eef5e0d82"
+    },
+    {
+      "entry_id": "HSM-EVT-E3A65264",
+      "timestamp": "2026-11-08T12:16:26.885585+00:00",
+      "event_type": "POST_INITIALIZATION_SUCCESS",
+      "operator_role": "SECURITY_OFFICER",
+      "hsm_state": "STATE_OPERATIONAL",
+      "previous_hash": "77d06142ac45c59270cff0d344b81699aa02532a7fd50e7c9c73923c3b1386bbb4b39fb0fe703cff1819a78cb83447c33be7f1ff668ac2a3f327159eef5e0d82",
+      "details": {
+        "post_timestamp": "2026-11-08T12:16:26.882907+00:00",
+        "overall_status": "ALL_KATS_PASSED",
+        "fips_level": "FIPS 140-3 Level 4 Physical Security",
+        "algorithms_verified": {
+          "AES-256-GCM": {
+            "status": "PASS",
+            "vector": "NIST SP 800-38D Case 13"
+          },
+          "SHA3-512": {
+            "status": "PASS",
+            "vector": "NIST FIPS 202 ('abc')"
+          },
+          "Ed25519": {
+            "status": "PASS",
+            "vector": "RFC 8032 Vector 1"
+          },
+          "ML-KEM-1024": {
+            "status": "PASS",
+            "vector": "NIST FIPS 203 Lattice Encapsulation"
+          }
+        }
+      },
+      "entry_hash": "0cb0ce3d5a37eea18423f69b7881c7b40b145d4459fea62ae4358cfa7527134f4cc2054fe1e3e8eacc340c8109d76bfac45a25a7f8a8adc9f0e3d89d9a60b5fa"
+    },
+    {
+      "entry_id": "HSM-EVT-BAFC076D",
+      "timestamp": "2026-11-08T12:16:26.888374+00:00",
+      "event_type": "TAMPER_DETECTED_ATOMIC_ZEROIZATION",
+      "operator_role": "ACTIVE_TAMPER_CIRCUIT",
+      "hsm_state": "STATE_TAMPER_ZEROIZED",
+      "previous_hash": "0cb0ce3d5a37eea18423f69b7881c7b40b145d4459fea62ae4358cfa7527134f4cc2054fe1e3e8eacc340c8109d76bfac45a25a7f8a8adc9f0e3d89d9a60b5fa",
+      "details": {
+        "status": "ATOMIC_ZEROIZATION_COMPLETE",
+        "state": "STATE_TAMPER_ZEROIZED",
+        "zeroization_time_nanoseconds": 39.2,
+        "within_50ns_sla": true,
+        "cause": "CHASSIS_MICRO_SWITCH_INTRUSION",
+        "timestamp": "2026-11-08T12:16:26.888133+00:00"
+      },
+      "entry_hash": "48f6672661dfd7981c4a1f6fe419ef34b1516fb688c27f03bfebf39e93504790ce897808bd6b392e45407595a37ed42797afa5bfae1ae8b3a5d50ba99311ebbf"
+    },
+    {
+      "entry_id": "HSM-EVT-BC032D36",
+      "timestamp": "2026-11-08T12:16:40.834553+00:00",
+      "event_type": "POST_INITIALIZATION_SUCCESS",
+      "operator_role": "SECURITY_OFFICER",
+      "hsm_state": "STATE_OPERATIONAL",
+      "previous_hash": "48f6672661dfd7981c4a1f6fe419ef34b1516fb688c27f03bfebf39e93504790ce897808bd6b392e45407595a37ed42797afa5bfae1ae8b3a5d50ba99311ebbf",
+      "details": {
+        "post_timestamp": "2026-11-08T12:16:40.830878+00:00",
+        "overall_status": "ALL_KATS_PASSED",
+        "fips_level": "FIPS 140-3 Level 4 Physical Security",
+        "algorithms_verified": {
+          "AES-256-GCM": {
+            "status": "PASS",
+            "vector": "NIST SP 800-38D Case 13"
+          },
+          "SHA3-512": {
+            "status": "PASS",
+            "vector": "NIST FIPS 202 ('abc')"
+          },
+          "Ed25519": {
+            "status": "PASS",
+            "vector": "RFC 8032 Vector 1"
+          },
+          "ML-KEM-1024": {
+            "status": "PASS",
+            "vector": "NIST FIPS 203 Lattice Encapsulation"
+          }
+        }
+      },
+      "entry_hash": "ebc6a229c8f86b6ddd7db200f04dab0b7e8018236f2e8c9c2f0e26c1c06a6bba69675cd86d34c4a0dd389bf905c3cbf3400ce8c1e0b192cb5ebca3eedbd6a887"
+    },
+    {
+      "entry_id": "HSM-EVT-88ED1817",
+      "timestamp": "2026-11-08T12:16:41.009991+00:00",
+      "event_type": "SHAMIR_KEY_CEREMONY_COMPLETED",
+      "operator_role": "SECURITY_OFFICER_QUORUM",
+      "hsm_state": "STATE_INITIALIZING",
+      "previous_hash": "ebc6a229c8f86b6ddd7db200f04dab0b7e8018236f2e8c9c2f0e26c1c06a6bba69675cd86d34c4a0dd389bf905c3cbf3400ce8c1e0b192cb5ebca3eedbd6a887",
+      "details": {
+        "ceremony_id": "CEREMONY-98BBA499",
+        "threshold_m": 3,
+        "total_n": 5,
+        "shares_distributed": 5,
+        "prime_field": "GF(2^256 - 189)",
+        "timestamp": "2026-11-08T12:16:41.009430+00:00"
+      },
+      "entry_hash": "02ec5f02cbe62d42226b390311e9469a1238191dbaa09ea9fea3fee1be120208b5fc49961a53591510ec98ae5e5abfd7947738b403aeb845c7f0424d3311eec5"
+    },
+    {
+      "entry_id": "HSM-EVT-0B5C381C",
+      "timestamp": "2026-11-08T12:16:41.169909+00:00",
+      "event_type": "POST_INITIALIZATION_SUCCESS",
+      "operator_role": "SECURITY_OFFICER",
+      "hsm_state": "STATE_OPERATIONAL",
+      "previous_hash": "02ec5f02cbe62d42226b390311e9469a1238191dbaa09ea9fea3fee1be120208b5fc49961a53591510ec98ae5e5abfd7947738b403aeb845c7f0424d3311eec5",
+      "details": {
+        "post_timestamp": "2026-11-08T12:16:41.167913+00:00",
+        "overall_status": "ALL_KATS_PASSED",
+        "fips_level": "FIPS 140-3 Level 4 Physical Security",
+        "algorithms_verified": {
+          "AES-256-GCM": {
+            "status": "PASS",
+            "vector": "NIST SP 800-38D Case 13"
+          },
+          "SHA3-512": {
+            "status": "PASS",
+            "vector": "NIST FIPS 202 ('abc')"
+          },
+          "Ed25519": {
+            "status": "PASS",
+            "vector": "RFC 8032 Vector 1"
+          },
+          "ML-KEM-1024": {
+            "status": "PASS",
+            "vector": "NIST FIPS 203 Lattice Encapsulation"
+          }
+        }
+      },
+      "entry_hash": "8aba28db5152d2f07d8f76b65baa51694bea16a7a909de7f4ef39e5b6337bda4d313a84fd9eb8745267fffb8912f48c426c0909c1d738d3c6f06b70b10a3ac7c"
+    },
+    {
+      "entry_id": "HSM-EVT-F7CB8B87",
+      "timestamp": "2026-11-08T12:16:41.174511+00:00",
+      "event_type": "TAMPER_DETECTED_ATOMIC_ZEROIZATION",
+      "operator_role": "ACTIVE_TAMPER_CIRCUIT",
+      "hsm_state": "STATE_TAMPER_ZEROIZED",
+      "previous_hash": "8aba28db5152d2f07d8f76b65baa51694bea16a7a909de7f4ef39e5b6337bda4d313a84fd9eb8745267fffb8912f48c426c0909c1d738d3c6f06b70b10a3ac7c",
+      "details": {
+        "status": "ATOMIC_ZEROIZATION_COMPLETE",
+        "state": "STATE_TAMPER_ZEROIZED",
+        "zeroization_time_nanoseconds": 32.9,
+        "within_50ns_sla": true,
+        "cause": "CHASSIS_MICRO_SWITCH_INTRUSION",
+        "timestamp": "2026-11-08T12:16:41.174023+00:00"
+      },
+      "entry_hash": "9b57a4d112eecad775097da3a3723d4c59b6c3cee95672a3e8a754bece64633881b11760da7404340c9f3f6c4b2e21fbee264f10e9191448b4f643eb3ceee326"
+    },
+    {
+      "entry_id": "HSM-EVT-48AAC50C",
+      "timestamp": "2026-11-08T12:16:46.935293+00:00",
+      "event_type": "POST_INITIALIZATION_SUCCESS",
+      "operator_role": "SECURITY_OFFICER",
+      "hsm_state": "STATE_OPERATIONAL",
+      "previous_hash": "9b57a4d112eecad775097da3a3723d4c59b6c3cee95672a3e8a754bece64633881b11760da7404340c9f3f6c4b2e21fbee264f10e9191448b4f643eb3ceee326",
+      "details": {
+        "post_timestamp": "2026-11-08T12:16:46.932356+00:00",
+        "overall_status": "ALL_KATS_PASSED",
+        "fips_level": "FIPS 140-3 Level 4 Physical Security",
+        "algorithms_verified": {
+          "AES-256-GCM": {
+            "status": "PASS",
+            "vector": "NIST SP 800-38D Case 13"
+          },
+          "SHA3-512": {
+            "status": "PASS",
+            "vector": "NIST FIPS 202 ('abc')"
+          },
+          "Ed25519": {
+            "status": "PASS",
+            "vector": "RFC 8032 Vector 1"
+          },
+          "ML-KEM-1024": {
+            "status": "PASS",
+            "vector": "NIST FIPS 203 Lattice Encapsulation"
+          }
+        }
+      },
+      "entry_hash": "17305ff9c501144a6c1d34f11da510bbb69eb12e670a06344eb2ca8e264a9739cf72b8b988d3124e3fc812f3497f68b324f217a57552d036a23a69f236c83815"
+    },
+    {
+      "entry_id": "HSM-EVT-DE1C6886",
+      "timestamp": "2026-11-08T12:16:47.104657+00:00",
+      "event_type": "SHAMIR_KEY_CEREMONY_COMPLETED",
+      "operator_role": "SECURITY_OFFICER_QUORUM",
+      "hsm_state": "STATE_INITIALIZING",
+      "previous_hash": "17305ff9c501144a6c1d34f11da510bbb69eb12e670a06344eb2ca8e264a9739cf72b8b988d3124e3fc812f3497f68b324f217a57552d036a23a69f236c83815",
+      "details": {
+        "ceremony_id": "CEREMONY-E169CDAE",
+        "threshold_m": 3,
+        "total_n": 5,
+        "shares_distributed": 5,
+        "prime_field": "GF(2^256 - 189)",
+        "timestamp": "2026-11-08T12:16:47.104150+00:00"
+      },
+      "entry_hash": "7f3ff492904701f745fdb8746926c866753f8cad83c1bd47ac731e90b0bc622ab14bfe49f45ed663172d026381c7f85b78e0c3d276e1120f24a5358f6d8c1c30"
+    },
+    {
+      "entry_id": "HSM-EVT-E4A3C703",
+      "timestamp": "2026-11-08T12:16:47.254321+00:00",
+      "event_type": "POST_INITIALIZATION_SUCCESS",
+      "operator_role": "SECURITY_OFFICER",
+      "hsm_state": "STATE_OPERATIONAL",
+      "previous_hash": "7f3ff492904701f745fdb8746926c866753f8cad83c1bd47ac731e90b0bc622ab14bfe49f45ed663172d026381c7f85b78e0c3d276e1120f24a5358f6d8c1c30",
+      "details": {
+        "post_timestamp": "2026-11-08T12:16:47.252092+00:00",
+        "overall_status": "ALL_KATS_PASSED",
+        "fips_level": "FIPS 140-3 Level 4 Physical Security",
+        "algorithms_verified": {
+          "AES-256-GCM": {
+            "status": "PASS",
+            "vector": "NIST SP 800-38D Case 13"
+          },
+          "SHA3-512": {
+            "status": "PASS",
+            "vector": "NIST FIPS 202 ('abc')"
+          },
+          "Ed25519": {
+            "status": "PASS",
+            "vector": "RFC 8032 Vector 1"
+          },
+          "ML-KEM-1024": {
+            "status": "PASS",
+            "vector": "NIST FIPS 203 Lattice Encapsulation"
+          }
+        }
+      },
+      "entry_hash": "a50eff20b2db239464740c8d271c65c65ae428c8bf0e85e98a0886cedc2a4291e862b34a4567161eab509a431766928b8a36252ba5b71785a5617e77058a48d8"
+    },
+    {
+      "entry_id": "HSM-EVT-741739F9",
+      "timestamp": "2026-11-08T12:16:47.257794+00:00",
+      "event_type": "TAMPER_DETECTED_ATOMIC_ZEROIZATION",
+      "operator_role": "ACTIVE_TAMPER_CIRCUIT",
+      "hsm_state": "STATE_TAMPER_ZEROIZED",
+      "previous_hash": "a50eff20b2db239464740c8d271c65c65ae428c8bf0e85e98a0886cedc2a4291e862b34a4567161eab509a431766928b8a36252ba5b71785a5617e77058a48d8",
+      "details": {
+        "status": "ATOMIC_ZEROIZATION_COMPLETE",
+        "state": "STATE_TAMPER_ZEROIZED",
+        "zeroization_time_nanoseconds": 30.3,
+        "within_50ns_sla": true,
+        "cause": "CHASSIS_MICRO_SWITCH_INTRUSION",
+        "timestamp": "2026-11-08T12:16:47.257235+00:00"
+      },
+      "entry_hash": "e540c344c76d2c4f432606501f2ff21fe69b95fa31e6191e0a6e5f92c8f7b52ed0eb6d4a44f3c290255c3c6649b01b04fa81b1bfdef0946e0a7254469700fff4"
+    },
+    {
+      "entry_id": "HSM-EVT-C98FCB48",
+      "timestamp": "2026-11-08T12:17:47.470379+00:00",
+      "event_type": "POST_INITIALIZATION_SUCCESS",
+      "operator_role": "SECURITY_OFFICER",
+      "hsm_state": "STATE_OPERATIONAL",
+      "previous_hash": "e540c344c76d2c4f432606501f2ff21fe69b95fa31e6191e0a6e5f92c8f7b52ed0eb6d4a44f3c290255c3c6649b01b04fa81b1bfdef0946e0a7254469700fff4",
+      "details": {
+        "post_timestamp": "2026-11-08T12:17:47.467950+00:00",
+        "overall_status": "ALL_KATS_PASSED",
+        "fips_level": "FIPS 140-3 Level 4 Physical Security",
+        "algorithms_verified": {
+          "AES-256-GCM": {
+            "status": "PASS",
+            "vector": "NIST SP 800-38D Case 13"
+          },
+          "SHA3-512": {
+            "status": "PASS",
+            "vector": "NIST FIPS 202 ('abc')"
+          },
+          "Ed25519": {
+            "status": "PASS",
+            "vector": "RFC 8032 Vector 1"
+          },
+          "ML-KEM-1024": {
+            "status": "PASS",
+            "vector": "NIST FIPS 203 Lattice Encapsulation"
+          }
+        }
+      },
+      "entry_hash": "ec4cc50c95f49890e023eccfe3850fdd5be4050190adb9b587212ba037a8913aedeff633aebf6627ade768c46f293358683167fed5bb16fff9be92493d391620"
+    },
+    {
+      "entry_id": "HSM-EVT-1CC54BAD",
+      "timestamp": "2026-11-08T12:17:47.587429+00:00",
+      "event_type": "SHAMIR_KEY_CEREMONY_COMPLETED",
+      "operator_role": "SECURITY_OFFICER_QUORUM",
+      "hsm_state": "STATE_INITIALIZING",
+      "previous_hash": "ec4cc50c95f49890e023eccfe3850fdd5be4050190adb9b587212ba037a8913aedeff633aebf6627ade768c46f293358683167fed5bb16fff9be92493d391620",
+      "details": {
+        "ceremony_id": "CEREMONY-D661B5E3",
+        "threshold_m": 3,
+        "total_n": 5,
+        "shares_distributed": 5,
+        "prime_field": "GF(2^256 - 189)",
+        "timestamp": "2026-11-08T12:17:47.587101+00:00"
+      },
+      "entry_hash": "312c185744c4586ef9c4266a25c280efd102d0260bb6cef0b0d81c8c947f2326ea147ec956f11ae031df04780b9804aa005ee8ce73f0feb1d96ed0e9a53969bc"
+    },
+    {
+      "entry_id": "HSM-EVT-3B08A90F",
+      "timestamp": "2026-11-08T12:17:47.707985+00:00",
+      "event_type": "POST_INITIALIZATION_SUCCESS",
+      "operator_role": "SECURITY_OFFICER",
+      "hsm_state": "STATE_OPERATIONAL",
+      "previous_hash": "312c185744c4586ef9c4266a25c280efd102d0260bb6cef0b0d81c8c947f2326ea147ec956f11ae031df04780b9804aa005ee8ce73f0feb1d96ed0e9a53969bc",
+      "details": {
+        "post_timestamp": "2026-11-08T12:17:47.705753+00:00",
+        "overall_status": "ALL_KATS_PASSED",
+        "fips_level": "FIPS 140-3 Level 4 Physical Security",
+        "algorithms_verified": {
+          "AES-256-GCM": {
+            "status": "PASS",
+            "vector": "NIST SP 800-38D Case 13"
+          },
+          "SHA3-512": {
+            "status": "PASS",
+            "vector": "NIST FIPS 202 ('abc')"
+          },
+          "Ed25519": {
+            "status": "PASS",
+            "vector": "RFC 8032 Vector 1"
+          },
+          "ML-KEM-1024": {
+            "status": "PASS",
+            "vector": "NIST FIPS 203 Lattice Encapsulation"
+          }
+        }
+      },
+      "entry_hash": "a7ce56d55c72c12cffa1ae5121b184bd5b6d3c22f939e449d7f97ebaf11d01d3b511ba74a4a1af5dbb501ff9842c720ede9f563f1b2e56a1d95433858e57c057"
+    },
+    {
+      "entry_id": "HSM-EVT-CFB8BD8A",
+      "timestamp": "2026-11-08T12:17:47.711350+00:00",
+      "event_type": "TAMPER_DETECTED_ATOMIC_ZEROIZATION",
+      "operator_role": "ACTIVE_TAMPER_CIRCUIT",
+      "hsm_state": "STATE_TAMPER_ZEROIZED",
+      "previous_hash": "a7ce56d55c72c12cffa1ae5121b184bd5b6d3c22f939e449d7f97ebaf11d01d3b511ba74a4a1af5dbb501ff9842c720ede9f563f1b2e56a1d95433858e57c057",
+      "details": {
+        "status": "ATOMIC_ZEROIZATION_COMPLETE",
+        "state": "STATE_TAMPER_ZEROIZED",
+        "zeroization_time_nanoseconds": 32.6,
+        "within_50ns_sla": true,
+        "cause": "CHASSIS_MICRO_SWITCH_INTRUSION",
+        "timestamp": "2026-11-08T12:17:47.711017+00:00"
+      },
+      "entry_hash": "496a8c60a4817f46039fb02e7bf9f52c76dc6baade87fde42989ab7964c4546aaf37e73694a0e2085f655570283919168d3ea86520f4cdcfebc775f57392c97c"
+    },
+    {
+      "entry_id": "HSM-EVT-E6A8C20C",
+      "timestamp": "2026-11-08T12:18:54.237904+00:00",
+      "event_type": "POST_INITIALIZATION_SUCCESS",
+      "operator_role": "SECURITY_OFFICER",
+      "hsm_state": "STATE_OPERATIONAL",
+      "previous_hash": "496a8c60a4817f46039fb02e7bf9f52c76dc6baade87fde42989ab7964c4546aaf37e73694a0e2085f655570283919168d3ea86520f4cdcfebc775f57392c97c",
+      "details": {
+        "post_timestamp": "2026-11-08T12:18:54.234441+00:00",
+        "overall_status": "ALL_KATS_PASSED",
+        "fips_level": "FIPS 140-3 Level 4 Physical Security",
+        "algorithms_verified": {
+          "AES-256-GCM": {
+            "status": "PASS",
+            "vector": "NIST SP 800-38D Case 13"
+          },
+          "SHA3-512": {
+            "status": "PASS",
+            "vector": "NIST FIPS 202 ('abc')"
+          },
+          "Ed25519": {
+            "status": "PASS",
+            "vector": "RFC 8032 Vector 1"
+          },
+          "ML-KEM-1024": {
+            "status": "PASS",
+            "vector": "NIST FIPS 203 Lattice Encapsulation"
+          }
+        }
+      },
+      "entry_hash": "3659920456b24fe15cdd8e41c3212d8b3f13638f7ef5bdbeff06419c13826f19d9b0793f6eac9ff2ec35637ff2411809e468f006dd645e3bc2fcd3aae883411b"
+    },
+    {
+      "entry_id": "HSM-EVT-4D9E4BCC",
+      "timestamp": "2026-11-08T12:18:54.397239+00:00",
+      "event_type": "SHAMIR_KEY_CEREMONY_COMPLETED",
+      "operator_role": "SECURITY_OFFICER_QUORUM",
+      "hsm_state": "STATE_INITIALIZING",
+      "previous_hash": "3659920456b24fe15cdd8e41c3212d8b3f13638f7ef5bdbeff06419c13826f19d9b0793f6eac9ff2ec35637ff2411809e468f006dd645e3bc2fcd3aae883411b",
+      "details": {
+        "ceremony_id": "CEREMONY-D2B2D673",
+        "threshold_m": 3,
+        "total_n": 5,
+        "shares_distributed": 5,
+        "prime_field": "GF(2^256 - 189)",
+        "timestamp": "2026-11-08T12:18:54.396641+00:00"
+      },
+      "entry_hash": "44b6c89eb53188450a1a0ba8d6e21b7918bf6a576ec03b75109efd29e90feea3157f8646daace3b26668a66e0b07c51dd6a99002f779931bc1986501b78ee05e"
+    },
+    {
+      "entry_id": "HSM-EVT-06558580",
+      "timestamp": "2026-11-08T12:18:54.558795+00:00",
+      "event_type": "POST_INITIALIZATION_SUCCESS",
+      "operator_role": "SECURITY_OFFICER",
+      "hsm_state": "STATE_OPERATIONAL",
+      "previous_hash": "44b6c89eb53188450a1a0ba8d6e21b7918bf6a576ec03b75109efd29e90feea3157f8646daace3b26668a66e0b07c51dd6a99002f779931bc1986501b78ee05e",
+      "details": {
+        "post_timestamp": "2026-11-08T12:18:54.555820+00:00",
+        "overall_status": "ALL_KATS_PASSED",
+        "fips_level": "FIPS 140-3 Level 4 Physical Security",
+        "algorithms_verified": {
+          "AES-256-GCM": {
+            "status": "PASS",
+            "vector": "NIST SP 800-38D Case 13"
+          },
+          "SHA3-512": {
+            "status": "PASS",
+            "vector": "NIST FIPS 202 ('abc')"
+          },
+          "Ed25519": {
+            "status": "PASS",
+            "vector": "RFC 8032 Vector 1"
+          },
+          "ML-KEM-1024": {
+            "status": "PASS",
+            "vector": "NIST FIPS 203 Lattice Encapsulation"
+          }
+        }
+      },
+      "entry_hash": "94d5b93d06af7f27f84cc074712edf4b416976abc7bc8e037ece45fe8db3f021216613ad1e5afd2032031ad7c7b8136fa68bc5f33cd6afa98381b585f1b1644e"
+    },
+    {
+      "entry_id": "HSM-EVT-328BEF3A",
+      "timestamp": "2026-11-08T12:18:54.564083+00:00",
+      "event_type": "TAMPER_DETECTED_ATOMIC_ZEROIZATION",
+      "operator_role": "ACTIVE_TAMPER_CIRCUIT",
+      "hsm_state": "STATE_TAMPER_ZEROIZED",
+      "previous_hash": "94d5b93d06af7f27f84cc074712edf4b416976abc7bc8e037ece45fe8db3f021216613ad1e5afd2032031ad7c7b8136fa68bc5f33cd6afa98381b585f1b1644e",
+      "details": {
+        "status": "ATOMIC_ZEROIZATION_COMPLETE",
+        "state": "STATE_TAMPER_ZEROIZED",
+        "zeroization_time_nanoseconds": 31.0,
+        "within_50ns_sla": true,
+        "cause": "CHASSIS_MICRO_SWITCH_INTRUSION",
+        "timestamp": "2026-11-08T12:18:54.563467+00:00"
+      },
+      "entry_hash": "2bce9b5579e4b6fdf34c126d8bc51cd65badf107e6cd377815e2332742150ce41e2a3f1fd94ac25296b46c32037758030f3764ee053aaec62d267e7a53e3765b"
+    },
+    {
+      "entry_id": "HSM-EVT-0F83A027",
+      "timestamp": "2026-11-08T12:22:00.101861+00:00",
+      "event_type": "POST_INITIALIZATION_SUCCESS",
+      "operator_role": "SECURITY_OFFICER",
+      "hsm_state": "STATE_OPERATIONAL",
+      "previous_hash": "2bce9b5579e4b6fdf34c126d8bc51cd65badf107e6cd377815e2332742150ce41e2a3f1fd94ac25296b46c32037758030f3764ee053aaec62d267e7a53e3765b",
+      "details": {
+        "post_timestamp": "2026-11-08T12:22:00.099899+00:00",
+        "overall_status": "ALL_KATS_PASSED",
+        "fips_level": "FIPS 140-3 Level 4 Physical Security",
+        "algorithms_verified": {
+          "AES-256-GCM": {
+            "status": "PASS",
+            "vector": "NIST SP 800-38D Case 13"
+          },
+          "SHA3-512": {
+            "status": "PASS",
+            "vector": "NIST FIPS 202 ('abc')"
+          },
+          "Ed25519": {
+            "status": "PASS",
+            "vector": "RFC 8032 Vector 1"
+          },
+          "ML-KEM-1024": {
+            "status": "PASS",
+            "vector": "NIST FIPS 203 Lattice Encapsulation"
+          }
+        }
+      },
+      "entry_hash": "de911df3d47b19e260382ec799dd81df35b042a1e74179b91867e04a6195cb29a338603a9f9ee76ae0fbb3ded0f9ef58390eae9337c8220a7adf46b8fbcc9982"
+    },
+    {
+      "entry_id": "HSM-EVT-017C114B",
+      "timestamp": "2026-11-08T12:22:00.211097+00:00",
+      "event_type": "SHAMIR_KEY_CEREMONY_COMPLETED",
+      "operator_role": "SECURITY_OFFICER_QUORUM",
+      "hsm_state": "STATE_INITIALIZING",
+      "previous_hash": "de911df3d47b19e260382ec799dd81df35b042a1e74179b91867e04a6195cb29a338603a9f9ee76ae0fbb3ded0f9ef58390eae9337c8220a7adf46b8fbcc9982",
+      "details": {
+        "ceremony_id": "CEREMONY-74A13960",
+        "threshold_m": 3,
+        "total_n": 5,
+        "shares_distributed": 5,
+        "prime_field": "GF(2^256 - 189)",
+        "timestamp": "2026-11-08T12:22:00.210755+00:00"
+      },
+      "entry_hash": "bf42ff3efe86b798cddc99a48470f2d9aa98885fb4c4f981680bf14163a956842fa272c311a5310f96d140daabead60e6c649b90d20f5da495e72a8de965eed4"
+    },
+    {
+      "entry_id": "HSM-EVT-02EA06C9",
+      "timestamp": "2026-11-08T12:22:00.322417+00:00",
+      "event_type": "POST_INITIALIZATION_SUCCESS",
+      "operator_role": "SECURITY_OFFICER",
+      "hsm_state": "STATE_OPERATIONAL",
+      "previous_hash": "bf42ff3efe86b798cddc99a48470f2d9aa98885fb4c4f981680bf14163a956842fa272c311a5310f96d140daabead60e6c649b90d20f5da495e72a8de965eed4",
+      "details": {
+        "post_timestamp": "2026-11-08T12:22:00.320447+00:00",
+        "overall_status": "ALL_KATS_PASSED",
+        "fips_level": "FIPS 140-3 Level 4 Physical Security",
+        "algorithms_verified": {
+          "AES-256-GCM": {
+            "status": "PASS",
+            "vector": "NIST SP 800-38D Case 13"
+          },
+          "SHA3-512": {
+            "status": "PASS",
+            "vector": "NIST FIPS 202 ('abc')"
+          },
+          "Ed25519": {
+            "status": "PASS",
+            "vector": "RFC 8032 Vector 1"
+          },
+          "ML-KEM-1024": {
+            "status": "PASS",
+            "vector": "NIST FIPS 203 Lattice Encapsulation"
+          }
+        }
+      },
+      "entry_hash": "ea0aae0078917d5ff1978334e86b12ab631ed09f705f1db11c8f76bfece51e86ae29c44ce85556ddd2e79ad26f1ac21b128381ed4f92a27b783deaa01d4560c7"
+    },
+    {
+      "entry_id": "HSM-EVT-46B81BA1",
+      "timestamp": "2026-11-08T12:22:00.326432+00:00",
+      "event_type": "TAMPER_DETECTED_ATOMIC_ZEROIZATION",
+      "operator_role": "ACTIVE_TAMPER_CIRCUIT",
+      "hsm_state": "STATE_TAMPER_ZEROIZED",
+      "previous_hash": "ea0aae0078917d5ff1978334e86b12ab631ed09f705f1db11c8f76bfece51e86ae29c44ce85556ddd2e79ad26f1ac21b128381ed4f92a27b783deaa01d4560c7",
+      "details": {
+        "status": "ATOMIC_ZEROIZATION_COMPLETE",
+        "state": "STATE_TAMPER_ZEROIZED",
+        "zeroization_time_nanoseconds": 37.3,
+        "within_50ns_sla": true,
+        "cause": "CHASSIS_MICRO_SWITCH_INTRUSION",
+        "timestamp": "2026-11-08T12:22:00.325560+00:00"
+      },
+      "entry_hash": "ef20b7b807ec4bba67abfecfc7d4e3a2af71c4f72376c6781c934c1652c41ab0954c967503eef01b41ba5ccb14d318002c6488fdab4ab33db48de9fe3d84a4d2"
+    },
+    {
+      "entry_id": "HSM-EVT-1D4029A5",
+      "timestamp": "2026-11-08T12:36:41.761834+00:00",
+      "event_type": "POST_INITIALIZATION_SUCCESS",
+      "operator_role": "SECURITY_OFFICER",
+      "hsm_state": "STATE_OPERATIONAL",
+      "previous_hash": "ef20b7b807ec4bba67abfecfc7d4e3a2af71c4f72376c6781c934c1652c41ab0954c967503eef01b41ba5ccb14d318002c6488fdab4ab33db48de9fe3d84a4d2",
+      "details": {
+        "post_timestamp": "2026-11-08T12:36:41.759789+00:00",
+        "overall_status": "ALL_KATS_PASSED",
+        "fips_level": "FIPS 140-3 Level 4 Physical Security",
+        "algorithms_verified": {
+          "AES-256-GCM": {
+            "status": "PASS",
+            "vector": "NIST SP 800-38D Case 13"
+          },
+          "SHA3-512": {
+            "status": "PASS",
+            "vector": "NIST FIPS 202 ('abc')"
+          },
+          "Ed25519": {
+            "status": "PASS",
+            "vector": "RFC 8032 Vector 1"
+          },
+          "ML-KEM-1024": {
+            "status": "PASS",
+            "vector": "NIST FIPS 203 Lattice Encapsulation"
+          }
+        }
+      },
+      "entry_hash": "7b76188c623582e02ae42205db39f29655e0cc36f54ade48e1eae5f363d3e2c58c32c9bac7d1e9a656ab297a08d2133f835b7ac781266b65aced146407a98555"
+    },
+    {
+      "entry_id": "HSM-EVT-E168CF29",
+      "timestamp": "2026-11-08T12:36:41.873503+00:00",
+      "event_type": "SHAMIR_KEY_CEREMONY_COMPLETED",
+      "operator_role": "SECURITY_OFFICER_QUORUM",
+      "hsm_state": "STATE_INITIALIZING",
+      "previous_hash": "7b76188c623582e02ae42205db39f29655e0cc36f54ade48e1eae5f363d3e2c58c32c9bac7d1e9a656ab297a08d2133f835b7ac781266b65aced146407a98555",
+      "details": {
+        "ceremony_id": "CEREMONY-C0A8B61B",
+        "threshold_m": 3,
+        "total_n": 5,
+        "shares_distributed": 5,
+        "prime_field": "GF(2^256 - 189)",
+        "timestamp": "2026-11-08T12:36:41.873050+00:00"
+      },
+      "entry_hash": "b0b4c623b0b078c45427ccf82061e66b7b77270e10ac5c30996632a1694a9db62e31433a09d3bd17d089c1521ea65e1709338c1e29c29e52d137f443bb5a2769"
+    },
+    {
+      "entry_id": "HSM-EVT-6E7EAF5B",
+      "timestamp": "2026-11-08T12:36:41.985697+00:00",
+      "event_type": "POST_INITIALIZATION_SUCCESS",
+      "operator_role": "SECURITY_OFFICER",
+      "hsm_state": "STATE_OPERATIONAL",
+      "previous_hash": "b0b4c623b0b078c45427ccf82061e66b7b77270e10ac5c30996632a1694a9db62e31433a09d3bd17d089c1521ea65e1709338c1e29c29e52d137f443bb5a2769",
+      "details": {
+        "post_timestamp": "2026-11-08T12:36:41.983164+00:00",
+        "overall_status": "ALL_KATS_PASSED",
+        "fips_level": "FIPS 140-3 Level 4 Physical Security",
+        "algorithms_verified": {
+          "AES-256-GCM": {
+            "status": "PASS",
+            "vector": "NIST SP 800-38D Case 13"
+          },
+          "SHA3-512": {
+            "status": "PASS",
+            "vector": "NIST FIPS 202 ('abc')"
+          },
+          "Ed25519": {
+            "status": "PASS",
+            "vector": "RFC 8032 Vector 1"
+          },
+          "ML-KEM-1024": {
+            "status": "PASS",
+            "vector": "NIST FIPS 203 Lattice Encapsulation"
+          }
+        }
+      },
+      "entry_hash": "e75278c0152207c99d94b55fb8356417c35ea0f3e93c74122e712da79c3702c7c2dc0eea75dd7a1103616581071ee4987468c9745836514eefbfc8f5b713e33f"
+    },
+    {
+      "entry_id": "HSM-EVT-048EB547",
+      "timestamp": "2026-11-08T12:36:41.989406+00:00",
+      "event_type": "TAMPER_DETECTED_ATOMIC_ZEROIZATION",
+      "operator_role": "ACTIVE_TAMPER_CIRCUIT",
+      "hsm_state": "STATE_TAMPER_ZEROIZED",
+      "previous_hash": "e75278c0152207c99d94b55fb8356417c35ea0f3e93c74122e712da79c3702c7c2dc0eea75dd7a1103616581071ee4987468c9745836514eefbfc8f5b713e33f",
+      "details": {
+        "status": "ATOMIC_ZEROIZATION_COMPLETE",
+        "state": "STATE_TAMPER_ZEROIZED",
+        "zeroization_time_nanoseconds": 32.1,
+        "within_50ns_sla": true,
+        "cause": "CHASSIS_MICRO_SWITCH_INTRUSION",
+        "timestamp": "2026-11-08T12:36:41.989085+00:00"
+      },
+      "entry_hash": "c35992d0da0b9e62a035d87bc5716fbde91aa50c76e59064396911b157275b95683c51e50e4923174663ed580590d0d5981c582df00c6f6dc33a3fb14395013a"
+    },
+    {
+      "entry_id": "HSM-EVT-967A0256",
+      "timestamp": "2026-11-08T12:38:32.763819+00:00",
+      "event_type": "POST_INITIALIZATION_SUCCESS",
+      "operator_role": "SECURITY_OFFICER",
+      "hsm_state": "STATE_OPERATIONAL",
+      "previous_hash": "c35992d0da0b9e62a035d87bc5716fbde91aa50c76e59064396911b157275b95683c51e50e4923174663ed580590d0d5981c582df00c6f6dc33a3fb14395013a",
+      "details": {
+        "post_timestamp": "2026-11-08T12:38:32.761731+00:00",
+        "overall_status": "ALL_KATS_PASSED",
+        "fips_level": "FIPS 140-3 Level 4 Physical Security",
+        "algorithms_verified": {
+          "AES-256-GCM": {
+            "status": "PASS",
+            "vector": "NIST SP 800-38D Case 13"
+          },
+          "SHA3-512": {
+            "status": "PASS",
+            "vector": "NIST FIPS 202 ('abc')"
+          },
+          "Ed25519": {
+            "status": "PASS",
+            "vector": "RFC 8032 Vector 1"
+          },
+          "ML-KEM-1024": {
+            "status": "PASS",
+            "vector": "NIST FIPS 203 Lattice Encapsulation"
+          }
+        }
+      },
+      "entry_hash": "0b8fa4c30737da31b82a9ea69656f5bf8d4a72b79a31897503ea0ff8c2817467ac214461e12d3c4d547b8c40aaf3185f6e6b185cb8945a9dae92787ebc5a3c3e"
+    },
+    {
+      "entry_id": "HSM-EVT-86E91326",
+      "timestamp": "2026-11-08T12:38:32.878815+00:00",
+      "event_type": "SHAMIR_KEY_CEREMONY_COMPLETED",
+      "operator_role": "SECURITY_OFFICER_QUORUM",
+      "hsm_state": "STATE_INITIALIZING",
+      "previous_hash": "0b8fa4c30737da31b82a9ea69656f5bf8d4a72b79a31897503ea0ff8c2817467ac214461e12d3c4d547b8c40aaf3185f6e6b185cb8945a9dae92787ebc5a3c3e",
+      "details": {
+        "ceremony_id": "CEREMONY-92E99D57",
+        "threshold_m": 3,
+        "total_n": 5,
+        "shares_distributed": 5,
+        "prime_field": "GF(2^256 - 189)",
+        "timestamp": "2026-11-08T12:38:32.878403+00:00"
+      },
+      "entry_hash": "a37371520207da49ed1d99cb79c88f166657a996137f687f22d1e747734ce17e8590d02340f21ea4c375a9764a158396b4a8953ef88a1f4185d634adaf9e5f3f"
+    },
+    {
+      "entry_id": "HSM-EVT-1B75BA38",
+      "timestamp": "2026-11-08T12:38:32.992532+00:00",
+      "event_type": "POST_INITIALIZATION_SUCCESS",
+      "operator_role": "SECURITY_OFFICER",
+      "hsm_state": "STATE_OPERATIONAL",
+      "previous_hash": "a37371520207da49ed1d99cb79c88f166657a996137f687f22d1e747734ce17e8590d02340f21ea4c375a9764a158396b4a8953ef88a1f4185d634adaf9e5f3f",
+      "details": {
+        "post_timestamp": "2026-11-08T12:38:32.990340+00:00",
+        "overall_status": "ALL_KATS_PASSED",
+        "fips_level": "FIPS 140-3 Level 4 Physical Security",
+        "algorithms_verified": {
+          "AES-256-GCM": {
+            "status": "PASS",
+            "vector": "NIST SP 800-38D Case 13"
+          },
+          "SHA3-512": {
+            "status": "PASS",
+            "vector": "NIST FIPS 202 ('abc')"
+          },
+          "Ed25519": {
+            "status": "PASS",
+            "vector": "RFC 8032 Vector 1"
+          },
+          "ML-KEM-1024": {
+            "status": "PASS",
+            "vector": "NIST FIPS 203 Lattice Encapsulation"
+          }
+        }
+      },
+      "entry_hash": "466a6f88155324aaec11ce61bd2171f55068d1b3866eb7b0c4b24050c617b2033a3889373b8a55e076553699c2c129fc9963d37925c43c52da3567606772d5f4"
+    },
+    {
+      "entry_id": "HSM-EVT-6207961B",
+      "timestamp": "2026-11-08T12:38:32.996150+00:00",
+      "event_type": "TAMPER_DETECTED_ATOMIC_ZEROIZATION",
+      "operator_role": "ACTIVE_TAMPER_CIRCUIT",
+      "hsm_state": "STATE_TAMPER_ZEROIZED",
+      "previous_hash": "466a6f88155324aaec11ce61bd2171f55068d1b3866eb7b0c4b24050c617b2033a3889373b8a55e076553699c2c129fc9963d37925c43c52da3567606772d5f4",
+      "details": {
+        "status": "ATOMIC_ZEROIZATION_COMPLETE",
+        "state": "STATE_TAMPER_ZEROIZED",
+        "zeroization_time_nanoseconds": 29.2,
+        "within_50ns_sla": true,
+        "cause": "CHASSIS_MICRO_SWITCH_INTRUSION",
+        "timestamp": "2026-11-08T12:38:32.995806+00:00"
+      },
+      "entry_hash": "73e169bf6ccd9ce352ae9e24d023a8e49459b5febe489cdadbf81db8022d47066e4501d1d663f89f33dec78bfbdcf41834d2fa73c08dd65bc83d39e6a0bf7dcf"
+    }
+  ],
+  "last_updated": "2026-11-08T12:38:32.996150+00:00"
+}

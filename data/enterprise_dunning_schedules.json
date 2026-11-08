@@ -1,0 +1,3108 @@
+{
+  "version": "1.0.0",
+  "governing_entity": "DevSuperSuite Revenue Operations (growth@devsupersuite.com)",
+  "compliance_protocol": "100% Brand Anonymity - Zero Founder Personal Identifiers",
+  "last_updated": "2026-11-08T12:38:13.722087+00:00",
+  "target_benchmark": {
+    "involuntary_churn_recovery_rate_target_pct": 74.2
+  },
+  "dunning_cases": [
+    {
+      "case_id": "DUN-E964B47B",
+      "invoice_id": "in_dss_fail_000",
+      "customer_id": "cus_dss_000",
+      "company_name": "Raytheon Technologies",
+      "domain": "rtx.com",
+      "billing_email": "billing@rtx.com",
+      "amount_usd": 24999.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:02:43.948866+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 2,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:43.949727+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "SUCCESS",
+          "executed_at": "2026-11-08T12:02:43.950192+00:00"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-7982D697F23BF46E",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:02:43.948867+00:00",
+        "expires_at": "2026-11-22 12:02:43 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-7982D697F23BF46E) expiring 2026-11-22 12:02:43 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:02:43.950192+00:00",
+      "recovery_method": "SMART_CARD_RETRY_DAY_3"
+    },
+    {
+      "case_id": "DUN-FE5C487F",
+      "invoice_id": "in_dss_fail_001",
+      "customer_id": "cus_dss_001",
+      "company_name": "Lockheed Martin Defense",
+      "domain": "lockheedmartin.com",
+      "billing_email": "billing@lockheedmartin.com",
+      "amount_usd": 24999.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:02:43.950670+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 2,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:43.951215+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "SUCCESS",
+          "executed_at": "2026-11-08T12:02:43.951617+00:00"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-32F7689550D96486",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:02:43.950673+00:00",
+        "expires_at": "2026-11-22 12:02:43 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-32F7689550D96486) expiring 2026-11-22 12:02:43 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:02:43.951617+00:00",
+      "recovery_method": "SMART_CARD_RETRY_DAY_3"
+    },
+    {
+      "case_id": "DUN-91A0DC8F",
+      "invoice_id": "in_dss_fail_002",
+      "customer_id": "cus_dss_002",
+      "company_name": "Tata Consultancy Enclave",
+      "domain": "tcs.com",
+      "billing_email": "billing@tcs.com",
+      "amount_usd": 1499.0,
+      "currency": "INR",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:02:43.952092+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 2,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:43.952828+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "SUCCESS",
+          "executed_at": "2026-11-08T12:02:43.953312+00:00"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-FC10768E3CF18DCF",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:02:43.952095+00:00",
+        "expires_at": "2026-11-22 12:02:43 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-FC10768E3CF18DCF) expiring 2026-11-22 12:02:43 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "INR",
+        "primary_fallback": "UPI_DIRECT",
+        "fallback_label": "Instant UPI QR (devsupersuite@icici)",
+        "action_prompt": "Scan UPI QR with Google Pay, PhonePe, or BHIM for instant renewal."
+      },
+      "resolved_at": "2026-11-08T12:02:43.953312+00:00",
+      "recovery_method": "SMART_CARD_RETRY_DAY_3"
+    },
+    {
+      "case_id": "DUN-FC1F83B3",
+      "invoice_id": "in_dss_fail_003",
+      "customer_id": "cus_dss_003",
+      "company_name": "Siemens Digital Industries",
+      "domain": "siemens.com",
+      "billing_email": "billing@siemens.de",
+      "amount_usd": 2700.0,
+      "currency": "EUR",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:02:43.953775+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 2,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:43.954328+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "SUCCESS",
+          "executed_at": "2026-11-08T12:02:43.954810+00:00"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-6EB14277C994354C",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:02:43.953778+00:00",
+        "expires_at": "2026-11-22 12:02:43 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-6EB14277C994354C) expiring 2026-11-22 12:02:43 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "EUR",
+        "primary_fallback": "SEPA_DIRECT_DEBIT",
+        "fallback_label": "SEPA Core Direct Debit (IBAN)",
+        "action_prompt": "Authorize seamless SEPA Core Direct Debit across EU banking networks."
+      },
+      "resolved_at": "2026-11-08T12:02:43.954810+00:00",
+      "recovery_method": "SMART_CARD_RETRY_DAY_3"
+    },
+    {
+      "case_id": "DUN-5C1A37DC",
+      "invoice_id": "in_dss_fail_004",
+      "customer_id": "cus_dss_004",
+      "company_name": "Airbus Defence SAS",
+      "domain": "airbus.com",
+      "billing_email": "billing@airbus.com",
+      "amount_usd": 4999.0,
+      "currency": "EUR",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:02:43.955285+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 2,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:43.955852+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "SUCCESS",
+          "executed_at": "2026-11-08T12:02:43.956424+00:00"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-EC35F6F1E94BFAE8",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:02:43.955287+00:00",
+        "expires_at": "2026-11-22 12:02:43 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-EC35F6F1E94BFAE8) expiring 2026-11-22 12:02:43 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "EUR",
+        "primary_fallback": "SEPA_DIRECT_DEBIT",
+        "fallback_label": "SEPA Core Direct Debit (IBAN)",
+        "action_prompt": "Authorize seamless SEPA Core Direct Debit across EU banking networks."
+      },
+      "resolved_at": "2026-11-08T12:02:43.956424+00:00",
+      "recovery_method": "SMART_CARD_RETRY_DAY_3"
+    },
+    {
+      "case_id": "DUN-49CA5BB6",
+      "invoice_id": "in_dss_fail_005",
+      "customer_id": "cus_dss_005",
+      "company_name": "BAE Systems UK",
+      "domain": "baesystems.com",
+      "billing_email": "billing@baesystems.com",
+      "amount_usd": 3500.0,
+      "currency": "GBP",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:02:43.957223+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 2,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:43.958076+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "SUCCESS",
+          "executed_at": "2026-11-08T12:02:43.959345+00:00"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-BD07C3DB3AD553A8",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:02:43.957225+00:00",
+        "expires_at": "2026-11-22 12:02:43 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-BD07C3DB3AD553A8) expiring 2026-11-22 12:02:43 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "GBP",
+        "primary_fallback": "BACS_DIRECT_DEBIT",
+        "fallback_label": "Bacs Direct Debit",
+        "action_prompt": "Authorize Bacs Direct Debit for automated recurring UK commercial billing."
+      },
+      "resolved_at": "2026-11-08T12:02:43.959345+00:00",
+      "recovery_method": "SMART_CARD_RETRY_DAY_3"
+    },
+    {
+      "case_id": "DUN-A66F3750",
+      "invoice_id": "in_dss_fail_006",
+      "customer_id": "cus_dss_006",
+      "company_name": "Palantir Mission Ops",
+      "domain": "palantir.com",
+      "billing_email": "billing@palantir.com",
+      "amount_usd": 24999.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:02:43.960241+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 2,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:43.961064+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "SUCCESS",
+          "executed_at": "2026-11-08T12:02:43.961698+00:00"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-BBA0BAAF108A6BF0",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:02:43.960245+00:00",
+        "expires_at": "2026-11-22 12:02:43 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-BBA0BAAF108A6BF0) expiring 2026-11-22 12:02:43 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:02:43.961698+00:00",
+      "recovery_method": "SMART_CARD_RETRY_DAY_3"
+    },
+    {
+      "case_id": "DUN-3C744CFE",
+      "invoice_id": "in_dss_fail_007",
+      "customer_id": "cus_dss_007",
+      "company_name": "Datadog Infrastructure",
+      "domain": "datadoghq.com",
+      "billing_email": "billing@datadoghq.com",
+      "amount_usd": 4999.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:02:43.962512+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 2,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:43.963228+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "SUCCESS",
+          "executed_at": "2026-11-08T12:02:43.964073+00:00"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-0EE92B7AA1243A28",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:02:43.962514+00:00",
+        "expires_at": "2026-11-22 12:02:43 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-0EE92B7AA1243A28) expiring 2026-11-22 12:02:43 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:02:43.964073+00:00",
+      "recovery_method": "SMART_CARD_RETRY_DAY_3"
+    },
+    {
+      "case_id": "DUN-B9798FA1",
+      "invoice_id": "in_dss_fail_008",
+      "customer_id": "cus_dss_008",
+      "company_name": "Snowflake Enclave Lab",
+      "domain": "snowflake.com",
+      "billing_email": "billing@snowflake.com",
+      "amount_usd": 12000.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:02:43.964926+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 2,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:43.966083+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "SUCCESS",
+          "executed_at": "2026-11-08T12:02:43.966958+00:00"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-BDD1A9E6C29FAED3",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:02:43.964929+00:00",
+        "expires_at": "2026-11-22 12:02:43 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-BDD1A9E6C29FAED3) expiring 2026-11-22 12:02:43 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:02:43.966958+00:00",
+      "recovery_method": "SMART_CARD_RETRY_DAY_3"
+    },
+    {
+      "case_id": "DUN-35614980",
+      "invoice_id": "in_dss_fail_009",
+      "customer_id": "cus_dss_009",
+      "company_name": "CrowdStrike Incident Unit",
+      "domain": "crowdstrike.com",
+      "billing_email": "billing@crowdstrike.com",
+      "amount_usd": 15000.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:02:43.967745+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 2,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:43.968605+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "SUCCESS",
+          "executed_at": "2026-11-08T12:02:43.969362+00:00"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-6812E78FFBC06581",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:02:43.967748+00:00",
+        "expires_at": "2026-11-22 12:02:43 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-6812E78FFBC06581) expiring 2026-11-22 12:02:43 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:02:43.969362+00:00",
+      "recovery_method": "SMART_CARD_RETRY_DAY_3"
+    },
+    {
+      "case_id": "DUN-943A67A8",
+      "invoice_id": "in_dss_fail_010",
+      "customer_id": "cus_dss_010",
+      "company_name": "Infosys Cyber Systems",
+      "domain": "infosys.com",
+      "billing_email": "billing@infosys.com",
+      "amount_usd": 1499.0,
+      "currency": "INR",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:02:43.970121+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 2,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:43.971338+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "SUCCESS",
+          "executed_at": "2026-11-08T12:02:43.972389+00:00"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-B115B42E68B34FFA",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:02:43.970123+00:00",
+        "expires_at": "2026-11-22 12:02:43 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-B115B42E68B34FFA) expiring 2026-11-22 12:02:43 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "INR",
+        "primary_fallback": "UPI_DIRECT",
+        "fallback_label": "Instant UPI QR (devsupersuite@icici)",
+        "action_prompt": "Scan UPI QR with Google Pay, PhonePe, or BHIM for instant renewal."
+      },
+      "resolved_at": "2026-11-08T12:02:43.972389+00:00",
+      "recovery_method": "SMART_CARD_RETRY_DAY_3"
+    },
+    {
+      "case_id": "DUN-E9DC55ED",
+      "invoice_id": "in_dss_fail_011",
+      "customer_id": "cus_dss_011",
+      "company_name": "SAP SE Commercial",
+      "domain": "sap.com",
+      "billing_email": "billing@sap.com",
+      "amount_usd": 4999.0,
+      "currency": "EUR",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:02:43.973554+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 2,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:43.974882+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "SUCCESS",
+          "executed_at": "2026-11-08T12:02:43.975900+00:00"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-5D2998ABDFE70866",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:02:43.973557+00:00",
+        "expires_at": "2026-11-22 12:02:43 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-5D2998ABDFE70866) expiring 2026-11-22 12:02:43 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "EUR",
+        "primary_fallback": "SEPA_DIRECT_DEBIT",
+        "fallback_label": "SEPA Core Direct Debit (IBAN)",
+        "action_prompt": "Authorize seamless SEPA Core Direct Debit across EU banking networks."
+      },
+      "resolved_at": "2026-11-08T12:02:43.975900+00:00",
+      "recovery_method": "SMART_CARD_RETRY_DAY_3"
+    },
+    {
+      "case_id": "DUN-E31D962E",
+      "invoice_id": "in_dss_fail_012",
+      "customer_id": "cus_dss_012",
+      "company_name": "General Dynamics Land",
+      "domain": "gd.com",
+      "billing_email": "billing@gd.com",
+      "amount_usd": 24999.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:02:43.976807+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 2,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:43.977925+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:43.979009+00:00"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-E072AD63B85C7A3E",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:02:43.976809+00:00",
+        "expires_at": "2026-11-22 12:02:43 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-E072AD63B85C7A3E) expiring 2026-11-22 12:02:43 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:02:43.980208+00:00",
+      "recovery_method": "LOCALIZED_FALLBACK_ACH_DIRECT_DEBIT",
+      "fallback_payment_reference": "FALLBACK-REF-12"
+    },
+    {
+      "case_id": "DUN-213A2657",
+      "invoice_id": "in_dss_fail_013",
+      "customer_id": "cus_dss_013",
+      "company_name": "Northrop Grumman Mission",
+      "domain": "northropgrumman.com",
+      "billing_email": "billing@northrop.com",
+      "amount_usd": 24999.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:02:43.981277+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 2,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:43.982385+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:43.983357+00:00"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-185C704F903F801F",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:02:43.981281+00:00",
+        "expires_at": "2026-11-22 12:02:43 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-185C704F903F801F) expiring 2026-11-22 12:02:43 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:02:43.984323+00:00",
+      "recovery_method": "LOCALIZED_FALLBACK_ACH_DIRECT_DEBIT",
+      "fallback_payment_reference": "FALLBACK-REF-13"
+    },
+    {
+      "case_id": "DUN-919EA0FC",
+      "invoice_id": "in_dss_fail_014",
+      "customer_id": "cus_dss_014",
+      "company_name": "Enterprise Account 15",
+      "domain": "account15.com",
+      "billing_email": "billing@account15.com",
+      "amount_usd": 5000.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:02:43.985491+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 2,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:43.986798+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:43.988016+00:00"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-F49852C0D47E8F2A",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:02:43.985494+00:00",
+        "expires_at": "2026-11-22 12:02:43 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-F49852C0D47E8F2A) expiring 2026-11-22 12:02:43 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:02:43.989095+00:00",
+      "recovery_method": "LOCALIZED_FALLBACK_ACH_DIRECT_DEBIT",
+      "fallback_payment_reference": "FALLBACK-REF-14"
+    },
+    {
+      "case_id": "DUN-970F708B",
+      "invoice_id": "in_dss_fail_015",
+      "customer_id": "cus_dss_015",
+      "company_name": "Enterprise Account 16",
+      "domain": "account16.com",
+      "billing_email": "billing@account16.com",
+      "amount_usd": 5000.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:02:43.990487+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 2,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:43.992096+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:43.993437+00:00"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-942AF0C43BC2FC76",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:02:43.990491+00:00",
+        "expires_at": "2026-11-22 12:02:43 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-942AF0C43BC2FC76) expiring 2026-11-22 12:02:43 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:02:43.994767+00:00",
+      "recovery_method": "LOCALIZED_FALLBACK_ACH_DIRECT_DEBIT",
+      "fallback_payment_reference": "FALLBACK-REF-15"
+    },
+    {
+      "case_id": "DUN-39B85B78",
+      "invoice_id": "in_dss_fail_016",
+      "customer_id": "cus_dss_016",
+      "company_name": "Enterprise Account 17",
+      "domain": "account17.com",
+      "billing_email": "billing@account17.com",
+      "amount_usd": 5000.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:02:43.996024+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 2,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:43.997224+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:43.998459+00:00"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-208700E3EE0C8006",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:02:43.996027+00:00",
+        "expires_at": "2026-11-22 12:02:43 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-208700E3EE0C8006) expiring 2026-11-22 12:02:43 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:02:43.999733+00:00",
+      "recovery_method": "LOCALIZED_FALLBACK_ACH_DIRECT_DEBIT",
+      "fallback_payment_reference": "FALLBACK-REF-16"
+    },
+    {
+      "case_id": "DUN-A27D5423",
+      "invoice_id": "in_dss_fail_017",
+      "customer_id": "cus_dss_017",
+      "company_name": "Enterprise Account 18",
+      "domain": "account18.com",
+      "billing_email": "billing@account18.com",
+      "amount_usd": 5000.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:02:44.001098+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 2,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.002447+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.003612+00:00"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-B8EF46AC34BA2D2E",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:02:44.001102+00:00",
+        "expires_at": "2026-11-22 12:02:44 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-B8EF46AC34BA2D2E) expiring 2026-11-22 12:02:44 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:02:44.004767+00:00",
+      "recovery_method": "LOCALIZED_FALLBACK_ACH_DIRECT_DEBIT",
+      "fallback_payment_reference": "FALLBACK-REF-17"
+    },
+    {
+      "case_id": "DUN-925315C3",
+      "invoice_id": "in_dss_fail_018",
+      "customer_id": "cus_dss_018",
+      "company_name": "Enterprise Account 19",
+      "domain": "account19.com",
+      "billing_email": "billing@account19.com",
+      "amount_usd": 5000.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:02:44.006327+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 2,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.007938+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.009293+00:00"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-CD6F650FED211ABF",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:02:44.006331+00:00",
+        "expires_at": "2026-11-22 12:02:44 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-CD6F650FED211ABF) expiring 2026-11-22 12:02:44 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:02:44.010522+00:00",
+      "recovery_method": "LOCALIZED_FALLBACK_ACH_DIRECT_DEBIT",
+      "fallback_payment_reference": "FALLBACK-REF-18"
+    },
+    {
+      "case_id": "DUN-B87CEA94",
+      "invoice_id": "in_dss_fail_019",
+      "customer_id": "cus_dss_019",
+      "company_name": "Enterprise Account 20",
+      "domain": "account20.com",
+      "billing_email": "billing@account20.com",
+      "amount_usd": 5000.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:02:44.011801+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 2,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.013292+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.014842+00:00"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-158EEE70F414CFE8",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:02:44.011804+00:00",
+        "expires_at": "2026-11-22 12:02:44 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-158EEE70F414CFE8) expiring 2026-11-22 12:02:44 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:02:44.016303+00:00",
+      "recovery_method": "LOCALIZED_FALLBACK_ACH_DIRECT_DEBIT",
+      "fallback_payment_reference": "FALLBACK-REF-19"
+    },
+    {
+      "case_id": "DUN-F093B78E",
+      "invoice_id": "in_dss_fail_020",
+      "customer_id": "cus_dss_020",
+      "company_name": "Enterprise Account 21",
+      "domain": "account21.com",
+      "billing_email": "billing@account21.com",
+      "amount_usd": 5000.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:02:44.017618+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 2,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.018954+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.020704+00:00"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-ED0F9FAB7F49CE85",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:02:44.017621+00:00",
+        "expires_at": "2026-11-22 12:02:44 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-ED0F9FAB7F49CE85) expiring 2026-11-22 12:02:44 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:02:44.022482+00:00",
+      "recovery_method": "LOCALIZED_FALLBACK_ACH_DIRECT_DEBIT",
+      "fallback_payment_reference": "FALLBACK-REF-20"
+    },
+    {
+      "case_id": "DUN-B8152F9B",
+      "invoice_id": "in_dss_fail_021",
+      "customer_id": "cus_dss_021",
+      "company_name": "Enterprise Account 22",
+      "domain": "account22.com",
+      "billing_email": "billing@account22.com",
+      "amount_usd": 5000.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:02:44.024017+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 2,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.025511+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.027033+00:00"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-E9278EE6896F9C61",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:02:44.024020+00:00",
+        "expires_at": "2026-11-22 12:02:44 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-E9278EE6896F9C61) expiring 2026-11-22 12:02:44 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:02:44.028733+00:00",
+      "recovery_method": "LOCALIZED_FALLBACK_ACH_DIRECT_DEBIT",
+      "fallback_payment_reference": "FALLBACK-REF-21"
+    },
+    {
+      "case_id": "DUN-6E50D6F0",
+      "invoice_id": "in_dss_fail_022",
+      "customer_id": "cus_dss_022",
+      "company_name": "Enterprise Account 23",
+      "domain": "account23.com",
+      "billing_email": "billing@account23.com",
+      "amount_usd": 5000.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:02:44.030356+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 2,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.031886+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.033296+00:00"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-059F1894DB9CA06D",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:02:44.030359+00:00",
+        "expires_at": "2026-11-22 12:02:44 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-059F1894DB9CA06D) expiring 2026-11-22 12:02:44 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:02:44.034931+00:00",
+      "recovery_method": "LOCALIZED_FALLBACK_ACH_DIRECT_DEBIT",
+      "fallback_payment_reference": "FALLBACK-REF-22"
+    },
+    {
+      "case_id": "DUN-C83FCE44",
+      "invoice_id": "in_dss_fail_023",
+      "customer_id": "cus_dss_023",
+      "company_name": "Enterprise Account 24",
+      "domain": "account24.com",
+      "billing_email": "billing@account24.com",
+      "amount_usd": 5000.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:02:44.036936+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 2,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.038825+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.040377+00:00"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-6FEAA9A78A8F075C",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:02:44.036940+00:00",
+        "expires_at": "2026-11-22 12:02:44 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-6FEAA9A78A8F075C) expiring 2026-11-22 12:02:44 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:02:44.042186+00:00",
+      "recovery_method": "LOCALIZED_FALLBACK_ACH_DIRECT_DEBIT",
+      "fallback_payment_reference": "FALLBACK-REF-23"
+    },
+    {
+      "case_id": "DUN-F98A973A",
+      "invoice_id": "in_dss_fail_024",
+      "customer_id": "cus_dss_024",
+      "company_name": "Enterprise Account 25",
+      "domain": "account25.com",
+      "billing_email": "billing@account25.com",
+      "amount_usd": 5000.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:02:44.044079+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 2,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.045752+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.047274+00:00"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-EC9AFD1721C40220",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:02:44.044082+00:00",
+        "expires_at": "2026-11-22 12:02:44 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-EC9AFD1721C40220) expiring 2026-11-22 12:02:44 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:02:44.049045+00:00",
+      "recovery_method": "LOCALIZED_FALLBACK_ACH_DIRECT_DEBIT",
+      "fallback_payment_reference": "FALLBACK-REF-24"
+    },
+    {
+      "case_id": "DUN-98A68E6D",
+      "invoice_id": "in_dss_fail_025",
+      "customer_id": "cus_dss_025",
+      "company_name": "Enterprise Account 26",
+      "domain": "account26.com",
+      "billing_email": "billing@account26.com",
+      "amount_usd": 5000.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:02:44.050832+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 2,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.052699+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.054307+00:00"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-64B709B9AFD480FA",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:02:44.050836+00:00",
+        "expires_at": "2026-11-22 12:02:44 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-64B709B9AFD480FA) expiring 2026-11-22 12:02:44 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:02:44.056100+00:00",
+      "recovery_method": "LOCALIZED_FALLBACK_ACH_DIRECT_DEBIT",
+      "fallback_payment_reference": "FALLBACK-REF-25"
+    },
+    {
+      "case_id": "DUN-E1D9AE13",
+      "invoice_id": "in_dss_fail_026",
+      "customer_id": "cus_dss_026",
+      "company_name": "Enterprise Account 27",
+      "domain": "account27.com",
+      "billing_email": "billing@account27.com",
+      "amount_usd": 5000.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:02:44.057994+00:00",
+      "current_status": "SUBSCRIPTION_PAUSED",
+      "retries_attempted": 5,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.059760+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.061433+00:00"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.063255+00:00"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.065138+00:00"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.067051+00:00"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-C819A39D73507494",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:02:44.057998+00:00",
+        "expires_at": "2026-11-22 12:02:44 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-C819A39D73507494) expiring 2026-11-22 12:02:44 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:02:44.067051+00:00",
+      "recovery_method": null
+    },
+    {
+      "case_id": "DUN-B26E5542",
+      "invoice_id": "in_dss_fail_027",
+      "customer_id": "cus_dss_027",
+      "company_name": "Enterprise Account 28",
+      "domain": "account28.com",
+      "billing_email": "billing@account28.com",
+      "amount_usd": 5000.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:02:44.069362+00:00",
+      "current_status": "SUBSCRIPTION_PAUSED",
+      "retries_attempted": 5,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.071835+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.073581+00:00"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.075450+00:00"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.077464+00:00"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.079407+00:00"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-5E6FAA06C85053F6",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:02:44.069374+00:00",
+        "expires_at": "2026-11-22 12:02:44 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-5E6FAA06C85053F6) expiring 2026-11-22 12:02:44 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:02:44.079407+00:00",
+      "recovery_method": null
+    },
+    {
+      "case_id": "DUN-79FE6466",
+      "invoice_id": "in_dss_fail_028",
+      "customer_id": "cus_dss_028",
+      "company_name": "Enterprise Account 29",
+      "domain": "account29.com",
+      "billing_email": "billing@account29.com",
+      "amount_usd": 5000.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:02:44.081159+00:00",
+      "current_status": "SUBSCRIPTION_PAUSED",
+      "retries_attempted": 5,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.083327+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.085310+00:00"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.087136+00:00"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.088969+00:00"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.090914+00:00"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-8AB1FC4C26D0D62D",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:02:44.081162+00:00",
+        "expires_at": "2026-11-22 12:02:44 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-8AB1FC4C26D0D62D) expiring 2026-11-22 12:02:44 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:02:44.090914+00:00",
+      "recovery_method": null
+    },
+    {
+      "case_id": "DUN-AB33EEA1",
+      "invoice_id": "in_dss_fail_029",
+      "customer_id": "cus_dss_029",
+      "company_name": "Enterprise Account 30",
+      "domain": "account30.com",
+      "billing_email": "billing@account30.com",
+      "amount_usd": 5000.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:02:44.092951+00:00",
+      "current_status": "SUBSCRIPTION_PAUSED",
+      "retries_attempted": 5,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.094807+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.096747+00:00"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.098911+00:00"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.100769+00:00"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.102495+00:00"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-432A938E8A139CFB",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:02:44.092955+00:00",
+        "expires_at": "2026-11-22 12:02:44 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-432A938E8A139CFB) expiring 2026-11-22 12:02:44 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:02:44.102495+00:00",
+      "recovery_method": null
+    },
+    {
+      "case_id": "DUN-EEFED179",
+      "invoice_id": "in_dss_fail_030",
+      "customer_id": "cus_dss_030",
+      "company_name": "Enterprise Account 31",
+      "domain": "account31.com",
+      "billing_email": "billing@account31.com",
+      "amount_usd": 5000.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:02:44.104475+00:00",
+      "current_status": "SUBSCRIPTION_PAUSED",
+      "retries_attempted": 5,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.106715+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.108591+00:00"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.110493+00:00"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.112906+00:00"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.115046+00:00"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-A3E9064265BCE927",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:02:44.104479+00:00",
+        "expires_at": "2026-11-22 12:02:44 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-A3E9064265BCE927) expiring 2026-11-22 12:02:44 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:02:44.115046+00:00",
+      "recovery_method": null
+    },
+    {
+      "case_id": "DUN-A044F377",
+      "invoice_id": "in_dss_fail_031",
+      "customer_id": "cus_dss_031",
+      "company_name": "Enterprise Account 32",
+      "domain": "account32.com",
+      "billing_email": "billing@account32.com",
+      "amount_usd": 5000.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:02:44.117088+00:00",
+      "current_status": "SUBSCRIPTION_PAUSED",
+      "retries_attempted": 5,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.119443+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.121590+00:00"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.123467+00:00"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.125607+00:00"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.128090+00:00"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-94074897EAD0509A",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:02:44.117093+00:00",
+        "expires_at": "2026-11-22 12:02:44 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-94074897EAD0509A) expiring 2026-11-22 12:02:44 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:02:44.128090+00:00",
+      "recovery_method": null
+    },
+    {
+      "case_id": "DUN-CBBEF275",
+      "invoice_id": "in_dss_fail_032",
+      "customer_id": "cus_dss_032",
+      "company_name": "Enterprise Account 33",
+      "domain": "account33.com",
+      "billing_email": "billing@account33.com",
+      "amount_usd": 5000.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:02:44.130063+00:00",
+      "current_status": "SUBSCRIPTION_PAUSED",
+      "retries_attempted": 5,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.132454+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.134695+00:00"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.136632+00:00"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.138705+00:00"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.140843+00:00"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-6CF3490DBAD6AEE1",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:02:44.130066+00:00",
+        "expires_at": "2026-11-22 12:02:44 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-6CF3490DBAD6AEE1) expiring 2026-11-22 12:02:44 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:02:44.140843+00:00",
+      "recovery_method": null
+    },
+    {
+      "case_id": "DUN-57FC1646",
+      "invoice_id": "in_dss_fail_033",
+      "customer_id": "cus_dss_033",
+      "company_name": "Enterprise Account 34",
+      "domain": "account34.com",
+      "billing_email": "billing@account34.com",
+      "amount_usd": 5000.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:02:44.142799+00:00",
+      "current_status": "SUBSCRIPTION_PAUSED",
+      "retries_attempted": 5,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.145282+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.147631+00:00"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.149714+00:00"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.151889+00:00"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.154219+00:00"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-99594E59C66A0A1E",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:02:44.142803+00:00",
+        "expires_at": "2026-11-22 12:02:44 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-99594E59C66A0A1E) expiring 2026-11-22 12:02:44 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:02:44.154219+00:00",
+      "recovery_method": null
+    },
+    {
+      "case_id": "DUN-B727696E",
+      "invoice_id": "in_dss_fail_034",
+      "customer_id": "cus_dss_034",
+      "company_name": "Enterprise Account 35",
+      "domain": "account35.com",
+      "billing_email": "billing@account35.com",
+      "amount_usd": 5000.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:02:44.156334+00:00",
+      "current_status": "SUBSCRIPTION_PAUSED",
+      "retries_attempted": 5,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.158832+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.161681+00:00"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.163859+00:00"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.166069+00:00"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "FAILED",
+          "executed_at": "2026-11-08T12:02:44.168418+00:00"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-A8DA732AC51FCAFD",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:02:44.156337+00:00",
+        "expires_at": "2026-11-22 12:02:44 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-A8DA732AC51FCAFD) expiring 2026-11-22 12:02:44 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:02:44.168418+00:00",
+      "recovery_method": null
+    },
+    {
+      "case_id": "DUN-0A8B79AF",
+      "invoice_id": "in_cli_01",
+      "customer_id": "cus_cli_01",
+      "company_name": "Palantir Tech",
+      "domain": "palantir.com",
+      "billing_email": "billing@palantir.com",
+      "amount_usd": 24999.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:03:23.159732+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 1,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "SUCCESS",
+          "executed_at": "2026-11-08T12:03:23.276868+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-44E5455B463A9F88",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:03:23.159739+00:00",
+        "expires_at": "2026-11-22 12:03:23 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-44E5455B463A9F88) expiring 2026-11-22 12:03:23 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:03:23.276868+00:00",
+      "recovery_method": "SMART_CARD_RETRY_DAY_1"
+    },
+    {
+      "case_id": "DUN-48CE4954",
+      "invoice_id": "in_cli_01",
+      "customer_id": "cus_cli_01",
+      "company_name": "Palantir Tech",
+      "domain": "palantir.com",
+      "billing_email": "billing@palantir.com",
+      "amount_usd": 24999.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:03:47.512084+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 1,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "SUCCESS",
+          "executed_at": "2026-11-08T12:03:47.626711+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-F0EF0CEC8B067ED9",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:03:47.512091+00:00",
+        "expires_at": "2026-11-22 12:03:47 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-F0EF0CEC8B067ED9) expiring 2026-11-22 12:03:47 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:03:47.626711+00:00",
+      "recovery_method": "SMART_CARD_RETRY_DAY_1"
+    },
+    {
+      "case_id": "DUN-AE91FB34",
+      "invoice_id": "in_cli_01",
+      "customer_id": "cus_cli_01",
+      "company_name": "Palantir Tech",
+      "domain": "palantir.com",
+      "billing_email": "billing@palantir.com",
+      "amount_usd": 24999.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:04:24.844264+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 1,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "SUCCESS",
+          "executed_at": "2026-11-08T12:04:24.972629+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-801CE20C495D2B90",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:04:24.844270+00:00",
+        "expires_at": "2026-11-22 12:04:24 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-801CE20C495D2B90) expiring 2026-11-22 12:04:24 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:04:24.972629+00:00",
+      "recovery_method": "SMART_CARD_RETRY_DAY_1"
+    },
+    {
+      "case_id": "DUN-0FB06AE4",
+      "invoice_id": "in_cli_01",
+      "customer_id": "cus_cli_01",
+      "company_name": "Palantir Tech",
+      "domain": "palantir.com",
+      "billing_email": "billing@palantir.com",
+      "amount_usd": 24999.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:04:44.657130+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 1,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "SUCCESS",
+          "executed_at": "2026-11-08T12:04:44.766599+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-1FA1CD94C8519EA3",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:04:44.657136+00:00",
+        "expires_at": "2026-11-22 12:04:44 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-1FA1CD94C8519EA3) expiring 2026-11-22 12:04:44 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:04:44.766599+00:00",
+      "recovery_method": "SMART_CARD_RETRY_DAY_1"
+    },
+    {
+      "case_id": "DUN-17702D00",
+      "invoice_id": "in_cli_01",
+      "customer_id": "cus_cli_01",
+      "company_name": "Palantir Tech",
+      "domain": "palantir.com",
+      "billing_email": "billing@palantir.com",
+      "amount_usd": 24999.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:04:59.444359+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 1,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "SUCCESS",
+          "executed_at": "2026-11-08T12:04:59.553269+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-70BADDF2ABBC4AA1",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:04:59.444366+00:00",
+        "expires_at": "2026-11-22 12:04:59 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-70BADDF2ABBC4AA1) expiring 2026-11-22 12:04:59 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:04:59.553269+00:00",
+      "recovery_method": "SMART_CARD_RETRY_DAY_1"
+    },
+    {
+      "case_id": "DUN-7B3435B2",
+      "invoice_id": "in_cli_01",
+      "customer_id": "cus_cli_01",
+      "company_name": "Palantir Tech",
+      "domain": "palantir.com",
+      "billing_email": "billing@palantir.com",
+      "amount_usd": 24999.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:05:40.693991+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 1,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "SUCCESS",
+          "executed_at": "2026-11-08T12:05:40.802756+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-32B1E585E368BCBA",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:05:40.693999+00:00",
+        "expires_at": "2026-11-22 12:05:40 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-32B1E585E368BCBA) expiring 2026-11-22 12:05:40 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:05:40.802756+00:00",
+      "recovery_method": "SMART_CARD_RETRY_DAY_1"
+    },
+    {
+      "case_id": "DUN-050E7450",
+      "invoice_id": "in_cli_01",
+      "customer_id": "cus_cli_01",
+      "company_name": "Palantir Tech",
+      "domain": "palantir.com",
+      "billing_email": "billing@palantir.com",
+      "amount_usd": 24999.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:06:06.235979+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 1,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "SUCCESS",
+          "executed_at": "2026-11-08T12:06:06.345576+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-5F2A69F353BA95EA",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:06:06.235986+00:00",
+        "expires_at": "2026-11-22 12:06:06 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-5F2A69F353BA95EA) expiring 2026-11-22 12:06:06 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:06:06.345576+00:00",
+      "recovery_method": "SMART_CARD_RETRY_DAY_1"
+    },
+    {
+      "case_id": "DUN-6494459D",
+      "invoice_id": "in_cli_01",
+      "customer_id": "cus_cli_01",
+      "company_name": "Palantir Tech",
+      "domain": "palantir.com",
+      "billing_email": "billing@palantir.com",
+      "amount_usd": 24999.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:06:26.469082+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 1,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "SUCCESS",
+          "executed_at": "2026-11-08T12:06:26.572470+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-018E6E88CFDE978E",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:06:26.469087+00:00",
+        "expires_at": "2026-11-22 12:06:26 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-018E6E88CFDE978E) expiring 2026-11-22 12:06:26 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:06:26.572470+00:00",
+      "recovery_method": "SMART_CARD_RETRY_DAY_1"
+    },
+    {
+      "case_id": "DUN-EB86678A",
+      "invoice_id": "in_cli_01",
+      "customer_id": "cus_cli_01",
+      "company_name": "Palantir Tech",
+      "domain": "palantir.com",
+      "billing_email": "billing@palantir.com",
+      "amount_usd": 24999.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:08:59.650470+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 1,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "SUCCESS",
+          "executed_at": "2026-11-08T12:08:59.761814+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-13F646E3FB26F134",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:08:59.650476+00:00",
+        "expires_at": "2026-11-22 12:08:59 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-13F646E3FB26F134) expiring 2026-11-22 12:08:59 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:08:59.761814+00:00",
+      "recovery_method": "SMART_CARD_RETRY_DAY_1"
+    },
+    {
+      "case_id": "DUN-7E2B032C",
+      "invoice_id": "in_cli_01",
+      "customer_id": "cus_cli_01",
+      "company_name": "Palantir Tech",
+      "domain": "palantir.com",
+      "billing_email": "billing@palantir.com",
+      "amount_usd": 24999.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:09:54.484539+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 1,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "SUCCESS",
+          "executed_at": "2026-11-08T12:09:54.591765+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-C8FA9E60018D2C37",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:09:54.484544+00:00",
+        "expires_at": "2026-11-22 12:09:54 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-C8FA9E60018D2C37) expiring 2026-11-22 12:09:54 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:09:54.591765+00:00",
+      "recovery_method": "SMART_CARD_RETRY_DAY_1"
+    },
+    {
+      "case_id": "DUN-E86C9F2A",
+      "invoice_id": "in_cli_01",
+      "customer_id": "cus_cli_01",
+      "company_name": "Palantir Tech",
+      "domain": "palantir.com",
+      "billing_email": "billing@palantir.com",
+      "amount_usd": 24999.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:11:38.583136+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 1,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "SUCCESS",
+          "executed_at": "2026-11-08T12:11:38.691356+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-A506418BA6149DBA",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:11:38.583142+00:00",
+        "expires_at": "2026-11-22 12:11:38 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-A506418BA6149DBA) expiring 2026-11-22 12:11:38 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:11:38.691356+00:00",
+      "recovery_method": "SMART_CARD_RETRY_DAY_1"
+    },
+    {
+      "case_id": "DUN-5E3A8256",
+      "invoice_id": "in_cli_01",
+      "customer_id": "cus_cli_01",
+      "company_name": "Palantir Tech",
+      "domain": "palantir.com",
+      "billing_email": "billing@palantir.com",
+      "amount_usd": 24999.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:13:23.494200+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 1,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "SUCCESS",
+          "executed_at": "2026-11-08T12:13:23.605124+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-7AAAE1BD903BB646",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:13:23.494206+00:00",
+        "expires_at": "2026-11-22 12:13:23 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-7AAAE1BD903BB646) expiring 2026-11-22 12:13:23 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:13:23.605124+00:00",
+      "recovery_method": "SMART_CARD_RETRY_DAY_1"
+    },
+    {
+      "case_id": "DUN-422489F5",
+      "invoice_id": "in_cli_01",
+      "customer_id": "cus_cli_01",
+      "company_name": "Palantir Tech",
+      "domain": "palantir.com",
+      "billing_email": "billing@palantir.com",
+      "amount_usd": 24999.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:13:45.252903+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 1,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "SUCCESS",
+          "executed_at": "2026-11-08T12:13:45.430044+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-51BD68C4BEAF8560",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:13:45.252915+00:00",
+        "expires_at": "2026-11-22 12:13:45 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-51BD68C4BEAF8560) expiring 2026-11-22 12:13:45 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:13:45.430044+00:00",
+      "recovery_method": "SMART_CARD_RETRY_DAY_1"
+    },
+    {
+      "case_id": "DUN-3F7F0699",
+      "invoice_id": "in_cli_01",
+      "customer_id": "cus_cli_01",
+      "company_name": "Palantir Tech",
+      "domain": "palantir.com",
+      "billing_email": "billing@palantir.com",
+      "amount_usd": 24999.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:17:26.654989+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 1,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "SUCCESS",
+          "executed_at": "2026-11-08T12:17:26.773680+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-0931D095B846FC8B",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:17:26.654996+00:00",
+        "expires_at": "2026-11-22 12:17:26 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-0931D095B846FC8B) expiring 2026-11-22 12:17:26 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:17:26.773680+00:00",
+      "recovery_method": "SMART_CARD_RETRY_DAY_1"
+    },
+    {
+      "case_id": "DUN-397F90FE",
+      "invoice_id": "in_cli_01",
+      "customer_id": "cus_cli_01",
+      "company_name": "Palantir Tech",
+      "domain": "palantir.com",
+      "billing_email": "billing@palantir.com",
+      "amount_usd": 24999.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:18:34.954919+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 1,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "SUCCESS",
+          "executed_at": "2026-11-08T12:18:35.055757+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-4E067F4ACB7ED4F2",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:18:34.954925+00:00",
+        "expires_at": "2026-11-22 12:18:34 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-4E067F4ACB7ED4F2) expiring 2026-11-22 12:18:34 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:18:35.055757+00:00",
+      "recovery_method": "SMART_CARD_RETRY_DAY_1"
+    },
+    {
+      "case_id": "DUN-9A85CA65",
+      "invoice_id": "in_cli_01",
+      "customer_id": "cus_cli_01",
+      "company_name": "Palantir Tech",
+      "domain": "palantir.com",
+      "billing_email": "billing@palantir.com",
+      "amount_usd": 24999.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:21:36.769812+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 1,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "SUCCESS",
+          "executed_at": "2026-11-08T12:21:36.966963+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-BB7C19EE3B568FCC",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:21:36.769820+00:00",
+        "expires_at": "2026-11-22 12:21:36 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-BB7C19EE3B568FCC) expiring 2026-11-22 12:21:36 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:21:36.966963+00:00",
+      "recovery_method": "SMART_CARD_RETRY_DAY_1"
+    },
+    {
+      "case_id": "DUN-749AFA0A",
+      "invoice_id": "in_cli_01",
+      "customer_id": "cus_cli_01",
+      "company_name": "Palantir Tech",
+      "domain": "palantir.com",
+      "billing_email": "billing@palantir.com",
+      "amount_usd": 24999.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:36:21.252939+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 1,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "SUCCESS",
+          "executed_at": "2026-11-08T12:36:21.349219+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-7D71CB656CA74974",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:36:21.252946+00:00",
+        "expires_at": "2026-11-22 12:36:21 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-7D71CB656CA74974) expiring 2026-11-22 12:36:21 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:36:21.349219+00:00",
+      "recovery_method": "SMART_CARD_RETRY_DAY_1"
+    },
+    {
+      "case_id": "DUN-62524F62",
+      "invoice_id": "in_cli_01",
+      "customer_id": "cus_cli_01",
+      "company_name": "Palantir Tech",
+      "domain": "palantir.com",
+      "billing_email": "billing@palantir.com",
+      "amount_usd": 24999.0,
+      "currency": "USD",
+      "failure_code": "insufficient_funds",
+      "created_at": "2026-11-08T12:38:13.626055+00:00",
+      "current_status": "RECOVERED_PAID",
+      "retries_attempted": 1,
+      "smart_retries": [
+        {
+          "retry_day": 1,
+          "scheduled_date": "2026-11-09",
+          "status": "SUCCESS",
+          "executed_at": "2026-11-08T12:38:13.722073+00:00"
+        },
+        {
+          "retry_day": 3,
+          "scheduled_date": "2026-11-11",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 5,
+          "scheduled_date": "2026-11-13",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 7,
+          "scheduled_date": "2026-11-15",
+          "status": "PENDING"
+        },
+        {
+          "retry_day": 14,
+          "scheduled_date": "2026-11-22",
+          "status": "PENDING"
+        }
+      ],
+      "grace_period": {
+        "token": "DSS-GRACE-14D-F2F061E49E475ABE",
+        "duration_days": 14,
+        "issued_at": "2026-11-08T12:38:13.626060+00:00",
+        "expires_at": "2026-11-22 12:38:13 UTC",
+        "in_app_banner": "[WARNING] Commercial payment settlement pending. Account operating under 14-day cryptographic grace token (DSS-GRACE-14D-F2F061E49E475ABE) expiring 2026-11-22 12:38:13 UTC. Software binaries remain fully active."
+      },
+      "localized_fallback": {
+        "currency": "USD",
+        "primary_fallback": "ACH_DIRECT_DEBIT",
+        "fallback_label": "Corporate ACH Wire & Direct Debit",
+        "action_prompt": "Provide corporate ACH routing coordinates or secondary purchasing card."
+      },
+      "resolved_at": "2026-11-08T12:38:13.722073+00:00",
+      "recovery_method": "SMART_CARD_RETRY_DAY_1"
+    }
+  ]
+}

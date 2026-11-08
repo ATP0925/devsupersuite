@@ -259,3 +259,4 @@ class TestEnterprisePQCMLKEM:
             assert "security@devsupersuite.com" in content, (
                 f"Missing corporate email in {file_path.name}"
             )
+

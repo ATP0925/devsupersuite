@@ -1,0 +1,226 @@
+{
+  "version": "1.0.0",
+  "governing_authority": "DevSuperSuite Revenue Operations (growth@devsupersuite.com)",
+  "brand_anonymity_protocol": "STRICT_100_PERCENT_COMPLIANT",
+  "last_updated": "2026-11-08T12:11:39.956703+00:00",
+  "accounts": [
+    {
+      "account_id": "ACC-RAYTHEON-01",
+      "company_name": "Raytheon Technologies",
+      "tier": "Enterprise",
+      "currency": "USD",
+      "master_start_date": "2026-01-01",
+      "master_end_date": "2026-12-31",
+      "current_seats": 70,
+      "base_committed_seats": 50,
+      "amc_seats": 40,
+      "amc_arr_usd": 96000.0,
+      "current_arr_usd": 168000.0,
+      "tranches": [
+        {
+          "tranche_id": "TRN-RAY-01",
+          "seats": 50,
+          "tier": "Enterprise",
+          "start_date": "2026-01-01",
+          "original_end_date": "2026-12-31",
+          "cotermed_renewal_date": "2026-12-31",
+          "status": "ACTIVE_MASTER"
+        },
+        {
+          "tranche_id": "TRN-RAY-02",
+          "seats": 20,
+          "tier": "Enterprise",
+          "start_date": "2026-07-01",
+          "original_end_date": "2027-06-30",
+          "cotermed_renewal_date": "2026-12-31",
+          "status": "COTERMED_MID_CYCLE",
+          "prorated_charge_usd": 24065.75
+        }
+      ]
+    },
+    {
+      "account_id": "ACC-SIEMENS-02",
+      "company_name": "Siemens Digital Industries",
+      "tier": "Sovereign SCIF Enclave",
+      "currency": "EUR",
+      "master_start_date": "2026-03-15",
+      "master_end_date": "2027-03-14",
+      "current_seats": 30,
+      "base_committed_seats": 30,
+      "amc_seats": 20,
+      "amc_arr_usd": 48000.0,
+      "current_arr_usd": 375000.0,
+      "tranches": [
+        {
+          "tranche_id": "TRN-SIEMENS-01",
+          "seats": 30,
+          "tier": "Sovereign SCIF Enclave",
+          "start_date": "2026-03-15",
+          "original_end_date": "2027-03-14",
+          "cotermed_renewal_date": "2027-03-14",
+          "status": "UPGRADED_COTERMED",
+          "unconsumed_credit_note_ref": "CRN-D63D533B"
+        }
+      ]
+    },
+    {
+      "account_id": "ACC-TATA-03",
+      "company_name": "Tata Consultancy Enclave",
+      "tier": "Pro",
+      "currency": "INR",
+      "master_start_date": "2026-06-01",
+      "master_end_date": "2027-05-31",
+      "current_seats": 100,
+      "base_committed_seats": 60,
+      "amc_seats": 50,
+      "amc_arr_usd": 24500.0,
+      "current_arr_usd": 49000.0,
+      "tranches": [
+        {
+          "tranche_id": "TRN-TATA-01",
+          "seats": 60,
+          "tier": "Pro",
+          "start_date": "2026-06-01",
+          "original_end_date": "2027-05-31",
+          "cotermed_renewal_date": "2027-05-31",
+          "status": "ACTIVE_MASTER"
+        },
+        {
+          "tranche_id": "TRN-TATA-02",
+          "seats": 40,
+          "tier": "Pro",
+          "start_date": "2026-09-01",
+          "original_end_date": "2027-08-31",
+          "cotermed_renewal_date": "2027-05-31",
+          "status": "COTERMED_MID_CYCLE",
+          "prorated_charge_inr": 1251345.21
+        }
+      ]
+    },
+    {
+      "account_id": "ACC-BAE-04",
+      "company_name": "BAE Systems UK",
+      "tier": "Sovereign SCIF Enclave",
+      "currency": "GBP",
+      "master_start_date": "2026-02-01",
+      "master_end_date": "2027-01-31",
+      "current_seats": 25,
+      "base_committed_seats": 15,
+      "amc_seats": 15,
+      "amc_arr_usd": 187500.0,
+      "current_arr_usd": 312500.0,
+      "tranches": [
+        {
+          "tranche_id": "TRN-BAE-01",
+          "seats": 15,
+          "tier": "Sovereign SCIF Enclave",
+          "start_date": "2026-02-01",
+          "original_end_date": "2027-01-31",
+          "cotermed_renewal_date": "2027-01-31",
+          "status": "ACTIVE_MASTER"
+        },
+        {
+          "tranche_id": "TRN-BAE-02",
+          "seats": 10,
+          "tier": "Sovereign SCIF Enclave",
+          "start_date": "2026-08-01",
+          "original_end_date": "2027-07-31",
+          "cotermed_renewal_date": "2027-01-31",
+          "status": "COTERMED_MID_CYCLE",
+          "prorated_charge_gbp": 49767.12
+        }
+      ]
+    },
+    {
+      "account_id": "ACC-GRAB-05",
+      "company_name": "Grab Singapore Engineering",
+      "tier": "Enterprise",
+      "currency": "SGD",
+      "master_start_date": "2026-05-01",
+      "master_end_date": "2027-04-30",
+      "current_seats": 40,
+      "base_committed_seats": 40,
+      "amc_seats": 30,
+      "amc_arr_usd": 72000.0,
+      "current_arr_usd": 96000.0,
+      "tranches": [
+        {
+          "tranche_id": "TRN-GRAB-01",
+          "seats": 40,
+          "tier": "Enterprise",
+          "start_date": "2026-05-01",
+          "original_end_date": "2027-04-30",
+          "cotermed_renewal_date": "2027-04-30",
+          "status": "ACTIVE_MASTER"
+        }
+      ]
+    }
+  ],
+  "credit_notes": [
+    {
+      "credit_note_id": "CRN-AD8A18A5",
+      "account_id": "ACC-RAYTHEON-01",
+      "amount": 0.0,
+      "currency": "USD",
+      "reason": "Initial Setup - Zero balance placeholder",
+      "original_invoice_ref": "INV-ORIG-C5A2B5",
+      "issued_at": "2026-01-01T00:00:00Z",
+      "status": "ISSUED",
+      "signature": "744a2b68ca6c8a2993b1333c56ea234c95b34ac4dd9feaa7a214c9d5ab05f5ab",
+      "issuer": "DevSuperSuite Revenue Operations (growth@devsupersuite.com)"
+    },
+    {
+      "credit_note_id": "CRN-D63D533B",
+      "account_id": "ACC-SIEMENS-02",
+      "amount": 33230.77,
+      "currency": "EUR",
+      "reason": "Unconsumed Enterprise Tier credit for 180 days remaining",
+      "original_invoice_ref": "INV-ORIG-AD53FC",
+      "issued_at": "2026-09-15T10:00:00Z",
+      "status": "ISSUED",
+      "signature": "79cb11e5caf718e83924b69ac385370c034c49b19323c52bb129b4f4d8dccbf2",
+      "issuer": "DevSuperSuite Revenue Operations (growth@devsupersuite.com)"
+    }
+  ],
+  "consolidated_invoices": [
+    {
+      "invoice_id": "INV-COTERM-E94A10B2",
+      "account_id": "ACC-RAYTHEON-01",
+      "currency": "USD",
+      "gross_charge": 24065.75,
+      "credit_notes_applied": [],
+      "net_payable": 24065.75,
+      "status": "SETTLED",
+      "payment_method": "CORPORATE_ACH",
+      "master_renewal_date": "2026-12-31",
+      "created_at": "2026-07-01T12:00:00Z"
+    },
+    {
+      "invoice_id": "INV-COTERM-F81C92D3",
+      "account_id": "ACC-SIEMENS-02",
+      "currency": "EUR",
+      "gross_charge": 139153.85,
+      "credit_notes_applied": [
+        "CRN-D63D533B"
+      ],
+      "net_payable": 105923.08,
+      "status": "SETTLED",
+      "payment_method": "SEPA_DIRECT_DEBIT",
+      "master_renewal_date": "2027-03-14",
+      "created_at": "2026-09-15T11:00:00Z"
+    },
+    {
+      "invoice_id": "INV-COTERM-A73C44E1",
+      "account_id": "ACC-TATA-03",
+      "currency": "INR",
+      "gross_charge": 1251345.21,
+      "credit_notes_applied": [],
+      "net_payable": 1251345.21,
+      "status": "SETTLED",
+      "payment_method": "UPI_QR_INSTANT",
+      "upi_qr_payload": "upi://pay?pa=devsupersuite@icici&pn=DevSuperSuite%20Official&am=1251345.21&cu=INR&tn=INV-COTERM-A73C44E1",
+      "master_renewal_date": "2027-05-31",
+      "created_at": "2026-09-01T08:30:00Z"
+    }
+  ]
+}
