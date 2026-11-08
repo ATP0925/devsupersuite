@@ -487,7 +487,7 @@ This Agreement is executed by the authorized digital signature of both parties u
         for c in self.ledger.get("contracts", []):
             lines.append(
                 f"| `{c['contract_id']}` | **{c['company_name']}** | `{c['tier_name']}` | "
-                f"{c['licensed_seats']} | **${c['annual_arr_usd']:,}** | `{c['status']}` | `{c['expiration_date']}` |"
+                f"{c['licensed_seats']} | **${c['annual_arr_usd']:,.2f}** | `{c['status']}` | `{c['expiration_date']}` |"
             )
 
         if not self.ledger.get("contracts"):

@@ -1,0 +1,31 @@
+{
+  "schedule_day": 4,
+  "article_id": "ART-02",
+  "article_title": "Building a pre-commit invariant guard: Stopping autonomous coding agents from deleting tests",
+  "canonical_target": "https://devsupersuite.web.app/blog/building-precommit-invariant-guard-stopping-agents-deleting-tests",
+  "campaign_id": "art02_federated_wave",
+  "platform_tasks": [
+    {
+      "platform_id": "PL-LOBSTERS",
+      "platform_name": "Lobste.rs",
+      "domain_authority": 68,
+      "link_attribute": "dofollow",
+      "optimal_window_utc": "15:00 - 19:00 UTC",
+      "canonical_url": "https://devsupersuite.web.app/blog/building-precommit-invariant-guard-stopping-agents-deleting-tests",
+      "enriched_tracking_url": "https://devsupersuite.web.app/blog/building-precommit-invariant-guard-stopping-agents-deleting-tests?utm_source=lobste_rs&utm_medium=social_syndication&utm_campaign=art02_federated_wave&utm_content=wave_04",
+      "suggested_anchor": "DevSuperSuite Building a pre-commit invariant ...",
+      "compliance": "100% Brand Anonymity Guaranteed"
+    },
+    {
+      "platform_id": "PL-LEMMY",
+      "platform_name": "Lemmy",
+      "domain_authority": 74,
+      "link_attribute": "dofollow_federated",
+      "optimal_window_utc": "12:00 - 16:00 UTC",
+      "canonical_url": "https://devsupersuite.web.app/blog/building-precommit-invariant-guard-stopping-agents-deleting-tests",
+      "enriched_tracking_url": "https://devsupersuite.web.app/blog/building-precommit-invariant-guard-stopping-agents-deleting-tests?utm_source=lemmy&utm_medium=social_syndication&utm_campaign=art02_federated_wave&utm_content=wave_04",
+      "suggested_anchor": "DevSuperSuite Building a pre-commit invariant ...",
+      "compliance": "100% Brand Anonymity Guaranteed"
+    }
+  ]
+}

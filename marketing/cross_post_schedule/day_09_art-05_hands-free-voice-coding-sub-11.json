@@ -1,0 +1,31 @@
+{
+  "schedule_day": 9,
+  "article_id": "ART-05",
+  "article_title": "Hands-free voice coding: Sub-110ms duplex audio with acoustic echo cancellation in terminal",
+  "canonical_target": "https://devsupersuite.web.app/blog/hands-free-voice-coding-sub-110ms-duplex-audio-echo-cancellation-terminal",
+  "campaign_id": "art05_syndication_wave1",
+  "platform_tasks": [
+    {
+      "platform_id": "PL-DEVTO",
+      "platform_name": "Dev.to",
+      "domain_authority": 84,
+      "link_attribute": "dofollow_canonical",
+      "optimal_window_utc": "12:00 - 15:00 UTC",
+      "canonical_url": "https://devsupersuite.web.app/blog/hands-free-voice-coding-sub-110ms-duplex-audio-echo-cancellation-terminal",
+      "enriched_tracking_url": "https://devsupersuite.web.app/blog/hands-free-voice-coding-sub-110ms-duplex-audio-echo-cancellation-terminal?utm_source=dev_to&utm_medium=social_syndication&utm_campaign=art05_syndication_wave1&utm_content=wave_09",
+      "suggested_anchor": "DevSuperSuite Hands-free voice coding: Sub-110...",
+      "compliance": "100% Brand Anonymity Guaranteed"
+    },
+    {
+      "platform_id": "PL-HASHNODE",
+      "platform_name": "Hashnode",
+      "domain_authority": 82,
+      "link_attribute": "dofollow_canonical",
+      "optimal_window_utc": "11:00 - 14:00 UTC",
+      "canonical_url": "https://devsupersuite.web.app/blog/hands-free-voice-coding-sub-110ms-duplex-audio-echo-cancellation-terminal",
+      "enriched_tracking_url": "https://devsupersuite.web.app/blog/hands-free-voice-coding-sub-110ms-duplex-audio-echo-cancellation-terminal?utm_source=hashnode&utm_medium=social_syndication&utm_campaign=art05_syndication_wave1&utm_content=wave_09",
+      "suggested_anchor": "DevSuperSuite Hands-free voice coding: Sub-110...",
+      "compliance": "100% Brand Anonymity Guaranteed"
+    }
+  ]
+}

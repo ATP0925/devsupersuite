@@ -1,0 +1,16 @@
+{
+  "alert_id": "ALT-EVT-8921",
+  "event_id": "EVT-8921",
+  "source_platform": "X/Twitter",
+  "author": "@dev_dan_fullstack",
+  "captured_text": "Cursor composer token limit is driving me nuts. A single refactor prompt on our repo burned 45,000 tokens and hallucinated all our Prisma schema models. Total token bloat.",
+  "matched_pattern": "(token bloat|token billing blowout|cursor token limit|costly prompt)",
+  "severity": "CRITICAL",
+  "response_sla_mins": 10,
+  "strategic_topic": "Context-Window Attention Sink Dilution & Tree-Sitter Pruning",
+  "recommended_action": "Inject AST pruning benchmark showing 83.6% token reduction and link to browser sandbox",
+  "template_reference": "HOOK-01",
+  "compliance_enforcement": "100% Brand Anonymity Protocol Verified",
+  "interactive_sandbox_cta": "https://devsupersuite.web.app?utm_source=x_twitter&utm_medium=mention_alert&utm_campaign=EVT-8921",
+  "generated_at": "2026-11-08T11:34:14.173901+00:00"
+}

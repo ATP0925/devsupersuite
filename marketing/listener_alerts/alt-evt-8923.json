@@ -1,0 +1,16 @@
+{
+  "alert_id": "ALT-EVT-8923",
+  "event_id": "EVT-8923",
+  "source_platform": "Reddit",
+  "author": "u/appsec_ninja",
+  "captured_text": "A junior engineer had an AI assistant hardcode an anthropic key exposed in a git secret commit today. Gitleaks gave us 15 false alarms on UUIDs before this.",
+  "matched_pattern": "(git secret commit|leaked api key|anthropic key exposed|stripe secret in git)",
+  "severity": "EMERGENCY",
+  "response_sla_mins": 5,
+  "strategic_topic": "AgentShield Shannon Entropy Credential Interception",
+  "recommended_action": "Explain H(X) >= 4.50 bits/char vs UUID false alarms and sub-0.8ms SIMD execution",
+  "template_reference": "HOOK-05",
+  "compliance_enforcement": "100% Brand Anonymity Protocol Verified",
+  "interactive_sandbox_cta": "https://devsupersuite.web.app?utm_source=reddit&utm_medium=mention_alert&utm_campaign=EVT-8923",
+  "generated_at": "2026-11-08T11:34:14.175812+00:00"
+}

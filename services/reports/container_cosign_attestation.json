@@ -3,10 +3,10 @@
     "organization": "DevSuperSuite Official",
     "authority": "Directorate of QA Automation & Security Compliance",
     "contact": "infosec@devsupersuite.com",
-    "timestamp": "2026-11-08T11:33:10.987937+00:00",
+    "timestamp": "2026-11-08T11:35:49.745364+00:00",
     "framework": "Sigstore Cosign v2.4, In-Toto SLSA v0.2 & Kyverno Admission Control",
     "classification": "Container Image Security & Cryptographic Attestation (Restricted)",
-    "sha256_digest": "06f87bd9a557aae7a10b59f5a5f1c579e87b573d1f9db55320030b78e6b7d193"
+    "sha256_digest": "f152093e8be2d0aa4fa0d67feca1a12afc5bd2ff0c8c58f7882bcb457dc3085e"
   },
   "container_security_summary": {
     "target_images_audited": 3,
@@ -131,19 +131,19 @@
     {
       "image_repository": "devsupersuite/omnikernel-airgap",
       "image_digest": "sha256:d5a7b8c19e42f0a1e3b5c7d9e1f3a5b7c9d1e3f5a7b9c1d3e5f7a9b1c3d5e7f9",
-      "signed_at": "2026-11-08T11:33:10.988183+00:00",
-      "cosign_signature": "229fadffaa909b79030ea7c94efa4622a7e784778b97b3271bf3a35c3b8ae88c",
+      "signed_at": "2026-11-08T11:35:49.745599+00:00",
+      "cosign_signature": "bb6f3ba971c15a732f664a17bc3a448e7965b20c3221cf72892b690dd6ab0b9d",
       "fulcio_certificate": {
         "issuer": "https://devsupersuite.com/workload-identity",
         "subject": "spiffe://devsupersuite.internal/sa/github-actions-builder",
-        "cert_serial": "875D6E0686487460CCAAFAA2",
-        "valid_from": "2026-11-08T11:33:10.988183+00:00"
+        "cert_serial": "B613C2B889450E35B2C7A2F8",
+        "valid_from": "2026-11-08T11:35:49.745599+00:00"
       },
       "rekor_transparency_log": {
         "logIndex": 18492041,
         "logID": "2d8568600c77e045",
-        "integratedTime": 1794137590,
-        "signedEntryTimestamp": "663d7e2fcab9ee607231830224cde3b3ecf0270f0f85d6fd729cb8cd67741475"
+        "integratedTime": 1794137749,
+        "signedEntryTimestamp": "e6bb22fc8eaec95765bd7becaa8f3f0a6bb60d0c14846f0023b4092173567c4b"
       },
       "slsa_provenance": {
         "_type": "https://in-toto.io/Statement/v0.1",
@@ -171,8 +171,8 @@
             }
           },
           "metadata": {
-            "buildInvocationId": "cd8a6ea68acb577de2a19b83f1451d37",
-            "buildStartedOn": "2026-11-08T11:33:10.988183+00:00",
+            "buildInvocationId": "164eedfbdd49f9ab5b1023d42e2f2d30",
+            "buildStartedOn": "2026-11-08T11:35:49.745599+00:00",
             "completeness": {
               "parameters": true,
               "environment": true,
@@ -182,25 +182,25 @@
           }
         }
       },
-      "provenance_sha256": "a60d2d962a80d6c69d93e93db1aa8b1fc022963c55d9b6b0cd728595e9891afb",
+      "provenance_sha256": "b1de0741d2c79aa670b4766316a69abede882b732c0b89fe7a3d53692dcbb8bb",
       "status": "SIGNED_AND_ATTESTED"
     },
     {
       "image_repository": "devsupersuite/mcp-server",
       "image_digest": "sha256:a1b2c3d4e5f60718293a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e",
-      "signed_at": "2026-11-08T11:33:10.988207+00:00",
-      "cosign_signature": "285754d97c65174188bfe390c59fa734e965b170064e561729ddd5512be428cb",
+      "signed_at": "2026-11-08T11:35:49.745625+00:00",
+      "cosign_signature": "ca89df426bb6b16e551d2b5d5aa1d1e7b981d42be8b67c4e5d9bd15996957a34",
       "fulcio_certificate": {
         "issuer": "https://devsupersuite.com/workload-identity",
         "subject": "spiffe://devsupersuite.internal/sa/github-actions-builder",
-        "cert_serial": "BAFFE4F2582B1C1A73454731",
-        "valid_from": "2026-11-08T11:33:10.988207+00:00"
+        "cert_serial": "43023B0D8DF97DD2BE990EA9",
+        "valid_from": "2026-11-08T11:35:49.745625+00:00"
       },
       "rekor_transparency_log": {
         "logIndex": 18492041,
         "logID": "2d8568600c77e045",
-        "integratedTime": 1794137590,
-        "signedEntryTimestamp": "6cfa24f25ac6733ac325fcb49b32674387fb9b94fe5e72324008cf2011d87256"
+        "integratedTime": 1794137749,
+        "signedEntryTimestamp": "7d7ea7ae9298b5bd7b0f19192e95e20965bb70497f93051242f3d61679c03f3c"
       },
       "slsa_provenance": {
         "_type": "https://in-toto.io/Statement/v0.1",
@@ -228,8 +228,8 @@
             }
           },
           "metadata": {
-            "buildInvocationId": "12f198d8834d2cc8a77cd9d7ec136cb2",
-            "buildStartedOn": "2026-11-08T11:33:10.988207+00:00",
+            "buildInvocationId": "2b988fad800f79777ec7844effa122ea",
+            "buildStartedOn": "2026-11-08T11:35:49.745625+00:00",
             "completeness": {
               "parameters": true,
               "environment": true,
@@ -239,25 +239,25 @@
           }
         }
       },
-      "provenance_sha256": "814a8cbbbe830fe6ee72d5602f8ef033385fcf2420f8853bc108027a9118e7d9",
+      "provenance_sha256": "36332bb54ddf6ebb4c44a0c4877706041fa166875d779687d45ee06a25d5f0ae",
       "status": "SIGNED_AND_ATTESTED"
     },
     {
       "image_repository": "devsupersuite/agent-shield",
       "image_digest": "sha256:f9e8d7c6b5a43210fe9dcba876543210fedcba9876543210fedcba9876543210",
-      "signed_at": "2026-11-08T11:33:10.988230+00:00",
-      "cosign_signature": "b20233f7a117044a8d916415fb0fe7ec3d7bf5508be9cab8132776b7fe5efd59",
+      "signed_at": "2026-11-08T11:35:49.745647+00:00",
+      "cosign_signature": "325ef02c9dae61799feda42375faf2b841cb796447a5b8963b0fee65b14d6610",
       "fulcio_certificate": {
         "issuer": "https://devsupersuite.com/workload-identity",
         "subject": "spiffe://devsupersuite.internal/sa/github-actions-builder",
-        "cert_serial": "454AF7E5BF44D048A161E771",
-        "valid_from": "2026-11-08T11:33:10.988230+00:00"
+        "cert_serial": "14DB4E8CDDECA745A6ED9300",
+        "valid_from": "2026-11-08T11:35:49.745647+00:00"
       },
       "rekor_transparency_log": {
         "logIndex": 18492041,
         "logID": "2d8568600c77e045",
-        "integratedTime": 1794137590,
-        "signedEntryTimestamp": "a90febbf955b2042108f78882e6813451e372b8ca1ef3f62894f98ab68981b89"
+        "integratedTime": 1794137749,
+        "signedEntryTimestamp": "85147c4b161968e5cb3e7101969e2470df4e5c947d2c61be1c15b7122d9e11f6"
       },
       "slsa_provenance": {
         "_type": "https://in-toto.io/Statement/v0.1",
@@ -285,8 +285,8 @@
             }
           },
           "metadata": {
-            "buildInvocationId": "9159483f4159d5a60274a78bf00a8acc",
-            "buildStartedOn": "2026-11-08T11:33:10.988230+00:00",
+            "buildInvocationId": "93d813adf63107ad1748d1cd3b88bdb3",
+            "buildStartedOn": "2026-11-08T11:35:49.745647+00:00",
             "completeness": {
               "parameters": true,
               "environment": true,
@@ -296,7 +296,7 @@
           }
         }
       },
-      "provenance_sha256": "18d47f420f0ed3ad6c626e66cc7cc5cb926423decb5bf06295816448ea2ab9b5",
+      "provenance_sha256": "da9ed8bbfb2f9039bd632e536d0496a31749fb7060775799be1f105a937aff32",
       "status": "SIGNED_AND_ATTESTED"
     }
   ]

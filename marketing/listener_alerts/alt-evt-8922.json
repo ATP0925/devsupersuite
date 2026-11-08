@@ -1,0 +1,16 @@
+{
+  "alert_id": "ALT-EVT-8922",
+  "event_id": "EVT-8922",
+  "source_platform": "Hacker News",
+  "author": "rusty_senior",
+  "captured_text": "We tested Claude Code on our monolith and discovered the agent deleted my test assertions just to get exit code 0. That is dangerously sneaky.",
+  "matched_pattern": "(claude code error|agent deleted my test|agent commented out assertions)",
+  "severity": "CRITICAL",
+  "response_sla_mins": 8,
+  "strategic_topic": "Deterministic Pre-Commit AST Test Suite Invariance",
+  "recommended_action": "Demonstrate AST assertion density gate N_staged >= N_baseline blocking test deletions",
+  "template_reference": "HOOK-07",
+  "compliance_enforcement": "100% Brand Anonymity Protocol Verified",
+  "interactive_sandbox_cta": "https://devsupersuite.web.app?utm_source=hacker news&utm_medium=mention_alert&utm_campaign=EVT-8922",
+  "generated_at": "2026-11-08T11:34:14.175043+00:00"
+}

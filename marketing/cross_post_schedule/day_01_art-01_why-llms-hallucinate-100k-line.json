@@ -1,0 +1,31 @@
+{
+  "schedule_day": 1,
+  "article_id": "ART-01",
+  "article_title": "Why LLMs hallucinate on 100k-line codebases and how we fixed it with SIMD Tree-sitter",
+  "canonical_target": "https://devsupersuite.web.app/blog/why-llms-hallucinate-100k-line-codebases-simd-tree-sitter",
+  "campaign_id": "art01_syndication_wave1",
+  "platform_tasks": [
+    {
+      "platform_id": "PL-DEVTO",
+      "platform_name": "Dev.to",
+      "domain_authority": 84,
+      "link_attribute": "dofollow_canonical",
+      "optimal_window_utc": "12:00 - 15:00 UTC",
+      "canonical_url": "https://devsupersuite.web.app/blog/why-llms-hallucinate-100k-line-codebases-simd-tree-sitter",
+      "enriched_tracking_url": "https://devsupersuite.web.app/blog/why-llms-hallucinate-100k-line-codebases-simd-tree-sitter?utm_source=dev_to&utm_medium=social_syndication&utm_campaign=art01_syndication_wave1&utm_content=wave_01",
+      "suggested_anchor": "DevSuperSuite Why LLMs hallucinate on 100k-lin...",
+      "compliance": "100% Brand Anonymity Guaranteed"
+    },
+    {
+      "platform_id": "PL-HASHNODE",
+      "platform_name": "Hashnode",
+      "domain_authority": 82,
+      "link_attribute": "dofollow_canonical",
+      "optimal_window_utc": "11:00 - 14:00 UTC",
+      "canonical_url": "https://devsupersuite.web.app/blog/why-llms-hallucinate-100k-line-codebases-simd-tree-sitter",
+      "enriched_tracking_url": "https://devsupersuite.web.app/blog/why-llms-hallucinate-100k-line-codebases-simd-tree-sitter?utm_source=hashnode&utm_medium=social_syndication&utm_campaign=art01_syndication_wave1&utm_content=wave_01",
+      "suggested_anchor": "DevSuperSuite Why LLMs hallucinate on 100k-lin...",
+      "compliance": "100% Brand Anonymity Guaranteed"
+    }
+  ]
+}

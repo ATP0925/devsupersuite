@@ -3,9 +3,9 @@
     "organization": "DevSuperSuite Official",
     "authority": "Directorate of QA Automation & Security Compliance",
     "classification": "Sovereign Enterprise Security Telemetry (Restricted)",
-    "generated_at": "2026-11-08T11:33:24.252270+00:00",
+    "generated_at": "2026-11-08T11:36:03.597190+00:00",
     "target_repository": "agent-commerce",
-    "sha256_digest": "dd5dcfcb68e1a14f324affe0da63cfebc781c92ca85d9c045a634fc3caa8535b"
+    "sha256_digest": "eb5a8994239053d09f9b3b740c1325af47cb26e85e2f2bc974a1df5be8893df1"
   },
   "enterprise_trust_index": {
     "composite_score": 100.0,
@@ -18,8 +18,8 @@
       "weight_percentage": 20,
       "score": 100.0,
       "metrics": {
-        "total_suites": 74,
-        "total_tests": 695,
+        "total_suites": 78,
+        "total_tests": 742,
         "pass_rate_percentage": 100.0,
         "fail_count": 0,
         "skipped_count": 0,
@@ -109,6 +109,12 @@
             "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
+            "module": "test_contract_lifecycle_engine.py",
+            "test_count": 13,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
             "module": "test_cro_frontend_components.py",
             "test_count": 9,
             "status": "PASS",
@@ -191,6 +197,12 @@
             "test_count": 9,
             "status": "PASS",
             "coverage_domain": "Financial Engine & Statutory Ledgers"
+          },
+          {
+            "module": "test_finops_cost_allocator.py",
+            "test_count": 11,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
             "module": "test_fips_cryptographic_audit.py",
@@ -397,6 +409,12 @@
             "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
+            "module": "test_sovereign_yield_engine.py",
+            "test_count": 11,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
             "module": "test_sox_soc1_controls.py",
             "test_count": 10,
             "status": "PASS",
@@ -463,6 +481,12 @@
             "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
+            "module": "test_zk_enclave_attestation.py",
+            "test_count": 12,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
             "module": "test_ztna_microsegmentation.py",
             "test_count": 9,
             "status": "PASS",
@@ -502,7 +526,7 @@
       "weight_percentage": 15,
       "score": 100.0,
       "metrics": {
-        "redos_execution_time_ms": 0.0136,
+        "redos_execution_time_ms": 0.0089,
         "redos_ceiling_limit_ms": 1.0,
         "redos_immunity": "PASS",
         "ast_max_recursion_depth": 30,

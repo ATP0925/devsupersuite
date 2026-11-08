@@ -1,0 +1,31 @@
+{
+  "schedule_day": 5,
+  "article_id": "ART-03",
+  "article_title": "The death of $20/month AI SaaS seat taxes: The engineering case for local-first developer tooling",
+  "canonical_target": "https://devsupersuite.web.app/blog/death-of-20-month-ai-saas-seat-taxes-local-first-tooling",
+  "campaign_id": "art03_editorial_wave",
+  "platform_tasks": [
+    {
+      "platform_id": "PL-HASHNODE",
+      "platform_name": "Hashnode",
+      "domain_authority": 82,
+      "link_attribute": "dofollow_canonical",
+      "optimal_window_utc": "11:00 - 14:00 UTC",
+      "canonical_url": "https://devsupersuite.web.app/blog/death-of-20-month-ai-saas-seat-taxes-local-first-tooling",
+      "enriched_tracking_url": "https://devsupersuite.web.app/blog/death-of-20-month-ai-saas-seat-taxes-local-first-tooling?utm_source=hashnode&utm_medium=social_syndication&utm_campaign=art03_editorial_wave&utm_content=wave_05",
+      "suggested_anchor": "DevSuperSuite The death of $20/month AI SaaS s...",
+      "compliance": "100% Brand Anonymity Guaranteed"
+    },
+    {
+      "platform_id": "PL-SUBSTACK",
+      "platform_name": "Substack",
+      "domain_authority": 92,
+      "link_attribute": "dofollow",
+      "optimal_window_utc": "14:00 - 18:00 UTC",
+      "canonical_url": "https://devsupersuite.web.app/blog/death-of-20-month-ai-saas-seat-taxes-local-first-tooling",
+      "enriched_tracking_url": "https://devsupersuite.web.app/blog/death-of-20-month-ai-saas-seat-taxes-local-first-tooling?utm_source=substack&utm_medium=social_syndication&utm_campaign=art03_editorial_wave&utm_content=wave_05",
+      "suggested_anchor": "DevSuperSuite The death of $20/month AI SaaS s...",
+      "compliance": "100% Brand Anonymity Guaranteed"
+    }
+  ]
+}

@@ -3,10 +3,10 @@
     "organization": "DevSuperSuite Official",
     "entity": "DevSuperSuite Tech Services",
     "treasury_contact": "cfo@devsupersuite.com",
-    "last_updated": "2026-11-08T11:33:19.637311+00:00"
+    "last_updated": "2026-11-08T11:35:58.659895+00:00"
   },
   "pools_audit": {
-    "timestamp": "2026-11-08T11:33:19.637333+00:00",
+    "timestamp": "2026-11-08T11:35:58.659916+00:00",
     "benchmarks": {
       "USD_TO_INR": 84.5,
       "EUR_TO_USD": 1.085,
@@ -58,7 +58,7 @@
     }
   },
   "zba_sweep": {
-    "timestamp": "2026-11-08T11:33:19.637358+00:00",
+    "timestamp": "2026-11-08T11:35:58.659940+00:00",
     "sweep_protocol": "Daily ZBA Cash Concentration (17:00 EST / 21:30 UTC)",
     "sovereign_target_vault": "U.S. Treasury Bills & Institutional Money Market Vault (4.95% APY)",
     "total_opening_liquidity_usd": 24894.78,

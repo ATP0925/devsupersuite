@@ -1,0 +1,31 @@
+{
+  "schedule_day": 8,
+  "article_id": "ART-04",
+  "article_title": "Inside AgentShield: Catching Shannon entropy credential leaks in CPU registers under 0.8ms",
+  "canonical_target": "https://devsupersuite.web.app/blog/inside-agentshield-shannon-entropy-credential-leaks-cpu-registers",
+  "campaign_id": "art04_security_wave",
+  "platform_tasks": [
+    {
+      "platform_id": "PL-LOBSTERS",
+      "platform_name": "Lobste.rs",
+      "domain_authority": 68,
+      "link_attribute": "dofollow",
+      "optimal_window_utc": "15:00 - 19:00 UTC",
+      "canonical_url": "https://devsupersuite.web.app/blog/inside-agentshield-shannon-entropy-credential-leaks-cpu-registers",
+      "enriched_tracking_url": "https://devsupersuite.web.app/blog/inside-agentshield-shannon-entropy-credential-leaks-cpu-registers?utm_source=lobste_rs&utm_medium=social_syndication&utm_campaign=art04_security_wave&utm_content=wave_08",
+      "suggested_anchor": "DevSuperSuite Inside AgentShield: Catching Sha...",
+      "compliance": "100% Brand Anonymity Guaranteed"
+    },
+    {
+      "platform_id": "PL-REDDIT",
+      "platform_name": "Reddit",
+      "domain_authority": 91,
+      "link_attribute": "nofollow_ugc",
+      "optimal_window_utc": "13:00 - 16:00 UTC",
+      "canonical_url": "https://devsupersuite.web.app/blog/inside-agentshield-shannon-entropy-credential-leaks-cpu-registers",
+      "enriched_tracking_url": "https://devsupersuite.web.app/blog/inside-agentshield-shannon-entropy-credential-leaks-cpu-registers?utm_source=reddit&utm_medium=social_syndication&utm_campaign=art04_security_wave&utm_content=wave_08",
+      "suggested_anchor": "DevSuperSuite Inside AgentShield: Catching Sha...",
+      "compliance": "100% Brand Anonymity Guaranteed"
+    }
+  ]
+}
