@@ -1,0 +1,510 @@
+{
+  "binder_id": "DSS-ASC606-2026-REVREC-BINDER",
+  "generation_timestamp": "2026-11-08T11:58:02.613062+00:00",
+  "commercial_principal": "DevSuperSuite Tech Services Corporation",
+  "treasury_desk": "DevSuperSuite Global Treasury Desk",
+  "treasury_email": "treasury@devsupersuite.com",
+  "executive_summary": {
+    "total_contracts": 4,
+    "total_tcv_usd": 168797.6,
+    "point_in_time_mix_pct": 47.44,
+    "over_time_mix_pct": 52.56,
+    "year_1_recognized_revenue_usd": 119218.51,
+    "year_1_deferred_revenue_liability_usd": 49579.09
+  },
+  "ssp_allocations": {
+    "allocation_timestamp": "2026-11-08T11:58:02.612653+00:00",
+    "accounting_standard": "US GAAP ASC 606 / IFRS 15",
+    "allocation_methodology": "Relative Fair Value Standalone Selling Price (SSP)",
+    "total_contracts_analyzed": 4,
+    "total_portfolio_tcv_usd": 168797.6,
+    "total_allocated_point_in_time_usd": 80083.27,
+    "total_allocated_over_time_usd": 88714.33,
+    "point_in_time_mix_pct": 47.44,
+    "over_time_mix_pct": 52.56,
+    "contract_allocations": [
+      {
+        "contract_id": "CNT-DEFENSE-LM-01",
+        "customer_name": "Lockheed Martin Enterprise",
+        "sector": "Defense & Aerospace",
+        "contract_duration_months": 36,
+        "contract_signed_date": "2026-01-01",
+        "total_contract_value_usd": 59997.6,
+        "total_standalone_ssp_usd": 54000.0,
+        "contract_point_in_time_revenue_usd": 16666.0,
+        "contract_over_time_revenue_usd": 43331.6,
+        "performance_obligations": [
+          {
+            "element_key": "TERM_SOFTWARE_LICENSE",
+            "pob_code": "POB-01",
+            "description": "DevSuperSuite Core Architecture & Compiler Tooling License",
+            "recognition_pattern": "POINT_IN_TIME",
+            "timing_trigger": "License Key Provisioning / Electronic Software Download",
+            "standalone_selling_price_usd": 15000.0,
+            "relative_ssp_weight_pct": 27.78,
+            "allocated_transaction_price_usd": 16666.0,
+            "monthly_amortization_usd": 0.0
+          },
+          {
+            "element_key": "MAINTENANCE_AND_SLA",
+            "pob_code": "POB-02",
+            "description": "Post-Contract Support (PCS), Security Patches & 99.95% SLA",
+            "recognition_pattern": "OVER_TIME_RATABLE",
+            "timing_trigger": "Straight-Line Amortization over Contract Tenor",
+            "standalone_selling_price_usd": 15000.0,
+            "relative_ssp_weight_pct": 27.78,
+            "allocated_transaction_price_usd": 16666.0,
+            "monthly_amortization_usd": 462.94
+          },
+          {
+            "element_key": "AIRGAP_SCIF_TAM_SUPPORT",
+            "pob_code": "POB-03",
+            "description": "Dedicated Technical Account Manager & Offline SCIF Artifact Updates",
+            "recognition_pattern": "OVER_TIME_RATABLE",
+            "timing_trigger": "Monthly Service Fulfillment over Contract Tenor",
+            "standalone_selling_price_usd": 24000.0,
+            "relative_ssp_weight_pct": 44.44,
+            "allocated_transaction_price_usd": 26665.6,
+            "monthly_amortization_usd": 740.71
+          }
+        ]
+      },
+      {
+        "contract_id": "CNT-FINTECH-BARC-02",
+        "customer_name": "Barclays Capital Engineering",
+        "sector": "Financial Services & Banking",
+        "contract_duration_months": 24,
+        "contract_signed_date": "2026-03-01",
+        "total_contract_value_usd": 48000.0,
+        "total_standalone_ssp_usd": 37000.0,
+        "contract_point_in_time_revenue_usd": 35027.03,
+        "contract_over_time_revenue_usd": 12972.97,
+        "performance_obligations": [
+          {
+            "element_key": "TERM_SOFTWARE_LICENSE",
+            "pob_code": "POB-01",
+            "description": "DevSuperSuite Core Architecture & Compiler Tooling License",
+            "recognition_pattern": "POINT_IN_TIME",
+            "timing_trigger": "License Key Provisioning / Electronic Software Download",
+            "standalone_selling_price_usd": 15000.0,
+            "relative_ssp_weight_pct": 40.54,
+            "allocated_transaction_price_usd": 19459.46,
+            "monthly_amortization_usd": 0.0
+          },
+          {
+            "element_key": "MAINTENANCE_AND_SLA",
+            "pob_code": "POB-02",
+            "description": "Post-Contract Support (PCS), Security Patches & 99.95% SLA",
+            "recognition_pattern": "OVER_TIME_RATABLE",
+            "timing_trigger": "Straight-Line Amortization over Contract Tenor",
+            "standalone_selling_price_usd": 10000.0,
+            "relative_ssp_weight_pct": 27.03,
+            "allocated_transaction_price_usd": 12972.97,
+            "monthly_amortization_usd": 540.54
+          },
+          {
+            "element_key": "CUSTOM_APPLIANCE_HARDWARE",
+            "pob_code": "POB-04",
+            "description": "1U Secure Rackmount Hardware Appliance with HSM Cryptographic Module",
+            "recognition_pattern": "POINT_IN_TIME",
+            "timing_trigger": "Customer Delivery & Acceptance (FOB Destination)",
+            "standalone_selling_price_usd": 12000.0,
+            "relative_ssp_weight_pct": 32.43,
+            "allocated_transaction_price_usd": 15567.57,
+            "monthly_amortization_usd": 0.0
+          }
+        ]
+      },
+      {
+        "contract_id": "CNT-HEALTH-RTX-03",
+        "customer_name": "Raytheon Intelligence & Space",
+        "sector": "Mission Systems & Defense",
+        "contract_duration_months": 24,
+        "contract_signed_date": "2026-04-01",
+        "total_contract_value_usd": 44800.0,
+        "total_standalone_ssp_usd": 41000.0,
+        "contract_point_in_time_revenue_usd": 16390.24,
+        "contract_over_time_revenue_usd": 28409.76,
+        "performance_obligations": [
+          {
+            "element_key": "TERM_SOFTWARE_LICENSE",
+            "pob_code": "POB-01",
+            "description": "DevSuperSuite Core Architecture & Compiler Tooling License",
+            "recognition_pattern": "POINT_IN_TIME",
+            "timing_trigger": "License Key Provisioning / Electronic Software Download",
+            "standalone_selling_price_usd": 15000.0,
+            "relative_ssp_weight_pct": 36.59,
+            "allocated_transaction_price_usd": 16390.24,
+            "monthly_amortization_usd": 0.0
+          },
+          {
+            "element_key": "MAINTENANCE_AND_SLA",
+            "pob_code": "POB-02",
+            "description": "Post-Contract Support (PCS), Security Patches & 99.95% SLA",
+            "recognition_pattern": "OVER_TIME_RATABLE",
+            "timing_trigger": "Straight-Line Amortization over Contract Tenor",
+            "standalone_selling_price_usd": 10000.0,
+            "relative_ssp_weight_pct": 24.39,
+            "allocated_transaction_price_usd": 10926.83,
+            "monthly_amortization_usd": 455.28
+          },
+          {
+            "element_key": "AIRGAP_SCIF_TAM_SUPPORT",
+            "pob_code": "POB-03",
+            "description": "Dedicated Technical Account Manager & Offline SCIF Artifact Updates",
+            "recognition_pattern": "OVER_TIME_RATABLE",
+            "timing_trigger": "Monthly Service Fulfillment over Contract Tenor",
+            "standalone_selling_price_usd": 16000.0,
+            "relative_ssp_weight_pct": 39.02,
+            "allocated_transaction_price_usd": 17482.93,
+            "monthly_amortization_usd": 728.46
+          }
+        ]
+      },
+      {
+        "contract_id": "CNT-TECH-PAL-04",
+        "customer_name": "Palantir Tech Commercial",
+        "sector": "Enterprise Big Data Platforms",
+        "contract_duration_months": 12,
+        "contract_signed_date": "2026-06-01",
+        "total_contract_value_usd": 16000.0,
+        "total_standalone_ssp_usd": 20000.0,
+        "contract_point_in_time_revenue_usd": 12000.0,
+        "contract_over_time_revenue_usd": 4000.0,
+        "performance_obligations": [
+          {
+            "element_key": "TERM_SOFTWARE_LICENSE",
+            "pob_code": "POB-01",
+            "description": "DevSuperSuite Core Architecture & Compiler Tooling License",
+            "recognition_pattern": "POINT_IN_TIME",
+            "timing_trigger": "License Key Provisioning / Electronic Software Download",
+            "standalone_selling_price_usd": 15000.0,
+            "relative_ssp_weight_pct": 75.0,
+            "allocated_transaction_price_usd": 12000.0,
+            "monthly_amortization_usd": 0.0
+          },
+          {
+            "element_key": "MAINTENANCE_AND_SLA",
+            "pob_code": "POB-02",
+            "description": "Post-Contract Support (PCS), Security Patches & 99.95% SLA",
+            "recognition_pattern": "OVER_TIME_RATABLE",
+            "timing_trigger": "Straight-Line Amortization over Contract Tenor",
+            "standalone_selling_price_usd": 5000.0,
+            "relative_ssp_weight_pct": 25.0,
+            "allocated_transaction_price_usd": 4000.0,
+            "monthly_amortization_usd": 333.33
+          }
+        ]
+      }
+    ]
+  },
+  "monthly_waterfall": {
+    "waterfall_timestamp": "2026-11-08T11:58:02.612806+00:00",
+    "total_contract_value_usd": 168797.6,
+    "max_horizon_months": 36,
+    "year_1_recognized_revenue_usd": 119218.51,
+    "year_2_recognized_revenue_usd": 35135.28,
+    "year_3_recognized_revenue_usd": 14443.92,
+    "final_deferred_revenue_balance_usd": 0.0,
+    "monthly_waterfall": [
+      {
+        "month_index": 1,
+        "point_in_time_recognized_usd": 80083.27,
+        "over_time_recognized_usd": 3261.27,
+        "total_month_recognized_usd": 83344.54,
+        "cumulative_revenue_recognized_usd": 83344.54,
+        "ending_deferred_revenue_liability_usd": 85453.06
+      },
+      {
+        "month_index": 2,
+        "point_in_time_recognized_usd": 0.0,
+        "over_time_recognized_usd": 3261.27,
+        "total_month_recognized_usd": 3261.27,
+        "cumulative_revenue_recognized_usd": 86605.81,
+        "ending_deferred_revenue_liability_usd": 82191.79
+      },
+      {
+        "month_index": 3,
+        "point_in_time_recognized_usd": 0.0,
+        "over_time_recognized_usd": 3261.27,
+        "total_month_recognized_usd": 3261.27,
+        "cumulative_revenue_recognized_usd": 89867.08,
+        "ending_deferred_revenue_liability_usd": 78930.52
+      },
+      {
+        "month_index": 4,
+        "point_in_time_recognized_usd": 0.0,
+        "over_time_recognized_usd": 3261.27,
+        "total_month_recognized_usd": 3261.27,
+        "cumulative_revenue_recognized_usd": 93128.35,
+        "ending_deferred_revenue_liability_usd": 75669.25
+      },
+      {
+        "month_index": 5,
+        "point_in_time_recognized_usd": 0.0,
+        "over_time_recognized_usd": 3261.27,
+        "total_month_recognized_usd": 3261.27,
+        "cumulative_revenue_recognized_usd": 96389.62,
+        "ending_deferred_revenue_liability_usd": 72407.98
+      },
+      {
+        "month_index": 6,
+        "point_in_time_recognized_usd": 0.0,
+        "over_time_recognized_usd": 3261.27,
+        "total_month_recognized_usd": 3261.27,
+        "cumulative_revenue_recognized_usd": 99650.89,
+        "ending_deferred_revenue_liability_usd": 69146.71
+      },
+      {
+        "month_index": 7,
+        "point_in_time_recognized_usd": 0.0,
+        "over_time_recognized_usd": 3261.27,
+        "total_month_recognized_usd": 3261.27,
+        "cumulative_revenue_recognized_usd": 102912.16,
+        "ending_deferred_revenue_liability_usd": 65885.44
+      },
+      {
+        "month_index": 8,
+        "point_in_time_recognized_usd": 0.0,
+        "over_time_recognized_usd": 3261.27,
+        "total_month_recognized_usd": 3261.27,
+        "cumulative_revenue_recognized_usd": 106173.43,
+        "ending_deferred_revenue_liability_usd": 62624.17
+      },
+      {
+        "month_index": 9,
+        "point_in_time_recognized_usd": 0.0,
+        "over_time_recognized_usd": 3261.27,
+        "total_month_recognized_usd": 3261.27,
+        "cumulative_revenue_recognized_usd": 109434.7,
+        "ending_deferred_revenue_liability_usd": 59362.9
+      },
+      {
+        "month_index": 10,
+        "point_in_time_recognized_usd": 0.0,
+        "over_time_recognized_usd": 3261.27,
+        "total_month_recognized_usd": 3261.27,
+        "cumulative_revenue_recognized_usd": 112695.97,
+        "ending_deferred_revenue_liability_usd": 56101.63
+      },
+      {
+        "month_index": 11,
+        "point_in_time_recognized_usd": 0.0,
+        "over_time_recognized_usd": 3261.27,
+        "total_month_recognized_usd": 3261.27,
+        "cumulative_revenue_recognized_usd": 115957.24,
+        "ending_deferred_revenue_liability_usd": 52840.36
+      },
+      {
+        "month_index": 12,
+        "point_in_time_recognized_usd": 0.0,
+        "over_time_recognized_usd": 3261.27,
+        "total_month_recognized_usd": 3261.27,
+        "cumulative_revenue_recognized_usd": 119218.51,
+        "ending_deferred_revenue_liability_usd": 49579.09
+      },
+      {
+        "month_index": 13,
+        "point_in_time_recognized_usd": 0.0,
+        "over_time_recognized_usd": 2927.94,
+        "total_month_recognized_usd": 2927.94,
+        "cumulative_revenue_recognized_usd": 122146.45,
+        "ending_deferred_revenue_liability_usd": 46651.15
+      },
+      {
+        "month_index": 14,
+        "point_in_time_recognized_usd": 0.0,
+        "over_time_recognized_usd": 2927.94,
+        "total_month_recognized_usd": 2927.94,
+        "cumulative_revenue_recognized_usd": 125074.39,
+        "ending_deferred_revenue_liability_usd": 43723.21
+      },
+      {
+        "month_index": 15,
+        "point_in_time_recognized_usd": 0.0,
+        "over_time_recognized_usd": 2927.94,
+        "total_month_recognized_usd": 2927.94,
+        "cumulative_revenue_recognized_usd": 128002.33,
+        "ending_deferred_revenue_liability_usd": 40795.27
+      },
+      {
+        "month_index": 16,
+        "point_in_time_recognized_usd": 0.0,
+        "over_time_recognized_usd": 2927.94,
+        "total_month_recognized_usd": 2927.94,
+        "cumulative_revenue_recognized_usd": 130930.27,
+        "ending_deferred_revenue_liability_usd": 37867.33
+      },
+      {
+        "month_index": 17,
+        "point_in_time_recognized_usd": 0.0,
+        "over_time_recognized_usd": 2927.94,
+        "total_month_recognized_usd": 2927.94,
+        "cumulative_revenue_recognized_usd": 133858.21,
+        "ending_deferred_revenue_liability_usd": 34939.39
+      },
+      {
+        "month_index": 18,
+        "point_in_time_recognized_usd": 0.0,
+        "over_time_recognized_usd": 2927.94,
+        "total_month_recognized_usd": 2927.94,
+        "cumulative_revenue_recognized_usd": 136786.15,
+        "ending_deferred_revenue_liability_usd": 32011.45
+      },
+      {
+        "month_index": 19,
+        "point_in_time_recognized_usd": 0.0,
+        "over_time_recognized_usd": 2927.94,
+        "total_month_recognized_usd": 2927.94,
+        "cumulative_revenue_recognized_usd": 139714.09,
+        "ending_deferred_revenue_liability_usd": 29083.51
+      },
+      {
+        "month_index": 20,
+        "point_in_time_recognized_usd": 0.0,
+        "over_time_recognized_usd": 2927.94,
+        "total_month_recognized_usd": 2927.94,
+        "cumulative_revenue_recognized_usd": 142642.03,
+        "ending_deferred_revenue_liability_usd": 26155.57
+      },
+      {
+        "month_index": 21,
+        "point_in_time_recognized_usd": 0.0,
+        "over_time_recognized_usd": 2927.94,
+        "total_month_recognized_usd": 2927.94,
+        "cumulative_revenue_recognized_usd": 145569.97,
+        "ending_deferred_revenue_liability_usd": 23227.63
+      },
+      {
+        "month_index": 22,
+        "point_in_time_recognized_usd": 0.0,
+        "over_time_recognized_usd": 2927.94,
+        "total_month_recognized_usd": 2927.94,
+        "cumulative_revenue_recognized_usd": 148497.91,
+        "ending_deferred_revenue_liability_usd": 20299.69
+      },
+      {
+        "month_index": 23,
+        "point_in_time_recognized_usd": 0.0,
+        "over_time_recognized_usd": 2927.94,
+        "total_month_recognized_usd": 2927.94,
+        "cumulative_revenue_recognized_usd": 151425.85,
+        "ending_deferred_revenue_liability_usd": 17371.75
+      },
+      {
+        "month_index": 24,
+        "point_in_time_recognized_usd": 0.0,
+        "over_time_recognized_usd": 2927.94,
+        "total_month_recognized_usd": 2927.94,
+        "cumulative_revenue_recognized_usd": 154353.79,
+        "ending_deferred_revenue_liability_usd": 14443.81
+      },
+      {
+        "month_index": 25,
+        "point_in_time_recognized_usd": 0.0,
+        "over_time_recognized_usd": 1203.66,
+        "total_month_recognized_usd": 1203.66,
+        "cumulative_revenue_recognized_usd": 155557.45,
+        "ending_deferred_revenue_liability_usd": 13240.15
+      },
+      {
+        "month_index": 26,
+        "point_in_time_recognized_usd": 0.0,
+        "over_time_recognized_usd": 1203.66,
+        "total_month_recognized_usd": 1203.66,
+        "cumulative_revenue_recognized_usd": 156761.11,
+        "ending_deferred_revenue_liability_usd": 12036.49
+      },
+      {
+        "month_index": 27,
+        "point_in_time_recognized_usd": 0.0,
+        "over_time_recognized_usd": 1203.66,
+        "total_month_recognized_usd": 1203.66,
+        "cumulative_revenue_recognized_usd": 157964.77,
+        "ending_deferred_revenue_liability_usd": 10832.83
+      },
+      {
+        "month_index": 28,
+        "point_in_time_recognized_usd": 0.0,
+        "over_time_recognized_usd": 1203.66,
+        "total_month_recognized_usd": 1203.66,
+        "cumulative_revenue_recognized_usd": 159168.43,
+        "ending_deferred_revenue_liability_usd": 9629.17
+      },
+      {
+        "month_index": 29,
+        "point_in_time_recognized_usd": 0.0,
+        "over_time_recognized_usd": 1203.66,
+        "total_month_recognized_usd": 1203.66,
+        "cumulative_revenue_recognized_usd": 160372.09,
+        "ending_deferred_revenue_liability_usd": 8425.51
+      },
+      {
+        "month_index": 30,
+        "point_in_time_recognized_usd": 0.0,
+        "over_time_recognized_usd": 1203.66,
+        "total_month_recognized_usd": 1203.66,
+        "cumulative_revenue_recognized_usd": 161575.75,
+        "ending_deferred_revenue_liability_usd": 7221.85
+      },
+      {
+        "month_index": 31,
+        "point_in_time_recognized_usd": 0.0,
+        "over_time_recognized_usd": 1203.66,
+        "total_month_recognized_usd": 1203.66,
+        "cumulative_revenue_recognized_usd": 162779.41,
+        "ending_deferred_revenue_liability_usd": 6018.19
+      },
+      {
+        "month_index": 32,
+        "point_in_time_recognized_usd": 0.0,
+        "over_time_recognized_usd": 1203.66,
+        "total_month_recognized_usd": 1203.66,
+        "cumulative_revenue_recognized_usd": 163983.07,
+        "ending_deferred_revenue_liability_usd": 4814.53
+      },
+      {
+        "month_index": 33,
+        "point_in_time_recognized_usd": 0.0,
+        "over_time_recognized_usd": 1203.66,
+        "total_month_recognized_usd": 1203.66,
+        "cumulative_revenue_recognized_usd": 165186.73,
+        "ending_deferred_revenue_liability_usd": 3610.87
+      },
+      {
+        "month_index": 34,
+        "point_in_time_recognized_usd": 0.0,
+        "over_time_recognized_usd": 1203.66,
+        "total_month_recognized_usd": 1203.66,
+        "cumulative_revenue_recognized_usd": 166390.39,
+        "ending_deferred_revenue_liability_usd": 2407.21
+      },
+      {
+        "month_index": 35,
+        "point_in_time_recognized_usd": 0.0,
+        "over_time_recognized_usd": 1203.66,
+        "total_month_recognized_usd": 1203.66,
+        "cumulative_revenue_recognized_usd": 167594.05,
+        "ending_deferred_revenue_liability_usd": 1203.55
+      },
+      {
+        "month_index": 36,
+        "point_in_time_recognized_usd": 0.0,
+        "over_time_recognized_usd": 1203.66,
+        "total_month_recognized_usd": 1203.66,
+        "cumulative_revenue_recognized_usd": 168797.71,
+        "ending_deferred_revenue_liability_usd": 0.0
+      }
+    ]
+  },
+  "balance_sheet_reconciliation": {
+    "fiscal_year": 2026,
+    "reconciliation_status": "ZERO_VARIANCE_BALANCED",
+    "beginning_deferred_revenue_usd": 0.0,
+    "gross_contract_bookings_tcv_usd": 168797.6,
+    "year_1_recognized_revenue_usd": 119218.51,
+    "ending_deferred_revenue_liability_usd": 49579.09,
+    "balance_sheet_variance_usd": 0.0,
+    "asc_606_compliance_affirmation": "The DevSuperSuite Global Treasury Desk certifies that revenue recognition complies with ASC 606 and IFRS 15. Standalone selling prices were properly allocated using the relative fair value method, and deferred revenue liabilities reflect remaining unperformed service obligations."
+  }
+}

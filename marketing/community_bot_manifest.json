@@ -1,0 +1,50 @@
+{
+  "bot_name": "DevSuperSuite Community Onboarding & Verification Bot",
+  "version": "1.0.0",
+  "brand": "DevSuperSuite DevRel",
+  "contact_email": "devrel@devsupersuite.com",
+  "website": "https://devsupersuite.web.app",
+  "checkout_url": "https://gumroad.com/l/tlzdco?coupon=DSS-COMMUNITY-VIP",
+  "platforms": [
+    "Discord",
+    "Telegram"
+  ],
+  "slash_commands": [
+    {
+      "name": "verify-license",
+      "description": "Cryptographically verify your DevSuperSuite license key via Ed25519",
+      "options": [
+        {
+          "name": "key",
+          "description": "Your license key token (e.g. DSS-PRO-2026-XXXX)",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "benchmark-ast",
+      "description": "Run Tree-Sitter AST context reduction benchmark (-83.6% token collapse)",
+      "options": []
+    },
+    {
+      "name": "simulate-voice",
+      "description": "Inspect sub-110ms local duplex neural voice latency budget and AEC breakdown",
+      "options": []
+    },
+    {
+      "name": "docs",
+      "description": "Access 1-click CLI installers and interactive WebAssembly documentation",
+      "options": []
+    }
+  ],
+  "auto_roles": {
+    "VIP Lifetime Member": "Assigned upon verifying a Pro Lifetime or VIP license grant",
+    "Enterprise SCIF Architect": "Assigned upon verifying an Enterprise SCIF license grant",
+    "Verified Contributor": "Assigned upon verifying an open-source contributor license grant"
+  },
+  "security_policies": {
+    "anti_phishing": "Active (Blocks rogue crypto giveaways, wallet-connect scams, and malicious shorteners)",
+    "action_on_match": "DELETE_AND_QUARANTINE",
+    "cryptography": "Ed25519 Asymmetric Digital Signatures"
+  }
+}

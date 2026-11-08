@@ -3,9 +3,9 @@
     "organization": "DevSuperSuite Official",
     "authority": "Directorate of QA Automation & Security Compliance",
     "classification": "Sovereign Enterprise Security Telemetry (Restricted)",
-    "generated_at": "2026-11-08T11:55:10.301250+00:00",
+    "generated_at": "2026-11-08T11:58:29.460612+00:00",
     "target_repository": "agent-commerce",
-    "sha256_digest": "d85f251cc24d9ec2a5c1451f0e9eede7cc50443e07b358c32346d71819b47fd8"
+    "sha256_digest": "1ad8d490dd6300eb55419e9994e40e71d0e02aaf7949f2c12e26c3dc3b563ccd"
   },
   "enterprise_trust_index": {
     "composite_score": 100.0,
@@ -18,8 +18,8 @@
       "weight_percentage": 20,
       "score": 100.0,
       "metrics": {
-        "total_suites": 100,
-        "total_tests": 1001,
+        "total_suites": 105,
+        "total_tests": 1065,
         "pass_rate_percentage": 100.0,
         "fail_count": 0,
         "skipped_count": 0,
@@ -57,6 +57,12 @@
           {
             "module": "test_apm_observability.py",
             "test_count": 7,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_asc606_revrec.py",
+            "test_count": 12,
             "status": "PASS",
             "coverage_domain": "Core Architecture & MCP Harness"
           },
@@ -111,6 +117,12 @@
           {
             "module": "test_churn_prediction.py",
             "test_count": 10,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_community_onboarding_bot.py",
+            "test_count": 11,
             "status": "PASS",
             "coverage_domain": "Core Architecture & MCP Harness"
           },
@@ -391,6 +403,12 @@
             "coverage_domain": "Real-Time DevSecOps Telemetry"
           },
           {
+            "module": "test_pkcs11_token_vault.py",
+            "test_count": 12,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
             "module": "test_poc_deployment_kit.py",
             "test_count": 15,
             "status": "PASS",
@@ -553,6 +571,12 @@
             "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
+            "module": "test_stripe_usage_billing.py",
+            "test_count": 14,
+            "status": "PASS",
+            "coverage_domain": "Financial Engine & Statutory Ledgers"
+          },
+          {
             "module": "test_supply_chain_security.py",
             "test_count": 8,
             "status": "PASS",
@@ -613,6 +637,12 @@
             "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
+            "module": "test_zero_trust_bastion.py",
+            "test_count": 15,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
             "module": "test_zk_enclave_attestation.py",
             "test_count": 12,
             "status": "PASS",
@@ -658,7 +688,7 @@
       "weight_percentage": 15,
       "score": 100.0,
       "metrics": {
-        "redos_execution_time_ms": 0.0085,
+        "redos_execution_time_ms": 0.0126,
         "redos_ceiling_limit_ms": 1.0,
         "redos_immunity": "PASS",
         "ast_max_recursion_depth": 30,

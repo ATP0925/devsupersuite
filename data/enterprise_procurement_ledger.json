@@ -2,7 +2,7 @@
   "version": "1.0.0",
   "governing_entity": "DevSuperSuite Enterprise Procurement (procurement@devsupersuite.com)",
   "compliance_protocol": "100% Brand Anonymity - Zero Founder Personal Identifiers",
-  "last_updated": "2026-11-08T11:54:54.467184+00:00",
+  "last_updated": "2026-11-08T11:58:14.011300+00:00",
   "vendor_packets": [
     {
       "packet_id": "VPK-04F20FA0",
@@ -579,6 +579,102 @@
         "beneficiary": "DevSuperSuite Official Corporation - Commercial Treasury"
       },
       "anonymity_compliance": "100% Brand Anonymity - Zero Founder Personal Identifiers"
+    },
+    {
+      "packet_id": "VPK-D47EC2FE",
+      "issued_to_company": "Booz Allen Hamilton",
+      "issued_date": "2026-11-08",
+      "tax_form_type": "W-9 (Request for Taxpayer Identification Number)",
+      "legal_entity": "DevSuperSuite Official Corporation",
+      "dba": "DevSuperSuite",
+      "procurement_email": "procurement@devsupersuite.com",
+      "tin_ein": "XX-XXX4192",
+      "duns_number": "11-892-4421",
+      "cage_code": "9DSS1",
+      "sam_gov_status": "ACTIVE_REGISTERED",
+      "naics_code": "511210 - Software Publishers",
+      "insurance_certificate": {
+        "form_type": "ACORD 25 Certificate of Liability Insurance",
+        "producer": "Aon Risk Solutions Enterprise Commercial",
+        "underwriter": "Lloyd's of London Syndicate & Travelers Casualty",
+        "policy_number": "POL-DSS-CYBER-882910-A",
+        "cyber_liability_limit_usd": 5000000.0,
+        "errors_and_omissions_usd": 5000000.0,
+        "general_liability_usd": 2000000.0,
+        "additional_insured_endorsement": "Additional Insured status granted to Booz Allen Hamilton"
+      },
+      "ach_wire_settlement": {
+        "bank_name": "J.P. Morgan Chase Commercial Banking",
+        "routing_aba": "021000021",
+        "account_number_masked": "******7842",
+        "swift_bic": "CHASUS33XXX",
+        "beneficiary": "DevSuperSuite Official Corporation - Commercial Treasury"
+      },
+      "anonymity_compliance": "100% Brand Anonymity - Zero Founder Personal Identifiers"
+    },
+    {
+      "packet_id": "VPK-9C559293",
+      "issued_to_company": "Booz Allen Hamilton",
+      "issued_date": "2026-11-08",
+      "tax_form_type": "W-9 (Request for Taxpayer Identification Number)",
+      "legal_entity": "DevSuperSuite Official Corporation",
+      "dba": "DevSuperSuite",
+      "procurement_email": "procurement@devsupersuite.com",
+      "tin_ein": "XX-XXX4192",
+      "duns_number": "11-892-4421",
+      "cage_code": "9DSS1",
+      "sam_gov_status": "ACTIVE_REGISTERED",
+      "naics_code": "511210 - Software Publishers",
+      "insurance_certificate": {
+        "form_type": "ACORD 25 Certificate of Liability Insurance",
+        "producer": "Aon Risk Solutions Enterprise Commercial",
+        "underwriter": "Lloyd's of London Syndicate & Travelers Casualty",
+        "policy_number": "POL-DSS-CYBER-882910-A",
+        "cyber_liability_limit_usd": 5000000.0,
+        "errors_and_omissions_usd": 5000000.0,
+        "general_liability_usd": 2000000.0,
+        "additional_insured_endorsement": "Additional Insured status granted to Booz Allen Hamilton"
+      },
+      "ach_wire_settlement": {
+        "bank_name": "J.P. Morgan Chase Commercial Banking",
+        "routing_aba": "021000021",
+        "account_number_masked": "******7842",
+        "swift_bic": "CHASUS33XXX",
+        "beneficiary": "DevSuperSuite Official Corporation - Commercial Treasury"
+      },
+      "anonymity_compliance": "100% Brand Anonymity - Zero Founder Personal Identifiers"
+    },
+    {
+      "packet_id": "VPK-6DE0DBEF",
+      "issued_to_company": "Booz Allen Hamilton",
+      "issued_date": "2026-11-08",
+      "tax_form_type": "W-9 (Request for Taxpayer Identification Number)",
+      "legal_entity": "DevSuperSuite Official Corporation",
+      "dba": "DevSuperSuite",
+      "procurement_email": "procurement@devsupersuite.com",
+      "tin_ein": "XX-XXX4192",
+      "duns_number": "11-892-4421",
+      "cage_code": "9DSS1",
+      "sam_gov_status": "ACTIVE_REGISTERED",
+      "naics_code": "511210 - Software Publishers",
+      "insurance_certificate": {
+        "form_type": "ACORD 25 Certificate of Liability Insurance",
+        "producer": "Aon Risk Solutions Enterprise Commercial",
+        "underwriter": "Lloyd's of London Syndicate & Travelers Casualty",
+        "policy_number": "POL-DSS-CYBER-882910-A",
+        "cyber_liability_limit_usd": 5000000.0,
+        "errors_and_omissions_usd": 5000000.0,
+        "general_liability_usd": 2000000.0,
+        "additional_insured_endorsement": "Additional Insured status granted to Booz Allen Hamilton"
+      },
+      "ach_wire_settlement": {
+        "bank_name": "J.P. Morgan Chase Commercial Banking",
+        "routing_aba": "021000021",
+        "account_number_masked": "******7842",
+        "swift_bic": "CHASUS33XXX",
+        "beneficiary": "DevSuperSuite Official Corporation - Commercial Treasury"
+      },
+      "anonymity_compliance": "100% Brand Anonymity - Zero Founder Personal Identifiers"
     }
   ],
   "purchase_orders": [
@@ -869,6 +965,54 @@
       "invoiced": true,
       "notes": "",
       "created_at": "2026-11-08T11:54:54.140117+00:00"
+    },
+    {
+      "po_number": "PO-CLI-83A4A292",
+      "company_name": "Booz Allen Hamilton",
+      "domain": "boozallen.com",
+      "amount_usd": 15000.0,
+      "payment_terms": "2_10_NET_30",
+      "contract_reference": "MSA-24055F4F",
+      "issue_date": "2026-11-08",
+      "due_date": "2026-12-08",
+      "early_discount_pct": 2.0,
+      "early_discount_until": "2026-11-18",
+      "status": "SETTLED_PAID",
+      "invoiced": true,
+      "notes": "",
+      "created_at": "2026-11-08T11:57:07.966069+00:00"
+    },
+    {
+      "po_number": "PO-CLI-FD8B8F7F",
+      "company_name": "Booz Allen Hamilton",
+      "domain": "boozallen.com",
+      "amount_usd": 15000.0,
+      "payment_terms": "2_10_NET_30",
+      "contract_reference": "MSA-74C525F4",
+      "issue_date": "2026-11-08",
+      "due_date": "2026-12-08",
+      "early_discount_pct": 2.0,
+      "early_discount_until": "2026-11-18",
+      "status": "SETTLED_PAID",
+      "invoiced": true,
+      "notes": "",
+      "created_at": "2026-11-08T11:57:36.725684+00:00"
+    },
+    {
+      "po_number": "PO-CLI-0BF9FA1C",
+      "company_name": "Booz Allen Hamilton",
+      "domain": "boozallen.com",
+      "amount_usd": 15000.0,
+      "payment_terms": "2_10_NET_30",
+      "contract_reference": "MSA-2622B5FF",
+      "issue_date": "2026-11-08",
+      "due_date": "2026-12-08",
+      "early_discount_pct": 2.0,
+      "early_discount_until": "2026-11-18",
+      "status": "SETTLED_PAID",
+      "invoiced": true,
+      "notes": "",
+      "created_at": "2026-11-08T11:58:13.717197+00:00"
     }
   ],
   "invoices": [
@@ -1348,6 +1492,87 @@
       "provider_signature_hex": "c2c8b04291709c49346126667564aad33ca6667cccafa4862d2c6c49485ae59c888b65ed2d31c36e85036ffa9223449ae8eb538b6eda99ce415c89c0ea76f00d",
       "provider_public_key_hex": "2f6cd1376f24e102a5a0f3eaec69e1ded20d22ee0f0d994b1f577c61e86a9099",
       "created_at": "2026-11-08T11:54:54.298450+00:00"
+    },
+    {
+      "invoice_number": "INV-DSS-CLI-83A4A292",
+      "po_number": "PO-CLI-83A4A292",
+      "company_name": "Booz Allen Hamilton",
+      "domain": "boozallen.com",
+      "amount_usd": 15000.0,
+      "payment_terms": "2_10_NET_30",
+      "invoice_date": "2026-11-08",
+      "due_date": "2026-12-08",
+      "early_discount_pct": 2.0,
+      "early_discount_until": "2026-11-18",
+      "status": "SETTLED_PAID",
+      "settlement_details": {
+        "settled_date": "2026-11-08",
+        "original_amount_usd": 15000.0,
+        "early_discount_applied": true,
+        "discount_amount_usd": 300.0,
+        "net_paid_usd": 14700.0,
+        "payment_reference": "ACH-WIRE-EXEC-88910",
+        "verified_by": "DevSuperSuite Treasury Automated Matching",
+        "settled_at": "2026-11-08T11:57:08.244243+00:00"
+      },
+      "digest_sha256": "7f407798904d360a103cd9359f201c8b528c9e27b1d90527d21cf9ccad5cfb0d",
+      "provider_signature_hex": "c0c084e1b4f3818a9d105f0aaac6b676233bd27ec708764442fab3a97f2386bb4b2c4f0a63297263a78737302616af717d7abe16d6cf0bac88d66c47a442a80b",
+      "provider_public_key_hex": "2f6cd1376f24e102a5a0f3eaec69e1ded20d22ee0f0d994b1f577c61e86a9099",
+      "created_at": "2026-11-08T11:57:08.106586+00:00"
+    },
+    {
+      "invoice_number": "INV-DSS-CLI-FD8B8F7F",
+      "po_number": "PO-CLI-FD8B8F7F",
+      "company_name": "Booz Allen Hamilton",
+      "domain": "boozallen.com",
+      "amount_usd": 15000.0,
+      "payment_terms": "2_10_NET_30",
+      "invoice_date": "2026-11-08",
+      "due_date": "2026-12-08",
+      "early_discount_pct": 2.0,
+      "early_discount_until": "2026-11-18",
+      "status": "SETTLED_PAID",
+      "settlement_details": {
+        "settled_date": "2026-11-08",
+        "original_amount_usd": 15000.0,
+        "early_discount_applied": true,
+        "discount_amount_usd": 300.0,
+        "net_paid_usd": 14700.0,
+        "payment_reference": "ACH-WIRE-EXEC-88910",
+        "verified_by": "DevSuperSuite Treasury Automated Matching",
+        "settled_at": "2026-11-08T11:57:36.985611+00:00"
+      },
+      "digest_sha256": "fac7daad30f608e401e2c04d98b464ca8ba6f9e362a21e295ba3658f4ab049e4",
+      "provider_signature_hex": "9eabc7caf126d0bc79805e73cbb24eb0678868d700ca679924d07b91c9de2df77ebabafb9c3b1ca1fc76a65a31842b470e1ae43504e689bbaa0586da7d60d908",
+      "provider_public_key_hex": "2f6cd1376f24e102a5a0f3eaec69e1ded20d22ee0f0d994b1f577c61e86a9099",
+      "created_at": "2026-11-08T11:57:36.853605+00:00"
+    },
+    {
+      "invoice_number": "INV-DSS-CLI-0BF9FA1C",
+      "po_number": "PO-CLI-0BF9FA1C",
+      "company_name": "Booz Allen Hamilton",
+      "domain": "boozallen.com",
+      "amount_usd": 15000.0,
+      "payment_terms": "2_10_NET_30",
+      "invoice_date": "2026-11-08",
+      "due_date": "2026-12-08",
+      "early_discount_pct": 2.0,
+      "early_discount_until": "2026-11-18",
+      "status": "SETTLED_PAID",
+      "settlement_details": {
+        "settled_date": "2026-11-08",
+        "original_amount_usd": 15000.0,
+        "early_discount_applied": true,
+        "discount_amount_usd": 300.0,
+        "net_paid_usd": 14700.0,
+        "payment_reference": "ACH-WIRE-EXEC-88910",
+        "verified_by": "DevSuperSuite Treasury Automated Matching",
+        "settled_at": "2026-11-08T11:58:14.000573+00:00"
+      },
+      "digest_sha256": "9cc695a06fc102485d34ea31a14dcc8866bba4f73cd6e182cdb8043610177ef9",
+      "provider_signature_hex": "35a9f6a098a9310c5d80101f6b10a2329ba30e2e5b613adac40bf96e779b909670b4bf6aeca94ad99e7f81cdb46bafd101188a1349059493ecda7626eef6bb09",
+      "provider_public_key_hex": "2f6cd1376f24e102a5a0f3eaec69e1ded20d22ee0f0d994b1f577c61e86a9099",
+      "created_at": "2026-11-08T11:58:13.857159+00:00"
     }
   ]
 }

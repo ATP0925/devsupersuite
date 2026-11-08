@@ -2,7 +2,7 @@
   "version": "1.0.0",
   "governing_entity": "DevSuperSuite Revenue Operations (growth@devsupersuite.com)",
   "compliance_protocol": "100% Brand Anonymity - Zero Founder Personal Identifiers",
-  "last_updated": "2026-11-08T11:54:46.574941+00:00",
+  "last_updated": "2026-11-08T11:58:06.883876+00:00",
   "quotes": [
     {
       "quote_id": "QTE-BC964D61",
@@ -485,6 +485,69 @@
       "airgap_support": true,
       "dedicated_tam": false,
       "quote_created_at": "2026-11-08T11:54:46.241063+00:00",
+      "valid_until_date": "2026-12-08"
+    },
+    {
+      "quote_id": "QTE-41FE6236",
+      "company_name": "Palantir Tech",
+      "domain": "palantir.com",
+      "tier_id": "TIER_ENTERPRISE_1",
+      "tier_name": "Enterprise Tier 1",
+      "licensed_seats": 100,
+      "base_annual_price_usd": 4999.0,
+      "multi_year_commitment_years": 1,
+      "multi_year_discount_pct": 0.0,
+      "discount_amount_usd": 0.0,
+      "net_annual_price_usd": 4999.0,
+      "total_contract_value_usd": 4999.0,
+      "sla_uptime_pct": 99.9,
+      "support_response_p1_hrs": 4,
+      "ip_indemnity_cap_usd": 250000.0,
+      "airgap_support": true,
+      "dedicated_tam": false,
+      "quote_created_at": "2026-11-08T11:57:00.728305+00:00",
+      "valid_until_date": "2026-12-08"
+    },
+    {
+      "quote_id": "QTE-DC47A017",
+      "company_name": "Palantir Tech",
+      "domain": "palantir.com",
+      "tier_id": "TIER_ENTERPRISE_1",
+      "tier_name": "Enterprise Tier 1",
+      "licensed_seats": 100,
+      "base_annual_price_usd": 4999.0,
+      "multi_year_commitment_years": 1,
+      "multi_year_discount_pct": 0.0,
+      "discount_amount_usd": 0.0,
+      "net_annual_price_usd": 4999.0,
+      "total_contract_value_usd": 4999.0,
+      "sla_uptime_pct": 99.9,
+      "support_response_p1_hrs": 4,
+      "ip_indemnity_cap_usd": 250000.0,
+      "airgap_support": true,
+      "dedicated_tam": false,
+      "quote_created_at": "2026-11-08T11:57:29.189473+00:00",
+      "valid_until_date": "2026-12-08"
+    },
+    {
+      "quote_id": "QTE-0D8D0CE7",
+      "company_name": "Palantir Tech",
+      "domain": "palantir.com",
+      "tier_id": "TIER_ENTERPRISE_1",
+      "tier_name": "Enterprise Tier 1",
+      "licensed_seats": 100,
+      "base_annual_price_usd": 4999.0,
+      "multi_year_commitment_years": 1,
+      "multi_year_discount_pct": 0.0,
+      "discount_amount_usd": 0.0,
+      "net_annual_price_usd": 4999.0,
+      "total_contract_value_usd": 4999.0,
+      "sla_uptime_pct": 99.9,
+      "support_response_p1_hrs": 4,
+      "ip_indemnity_cap_usd": 250000.0,
+      "airgap_support": true,
+      "dedicated_tam": false,
+      "quote_created_at": "2026-11-08T11:58:06.625082+00:00",
       "valid_until_date": "2026-12-08"
     }
   ],
@@ -1084,6 +1147,84 @@
           "signed_at": "2026-11-08T11:54:46.574842+00:00",
           "nonce": "7b12f6ec15564a11",
           "counterparty_signature_token": "afc855577b0b30a42629345bb9e93c40a06c239eb6d6fe65f00d4e34645a8caf"
+        }
+      ]
+    },
+    {
+      "contract_id": "MSA-41FE6236",
+      "quote_id": "QTE-41FE6236",
+      "company_name": "Palantir Tech",
+      "domain": "palantir.com",
+      "tier_name": "Enterprise Tier 1",
+      "licensed_seats": 100,
+      "annual_arr_usd": 4999.0,
+      "total_contract_value_usd": 4999.0,
+      "status": "EXECUTED_ACTIVE",
+      "effective_date": "2026-11-08",
+      "expiration_date": "2027-11-08",
+      "contract_body": "# MASTER SOFTWARE LICENSE AND SERVICES AGREEMENT (MSA)\n**Contract Reference**: `MSA-41FE6236`  \n**Quote Reference**: `QTE-41FE6236`  \n**Effective Date**: 2026-11-08  \n**Term**: 1 Year(s) (Expiring 2027-11-08)  \n**Provider**: **DevSuperSuite Official** (DevSuperSuite Revenue Operations, `growth@devsupersuite.com`)  \n**Customer**: **Palantir Tech** (`palantir.com`)  \n**Classification**: Sovereign Enterprise Software Agreement (Strict Brand Anonymity Enforced)  \n\n---\n\n## 1. Grant of Software License & Air-Gap Enclaves\nProvider hereby grants to Customer a non-exclusive, perpetual commercial license to deploy and execute DevSuperSuite software binaries and WebAssembly engines across **100 licensed seats**.\nCustomer is granted full authorization to deploy software within sovereign, offline, air-gapped SCIF defense facilities and private corporate VPC enclaves. The software executes 100% locally with zero external network connectivity or telemetry required.\n\n## 2. Service Level Agreement (SLA) & Incident Response\n- **Uptime Commitment**: Provider warrants that the software engine operates with **99.9% availability**.\n- **Support Severity Levels**:\n  * **Priority 1 (Critical Outage)**: Initial response within **4 hour(s)**.\n  * **Priority 2 (Degraded Performance)**: Initial response within 4 hours.\n  * **Priority 3 (General Inquiries)**: Initial response within 1 business day.\n- **Dedicated TAM**: Standard enterprise engineering desk support.\n\n## 3. Intellectual Property Infringement Indemnification\nProvider agrees to defend, indemnify, and hold harmless Customer and its affiliates against any third-party claim alleging that the software infringes any patent, copyright, or trade secret, up to an aggregate liability cap of **$250,000.00 USD**.\n\n## 4. Zero-Telemetry & Sovereign Confidentiality\nProvider represents and warrants that DevSuperSuite contains zero phone-home routines, zero remote telemetry trackers, and zero code-ingestion mechanisms. All AST slicing and secret zeroization operations execute strictly within local workstation memory.\n\n## 5. Commercial Fees & Payment Schedule\nCustomer agrees to settle Net Annual Fees of **$4,999.00 USD** (Total Contract Value: **$4,999.00 USD**) payable Net 30 upon invoice issuance.\n\n---\n\n## 6. Cryptographic Signatures & Verification Audit\nThis Agreement is executed by the authorized digital signature of both parties under asymmetric Ed25519 verification.\n",
+      "digest_sha256": "f3aa381f148a90f4bb7b4e66f1ef1335406dba42a75da66c0f0ffbb0ad0d670f",
+      "provider_signature_hex": "2753033f3eb3a780551d44259719b67b5b9768c85af02e7e5940d403faf59fd6e04abf483ea4c3ab26ebc3203afb6afae4f3a596d9253aad915fe3eb76c1b003",
+      "provider_public_key_hex": "5195255e01d23d23e57af82fd0e7fee20e28663b7155b2cc73eff4b84e3956da",
+      "counterparty_signatures": [
+        {
+          "signatory_email": "legal@palantir.com",
+          "signatory_title": "Authorized Representative",
+          "signed_at": "2026-11-08T11:57:01.008659+00:00",
+          "nonce": "798f119a44304696",
+          "counterparty_signature_token": "2da251d0c69b95c14815b143e8540e0e2079a0f8f6f07b3f3c93f9bd515b33b3"
+        }
+      ]
+    },
+    {
+      "contract_id": "MSA-DC47A017",
+      "quote_id": "QTE-DC47A017",
+      "company_name": "Palantir Tech",
+      "domain": "palantir.com",
+      "tier_name": "Enterprise Tier 1",
+      "licensed_seats": 100,
+      "annual_arr_usd": 4999.0,
+      "total_contract_value_usd": 4999.0,
+      "status": "EXECUTED_ACTIVE",
+      "effective_date": "2026-11-08",
+      "expiration_date": "2027-11-08",
+      "contract_body": "# MASTER SOFTWARE LICENSE AND SERVICES AGREEMENT (MSA)\n**Contract Reference**: `MSA-DC47A017`  \n**Quote Reference**: `QTE-DC47A017`  \n**Effective Date**: 2026-11-08  \n**Term**: 1 Year(s) (Expiring 2027-11-08)  \n**Provider**: **DevSuperSuite Official** (DevSuperSuite Revenue Operations, `growth@devsupersuite.com`)  \n**Customer**: **Palantir Tech** (`palantir.com`)  \n**Classification**: Sovereign Enterprise Software Agreement (Strict Brand Anonymity Enforced)  \n\n---\n\n## 1. Grant of Software License & Air-Gap Enclaves\nProvider hereby grants to Customer a non-exclusive, perpetual commercial license to deploy and execute DevSuperSuite software binaries and WebAssembly engines across **100 licensed seats**.\nCustomer is granted full authorization to deploy software within sovereign, offline, air-gapped SCIF defense facilities and private corporate VPC enclaves. The software executes 100% locally with zero external network connectivity or telemetry required.\n\n## 2. Service Level Agreement (SLA) & Incident Response\n- **Uptime Commitment**: Provider warrants that the software engine operates with **99.9% availability**.\n- **Support Severity Levels**:\n  * **Priority 1 (Critical Outage)**: Initial response within **4 hour(s)**.\n  * **Priority 2 (Degraded Performance)**: Initial response within 4 hours.\n  * **Priority 3 (General Inquiries)**: Initial response within 1 business day.\n- **Dedicated TAM**: Standard enterprise engineering desk support.\n\n## 3. Intellectual Property Infringement Indemnification\nProvider agrees to defend, indemnify, and hold harmless Customer and its affiliates against any third-party claim alleging that the software infringes any patent, copyright, or trade secret, up to an aggregate liability cap of **$250,000.00 USD**.\n\n## 4. Zero-Telemetry & Sovereign Confidentiality\nProvider represents and warrants that DevSuperSuite contains zero phone-home routines, zero remote telemetry trackers, and zero code-ingestion mechanisms. All AST slicing and secret zeroization operations execute strictly within local workstation memory.\n\n## 5. Commercial Fees & Payment Schedule\nCustomer agrees to settle Net Annual Fees of **$4,999.00 USD** (Total Contract Value: **$4,999.00 USD**) payable Net 30 upon invoice issuance.\n\n---\n\n## 6. Cryptographic Signatures & Verification Audit\nThis Agreement is executed by the authorized digital signature of both parties under asymmetric Ed25519 verification.\n",
+      "digest_sha256": "636d52f5f80ade02719971f5d22a0526971ef62e9901b6e285576b374f465987",
+      "provider_signature_hex": "04853a11f9ea3ab46c2f446a1c12eae6fcb695ec0ad780299df835bc150ec8931d8940c53db57ce95ac63d8fbb0997be43de16c311107941607af477814e0604",
+      "provider_public_key_hex": "5195255e01d23d23e57af82fd0e7fee20e28663b7155b2cc73eff4b84e3956da",
+      "counterparty_signatures": [
+        {
+          "signatory_email": "legal@palantir.com",
+          "signatory_title": "Authorized Representative",
+          "signed_at": "2026-11-08T11:57:29.475440+00:00",
+          "nonce": "4db7d0b9583840a2",
+          "counterparty_signature_token": "29a9bf0ace04bef111b36a8382af9ef7079c10d879e641e366a5cf19093c8cb1"
+        }
+      ]
+    },
+    {
+      "contract_id": "MSA-0D8D0CE7",
+      "quote_id": "QTE-0D8D0CE7",
+      "company_name": "Palantir Tech",
+      "domain": "palantir.com",
+      "tier_name": "Enterprise Tier 1",
+      "licensed_seats": 100,
+      "annual_arr_usd": 4999.0,
+      "total_contract_value_usd": 4999.0,
+      "status": "EXECUTED_ACTIVE",
+      "effective_date": "2026-11-08",
+      "expiration_date": "2027-11-08",
+      "contract_body": "# MASTER SOFTWARE LICENSE AND SERVICES AGREEMENT (MSA)\n**Contract Reference**: `MSA-0D8D0CE7`  \n**Quote Reference**: `QTE-0D8D0CE7`  \n**Effective Date**: 2026-11-08  \n**Term**: 1 Year(s) (Expiring 2027-11-08)  \n**Provider**: **DevSuperSuite Official** (DevSuperSuite Revenue Operations, `growth@devsupersuite.com`)  \n**Customer**: **Palantir Tech** (`palantir.com`)  \n**Classification**: Sovereign Enterprise Software Agreement (Strict Brand Anonymity Enforced)  \n\n---\n\n## 1. Grant of Software License & Air-Gap Enclaves\nProvider hereby grants to Customer a non-exclusive, perpetual commercial license to deploy and execute DevSuperSuite software binaries and WebAssembly engines across **100 licensed seats**.\nCustomer is granted full authorization to deploy software within sovereign, offline, air-gapped SCIF defense facilities and private corporate VPC enclaves. The software executes 100% locally with zero external network connectivity or telemetry required.\n\n## 2. Service Level Agreement (SLA) & Incident Response\n- **Uptime Commitment**: Provider warrants that the software engine operates with **99.9% availability**.\n- **Support Severity Levels**:\n  * **Priority 1 (Critical Outage)**: Initial response within **4 hour(s)**.\n  * **Priority 2 (Degraded Performance)**: Initial response within 4 hours.\n  * **Priority 3 (General Inquiries)**: Initial response within 1 business day.\n- **Dedicated TAM**: Standard enterprise engineering desk support.\n\n## 3. Intellectual Property Infringement Indemnification\nProvider agrees to defend, indemnify, and hold harmless Customer and its affiliates against any third-party claim alleging that the software infringes any patent, copyright, or trade secret, up to an aggregate liability cap of **$250,000.00 USD**.\n\n## 4. Zero-Telemetry & Sovereign Confidentiality\nProvider represents and warrants that DevSuperSuite contains zero phone-home routines, zero remote telemetry trackers, and zero code-ingestion mechanisms. All AST slicing and secret zeroization operations execute strictly within local workstation memory.\n\n## 5. Commercial Fees & Payment Schedule\nCustomer agrees to settle Net Annual Fees of **$4,999.00 USD** (Total Contract Value: **$4,999.00 USD**) payable Net 30 upon invoice issuance.\n\n---\n\n## 6. Cryptographic Signatures & Verification Audit\nThis Agreement is executed by the authorized digital signature of both parties under asymmetric Ed25519 verification.\n",
+      "digest_sha256": "28445936fbca1c0611d9aa7b041f0cefef54c46e9b79825383f5f41b0c5864e4",
+      "provider_signature_hex": "0c2eea80e479fcd6f08ef9b9f3d9cc1fd97aee134e29e53f2006902b299679e100b07e94fd8fbc4de10f308ac7e02b516487df3920c27e3657ae990f0a419a05",
+      "provider_public_key_hex": "5195255e01d23d23e57af82fd0e7fee20e28663b7155b2cc73eff4b84e3956da",
+      "counterparty_signatures": [
+        {
+          "signatory_email": "legal@palantir.com",
+          "signatory_title": "Authorized Representative",
+          "signed_at": "2026-11-08T11:58:06.883805+00:00",
+          "nonce": "e5ec5d7d6a8a44dd",
+          "counterparty_signature_token": "3161c8247132bd91ec28797fb536d5a68c56980511f631f1d07115172f5f8c87"
         }
       ]
     }

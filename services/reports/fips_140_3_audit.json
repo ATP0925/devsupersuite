@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-08T11:54:57.643234+00:00",
+  "timestamp": "2026-11-08T11:58:16.801717+00:00",
   "overall_decision": "PASS",
   "fips_level_attestation": "FIPS 140-3 Level 2 Compliant",
   "boundary": {
@@ -82,9 +82,9 @@
   },
   "constant_time_audit": {
     "iterations": 1000,
-    "time_matching_avg_ms": 9.4e-05,
-    "time_differing_avg_ms": 8.1e-05,
-    "delta_ms": 1.3e-05,
+    "time_matching_avg_ms": 0.00011,
+    "time_differing_avg_ms": 0.000124,
+    "delta_ms": 1.4e-05,
     "threshold_ms": 0.05,
     "status": "PASS",
     "side_channel_resistant": true,

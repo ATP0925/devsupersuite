@@ -2,7 +2,7 @@
   "version": "1.0.0",
   "governing_entity": "DevSuperSuite Revenue Operations (growth@devsupersuite.com)",
   "compliance_protocol": "100% Brand Anonymity - Zero Founder Personal Identifiers",
-  "last_updated": "2026-11-08T11:54:48.499055+00:00",
+  "last_updated": "2026-11-08T11:58:08.598162+00:00",
   "supported_currencies": [
     "US",
     "GB",
@@ -21,11 +21,11 @@
     "RECOVER20"
   ],
   "telemetry": {
-    "total_checkout_resolutions": 9,
+    "total_checkout_resolutions": 12,
     "upi_sessions_generated": 1,
-    "gumroad_sessions_generated": 9,
-    "cart_abandonments_detected": 7,
-    "recovery_dispatches_sent": 7,
+    "gumroad_sessions_generated": 12,
+    "cart_abandonments_detected": 10,
+    "recovery_dispatches_sent": 10,
     "utr_verifications_settled": 2
   },
   "recent_sessions": [
@@ -189,6 +189,57 @@
         "applied_coupon": "DSS-DEVREL-X",
         "currency": "CAD"
       }
+    },
+    {
+      "session_id": "CHK-B4BF199A",
+      "timestamp": "2026-11-08T11:57:02.559488+00:00",
+      "country_code": "CA",
+      "currency": "CAD",
+      "final_price": 33.15,
+      "primary_rail": "GUMROAD",
+      "customer_email": "cli.dev@co.ca",
+      "applied_coupon": "DSS-DEVREL-X",
+      "upi_payload": null,
+      "gumroad_payload": {
+        "rail": "GUMROAD_INTERNATIONAL",
+        "checkout_url": "https://devsupersuite.gumroad.com/l/pro?wanted=true&discount_code=DSS-DEVREL-X&email=cli.dev@co.ca&currency=CAD",
+        "applied_coupon": "DSS-DEVREL-X",
+        "currency": "CAD"
+      }
+    },
+    {
+      "session_id": "CHK-0508A1A9",
+      "timestamp": "2026-11-08T11:57:31.063182+00:00",
+      "country_code": "CA",
+      "currency": "CAD",
+      "final_price": 33.15,
+      "primary_rail": "GUMROAD",
+      "customer_email": "cli.dev@co.ca",
+      "applied_coupon": "DSS-DEVREL-X",
+      "upi_payload": null,
+      "gumroad_payload": {
+        "rail": "GUMROAD_INTERNATIONAL",
+        "checkout_url": "https://devsupersuite.gumroad.com/l/pro?wanted=true&discount_code=DSS-DEVREL-X&email=cli.dev@co.ca&currency=CAD",
+        "applied_coupon": "DSS-DEVREL-X",
+        "currency": "CAD"
+      }
+    },
+    {
+      "session_id": "CHK-F1D6BBD9",
+      "timestamp": "2026-11-08T11:58:08.263573+00:00",
+      "country_code": "CA",
+      "currency": "CAD",
+      "final_price": 33.15,
+      "primary_rail": "GUMROAD",
+      "customer_email": "cli.dev@co.ca",
+      "applied_coupon": "DSS-DEVREL-X",
+      "upi_payload": null,
+      "gumroad_payload": {
+        "rail": "GUMROAD_INTERNATIONAL",
+        "checkout_url": "https://devsupersuite.gumroad.com/l/pro?wanted=true&discount_code=DSS-DEVREL-X&email=cli.dev@co.ca&currency=CAD",
+        "applied_coupon": "DSS-DEVREL-X",
+        "currency": "CAD"
+      }
     }
   ],
   "abandoned_carts": [
@@ -275,6 +326,45 @@
       "customer_email": "cli.drop@co.com",
       "country_code": "US",
       "dropped_at": "2026-11-08T11:39:48.499007+00:00",
+      "recovered_offer": {
+        "currency": "USD",
+        "discounted_price": 23.2,
+        "recovery_coupon": "RECOVER20",
+        "recovery_url": "https://devsupersuite.gumroad.com/l/pro?wanted=true&discount_code=RECOVER20&email=cli.drop@co.com"
+      },
+      "status": "DISPATCHED_PENDING_CLICK"
+    },
+    {
+      "abandonment_id": "ABN-573223CD",
+      "customer_email": "cli.drop@co.com",
+      "country_code": "US",
+      "dropped_at": "2026-11-08T11:42:02.892086+00:00",
+      "recovered_offer": {
+        "currency": "USD",
+        "discounted_price": 23.2,
+        "recovery_coupon": "RECOVER20",
+        "recovery_url": "https://devsupersuite.gumroad.com/l/pro?wanted=true&discount_code=RECOVER20&email=cli.drop@co.com"
+      },
+      "status": "DISPATCHED_PENDING_CLICK"
+    },
+    {
+      "abandonment_id": "ABN-C5284310",
+      "customer_email": "cli.drop@co.com",
+      "country_code": "US",
+      "dropped_at": "2026-11-08T11:42:31.428982+00:00",
+      "recovered_offer": {
+        "currency": "USD",
+        "discounted_price": 23.2,
+        "recovery_coupon": "RECOVER20",
+        "recovery_url": "https://devsupersuite.gumroad.com/l/pro?wanted=true&discount_code=RECOVER20&email=cli.drop@co.com"
+      },
+      "status": "DISPATCHED_PENDING_CLICK"
+    },
+    {
+      "abandonment_id": "ABN-AF96F35C",
+      "customer_email": "cli.drop@co.com",
+      "country_code": "US",
+      "dropped_at": "2026-11-08T11:43:08.598119+00:00",
       "recovered_offer": {
         "currency": "USD",
         "discounted_price": 23.2,

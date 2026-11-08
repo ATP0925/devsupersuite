@@ -1,0 +1,58 @@
+{
+  "$schema": "https://devsupersuite.com/schemas/zero-trust-bastion-v1.json",
+  "metadata": {
+    "manifest_name": "DevSuperSuite Zero-Trust Bastion Policy Manifest",
+    "reference": "DSS-ZERO-TRUST-BASTION-2026-V1",
+    "classification": "Just-In-Time (JIT) Privileged Access & Session Audit (Restricted)",
+    "organization": "DevSuperSuite Solutions Architecture / OmniKernel Labs",
+    "contact": "solutions@devsupersuite.com",
+    "bastion_contact": "bastion@devsupersuite.com",
+    "generated_at": "2026-11-08T11:58:37.661589+00:00"
+  },
+  "quorum_authorization_policy": {
+    "consensus_model": "M-of-N Multi-Party Approval",
+    "required_approvals": 2,
+    "authorized_roles": [
+      "CISO",
+      "Infrastructure Lead",
+      "Security Lead",
+      "VP Engineering"
+    ],
+    "anti_collusion_rule": "Requestor cannot approve own request (Zero Self-Approval)",
+    "request_timeout_seconds": 900
+  },
+  "certificate_authority_policy": {
+    "algorithm": "Ed25519-OpenSSH-Cert-v01",
+    "ca_fingerprint": "SHA256:7mP4kX8qW2vL9zR1tN3yE6uI0oA5sD8fG2hJ1kL4xM=",
+    "max_certificate_ttl_seconds": 1800,
+    "principals_allowed": [
+      "cluster-admin-jit",
+      "breakglass-devops"
+    ],
+    "critical_options": {
+      "source-address": "10.0.0.0/8,192.168.0.0/16"
+    },
+    "disallowed_extensions": [
+      "permit-agent-forwarding",
+      "permit-port-forwarding",
+      "permit-X11-forwarding"
+    ]
+  },
+  "session_auditing_policy": {
+    "keystroke_hash_chain": "SHA-256 Chained Ledger",
+    "dangerous_command_blacklist": [
+      "rm -rf /",
+      "mkfs.*",
+      "dd if=.* of=/dev/",
+      "chmod 777",
+      "iptables -F",
+      "cat /etc/shadow"
+    ],
+    "security_violation_action": "KILL_SESSION_IMMEDIATELY",
+    "siem_export_protocols": [
+      "JSON_NDJSON",
+      "SYSLOG_RFC5424",
+      "SPLUNK_HEC"
+    ]
+  }
+}

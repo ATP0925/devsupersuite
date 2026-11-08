@@ -1,0 +1,50 @@
+{
+  "manifest_version": "PKCS11-DSS-V3.1",
+  "timestamp_utc": "2026-11-08T11:58:23.949414+00:00",
+  "authority": "DevSuperSuite Security & Compliance (security@devsupersuite.com)",
+  "fips_compliance_level": "FIPS 140-3 Level 3",
+  "tokens": [
+    {
+      "slot_id": 0,
+      "manufacturer_id": "Yubico",
+      "model_name": "YubiKey 5 FIPS (Firmware 5.4.3)",
+      "serial_number": "YK-FIPS-948102",
+      "firmware_version": "5.4.3-FIPS",
+      "fips_certification_id": "NIST-CMVP-#4570 (FIPS 140-3 Level 3 Physical)",
+      "fips_security_level": "FIPS 140-3 Level 3",
+      "max_pin_retries": 3,
+      "user_pin_retries_remaining": 3,
+      "so_pin_retries_remaining": 3,
+      "is_user_locked": false,
+      "is_zeroized": false
+    },
+    {
+      "slot_id": 1,
+      "manufacturer_id": "Nitrokey",
+      "model_name": "Nitrokey HSM 2 (SmartCard-HSM)",
+      "serial_number": "NK-HSM2-772911",
+      "firmware_version": "3.4-HSM",
+      "fips_certification_id": "BSI-CC-PP-0084 / NIST-CMVP-#4190",
+      "fips_security_level": "FIPS 140-3 Level 3",
+      "max_pin_retries": 3,
+      "user_pin_retries_remaining": 3,
+      "so_pin_retries_remaining": 3,
+      "is_user_locked": false,
+      "is_zeroized": false
+    },
+    {
+      "slot_id": 2,
+      "manufacturer_id": "Thales DIS CPL",
+      "model_name": "Luna PCIe HSM A790",
+      "serial_number": "TH-LUNA-331049",
+      "firmware_version": "7.8.1-FIPS",
+      "fips_certification_id": "NIST-CMVP-#4282 (FIPS 140-3 Level 3 Overall)",
+      "fips_security_level": "FIPS 140-3 Level 3",
+      "max_pin_retries": 3,
+      "user_pin_retries_remaining": 3,
+      "so_pin_retries_remaining": 3,
+      "is_user_locked": false,
+      "is_zeroized": false
+    }
+  ]
+}

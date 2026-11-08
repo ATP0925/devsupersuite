@@ -1,0 +1,65 @@
+{
+  "$schema": "https://devsupersuite.com/schemas/gitops-promotion-pipeline-v1.json",
+  "metadata": {
+    "manifest_name": "DevSuperSuite GitOps Continuous Verification & Promotion Pipeline",
+    "reference": "DSS-GITOPS-PROMOTION-2026-V1",
+    "classification": "Multi-Environment Promotion & Data-Diode Staging (Restricted)",
+    "organization": "DevSuperSuite Solutions Architecture / OmniKernel Labs",
+    "contact": "solutions@devsupersuite.com",
+    "gitops_contact": "gitops@devsupersuite.com",
+    "generated_at": "2026-11-08T11:58:58.272884+00:00"
+  },
+  "environment_stages": {
+    "DEV": {
+      "order": 0,
+      "target": "ephemeral-dev-clusters",
+      "auto_promote": true
+    },
+    "STAGING": {
+      "order": 1,
+      "target": "pre-production-sovereign",
+      "auto_promote": true
+    },
+    "PROD": {
+      "order": 2,
+      "target": "multi-cloud-enterprise-production",
+      "auto_promote": false
+    },
+    "AIRGAP_SCIF": {
+      "order": 3,
+      "target": "defense-scif-data-diode",
+      "auto_promote": false
+    }
+  },
+  "slsa_level_3_gates": {
+    "reproducible_binary_hash_match": true,
+    "cosign_attestation": {
+      "required": true,
+      "oidc_issuer": "https://token.actions.devsupersuite.internal",
+      "public_key_fingerprint": "SHA256:4vK9mP2xQ8!wZ1*rT4kX8qW2vL9zR1tN3yE6uI0oA5="
+    },
+    "cyclonedx_sbom_thresholds": {
+      "max_critical_vulnerabilities": 0,
+      "max_high_vulnerabilities": 0,
+      "vex_mitigation_required": true
+    }
+  },
+  "optical_data_diode_configuration": {
+    "hardware_type": "10GbE Unidirectional Photodiode",
+    "detached_signature_algorithm": "Ed25519-Detached-Signature",
+    "checksum_manifest": "SHA-256",
+    "bundle_contents": [
+      "OCI Container Image Tarballs",
+      "Helm Chart Manifests",
+      "Tree-sitter Language Grammar Binaries",
+      "FIPS 140-3 Offline License Attestations"
+    ]
+  },
+  "canary_and_rollback_policy": {
+    "max_rollback_latency_seconds": 3.0,
+    "error_rate_threshold_percent": 0.05,
+    "p99_latency_threshold_ms": 200.0,
+    "max_crash_loop_pods": 0,
+    "fallback_mechanism": "Automated Reversion to Anchored Golden State"
+  }
+}

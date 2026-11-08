@@ -3,7 +3,7 @@
     "organization": "DevSuperSuite Official",
     "entity": "DevSuperSuite Tech Services",
     "treasury_contact": "cfo@devsupersuite.com",
-    "last_updated": "2026-11-08T11:55:14.172172+00:00"
+    "last_updated": "2026-11-08T11:58:33.976451+00:00"
   },
   "benchmarks": {
     "cost_plus_markup": {
@@ -28,7 +28,7 @@
     }
   },
   "transfer_pricing_model": {
-    "timestamp": "2026-11-08T11:55:14.172183+00:00",
+    "timestamp": "2026-11-08T11:58:33.976467+00:00",
     "cost_plus_model": {
       "direct_engineering_labor_usd": 8760.0,
       "allocated_rd_engineering_usd": 3500.0,
@@ -94,7 +94,7 @@
     ]
   },
   "transfer_pricing_audit": {
-    "audit_timestamp": "2026-11-08T11:55:14.172188+00:00",
+    "audit_timestamp": "2026-11-08T11:58:33.976474+00:00",
     "overall_audit_status": "COMPLIANT_ARMS_LENGTH",
     "cpm_service_markup_audit": {
       "observed_markup_pct": 10.0,

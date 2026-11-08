@@ -1878,10 +1878,76 @@
       "public_key_b64": "lDHYUtQ2F9J35kPEoNcAT4TXsl9vDSVmjqSaWxHNn24=",
       "sha256_fingerprint": "18d21bce9787236994083d732e3e683fd70a97a1bbf11bc4b23db702bdfe65a8",
       "created_at": "2026-11-08T11:55:00.115464+00:00",
+      "state": "ARCHIVED",
+      "rotation_interval_days": 90,
+      "retired_at": "2026-11-08T11:57:13.489574+00:00"
+    },
+    {
+      "key_id": "KID-ED25519-6A1ECFE3DF01",
+      "algorithm": "Ed25519 (FIPS 186-5 & RFC 8032)",
+      "key_length_bits": 256,
+      "public_key_b64": "Ej7VhTAGE4/lFC/M6PnvaLaebxRSMScD9fCpLlQna0I=",
+      "sha256_fingerprint": "6a1ecfe3df01df1701be2959c6d582b3ea87d2a6423b255b64ca685d8a9f18a9",
+      "created_at": "2026-11-08T11:57:13.489682+00:00",
+      "state": "ARCHIVED",
+      "rotation_interval_days": 90,
+      "retired_at": "2026-11-08T11:57:13.516749+00:00"
+    },
+    {
+      "key_id": "KID-ED25519-07624377AECC",
+      "algorithm": "Ed25519 (FIPS 186-5 & RFC 8032)",
+      "key_length_bits": 256,
+      "public_key_b64": "2eGzWKKYkVBe2+ByvFUAhN4OIMgf689RgmcQSLjpoZQ=",
+      "sha256_fingerprint": "07624377aecc727dcccafaf72239db013f9392c07d5dd3b9b0494f2fc669207b",
+      "created_at": "2026-11-08T11:57:13.516892+00:00",
+      "state": "ARCHIVED",
+      "rotation_interval_days": 90,
+      "retired_at": "2026-11-08T11:57:42.052154+00:00"
+    },
+    {
+      "key_id": "KID-ED25519-D6FF12A76B22",
+      "algorithm": "Ed25519 (FIPS 186-5 & RFC 8032)",
+      "key_length_bits": 256,
+      "public_key_b64": "SPgtZ9OjhxSM0Gs4fPnK3Ls8WYag4I+os7LmNJNAQ/4=",
+      "sha256_fingerprint": "d6ff12a76b226f642d61a4642e663936b4827c6291e096bc9360f94bfc770f28",
+      "created_at": "2026-11-08T11:57:42.052316+00:00",
+      "state": "ARCHIVED",
+      "rotation_interval_days": 90,
+      "retired_at": "2026-11-08T11:57:42.077284+00:00"
+    },
+    {
+      "key_id": "KID-ED25519-B6097CA03CC2",
+      "algorithm": "Ed25519 (FIPS 186-5 & RFC 8032)",
+      "key_length_bits": 256,
+      "public_key_b64": "RaYpdPrAjQONuGCd8QG72O8Mq5XVxSQIpdLfQrwhoj4=",
+      "sha256_fingerprint": "b6097ca03cc28af25de60a767fa60125cc0ed38f865c761b7a175f538c94932b",
+      "created_at": "2026-11-08T11:57:42.077469+00:00",
+      "state": "ARCHIVED",
+      "rotation_interval_days": 90,
+      "retired_at": "2026-11-08T11:58:19.058534+00:00"
+    },
+    {
+      "key_id": "KID-ED25519-E2E095A6E72D",
+      "algorithm": "Ed25519 (FIPS 186-5 & RFC 8032)",
+      "key_length_bits": 256,
+      "public_key_b64": "F43RPYnhafEofqU6CzY4h9rc0FqcoS6zteXg4r7kqkM=",
+      "sha256_fingerprint": "e2e095a6e72d8b9e44a8cfeef4f17dffcfe641c130ea493c643137c3f954ea76",
+      "created_at": "2026-11-08T11:58:19.058685+00:00",
+      "state": "ARCHIVED",
+      "rotation_interval_days": 90,
+      "retired_at": "2026-11-08T11:58:19.085510+00:00"
+    },
+    {
+      "key_id": "KID-ED25519-0BAF70C22B12",
+      "algorithm": "Ed25519 (FIPS 186-5 & RFC 8032)",
+      "key_length_bits": 256,
+      "public_key_b64": "EV+vU3GSnQK3/hUdNpDh1dR05f/b+XieMpewk+iSvcQ=",
+      "sha256_fingerprint": "0baf70c22b12b61a0a1e33c7c7f5e5fee3232affe0f0ace3579ae94671103f8c",
+      "created_at": "2026-11-08T11:58:19.085745+00:00",
       "state": "ACTIVE",
       "rotation_interval_days": 90
     }
   ],
-  "last_rotated_at": "2026-11-08T11:55:00.115464+00:00",
-  "active_key_id": "KID-ED25519-18D21BCE9787"
+  "last_rotated_at": "2026-11-08T11:58:19.085745+00:00",
+  "active_key_id": "KID-ED25519-0BAF70C22B12"
 }

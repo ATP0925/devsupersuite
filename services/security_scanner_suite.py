@@ -239,6 +239,8 @@ class EntropyScanner:
                         "signature" in line.lower() or
                         "hash" in line.lower() or
                         "certificate" in line.lower() or
+                        "fingerprint" in line.lower() or
+                        "pkcs" in file_name_lower or
                         "cert" in line.lower()
                     )
 

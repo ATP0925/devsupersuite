@@ -1350,5 +1350,44 @@
     "commission_usd": 6.0,
     "payout_status": "PENDING",
     "created_at": "2026-11-08T11:54:39.551112+00:00"
+  },
+  {
+    "referral_id": "REF-TX-B01EEE94",
+    "affiliate_id": "ELENA_ROSTOVA",
+    "buyer_email": "new.dev.customer@cloudstack.com",
+    "plan_name": "Hacker Solo",
+    "gross_price_usd": 29.0,
+    "buyer_discount_usd": 5.0,
+    "net_paid_usd": 24.0,
+    "commission_rate": 0.25,
+    "commission_usd": 6.0,
+    "payout_status": "PENDING",
+    "created_at": "2026-11-08T11:56:54.607638+00:00"
+  },
+  {
+    "referral_id": "REF-TX-30CA03C5",
+    "affiliate_id": "ELENA_ROSTOVA",
+    "buyer_email": "new.dev.customer@cloudstack.com",
+    "plan_name": "Hacker Solo",
+    "gross_price_usd": 29.0,
+    "buyer_discount_usd": 5.0,
+    "net_paid_usd": 24.0,
+    "commission_rate": 0.25,
+    "commission_usd": 6.0,
+    "payout_status": "PENDING",
+    "created_at": "2026-11-08T11:57:22.308853+00:00"
+  },
+  {
+    "referral_id": "REF-TX-138A33F0",
+    "affiliate_id": "ELENA_ROSTOVA",
+    "buyer_email": "new.dev.customer@cloudstack.com",
+    "plan_name": "Hacker Solo",
+    "gross_price_usd": 29.0,
+    "buyer_discount_usd": 5.0,
+    "net_paid_usd": 24.0,
+    "commission_rate": 0.25,
+    "commission_usd": 6.0,
+    "payout_status": "PENDING",
+    "created_at": "2026-11-08T11:57:59.782016+00:00"
   }
 ]

@@ -1,0 +1,487 @@
+{
+  "version": "1.0.0",
+  "governing_entity": "DevSuperSuite Revenue Operations (growth@devsupersuite.com)",
+  "compliance_protocol": "100% Brand Anonymity - Zero Founder Personal Identifiers",
+  "last_updated": "2026-11-08T11:58:33.568913+00:00",
+  "customers": [
+    {
+      "customer_id": "cus_dss_a98cae40579f",
+      "subscription_id": "sub_dss_1025ed7f49c3",
+      "company_name": "Palantir Technologies",
+      "domain": "palantir.com",
+      "billing_email": "billing@palantir.com",
+      "tier_id": "ENTERPRISE_UNLIMITED",
+      "status": "ACTIVE",
+      "current_period_start": "2026-11-01",
+      "current_period_end": "2026-12-08",
+      "created_at": "2026-11-08T11:56:30.560516+00:00",
+      "aggregated_usage": {
+        "ast_queries": 1450000,
+        "entropy_checks": 600000,
+        "voice_minutes": 6200
+      }
+    },
+    {
+      "customer_id": "cus_dss_476434a55878",
+      "subscription_id": "sub_dss_90095aed3a63",
+      "company_name": "Datadog Core Architecture",
+      "domain": "datadoghq.com",
+      "billing_email": "billing@datadoghq.com",
+      "tier_id": "TEAM_PRO",
+      "status": "ACTIVE",
+      "current_period_start": "2026-11-01",
+      "current_period_end": "2026-12-08",
+      "created_at": "2026-11-08T11:56:30.563936+00:00",
+      "aggregated_usage": {
+        "ast_queries": 180000,
+        "entropy_checks": 70000,
+        "voice_minutes": 800
+      }
+    },
+    {
+      "customer_id": "cus_dss_182c327f8ec9",
+      "subscription_id": "sub_dss_c2069814fdf7",
+      "company_name": "Stripe Developer Labs",
+      "domain": "stripe.com",
+      "billing_email": "billing@stripe.com",
+      "tier_id": "DEVELOPER_FREE",
+      "status": "ACTIVE",
+      "current_period_start": "2026-11-01",
+      "current_period_end": "2026-12-08",
+      "created_at": "2026-11-08T11:56:30.566331+00:00",
+      "aggregated_usage": {
+        "ast_queries": 9500,
+        "entropy_checks": 4200,
+        "voice_minutes": 0
+      }
+    },
+    {
+      "customer_id": "cus_dss_e74dd8942c98",
+      "subscription_id": "sub_dss_23be8adce086",
+      "company_name": "Booz Allen Hamilton",
+      "domain": "boozallen.com",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "status": "ACTIVE",
+      "current_period_start": "2026-11-01",
+      "current_period_end": "2026-12-08",
+      "created_at": "2026-11-08T11:57:08.125444+00:00",
+      "aggregated_usage": {
+        "ast_queries": 120000,
+        "entropy_checks": 0,
+        "voice_minutes": 0
+      }
+    },
+    {
+      "customer_id": "cus_dss_23329da2ab65",
+      "subscription_id": "sub_dss_71eb2b876ae4",
+      "company_name": "Booz Allen Hamilton",
+      "domain": "boozallen.com",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "status": "ACTIVE",
+      "current_period_start": "2026-11-01",
+      "current_period_end": "2026-12-08",
+      "created_at": "2026-11-08T11:57:55.783643+00:00",
+      "aggregated_usage": {
+        "ast_queries": 120000,
+        "entropy_checks": 0,
+        "voice_minutes": 0
+      }
+    },
+    {
+      "customer_id": "cus_dss_85419f68e1cf",
+      "subscription_id": "sub_dss_46f725dc3ed8",
+      "company_name": "Booz Allen Hamilton",
+      "domain": "boozallen.com",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "status": "ACTIVE",
+      "current_period_start": "2026-11-01",
+      "current_period_end": "2026-12-08",
+      "created_at": "2026-11-08T11:58:02.584585+00:00",
+      "aggregated_usage": {
+        "ast_queries": 120000,
+        "entropy_checks": 0,
+        "voice_minutes": 0
+      }
+    },
+    {
+      "customer_id": "cus_dss_c8a057654261",
+      "subscription_id": "sub_dss_049515317dc6",
+      "company_name": "Booz Allen Hamilton",
+      "domain": "boozallen.com",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "status": "ACTIVE",
+      "current_period_start": "2026-11-01",
+      "current_period_end": "2026-12-08",
+      "created_at": "2026-11-08T11:58:33.264586+00:00",
+      "aggregated_usage": {
+        "ast_queries": 120000,
+        "entropy_checks": 0,
+        "voice_minutes": 0
+      }
+    }
+  ],
+  "usage_events": [
+    {
+      "event_id": "mrec_9dd2e551da69",
+      "customer_id": "cus_dss_a98cae40579f",
+      "metric_name": "ast_queries",
+      "quantity": 1450000,
+      "idempotency_key": "idem_cus_dss_a98cae40579f_ast_queries_8d042403",
+      "timestamp": "2026-11-08T11:56:30.561337+00:00"
+    },
+    {
+      "event_id": "mrec_ca4918ecea1b",
+      "customer_id": "cus_dss_a98cae40579f",
+      "metric_name": "entropy_checks",
+      "quantity": 600000,
+      "idempotency_key": "idem_cus_dss_a98cae40579f_entropy_checks_80119e11",
+      "timestamp": "2026-11-08T11:56:30.561840+00:00"
+    },
+    {
+      "event_id": "mrec_6759e72ffc39",
+      "customer_id": "cus_dss_a98cae40579f",
+      "metric_name": "voice_minutes",
+      "quantity": 6200,
+      "idempotency_key": "idem_cus_dss_a98cae40579f_voice_minutes_ee0f625f",
+      "timestamp": "2026-11-08T11:56:30.562451+00:00"
+    },
+    {
+      "event_id": "mrec_1caf0e853d44",
+      "customer_id": "cus_dss_476434a55878",
+      "metric_name": "ast_queries",
+      "quantity": 180000,
+      "idempotency_key": "idem_cus_dss_476434a55878_ast_queries_83895803",
+      "timestamp": "2026-11-08T11:56:30.564400+00:00"
+    },
+    {
+      "event_id": "mrec_03306f412c52",
+      "customer_id": "cus_dss_476434a55878",
+      "metric_name": "entropy_checks",
+      "quantity": 70000,
+      "idempotency_key": "idem_cus_dss_476434a55878_entropy_checks_c581e5fd",
+      "timestamp": "2026-11-08T11:56:30.564884+00:00"
+    },
+    {
+      "event_id": "mrec_c5acf05866b8",
+      "customer_id": "cus_dss_476434a55878",
+      "metric_name": "voice_minutes",
+      "quantity": 800,
+      "idempotency_key": "idem_cus_dss_476434a55878_voice_minutes_093b9271",
+      "timestamp": "2026-11-08T11:56:30.565321+00:00"
+    },
+    {
+      "event_id": "mrec_66c92359562d",
+      "customer_id": "cus_dss_182c327f8ec9",
+      "metric_name": "ast_queries",
+      "quantity": 9500,
+      "idempotency_key": "idem_cus_dss_182c327f8ec9_ast_queries_356c535a",
+      "timestamp": "2026-11-08T11:56:30.566801+00:00"
+    },
+    {
+      "event_id": "mrec_d978ca242b9c",
+      "customer_id": "cus_dss_182c327f8ec9",
+      "metric_name": "entropy_checks",
+      "quantity": 4200,
+      "idempotency_key": "idem_cus_dss_182c327f8ec9_entropy_checks_e6da929f",
+      "timestamp": "2026-11-08T11:56:30.567232+00:00"
+    },
+    {
+      "event_id": "mrec_e6e935bacb25",
+      "customer_id": "cus_dss_e74dd8942c98",
+      "metric_name": "ast_queries",
+      "quantity": 120000,
+      "idempotency_key": "idem_cus_dss_e74dd8942c98_ast_queries_3da5df08",
+      "timestamp": "2026-11-08T11:57:08.231891+00:00"
+    },
+    {
+      "event_id": "mrec_c4890cc2d960",
+      "customer_id": "cus_dss_23329da2ab65",
+      "metric_name": "ast_queries",
+      "quantity": 120000,
+      "idempotency_key": "idem_cus_dss_23329da2ab65_ast_queries_702b2526",
+      "timestamp": "2026-11-08T11:57:55.884784+00:00"
+    },
+    {
+      "event_id": "mrec_5afe2584ac2d",
+      "customer_id": "cus_dss_85419f68e1cf",
+      "metric_name": "ast_queries",
+      "quantity": 120000,
+      "idempotency_key": "idem_cus_dss_85419f68e1cf_ast_queries_1f24a921",
+      "timestamp": "2026-11-08T11:58:02.705263+00:00"
+    },
+    {
+      "event_id": "mrec_ee7980c3ac7a",
+      "customer_id": "cus_dss_c8a057654261",
+      "metric_name": "ast_queries",
+      "quantity": 120000,
+      "idempotency_key": "idem_cus_dss_c8a057654261_ast_queries_c65cb949",
+      "timestamp": "2026-11-08T11:58:33.368760+00:00"
+    }
+  ],
+  "invoices": [
+    {
+      "invoice_id": "in_dss_e41f6522322944",
+      "customer_id": "cus_dss_a98cae40579f",
+      "subscription_id": "sub_dss_1025ed7f49c3",
+      "company_name": "Palantir Technologies",
+      "billing_email": "billing@palantir.com",
+      "tier_id": "ENTERPRISE_UNLIMITED",
+      "base_fee_usd": 499.0,
+      "total_overage_usd": 257.0,
+      "total_invoice_usd": 756.0,
+      "breakdown": {
+        "ast_queries": {
+          "reported": 1450000,
+          "included": 1000000,
+          "overage_units": 450000,
+          "unit_rate_usd": 0.0005,
+          "charge_usd": 225.0
+        },
+        "entropy_checks": {
+          "reported": 600000,
+          "included": 500000,
+          "overage_units": 100000,
+          "unit_rate_usd": 0.0002,
+          "charge_usd": 20.0
+        },
+        "voice_minutes": {
+          "reported": 6200,
+          "included": 5000,
+          "overage_units": 1200,
+          "unit_rate_usd": 0.01,
+          "charge_usd": 12.0
+        }
+      },
+      "status": "PAID",
+      "created_at": "2026-11-08T11:56:30.562881+00:00",
+      "due_date": "2026-11-22",
+      "payment_intent": "pi_dss_70d288144fd84c"
+    },
+    {
+      "invoice_id": "in_dss_d867310ffdc64e",
+      "customer_id": "cus_dss_476434a55878",
+      "subscription_id": "sub_dss_90095aed3a63",
+      "company_name": "Datadog Core Architecture",
+      "billing_email": "billing@datadoghq.com",
+      "tier_id": "TEAM_PRO",
+      "base_fee_usd": 29.0,
+      "total_overage_usd": 96.0,
+      "total_invoice_usd": 125.0,
+      "breakdown": {
+        "ast_queries": {
+          "reported": 180000,
+          "included": 100000,
+          "overage_units": 80000,
+          "unit_rate_usd": 0.001,
+          "charge_usd": 80.0
+        },
+        "entropy_checks": {
+          "reported": 70000,
+          "included": 50000,
+          "overage_units": 20000,
+          "unit_rate_usd": 0.0005,
+          "charge_usd": 10.0
+        },
+        "voice_minutes": {
+          "reported": 800,
+          "included": 500,
+          "overage_units": 300,
+          "unit_rate_usd": 0.02,
+          "charge_usd": 6.0
+        }
+      },
+      "status": "FINALIZED",
+      "created_at": "2026-11-08T11:56:30.565808+00:00",
+      "due_date": "2026-11-22",
+      "payment_intent": "pi_dss_43b222b870b64f"
+    },
+    {
+      "invoice_id": "in_dss_a7621d47021c46",
+      "customer_id": "cus_dss_e74dd8942c98",
+      "subscription_id": "sub_dss_23be8adce086",
+      "company_name": "Booz Allen Hamilton",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "base_fee_usd": 29.0,
+      "total_overage_usd": 20.0,
+      "total_invoice_usd": 49.0,
+      "breakdown": {
+        "ast_queries": {
+          "reported": 120000,
+          "included": 100000,
+          "overage_units": 20000,
+          "unit_rate_usd": 0.001,
+          "charge_usd": 20.0
+        },
+        "entropy_checks": {
+          "reported": 0,
+          "included": 50000,
+          "overage_units": 0,
+          "unit_rate_usd": 0.0005,
+          "charge_usd": 0.0
+        },
+        "voice_minutes": {
+          "reported": 0,
+          "included": 500,
+          "overage_units": 0,
+          "unit_rate_usd": 0.02,
+          "charge_usd": 0.0
+        }
+      },
+      "status": "PAID",
+      "created_at": "2026-11-08T11:57:08.339560+00:00",
+      "due_date": "2026-11-22",
+      "payment_intent": "pi_dss_03e430dcf1bd44"
+    },
+    {
+      "invoice_id": "in_dss_08eec4319e3a49",
+      "customer_id": "cus_dss_23329da2ab65",
+      "subscription_id": "sub_dss_71eb2b876ae4",
+      "company_name": "Booz Allen Hamilton",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "base_fee_usd": 29.0,
+      "total_overage_usd": 20.0,
+      "total_invoice_usd": 49.0,
+      "breakdown": {
+        "ast_queries": {
+          "reported": 120000,
+          "included": 100000,
+          "overage_units": 20000,
+          "unit_rate_usd": 0.001,
+          "charge_usd": 20.0
+        },
+        "entropy_checks": {
+          "reported": 0,
+          "included": 50000,
+          "overage_units": 0,
+          "unit_rate_usd": 0.0005,
+          "charge_usd": 0.0
+        },
+        "voice_minutes": {
+          "reported": 0,
+          "included": 500,
+          "overage_units": 0,
+          "unit_rate_usd": 0.02,
+          "charge_usd": 0.0
+        }
+      },
+      "status": "PAID",
+      "created_at": "2026-11-08T11:57:55.984686+00:00",
+      "due_date": "2026-11-22",
+      "payment_intent": "pi_dss_ada8ff9e192d46"
+    },
+    {
+      "invoice_id": "in_dss_c80db215ddc04a",
+      "customer_id": "cus_dss_85419f68e1cf",
+      "subscription_id": "sub_dss_46f725dc3ed8",
+      "company_name": "Booz Allen Hamilton",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "base_fee_usd": 29.0,
+      "total_overage_usd": 20.0,
+      "total_invoice_usd": 49.0,
+      "breakdown": {
+        "ast_queries": {
+          "reported": 120000,
+          "included": 100000,
+          "overage_units": 20000,
+          "unit_rate_usd": 0.001,
+          "charge_usd": 20.0
+        },
+        "entropy_checks": {
+          "reported": 0,
+          "included": 50000,
+          "overage_units": 0,
+          "unit_rate_usd": 0.0005,
+          "charge_usd": 0.0
+        },
+        "voice_minutes": {
+          "reported": 0,
+          "included": 500,
+          "overage_units": 0,
+          "unit_rate_usd": 0.02,
+          "charge_usd": 0.0
+        }
+      },
+      "status": "PAID",
+      "created_at": "2026-11-08T11:58:02.828137+00:00",
+      "due_date": "2026-11-22",
+      "payment_intent": "pi_dss_70569d36500544"
+    },
+    {
+      "invoice_id": "in_dss_a359054215254d",
+      "customer_id": "cus_dss_c8a057654261",
+      "subscription_id": "sub_dss_049515317dc6",
+      "company_name": "Booz Allen Hamilton",
+      "billing_email": "billing@boozallen.com",
+      "tier_id": "TEAM_PRO",
+      "base_fee_usd": 29.0,
+      "total_overage_usd": 20.0,
+      "total_invoice_usd": 49.0,
+      "breakdown": {
+        "ast_queries": {
+          "reported": 120000,
+          "included": 100000,
+          "overage_units": 20000,
+          "unit_rate_usd": 0.001,
+          "charge_usd": 20.0
+        },
+        "entropy_checks": {
+          "reported": 0,
+          "included": 50000,
+          "overage_units": 0,
+          "unit_rate_usd": 0.0005,
+          "charge_usd": 0.0
+        },
+        "voice_minutes": {
+          "reported": 0,
+          "included": 500,
+          "overage_units": 0,
+          "unit_rate_usd": 0.02,
+          "charge_usd": 0.0
+        }
+      },
+      "status": "PAID",
+      "created_at": "2026-11-08T11:58:33.470351+00:00",
+      "due_date": "2026-11-22",
+      "payment_intent": "pi_dss_61295a63948042"
+    }
+  ],
+  "webhook_events": [
+    {
+      "event_id": "evt_test_01",
+      "event_type": "invoice.payment_succeeded",
+      "handled_status": "INVOICE_MARKED_PAID",
+      "processed_at": "2026-11-08T11:56:30.563458+00:00"
+    },
+    {
+      "event_id": "evt_cli_a466064c",
+      "event_type": "invoice.payment_succeeded",
+      "handled_status": "INVOICE_MARKED_PAID",
+      "processed_at": "2026-11-08T11:57:08.445049+00:00"
+    },
+    {
+      "event_id": "evt_cli_f3b635b1",
+      "event_type": "invoice.payment_succeeded",
+      "handled_status": "INVOICE_MARKED_PAID",
+      "processed_at": "2026-11-08T11:57:56.086332+00:00"
+    },
+    {
+      "event_id": "evt_cli_d0dbff57",
+      "event_type": "invoice.payment_succeeded",
+      "handled_status": "INVOICE_MARKED_PAID",
+      "processed_at": "2026-11-08T11:58:02.960604+00:00"
+    },
+    {
+      "event_id": "evt_cli_2134b627",
+      "event_type": "invoice.payment_succeeded",
+      "handled_status": "INVOICE_MARKED_PAID",
+      "processed_at": "2026-11-08T11:58:33.568901+00:00"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "binder_id": "DSS-EQUITY-TENDER-2026-BINDER",
-  "generation_timestamp": "2026-11-08T11:54:56.487361+00:00",
+  "generation_timestamp": "2026-11-08T11:58:15.497911+00:00",
   "commercial_principal": "DevSuperSuite Tech Services Corporation",
   "governing_law": "Delaware, United States (File #8492019)",
   "treasury_desk": "DevSuperSuite Global Treasury Desk",
@@ -16,7 +16,7 @@
     "founder_voting_power_pct": 96.32
   },
   "cap_table_audit": {
-    "audit_timestamp": "2026-11-08T11:54:56.487286+00:00",
+    "audit_timestamp": "2026-11-08T11:58:15.497846+00:00",
     "corporate_entity": "DevSuperSuite Tech Services Corporation",
     "governing_jurisdiction": "Delaware, United States (File #8492019)",
     "total_authorized_and_outstanding_shares": 13821138,
