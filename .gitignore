@@ -1,5 +1,7 @@
 *.pyc
+**/*.pyc
 __pycache__/
+**/__pycache__/**
 *.png
 !qr_upi.png
 !og-image.png

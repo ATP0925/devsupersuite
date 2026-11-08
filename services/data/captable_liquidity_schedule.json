@@ -1,0 +1,211 @@
+{
+  "metadata": {
+    "generated_at": "2026-11-08T11:14:00.488582+00:00",
+    "reporting_entity": "DevSuperSuite Tech Services",
+    "department": "DevSuperSuite Treasury & Corporate Finance",
+    "treasury_contact": "cfo@devsupersuite.com",
+    "state_of_incorporation": "Delaware (DGCL Compliant)"
+  },
+  "captable_audit": {
+    "total_fully_diluted_shares": 13821138,
+    "series_a_share_price_usd": 2.1706,
+    "post_money_valuation_usd": 30000162.14,
+    "total_senior_liquidation_preference_usd": 7000000.0,
+    "preferred_common_crossover_valuation_usd": 30000000.0,
+    "founder_voting_supermajority_pct": 94.11,
+    "supermajority_invariants_satisfied": true,
+    "stakeholders": [
+      {
+        "name": "Founding Operating Partners",
+        "class_of_security": "Class B Common Stock (10 Votes/Share)",
+        "share_count": 8500000,
+        "voting_power_votes": 85000000,
+        "economic_ownership_pct": 61.5,
+        "invested_capital_usd": 0.0,
+        "liquidation_preference_usd": 0.0,
+        "liquidation_seniority": "JUNIOR_EQUITY",
+        "voting_share_pct": 94.11
+      },
+      {
+        "name": "Unallocated Employee Option Pool (ESOP)",
+        "class_of_security": "Common Stock Options",
+        "share_count": 2073171,
+        "voting_power_votes": 2073171,
+        "economic_ownership_pct": 15.0,
+        "invested_capital_usd": 0.0,
+        "liquidation_preference_usd": 0.0,
+        "liquidation_seniority": "JUNIOR_EQUITY",
+        "voting_share_pct": 2.3
+      },
+      {
+        "name": "Seed SAFE Note Investors",
+        "class_of_security": "Series A-1 Preferred Stock",
+        "share_count": 944439,
+        "voting_power_votes": 944439,
+        "economic_ownership_pct": 6.83,
+        "invested_capital_usd": 2000000.0,
+        "liquidation_preference_usd": 2000000.0,
+        "liquidation_seniority": "PARI_PASSU_SENIOR",
+        "voting_share_pct": 1.05
+      },
+      {
+        "name": "Lead Series A Institutional Investor",
+        "class_of_security": "Series A Preferred Stock",
+        "share_count": 2303528,
+        "voting_power_votes": 2303528,
+        "economic_ownership_pct": 16.67,
+        "invested_capital_usd": 5000000.0,
+        "liquidation_preference_usd": 5000000.0,
+        "liquidation_seniority": "PARI_PASSU_SENIOR",
+        "voting_share_pct": 2.55
+      }
+    ],
+    "liquidation_waterfall_scenarios": [
+      {
+        "exit_valuation_usd": 5000000.0,
+        "waterfall_distribution_mode": "LIQUIDATION_PREFERENCE_SENIOR_RECOVERY",
+        "founder_payout_usd": 0.0,
+        "esop_payout_usd": 0.0,
+        "safe_investor_payout_usd": 1428571.43,
+        "series_a_payout_usd": 3571428.57,
+        "safe_moic": 0.71,
+        "series_a_moic": 0.71
+      },
+      {
+        "exit_valuation_usd": 10000000.0,
+        "waterfall_distribution_mode": "NON_PARTICIPATING_PREFERENCE_PLUS_COMMON_RESIDUAL",
+        "founder_payout_usd": 2411764.64,
+        "esop_payout_usd": 588235.36,
+        "safe_investor_payout_usd": 2000000.0,
+        "series_a_payout_usd": 5000000.0,
+        "safe_moic": 1.0,
+        "series_a_moic": 1.0
+      },
+      {
+        "exit_valuation_usd": 25000000.0,
+        "waterfall_distribution_mode": "NON_PARTICIPATING_PREFERENCE_PLUS_COMMON_RESIDUAL",
+        "founder_payout_usd": 14470587.87,
+        "esop_payout_usd": 3529412.13,
+        "safe_investor_payout_usd": 2000000.0,
+        "series_a_payout_usd": 5000000.0,
+        "safe_moic": 1.0,
+        "series_a_moic": 1.0
+      },
+      {
+        "exit_valuation_usd": 50000000.0,
+        "waterfall_distribution_mode": "FULL_COMMON_CONVERSION_EQUAL_PRO_RATA",
+        "founder_payout_usd": 30750000.47,
+        "esop_payout_usd": 7500001.09,
+        "safe_investor_payout_usd": 3416647.02,
+        "series_a_payout_usd": 8333351.42,
+        "safe_moic": 1.71,
+        "series_a_moic": 1.67
+      },
+      {
+        "exit_valuation_usd": 100000000.0,
+        "waterfall_distribution_mode": "FULL_COMMON_CONVERSION_EQUAL_PRO_RATA",
+        "founder_payout_usd": 61500000.94,
+        "esop_payout_usd": 15000002.17,
+        "safe_investor_payout_usd": 6833294.05,
+        "series_a_payout_usd": 16666702.84,
+        "safe_moic": 3.42,
+        "series_a_moic": 3.33
+      }
+    ]
+  },
+  "secondary_tender": {
+    "share_price_usd": 2.1706,
+    "qsbs_statutory_basis": "IRC Section 1202 (100% Capital Gains Exclusion up to $10M)",
+    "section_1042_rollover_eligible": true,
+    "tender_scenarios": [
+      {
+        "tender_offer_size_usd": 2000000.0,
+        "share_purchase_price_usd": 2.1706,
+        "total_secondary_shares_tendered": 921404,
+        "founder_gross_proceeds_usd": 1600000.0,
+        "employee_gross_proceeds_usd": 400000.0,
+        "standard_ltcg_tax_liability_usd": 380800.0,
+        "standard_net_after_tax_proceeds_usd": 1219200.0,
+        "qsbs_sec_1202_tax_liability_usd": 0.0,
+        "qsbs_sec_1202_net_after_tax_proceeds_usd": 1600000.0,
+        "qsbs_tax_savings_usd": 380800.0,
+        "qsbs_exemption_pct": 100.0,
+        "founder_shares_sold": 737123,
+        "founder_shares_retained": 7762877,
+        "founder_retained_equity_pct": 56.17,
+        "qsbs_eligibility_attestation": "FULLY_QUALIFIED_QSBS_C_CORP_SUB_50M_ASSETS"
+      },
+      {
+        "tender_offer_size_usd": 5000000.0,
+        "share_purchase_price_usd": 2.1706,
+        "total_secondary_shares_tendered": 2303511,
+        "founder_gross_proceeds_usd": 4000000.0,
+        "employee_gross_proceeds_usd": 1000000.0,
+        "standard_ltcg_tax_liability_usd": 952000.0,
+        "standard_net_after_tax_proceeds_usd": 3048000.0,
+        "qsbs_sec_1202_tax_liability_usd": 0.0,
+        "qsbs_sec_1202_net_after_tax_proceeds_usd": 4000000.0,
+        "qsbs_tax_savings_usd": 952000.0,
+        "qsbs_exemption_pct": 100.0,
+        "founder_shares_sold": 1842809,
+        "founder_shares_retained": 6657191,
+        "founder_retained_equity_pct": 48.17,
+        "qsbs_eligibility_attestation": "FULLY_QUALIFIED_QSBS_C_CORP_SUB_50M_ASSETS"
+      },
+      {
+        "tender_offer_size_usd": 10000000.0,
+        "share_purchase_price_usd": 2.1706,
+        "total_secondary_shares_tendered": 4607021,
+        "founder_gross_proceeds_usd": 8000000.0,
+        "employee_gross_proceeds_usd": 2000000.0,
+        "standard_ltcg_tax_liability_usd": 1904000.0,
+        "standard_net_after_tax_proceeds_usd": 6096000.0,
+        "qsbs_sec_1202_tax_liability_usd": 0.0,
+        "qsbs_sec_1202_net_after_tax_proceeds_usd": 8000000.0,
+        "qsbs_tax_savings_usd": 1904000.0,
+        "qsbs_exemption_pct": 100.0,
+        "founder_shares_sold": 3685617,
+        "founder_shares_retained": 4814383,
+        "founder_retained_equity_pct": 34.83,
+        "qsbs_eligibility_attestation": "FULLY_QUALIFIED_QSBS_C_CORP_SUB_50M_ASSETS"
+      }
+    ]
+  },
+  "debt_vs_equity_comparison": {
+    "capital_needed_usd": 3000000.0,
+    "debt_facility": {
+      "instrument": "Non-Dilutive ARR Revenue-Based Financing",
+      "interest_rate_pct": 8.5,
+      "term_years": 3,
+      "annual_interest_usd": 255000.0,
+      "total_interest_cost_usd": 765000.0,
+      "total_cash_outlay_usd": 3765000.0,
+      "equity_dilution_pct": 0.0
+    },
+    "equity_financing": {
+      "instrument": "Priced Venture Equity Round",
+      "pre_money_valuation_usd": 12000000.0,
+      "post_money_valuation_usd": 15000000.0,
+      "equity_dilution_pct": 20.0,
+      "permanent_ownership_surrendered_pct": 20.0
+    },
+    "exit_wealth_preservation": [
+      {
+        "future_exit_valuation_usd": 50000000.0,
+        "surrendered_equity_value_usd": 10000000.0,
+        "debt_total_interest_cost_usd": 765000.0,
+        "net_founder_wealth_preserved_usd": 9235000.0,
+        "wealth_retention_roi_pct": 1207.2
+      },
+      {
+        "future_exit_valuation_usd": 100000000.0,
+        "surrendered_equity_value_usd": 20000000.0,
+        "debt_total_interest_cost_usd": 765000.0,
+        "net_founder_wealth_preserved_usd": 19235000.0,
+        "wealth_retention_roi_pct": 2514.4
+      }
+    ],
+    "strategic_verdict": "ARR_DEBT_STRONGLY_FAVORED",
+    "affirmation": "Utilizing non-dilutive ARR debt at 8.5% interest saves the founders from 20.0% permanent dilution, preserving over $9,235,000.00 USD in net equity value at a $50M exit."
+  }
+}

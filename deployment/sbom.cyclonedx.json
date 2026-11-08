@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:dss-sbom-10dbbd791cf5ec798d0944015a29f563",
+  "serialNumber": "urn:uuid:dss-sbom-a00f7cd638cc30014ea4faa025665db2",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-08T11:03:23.017455+00:00",
+    "timestamp": "2026-11-08T11:14:15.011961+00:00",
     "tools": [
       {
         "vendor": "DevSuperSuite Official",

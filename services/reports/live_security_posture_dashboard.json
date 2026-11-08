@@ -3,9 +3,9 @@
     "organization": "DevSuperSuite Official",
     "authority": "Directorate of QA Automation & Security Compliance",
     "classification": "Sovereign Enterprise Security Telemetry (Restricted)",
-    "generated_at": "2026-11-08T11:03:20.214696+00:00",
+    "generated_at": "2026-11-08T11:14:12.004324+00:00",
     "target_repository": "agent-commerce",
-    "sha256_digest": "022c77e655c22db9639b7e2d4275a19bd5a5aaa556c74b8258f66a3e72b43286"
+    "sha256_digest": "61e0f57aef66632b4427d4ca359abf08b8ca58c522bf7413ab60ec9bd156cb49"
   },
   "enterprise_trust_index": {
     "composite_score": 100.0,
@@ -18,8 +18,8 @@
       "weight_percentage": 20,
       "score": 100.0,
       "metrics": {
-        "total_suites": 62,
-        "total_tests": 574,
+        "total_suites": 70,
+        "total_tests": 654,
         "pass_rate_percentage": 100.0,
         "fail_count": 0,
         "skipped_count": 0,
@@ -68,6 +68,12 @@
           },
           {
             "module": "test_cap_table_safe_model.py",
+            "test_count": 8,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_captable_secondary_liquidity.py",
             "test_count": 8,
             "status": "PASS",
             "coverage_domain": "Core Architecture & MCP Harness"
@@ -122,6 +128,18 @@
           },
           {
             "module": "test_dynamic_ppp_pricing.py",
+            "test_count": 9,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_ebpf_siem_forensics.py",
+            "test_count": 10,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_enterprise_abm_cadence.py",
             "test_count": 9,
             "status": "PASS",
             "coverage_domain": "Core Architecture & MCP Harness"
@@ -205,6 +223,12 @@
             "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
+            "module": "test_gitops_delivery_controller.py",
+            "test_count": 10,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
             "module": "test_helm_validation.py",
             "test_count": 12,
             "status": "PASS",
@@ -259,6 +283,12 @@
             "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
+            "module": "test_raft_failover_controller.py",
+            "test_count": 12,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
             "module": "test_rate_limiting_circuit_breaker.py",
             "test_count": 10,
             "status": "PASS",
@@ -269,6 +299,12 @@
             "test_count": 9,
             "status": "PASS",
             "coverage_domain": "Financial Engine & Statutory Ledgers"
+          },
+          {
+            "module": "test_referral_expansion_engine.py",
+            "test_count": 12,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
             "module": "test_retainer_billing.py",
@@ -385,6 +421,18 @@
             "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
+            "module": "test_transfer_pricing_engine.py",
+            "test_count": 11,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_vault_secret_manager.py",
+            "test_count": 8,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
             "module": "test_vendor_risk_solvency.py",
             "test_count": 7,
             "status": "PASS",
@@ -430,7 +478,7 @@
       "weight_percentage": 15,
       "score": 100.0,
       "metrics": {
-        "redos_execution_time_ms": 0.0062,
+        "redos_execution_time_ms": 0.0061,
         "redos_ceiling_limit_ms": 1.0,
         "redos_immunity": "PASS",
         "ast_max_recursion_depth": 30,

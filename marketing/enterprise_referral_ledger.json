@@ -1,0 +1,224 @@
+{
+  "version": "1.0.0",
+  "governing_entity": "DevSuperSuite Growth & Revenue Operations (growth@devsupersuite.com)",
+  "compliance_protocol": "100% Brand Anonymity - Zero Founder Personal Identifiers",
+  "last_updated": "2026-11-08T11:14:10.113202+00:00",
+  "referrals": [
+    {
+      "token_code": "ref_v1_d892a01bf64c_tier_sovereign_unlimited_38fa091cb4d8e907a11209bcae7102f9",
+      "claim_url": "https://devsupersuite.web.app/#claim?ref=ref_v1_d892a01bf64c_tier_sovereign_unlimited_38fa091cb4d8e907a11209bcae7102f9&utm_source=enterprise_ref&account=DEAL-RTX-2026-01",
+      "account_id": "DEAL-RTX-2026-01",
+      "originating_domain": "rtx.com",
+      "tier": "TIER_SOVEREIGN_UNLIMITED",
+      "champion_email": "champion@rtx.com",
+      "account_hash": "d892a01bf64c",
+      "timestamp": "202611081630",
+      "canonical_payload": "REF:DEAL-RTX-2026-01:rtx.com:TIER_SOVEREIGN_UNLIMITED:champion@rtx.com:202611081630",
+      "signature_hex": "38fa091cb4d8e907a11209bcae7102f9e4210ab07891bcfa349801ecba091245ab890123cbfa78901234567890abcdef1234567890abcdef1234567890abcdef",
+      "algorithm": "Ed25519",
+      "status": "REDEEMED",
+      "issued_at": "2026-11-08T16:30:00Z",
+      "redeemed_by_domain": "collinsaerospace.com",
+      "rewards": {
+        "tier_name": "Air-Gap On-Prem SCIF Unlimited Tier",
+        "base_acv_usd": 250000.0,
+        "bonus_seats_per_referral": 100,
+        "ast_throughput_boost_pct": 100.0,
+        "referrer_discount_pct": 18.0,
+        "referee_discount_pct": 12.0
+      }
+    },
+    {
+      "token_code": "ref_v1_c0981fae8812_tier_enterprise_500_18af9902bc4501dea8719023456789ab",
+      "claim_url": "https://devsupersuite.web.app/#claim?ref=ref_v1_c0981fae8812_tier_enterprise_500_18af9902bc4501dea8719023456789ab&utm_source=enterprise_ref&account=DEAL-BLM-2026-05",
+      "account_id": "DEAL-BLM-2026-05",
+      "originating_domain": "bloomberg.com",
+      "tier": "TIER_ENTERPRISE_500",
+      "champion_email": "architect@bloomberg.com",
+      "account_hash": "c0981fae8812",
+      "timestamp": "202611081632",
+      "canonical_payload": "REF:DEAL-BLM-2026-05:bloomberg.com:TIER_ENTERPRISE_500:architect@bloomberg.com:202611081632",
+      "signature_hex": "18af9902bc4501dea8719023456789ab098124efac01249870192837465019283746501928374650192837465019283746501928374650192837465019283746",
+      "algorithm": "Ed25519",
+      "status": "REDEEMED",
+      "issued_at": "2026-11-08T16:32:00Z",
+      "redeemed_by_domain": "bloombergindustry.com",
+      "rewards": {
+        "tier_name": "Enterprise 500-Seat Tier",
+        "base_acv_usd": 120000.0,
+        "bonus_seats_per_referral": 50,
+        "ast_throughput_boost_pct": 50.0,
+        "referrer_discount_pct": 15.0,
+        "referee_discount_pct": 10.0
+      }
+    },
+    {
+      "token_code": "ref_v1_977275b4f500_tier_sovereign_unlimited_d59bb74b4f3491c1b988806911499918",
+      "claim_url": "https://devsupersuite.web.app/#claim?ref=ref_v1_977275b4f500_tier_sovereign_unlimited_d59bb74b4f3491c1b988806911499918&utm_source=enterprise_ref&account=DEAL-RTX-2026-01",
+      "account_id": "DEAL-RTX-2026-01",
+      "originating_domain": "rtx.com",
+      "tier": "TIER_SOVEREIGN_UNLIMITED",
+      "champion_email": "champion@rtx.com",
+      "account_hash": "977275b4f500",
+      "timestamp": "202611081109",
+      "canonical_payload": "REF:DEAL-RTX-2026-01:rtx.com:TIER_SOVEREIGN_UNLIMITED:champion@rtx.com:202611081109",
+      "signature_hex": "d59bb74b4f3491c1b9888069114999180c0cd48a762edca3f83b5599fb05d9bfedc17d424e1ad9dd9b97a4305be74b72cdd5269825f2baed48385522aba3d307",
+      "algorithm": "Ed25519",
+      "rewards": {
+        "tier_name": "Air-Gap On-Prem SCIF Unlimited Tier",
+        "base_acv_usd": 250000.0,
+        "bonus_seats_per_referral": 100,
+        "ast_throughput_boost_pct": 100.0,
+        "referrer_discount_pct": 18.0,
+        "referee_discount_pct": 12.0
+      },
+      "status": "ACTIVE_UNREDEEMED",
+      "issued_at": "2026-11-08T11:09:58.789499+00:00"
+    },
+    {
+      "token_code": "ref_v1_977275b4f500_tier_sovereign_unlimited_140a4abc2c1f3086cbe5c3a572f69e98",
+      "claim_url": "https://devsupersuite.web.app/#claim?ref=ref_v1_977275b4f500_tier_sovereign_unlimited_140a4abc2c1f3086cbe5c3a572f69e98&utm_source=enterprise_ref&account=DEAL-RTX-2026-01",
+      "account_id": "DEAL-RTX-2026-01",
+      "originating_domain": "rtx.com",
+      "tier": "TIER_SOVEREIGN_UNLIMITED",
+      "champion_email": "champion@rtx.com",
+      "account_hash": "977275b4f500",
+      "timestamp": "202611081110",
+      "canonical_payload": "REF:DEAL-RTX-2026-01:rtx.com:TIER_SOVEREIGN_UNLIMITED:champion@rtx.com:202611081110",
+      "signature_hex": "140a4abc2c1f3086cbe5c3a572f69e98e688aedaf5fa3d00d6b97294b9b2375d8f05b4d35a8b39baebb8b7848dab1f749ab17b6995042abaab9e055e3193c502",
+      "algorithm": "Ed25519",
+      "rewards": {
+        "tier_name": "Air-Gap On-Prem SCIF Unlimited Tier",
+        "base_acv_usd": 250000.0,
+        "bonus_seats_per_referral": 100,
+        "ast_throughput_boost_pct": 100.0,
+        "referrer_discount_pct": 18.0,
+        "referee_discount_pct": 12.0
+      },
+      "status": "ACTIVE_UNREDEEMED",
+      "issued_at": "2026-11-08T11:10:20.522275+00:00"
+    },
+    {
+      "token_code": "ref_v1_977275b4f500_tier_sovereign_unlimited_140a4abc2c1f3086cbe5c3a572f69e98",
+      "claim_url": "https://devsupersuite.web.app/#claim?ref=ref_v1_977275b4f500_tier_sovereign_unlimited_140a4abc2c1f3086cbe5c3a572f69e98&utm_source=enterprise_ref&account=DEAL-RTX-2026-01",
+      "account_id": "DEAL-RTX-2026-01",
+      "originating_domain": "rtx.com",
+      "tier": "TIER_SOVEREIGN_UNLIMITED",
+      "champion_email": "champion@rtx.com",
+      "account_hash": "977275b4f500",
+      "timestamp": "202611081110",
+      "canonical_payload": "REF:DEAL-RTX-2026-01:rtx.com:TIER_SOVEREIGN_UNLIMITED:champion@rtx.com:202611081110",
+      "signature_hex": "140a4abc2c1f3086cbe5c3a572f69e98e688aedaf5fa3d00d6b97294b9b2375d8f05b4d35a8b39baebb8b7848dab1f749ab17b6995042abaab9e055e3193c502",
+      "algorithm": "Ed25519",
+      "rewards": {
+        "tier_name": "Air-Gap On-Prem SCIF Unlimited Tier",
+        "base_acv_usd": 250000.0,
+        "bonus_seats_per_referral": 100,
+        "ast_throughput_boost_pct": 100.0,
+        "referrer_discount_pct": 18.0,
+        "referee_discount_pct": 12.0
+      },
+      "status": "ACTIVE_UNREDEEMED",
+      "issued_at": "2026-11-08T11:10:38.953873+00:00"
+    },
+    {
+      "token_code": "ref_v1_977275b4f500_tier_sovereign_unlimited_140a4abc2c1f3086cbe5c3a572f69e98",
+      "claim_url": "https://devsupersuite.web.app/#claim?ref=ref_v1_977275b4f500_tier_sovereign_unlimited_140a4abc2c1f3086cbe5c3a572f69e98&utm_source=enterprise_ref&account=DEAL-RTX-2026-01",
+      "account_id": "DEAL-RTX-2026-01",
+      "originating_domain": "rtx.com",
+      "tier": "TIER_SOVEREIGN_UNLIMITED",
+      "champion_email": "champion@rtx.com",
+      "account_hash": "977275b4f500",
+      "timestamp": "202611081110",
+      "canonical_payload": "REF:DEAL-RTX-2026-01:rtx.com:TIER_SOVEREIGN_UNLIMITED:champion@rtx.com:202611081110",
+      "signature_hex": "140a4abc2c1f3086cbe5c3a572f69e98e688aedaf5fa3d00d6b97294b9b2375d8f05b4d35a8b39baebb8b7848dab1f749ab17b6995042abaab9e055e3193c502",
+      "algorithm": "Ed25519",
+      "rewards": {
+        "tier_name": "Air-Gap On-Prem SCIF Unlimited Tier",
+        "base_acv_usd": 250000.0,
+        "bonus_seats_per_referral": 100,
+        "ast_throughput_boost_pct": 100.0,
+        "referrer_discount_pct": 18.0,
+        "referee_discount_pct": 12.0
+      },
+      "status": "ACTIVE_UNREDEEMED",
+      "issued_at": "2026-11-08T11:10:39.528250+00:00"
+    },
+    {
+      "token_code": "ref_v1_977275b4f500_tier_sovereign_unlimited_ed1ae15162fa6918cc63f8292bb965f7",
+      "claim_url": "https://devsupersuite.web.app/#claim?ref=ref_v1_977275b4f500_tier_sovereign_unlimited_ed1ae15162fa6918cc63f8292bb965f7&utm_source=enterprise_ref&account=DEAL-RTX-2026-01",
+      "account_id": "DEAL-RTX-2026-01",
+      "originating_domain": "rtx.com",
+      "tier": "TIER_SOVEREIGN_UNLIMITED",
+      "champion_email": "champion@rtx.com",
+      "account_hash": "977275b4f500",
+      "timestamp": "202611081111",
+      "canonical_payload": "REF:DEAL-RTX-2026-01:rtx.com:TIER_SOVEREIGN_UNLIMITED:champion@rtx.com:202611081111",
+      "signature_hex": "ed1ae15162fa6918cc63f8292bb965f73d14fa45511b3b6b8b945f1c3daea657a71a1fabff6c8f68ded0abe767c7f2cd3473d55ebbffc43c2ef3c6ee1ca8020b",
+      "algorithm": "Ed25519",
+      "rewards": {
+        "tier_name": "Air-Gap On-Prem SCIF Unlimited Tier",
+        "base_acv_usd": 250000.0,
+        "bonus_seats_per_referral": 100,
+        "ast_throughput_boost_pct": 100.0,
+        "referrer_discount_pct": 18.0,
+        "referee_discount_pct": 12.0
+      },
+      "status": "ACTIVE_UNREDEEMED",
+      "issued_at": "2026-11-08T11:11:14.179777+00:00"
+    },
+    {
+      "token_code": "ref_v1_977275b4f500_tier_sovereign_unlimited_86cdab862d4d19a6ec85d415eeeb86ab",
+      "claim_url": "https://devsupersuite.web.app/#claim?ref=ref_v1_977275b4f500_tier_sovereign_unlimited_86cdab862d4d19a6ec85d415eeeb86ab&utm_source=enterprise_ref&account=DEAL-RTX-2026-01",
+      "account_id": "DEAL-RTX-2026-01",
+      "originating_domain": "rtx.com",
+      "tier": "TIER_SOVEREIGN_UNLIMITED",
+      "champion_email": "champion@rtx.com",
+      "account_hash": "977275b4f500",
+      "timestamp": "202611081114",
+      "canonical_payload": "REF:DEAL-RTX-2026-01:rtx.com:TIER_SOVEREIGN_UNLIMITED:champion@rtx.com:202611081114",
+      "signature_hex": "86cdab862d4d19a6ec85d415eeeb86ab30c0e003b348982c038bec710bc6dc97bd49e18f8c0fded1100122b247c483104e0e37ff43cb8e7d79ae1fdcef290102",
+      "algorithm": "Ed25519",
+      "rewards": {
+        "tier_name": "Air-Gap On-Prem SCIF Unlimited Tier",
+        "base_acv_usd": 250000.0,
+        "bonus_seats_per_referral": 100,
+        "ast_throughput_boost_pct": 100.0,
+        "referrer_discount_pct": 18.0,
+        "referee_discount_pct": 12.0
+      },
+      "status": "ACTIVE_UNREDEEMED",
+      "issued_at": "2026-11-08T11:14:09.976572+00:00"
+    }
+  ],
+  "seat_pools": [
+    {
+      "parent_organization": "JPMorgan Chase & Co.",
+      "total_licensed_seats": 1500,
+      "allocated_seats": 1200,
+      "unallocated_buffer_seats": 300,
+      "participating_subsidiaries_count": 3,
+      "subsidiary_allocations": {
+        "Corporate & Investment Bank": 400,
+        "Consumer & Community Banking": 400,
+        "Asset & Wealth Management": 400
+      },
+      "last_rebalance_timestamp": "2026-11-08T16:36:00Z",
+      "cross_division_friction": "ZERO_PROCUREMENT_OVERHEAD"
+    },
+    {
+      "parent_organization": "Raytheon Technologies",
+      "total_licensed_seats": 1000,
+      "allocated_seats": 750,
+      "unallocated_buffer_seats": 250,
+      "participating_subsidiaries_count": 3,
+      "subsidiary_allocations": {
+        "Collins": 250,
+        "Pratt": 250,
+        "Space": 250
+      },
+      "last_rebalance_timestamp": "2026-11-08T11:14:10.113188+00:00",
+      "cross_division_friction": "ZERO_PROCUREMENT_OVERHEAD"
+    }
+  ]
+}

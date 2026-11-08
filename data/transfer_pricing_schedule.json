@@ -1,0 +1,395 @@
+{
+  "metadata": {
+    "generated_at": "2026-11-08T11:14:15.884755+00:00",
+    "reporting_entity": "DevSuperSuite Group",
+    "department": "DevSuperSuite Global Treasury & Tax Strategy Desk",
+    "tax_contact": "treasury@devsupersuite.com",
+    "compliance_framework": "OECD BEPS Actions 8-10 & Action 13"
+  },
+  "arm_length_methods": {
+    "arm_length_compliance_status": "FULL_OECD_COMPLIANCE",
+    "all_methods_compliant": true,
+    "cup_method": {
+      "method": "Comparable Uncontrolled Price (CUP)",
+      "transaction_type": "Intercompany Platform Software IP Licensing",
+      "base_licensable_revenue_usd": 385000.0,
+      "applied_royalty_rate_pct": 18.5,
+      "annual_intercompany_royalty_usd": 71225.0,
+      "interquartile_range": {
+        "lower_quartile_pct": 15.0,
+        "median_pct": 18.5,
+        "upper_quartile_pct": 22.0
+      },
+      "is_arms_length_compliant": true,
+      "status": "ARM_LENGTH_COMPLIANT"
+    },
+    "tnmm_method": {
+      "method": "Transactional Net Margin Method (TNMM)",
+      "transaction_type": "Limited-Risk Software Marketing, Contracting & Distribution",
+      "gross_distributed_revenue_usd": 558992.16,
+      "applied_operating_margin_pct": 4.5,
+      "distributor_operating_profit_usd": 25154.65,
+      "distributor_operating_expenses_usd": 24800.0,
+      "distributor_retained_gross_margin_usd": 49954.65,
+      "residual_licensor_royalty_remitted_usd": 509037.51,
+      "interquartile_range": {
+        "lower_quartile_pct": 3.1,
+        "median_pct": 4.5,
+        "upper_quartile_pct": 5.8
+      },
+      "is_arms_length_compliant": true,
+      "status": "ARM_LENGTH_COMPLIANT"
+    },
+    "cpm_method": {
+      "method": "Cost Plus Method (CPM)",
+      "transaction_type": "Contract Software Engineering & Center of Excellence R&D",
+      "allowable_cost_base_usd": 85000.0,
+      "applied_markup_pct": 10.0,
+      "operating_profit_markup_usd": 8500.0,
+      "total_intercompany_rd_invoice_usd": 93500.0,
+      "interquartile_range": {
+        "lower_quartile_pct": 8.0,
+        "median_pct": 10.0,
+        "upper_quartile_pct": 12.0
+      },
+      "is_arms_length_compliant": true,
+      "status": "ARM_LENGTH_COMPLIANT"
+    }
+  },
+  "beps_documentation": {
+    "master_file": {
+      "document_type": "OECD BEPS Action 13 Master File",
+      "mne_group_name": "DevSuperSuite Group",
+      "global_headquarters": "DevSuperSuite Global Holdings Ltd (Dublin, Ireland)",
+      "business_model": "Enterprise Developer Productivity Tooling, AST Compression & Slicing Suite",
+      "global_intangibles_owner": "DevSuperSuite Global Holdings Ltd",
+      "financing_and_treasury": "Zero third-party debt; rolling sovereign U.S. T-Bills treasury buffer",
+      "financial_statements_standard": "US GAAP & IFRS Consolidated"
+    },
+    "local_file": {
+      "document_type": "OECD BEPS Action 13 Local File",
+      "tested_entities": [
+        {
+          "entity": "DevSuperSuite US LLC",
+          "role": "Limited-Risk Distributor",
+          "selected_method": "TNMM (Target Operating Margin 4.5%)",
+          "transfer_pricing_result": {
+            "method": "Transactional Net Margin Method (TNMM)",
+            "transaction_type": "Limited-Risk Software Marketing, Contracting & Distribution",
+            "gross_distributed_revenue_usd": 558992.16,
+            "applied_operating_margin_pct": 4.5,
+            "distributor_operating_profit_usd": 25154.65,
+            "distributor_operating_expenses_usd": 24800.0,
+            "distributor_retained_gross_margin_usd": 49954.65,
+            "residual_licensor_royalty_remitted_usd": 509037.51,
+            "interquartile_range": {
+              "lower_quartile_pct": 3.1,
+              "median_pct": 4.5,
+              "upper_quartile_pct": 5.8
+            },
+            "is_arms_length_compliant": true,
+            "status": "ARM_LENGTH_COMPLIANT"
+          }
+        },
+        {
+          "entity": "DevSuperSuite Tech Services India Pvt Ltd",
+          "role": "Contract R&D Center of Excellence",
+          "selected_method": "Cost Plus Method (CPM 10.0%)",
+          "transfer_pricing_result": {
+            "method": "Cost Plus Method (CPM)",
+            "transaction_type": "Contract Software Engineering & Center of Excellence R&D",
+            "allowable_cost_base_usd": 85000.0,
+            "applied_markup_pct": 10.0,
+            "operating_profit_markup_usd": 8500.0,
+            "total_intercompany_rd_invoice_usd": 93500.0,
+            "interquartile_range": {
+              "lower_quartile_pct": 8.0,
+              "median_pct": 10.0,
+              "upper_quartile_pct": 12.0
+            },
+            "is_arms_length_compliant": true,
+            "status": "ARM_LENGTH_COMPLIANT"
+          }
+        }
+      ]
+    },
+    "cbcr_table": [
+      {
+        "jurisdiction": "United States",
+        "iso_code": "US",
+        "unrelated_revenue_usd": 425000.0,
+        "related_revenue_usd": 0.0,
+        "total_revenue_usd": 425000.0,
+        "profit_before_tax_usd": 25125.0,
+        "income_tax_paid_usd": 5276.25,
+        "stated_capital_usd": 100000.0,
+        "accumulated_earnings_usd": 245000.0,
+        "employee_count_fte": 5,
+        "tangible_assets_usd": 18500.0,
+        "primary_activity": "Commercial Software Contracting & US Distribution"
+      },
+      {
+        "jurisdiction": "Ireland",
+        "iso_code": "IE",
+        "unrelated_revenue_usd": 48825.0,
+        "related_revenue_usd": 385000.0,
+        "total_revenue_usd": 433825.0,
+        "profit_before_tax_usd": 382400.0,
+        "income_tax_paid_usd": 47800.0,
+        "stated_capital_usd": 500000.0,
+        "accumulated_earnings_usd": 850000.0,
+        "employee_count_fte": 4,
+        "tangible_assets_usd": 42000.0,
+        "primary_activity": "Global IP Principal, Architecture & European Cloud Node"
+      },
+      {
+        "jurisdiction": "United Kingdom",
+        "iso_code": "UK",
+        "unrelated_revenue_usd": 31080.0,
+        "related_revenue_usd": 0.0,
+        "total_revenue_usd": 31080.0,
+        "profit_before_tax_usd": 1398.6,
+        "income_tax_paid_usd": 265.73,
+        "stated_capital_usd": 25000.0,
+        "accumulated_earnings_usd": 35000.0,
+        "employee_count_fte": 1,
+        "tangible_assets_usd": 3500.0,
+        "primary_activity": "UK Regional Sales & Enterprise Support"
+      },
+      {
+        "jurisdiction": "Germany",
+        "iso_code": "DE",
+        "unrelated_revenue_usd": 14900.0,
+        "related_revenue_usd": 0.0,
+        "total_revenue_usd": 14900.0,
+        "profit_before_tax_usd": 670.5,
+        "income_tax_paid_usd": 201.15,
+        "stated_capital_usd": 25000.0,
+        "accumulated_earnings_usd": 20000.0,
+        "employee_count_fte": 1,
+        "tangible_assets_usd": 2800.0,
+        "primary_activity": "DACH Region Technical Solutions"
+      },
+      {
+        "jurisdiction": "Singapore",
+        "iso_code": "SG",
+        "unrelated_revenue_usd": 10192.5,
+        "related_revenue_usd": 0.0,
+        "total_revenue_usd": 10192.5,
+        "profit_before_tax_usd": 458.66,
+        "income_tax_paid_usd": 77.97,
+        "stated_capital_usd": 50000.0,
+        "accumulated_earnings_usd": 40000.0,
+        "employee_count_fte": 2,
+        "tangible_assets_usd": 6200.0,
+        "primary_activity": "APAC Commercial Gateway & Treasury Operations"
+      },
+      {
+        "jurisdiction": "India",
+        "iso_code": "IN",
+        "unrelated_revenue_usd": 28994.04,
+        "related_revenue_usd": 93500.0,
+        "total_revenue_usd": 122494.04,
+        "profit_before_tax_usd": 9804.73,
+        "income_tax_paid_usd": 2465.9,
+        "stated_capital_usd": 100000.0,
+        "accumulated_earnings_usd": 180000.0,
+        "employee_count_fte": 11,
+        "tangible_assets_usd": 38000.0,
+        "primary_activity": "Core Software Engineering Center of Excellence & Domestic Billing"
+      }
+    ],
+    "cbcr_summary": {
+      "total_unrelated_revenue_usd": 558991.54,
+      "total_profit_before_tax_usd": 419857.49,
+      "total_tax_paid_usd": 56087.0,
+      "total_group_ftes": 24,
+      "effective_tax_rate_pct": 13.36
+    },
+    "dempe_evaluation": {
+      "framework": "OECD BEPS Action 8-10 Intangibles Chapter VI",
+      "total_dempe_weight_pct": 100.0,
+      "aggregate_dempe_substance_score": 93.7,
+      "total_dedicated_personnel_ftes": 22,
+      "substance_classification": "EXCELLENT_SUBSTANCE",
+      "dempe_functions_breakdown": [
+        {
+          "dempe_element": "Development (D)",
+          "description": "Core AST code-slicing engine, compression algorithms, and CLI compiler R&D.",
+          "responsible_entity": "DevSuperSuite India R&D Center of Excellence",
+          "jurisdiction": "India (IN)",
+          "function_weight_pct": 30.0,
+          "personnel_fte_count": 8,
+          "remuneration_method": "Cost Plus Method (CPM 10.0%)",
+          "substance_score": 95.0
+        },
+        {
+          "dempe_element": "Enhancement (E)",
+          "description": "Performance tuning, new cloud connector integrations, and telemetry upgrades.",
+          "responsible_entity": "DevSuperSuite Global Holdings Ltd",
+          "jurisdiction": "Ireland (IE)",
+          "function_weight_pct": 20.0,
+          "personnel_fte_count": 4,
+          "remuneration_method": "Residual IP Profit Allocation",
+          "substance_score": 92.0
+        },
+        {
+          "dempe_element": "Maintenance (M)",
+          "description": "Security patch release, CVE remediation, SBOM dependency auditing, and QA.",
+          "responsible_entity": "DevSuperSuite India R&D Center of Excellence",
+          "jurisdiction": "India (IN)",
+          "function_weight_pct": 15.0,
+          "personnel_fte_count": 3,
+          "remuneration_method": "Cost Plus Method (CPM 10.0%)",
+          "substance_score": 94.0
+        },
+        {
+          "dempe_element": "Protection (P)",
+          "description": "Global patent filings, copyright registration, trademark enforcement, trade secrets.",
+          "responsible_entity": "DevSuperSuite Global Holdings Ltd",
+          "jurisdiction": "Ireland (IE)",
+          "function_weight_pct": 15.0,
+          "personnel_fte_count": 2,
+          "remuneration_method": "IP Principal Capital Ownership",
+          "substance_score": 90.0
+        },
+        {
+          "dempe_element": "Exploitation (E)",
+          "description": "Enterprise commercial contracting, client onboarding, reseller channel management.",
+          "responsible_entity": "DevSuperSuite US LLC & Regional Distribution Hubs",
+          "jurisdiction": "United States (US) / Singapore (SG)",
+          "function_weight_pct": 20.0,
+          "personnel_fte_count": 5,
+          "remuneration_method": "TNMM (4.5% Distributor Operating Margin)",
+          "substance_score": 96.0
+        }
+      ]
+    }
+  },
+  "withholding_tax_optimizer": {
+    "total_statutory_withholding_usd": 161550.0,
+    "total_treaty_reduced_withholding_usd": 15775.0,
+    "total_withholding_tax_savings_usd": 145775.0,
+    "withholding_reduction_efficiency_pct": 90.24,
+    "treaty_corridors": [
+      {
+        "corridor": "US -> IE",
+        "treaty_name": "US-Ireland Double Taxation Convention",
+        "annual_transaction_flow_usd": 385000.0,
+        "statutory_wht_pct": 30.0,
+        "statutory_tax_liability_usd": 115500.0,
+        "treaty_reduced_wht_pct": 0.0,
+        "treaty_tax_liability_usd": 0.0,
+        "net_wht_savings_usd": 115500.0,
+        "lob_compliant": true,
+        "documentation_standard": "Form W-8BEN-E / IRS Form 6166"
+      },
+      {
+        "corridor": "US -> UK",
+        "treaty_name": "US-UK Income Tax Convention",
+        "annual_transaction_flow_usd": 25000.0,
+        "statutory_wht_pct": 30.0,
+        "statutory_tax_liability_usd": 7500.0,
+        "treaty_reduced_wht_pct": 0.0,
+        "treaty_tax_liability_usd": 0.0,
+        "net_wht_savings_usd": 7500.0,
+        "lob_compliant": true,
+        "documentation_standard": "Form W-8BEN-E / HMRC TRC"
+      },
+      {
+        "corridor": "US -> DE",
+        "treaty_name": "US-Germany Double Tax Treaty",
+        "annual_transaction_flow_usd": 15000.0,
+        "statutory_wht_pct": 30.0,
+        "statutory_tax_liability_usd": 4500.0,
+        "treaty_reduced_wht_pct": 0.0,
+        "treaty_tax_liability_usd": 0.0,
+        "net_wht_savings_usd": 4500.0,
+        "lob_compliant": true,
+        "documentation_standard": "Form W-8BEN-E / BZSt Certificate"
+      },
+      {
+        "corridor": "US -> SG",
+        "treaty_name": "US-Singapore Tax Agreement Framework",
+        "annual_transaction_flow_usd": 10000.0,
+        "statutory_wht_pct": 30.0,
+        "statutory_tax_liability_usd": 3000.0,
+        "treaty_reduced_wht_pct": 10.0,
+        "treaty_tax_liability_usd": 1000.0,
+        "net_wht_savings_usd": 2000.0,
+        "lob_compliant": true,
+        "documentation_standard": "Form W-8BEN-E / IRAS CoR"
+      },
+      {
+        "corridor": "US -> IN",
+        "treaty_name": "US-India Double Tax Avoidance Agreement (DTAA)",
+        "annual_transaction_flow_usd": 93500.0,
+        "statutory_wht_pct": 30.0,
+        "statutory_tax_liability_usd": 28050.0,
+        "treaty_reduced_wht_pct": 15.0,
+        "treaty_tax_liability_usd": 14025.0,
+        "net_wht_savings_usd": 14025.0,
+        "lob_compliant": true,
+        "documentation_standard": "Form W-8BEN-E / Form 10F / TRC"
+      },
+      {
+        "corridor": "IE -> SG",
+        "treaty_name": "Ireland-Singapore Comprehensive DTA",
+        "annual_transaction_flow_usd": 15000.0,
+        "statutory_wht_pct": 20.0,
+        "statutory_tax_liability_usd": 3000.0,
+        "treaty_reduced_wht_pct": 5.0,
+        "treaty_tax_liability_usd": 750.0,
+        "net_wht_savings_usd": 2250.0,
+        "lob_compliant": true,
+        "documentation_standard": "Irish Revenue Form 8-3-6 / IRAS CoR"
+      }
+    ]
+  },
+  "permanent_establishment_audit": {
+    "total_pe_risk_score": 8.0,
+    "maximum_risk_threshold": 15.0,
+    "risk_percentage": 8.0,
+    "safe_harbor_status": "LOW_RISK_SAFE_HARBOR_CONFIRMED",
+    "all_safe_harbors_met": true,
+    "pe_vectors": [
+      {
+        "vector": "Article 5(1) Fixed Place of Business PE",
+        "risk_category": "Office Leases & Physical Facilities",
+        "evaluation_scope": "Evaluates physical footprint across remote engineering locations.",
+        "mitigation_controls": "DevSuperSuite operates 100% remote-first with zero physical branch offices or dedicated commercial leases in non-resident jurisdictions. Co-working facilities used solely for preparatory/auxiliary tasks.",
+        "risk_score_points": 2.0,
+        "max_points": 25.0,
+        "status": "SAFE_HARBOR_SATISFIED"
+      },
+      {
+        "vector": "Article 5(1) Server Infrastructure Nexus",
+        "risk_category": "Cloud Hosting & Edge CDN Compute",
+        "evaluation_scope": "OECD Commentary Art 5 Para 42.1 server presence evaluation.",
+        "mitigation_controls": "Web and API infrastructure resides on third-party multi-tenant cloud providers (AWS, GCP, Cloudflare). Servers are not owned, leased, or operated at the disposal of DevSuperSuite; activities are automated and auxiliary.",
+        "risk_score_points": 3.0,
+        "max_points": 25.0,
+        "status": "SAFE_HARBOR_SATISFIED"
+      },
+      {
+        "vector": "Article 5(5) Dependent Agent PE (DAPE)",
+        "risk_category": "Commercial Contracting Authority",
+        "evaluation_scope": "Evaluates whether local representatives negotiate or bind contracts.",
+        "mitigation_controls": "Strict Corporate Governance Policy forbids regional personnel or sales agents from concluding or signing commercial agreements. 100% of customer enterprise contracts and quotes are executed exclusively by the principal corporate desk.",
+        "risk_score_points": 1.0,
+        "max_points": 30.0,
+        "status": "SAFE_HARBOR_SATISFIED"
+      },
+      {
+        "vector": "Service Permanent Establishment",
+        "risk_category": "Cross-Border Personnel Day Count",
+        "evaluation_scope": "Tracks physical travel and service performance days across borders.",
+        "mitigation_controls": "Strict 90-day physical presence tracking ceiling. No engineering or sales personnel spend more than 30 consecutive or 60 cumulative days physically performing services in foreign client territories.",
+        "risk_score_points": 2.0,
+        "max_points": 20.0,
+        "status": "SAFE_HARBOR_SATISFIED"
+      }
+    ],
+    "affirmation": "DevSuperSuite strictly complies with OECD Model Tax Convention Article 5 safe harbors, maintaining zero taxable Permanent Establishment risk in foreign customer jurisdictions."
+  }
+}

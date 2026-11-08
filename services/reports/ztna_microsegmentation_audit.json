@@ -3,10 +3,10 @@
     "organization": "DevSuperSuite Official",
     "authority": "Directorate of QA Automation & Security Compliance",
     "contact": "infosec@devsupersuite.com",
-    "timestamp": "2026-11-08T11:03:23.945530+00:00",
+    "timestamp": "2026-11-08T11:14:16.748190+00:00",
     "framework": "NIST SP 800-207 Zero Trust Architecture & Cilium eBPF Microsegmentation",
     "classification": "Zero-Trust Security Telemetry & Attestation (Restricted)",
-    "sha256_digest": "8521b61cb27b5948666f89da2388628d0e9f91a5b8a2f0e90fd770416180079d"
+    "sha256_digest": "1e961482e42d9d41c51cf86f888524351b6235e6665dbcc54875273333c115a8"
   },
   "ztna_executive_summary": {
     "posture_status": "CERTIFIED_ZTNA_COMPLIANT",
@@ -27,36 +27,36 @@
         {
           "workload": "OmniKernel Worker",
           "spiffe_id": "spiffe://devsupersuite.internal/ns/omnikernel-compute/sa/sa-omnikernel-worker",
-          "serial_number": "CAF752F4ED790B09A0211207B6C6F003",
-          "cert_fingerprint": "707221cef1abde06af974ec0df61794cdb5866672be7674c743830e691204e75",
+          "serial_number": "A7B3446D378644C9CB8E95C3F4F7ECF7",
+          "cert_fingerprint": "2963ae483368953a9e3dc9f6d236366b4269ed8031c440619bd0a0634ffa6e1d",
           "status": "VERIFIED_VALID"
         },
         {
           "workload": "Licensing Authority",
           "spiffe_id": "spiffe://devsupersuite.internal/ns/licensing-auth/sa/sa-license-authority",
-          "serial_number": "6C509D5C1E984B0C7E0E533C8FE38C0D",
-          "cert_fingerprint": "0864d37500e8b672ab6fb55c4101948f51a85e29f23531549243ea1d0b213b5b",
+          "serial_number": "8B9BFD563006FA7AA9B1EC7F7B2125F2",
+          "cert_fingerprint": "6720ffcb7802eff2c2526110ba62f7d81bc2a4c43b305088fc1e280d5a76fe4b",
           "status": "VERIFIED_VALID"
         },
         {
           "workload": "Reconciliation Engine",
           "spiffe_id": "spiffe://devsupersuite.internal/ns/billing-reconciliation/sa/sa-ledger-engine",
-          "serial_number": "CF376D8E392420F4BE7A9775C376F351",
-          "cert_fingerprint": "94aea058f88669477284d7fa9c99602c6314c22d493ffa88c6459d4c4526be36",
+          "serial_number": "3C0F4CD82F1252776F6CC3089D205B09",
+          "cert_fingerprint": "448bd03a867c462fe939b8699061775966f0249561544a3c3b4e5c9ccce5b81c",
           "status": "VERIFIED_VALID"
         },
         {
           "workload": "Envoy Ingress Proxy",
           "spiffe_id": "spiffe://devsupersuite.internal/ns/ingress-gateway/sa/sa-envoy-ingress",
-          "serial_number": "12641736929B589D04E7C25DC0343C8A",
-          "cert_fingerprint": "59893f8291059d697e12e500721ed288db950f0642b431d6c38febbfc7abcd98",
+          "serial_number": "3129A322128227E0F942CCE38C5C0DAB",
+          "cert_fingerprint": "5a445ea3f8f75ece72bf161bfa5eddc5e2f1b65b0eb647cb346e370643e92c8f",
           "status": "VERIFIED_VALID"
         },
         {
           "workload": "MCP Mesh Interconnect",
           "spiffe_id": "spiffe://devsupersuite.internal/ns/mcp-service-mesh/sa/sa-mcp-mesh",
-          "serial_number": "0EFB056DB7EFFB5C60790DB0AD4BF285",
-          "cert_fingerprint": "0d7f85ee69e28b8d5a76c0610f3ab9d6a38d1f29f35357aeb0bef1b98aef990d",
+          "serial_number": "5ED9BE5222C9012065A6DD3A9EA3E784",
+          "cert_fingerprint": "24782271ea3460d93b13122fee08be1800c38301f55059fec2b25d72c2dc400b",
           "status": "VERIFIED_VALID"
         }
       ]

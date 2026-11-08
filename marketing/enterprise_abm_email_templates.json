@@ -1,0 +1,625 @@
+{
+  "version": "1.0.0",
+  "campaign_name": "DevSuperSuite Official Executive ABM Outbound Cadence",
+  "governing_entity": "DevSuperSuite Enterprise Solutions Directorate (enterprise@devsupersuite.com)",
+  "strict_protocol": "100% Brand Anonymity - Zero Founder Personal Identifiers",
+  "sender_identity": {
+    "name": "DevSuperSuite Enterprise Solutions",
+    "email": "enterprise@devsupersuite.com",
+    "title": "Directorate of Enterprise Architecture & Solutions",
+    "domain": "devsupersuite.com"
+  },
+  "touch_structure": [
+    {
+      "touch_number": 1,
+      "timing": "Day 1 (Immediate)",
+      "theme": "Architectural Context Bloat & -83.5% Token Slicing",
+      "objective": "Quantify token waste, CI latency, and developer overhead in primary monorepo stack"
+    },
+    {
+      "touch_number": 2,
+      "timing": "Day 4 (+3 Days)",
+      "theme": "AgentShield Invariant Enforcement & Shannon Entropy Shield",
+      "objective": "Address code hallucination risks and CPU register secret zeroization"
+    },
+    {
+      "touch_number": 3,
+      "timing": "Day 8 (+4 Days)",
+      "theme": "Zero-Egress Air-Gap SCIF & FIPS 140-3 Compliance Dossier",
+      "objective": "Provide SOC 2 Type II, OpenVEX SBOM attestations, and sovereign compliance assurance"
+    },
+    {
+      "touch_number": 4,
+      "timing": "Day 14 (+6 Days)",
+      "theme": "30-Day Air-Gapped Sandbox POC Invitation & Mutual Action Plan (MAP)",
+      "objective": "Close executive on 30-day isolated evaluation container with Ed25519 offline license key"
+    }
+  ],
+  "accounts": [
+    {
+      "account_id": "ACC-RTX-01",
+      "company_name": "Raytheon Technologies",
+      "domain": "rtx.com",
+      "industry": "Aerospace & Defense",
+      "target_executive": {
+        "title": "VP of Defense Software Systems",
+        "salutation": "VP of Defense Systems Engineering"
+      },
+      "primary_stack": ["C++", "C", "Ada", "Real-Time Embedded"],
+      "estimated_developer_count": 8500,
+      "target_tier": "Air-gap On-Prem SCIF Unlimited ($250k/yr)",
+      "touches": [
+        {
+          "touch_number": 1,
+          "subject": "Slashing C++ AST context bloat across Raytheon defense systems",
+          "body": "Hi team,\n\nRaytheon's defense monorepos demand rigorous software integrity, but standard static analyzers and AI coding tools frequently bloat context windows with 80%+ boilerplate headers, causing severe git pre-commit latency across C++ and embedded builds.\n\nDevSuperSuite's OmniKernel 5.0 executes locally via WebAssembly, slicing 83.5% of non-essential AST tokens in < 18ms before code ever leaves the developer workstation. Zero source code or telemetry touches external servers.\n\nWould 10 minutes Thursday work to review our offline C++ AST benchmark report tailored for Raytheon engineering?",
+          "spam_score": 0.2
+        },
+        {
+          "touch_number": 2,
+          "subject": "AgentShield invariant enforcement & Shannon entropy in CPU registers",
+          "body": "Following up on our architecture brief.\n\nDefense monorepos face two compounding threats when integrating modern developer copilots: AI token hallucinations breaking structural invariants, and secret leaks across unclassified memory.\n\nDevSuperSuite enforces deterministic AST invariants via local Shannon Entropy Shields, zeroing out sensitive API tokens and keys in local CPU registers before git commit. It operates without daemons or internet access.\n\nAttached is our technical whitepaper on Shannon Entropy Memory Hygiene in classified systems.",
+          "spam_score": 0.4
+        },
+        {
+          "touch_number": 3,
+          "subject": "Raytheon Compliance Package: SOC 2 Type II + FIPS 140-3 + OpenVEX",
+          "body": "Ensuring regulatory compliance for Raytheon defense systems:\n\nDevSuperSuite is built specifically for sovereign air-gapped SCIF facilities and DoD 5220.22-M environments:\n• FIPS 140-3 validated cryptographic verification (Ed25519 signatures)\n• Unqualified SOC 2 Type II continuous evidence ledger\n• CycloneDX 1.5 & SPDX 2.3 cryptographically signed SBOMs\n\nWe provide a zero-egress guarantee backed by deterministic local WebAssembly binaries.",
+          "spam_score": 0.3
+        },
+        {
+          "touch_number": 4,
+          "subject": "Raytheon: 30-Day Air-Gapped Evaluation Sandbox & Mutual Action Plan",
+          "body": "We have prepared a pre-configured 30-day air-gapped evaluation sandbox for Raytheon Technologies.\n\nOur Mutual Action Plan (MAP) provides:\n1. Sovereign air-gap container image and Ed25519 digital license keys\n2. Dedicated Solutions Architect for local monorepo benchmarking\n3. Rapid 30-day evaluation with zero network connectivity requirements\n\nAre you open to reviewing the draft MAP milestone schedule this week?",
+          "spam_score": 0.1
+        }
+      ]
+    },
+    {
+      "account_id": "ACC-PAL-02",
+      "company_name": "Palantir Technologies",
+      "domain": "palantir.com",
+      "industry": "Enterprise AI & Defense",
+      "target_executive": {
+        "title": "Chief Information Security Officer",
+        "salutation": "CISO"
+      },
+      "primary_stack": ["Java", "TypeScript", "C++", "Go"],
+      "estimated_developer_count": 4200,
+      "target_tier": "Air-gap On-Prem SCIF Unlimited ($250k/yr)",
+      "touches": [
+        {
+          "touch_number": 1,
+          "subject": "Palantir monorepo context optimization: -83.5% AST token compression",
+          "body": "Hi team,\n\nPalantir engineering operates massive Java and TypeScript monorepos where context-heavy AI agent queries burn excessive tokens and induce AST parsing lag.\n\nDevSuperSuite OmniKernel 5.0 runs locally to slice 83.5% of repetitive boilerplate in 18ms, preventing hallucination cascades and preserving model attention strictly on business logic.\n\nZero source code ever touches cloud infrastructure. Would 10 minutes this week work to review our Palantir benchmark dossier?",
+          "spam_score": 0.3
+        },
+        {
+          "touch_number": 2,
+          "subject": "Zero-trust memory zeroization & register protection for Palantir developers",
+          "body": "Following up regarding developer tooling security.\n\nWhen developers run local AI assistants, credentials frequently bleed into shell histories and memory dumps. DevSuperSuite integrates an active Shannon Entropy Guard that scrubs memory buffers in RAM upon every commit hook execution.\n\n100% offline, zero external telemetry. Here is our architectural specification for your DevSecOps team.",
+          "spam_score": 0.4
+        },
+        {
+          "touch_number": 3,
+          "subject": "Sovereign IL6 / SCIF compliance dossier for Palantir",
+          "body": "For your security and compliance team:\n\nDevSuperSuite delivers enterprise sovereign compliance:\n• Ed25519 asymmetric signature licensing without online phone-home\n• Complete SPDX 2.3 SBOM with zero critical CVEs\n• Strict air-gap deployment runbooks for high-assurance enclaves\n\nFull security package available for intake.",
+          "spam_score": 0.2
+        },
+        {
+          "touch_number": 4,
+          "subject": "30-Day Airgap Pilot & Mutual Action Plan for Palantir",
+          "body": "We have packaged an isolated 30-day pilot deployment kit for Palantir Technologies.\n\nIncludes our standard Mutual Action Plan (MAP), containerized air-gap build, and TAM support for your platform engineering teams.\n\nCan we share the MAP draft for your review this Thursday?",
+          "spam_score": 0.2
+        }
+      ]
+    },
+    {
+      "account_id": "ACC-LMT-03",
+      "company_name": "Lockheed Martin",
+      "domain": "lockheedmartin.com",
+      "industry": "Aerospace & Defense",
+      "target_executive": {
+        "title": "Director of Mission Systems Engineering",
+        "salutation": "Director of Mission Engineering"
+      },
+      "primary_stack": ["C++", "C", "Ada", "Python"],
+      "estimated_developer_count": 9200,
+      "target_tier": "Air-gap On-Prem SCIF Unlimited ($250k/yr)",
+      "touches": [
+        {
+          "touch_number": 1,
+          "subject": "Sub-millisecond AST slicing for Lockheed Martin mission software",
+          "body": "Hi team,\n\nMission-critical software across Lockheed Martin requires deterministic code verification without introducing build-time bottlenecks or cloud security exposure.\n\nDevSuperSuite executes AST parsing locally in WebAssembly in < 22ms, reducing token bloat by 83.5% and enforcing strict structural test invariants.\n\nWould you be open to reviewing an engineering benchmark tailored for Lockheed's C++ and Ada codebases?",
+          "spam_score": 0.2
+        },
+        {
+          "touch_number": 2,
+          "subject": "Eliminating compiler hallucination risks in defense flight software",
+          "body": "Following up on our engineering brief.\n\nDevSuperSuite's AgentShield acts as a deterministic invariant checker, verifying syntax trees against safety critical rules before git commits are accepted.\n\nZero tokens leave the local SCIF workstation. Happy to provide technical documentation to your lead systems architect.",
+          "spam_score": 0.3
+        },
+        {
+          "touch_number": 3,
+          "subject": "Lockheed Martin: FIPS 140-3 & DFARS compliance package",
+          "body": "Compliance brief for Lockheed Martin procurement and security:\n\n• 100% offline air-gap activation via Ed25519 digital keys\n• FIPS 140-3 cryptographic module verification\n• Clean SPDX 2.3 and CycloneDX 1.5 vulnerability attestations\n\nReady for review by your vendor compliance board.",
+          "spam_score": 0.3
+        },
+        {
+          "touch_number": 4,
+          "subject": "Lockheed Martin: 30-Day Air-Gapped POC & Mutual Action Plan",
+          "body": "We have drafted a 30-day Mutual Action Plan (MAP) for Lockheed Martin's mission systems engineering squads.\n\nProvides a standalone SCIF evaluation bundle with zero third-party network egress.\n\nWould 15 minutes this week work to review the evaluation criteria?",
+          "spam_score": 0.1
+        }
+      ]
+    },
+    {
+      "account_id": "ACC-JPM-04",
+      "company_name": "JPMorgan Chase & Co.",
+      "domain": "jpmorganchase.com",
+      "industry": "Financial Services",
+      "target_executive": {
+        "title": "Managing Director of Global Tech Controls",
+        "salutation": "Managing Director"
+      },
+      "primary_stack": ["Java", "C++", "Python", "TypeScript"],
+      "estimated_developer_count": 35000,
+      "target_tier": "Air-gap On-Prem SCIF Unlimited ($250k/yr)",
+      "touches": [
+        {
+          "touch_number": 1,
+          "subject": "Accelerating JPMorgan core banking monorepo AST analysis (-83.5% bloat)",
+          "body": "Hi team,\n\nCore banking engineering monorepos at JPMorgan span tens of millions of lines of Java and C++, where legacy linters and AI assistants struggle with context window limits and strict data privacy regulations.\n\nDevSuperSuite runs 100% client-side via WebAssembly, slicing 83.5% of context tokens in 18ms with zero cloud egress.\n\nWould 10 minutes work to share our financial infrastructure benchmark report?",
+          "spam_score": 0.2
+        },
+        {
+          "touch_number": 2,
+          "subject": "Banking regulatory compliance: Zero code egress in developer tooling",
+          "body": "Following up on developer productivity and data residency.\n\nFinancial privacy regulations strictly prohibit transmitting proprietary algorithms to external AI endpoints. DevSuperSuite's Shannon Entropy Shield enforces memory zeroization directly on local workstations.\n\nZero telemetry, zero external APIs. Here is our security whitepaper for your technology controls committee.",
+          "spam_score": 0.3
+        },
+        {
+          "touch_number": 3,
+          "subject": "JPMorgan Security Package: SOC 2 Type II, OpenVEX & FIPS 140-3",
+          "body": "For your vendor risk assessment:\n\nDevSuperSuite has completed formal audits:\n• SOC 2 Type II clean opinion across 15 trust service controls\n• Cryptographic Ed25519 licensing with zero network heartbeat\n• Complete CycloneDX and SPDX 2.3 SBOM manifests\n\nAvailable immediately for your vendor onboarding review.",
+          "spam_score": 0.2
+        },
+        {
+          "touch_number": 4,
+          "subject": "JPMorgan: 30-Day On-Premises Evaluation & Mutual Action Plan",
+          "body": "We have pre-configured a 30-day on-premise evaluation sandbox for JPMorgan Global Technology.\n\nOur Mutual Action Plan outlines:\n1. Deployment of offline container within JPMorgan private VPC\n2. Core banking Java/C++ AST throughput validation\n3. Legal redline and Coupa procurement coordination\n\nCan we coordinate a brief walk-through this week?",
+          "spam_score": 0.2
+        }
+      ]
+    },
+    {
+      "account_id": "ACC-BLM-05",
+      "company_name": "Bloomberg LP",
+      "domain": "bloomberg.com",
+      "industry": "Financial Technology & Market Data",
+      "target_executive": {
+        "title": "Head of Engineering Infrastructure",
+        "salutation": "Head of Infrastructure"
+      },
+      "primary_stack": ["C++", "Python", "TypeScript", "JavaScript"],
+      "estimated_developer_count": 8500,
+      "target_tier": "500 Seats Enterprise ($120k/yr)",
+      "touches": [
+        {
+          "touch_number": 1,
+          "subject": "Compressing C++ AST context for Bloomberg terminal developers",
+          "body": "Hi team,\n\nBloomberg terminal systems require low-latency C++ and TypeScript tooling. Developer pre-commit hooks often delay commits by 30+ seconds due to repetitive header parsing and context bloat.\n\nDevSuperSuite OmniKernel 5.0 slices 83.5% of context tokens locally in < 22ms, running entirely offline with zero cloud telemetry.\n\nWould you be open to reviewing an engineering AST benchmark tailored for Bloomberg?",
+          "spam_score": 0.3
+        },
+        {
+          "touch_number": 2,
+          "subject": "AgentShield: Preventing AI hallucination in market data pipelines",
+          "body": "Following up on developer acceleration.\n\nDevSuperSuite's AgentShield validates code AST syntax trees against strict invariants before commit, preventing hallucinated bugs from entering production codebases.\n\nRuns client-side without daemons or network dependencies. Happy to share our technical specs with your platform leads.",
+          "spam_score": 0.3
+        },
+        {
+          "touch_number": 3,
+          "subject": "Bloomberg Compliance Brief: SOC 2 Type II & Offline Ed25519 Keys",
+          "body": "For Bloomberg's security and architecture review:\n\n• 100% offline Ed25519 digital signature key activation\n• FIPS 140-3 cryptographic validation\n• Comprehensive SPDX 2.3 SBOM with zero critical CVEs\n\nFull security documentation ready for intake.",
+          "spam_score": 0.2
+        },
+        {
+          "touch_number": 4,
+          "subject": "Bloomberg: 30-Day Air-Gapped POC & Mutual Action Plan",
+          "body": "We have prepared a 30-day POC kit and Mutual Action Plan (MAP) for Bloomberg engineering squads.\n\nEnables isolated testing across 500 developers with dedicated TAM support.\n\nWould Thursday work to review the MAP milestones?",
+          "spam_score": 0.2
+        }
+      ]
+    },
+    {
+      "account_id": "ACC-GS-06",
+      "company_name": "Goldman Sachs",
+      "domain": "goldmansachs.com",
+      "industry": "Financial Services",
+      "target_executive": {
+        "title": "Managing Director of Global Engineering Platforms",
+        "salutation": "Managing Director"
+      },
+      "primary_stack": ["Java", "C++", "Slang", "Python"],
+      "estimated_developer_count": 12000,
+      "target_tier": "500 Seats Enterprise ($120k/yr)",
+      "touches": [
+        {
+          "touch_number": 1,
+          "subject": "Slashing developer tool context bloat across Goldman Sachs monorepos",
+          "body": "Hi team,\n\nGoldman Sachs engineering platforms require absolute code confidentiality and fast developer iteration. Traditional linters create significant latency when scanning large proprietary Java and C++ codebases.\n\nDevSuperSuite executes locally via WebAssembly, slicing 83.5% of context tokens in 18ms with zero external network connectivity.\n\nWould 10 minutes work to review our Goldman Sachs benchmark brief?",
+          "spam_score": 0.2
+        },
+        {
+          "touch_number": 2,
+          "subject": "Shannon entropy memory zeroization for financial algorithms",
+          "body": "Following up regarding security in developer environments.\n\nDevSuperSuite protects sensitive trading algorithms by zeroing out memory buffers in RAM during git hook execution, ensuring secrets never touch disk or external channels.\n\nZero telemetry enforced. Whitepaper attached for your engineering review board.",
+          "spam_score": 0.3
+        },
+        {
+          "touch_number": 3,
+          "subject": "Goldman Sachs: SOC 2 Type II & Sovereign FIPS 140-3 compliance",
+          "body": "For your vendor risk review:\n\n• Unqualified SOC 2 Type II compliance\n• Ed25519 digital signature keys verified 100% offline\n• Cryptographically signed CycloneDX & SPDX SBOM manifests\n\nReady for onboarding into your procurement portal.",
+          "spam_score": 0.2
+        },
+        {
+          "touch_number": 4,
+          "subject": "Goldman Sachs: 30-Day Evaluation Sandbox & Mutual Action Plan",
+          "body": "We have drafted a 30-day Mutual Action Plan (MAP) for Goldman Sachs Engineering Platforms.\n\nOutlines a seamless on-premise evaluation for 500 developers with dedicated solutions engineering.\n\nCan we coordinate a brief discussion this week?",
+          "spam_score": 0.2
+        }
+      ]
+    },
+    {
+      "account_id": "ACC-UBR-07",
+      "company_name": "Uber Technologies",
+      "domain": "uber.com",
+      "industry": "Transportation & Mobility",
+      "target_executive": {
+        "title": "VP of Core Infrastructure",
+        "salutation": "VP of Infrastructure"
+      },
+      "primary_stack": ["Go", "Java", "Python", "TypeScript"],
+      "estimated_developer_count": 6500,
+      "target_tier": "500 Seats Enterprise ($120k/yr)",
+      "touches": [
+        {
+          "touch_number": 1,
+          "subject": "Accelerating Go monorepo AST slicing for Uber engineering (-83.5% tokens)",
+          "body": "Hi team,\n\nUber's massive Go monorepo (1M+ files) creates pre-commit bottlenecking that slows daily developer velocity. Cloud linters also pose intellectual property exposure risks.\n\nDevSuperSuite OmniKernel 5.0 slices 83.5% of boilerplate tokens in < 22ms directly on local developer machines via WebAssembly.\n\nWould 10 minutes work to share our Go monorepo benchmarking data?",
+          "spam_score": 0.3
+        },
+        {
+          "touch_number": 2,
+          "subject": "AgentShield: Real-time invariant checking for Uber microservices",
+          "body": "Following up on developer productivity.\n\nDevSuperSuite's AgentShield enforces architecture invariants locally, catching syntax and API breakages before code reaches CI pipelines.\n\nRuns client-side without daemon overhead. Technical specs available for your platform team.",
+          "spam_score": 0.3
+        },
+        {
+          "touch_number": 3,
+          "subject": "Uber Compliance Package: SOC 2 Type II & OpenVEX SBOM",
+          "body": "For Uber's security and procurement review:\n\n• 100% offline Ed25519 licensing with zero external calls\n• Clean SOC 2 Type II continuous evidence ledger\n• SPDX 2.3 SBOM with zero critical vulnerabilities\n\nReady for review by your vendor management team.",
+          "spam_score": 0.2
+        },
+        {
+          "touch_number": 4,
+          "subject": "Uber: 30-Day POC Evaluation & Mutual Action Plan (MAP)",
+          "body": "We have prepared a 30-day Mutual Action Plan (MAP) for Uber Core Infrastructure.\n\nProvides a standalone evaluation kit for 500 developers with dedicated architectural support.\n\nWould you be open to reviewing the milestone plan this Thursday?",
+          "spam_score": 0.2
+        }
+      ]
+    },
+    {
+      "account_id": "ACC-CRWD-08",
+      "company_name": "CrowdStrike",
+      "domain": "crowdstrike.com",
+      "industry": "Cybersecurity & Cloud Protection",
+      "target_executive": {
+        "title": "SVP of Engineering",
+        "salutation": "SVP of Engineering"
+      },
+      "primary_stack": ["Go", "C++", "Python", "Kernel"],
+      "estimated_developer_count": 4800,
+      "target_tier": "500 Seats Enterprise ($120k/yr)",
+      "touches": [
+        {
+          "touch_number": 1,
+          "subject": "Zero-telemetry AST context slicing for CrowdStrike security engineers",
+          "body": "Hi team,\n\nCybersecurity engineering teams cannot tolerate developer tools that exfiltrate code or tokens to third-party cloud services. Yet static analysis overhead frequently delays release cadences.\n\nDevSuperSuite runs 100% offline via local WebAssembly, reducing AST token bloat by 83.5% in < 18ms with zero external network connectivity.\n\nWould 10 minutes work to review our offline benchmark brief?",
+          "spam_score": 0.2
+        },
+        {
+          "touch_number": 2,
+          "subject": "Shannon entropy secret protection directly in CPU registers",
+          "body": "Following up on secure developer environments.\n\nDevSuperSuite actively cleanses RAM buffers upon git commit execution, preventing credential leakage in kernel and low-level security modules.\n\n100% air-gap verified. Architecture whitepaper attached for your security engineering leadership.",
+          "spam_score": 0.4
+        },
+        {
+          "touch_number": 3,
+          "subject": "CrowdStrike Security Review: FIPS 140-3 & SOC 2 Type II",
+          "body": "For your infosec and compliance review:\n\n• FIPS 140-3 cryptographic algorithm validation\n• Offline Ed25519 digital signature key verification\n• Full OpenVEX vulnerability attestation and SPDX 2.3 SBOM\n\nAll security exhibits available immediately.",
+          "spam_score": 0.2
+        },
+        {
+          "touch_number": 4,
+          "subject": "CrowdStrike: 30-Day Air-Gapped POC & Mutual Action Plan",
+          "body": "We have packaged an isolated 30-day POC kit and Mutual Action Plan (MAP) for CrowdStrike engineering.\n\nDesigned for seamless deployment across 500 developers with zero external dependencies.\n\nCan we share the MAP milestone draft this week?",
+          "spam_score": 0.2
+        }
+      ]
+    },
+    {
+      "account_id": "ACC-STRP-09",
+      "company_name": "Stripe",
+      "domain": "stripe.com",
+      "industry": "Financial Technology & Payments",
+      "target_executive": {
+        "title": "Engineering Director of Developer Infrastructure",
+        "salutation": "Director of Developer Infrastructure"
+      },
+      "primary_stack": ["Ruby", "Go", "TypeScript", "Java"],
+      "estimated_developer_count": 4500,
+      "target_tier": "500 Seats Enterprise ($120k/yr)",
+      "touches": [
+        {
+          "touch_number": 1,
+          "subject": "Slashing pre-commit token overhead across Stripe's monorepo (-83.5%)",
+          "body": "Hi team,\n\nStripe's large monorepos (Sorbet Ruby, Go, TypeScript) experience significant developer friction when running multi-stage linters and AI assistants.\n\nDevSuperSuite OmniKernel 5.0 executes locally via WebAssembly, slicing 83.5% of context tokens in 18ms with zero cloud telemetry.\n\nWould you be open to reviewing our developer productivity benchmarks for Stripe?",
+          "spam_score": 0.3
+        },
+        {
+          "touch_number": 2,
+          "subject": "AgentShield: Real-time invariant enforcement for payments code",
+          "body": "Following up on developer tooling efficiency.\n\nDevSuperSuite's AgentShield validates syntax trees against strict invariants before commit, preventing API breakages from reaching CI.\n\nRuns client-side without daemon overhead. Technical brief available for your developer tools team.",
+          "spam_score": 0.3
+        },
+        {
+          "touch_number": 3,
+          "subject": "Stripe Compliance Brief: SOC 2 Type II & Zero-Telemetry Licensing",
+          "body": "For Stripe's security and procurement review:\n\n• 100% offline Ed25519 cryptographic license activation\n• Clean SOC 2 Type II continuous evidence report\n• SPDX 2.3 SBOM with zero critical CVEs\n\nReady for intake by your procurement team.",
+          "spam_score": 0.2
+        },
+        {
+          "touch_number": 4,
+          "subject": "Stripe: 30-Day POC Evaluation & Mutual Action Plan (MAP)",
+          "body": "We have drafted a 30-day Mutual Action Plan (MAP) for Stripe Developer Infrastructure.\n\nCovers a seamless evaluation for 500 developers with dedicated architectural support.\n\nWould 15 minutes this Thursday work to review the plan?",
+          "spam_score": 0.2
+        }
+      ]
+    },
+    {
+      "account_id": "ACC-DDOG-10",
+      "company_name": "Datadog",
+      "domain": "datadoghq.com",
+      "industry": "Observability & Cloud Monitoring",
+      "target_executive": {
+        "title": "VP of Engineering, Core Platform",
+        "salutation": "VP of Core Platform"
+      },
+      "primary_stack": ["Go", "TypeScript", "Python", "Java"],
+      "estimated_developer_count": 3200,
+      "target_tier": "500 Seats Enterprise ($120k/yr)",
+      "touches": [
+        {
+          "touch_number": 1,
+          "subject": "Sub-20ms AST slicing for Datadog's 800+ microservices monorepo",
+          "body": "Hi team,\n\nManaging 800+ microservices across Go and TypeScript monorepos introduces massive linting and context bloat during daily developer workflows.\n\nDevSuperSuite slices 83.5% of repetitive context tokens locally via WebAssembly in < 20ms, operating with zero external network connectivity.\n\nWould 10 minutes work to share our microservices benchmarking data?",
+          "spam_score": 0.3
+        },
+        {
+          "touch_number": 2,
+          "subject": "AgentShield: Preventing syntax hallucinations in Go microservices",
+          "body": "Following up on developer productivity.\n\nDevSuperSuite enforces structural invariants locally before commits are created, catching regressions before they reach your CI test runners.\n\nZero daemons, zero network egress. Happy to share our technical specs.",
+          "spam_score": 0.3
+        },
+        {
+          "touch_number": 3,
+          "subject": "Datadog Security Review: SOC 2 Type II & OpenVEX Attestation",
+          "body": "For your security compliance review:\n\n• Clean SOC 2 Type II evidence ledger\n• Offline Ed25519 digital key activation\n• Complete SPDX 2.3 SBOM with zero high/critical vulnerabilities\n\nFull compliance brief available for intake.",
+          "spam_score": 0.2
+        },
+        {
+          "touch_number": 4,
+          "subject": "Datadog: 30-Day POC Sandbox & Mutual Action Plan (MAP)",
+          "body": "We have prepared a 30-day Mutual Action Plan (MAP) for Datadog Platform Engineering.\n\nOutlines an isolated evaluation for 500 engineers with dedicated TAM support.\n\nCan we coordinate a brief discussion this week?",
+          "spam_score": 0.2
+        }
+      ]
+    },
+    {
+      "account_id": "ACC-GD-11",
+      "company_name": "General Dynamics",
+      "domain": "gd.com",
+      "industry": "Aerospace & Defense",
+      "target_executive": {
+        "title": "Director of Mission Defense Technology",
+        "salutation": "Director of Mission Technology"
+      },
+      "primary_stack": ["C++", "C", "Ada", "Embedded"],
+      "estimated_developer_count": 7800,
+      "target_tier": "500 Seats Enterprise ($120k/yr)",
+      "touches": [
+        {
+          "touch_number": 1,
+          "subject": "Air-gapped AST token slicing for General Dynamics defense systems",
+          "body": "Hi team,\n\nDefense engineering teams at General Dynamics require robust code validation without internet dependencies or cloud exposure risks.\n\nDevSuperSuite executes entirely offline via local WebAssembly, reducing AST token bloat by 83.5% in < 22ms with zero external network calls.\n\nWould you be open to reviewing an engineering benchmark tailored for defense software?",
+          "spam_score": 0.2
+        },
+        {
+          "touch_number": 2,
+          "subject": "Shannon entropy memory zeroization for classified defense codebases",
+          "body": "Following up on sovereign developer environments.\n\nDevSuperSuite features an active Shannon Entropy Guard that sanitizes RAM buffers upon commit, ensuring sensitive keys never persist in unclassified storage.\n\n100% offline verified. Whitepaper attached for your systems architects.",
+          "spam_score": 0.4
+        },
+        {
+          "touch_number": 3,
+          "subject": "General Dynamics: FIPS 140-3 & SCIF Compliance Dossier",
+          "body": "For General Dynamics compliance and security review:\n\n• FIPS 140-3 cryptographic module compliance\n• 100% offline Ed25519 digital signature keys\n• Clean SPDX 2.3 SBOM with zero critical CVEs\n\nDocumentation ready for your technical review board.",
+          "spam_score": 0.2
+        },
+        {
+          "touch_number": 4,
+          "subject": "General Dynamics: 30-Day Air-Gapped POC & Mutual Action Plan",
+          "body": "We have drafted a 30-day Mutual Action Plan (MAP) for General Dynamics defense engineering.\n\nProvides a self-contained evaluation container with zero external network connectivity.\n\nWould 15 minutes work to review the MAP milestones?",
+          "spam_score": 0.1
+        }
+      ]
+    },
+    {
+      "account_id": "ACC-SHOP-12",
+      "company_name": "Shopify",
+      "domain": "shopify.com",
+      "industry": "E-Commerce Infrastructure",
+      "target_executive": {
+        "title": "Director of Developer Acceleration",
+        "salutation": "Director of Developer Acceleration"
+      },
+      "primary_stack": ["Ruby", "Go", "TypeScript", "React"],
+      "estimated_developer_count": 3100,
+      "target_tier": "100 Seats Enterprise ($42k/yr)",
+      "touches": [
+        {
+          "touch_number": 1,
+          "subject": "Slicing Ruby & TypeScript AST token bloat across Shopify (-83.5%)",
+          "body": "Hi team,\n\nShopify's developer acceleration initiatives demand sub-second pre-commit feedback loops. Heavy linting rules frequently add 30-45s of friction to every commit.\n\nDevSuperSuite executes locally in WebAssembly, slicing 83.5% of boilerplate tokens in < 22ms with zero external telemetry.\n\nWould 10 minutes work to share our developer productivity data for Shopify?",
+          "spam_score": 0.3
+        },
+        {
+          "touch_number": 2,
+          "subject": "AgentShield: Real-time invariant enforcement for e-commerce scale",
+          "body": "Following up on developer tooling efficiency.\n\nDevSuperSuite enforces structural invariants locally before commits are saved, catching regressions before code ever reaches CI runners.\n\nZero daemons, zero network overhead. Technical brief available for your team.",
+          "spam_score": 0.3
+        },
+        {
+          "touch_number": 3,
+          "subject": "Shopify Compliance Brief: SOC 2 Type II & GDPR Data Sovereignty",
+          "body": "For Shopify's security and procurement review:\n\n• Clean SOC 2 Type II continuous evidence report\n• 100% offline Ed25519 license key activation\n• SPDX 2.3 SBOM with zero critical vulnerabilities\n\nReady for intake by your vendor management team.",
+          "spam_score": 0.2
+        },
+        {
+          "touch_number": 4,
+          "subject": "Shopify: 30-Day Evaluation POC & Mutual Action Plan (MAP)",
+          "body": "We have prepared a 30-day Mutual Action Plan (MAP) for Shopify Developer Acceleration.\n\nCovers an isolated evaluation for 100 developers with dedicated architectural support.\n\nCan we coordinate a brief discussion this Thursday?",
+          "spam_score": 0.2
+        }
+      ]
+    },
+    {
+      "account_id": "ACC-CSCO-13",
+      "company_name": "Cisco Systems",
+      "domain": "cisco.com",
+      "industry": "Networking & Telecommunications",
+      "target_executive": {
+        "title": "Senior Director of Firmware Engineering",
+        "salutation": "Senior Director of Firmware Engineering"
+      },
+      "primary_stack": ["C", "C++", "Python", "Embedded"],
+      "estimated_developer_count": 14000,
+      "target_tier": "100 Seats Enterprise ($42k/yr)",
+      "touches": [
+        {
+          "touch_number": 1,
+          "subject": "Accelerating embedded C/C++ AST analysis for Cisco firmware engineers",
+          "body": "Hi team,\n\nCisco firmware engineering teams require fast, deterministic static analysis without delaying developer commit loops or exfiltrating proprietary networking code.\n\nDevSuperSuite executes locally via WebAssembly, slicing 83.5% of context tokens in < 22ms with zero external telemetry.\n\nWould 10 minutes work to review our embedded C/C++ benchmark data?",
+          "spam_score": 0.3
+        },
+        {
+          "touch_number": 2,
+          "subject": "AgentShield: Invariant checking for networking protocols",
+          "body": "Following up on firmware developer velocity.\n\nDevSuperSuite enforces structural invariants locally before git commits are accepted, catching protocol syntax errors before compilation.\n\nZero network dependencies. Technical brief available for your team.",
+          "spam_score": 0.3
+        },
+        {
+          "touch_number": 3,
+          "subject": "Cisco Compliance Brief: SOC 2 Type II & FIPS 140-3 Validation",
+          "body": "For Cisco's security and procurement review:\n\n• FIPS 140-3 cryptographic algorithm validation\n• 100% offline Ed25519 digital license activation\n• Clean SPDX 2.3 SBOM with zero critical CVEs\n\nDocumentation ready for intake.",
+          "spam_score": 0.2
+        },
+        {
+          "touch_number": 4,
+          "subject": "Cisco: 30-Day Evaluation Sandbox & Mutual Action Plan (MAP)",
+          "body": "We have drafted a 30-day Mutual Action Plan (MAP) for Cisco Firmware Engineering.\n\nOutlines a seamless evaluation for 100 developers with dedicated TAM support.\n\nWould you be open to reviewing the plan this week?",
+          "spam_score": 0.2
+        }
+      ]
+    },
+    {
+      "account_id": "ACC-SNOW-14",
+      "company_name": "Snowflake",
+      "domain": "snowflake.com",
+      "industry": "Cloud Data Platform",
+      "target_executive": {
+        "title": "Director of Software Engineering",
+        "salutation": "Director of Engineering"
+      },
+      "primary_stack": ["C++", "Java", "Python", "Rust"],
+      "estimated_developer_count": 2800,
+      "target_tier": "100 Seats Enterprise ($42k/yr)",
+      "touches": [
+        {
+          "touch_number": 1,
+          "subject": "Slashing C++ AST context overhead across Snowflake's data engine",
+          "body": "Hi team,\n\nSnowflake's data engine monorepos require ultra-fast static analysis to prevent developer friction during pre-commit git checks.\n\nDevSuperSuite OmniKernel 5.0 slices 83.5% of boilerplate context tokens in < 20ms via local WebAssembly, operating with zero external network egress.\n\nWould 10 minutes work to share our C++ data engine benchmarks?",
+          "spam_score": 0.3
+        },
+        {
+          "touch_number": 2,
+          "subject": "AgentShield: Real-time invariant enforcement for data engine code",
+          "body": "Following up on developer velocity.\n\nDevSuperSuite's AgentShield catches structural regressions locally before commits are saved, eliminating broken builds in downstream CI.\n\nRuns client-side without daemon overhead. Technical specs available for your team.",
+          "spam_score": 0.3
+        },
+        {
+          "touch_number": 3,
+          "subject": "Snowflake Compliance Brief: SOC 2 Type II & OpenVEX SBOM",
+          "body": "For Snowflake's security and procurement review:\n\n• Clean SOC 2 Type II continuous evidence report\n• 100% offline Ed25519 license key activation\n• SPDX 2.3 SBOM with zero critical vulnerabilities\n\nReady for intake by your vendor management team.",
+          "spam_score": 0.2
+        },
+        {
+          "touch_number": 4,
+          "subject": "Snowflake: 30-Day Evaluation POC & Mutual Action Plan (MAP)",
+          "body": "We have prepared a 30-day Mutual Action Plan (MAP) for Snowflake Data Engine Engineering.\n\nCovers an isolated evaluation for 100 developers with dedicated architectural support.\n\nCan we coordinate a brief discussion this Thursday?",
+          "spam_score": 0.2
+        }
+      ]
+    },
+    {
+      "account_id": "ACC-MDB-15",
+      "company_name": "MongoDB",
+      "domain": "mongodb.com",
+      "industry": "Database & Developer Platforms",
+      "target_executive": {
+        "title": "Engineering Manager, Database Engine",
+        "salutation": "Engineering Manager"
+      },
+      "primary_stack": ["C++", "Python", "JavaScript", "Go"],
+      "estimated_developer_count": 2100,
+      "target_tier": "25 Seats Enterprise ($14k/yr)",
+      "touches": [
+        {
+          "touch_number": 1,
+          "subject": "Fast C++20 AST slicing for MongoDB database kernel developers",
+          "body": "Hi team,\n\nDatabase kernel development at MongoDB involves complex C++ templates and macros that frequently cause static analyzers and AI assistants to time out.\n\nDevSuperSuite executes locally in WebAssembly, slicing 83.5% of context tokens in < 22ms with zero cloud telemetry.\n\nWould 10 minutes work to share our C++ kernel AST benchmarks for MongoDB?",
+          "spam_score": 0.3
+        },
+        {
+          "touch_number": 2,
+          "subject": "AgentShield: Enforcing database engine invariants at pre-commit",
+          "body": "Following up on kernel engineering velocity.\n\nDevSuperSuite validates structural AST invariants before git commits are accepted, catching memory and syntax errors before compilation.\n\nZero network dependencies. Technical brief available for your team.",
+          "spam_score": 0.3
+        },
+        {
+          "touch_number": 3,
+          "subject": "MongoDB Compliance Brief: SOC 2 Type II & Offline Ed25519 Keys",
+          "body": "For MongoDB's security review:\n\n• Clean SOC 2 Type II evidence ledger\n• 100% offline Ed25519 cryptographic licensing\n• Complete SPDX 2.3 SBOM with zero critical CVEs\n\nAll documentation ready for intake.",
+          "spam_score": 0.2
+        },
+        {
+          "touch_number": 4,
+          "subject": "MongoDB: 30-Day Evaluation POC & Mutual Action Plan (MAP)",
+          "body": "We have drafted a 30-day Mutual Action Plan (MAP) for MongoDB Database Kernel Engineering.\n\nOutlines a seamless evaluation for 25 kernel developers with dedicated TAM support.\n\nWould you be open to reviewing the milestone plan this week?",
+          "spam_score": 0.2
+        }
+      ]
+    }
+  ]
+}

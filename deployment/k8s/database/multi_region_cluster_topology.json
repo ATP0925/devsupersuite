@@ -1,0 +1,85 @@
+{
+  "cluster_name": "dss-multi-region-database-fabric",
+  "organization": "DevSuperSuite Solutions Architecture / OmniKernel Labs",
+  "contact": "solutions@devsupersuite.com",
+  "quorum_size": 2,
+  "global_fencing_token": 1001,
+  "active_leader": "dss-db-us-east-01",
+  "active_partition": null,
+  "nodes": [
+    {
+      "node_id": "dss-db-us-east-01",
+      "region": "us-east",
+      "endpoint": "db.us-east.internal.devsupersuite.io:5432",
+      "role": "LEADER",
+      "current_term": 1,
+      "voted_for": "dss-db-us-east-01",
+      "fencing_token": 1001,
+      "wal_log_length": 0,
+      "commit_index": 0,
+      "is_isolated": false,
+      "missed_heartbeats": 0,
+      "vector_clock": {
+        "us-east": 0,
+        "eu-central": 0,
+        "ap-south": 0
+      }
+    },
+    {
+      "node_id": "dss-db-eu-central-01",
+      "region": "eu-central",
+      "endpoint": "db.eu-central.internal.devsupersuite.io:5432",
+      "role": "FOLLOWER",
+      "current_term": 1,
+      "voted_for": "dss-db-us-east-01",
+      "fencing_token": 0,
+      "wal_log_length": 0,
+      "commit_index": 0,
+      "is_isolated": false,
+      "missed_heartbeats": 0,
+      "vector_clock": {
+        "eu-central": 0,
+        "us-east": 0,
+        "ap-south": 0
+      }
+    },
+    {
+      "node_id": "dss-db-ap-south-01",
+      "region": "ap-south",
+      "endpoint": "db.ap-south.internal.devsupersuite.io:5432",
+      "role": "FOLLOWER",
+      "current_term": 1,
+      "voted_for": "dss-db-us-east-01",
+      "fencing_token": 0,
+      "wal_log_length": 0,
+      "commit_index": 0,
+      "is_isolated": false,
+      "missed_heartbeats": 0,
+      "vector_clock": {
+        "ap-south": 0,
+        "us-east": 0,
+        "eu-central": 0
+      }
+    }
+  ],
+  "routing_table": {
+    "cluster_domain": "db.devsupersuite.internal",
+    "active_primary_endpoint": "db.us-east.internal.devsupersuite.io:5432",
+    "active_leader_id": "dss-db-us-east-01",
+    "active_term": 1,
+    "fencing_token": 1001,
+    "read_replicas": [
+      {
+        "region": "eu-central",
+        "endpoint": "db.eu-central.internal.devsupersuite.io:5432",
+        "status": "UP"
+      },
+      {
+        "region": "ap-south",
+        "endpoint": "db.ap-south.internal.devsupersuite.io:5432",
+        "status": "UP"
+      }
+    ]
+  },
+  "exported_at": "2026-11-08T11:14:09.232515+00:00"
+}

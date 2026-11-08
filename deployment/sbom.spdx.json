@@ -3,9 +3,9 @@
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
   "name": "DevSuperSuite-Enterprise-SBOM",
-  "documentNamespace": "https://devsupersuite.web.app/spdx/urn:uuid:dss-sbom-10dbbd791cf5ec798d0944015a29f563",
+  "documentNamespace": "https://devsupersuite.web.app/spdx/urn:uuid:dss-sbom-a00f7cd638cc30014ea4faa025665db2",
   "creationInfo": {
-    "created": "2026-11-08T11:03:23.017455+00:00",
+    "created": "2026-11-08T11:14:15.011961+00:00",
     "creators": [
       "Organization: DevSuperSuite Official",
       "Tool: DevSuperSuite-SBOM-Generator-5.2"

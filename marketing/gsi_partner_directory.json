@@ -1,0 +1,247 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DevSuperSuite Global Systems Integrator (GSI) Partner Directory & Co-Sell Matrix",
+  "documentId": "DSS-GSI-MATRIX-2026-V1",
+  "version": "5.2.0-LTS",
+  "classification": "Global Partner Alliances & Commercial Enablement",
+  "maintainedBy": "DevSuperSuite Global Partner Alliances Desk (alliances@devsupersuite.com)",
+  "publishedDate": "2026-11-08T16:36:30Z",
+  "summary": "Machine-readable catalog of Tier-1 Global Systems Integrator practice groups, partner economics, joint transformation focus areas, and certification requirements.",
+  "partnerProgramSummary": {
+    "programName": "DevSuperSuite Global Alliance Co-Sell Network",
+    "portalUrl": "https://devsupersuite.web.app/alliances",
+    "dealRegistrationEmail": "alliances@devsupersuite.com",
+    "standardDealLockDays": 90,
+    "topTierMarginPct": 35.0,
+    "averageServicesMultiplier": 7.2
+  },
+  "partners": [
+    {
+      "gsiId": "GSI-ACC-01",
+      "firmName": "Accenture",
+      "globalHeadquarters": "Dublin, Ireland / New York, NY",
+      "tierStatus": "Premier GSI Partner",
+      "primaryPracticeGroup": "Cloud First / Applied Intelligence",
+      "executivePartnerLeadPersona": "Senior Managing Director, AI Engineering & Cloud Architecture",
+      "jointTransformationFocus": "Core Banking Modernization & Zero-Egress Cloud Governance",
+      "targetEnterpriseAccounts": ["Tier-1 Global Banks", "Multinational Telecoms", "Global Healthcare Payers"],
+      "commercialEconomics": {
+        "softwareReferralMarginPct": 35.0,
+        "typicalJointSowRangeUsd": { "min": 350000, "max": 1200000 },
+        "averageEngagementWeeks": 12,
+        "servicesMultiplier": 7.2,
+        "dealRegistrationLockDays": 90
+      },
+      "certificationRequirements": {
+        "minimumCertifiedArchitects": 15,
+        "certifiedCredential": "DevSuperSuite Certified Implementation Architect (DSS-CIA)"
+      },
+      "jointSolutionName": "Accenture Sovereign Code Intelligence Engine powered by OmniKernel"
+    },
+    {
+      "gsiId": "GSI-DEL-02",
+      "firmName": "Deloitte Digital",
+      "globalHeadquarters": "London, UK / New York, NY",
+      "tierStatus": "Premier GSI Partner",
+      "primaryPracticeGroup": "AI & Data Operations / Cyber Risk Practice",
+      "executivePartnerLeadPersona": "Partner, Enterprise Trust & AI Assurance",
+      "jointTransformationFocus": "Defense SCIF Air-Gap, ITAR & CISO Compliance Assurance",
+      "targetEnterpriseAccounts": ["Aerospace & Defense Primes", "US Federal Agencies", "National Security Enclaves"],
+      "commercialEconomics": {
+        "softwareReferralMarginPct": 35.0,
+        "typicalJointSowRangeUsd": { "min": 450000, "max": 1500000 },
+        "averageEngagementWeeks": 16,
+        "servicesMultiplier": 8.0,
+        "dealRegistrationLockDays": 90
+      },
+      "certificationRequirements": {
+        "minimumCertifiedArchitects": 20,
+        "certifiedCredential": "DevSuperSuite Certified Implementation Architect (DSS-CIA)"
+      },
+      "jointSolutionName": "Deloitte Trustworthy AI Code Sentinel"
+    },
+    {
+      "gsiId": "GSI-PWC-03",
+      "firmName": "PricewaterhouseCoopers (PwC)",
+      "globalHeadquarters": "London, UK / New York, NY",
+      "tierStatus": "Certified Solutions Partner",
+      "primaryPracticeGroup": "Digital Products & Cloud Transformation",
+      "executivePartnerLeadPersona": "Partner, Technology Consulting & Developer Productivity",
+      "jointTransformationFocus": "SOX Financial Compliance & Developer Productivity Optimization",
+      "targetEnterpriseAccounts": ["Global Asset Managers", "Insurance Conglomerates", "Tier-1 Retailers"],
+      "commercialEconomics": {
+        "softwareReferralMarginPct": 28.0,
+        "typicalJointSowRangeUsd": { "min": 300000, "max": 850000 },
+        "averageEngagementWeeks": 10,
+        "servicesMultiplier": 6.5,
+        "dealRegistrationLockDays": 60
+      },
+      "certificationRequirements": {
+        "minimumCertifiedArchitects": 10,
+        "certifiedCredential": "DevSuperSuite Certified Implementation Architect (DSS-CIA)"
+      },
+      "jointSolutionName": "PwC Compliant Code Acceleration Suite"
+    },
+    {
+      "gsiId": "GSI-EY-04",
+      "firmName": "Ernst & Young (EY)",
+      "globalHeadquarters": "London, UK / New York, NY",
+      "tierStatus": "Certified Solutions Partner",
+      "primaryPracticeGroup": "Technology Consulting / Cyber Security & Risk",
+      "executivePartnerLeadPersona": "Principal, Enterprise Architecture & Supply Chain Assurance",
+      "jointTransformationFocus": "Software Supply Chain Integrity & Invariant Guardrails",
+      "targetEnterpriseAccounts": ["Energy & Utilities", "Automotive OEMs", "Pharmaceutical Giants"],
+      "commercialEconomics": {
+        "softwareReferralMarginPct": 28.0,
+        "typicalJointSowRangeUsd": { "min": 250000, "max": 750000 },
+        "averageEngagementWeeks": 10,
+        "servicesMultiplier": 6.0,
+        "dealRegistrationLockDays": 60
+      },
+      "certificationRequirements": {
+        "minimumCertifiedArchitects": 10,
+        "certifiedCredential": "DevSuperSuite Certified Implementation Architect (DSS-CIA)"
+      },
+      "jointSolutionName": "EY Trusted Software Supply Chain Guard"
+    },
+    {
+      "gsiId": "GSI-KPMG-05",
+      "firmName": "KPMG",
+      "globalHeadquarters": "Amstelveen, Netherlands / New York, NY",
+      "tierStatus": "Certified Solutions Partner",
+      "primaryPracticeGroup": "Digital Lighthouse / Enterprise AI",
+      "executivePartnerLeadPersona": "Managing Director, AI Solutions & Cloud Cost Recovery",
+      "jointTransformationFocus": "Regulated FinTech & Cloud Migration Token Cost Recovery",
+      "targetEnterpriseAccounts": ["Regional Commercial Banks", "Capital Markets Infrastructure", "WealthTech Unicorns"],
+      "commercialEconomics": {
+        "softwareReferralMarginPct": 28.0,
+        "typicalJointSowRangeUsd": { "min": 250000, "max": 650000 },
+        "averageEngagementWeeks": 8,
+        "servicesMultiplier": 5.5,
+        "dealRegistrationLockDays": 60
+      },
+      "certificationRequirements": {
+        "minimumCertifiedArchitects": 8,
+        "certifiedCredential": "DevSuperSuite Certified Implementation Architect (DSS-CIA)"
+      },
+      "jointSolutionName": "KPMG FinTech Token Value Recovery Engine"
+    },
+    {
+      "gsiId": "GSI-CAP-06",
+      "firmName": "Capgemini",
+      "globalHeadquarters": "Paris, France",
+      "tierStatus": "Premier GSI Partner",
+      "primaryPracticeGroup": "Cloud & Custom Applications / Capgemini Engineering",
+      "executivePartnerLeadPersona": "Vice President, Embedded Software Engineering",
+      "jointTransformationFocus": "Automotive Embedded Systems & Modern C++20 Refactoring",
+      "targetEnterpriseAccounts": ["European Automotive OEMs", "Aerospace Subcontractors", "Industrial Robotics"],
+      "commercialEconomics": {
+        "softwareReferralMarginPct": 35.0,
+        "typicalJointSowRangeUsd": { "min": 350000, "max": 950000 },
+        "averageEngagementWeeks": 12,
+        "servicesMultiplier": 7.5,
+        "dealRegistrationLockDays": 90
+      },
+      "certificationRequirements": {
+        "minimumCertifiedArchitects": 12,
+        "certifiedCredential": "DevSuperSuite Certified Implementation Architect (DSS-CIA)"
+      },
+      "jointSolutionName": "Capgemini Embedded Safety & AST Compiler Gateway"
+    },
+    {
+      "gsiId": "GSI-COG-07",
+      "firmName": "Cognizant",
+      "globalHeadquarters": "Teaneck, NJ",
+      "tierStatus": "Certified Solutions Partner",
+      "primaryPracticeGroup": "Core Modernization & Enterprise AI Practice",
+      "executivePartnerLeadPersona": "Senior Vice President, Digital Business Systems",
+      "jointTransformationFocus": "Legacy Java & Mainframe to Cloud-Native Microservices",
+      "targetEnterpriseAccounts": ["Healthcare Insurers", "Retail Banking Networks", "Supply Chain Logistics"],
+      "commercialEconomics": {
+        "softwareReferralMarginPct": 28.0,
+        "typicalJointSowRangeUsd": { "min": 300000, "max": 900000 },
+        "averageEngagementWeeks": 12,
+        "servicesMultiplier": 6.8,
+        "dealRegistrationLockDays": 60
+      },
+      "certificationRequirements": {
+        "minimumCertifiedArchitects": 10,
+        "certifiedCredential": "DevSuperSuite Certified Implementation Architect (DSS-CIA)"
+      },
+      "jointSolutionName": "Cognizant Neural Modernization Accelerator"
+    },
+    {
+      "gsiId": "GSI-WIP-08",
+      "firmName": "Wipro",
+      "globalHeadquarters": "Bengaluru, India",
+      "tierStatus": "Certified Solutions Partner",
+      "primaryPracticeGroup": "FullStride Cloud / Enterprise AI Hub",
+      "executivePartnerLeadPersona": "Global Practice Head, Cloud & Platform Engineering",
+      "jointTransformationFocus": "Polyglot Monorepo Optimization & Universal MCP Fleets",
+      "targetEnterpriseAccounts": ["Enterprise SaaS Providers", "High-Tech Semiconductor R&D", "FinTech Scaleups"],
+      "commercialEconomics": {
+        "softwareReferralMarginPct": 28.0,
+        "typicalJointSowRangeUsd": { "min": 250000, "max": 700000 },
+        "averageEngagementWeeks": 10,
+        "servicesMultiplier": 6.2,
+        "dealRegistrationLockDays": 60
+      },
+      "certificationRequirements": {
+        "minimumCertifiedArchitects": 10,
+        "certifiedCredential": "DevSuperSuite Certified Implementation Architect (DSS-CIA)"
+      },
+      "jointSolutionName": "Wipro FullStride Autonomous Developer Suite"
+    },
+    {
+      "gsiId": "GSI-INF-09",
+      "firmName": "Infosys",
+      "globalHeadquarters": "Bengaluru, India",
+      "tierStatus": "Premier GSI Partner",
+      "primaryPracticeGroup": "Topaz Generative AI / Cloud Modernization Services",
+      "executivePartnerLeadPersona": "Executive Vice President, Enterprise Systems Architecture",
+      "jointTransformationFocus": "Telecommunications Network Software Refactoring & Cloud Edge",
+      "targetEnterpriseAccounts": ["Tier-1 Telco Operators", "Global Media Conglomerates", "Consumer Electronics"],
+      "commercialEconomics": {
+        "softwareReferralMarginPct": 35.0,
+        "typicalJointSowRangeUsd": { "min": 350000, "max": 1000000 },
+        "averageEngagementWeeks": 14,
+        "servicesMultiplier": 7.0,
+        "dealRegistrationLockDays": 90
+      },
+      "certificationRequirements": {
+        "minimumCertifiedArchitects": 15,
+        "certifiedCredential": "DevSuperSuite Certified Implementation Architect (DSS-CIA)"
+      },
+      "jointSolutionName": "Infosys Topaz Code Sentinel"
+    },
+    {
+      "gsiId": "GSI-TCS-10",
+      "firmName": "Tata Consultancy Services (TCS)",
+      "globalHeadquarters": "Mumbai, India",
+      "tierStatus": "Premier GSI Partner",
+      "primaryPracticeGroup": "AI.Cloud / Cognitive Business Operations",
+      "executivePartnerLeadPersona": "Global Head, Cognitive Software Development & Assurance",
+      "jointTransformationFocus": "Large-Scale Enterprise Monorepo AST Acceleration & Safety Invariants",
+      "targetEnterpriseAccounts": ["Multinational Banking Groups", "Commercial Airlines", "Energy Conglomerates"],
+      "commercialEconomics": {
+        "softwareReferralMarginPct": 35.0,
+        "typicalJointSowRangeUsd": { "min": 400000, "max": 1100000 },
+        "averageEngagementWeeks": 14,
+        "servicesMultiplier": 7.4,
+        "dealRegistrationLockDays": 90
+      },
+      "certificationRequirements": {
+        "minimumCertifiedArchitects": 15,
+        "certifiedCredential": "DevSuperSuite Certified Implementation Architect (DSS-CIA)"
+      },
+      "jointSolutionName": "TCS MasterCraft AI Invariant Framework"
+    }
+  ],
+  "commercialContact": {
+    "alliancesDesk": "alliances@devsupersuite.com",
+    "partnerArchitects": "partner-architects@devsupersuite.com",
+    "legalTeaming": "legal@devsupersuite.com",
+    "partnerPortal": "https://devsupersuite.web.app/alliances",
+    "directStorefront": "https://gumroad.com/l/tlzdco"
+  }
+}

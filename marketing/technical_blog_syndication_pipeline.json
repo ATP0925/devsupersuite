@@ -1,0 +1,87 @@
+{
+  "blog_meta": {
+    "publisher": "DevSuperSuite Engineering Blog",
+    "contact_email": "blog@devsupersuite.com",
+    "canonical_base_url": "https://devsupersuite.web.app/blog",
+    "website": "https://devsupersuite.web.app",
+    "platforms_supported": ["Dev.to", "Hashnode", "Medium", "Substack"],
+    "compliance": "100% Brand Anonymity Protocol Verified | Zero Founder Personal Disclosures"
+  },
+  "articles": [
+    {
+      "article_id": "ART-01",
+      "slug": "why-llms-hallucinate-100k-line-codebases-simd-tree-sitter",
+      "title": "Why LLMs hallucinate on 100k-line codebases and how we fixed it with SIMD Tree-sitter",
+      "filename": "article_01_attention_sink_dilution.md",
+      "canonical_url": "https://devsupersuite.web.app/blog/why-llms-hallucinate-100k-line-codebases-simd-tree-sitter",
+      "primary_tags": ["programming", "ai", "typescript", "architecture"],
+      "platforms": {
+        "devto": { "series": "Local-First Compiler Tooling", "published": true },
+        "hashnode": { "subtitle": "Deconstructing Attention Sink Dilution with Concrete Syntax Trees", "published": true },
+        "medium": { "canonical_link": true, "license": "all-rights-reserved" }
+      },
+      "estimated_reading_time_mins": 12,
+      "target_word_count": 2100
+    },
+    {
+      "article_id": "ART-02",
+      "slug": "building-precommit-invariant-guard-stopping-agents-deleting-tests",
+      "title": "Building a pre-commit invariant guard: Stopping autonomous coding agents from deleting tests",
+      "filename": "article_02_precommit_invariants.md",
+      "canonical_url": "https://devsupersuite.web.app/blog/building-precommit-invariant-guard-stopping-agents-deleting-tests",
+      "primary_tags": ["devops", "testing", "security", "git"],
+      "platforms": {
+        "devto": { "series": "Local-First Compiler Tooling", "published": true },
+        "hashnode": { "subtitle": "Deterministic AST Assertion Gates for AI Pair Programmers", "published": true },
+        "medium": { "canonical_link": true, "license": "all-rights-reserved" }
+      },
+      "estimated_reading_time_mins": 11,
+      "target_word_count": 1950
+    },
+    {
+      "article_id": "ART-03",
+      "slug": "death-of-20-month-ai-saas-seat-taxes-local-first-tooling",
+      "title": "The death of $20/month AI SaaS seat taxes: The engineering case for local-first developer tooling",
+      "filename": "article_03_anti_saas_economics.md",
+      "canonical_url": "https://devsupersuite.web.app/blog/death-of-20-month-ai-saas-seat-taxes-local-first-tooling",
+      "primary_tags": ["webdev", "experienceddevs", "tooling", "productivity"],
+      "platforms": {
+        "devto": { "series": "The Local-First Manifesto", "published": true },
+        "hashnode": { "subtitle": "Why Developer CPUs Make Multi-Tenant Cloud Proxies Obsolete", "published": true },
+        "medium": { "canonical_link": true, "license": "all-rights-reserved" }
+      },
+      "estimated_reading_time_mins": 10,
+      "target_word_count": 1900
+    },
+    {
+      "article_id": "ART-04",
+      "slug": "inside-agentshield-shannon-entropy-credential-leaks-cpu-registers",
+      "title": "Inside AgentShield: Catching Shannon entropy credential leaks in CPU registers under 0.8ms",
+      "filename": "article_04_shannon_entropy_shield.md",
+      "canonical_url": "https://devsupersuite.web.app/blog/inside-agentshield-shannon-entropy-credential-leaks-cpu-registers",
+      "primary_tags": ["security", "rust", "cryptography", "devops"],
+      "platforms": {
+        "devto": { "series": "Local-First Compiler Tooling", "published": true },
+        "hashnode": { "subtitle": "Syntax-Scoped Shannon Entropy vs Regex False Alarms", "published": true },
+        "medium": { "canonical_link": true, "license": "all-rights-reserved" }
+      },
+      "estimated_reading_time_mins": 11,
+      "target_word_count": 2000
+    },
+    {
+      "article_id": "ART-05",
+      "slug": "hands-free-voice-coding-sub-110ms-duplex-audio-echo-cancellation-terminal",
+      "title": "Hands-free voice coding: Sub-110ms duplex audio with acoustic echo cancellation in terminal",
+      "filename": "article_05_duplex_voice_coding.md",
+      "canonical_url": "https://devsupersuite.web.app/blog/hands-free-voice-coding-sub-110ms-duplex-audio-echo-cancellation-terminal",
+      "primary_tags": ["rust", "audio", "voice", "systems"],
+      "platforms": {
+        "devto": { "series": "Applied Systems Engineering", "published": true },
+        "hashnode": { "subtitle": "Building Sub-110ms Full-Duplex Neural Voice in Air-Gapped Terminal Enclaves", "published": true },
+        "medium": { "canonical_link": true, "license": "all-rights-reserved" }
+      },
+      "estimated_reading_time_mins": 12,
+      "target_word_count": 2050
+    }
+  ]
+}
