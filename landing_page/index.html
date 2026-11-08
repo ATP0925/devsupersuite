@@ -639,8 +639,8 @@
       <!-- Tab Navigation -->
       <div class="flex border-b border-neutral-800 mb-6 text-center">
         <button id="tabBtn1" onclick="switchModalTab(1)" class="flex-1 py-2 font-bold text-white border-b-2 border-[#ff5500] uppercase text-[11px]">⚡ INSTANT LICENSE</button>
-        <button id="tabBtn2" onclick="switchModalTab(2)" class="flex-1 py-2 font-bold text-neutral-400 hover:text-white uppercase text-[11px]">💳 CARD / GUMROAD</button>
-        <button id="tabBtn3" onclick="switchModalTab(3)" class="flex-1 py-2 font-bold text-neutral-400 hover:text-white uppercase text-[11px]">📱 UPI / QR</button>
+        <button id="tabBtn2" onclick="switchModalTab(2)" class="flex-1 py-2 font-bold text-neutral-400 hover:text-white uppercase text-[11px]">🅿️ PAYPAL / CARD ($29)</button>
+        <button id="tabBtn3" onclick="switchModalTab(3)" class="flex-1 py-2 font-bold text-neutral-400 hover:text-white uppercase text-[11px]">📱 UPI / QR (₹1,499)</button>
       </div>
 
       <!-- TAB 1: Instant License & Direct Download -->
@@ -674,15 +674,32 @@
         </div>
       </div>
 
-      <!-- TAB 2: Card / Gumroad / Global -->
+      <!-- TAB 2: PayPal & Global Checkout -->
       <div id="tabContent2" class="hidden space-y-4">
-        <p class="text-[11px] text-neutral-300 leading-relaxed">
-          For corporate expense reimbursements, VAT invoices, and worldwide Credit/Debit card checkout (Visa, MasterCard, Amex, Apple Pay, PayPal):
+        <p class="text-[11px] text-neutral-300 leading-relaxed text-center">
+          Instant worldwide checkout via PayPal, Credit Card, or Debit Card:
         </p>
-        <a href="https://gumroad.com/l/tlzdco" target="_blank" class="block w-full py-3.5 bg-pink-500 hover:bg-pink-400 text-white text-center font-black uppercase tracking-wider text-xs transition">
-          🛒 CHECKOUT ON GUMROAD ($29 USD)
+
+        <!-- PayPal 1-Click Pay Link -->
+        <a href="https://www.paypal.com/qrcodes/p2pqrc/63BX83FUFCSJA" target="_blank" class="block w-full py-3.5 bg-[#0070ba] hover:bg-[#003087] text-white text-center font-black uppercase tracking-wider text-xs transition flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(0,112,186,0.4)]">
+          <i class="fa-brands fa-paypal text-base"></i>
+          <span>PAY WITH PAYPAL ($29 USD)</span>
         </a>
-        <span class="text-[10px] text-neutral-500 uppercase tracking-widest text-center block">INSTANT GUMROAD RECEIPT & DOWNLOAD LINK EMAILED</span>
+
+        <!-- PayPal QR Scan Box -->
+        <div class="bg-black border border-neutral-800 p-4 flex flex-col items-center justify-center rounded">
+          <div class="bg-white p-2 border border-neutral-700 rounded-sm">
+            <img src="./paypal_qr_clean.png" alt="PayPal QR Code" class="w-44 h-44 object-contain" />
+          </div>
+          <span class="text-[10px] text-neutral-400 font-mono uppercase tracking-widest mt-2.5">SCAN WITH PAYPAL APP OR PHONE CAMERA</span>
+          <span class="text-[9px] text-[#0070ba] font-bold mt-1">VERIFIED MERCHANT: DEVSUPERSUITE OFFICIAL</span>
+        </div>
+
+        <div class="pt-1">
+          <a href="https://gumroad.com/l/tlzdco" target="_blank" class="block w-full py-2.5 bg-neutral-900 hover:bg-neutral-800 text-neutral-300 hover:text-white border border-neutral-700 text-center font-bold uppercase text-[11px] transition">
+            Alternative: Checkout on Gumroad ($29)
+          </a>
+        </div>
       </div>
 
       <!-- TAB 3: UPI / QR Code -->
