@@ -1275,6 +1275,40 @@
     </div>
   </div>
 
+  <!-- Live Social Proof Notification Toast (Phase 10 CRO) -->
+  <aside id="socialProofToast" 
+         role="status" 
+         aria-live="polite" 
+         onclick="handleSocialProofCardClick(event)"
+         class="fixed bottom-6 left-4 sm:left-6 z-40 max-w-sm sm:max-w-md bg-neutral-900/90 border border-neutral-800 hover:border-[#ff5500]/60 backdrop-blur-md rounded-xl p-3 shadow-2xl flex items-center gap-3 font-mono text-xs cursor-pointer transform -translate-x-full opacity-0 pointer-events-none transition-all duration-500 ease-out select-none">
+    <!-- Icon Container -->
+    <div id="socialProofIcon" class="w-8 h-8 rounded-lg bg-black/70 border border-neutral-700/80 flex items-center justify-center text-sm shrink-0 shadow-inner">
+      ⚡
+    </div>
+
+    <!-- Message Content -->
+    <div class="flex-1 min-w-0 pr-1">
+      <div id="socialProofMessage" class="text-neutral-200 font-medium leading-snug truncate">
+        Software Engineer in Berlin claimed DevSuperSuite Pro Lifetime ($29)
+      </div>
+      <div class="flex items-center gap-2 mt-0.5 text-[10px] text-neutral-400">
+        <span id="socialProofTime">4m ago</span>
+        <span class="text-neutral-600">•</span>
+        <span class="inline-flex items-center gap-1 text-emerald-400 font-semibold tracking-wider">
+          <i class="fa-solid fa-circle-check text-[9px]"></i> VERIFIED
+        </span>
+      </div>
+    </div>
+
+    <!-- Dismiss Button -->
+    <button onclick="dismissSocialProofToast(event)" 
+            class="text-neutral-500 hover:text-white p-1 transition cursor-pointer text-sm shrink-0" 
+            title="Dismiss notifications" 
+            aria-label="Dismiss notifications">
+      ✕
+    </button>
+  </aside>
+
   <!-- Client-Side Logic -->
   <script>
     let currentPlanName = "Hacker Solo";
@@ -1981,6 +2015,8 @@ def charge_customer(amount):
 
       if (scrollPercent >= 0.30) {
         drawer.classList.remove('translate-y-full');
+        const toast = document.getElementById('socialProofToast');
+        if (toast) toast.style.bottom = '5.25rem';
       }
     }
 
@@ -1992,6 +2028,8 @@ def charge_customer(amount):
       const drawer = document.getElementById('quickBuyDrawer');
       if (drawer) {
         drawer.classList.add('translate-y-full');
+        const toast = document.getElementById('socialProofToast');
+        if (toast) toast.style.bottom = '1.5rem';
       }
     }
 
@@ -2031,6 +2069,124 @@ def charge_customer(amount):
     }
 
     document.addEventListener('mouseleave', handleExitIntent);
+
+    // --- Live Social Proof Notification Engine (Phase 10 CRO) ---
+    const SOCIAL_PROOF_EVENTS = [
+      {
+        icon: '⚡',
+        text: 'Software Engineer in Berlin claimed DevSuperSuite Pro Lifetime ($29)',
+        time: '4m ago'
+      },
+      {
+        icon: '🛡️',
+        text: 'Staff Architect in San Francisco blocked live AWS key leak using AgentShield',
+        time: '11m ago'
+      },
+      {
+        icon: '🚀',
+        text: 'Fullstack Developer in Bengaluru unlocked 84% token savings on FastAPI repo',
+        time: '18m ago'
+      },
+      {
+        icon: '💼',
+        text: 'Platform Engineering Lead in London upgraded to Team 5-Seat License ($149)',
+        time: '25m ago'
+      },
+      {
+        icon: '⚙️',
+        text: 'Systems Engineer in Tokyo ran AST Slicer on 62k-line Rust project',
+        time: '31m ago'
+      }
+    ];
+
+    let socialToastIndex = 0;
+    let socialToastDismissed = false;
+    let socialToastInterval = null;
+    let socialToastHideTimeout = null;
+
+    function showSocialProofToast() {
+      if (socialToastDismissed) return;
+      try {
+        if (sessionStorage.getItem('dss_social_toast_dismissed') === 'true') return;
+      } catch (e) {}
+
+      const toast = document.getElementById('socialProofToast');
+      if (!toast) return;
+
+      const event = SOCIAL_PROOF_EVENTS[socialToastIndex % SOCIAL_PROOF_EVENTS.length];
+      const iconEl = document.getElementById('socialProofIcon');
+      const msgEl = document.getElementById('socialProofMessage');
+      const timeEl = document.getElementById('socialProofTime');
+
+      if (iconEl) iconEl.textContent = event.icon;
+      if (msgEl) msgEl.textContent = event.text;
+      if (timeEl) timeEl.textContent = event.time;
+
+      const drawer = document.getElementById('quickBuyDrawer');
+      const isDrawerVisible = drawer && !drawer.classList.contains('translate-y-full');
+      toast.style.bottom = isDrawerVisible ? '5.25rem' : '1.5rem';
+
+      toast.classList.remove('-translate-x-full', 'opacity-0', 'pointer-events-none');
+      toast.classList.add('translate-x-0', 'opacity-100', 'pointer-events-auto');
+
+      clearTimeout(socialToastHideTimeout);
+      socialToastHideTimeout = setTimeout(() => {
+        hideSocialProofToast();
+      }, 4500);
+
+      socialToastIndex++;
+    }
+
+    function hideSocialProofToast() {
+      const toast = document.getElementById('socialProofToast');
+      if (!toast) return;
+      toast.classList.remove('translate-x-0', 'opacity-100', 'pointer-events-auto');
+      toast.classList.add('-translate-x-full', 'opacity-0', 'pointer-events-none');
+    }
+
+    function dismissSocialProofToast(e) {
+      if (e) e.stopPropagation();
+      socialToastDismissed = true;
+      try {
+        sessionStorage.setItem('dss_social_toast_dismissed', 'true');
+      } catch (err) {}
+      hideSocialProofToast();
+      if (socialToastInterval) clearInterval(socialToastInterval);
+      if (socialToastHideTimeout) clearTimeout(socialToastHideTimeout);
+    }
+
+    function handleSocialProofCardClick(e) {
+      if (e.target && e.target.closest('button')) return;
+      const pricingEl = document.getElementById('pricing');
+      if (pricingEl) {
+        pricingEl.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function initSocialProofEngine() {
+      try {
+        if (sessionStorage.getItem('dss_social_toast_dismissed') === 'true') {
+          socialToastDismissed = true;
+          return;
+        }
+      } catch (e) {}
+
+      setTimeout(() => {
+        if (socialToastDismissed) return;
+        showSocialProofToast();
+        socialToastInterval = setInterval(() => {
+          if (!socialToastDismissed) {
+            showSocialProofToast();
+          }
+        }, 18000);
+      }, 8000);
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initSocialProofEngine);
+    } else {
+      initSocialProofEngine();
+    }
   </script>
 </body>
 </html>

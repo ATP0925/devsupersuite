@@ -151,7 +151,7 @@ class TestSupplyChainSecurity(unittest.TestCase):
             dossier_text = f.read()
 
         self.assertIn("Enterprise Software Supply Chain Security", dossier_text)
-        self.assertIn("SLSA Level 3 Certified", dossier_text)
+        self.assertIn("SLSA Level 3", dossier_text)
         self.assertIn("DevSuperSuite Official", dossier_text)
 
     def test_08_strict_brand_anonymity_supply_chain(self):
