@@ -3,9 +3,9 @@
     "organization": "DevSuperSuite Official",
     "authority": "Directorate of QA Automation & Security Compliance",
     "classification": "Sovereign Enterprise Security Telemetry (Restricted)",
-    "generated_at": "2026-11-08T10:16:42.116156+00:00",
+    "generated_at": "2026-11-08T10:19:32.167055+00:00",
     "target_repository": "agent-commerce",
-    "sha256_digest": "3640831e2eee704d3d189750bff1cfb70dcea107096c89b854058ed649c2c53c"
+    "sha256_digest": "c643ec39d288c96bd6dfaa07881dec4124097cb25d2f5ca0f4209d6ee7fd6359"
   },
   "enterprise_trust_index": {
     "composite_score": 100.0,
@@ -18,8 +18,8 @@
       "weight_percentage": 20,
       "score": 100.0,
       "metrics": {
-        "total_suites": 25,
-        "total_tests": 231,
+        "total_suites": 27,
+        "total_tests": 247,
         "pass_rate_percentage": 100.0,
         "fail_count": 0,
         "skipped_count": 0,
@@ -115,6 +115,12 @@
             "coverage_domain": "Financial Engine & Statutory Ledgers"
           },
           {
+            "module": "test_hsm_enclave_attestation.py",
+            "test_count": 8,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
             "module": "test_license_activation.py",
             "test_count": 9,
             "status": "PASS",
@@ -141,6 +147,12 @@
           {
             "module": "test_rfp_template_engine.py",
             "test_count": 14,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_saas_unit_economics.py",
+            "test_count": 8,
             "status": "PASS",
             "coverage_domain": "Core Architecture & MCP Harness"
           },
@@ -208,7 +220,7 @@
       "weight_percentage": 15,
       "score": 100.0,
       "metrics": {
-        "redos_execution_time_ms": 0.0066,
+        "redos_execution_time_ms": 0.0155,
         "redos_ceiling_limit_ms": 1.0,
         "redos_immunity": "PASS",
         "ast_max_recursion_depth": 30,

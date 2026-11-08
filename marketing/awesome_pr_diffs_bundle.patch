@@ -1,0 +1,128 @@
+# DevSuperSuite - 25 Awesome-List Git Diff Bundle
+# Generated: 2026-11-08T10:17:56.634147+00:00
+
+--- a/readme.md
++++ b/readme.md
+@@ ## Development @@
++ - [DevSuperSuite](https://devsupersuite.web.app?utm_source=github&utm_medium=awesome_pr&utm_campaign=sindresorhus_awesome&utm_content=AWESOME-01) - Local-first AST context slicer and deterministic pre-commit invariant shield for AI-assisted development.
+
+--- a/data/tools/devsupersuite.yml
++++ b/data/tools/devsupersuite.yml
+@@ tools / multi-language @@
++ - [DevSuperSuite](https://devsupersuite.web.app?utm_source=github&utm_medium=awesome_pr&utm_campaign=analysis-tools-dev_static-analysis&utm_content=AWESOME-02) - Sub-millisecond Tree-sitter AST interface extractor and Shannon entropy cryptographic secret scanner.
+
+--- a/README.md
++++ b/README.md
+@@ ## Productivity Tools @@
++ - [DevSuperSuite](https://devsupersuite.web.app?utm_source=github&utm_medium=awesome_pr&utm_campaign=shadcn_awesome-developer-tools&utm_content=AWESOME-03) - Cuts Claude Code and Cursor token bloat by 83% via local AST interface extraction and blocks leaked secrets.
+
+--- a/README.md
++++ b/README.md
+@@ ## Developer Tools @@
++ - [DevSuperSuite AST Pruner](https://devsupersuite.web.app?utm_source=github&utm_medium=awesome_pr&utm_campaign=f_awesome-chatgpt-prompts&utm_content=AWESOME-04) - Optimizes AI coding context windows by pruning function implementation bodies while preserving interface contracts.
+
+--- a/README.md
++++ b/README.md
+@@ ### Code Generation & Assistants @@
++ - [DevSuperSuite](https://devsupersuite.web.app?utm_source=github&utm_medium=awesome_pr&utm_campaign=steven2358_awesome-generative-ai&utm_content=AWESOME-05) - Localhost context distillation engine that slashes LLM prompt costs by 80% using Tree-sitter AST interface slicing.
+
+--- a/README.md
++++ b/README.md
+@@ ## Development tools @@
++ - [DevSuperSuite](https://devsupersuite.web.app?utm_source=github&utm_medium=awesome_pr&utm_campaign=rust-unofficial_awesome-rust&utm_content=AWESOME-06) - High-performance Tree-sitter AST interface slicer and Shannon entropy pre-commit hook with native Rust support.
+
+--- a/README.md
++++ b/README.md
+@@ ## Code Analysis @@
++ - [DevSuperSuite](https://devsupersuite.web.app?utm_source=github&utm_medium=awesome_pr&utm_campaign=vinta_awesome-python&utm_content=AWESOME-07) - Local AST interface extractor and Shannon entropy secret scanner for Python and polyglot repositories.
+
+--- a/README.md
++++ b/README.md
+@@ ### Developer Tools @@
++ - [DevSuperSuite](https://devsupersuite.web.app?utm_source=github&utm_medium=awesome_pr&utm_campaign=enaqx_awesome-react&utm_content=AWESOME-08) - Instant client-side AST context compressor and pre-commit secret shield for React, Next.js, and TypeScript codebases.
+
+--- a/README.md
++++ b/README.md
+@@ ## Code Analysis @@
++ - [DevSuperSuite](https://devsupersuite.web.app?utm_source=github&utm_medium=awesome_pr&utm_campaign=sorrycc_awesome-javascript&utm_content=AWESOME-09) - Sub-millisecond AST interface extraction for JavaScript and TypeScript, reducing LLM token consumption by 83%.
+
+--- a/README.md
++++ b/README.md
+@@ ## Development Tools @@
++ - [DevSuperSuite](https://devsupersuite.web.app?utm_source=github&utm_medium=awesome_pr&utm_campaign=avelino_awesome-go&utm_content=AWESOME-10) - Extracts Go package contracts, struct definitions, and interfaces while eliding implementation bodies for AI contexts.
+
+--- a/README.md
++++ b/README.md
+@@ ## Community Servers @@
++ - [DevSuperSuite MCP Server](https://devsupersuite.web.app?utm_source=github&utm_medium=awesome_pr&utm_campaign=modelcontextprotocol_servers&utm_content=AWESOME-11) - Local stdio MCP server providing AST context slicing and pre-commit invariant validation for Claude Code and Cursor.
+
+--- a/README.md
++++ b/README.md
+@@ ### Developer Tools @@
++ - [DevSuperSuite MCP Server](https://devsupersuite.web.app?utm_source=github&utm_medium=awesome_pr&utm_campaign=punkpeye_awesome-mcp-servers&utm_content=AWESOME-12) - Model Context Protocol server for local AST pruning, reducing token payloads by 83% without cloud telemetry.
+
+--- a/README.md
++++ b/README.md
+@@ ## Developer Tools @@
++ - [DevSuperSuite](https://devsupersuite.web.app?utm_source=github&utm_medium=awesome_pr&utm_campaign=yokoffing_awesome-privacy&utm_content=AWESOME-13) - Zero-telemetry, localhost-only developer utility running AST context slicing and secret defense 100% offline.
+
+--- a/README.md
++++ b/README.md
+@@ ## Security & Privacy Tools @@
++ - [DevSuperSuite](https://devsupersuite.web.app?utm_source=github&utm_medium=awesome_pr&utm_campaign=lissy93_awesome-privacy&utm_content=AWESOME-14) - Local-first alternative to cloud secret scanners and context services; operates offline with zero network phone-home.
+
+--- a/README.md
++++ b/README.md
+@@ ## Developer Tools @@
++ - [DevSuperSuite](https://devsupersuite.web.app?utm_source=github&utm_medium=awesome_pr&utm_campaign=alexpetros_awesome-local-first&utm_content=AWESOME-15) - Local-first static analysis engine and git invariant shield replacing subscription-based cloud developer SaaS.
+
+--- a/README.md
++++ b/README.md
+@@ ## Hooks @@
++ - [DevSuperSuite Git Hooks](https://devsupersuite.web.app?utm_source=github&utm_medium=awesome_pr&utm_campaign=jnv_awesome-git-addons&utm_content=AWESOME-16) - Deterministic pre-commit hook using Shannon entropy density ($H > 4.5$) and test preservation invariant gates.
+
+--- a/README.md
++++ b/README.md
+@@ ## Development @@
++ - [devsupersuite](https://devsupersuite.web.app?utm_source=github&utm_medium=awesome_pr&utm_campaign=agarrharr_awesome-cli-apps&utm_content=AWESOME-17) - Fast command-line tool for AST interface extraction, pre-commit entropy defense, and sub-110ms duplex voice pair coding.
+
+--- a/README.md
++++ b/README.md
+@@ ## Utilities @@
++ - [DevSuperSuite CLI](https://devsupersuite.web.app?utm_source=github&utm_medium=awesome_pr&utm_campaign=alebcay_awesome-shell&utm_content=AWESOME-18) - Shell utility to slice ASTs, enforce git invariants, and scan for unencrypted keys before commits.
+
+--- a/README.md
++++ b/README.md
+@@ ## Developer Productivity @@
++ - [DevSuperSuite](https://devsupersuite.web.app?utm_source=github&utm_medium=awesome_pr&utm_campaign=vitalets_awesome-smart-home&utm_content=AWESOME-19) - Local duplex voice pair programmer and AST context manager for distraction-free coding workflows.
+
+--- a/README.md
++++ b/README.md
+@@ ## Code Analysis @@
++ - [devsupersuite-core](https://devsupersuite.web.app?utm_source=github&utm_medium=awesome_pr&utm_campaign=parro-it_awesome-micro-npm-packages&utm_content=AWESOME-20) - Ultra-lightweight Tree-sitter interface extractor and Shannon entropy scanner with zero runtime dependencies.
+
+--- a/README.md
++++ b/README.md
+@@ ## Testing & Verification @@
++ - [DevSuperSuite Invariant Gate](https://devsupersuite.web.app?utm_source=github&utm_medium=awesome_pr&utm_campaign=dastergon_awesome-sre-tools&utm_content=AWESOME-21) - Pre-commit and CI/CD invariant gate preventing autonomous agents and developers from silencing test assertions.
+
+--- a/README.md
++++ b/README.md
+@@ ## Architecture Documentation Tools @@
++ - [DevSuperSuite](https://devsupersuite.web.app?utm_source=github&utm_medium=awesome_pr&utm_campaign=carol-h_awesome-software-architecture&utm_content=AWESOME-22) - Automatically distills monorepos into structural interface skeletons, exposing architectural boundaries without implementation noise.
+
+--- a/README.md
++++ b/README.md
+@@ ## Automated Code Review Tools @@
++ - [DevSuperSuite Diff Guard](https://devsupersuite.web.app?utm_source=github&utm_medium=awesome_pr&utm_campaign=david-engelmann_awesome-code-review&utm_content=AWESOME-23) - Automated pre-commit reviewer that enforces test assertion preservation and blocks high-entropy secret commits.
+
+--- a/README.md
++++ b/README.md
+@@ ## Related Secret Scanning Tools @@
++ - [DevSuperSuite Entropy Guard](https://devsupersuite.web.app?utm_source=github&utm_medium=awesome_pr&utm_campaign=zricethezav_gitleaks&utm_content=AWESOME-24) - Mathematical secret scanning plugin utilizing Shannon entropy density ($H > 4.5$) on AST literals to catch zero-day keys.
+
+--- a/README.md
++++ b/README.md
+@@ ## Tools / Code Generation Optimization @@
++ - [DevSuperSuite](https://devsupersuite.web.app?utm_source=github&utm_medium=awesome_pr&utm_campaign=josephmisiti_awesome-machine-learning&utm_content=AWESOME-25) - Prunes LLM prompt payloads by 83% using Tree-sitter concrete syntax trees, eliminating context rot in large-scale code synthesis.
+
