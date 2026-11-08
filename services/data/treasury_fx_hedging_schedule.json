@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-11-08T11:45:17.287431+00:00",
+    "generated_at": "2026-11-08T11:51:15.912765+00:00",
     "reporting_entity": "DevSuperSuite Tech Services",
     "department": "DevSuperSuite Treasury & Corporate Finance",
     "treasury_contact": "cfo@devsupersuite.com",
@@ -273,7 +273,7 @@
     ]
   },
   "stress_tests": {
-    "timestamp": "2026-11-08T11:45:17.287158+00:00",
+    "timestamp": "2026-11-08T11:51:15.912331+00:00",
     "overall_stress_test_passed": true,
     "scenarios": [
       {

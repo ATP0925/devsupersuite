@@ -1,0 +1,22 @@
+[
+  {
+    "topic": "Pricing & Lifetime Pass",
+    "trigger_keywords": "pricing, subscription, lifetime, monthly cost, refund",
+    "response": "Thanks for asking! We completely reject monthly SaaS seat taxes ($20\u2013$40/user/month). \n\nDevSuperSuite runs 100% locally on your computer's CPU, which means we incur $0.00 in cloud server or database hosting costs per user. Because our marginal cost is zero, we offer permanent lifetime ownership:\n- **Product Hunt Launch Code (`DSS-PH-VIP`)**: **$$24 Pro Lifetime Pass** (Regular $29)\n- Permanent updates included. No recurring seat taxes. No unmetered proxy markups. Direct BYOK for wholesale tokens."
+  },
+  {
+    "topic": "IDE & Editor Compatibility",
+    "trigger_keywords": "vs code, jetbrains, neovim, cursor, extension, ide support",
+    "response": "DevSuperSuite integrates seamlessly with your existing workflow:\n1. **VS Code & Cursor**: Install our lightweight extension that automatically pipes AST-sliced context into Composer and chat.\n2. **Neovim & Terminal**: Standalone CLI binary (`devsupersuite`) with native Lua / LSP integration.\n3. **JetBrains (IntelliJ, PyCharm, WebStorm)**: Native plugin support via pre-commit hooks and local daemon.\n4. **Git Pre-Commit**: Zero-dependency pre-commit hook that guards your git working tree automatically."
+  },
+  {
+    "topic": "Privacy, Telemetry & Compliance",
+    "trigger_keywords": "privacy, telemetry, data collection, soc2, hipaa, air-gapped",
+    "response": "Your source code NEVER leaves your machine. \n\nDevSuperSuite contains:\n- **Zero cloud telemetry**: No tracking pings, no usage analytics, no user profiling.\n- **Air-gapped SCIF certified**: The entire Tree-sitter parser, Shannon entropy scanner, and voice engine run in local memory.\n- For LLM inference, you can connect directly to Anthropic/OpenAI using your own API key, or route to an offline internal **Ollama / vLLM** endpoint with zero internet access."
+  },
+  {
+    "topic": "Tree-Sitter Performance vs Vector Embeddings",
+    "trigger_keywords": "tree-sitter, rag, vector search, embedding, chunking, speed",
+    "response": "Vector embeddings treat code like flat prose; a 500-token chunker routinely severs function signatures from parameter types and breaks lexical scope.\n\nTree-sitter parses the concrete syntax tree (CST) using deterministic GLR tables. On an Apple M3 Max or AMD Ryzen PC, it parses **650,000 lines of code per second** in L1/L2 CPU cache (<2.4ms per 1k LOC). \n\nInstead of waiting 45 seconds for a cloud embedding API, your local AST is updated instantaneously on every keystroke with zero network latency."
+  }
+]

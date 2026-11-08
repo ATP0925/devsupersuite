@@ -3,9 +3,9 @@
     "organization": "DevSuperSuite Official",
     "authority": "Directorate of QA Automation & Security Compliance",
     "classification": "Sovereign Enterprise Security Telemetry (Restricted)",
-    "generated_at": "2026-11-08T11:45:26.272435+00:00",
+    "generated_at": "2026-11-08T11:51:26.439675+00:00",
     "target_repository": "agent-commerce",
-    "sha256_digest": "ee07dee11a49602970f701f0a42a0a52259d092b523323be2509882a8a343ffc"
+    "sha256_digest": "75abece9824953a571aa9a518f6af3170bc9b4b169f48fb0ec7a9e0d632e942a"
   },
   "enterprise_trust_index": {
     "composite_score": 100.0,
@@ -18,8 +18,8 @@
       "weight_percentage": 20,
       "score": 100.0,
       "metrics": {
-        "total_suites": 87,
-        "total_tests": 848,
+        "total_suites": 95,
+        "total_tests": 940,
         "pass_rate_percentage": 100.0,
         "fail_count": 0,
         "skipped_count": 0,
@@ -157,6 +157,12 @@
             "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
+            "module": "test_dynamic_checkout_gateway.py",
+            "test_count": 13,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
             "module": "test_dynamic_ppp_pricing.py",
             "test_count": 9,
             "status": "PASS",
@@ -259,6 +265,12 @@
             "coverage_domain": "Financial Engine & Statutory Ledgers"
           },
           {
+            "module": "test_fx_hedging_execution.py",
+            "test_count": 12,
+            "status": "PASS",
+            "coverage_domain": "Financial Engine & Statutory Ledgers"
+          },
+          {
             "module": "test_fx_hedging_treasury.py",
             "test_count": 8,
             "status": "PASS",
@@ -273,6 +285,12 @@
           {
             "module": "test_gitops_delivery_controller.py",
             "test_count": 10,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_hardware_appliance_configurator.py",
+            "test_count": 11,
             "status": "PASS",
             "coverage_domain": "Core Architecture & MCP Harness"
           },
@@ -331,6 +349,12 @@
             "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
+            "module": "test_nrr_forecasting_engine.py",
+            "test_count": 12,
+            "status": "PASS",
+            "coverage_domain": "Financial Engine & Statutory Ledgers"
+          },
+          {
             "module": "test_pilot_telemetry.py",
             "test_count": 9,
             "status": "PASS",
@@ -344,6 +368,18 @@
           },
           {
             "module": "test_pqc_migration_engine.py",
+            "test_count": 10,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_pqc_mlkem.py",
+            "test_count": 12,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_producthunt_launch.py",
             "test_count": 10,
             "status": "PASS",
             "coverage_domain": "Core Architecture & MCP Harness"
@@ -371,6 +407,12 @@
             "test_count": 9,
             "status": "PASS",
             "coverage_domain": "Financial Engine & Statutory Ledgers"
+          },
+          {
+            "module": "test_reddit_amplifier.py",
+            "test_count": 10,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
             "module": "test_referral_expansion_engine.py",
@@ -535,6 +577,12 @@
             "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
+            "module": "test_vertical_solution_blueprints.py",
+            "test_count": 12,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
             "module": "test_zk_enclave_attestation.py",
             "test_count": 12,
             "status": "PASS",
@@ -580,7 +628,7 @@
       "weight_percentage": 15,
       "score": 100.0,
       "metrics": {
-        "redos_execution_time_ms": 0.0149,
+        "redos_execution_time_ms": 0.0166,
         "redos_ceiling_limit_ms": 1.0,
         "redos_immunity": "PASS",
         "ast_max_recursion_depth": 30,

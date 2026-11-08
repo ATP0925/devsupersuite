@@ -1,0 +1,150 @@
+{
+  "version": "1.0.0",
+  "governing_entity": "DevSuperSuite Revenue Operations (growth@devsupersuite.com)",
+  "compliance_protocol": "100% Brand Anonymity - Zero Founder Personal Identifiers",
+  "target_benchmarks": {
+    "minimum_nrr_pct": 138.0,
+    "minimum_grr_pct": 96.0,
+    "minimum_ltv_cac_ratio": 7.4,
+    "maximum_cac_payback_months": 8.0
+  },
+  "last_updated": "2026-11-08T11:51:20.551240+00:00",
+  "cohorts": [
+    {
+      "cohort_id": "COHORT-2024-Q1",
+      "cohort_name": "Defense & Aerospace Enclaves",
+      "months_elapsed": 12,
+      "initial_accounts": 10,
+      "starting_arr_usd": 249990.0,
+      "churn_amount_usd": 3499.86,
+      "contraction_amount_usd": 4999.8,
+      "retained_base_arr_usd": 241490.34,
+      "seat_expansion_usd": 86246.55,
+      "renewal_uplift_usd": 16249.35,
+      "module_expansion_usd": 14999.0,
+      "total_expansion_usd": 117494.9,
+      "ending_arr_usd": 358985.24,
+      "grr_pct": 96.6,
+      "nrr_pct": 143.6,
+      "security_modules_attached": [
+        {
+          "module_id": "MODULE_PQC_KYBER_ATTESTATION",
+          "name": "Post-Quantum Kyber-1024 / Dilithium Enclave Attestation",
+          "annual_price_usd": 14999.0,
+          "compliance_target": "CNSA 2.0 / Post-Quantum Cryptography",
+          "expansion_category": "QUANTUM_RESILIENCE"
+        }
+      ],
+      "unit_economics": {
+        "blended_cac_per_account_usd": 18500.0,
+        "arpu_usd": 35898.52,
+        "gross_margin_pct": 92.5,
+        "ltv_per_account_usd": 2371866.5,
+        "ltv_cac_ratio": 128.21,
+        "cac_payback_months": 6.7
+      }
+    },
+    {
+      "cohort_id": "COHORT-2024-Q3",
+      "cohort_name": "Enterprise Banking & Fintech",
+      "months_elapsed": 12,
+      "initial_accounts": 12,
+      "starting_arr_usd": 180000.0,
+      "churn_amount_usd": 2520.0,
+      "contraction_amount_usd": 3600.0,
+      "retained_base_arr_usd": 173880.0,
+      "seat_expansion_usd": 60300.0,
+      "renewal_uplift_usd": 11700.0,
+      "module_expansion_usd": 9999.0,
+      "total_expansion_usd": 81999.0,
+      "ending_arr_usd": 255879.0,
+      "grr_pct": 96.6,
+      "nrr_pct": 142.16,
+      "security_modules_attached": [
+        {
+          "module_id": "MODULE_FIPS_140_3_HSM",
+          "name": "FIPS 140-3 Level 4 HSM Cryptographic Accelerator",
+          "annual_price_usd": 9999.0,
+          "compliance_target": "NIST FIPS 140-3 / FedRAMP High",
+          "expansion_category": "HARDWARE_SECURITY"
+        }
+      ],
+      "unit_economics": {
+        "blended_cac_per_account_usd": 18500.0,
+        "arpu_usd": 21323.25,
+        "gross_margin_pct": 92.5,
+        "ltv_per_account_usd": 1408857.59,
+        "ltv_cac_ratio": 76.15,
+        "cac_payback_months": 11.3
+      }
+    },
+    {
+      "cohort_id": "COHORT-2025-Q1",
+      "cohort_name": "Sovereign Air-Gap SCIF",
+      "months_elapsed": 12,
+      "initial_accounts": 8,
+      "starting_arr_usd": 199992.0,
+      "churn_amount_usd": 2799.89,
+      "contraction_amount_usd": 3999.84,
+      "retained_base_arr_usd": 193192.27,
+      "seat_expansion_usd": 69997.2,
+      "renewal_uplift_usd": 12999.48,
+      "module_expansion_usd": 19999.0,
+      "total_expansion_usd": 102995.68,
+      "ending_arr_usd": 296187.95,
+      "grr_pct": 96.6,
+      "nrr_pct": 148.1,
+      "security_modules_attached": [
+        {
+          "module_id": "MODULE_AIRGAP_SCIF_CLUSTER",
+          "name": "Sovereign Air-Gap SCIF Multi-Cluster Coordinator",
+          "annual_price_usd": 19999.0,
+          "compliance_target": "DoD IL6 / Zero-Telemetry Sovereign",
+          "expansion_category": "AIRGAP_INFRASTRUCTURE"
+        }
+      ],
+      "unit_economics": {
+        "blended_cac_per_account_usd": 18500.0,
+        "arpu_usd": 37023.49,
+        "gross_margin_pct": 92.5,
+        "ltv_per_account_usd": 2446194.88,
+        "ltv_cac_ratio": 132.23,
+        "cac_payback_months": 6.5
+      }
+    },
+    {
+      "cohort_id": "COHORT-CLI-101",
+      "cohort_name": "CLI Simulation",
+      "months_elapsed": 12,
+      "initial_accounts": 6,
+      "starting_arr_usd": 120000.0,
+      "churn_amount_usd": 1680.0,
+      "contraction_amount_usd": 2400.0,
+      "retained_base_arr_usd": 115920.0,
+      "seat_expansion_usd": 41400.0,
+      "renewal_uplift_usd": 7800.0,
+      "module_expansion_usd": 14999.0,
+      "total_expansion_usd": 64199.0,
+      "ending_arr_usd": 180119.0,
+      "grr_pct": 96.6,
+      "nrr_pct": 150.1,
+      "security_modules_attached": [
+        {
+          "module_id": "MODULE_PQC_KYBER_ATTESTATION",
+          "name": "Post-Quantum Kyber-1024 / Dilithium Enclave Attestation",
+          "annual_price_usd": 14999.0,
+          "compliance_target": "CNSA 2.0 / Post-Quantum Cryptography",
+          "expansion_category": "QUANTUM_RESILIENCE"
+        }
+      ],
+      "unit_economics": {
+        "blended_cac_per_account_usd": 18500.0,
+        "arpu_usd": 30019.83,
+        "gross_margin_pct": 92.5,
+        "ltv_per_account_usd": 1983453.05,
+        "ltv_cac_ratio": 107.21,
+        "cac_payback_months": 8.0
+      }
+    }
+  ]
+}

@@ -5,7 +5,7 @@
     "technical_contact": "dns@devsupersuite.com",
     "reference": "DSS-ANYCAST-DNS-2026-V1"
   },
-  "timestamp": "2026-11-08T11:45:04.230114+00:00",
+  "timestamp": "2026-11-08T11:51:33.253544+00:00",
   "total_scenarios_executed": 5,
   "zero_dropped_queries_verified": true,
   "average_failover_convergence_ms": 150.0,

@@ -1,0 +1,173 @@
+{
+  "audit_reference": "AUDIT-CNSA2-MLKEM-2026-V1",
+  "evaluation_timestamp_utc": "2026-11-08T11:51:22.463554+00:00",
+  "governing_body": "DevSuperSuite Security & Compliance Desk",
+  "official_contact": "security@devsupersuite.com",
+  "standards_baseline": [
+    "NIST FIPS 203 (ML-KEM)",
+    "NIST FIPS 204 (ML-DSA)",
+    "NSA CNSA 2.0 Mandate",
+    "CNSSP-15 Sovereign SCIF Cryptography"
+  ],
+  "total_scif_workloads": 5,
+  "airgapped_workloads": 3,
+  "cnsa_2_0_compliant_workloads": 5,
+  "cnsa_compliance_ratio_pct": 100.0,
+  "aggregate_resilience_score": 98.9,
+  "hndl_adversary_threat_status": "NEUTRALIZED (Dual Hybrid KEM Active)",
+  "workloads": [
+    {
+      "workload_id": "SCIF-WL-01",
+      "workload_name": "Sovereign Edge Ingress Gateway",
+      "facility_enclave": "SCIF-USA-EAST-SECURE-ENCLAVE-01",
+      "airgap_isolated": false,
+      "active_kem": "Hybrid-X25519-ML-KEM-768",
+      "active_signature": "ML-DSA-87",
+      "cnsa_2_0_compliant": true,
+      "harvest_now_decrypt_later_risk": "NEUTRALIZED",
+      "migration_milestone_year": 2025,
+      "readiness_percentage": 100.0
+    },
+    {
+      "workload_id": "SCIF-WL-02",
+      "workload_name": "Zero-Trust SPIFFE/SPIRE Workload CA",
+      "facility_enclave": "SCIF-USA-EAST-ROOT-VAULT-02",
+      "airgap_isolated": true,
+      "active_kem": "ML-KEM-1024",
+      "active_signature": "ML-DSA-87",
+      "cnsa_2_0_compliant": true,
+      "harvest_now_decrypt_later_risk": "NEUTRALIZED",
+      "migration_milestone_year": 2026,
+      "readiness_percentage": 98.5
+    },
+    {
+      "workload_id": "SCIF-WL-03",
+      "workload_name": "Defense Financial & Tax Vault Ledger",
+      "facility_enclave": "SCIF-USA-CENTRAL-LEDGER-03",
+      "airgap_isolated": true,
+      "active_kem": "ML-KEM-1024",
+      "active_signature": "ML-DSA-87",
+      "cnsa_2_0_compliant": true,
+      "harvest_now_decrypt_later_risk": "NEUTRALIZED",
+      "migration_milestone_year": 2026,
+      "readiness_percentage": 96.0
+    },
+    {
+      "workload_id": "SCIF-WL-04",
+      "workload_name": "Autonomous Chaos & Resilience Engine",
+      "facility_enclave": "SCIF-USA-WEST-CHAOS-04",
+      "airgap_isolated": false,
+      "active_kem": "Hybrid-X25519-ML-KEM-768",
+      "active_signature": "ML-DSA-65",
+      "cnsa_2_0_compliant": true,
+      "harvest_now_decrypt_later_risk": "NEUTRALIZED",
+      "migration_milestone_year": 2025,
+      "readiness_percentage": 100.0
+    },
+    {
+      "workload_id": "SCIF-WL-05",
+      "workload_name": "Air-Gapped TPM Quote & Hardware Attestation Vault",
+      "facility_enclave": "SCIF-USA-NORTH-TPM-VAULT-05",
+      "airgap_isolated": true,
+      "active_kem": "ML-KEM-1024",
+      "active_signature": "ML-DSA-87",
+      "cnsa_2_0_compliant": true,
+      "harvest_now_decrypt_later_risk": "NEUTRALIZED",
+      "migration_milestone_year": 2025,
+      "readiness_percentage": 100.0
+    }
+  ],
+  "parameter_specifications": {
+    "ML-KEM-768": {
+      "parameter_set": "ML-KEM-768",
+      "fips_standard": "NIST FIPS 203",
+      "security_level": 3,
+      "public_key_bytes": 1184,
+      "private_key_bytes": 2400,
+      "ciphertext_or_sig_bytes": 1088,
+      "quantum_security_bits": 128,
+      "classical_security_bits": 192,
+      "cnsa_2_0_compliant": true,
+      "scif_authorized": true,
+      "algorithm_family": "Module-LWE / Lattice KEM (Kyber-768)",
+      "description": "Quantum-resistant key encapsulation mechanism for hybrid TLS 1.3 and SCIF enclaves."
+    },
+    "ML-KEM-1024": {
+      "parameter_set": "ML-KEM-1024",
+      "fips_standard": "NIST FIPS 203",
+      "security_level": 5,
+      "public_key_bytes": 1568,
+      "private_key_bytes": 3168,
+      "ciphertext_or_sig_bytes": 1568,
+      "quantum_security_bits": 256,
+      "classical_security_bits": 256,
+      "cnsa_2_0_compliant": true,
+      "scif_authorized": true,
+      "algorithm_family": "Module-LWE / Lattice KEM (Kyber-1024)",
+      "description": "Top-tier quantum-resistant KEM mandatory for sovereign national security systems."
+    },
+    "ML-DSA-65": {
+      "parameter_set": "ML-DSA-65",
+      "fips_standard": "NIST FIPS 204",
+      "security_level": 3,
+      "public_key_bytes": 1952,
+      "private_key_bytes": 4032,
+      "ciphertext_or_sig_bytes": 3309,
+      "quantum_security_bits": 128,
+      "classical_security_bits": 192,
+      "cnsa_2_0_compliant": true,
+      "scif_authorized": true,
+      "algorithm_family": "Module-SIS / Lattice Signatures (Dilithium-3)",
+      "description": "Medium-high security lattice digital signatures for intermediate certificate authorities."
+    },
+    "ML-DSA-87": {
+      "parameter_set": "ML-DSA-87",
+      "fips_standard": "NIST FIPS 204",
+      "security_level": 5,
+      "public_key_bytes": 2592,
+      "private_key_bytes": 4896,
+      "ciphertext_or_sig_bytes": 4627,
+      "quantum_security_bits": 256,
+      "classical_security_bits": 256,
+      "cnsa_2_0_compliant": true,
+      "scif_authorized": true,
+      "algorithm_family": "Module-SIS / Lattice Signatures (Dilithium-5)",
+      "description": "Maximum-security lattice digital signatures mandatory under NSA CNSA 2.0 for firmware signing."
+    },
+    "Hybrid-X25519-ML-KEM-768": {
+      "parameter_set": "Hybrid-X25519-ML-KEM-768",
+      "fips_standard": "RFC 9180 / NIST FIPS 203",
+      "security_level": 3,
+      "public_key_bytes": 1216,
+      "private_key_bytes": 2432,
+      "ciphertext_or_sig_bytes": 1120,
+      "quantum_security_bits": 128,
+      "classical_security_bits": 192,
+      "cnsa_2_0_compliant": true,
+      "scif_authorized": true,
+      "algorithm_family": "Dual-Encapsulation Hybrid Key Exchange",
+      "description": "Composite key agreement combining Curve25519 with ML-KEM-768 for TLS 1.3 transition."
+    }
+  },
+  "cryptographic_attestation": {
+    "classical_ed25519_pk": "b58bbcc52da7b0835e3a3c7db0771cc7c1b1ab2a882db3e5784b037277694ad0",
+    "classical_ed25519_sig": "5bc0f997f5e8a786e33ac78ae26591709116674ab0acfe7ac63e7b258cedd58973a65a72b14340f775bdadb7dad6ab4e96c0d59426b8de23095158ae27f0220a",
+    "quantum_mldsa87_pk_fingerprint": "MLDSA-13825441360a7ffc",
+    "quantum_mldsa87_sig_bytes": 4627,
+    "quantum_mldsa87_sig_preview": "cc02d603a903d300d8005e02c0027b0158002400a902c802ea036302ed01a400",
+    "attestation_status": "VALID_SEALED"
+  },
+  "simulated_hybrid_handshake": {
+    "session_id": "SCIF-TLS-191F9B961110",
+    "timestamp_utc": "2026-11-08T11:51:22.451645+00:00",
+    "scif_enclave_id": "SCIF-USA-EAST-SECURE-ENCLAVE-01",
+    "initiator_public_key_bytes": 1216,
+    "responder_ciphertext_bytes": 1120,
+    "client_shared_secret": "692ce568b22ef59784c006d3f3a5522061a1aaaa589a3e0ab076da0e4737e2c0",
+    "server_shared_secret": "692ce568b22ef59784c006d3f3a5522061a1aaaa589a3e0ab076da0e4737e2c0",
+    "secrets_match": true,
+    "handshake_transcript_hash": "f989db1d34cd9d77d089553e0c9be524146a83146d9439e5a9ef4f3821572eee",
+    "cnsa2_attested": true,
+    "sovereign_airgap_verified": true
+  }
+}

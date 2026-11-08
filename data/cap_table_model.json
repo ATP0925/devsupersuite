@@ -3,7 +3,7 @@
     "organization": "DevSuperSuite Official",
     "entity": "DevSuperSuite Tech Services",
     "treasury_contact": "cfo@devsupersuite.com",
-    "last_updated": "2026-11-08T11:45:05.012861+00:00"
+    "last_updated": "2026-11-08T11:51:34.027466+00:00"
   },
   "baseline": {
     "total_authorized_shares": 10000000,
@@ -64,7 +64,7 @@
     ]
   },
   "priced_round_simulation": {
-    "timestamp": "2026-11-08T11:45:05.012920+00:00",
+    "timestamp": "2026-11-08T11:51:34.027516+00:00",
     "round_name": "Series A Preferred Stock Financing",
     "pre_money_valuation_usd": 40000000.0,
     "new_capital_raised_usd": 10000000.0,

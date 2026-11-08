@@ -1,0 +1,185 @@
+{
+  "version": "1.0.0",
+  "governing_entity": "DevSuperSuite Revenue Operations (growth@devsupersuite.com)",
+  "compliance_protocol": "100% Brand Anonymity - Zero Founder Personal Identifiers",
+  "last_updated": "2026-11-08T11:51:39.153963+00:00",
+  "supported_currencies": [
+    "US",
+    "GB",
+    "DE",
+    "FR",
+    "JP",
+    "CA",
+    "AU",
+    "IN",
+    "DEFAULT"
+  ],
+  "active_coupons": [
+    "DSS-DEVREL-X",
+    "VIPDEV5",
+    "DSS-COMMUNITY",
+    "RECOVER20"
+  ],
+  "telemetry": {
+    "total_checkout_resolutions": 5,
+    "upi_sessions_generated": 1,
+    "gumroad_sessions_generated": 5,
+    "cart_abandonments_detected": 3,
+    "recovery_dispatches_sent": 3,
+    "utr_verifications_settled": 2
+  },
+  "recent_sessions": [
+    {
+      "session_id": "CHK-13B66F70",
+      "timestamp": "2026-11-08T11:50:40.382196+00:00",
+      "country_code": "US",
+      "currency": "USD",
+      "final_price": 24.65,
+      "primary_rail": "GUMROAD",
+      "customer_email": "dev.us@rtx.com",
+      "applied_coupon": "DSS-DEVREL-X",
+      "upi_payload": null,
+      "gumroad_payload": {
+        "rail": "GUMROAD_INTERNATIONAL",
+        "checkout_url": "https://devsupersuite.gumroad.com/l/pro?wanted=true&discount_code=DSS-DEVREL-X&email=dev.us@rtx.com",
+        "applied_coupon": "DSS-DEVREL-X",
+        "currency": "USD"
+      }
+    },
+    {
+      "session_id": "CHK-2168E578",
+      "timestamp": "2026-11-08T11:50:40.507179+00:00",
+      "country_code": "IN",
+      "currency": "INR",
+      "final_price": 1499.0,
+      "primary_rail": "UPI_DOMESTIC",
+      "customer_email": "dev.in@tcs.com",
+      "applied_coupon": null,
+      "upi_payload": {
+        "rail": "UPI_DOMESTIC",
+        "vpa": "devsupersuite@icici",
+        "amount_inr": 1499.0,
+        "transaction_ref": "DSS-UPI-BC9CC569",
+        "customer_email": "dev.in@tcs.com",
+        "upi_intent_uri": "upi://pay?pa=devsupersuite@icici&pn=DevSuperSuite%20Official&am=1499.00&cu=INR&tn=DevSuperSuite%20Pro%20Lifetime&tr=DSS-UPI-BC9CC569",
+        "instructions": "Scan with Google Pay, PhonePe, Paytm, or BHIM to pay \u20b91,499.00 to devsupersuite@icici."
+      },
+      "gumroad_payload": {
+        "rail": "GUMROAD_INTERNATIONAL",
+        "checkout_url": "https://devsupersuite.gumroad.com/l/pro?wanted=true&email=dev.in@tcs.com&currency=INR",
+        "applied_coupon": null,
+        "currency": "INR"
+      }
+    },
+    {
+      "session_id": "CHK-D9E80752",
+      "timestamp": "2026-11-08T11:50:40.627059+00:00",
+      "country_code": "DE",
+      "currency": "EUR",
+      "final_price": 22.35,
+      "primary_rail": "GUMROAD",
+      "customer_email": "dev.de@siemens.de",
+      "applied_coupon": "VIPDEV5",
+      "upi_payload": null,
+      "gumroad_payload": {
+        "rail": "GUMROAD_INTERNATIONAL",
+        "checkout_url": "https://devsupersuite.gumroad.com/l/pro?wanted=true&discount_code=VIPDEV5&email=dev.de@siemens.de&currency=EUR",
+        "applied_coupon": "VIPDEV5",
+        "currency": "EUR"
+      }
+    },
+    {
+      "session_id": "CHK-8B1D6D4E",
+      "timestamp": "2026-11-08T11:51:17.069488+00:00",
+      "country_code": "CA",
+      "currency": "CAD",
+      "final_price": 33.15,
+      "primary_rail": "GUMROAD",
+      "customer_email": "cli.dev@co.ca",
+      "applied_coupon": "DSS-DEVREL-X",
+      "upi_payload": null,
+      "gumroad_payload": {
+        "rail": "GUMROAD_INTERNATIONAL",
+        "checkout_url": "https://devsupersuite.gumroad.com/l/pro?wanted=true&discount_code=DSS-DEVREL-X&email=cli.dev@co.ca&currency=CAD",
+        "applied_coupon": "DSS-DEVREL-X",
+        "currency": "CAD"
+      }
+    },
+    {
+      "session_id": "CHK-3D90C6BE",
+      "timestamp": "2026-11-08T11:51:38.844602+00:00",
+      "country_code": "CA",
+      "currency": "CAD",
+      "final_price": 33.15,
+      "primary_rail": "GUMROAD",
+      "customer_email": "cli.dev@co.ca",
+      "applied_coupon": "DSS-DEVREL-X",
+      "upi_payload": null,
+      "gumroad_payload": {
+        "rail": "GUMROAD_INTERNATIONAL",
+        "checkout_url": "https://devsupersuite.gumroad.com/l/pro?wanted=true&discount_code=DSS-DEVREL-X&email=cli.dev@co.ca&currency=CAD",
+        "applied_coupon": "DSS-DEVREL-X",
+        "currency": "CAD"
+      }
+    }
+  ],
+  "abandoned_carts": [
+    {
+      "abandonment_id": "ABN-4B9FE272",
+      "customer_email": "abandoned@startup.io",
+      "country_code": "US",
+      "dropped_at": "2026-11-08T11:35:40.744651+00:00",
+      "recovered_offer": {
+        "currency": "USD",
+        "discounted_price": 23.2,
+        "recovery_coupon": "RECOVER20",
+        "recovery_url": "https://devsupersuite.gumroad.com/l/pro?wanted=true&discount_code=RECOVER20&email=abandoned@startup.io"
+      },
+      "status": "DISPATCHED_PENDING_CLICK"
+    },
+    {
+      "abandonment_id": "ABN-D8D6859D",
+      "customer_email": "cli.drop@co.com",
+      "country_code": "US",
+      "dropped_at": "2026-11-08T11:36:17.407386+00:00",
+      "recovered_offer": {
+        "currency": "USD",
+        "discounted_price": 23.2,
+        "recovery_coupon": "RECOVER20",
+        "recovery_url": "https://devsupersuite.gumroad.com/l/pro?wanted=true&discount_code=RECOVER20&email=cli.drop@co.com"
+      },
+      "status": "DISPATCHED_PENDING_CLICK"
+    },
+    {
+      "abandonment_id": "ABN-554AA652",
+      "customer_email": "cli.drop@co.com",
+      "country_code": "US",
+      "dropped_at": "2026-11-08T11:36:39.153916+00:00",
+      "recovered_offer": {
+        "currency": "USD",
+        "discounted_price": 23.2,
+        "recovery_coupon": "RECOVER20",
+        "recovery_url": "https://devsupersuite.gumroad.com/l/pro?wanted=true&discount_code=RECOVER20&email=cli.drop@co.com"
+      },
+      "status": "DISPATCHED_PENDING_CLICK"
+    }
+  ],
+  "verified_utrs": [
+    {
+      "utr_number": "998877665544",
+      "customer_email": "dev.in@tcs.com",
+      "amount_inr": 1499.0,
+      "settled_at": "2026-11-08T11:50:40.871694+00:00",
+      "verification_status": "VERIFIED_UNLOCKED",
+      "license_unlock_token": "DSS-PRO-ED25519-4C4DB838E877326D"
+    },
+    {
+      "utr_number": "99001122334455",
+      "customer_email": "cli.upi@co.in",
+      "amount_inr": 1499.0,
+      "settled_at": "2026-11-08T11:51:17.522611+00:00",
+      "verification_status": "VERIFIED_UNLOCKED",
+      "license_unlock_token": "DSS-PRO-ED25519-6CA60DD9A10BA6AD"
+    }
+  ]
+}

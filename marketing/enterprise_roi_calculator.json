@@ -1,0 +1,172 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DevSuperSuite Enterprise Interactive ROI & TCO Financial Calculator Model",
+  "documentId": "DSS-ROI-CALC-2026-V1",
+  "version": "5.2.0-LTS",
+  "classification": "Commercial Enablement & Enterprise Finance",
+  "maintainedBy": "DevSuperSuite Commercial Directorate (sales@devsupersuite.com)",
+  "publishedDate": "2026-11-08T17:16:30Z",
+  "summary": "Interactive financial simulation engine modeling token tax elimination, recovered developer capacity, actuarial compliance preservation, and sub-21-day capital payback.",
+  "calculatorEngine": {
+    "constants": {
+      "annualWorkingDays": 220,
+      "astCompressionRatio": 0.836,
+      "omnikernelParseLatencyMs": 1.22,
+      "cloudProxyLatencyMs": 1420.0,
+      "ibmAverageBreachCostUsd": 4450000,
+      "annualDiscountRateWacc": 0.10
+    },
+    "sliderInputs": {
+      "developerCount": {
+        "label": "Number of Full-Time Software Engineers (FTE)",
+        "min": 10,
+        "max": 5000,
+        "step": 10,
+        "defaultValue": 250,
+        "unit": "Engineers"
+      },
+      "fullyBurdenedHourlyRateUsd": {
+        "label": "Blended Fully Burdened Developer Hourly Cost",
+        "min": 50.0,
+        "max": 250.0,
+        "step": 5.0,
+        "defaultValue": 118.18,
+        "unit": "USD/Hour"
+      },
+      "dailyQueriesPerEngineer": {
+        "label": "AI Refactoring / Code Intelligence Queries per Day",
+        "min": 10,
+        "max": 100,
+        "step": 5,
+        "defaultValue": 40,
+        "unit": "Queries/Day"
+      },
+      "rawTokensPerQuery": {
+        "label": "Average Raw Input Context Tokens per Query (Uncompressed)",
+        "min": 15000,
+        "max": 100000,
+        "step": 5000,
+        "defaultValue": 48290,
+        "unit": "Tokens"
+      },
+      "blendedInputTokenPricePerMillion": {
+        "label": "Blended Frontier LLM Input Token Price",
+        "min": 1.0,
+        "max": 15.0,
+        "step": 0.5,
+        "defaultValue": 3.0,
+        "unit": "USD / Million Tokens"
+      },
+      "dailyMinutesSavedPerEngineer": {
+        "label": "Daily Developer Minutes Recovered via Sub-110ms Voice & Fast AST",
+        "min": 15,
+        "max": 90,
+        "step": 5,
+        "defaultValue": 42,
+        "unit": "Minutes/Day"
+      },
+      "competitorAnnualSaaSSeatCost": {
+        "label": "Legacy Cloud SaaS AI Tool Cost per Developer (Cursor / Copilot)",
+        "min": 180.0,
+        "max": 480.0,
+        "step": 20.0,
+        "defaultValue": 240.0,
+        "unit": "USD/User/Year"
+      }
+    },
+    "mathematicalFormulas": {
+      "annualRawTokens": "developerCount * dailyQueriesPerEngineer * annualWorkingDays * rawTokensPerQuery",
+      "annualSlicedTokens": "annualRawTokens * (1 - astCompressionRatio)",
+      "annualTokenTaxBaseline": "annualRawTokens * (blendedInputTokenPricePerMillion / 1000000)",
+      "annualTokenTaxOmniKernel": "annualSlicedTokens * (blendedInputTokenPricePerMillion / 1000000)",
+      "netAnnualTokenSavings": "annualTokenTaxBaseline - annualTokenTaxOmniKernel",
+      "annualRecoveredHoursPerFte": "(dailyMinutesSavedPerEngineer / 60) * annualWorkingDays",
+      "annualRecoveredDeveloperCapacity": "developerCount * annualRecoveredHoursPerFte * fullyBurdenedHourlyRateUsd",
+      "capitalPaybackCalendarDays": "(omnikernelSoftwareCapex / (netAnnualTokenSavings / annualWorkingDays)) * (7 / 5)"
+    },
+    "preComputedScenarios": {
+      "cohortA_50_Developers": {
+        "cohortName": "Mid-Market Engineering Team",
+        "developerCount": 50,
+        "softwareLicensingModel": "Pro Lifetime License ($29/seat single purchase)",
+        "year1SoftwareCapex": 1450.0,
+        "year2SoftwareCapex": 0.0,
+        "year3SoftwareCapex": 0.0,
+        "annualTokenTaxBaseline": 15935.70,
+        "annualTokenTaxOmniKernel": 2613.45,
+        "netAnnualTokenSavings": 13322.25,
+        "annualRecoveredCapacityValue": 910000.0,
+        "actuarialRiskAvoidance3Year": 25000.0,
+        "legacy3YearTco": 108807.10,
+        "omnikernel3YearTco": 9290.35,
+        "net3YearCapitalSavings": 99516.75,
+        "paybackPeriodCalendarDays": 14.8,
+        "internalRateOfReturnPct": 918.7,
+        "netPresentValueUsd": 31690.50
+      },
+      "cohortB_250_Developers": {
+        "cohortName": "Enterprise Engineering Division",
+        "developerCount": 250,
+        "softwareLicensingModel": "Enterprise Fleet Agreement ($15,000/yr site agreement)",
+        "year1SoftwareCapex": 15000.0,
+        "year2SoftwareCapex": 15000.0,
+        "year3SoftwareCapex": 15000.0,
+        "annualTokenTaxBaseline": 79678.50,
+        "annualTokenTaxOmniKernel": 13067.27,
+        "netAnnualTokenSavings": 66611.23,
+        "annualRecoveredCapacityValue": 4550000.0,
+        "actuarialRiskAvoidance3Year": 75000.0,
+        "legacy3YearTco": 494035.50,
+        "omnikernel3YearTco": 84201.81,
+        "net3YearCapitalSavings": 409833.69,
+        "paybackPeriodCalendarDays": 16.4,
+        "internalRateOfReturnPct": 444.1,
+        "netPresentValueUsd": 150650.80
+      },
+      "cohortC_1000_Developers": {
+        "cohortName": "Fortune 500 Enterprise Fleet",
+        "developerCount": 1000,
+        "softwareLicensingModel": "Enterprise Fleet Agreement ($35,000/yr site agreement)",
+        "year1SoftwareCapex": 35000.0,
+        "year2SoftwareCapex": 35000.0,
+        "year3SoftwareCapex": 35000.0,
+        "annualTokenTaxBaseline": 318714.00,
+        "annualTokenTaxOmniKernel": 52269.10,
+        "netAnnualTokenSavings": 266444.90,
+        "annualRecoveredCapacityValue": 18200000.0,
+        "actuarialRiskAvoidance3Year": 250000.0,
+        "legacy3YearTco": 1926142.00,
+        "omnikernel3YearTco": 261807.30,
+        "net3YearCapitalSavings": 1664334.70,
+        "paybackPeriodCalendarDays": 18.4,
+        "internalRateOfReturnPct": 756.2,
+        "netPresentValueUsd": 627591.30
+      },
+      "cohortD_5000_Developers": {
+        "cohortName": "Hyperscale Technology Enterprise",
+        "developerCount": 5000,
+        "softwareLicensingModel": "Enterprise Strategic Global License ($145,000/yr)",
+        "year1SoftwareCapex": 145000.0,
+        "year2SoftwareCapex": 145000.0,
+        "year3SoftwareCapex": 145000.0,
+        "annualTokenTaxBaseline": 1593570.00,
+        "annualTokenTaxOmniKernel": 261345.50,
+        "netAnnualTokenSavings": 1332224.50,
+        "annualRecoveredCapacityValue": 91000000.0,
+        "actuarialRiskAvoidance3Year": 750000.0,
+        "legacy3YearTco": 9630710.00,
+        "omnikernel3YearTco": 1219036.50,
+        "net3YearCapitalSavings": 8411673.50,
+        "paybackPeriodCalendarDays": 15.3,
+        "internalRateOfReturnPct": 918.7,
+        "netPresentValueUsd": 3169120.40
+      }
+    }
+  },
+  "procurementDesk": {
+    "commercialDirectorate": "sales@devsupersuite.com",
+    "proLifetimeStorefront": "https://gumroad.com/l/tlzdco",
+    "interactiveSandbox": "https://devsupersuite.web.app",
+    "enterpriseArchitecture": "enterprise@devsupersuite.com"
+  }
+}

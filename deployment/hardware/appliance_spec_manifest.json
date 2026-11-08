@@ -1,0 +1,314 @@
+{
+  "$schema": "https://devsupersuite.com/schemas/hardware-appliance-v1.json",
+  "metadata": {
+    "manifest_version": "1.0.0",
+    "reference": "DSS-HARDWARE-APPLIANCE-2026-V1",
+    "generated_at": "2026-11-08T11:51:17.237925+00:00",
+    "organization": "DevSuperSuite Solutions Architecture / OmniKernel Labs",
+    "contact": "solutions@devsupersuite.com",
+    "technical_contact": "hardware@devsupersuite.com"
+  },
+  "platforms": {
+    "dell": {
+      "platform_id": "dell",
+      "vendor": "Dell Technologies",
+      "model_1u": "Dell PowerEdge R660 Enterprise Server",
+      "model_2u": "Dell PowerEdge R760 Enterprise Server",
+      "processor_architecture": "Dual AMD EPYC 9654 (96-core / 192-thread, 2.4 GHz - 3.7 GHz, 360W TDP)",
+      "memory_subsystem": "512GB ECC DDR5-4800 (16x 32GB RDIMM, 12-channel per socket)",
+      "storage_controller": "Dell PERC H755N Front NVMe PCIe Gen4 RAID Controller (8GB NV Cache)",
+      "storage_drives": "4x 3.84TB U.2 NVMe PCIe Gen5 Enterprise SEDs (RAID 10, Opal 2.0 / FIPS 140-3)",
+      "crypto_hsm": "Thales Luna PCIe HSM / YubiHSM 2 FIPS 140-3 Level 3 Hardware Security Module",
+      "smartnic": "Broadcom 57504 Quad-Port 25GbE SFP28 OCP 3.0 + Dual 10GbE BASE-T",
+      "psu": "Dual Hot-Plug Redundant 1400W 80 PLUS Titanium (96% Efficiency)",
+      "base_1u_price": 48500.0,
+      "base_2u_cluster_price": 94000.0
+    },
+    "hpe": {
+      "platform_id": "hpe",
+      "vendor": "Hewlett Packard Enterprise",
+      "model_1u": "HPE ProLiant DL360 Gen11 Enterprise Server",
+      "model_2u": "HPE ProLiant DL380 Gen11 Enterprise Server",
+      "processor_architecture": "Dual Intel Xeon Platinum 8480+ (56-core / 112-thread, 2.0 GHz - 3.8 GHz, 350W TDP)",
+      "memory_subsystem": "512GB ECC DDR5-4800 (16x 32GB SmartMemory, 8-channel per socket)",
+      "storage_controller": "HPE SR932i-p Gen11 Tri-Mode 24G SAS/PCIe Gen4 Controller (8GB Flash Cache)",
+      "storage_drives": "4x 3.84TB NVMe High Performance Read Intensive U.3 SED FIPS 140-3 SSDs (RAID 10)",
+      "crypto_hsm": "Marvell LiquidSecurity HSM FIPS 140-3 Level 3 PCIe Cryptographic Accelerator",
+      "smartnic": "HPE BCM57414 Dual-Port 25GbE SFP28 OCP3 Adapter",
+      "psu": "Dual Hot-Plug Flex Slot 1600W 80 PLUS Titanium (96% Efficiency)",
+      "base_1u_price": 49800.0,
+      "base_2u_cluster_price": 96200.0
+    },
+    "supermicro": {
+      "platform_id": "supermicro",
+      "vendor": "Supermicro Computer, Inc.",
+      "model_1u": "Supermicro Hyper SuperServer SYS-121H-TNR",
+      "model_2u": "Supermicro Hyper SuperServer SYS-221H-TNR",
+      "processor_architecture": "Dual AMD EPYC 9654 (96-core / 192-thread, 2.4 GHz - 3.7 GHz, 360W TDP)",
+      "memory_subsystem": "512GB ECC DDR5-4800 Registered ECC (16x 32GB RDIMM)",
+      "storage_controller": "Broadcom MegaRAID 9560-16i NVMe PCIe Gen4 Controller (8GB CacheVault)",
+      "storage_drives": "4x 3.84TB Kioxia CM7-R U.2 PCIe 5.0 SED FIPS 140-3 Drives (RAID 10)",
+      "crypto_hsm": "NitroKey / YubiHSM 2 Hardware Security Module FIPS 140-3 Level 3",
+      "smartnic": "Dual 25GbE Mellanox ConnectX-6 Dx SFP28 Dual-Port PCIe Adapter",
+      "psu": "Dual 1600W Titanium Level Redundant Power Supplies (96% Efficiency)",
+      "base_1u_price": 46900.0,
+      "base_2u_cluster_price": 91500.0
+    }
+  },
+  "tiers": {
+    "tier_1_standalone": {
+      "tier_id": "tier_1_standalone",
+      "name": "DevSuperSuite Sovereign-1U",
+      "form_factor": "1U Rackmount",
+      "node_count": 1,
+      "max_engineers": 500,
+      "base_price": 48500.0,
+      "usable_storage_tb": 7.68,
+      "raw_storage_tb": 15.36,
+      "memory_gb": 512,
+      "ast_throughput_tokens_sec": 15000,
+      "typical_power_watts": 450.0,
+      "peak_power_watts": 750.0,
+      "redundancy": "Single-Node High Resilience (Hot-Swap NVMe + Dual PSUs)",
+      "target_deployment": "Defense SCIF Edge, Regional Treasury Lab, Isolated Engineering Outpost"
+    },
+    "tier_2_ha_cluster": {
+      "tier_id": "tier_2_ha_cluster",
+      "name": "DevSuperSuite Sovereign-2U HA Clustered Pair",
+      "form_factor": "2U Clustered Pair (2x 1U or 1x 2U Dual-Node)",
+      "node_count": 2,
+      "max_engineers": 2500,
+      "base_price": 94000.0,
+      "usable_storage_tb": 15.36,
+      "raw_storage_tb": 30.72,
+      "memory_gb": 1024,
+      "ast_throughput_tokens_sec": 45000,
+      "typical_power_watts": 900.0,
+      "peak_power_watts": 1500.0,
+      "redundancy": "Dual-Node Active-Active / Active-Passive Raft High Availability Pair",
+      "target_deployment": "Primary Financial Data Center, Tier-1 Sovereign Government Facility"
+    },
+    "tier_3_scif_grid": {
+      "tier_id": "tier_3_scif_grid",
+      "name": "DevSuperSuite Sovereign-SCIF Multi-Node Grid",
+      "form_factor": "4U Multi-Node Grid (4x 1U or 2x 2U Clustered Nodes)",
+      "node_count": 4,
+      "max_engineers": 10000,
+      "base_price": 188000.0,
+      "usable_storage_tb": 30.72,
+      "raw_storage_tb": 61.44,
+      "memory_gb": 2048,
+      "ast_throughput_tokens_sec": 120000,
+      "typical_power_watts": 1800.0,
+      "peak_power_watts": 3000.0,
+      "redundancy": "Quad-Node Distributed Consensus Grid (N+2 Fault Tolerant)",
+      "target_deployment": "National Defense Cyber Command, Global Sovereign Clearinghouse"
+    }
+  },
+  "reference_configurations": {
+    "sovereign_1u_tier1": {
+      "configuration_metadata": {
+        "generated_at": "2026-11-08T11:51:17.237874+00:00",
+        "reference": "DSS-HARDWARE-APPLIANCE-2026-V1",
+        "organization": "DevSuperSuite Solutions Architecture / OmniKernel Labs",
+        "contact": "solutions@devsupersuite.com",
+        "technical_contact": "hardware@devsupersuite.com"
+      },
+      "sizing_parameters": {
+        "engineer_seats": 500,
+        "selected_tier": "DevSuperSuite Sovereign-1U",
+        "tier_id": "tier_1_standalone",
+        "form_factor": "1U Rackmount",
+        "node_count": 1,
+        "vendor_platform": "Dell Technologies",
+        "server_model": "Dell PowerEdge R660 Enterprise Server",
+        "warranty_period_years": 3
+      },
+      "hardware_specifications": {
+        "processors": "Dual AMD EPYC 9654 (96-core / 192-thread, 2.4 GHz - 3.7 GHz, 360W TDP)",
+        "memory_total_gb": 512,
+        "usable_storage_nvme_tb": 7.68,
+        "raw_storage_nvme_tb": 15.36,
+        "raid_controller": "Dell PERC H755N Front NVMe PCIe Gen4 RAID Controller (8GB NV Cache)",
+        "drive_security": "U.2/U.3 NVMe SED PCIe Gen5 (TCG Opal 2.0 / FIPS 140-3 Hardware Crypto)",
+        "cryptographic_hsm": "Thales Luna PCIe HSM / YubiHSM 2 FIPS 140-3 Level 3 Hardware Security Module",
+        "smartnic": "Broadcom 57504 Quad-Port 25GbE SFP28 OCP 3.0 + Dual 10GbE BASE-T",
+        "power_supply_units": "Dual Hot-Plug Redundant 1400W 80 PLUS Titanium (96% Efficiency)",
+        "ast_throughput_tokens_sec": 15000
+      },
+      "itemized_bom_usd": {
+        "chassis_and_motherboards": 8500.0,
+        "processors": 11200.0,
+        "base_ecc_ddr5_memory": 6800.0,
+        "base_nvme_sed_storage": 7400.0,
+        "hardware_raid_controllers": 1800.0,
+        "fips_140_3_hsm_accelerators": 4500.0,
+        "smartnics_and_transceivers": 1500.0,
+        "titanium_redundant_psus": 800.0,
+        "scif_airgap_disconnect_kit": 1000.0,
+        "mission_critical_support_3yr": 5000.0,
+        "storage_expansion_addon": 0.0,
+        "memory_expansion_addon": 0.0,
+        "extended_warranty_addon": 0.0,
+        "total_appliance_bom_price": 48500.0
+      },
+      "thermal_and_power_telemetry": {
+        "psu_efficiency_rating": "80 PLUS Titanium (96% Efficiency)",
+        "typical_power_watts": 480.0,
+        "peak_power_watts": 795.0,
+        "thermal_dissipation_typical_btu_hr": 1637.83,
+        "thermal_dissipation_peak_btu_hr": 2712.65,
+        "current_draw_208v_typical_amps": 2.35,
+        "current_draw_208v_peak_amps": 3.9,
+        "current_draw_240v_typical_amps": 2.04,
+        "current_draw_240v_peak_amps": 3.38,
+        "annual_energy_consumption_kwh": 4204.8,
+        "annual_electricity_cost_usd": 504.58
+      },
+      "scif_compliance_standards": {
+        "emissions_control": "NSTISSAM TEMPEST/2-95 Level I / NATO AMSG 720B Ready",
+        "storage_sanitization": "NIST SP 800-88 Rev 1 Cryptographic Erase / DoD 5220.22-M",
+        "hsm_standard": "FIPS 140-3 Level 3 Physical Anti-Tamper & Zeroization",
+        "network_isolation": "Physical Air-Gap Galvanic Optical Fiber Disconnect Switch"
+      }
+    },
+    "sovereign_2u_tier2": {
+      "configuration_metadata": {
+        "generated_at": "2026-11-08T11:51:17.237902+00:00",
+        "reference": "DSS-HARDWARE-APPLIANCE-2026-V1",
+        "organization": "DevSuperSuite Solutions Architecture / OmniKernel Labs",
+        "contact": "solutions@devsupersuite.com",
+        "technical_contact": "hardware@devsupersuite.com"
+      },
+      "sizing_parameters": {
+        "engineer_seats": 2500,
+        "selected_tier": "DevSuperSuite Sovereign-2U HA Clustered Pair",
+        "tier_id": "tier_2_ha_cluster",
+        "form_factor": "2U Clustered Pair (2x 1U or 1x 2U Dual-Node)",
+        "node_count": 2,
+        "vendor_platform": "Dell Technologies",
+        "server_model": "Dell PowerEdge R760 Enterprise Server",
+        "warranty_period_years": 3
+      },
+      "hardware_specifications": {
+        "processors": "Dual AMD EPYC 9654 (96-core / 192-thread, 2.4 GHz - 3.7 GHz, 360W TDP)",
+        "memory_total_gb": 1024,
+        "usable_storage_nvme_tb": 15.36,
+        "raw_storage_nvme_tb": 30.72,
+        "raid_controller": "Dell PERC H755N Front NVMe PCIe Gen4 RAID Controller (8GB NV Cache)",
+        "drive_security": "U.2/U.3 NVMe SED PCIe Gen5 (TCG Opal 2.0 / FIPS 140-3 Hardware Crypto)",
+        "cryptographic_hsm": "Thales Luna PCIe HSM / YubiHSM 2 FIPS 140-3 Level 3 Hardware Security Module",
+        "smartnic": "Broadcom 57504 Quad-Port 25GbE SFP28 OCP 3.0 + Dual 10GbE BASE-T",
+        "power_supply_units": "Dual Hot-Plug Redundant 1400W 80 PLUS Titanium (96% Efficiency)",
+        "ast_throughput_tokens_sec": 45000
+      },
+      "itemized_bom_usd": {
+        "chassis_and_motherboards": 17000.0,
+        "processors": 22400.0,
+        "base_ecc_ddr5_memory": 13600.0,
+        "base_nvme_sed_storage": 14800.0,
+        "hardware_raid_controllers": 3600.0,
+        "fips_140_3_hsm_accelerators": 9000.0,
+        "smartnics_and_transceivers": 3000.0,
+        "titanium_redundant_psus": 1600.0,
+        "scif_airgap_disconnect_kit": 2000.0,
+        "mission_critical_support_3yr": 10000.0,
+        "storage_expansion_addon": 0.0,
+        "memory_expansion_addon": 0.0,
+        "extended_warranty_addon": 0.0,
+        "total_appliance_bom_price": 97000.0
+      },
+      "thermal_and_power_telemetry": {
+        "psu_efficiency_rating": "80 PLUS Titanium (96% Efficiency)",
+        "typical_power_watts": 930.0,
+        "peak_power_watts": 1545.0,
+        "thermal_dissipation_typical_btu_hr": 3173.29,
+        "thermal_dissipation_peak_btu_hr": 5271.76,
+        "current_draw_208v_typical_amps": 4.56,
+        "current_draw_208v_peak_amps": 7.58,
+        "current_draw_240v_typical_amps": 3.95,
+        "current_draw_240v_peak_amps": 6.57,
+        "annual_energy_consumption_kwh": 8146.8,
+        "annual_electricity_cost_usd": 977.62
+      },
+      "scif_compliance_standards": {
+        "emissions_control": "NSTISSAM TEMPEST/2-95 Level I / NATO AMSG 720B Ready",
+        "storage_sanitization": "NIST SP 800-88 Rev 1 Cryptographic Erase / DoD 5220.22-M",
+        "hsm_standard": "FIPS 140-3 Level 3 Physical Anti-Tamper & Zeroization",
+        "network_isolation": "Physical Air-Gap Galvanic Optical Fiber Disconnect Switch"
+      }
+    },
+    "sovereign_scif_tier3": {
+      "configuration_metadata": {
+        "generated_at": "2026-11-08T11:51:17.237918+00:00",
+        "reference": "DSS-HARDWARE-APPLIANCE-2026-V1",
+        "organization": "DevSuperSuite Solutions Architecture / OmniKernel Labs",
+        "contact": "solutions@devsupersuite.com",
+        "technical_contact": "hardware@devsupersuite.com"
+      },
+      "sizing_parameters": {
+        "engineer_seats": 10000,
+        "selected_tier": "DevSuperSuite Sovereign-SCIF Multi-Node Grid",
+        "tier_id": "tier_3_scif_grid",
+        "form_factor": "4U Multi-Node Grid (4x 1U or 2x 2U Clustered Nodes)",
+        "node_count": 4,
+        "vendor_platform": "Dell Technologies",
+        "server_model": "Dell PowerEdge R760 Enterprise Server",
+        "warranty_period_years": 3
+      },
+      "hardware_specifications": {
+        "processors": "Dual AMD EPYC 9654 (96-core / 192-thread, 2.4 GHz - 3.7 GHz, 360W TDP)",
+        "memory_total_gb": 2048,
+        "usable_storage_nvme_tb": 30.72,
+        "raw_storage_nvme_tb": 61.44,
+        "raid_controller": "Dell PERC H755N Front NVMe PCIe Gen4 RAID Controller (8GB NV Cache)",
+        "drive_security": "U.2/U.3 NVMe SED PCIe Gen5 (TCG Opal 2.0 / FIPS 140-3 Hardware Crypto)",
+        "cryptographic_hsm": "Thales Luna PCIe HSM / YubiHSM 2 FIPS 140-3 Level 3 Hardware Security Module",
+        "smartnic": "Broadcom 57504 Quad-Port 25GbE SFP28 OCP 3.0 + Dual 10GbE BASE-T",
+        "power_supply_units": "Dual Hot-Plug Redundant 1400W 80 PLUS Titanium (96% Efficiency)",
+        "ast_throughput_tokens_sec": 120000
+      },
+      "itemized_bom_usd": {
+        "chassis_and_motherboards": 34000.0,
+        "processors": 44800.0,
+        "base_ecc_ddr5_memory": 27200.0,
+        "base_nvme_sed_storage": 29600.0,
+        "hardware_raid_controllers": 7200.0,
+        "fips_140_3_hsm_accelerators": 18000.0,
+        "smartnics_and_transceivers": 6000.0,
+        "titanium_redundant_psus": 3200.0,
+        "scif_airgap_disconnect_kit": 4000.0,
+        "mission_critical_support_3yr": 20000.0,
+        "storage_expansion_addon": 0.0,
+        "memory_expansion_addon": 0.0,
+        "extended_warranty_addon": 0.0,
+        "total_appliance_bom_price": 194000.0
+      },
+      "thermal_and_power_telemetry": {
+        "psu_efficiency_rating": "80 PLUS Titanium (96% Efficiency)",
+        "typical_power_watts": 1830.0,
+        "peak_power_watts": 3045.0,
+        "thermal_dissipation_typical_btu_hr": 6244.22,
+        "thermal_dissipation_peak_btu_hr": 10389.97,
+        "current_draw_208v_typical_amps": 8.98,
+        "current_draw_208v_peak_amps": 14.94,
+        "current_draw_240v_typical_amps": 7.78,
+        "current_draw_240v_peak_amps": 12.95,
+        "annual_energy_consumption_kwh": 16030.8,
+        "annual_electricity_cost_usd": 1923.7
+      },
+      "scif_compliance_standards": {
+        "emissions_control": "NSTISSAM TEMPEST/2-95 Level I / NATO AMSG 720B Ready",
+        "storage_sanitization": "NIST SP 800-88 Rev 1 Cryptographic Erase / DoD 5220.22-M",
+        "hsm_standard": "FIPS 140-3 Level 3 Physical Anti-Tamper & Zeroization",
+        "network_isolation": "Physical Air-Gap Galvanic Optical Fiber Disconnect Switch"
+      }
+    }
+  },
+  "power_and_thermal_constants": {
+    "btu_per_watt_hour": 3.412142,
+    "titanium_psu_efficiency_percentage": 96.0,
+    "power_factor": 0.98,
+    "commercial_kwh_rate_usd": 0.12
+  }
+}

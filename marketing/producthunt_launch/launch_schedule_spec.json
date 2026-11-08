@@ -1,0 +1,35 @@
+{
+  "target_day_of_week": "Tuesday",
+  "launch_window_pt": "12:01 AM PT (07:01 UTC)",
+  "rationale": "Tuesday 12:01 AM PT captures full 24-hour Silicon Valley voting window with maximum executive traffic.",
+  "hourly_milestones": [
+    {
+      "hour_pt": "12:01 AM",
+      "action": "Submit launch payload, publish Maker's First Comment, alert initial supporter ring"
+    },
+    {
+      "hour_pt": "03:00 AM",
+      "action": "European engineering leads wake up; engage initial EU community feedback"
+    },
+    {
+      "hour_pt": "06:00 AM",
+      "action": "US East Coast tech workers come online; syndicate to Hacker News and Tech Twitter"
+    },
+    {
+      "hour_pt": "09:00 AM",
+      "action": "San Francisco / Silicon Valley peak morning commute; monitor upvote velocity and respond within 5 mins"
+    },
+    {
+      "hour_pt": "12:00 PM",
+      "action": "Midday Product Hunt leaderboard check; deploy high-gravity discussion hooks on trending comments"
+    },
+    {
+      "hour_pt": "04:00 PM",
+      "action": "Afternoon Pacific surge; share milestone update (#1 Product of the Day sprint)"
+    },
+    {
+      "hour_pt": "11:59 PM",
+      "action": "Launch day closes; export final leaderboard analytics and archive supporter conversions"
+    }
+  ]
+}

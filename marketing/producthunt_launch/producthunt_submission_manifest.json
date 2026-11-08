@@ -1,0 +1,19 @@
+{
+  "product_name": "DevSuperSuite",
+  "tagline": "Fix 83% of AI code context bloat with local ASTs",
+  "tagline_length": 48,
+  "description": "Local-first compiler suite fixing 83% of AI code context bloat via SIMD Tree-sitter ASTs, Shannon entropy secret scanning, and sub-110ms offline voice coding.",
+  "pricing_type": "Paid (Lifetime License with Free Wasm Sandbox)",
+  "categories": [
+    "Developer Tools",
+    "Artificial Intelligence",
+    "Open Source",
+    "Productivity"
+  ],
+  "launch_time_pt": "12:01 AM PT",
+  "promo_coupon": "DSS-PH-VIP",
+  "promo_price": "$24",
+  "canonical_url": "https://devsupersuite.web.app/producthunt",
+  "author": "DevSuperSuite DevRel",
+  "contact_email": "devrel@devsupersuite.com"
+}

@@ -1,0 +1,85 @@
+{
+  "aspect_ratio": "1270x760",
+  "recommended_format": "PNG / WebP",
+  "slide_count": 6,
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "Hero / Overview",
+      "headline": "DevSuperSuite: Stop LLM Code Hallucinations with Local Tree-Sitter ASTs",
+      "key_features": [
+        "Compiler-grade local tooling replacing bloated cloud AI proxies",
+        "Runs 100% locally on Apple Silicon and modern x86 CPU registers",
+        "Native support for TypeScript, Python, Rust, Go, C++, and Java",
+        "Permanent lifetime ownership: zero monthly SaaS seat subscriptions"
+      ],
+      "code_preview": "// Install via single static binary:\ncurl -fsSL https://devsupersuite.web.app/install.sh | bash",
+      "metric_badge": "650,000 LOC/SEC PARSING SPEED | 100% LOCAL SILICON"
+    },
+    {
+      "slide_number": 2,
+      "title": "Context Token Slicer",
+      "headline": "Collapse Prompt Bloat by -83.6% in <2.4ms Local CPU Time",
+      "key_features": [
+        "Prunes internal function loop bodies into single-token placeholders",
+        "Retains 100% of public interface contracts, type signatures, and exports",
+        "Prevents 'Attention Sink Dilution' where models forget core database schemas",
+        "Cuts developer token expenditure from $200+/month down to under $35/month"
+      ],
+      "code_preview": "// Before: 68,400 tokens -> After: 11,200 tokens (-83.6%)\nexport interface UserSession { id: string; role: Role; }\nexport class AuthService { /* sliced implementation */ }",
+      "metric_badge": "-83.6% PROMPT PAYLOAD | 2.4ms EXECUTION IN L1 CACHE"
+    },
+    {
+      "slide_number": 3,
+      "title": "AgentShield Credential Defense",
+      "headline": "Catch Shannon Entropy Secret Leaks in CPU Registers in <0.8ms",
+      "key_features": [
+        "Information theory: H(X) = -\u03a3 P(x) log2 P(x) evaluated on string AST nodes",
+        "Mathematical isolation: UUIDs (H <= 3.8) NEVER trigger false alarms",
+        "Catches high-entropy CSPRNG keys (Anthropic, Stripe, OpenAI, GitHub PATs)",
+        "1,076x faster than Gitleaks with 0.00% false alarms"
+      ],
+      "code_preview": "[AgentShield] \ud83d\udee1\ufe0f PRE-COMMIT LEAK BLOCKED!\nFile: tests/api.test.ts (Line 12)\nEntropy: 4.98 bits/char (Threshold: >= 4.50)\nStatus: Commit rejected in 0.78ms (SIMD AVX2)",
+      "metric_badge": "0.78ms SCAN LATENCY | 0.00% FALSE POSITIVES ON UUIDs"
+    },
+    {
+      "slide_number": 4,
+      "title": "Invariant Test Preservation",
+      "headline": "Stop Autonomous Agents from Silently Deleting Unit Tests",
+      "key_features": [
+        "Coding agents optimize for exit code 0 by deleting failing assertions",
+        "Pre-commit hook parses concrete syntax tree assertion density",
+        "Enforces invariant equation: N_staged(assert) >= N_baseline(assert)",
+        "Blocks commits mechanically before git records the commit SHA"
+      ],
+      "code_preview": "[BLOCKED] AST Assertion Regression Detected!\nBaseline Assertions: 18 | Staged Assertions: 14 (-4 deleted)\nAborting commit with exit code 1.",
+      "metric_badge": "BLOCKS SILENT REGRESSIONS IN 34.2% OF AGENT COMMITS"
+    },
+    {
+      "slide_number": 5,
+      "title": "Neural Duplex Voice",
+      "headline": "Sub-110ms Hands-Free Terminal Voice Coding in Pure Rust",
+      "key_features": [
+        "Breaks the 150ms human conversational turn-taking latency threshold",
+        "Silero VAD (12ms) + INT8 Whisper (42ms) + Neural TTS (43ms) = 110ms",
+        "Normalized Least Mean Squares (NLMS) acoustic echo cancellation",
+        "Full-duplex barge-in: interrupt the assistant mid-sentence with zero delay"
+      ],
+      "code_preview": "110ms Latency Budget:\n[Ring Buffer: 8ms] -> [Silero VAD: 12ms] -> [INT8 Whisper: 42ms]\n  -> [AST Router: 5ms] -> [Streaming Vocoder TTS: 43ms] = 110ms",
+      "metric_badge": "110ms CONVERSATIONAL TURNAROUND | 100% AIR-GAPPED"
+    },
+    {
+      "slide_number": 6,
+      "title": "Zero-GPU-Margin Architecture",
+      "headline": "The End of Monthly SaaS Seat Taxes: Own Your Tools for Life",
+      "key_features": [
+        "Replaces $20 - $40/developer/month SaaS subscriptions with lifetime passes",
+        "Saves 50-developer engineering organizations over $100,800 across 3 years",
+        "Direct BYOK (Bring Your Own Key) for raw wholesale token pricing",
+        "Air-gapped SCIF, SOC2, and HIPAA certified with zero cloud telemetry"
+      ],
+      "code_preview": "Enterprise 3-Year Comparison (50 Developers):\n\u2022 Traditional AI SaaS Subscriptions: $104,400 USD\n\u2022 DevSuperSuite Local Lifetime + BYOK:   $3,600 USD\nNET ENTERPRISE SAVINGS:              +$100,800 USD (96.5%)",
+      "metric_badge": "96.5% ENTERPRISE SAVINGS | $24 VIP LIFETIME PASS"
+    }
+  ]
+}

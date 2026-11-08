@@ -468,10 +468,10 @@ flowchart TD
 
 All DevSuperSuite hardware appliances employ **80 PLUS Titanium** certified power supplies operating at **96.0% efficiency** at 50% load:
 
-- **Thermal Dissipation Equation:**
-  $$\text{BTU/hr} = \text{Watts} \times 3.412142$$
+- **Thermal Dissipation Formula:**
+  `BTU/hr = Watts * 3.412142`
 - **Electrical Current Draw (Amperes):**
-  $$I = \frac{P}{V \times \text{PF}} \quad (\text{Power Factor PF} = 0.98)$$
+  `Amperes = Watts / (Voltage * Power Factor)` (where Power Factor PF = 0.98)
 
 ### Electrical PDU Planning Table:
 - **1U Standalone Appliance (450W typical / 750W peak):**
