@@ -1,0 +1,33 @@
+name: 'DevSuperSuite Invariant & Entropy Gate'
+description: 'Deterministic AST context slicing, Shannon entropy secret scanning, and test suite invariant gates in CI/CD.'
+author: 'DevSuperSuite Ecosystem Engineering'
+inputs:
+  entropy-threshold:
+    description: 'Shannon entropy threshold (bits/character) to flag cryptographic secrets'
+    required: false
+    default: '4.5'
+  enforce-test-invariants:
+    description: 'Reject commits where autonomous agents delete or weaken unit tests'
+    required: false
+    default: 'true'
+  fail-on-regression:
+    description: 'Fail CI step with exit code 1 if invariants are violated'
+    required: false
+    default: 'true'
+runs:
+  using: 'composite'
+  steps:
+    - name: Run DevSuperSuite Invariant Gate
+      shell: bash
+      run: |
+        echo "::group::DevSuperSuite Invariant & Secret Gate"
+        echo "Running deterministic pre-commit AST verification..."
+        curl -sSL https://devsupersuite.web.app/releases/v1.0.0/install.sh | bash
+        devsupersuite check \
+          --entropy-threshold ${{ inputs.entropy-threshold }} \
+          --enforce-test-invariants ${{ inputs.enforce-test-invariants }} \
+          --ci
+        echo "::endgroup::"
+branding:
+  icon: 'shield'
+  color: 'blue'

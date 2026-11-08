@@ -3,7 +3,7 @@
 **Report Reference**: `DSS-PEN-AUDIT-20261108-V1`  
 **Evaluation Scope**: OmniKernel 5.0 AST Slicer, AgentShield Pre-Commit Hook, Invariant Guard  
 **Auditing Entity**: Directorate of QA Automation & Office of the Chief Security Compliance Officer (CSCO)  
-**Execution Timestamp**: `2026-11-08T10:22:26.709309+00:00`  
+**Execution Timestamp**: `2026-11-08T10:46:13.306775+00:00`  
 **Test Suite Pass Rate**: **`100.0%` (6/6 Fuzzing Gates Cleared)**  
 **Overall Threat Posture**: **HARDENED / ZERO UNMITIGATED VULNERABILITIES**  
 **Classification**: Enterprise Public Security Attestation  
@@ -36,10 +36,10 @@ Compliance Alignment:                         OWASP ASVS v4.0 / NIST SP 800-115
 
 | Test ID | Scenario Description | Status | Latency | CVSS v3.1 | Evaluated Mitigation & Invariant Defense |
 | :--- | :--- | :---: | :---: | :---: | :--- |
-| `FUZZ-01-RECURSION-BOMB` | **AST Recursion Bomb Resilience (500 Levels)** | `PASS` | `0.23ms` | `None (0.0)` | Python AST recursion ceiling and memory safety bounds enforced. |
-| `FUZZ-02-UNICODE-HOMOGLYPH` | **Zero-Width Space & Unicode Homoglyph Sanitization** | `PASS` | `0.02ms` | `None (0.0)` | OmniKernel AST pre-processor strips non-printable Unicode characters. |
+| `FUZZ-01-RECURSION-BOMB` | **AST Recursion Bomb Resilience (500 Levels)** | `PASS` | `0.19ms` | `None (0.0)` | Python AST recursion ceiling and memory safety bounds enforced. |
+| `FUZZ-02-UNICODE-HOMOGLYPH` | **Zero-Width Space & Unicode Homoglyph Sanitization** | `PASS` | `0.01ms` | `None (0.0)` | OmniKernel AST pre-processor strips non-printable Unicode characters. |
 | `FUZZ-03-ENTROPY-BENCHMARK` | **Shannon Entropy Tripwire Benchmark (H > 4.5)** | `PASS` | `0.04ms` | `None (0.0)` | AgentShield Shannon entropy thresholding ($H \ge 4.2$) reliably detects mutated keys. |
-| `FUZZ-04-REDOS-RESILIENCE` | **Regular Expression Denial of Service (ReDoS) Resilience** | `PASS` | `0.13ms` | `None (0.0)` | Linear DFA-compatible regex expressions without ambiguous nested quantifiers. |
+| `FUZZ-04-REDOS-RESILIENCE` | **Regular Expression Denial of Service (ReDoS) Resilience** | `PASS` | `0.15ms` | `None (0.0)` | Linear DFA-compatible regex expressions without ambiguous nested quantifiers. |
 | `EMUL-01-ROGUE-AGENT-TAMPERING` | **Rogue Autonomous Agent Invariant Bypass Emulation** | `PASS` | `0.01ms` | `None (0.0)` | Non-bypassable pre-commit & CI invariant gates reject destructive diffs. |
 | `EMUL-02-MEMORY-ZEROIZATION` | **Ephemeral Memory Dump Inspection & Zeroization (DoD 5220.22-M)** | `PASS` | `0.01ms` | `None (0.0)` | Volatile tmpfs RAM-disks crypto-shredded post-execution per NIST SP 800-88. |
 

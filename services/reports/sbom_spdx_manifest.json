@@ -1,0 +1,280 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "DevSuperSuite-agent-commerce-SPDX-SBOM",
+  "documentNamespace": "https://devsupersuite.com/spdx/agent-commerce/v2.4.0/953d8c44-c301-41a5-aeb5-c777e94681f9",
+  "creationInfo": {
+    "created": "2026-11-08T10:46:34.550964+00:00",
+    "creators": [
+      "Organization: DevSuperSuite Tech Services",
+      "Tool: DevSuperSuite-SPDX-Engine-2.0",
+      "Person: Security Compliance Officer (infosec@devsupersuite.com)"
+    ],
+    "licenseListVersion": "3.23"
+  },
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Application-Root",
+      "name": "agent-commerce",
+      "versionInfo": "2.4.0",
+      "downloadLocation": "https://devsupersuite.com/releases/agent-commerce-2.4.0.tar.gz",
+      "filesAnalyzed": false,
+      "supplier": "Organization: DevSuperSuite Tech Services",
+      "originator": "Organization: DevSuperSuite Tech Services",
+      "packageLicenseConcluded": "Proprietary",
+      "packageLicenseDeclared": "Proprietary",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4f9a03977a4c7e63b6528d22ef14dbf556b4618e7d7f9c8d506925fcbb155986"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:generic/agent-commerce@2.4.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-flask-1",
+      "name": "flask",
+      "versionInfo": "3.0.3",
+      "downloadLocation": "https://pypi.org/project/flask/3.0.3/",
+      "filesAnalyzed": false,
+      "supplier": "Organization: Pallets Projects",
+      "packageLicenseConcluded": "BSD-3-Clause",
+      "packageLicenseDeclared": "BSD-3-Clause",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4b68ff5287f3b5ad083c27e8a939e0eb8627bcbfdb40e3a6c117070da827a4d6"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/flask@3.0.3"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "cpe23Type",
+          "referenceLocator": "cpe:2.3:a:palletsprojects:flask:3.0.3:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-pydantic-2",
+      "name": "pydantic",
+      "versionInfo": "2.7.4",
+      "downloadLocation": "https://pypi.org/project/pydantic/2.7.4/",
+      "filesAnalyzed": false,
+      "supplier": "Organization: Pydantic Services Inc.",
+      "packageLicenseConcluded": "MIT",
+      "packageLicenseDeclared": "MIT",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "18cfc75908cfd6006f1d2e1c944415893d56a73c1c73ecfe9242d93e15779c4a"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/pydantic@2.7.4"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "cpe23Type",
+          "referenceLocator": "cpe:2.3:a:pydantic:pydantic:2.7.4:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-cryptography-3",
+      "name": "cryptography",
+      "versionInfo": "42.0.8",
+      "downloadLocation": "https://pypi.org/project/cryptography/42.0.8/",
+      "filesAnalyzed": false,
+      "supplier": "Organization: Python Cryptographic Authority",
+      "packageLicenseConcluded": "Apache-2.0",
+      "packageLicenseDeclared": "Apache-2.0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8a04918e7d7f9c8d506925fcbb1559868f11a87754ffb49e6f0b4d4dc0a6a4e3"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/cryptography@42.0.8"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "cpe23Type",
+          "referenceLocator": "cpe:2.3:a:cryptography_authority:cryptography:42.0.8:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-requests-4",
+      "name": "requests",
+      "versionInfo": "2.32.3",
+      "downloadLocation": "https://pypi.org/project/requests/2.32.3/",
+      "filesAnalyzed": false,
+      "supplier": "Organization: PSF Requests Team",
+      "packageLicenseConcluded": "Apache-2.0",
+      "packageLicenseDeclared": "Apache-2.0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "563914a513d2f92c007eab56359d60272fa18b6bfa8d9f2023348039f42b604d"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/requests@2.32.3"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "cpe23Type",
+          "referenceLocator": "cpe:2.3:a:python-requests:requests:2.32.3:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-pytest-5",
+      "name": "pytest",
+      "versionInfo": "9.2.0",
+      "downloadLocation": "https://pypi.org/project/pytest/9.2.0/",
+      "filesAnalyzed": false,
+      "supplier": "Organization: Pytest Development Team",
+      "packageLicenseConcluded": "MIT",
+      "packageLicenseDeclared": "MIT",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "40ce3818e87e146efce55f28b495251a34a8174f884a44b1c2b5bc1a6c1170b2"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/pytest@9.2.0"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "cpe23Type",
+          "referenceLocator": "cpe:2.3:a:pytest:pytest:9.2.0:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-numpy-6",
+      "name": "numpy",
+      "versionInfo": "1.26.4",
+      "downloadLocation": "https://pypi.org/project/numpy/1.26.4/",
+      "filesAnalyzed": false,
+      "supplier": "Organization: NumPy Developers",
+      "packageLicenseConcluded": "BSD-3-Clause",
+      "packageLicenseDeclared": "BSD-3-Clause",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "df7a64112ce8d937a28e930db18c64bb52b02888cf3e2840049e29a2879cfdf4"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/numpy@1.26.4"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "cpe23Type",
+          "referenceLocator": "cpe:2.3:a:numpy:numpy:1.26.4:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-google-genai-7",
+      "name": "google-genai",
+      "versionInfo": "1.0.0",
+      "downloadLocation": "https://pypi.org/project/google-genai/1.0.0/",
+      "filesAnalyzed": false,
+      "supplier": "Organization: Google LLC",
+      "packageLicenseConcluded": "Apache-2.0",
+      "packageLicenseDeclared": "Apache-2.0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/google-genai@1.0.0"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "cpe23Type",
+          "referenceLocator": "cpe:2.3:a:google:google-genai:1.0.0:*:*:*:*:*:*:*"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "SPDXRef-Application-Root",
+      "relationshipType": "DESCRIBES"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-Root",
+      "relatedSpdxElement": "SPDXRef-Package-flask-1",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-Root",
+      "relatedSpdxElement": "SPDXRef-Package-pydantic-2",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-Root",
+      "relatedSpdxElement": "SPDXRef-Package-cryptography-3",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-Root",
+      "relatedSpdxElement": "SPDXRef-Package-requests-4",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-Root",
+      "relatedSpdxElement": "SPDXRef-Package-pytest-5",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-Root",
+      "relatedSpdxElement": "SPDXRef-Package-numpy-6",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-Root",
+      "relatedSpdxElement": "SPDXRef-Package-google-genai-7",
+      "relationshipType": "DEPENDS_ON"
+    }
+  ]
+}

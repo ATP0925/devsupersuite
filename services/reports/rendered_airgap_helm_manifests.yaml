@@ -1,0 +1,244 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# DevSuperSuite Rendered Sovereign Air-Gapped Kubernetes Manifest Suite
+# Architecture: DoD SCIF / Air-Gap Zero-Egress Deployment
+# Customer Organization: Defense Prime SCIF Facility
+# Generated At: 2026-11-08T10:24:49.545107+00:00
+# Classification: RESTRICTED - SCIF-IL6 ENCLAVE READY
+# ─────────────────────────────────────────────────────────────────────────────
+---
+# Source: devsupersuite/templates/networkpolicy-zero-egress.yaml
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: devsupersuite-zero-egress
+  namespace: devsupersuite-scif
+  labels:
+    app.kubernetes.io/name: devsupersuite
+    devsupersuite.com/policy: airgap-zero-egress
+spec:
+  podSelector:
+    matchLabels:
+      app.kubernetes.io/name: devsupersuite
+  policyTypes:
+    - Ingress
+    - Egress
+  ingress:
+    - from:
+        - podSelector: {}
+      ports:
+        - protocol: TCP
+          port: 8443
+        - protocol: TCP
+          port: 8080
+    - from:
+        - ipBlock:
+            cidr: 10.0.0.0/8
+        - ipBlock:
+            cidr: 172.16.0.0/12
+        - ipBlock:
+            cidr: 192.168.0.0/16
+      ports:
+        - protocol: TCP
+          port: 8443
+        - protocol: TCP
+          port: 8080
+  egress:
+    - to:
+        - podSelector: {}
+      ports:
+        - protocol: TCP
+          port: 8443
+        - protocol: TCP
+          port: 8080
+    - to:
+        - namespaceSelector:
+            matchLabels:
+              kubernetes.io/metadata.name: kube-system
+          podSelector:
+            matchLabels:
+              k8s-app: kube-dns
+      ports:
+        - protocol: UDP
+          port: 53
+        - protocol: TCP
+          port: 53
+---
+# Source: devsupersuite/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devsupersuite
+  namespace: devsupersuite-scif
+  labels:
+    app.kubernetes.io/name: devsupersuite
+    devsupersuite.com/tier: scif-airgap
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: devsupersuite
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: devsupersuite
+      annotations:
+        seccomp.security.alpha.kubernetes.io/pod: "runtime/default"
+        devsupersuite.com/zero-egress: "enforced"
+    spec:
+      serviceAccountName: devsupersuite-workload-sa
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 10001
+        runAsGroup: 10001
+        fsGroup: 10001
+        seccompProfile:
+          type: RuntimeDefault
+      containers:
+        - name: devsupersuite-core
+          image: "sovereign-registry.internal.corp/devsupersuite/core-proxy:v2.5.0-LTS"
+          imagePullPolicy: IfNotPresent
+          securityContext:
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            runAsNonRoot: true
+            runAsUser: 10001
+            runAsGroup: 10001
+            capabilities:
+              drop:
+                - ALL
+          ports:
+            - name: https
+              containerPort: 8443
+              protocol: TCP
+            - name: http
+              containerPort: 8080
+              protocol: TCP
+          env:
+            - name: DEVSUPERSUITE_AIRGAP_MODE
+              value: "true"
+            - name: ZERO_EGRESS_ENFORCED
+              value: "true"
+            - name: SHANNON_ENTROPY_THRESHOLD
+              value: "3.0"
+            - name: TARGET_REDUCTION_RATIO_PCT
+              value: "70.0"
+            - name: TMPDIR
+              value: "/tmp"
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: 8443
+              scheme: HTTPS
+            initialDelaySeconds: 15
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /readyz
+              port: 8443
+              scheme: HTTPS
+            initialDelaySeconds: 5
+            periodSeconds: 5
+          resources:
+            requests:
+              cpu: 1000m
+              memory: 2Gi
+            limits:
+              cpu: 4000m
+              memory: 8Gi
+          volumeMounts:
+            - name: tmp-dir
+              mountPath: /tmp
+      volumes:
+        - name: tmp-dir
+          emptyDir: {}
+---
+# Source: devsupersuite/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: devsupersuite
+  namespace: devsupersuite-scif
+  labels:
+    app.kubernetes.io/name: devsupersuite
+    devsupersuite.com/tier: scif-airgap
+spec:
+  type: ClusterIP
+  ports:
+    - port: 8443
+      targetPort: https
+      protocol: TCP
+      name: https
+    - port: 8080
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app.kubernetes.io/name: devsupersuite
+---
+# Source: devsupersuite/templates/ingress-mtls.yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: devsupersuite-ingress-mtls
+  namespace: devsupersuite-scif
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
+    nginx.ingress.kubernetes.io/auth-tls-verify-client: "on"
+    nginx.ingress.kubernetes.io/auth-tls-secret: "devsupersuite-scif-ca-bundle"
+    nginx.ingress.kubernetes.io/auth-tls-verify-depth: "3"
+spec:
+  ingressClassName: nginx-internal
+  tls:
+    - secretName: devsupersuite-scif-server-tls
+      hosts:
+        - devsupersuite.scif.internal.corp
+  rules:
+    - host: devsupersuite.scif.internal.corp
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: devsupersuite
+                port:
+                  number: 8443
+---
+# Source: devsupersuite/templates/pdb.yaml
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: devsupersuite-pdb
+  namespace: devsupersuite-scif
+spec:
+  minAvailable: 2
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: devsupersuite
+---
+# Source: devsupersuite/templates/hpa.yaml
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: devsupersuite-hpa
+  namespace: devsupersuite-scif
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: devsupersuite
+  minReplicas: 3
+  maxReplicas: 10
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        target:
+          type: Utilization
+          averageUtilization: 75

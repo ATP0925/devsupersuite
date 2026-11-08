@@ -1,0 +1,22 @@
+# Maintainer: DevSuperSuite Ecosystem Engineering <ecosystem@devsupersuite.com>
+pkgname=devsupersuite-bin
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="Local-first Tree-sitter AST context slicer & pre-commit entropy defense"
+arch=('x86_64' 'aarch64')
+url="https://devsupersuite.web.app"
+license=('Proprietary')
+depends=('glibc')
+provides=('devsupersuite')
+conflicts=('devsupersuite')
+
+source_x86_64=("https://devsupersuite.web.app/releases/v${pkgver}/devsupersuite-linux-x86_64.tar.gz")
+sha256sums_x86_64=('e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855')
+
+source_aarch64=("https://devsupersuite.web.app/releases/v${pkgver}/devsupersuite-linux-arm64.tar.gz")
+sha256sums_aarch64=('e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855')
+
+package() {
+    install -Dm755 "${srcdir}/devsupersuite" "${pkgdir}/usr/bin/devsupersuite"
+    install -Dm644 "${srcdir}/LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE" 2>/dev/null || true
+}

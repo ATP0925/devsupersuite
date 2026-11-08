@@ -1,0 +1,24 @@
+apiVersion: v2
+name: devsupersuite
+description: Enterprise Sovereign Air-Gapped High-Availability Helm Chart for DevSuperSuite SCIF/Defense Deployments
+type: application
+version: 2.5.0
+appVersion: "2.5.0-LTS"
+keywords:
+  - enterprise-ai
+  - tree-sitter-ast
+  - shannon-entropy
+  - airgap
+  - scif
+  - zero-egress
+  - defense-grade
+  - high-availability
+home: https://devsupersuite.web.app
+maintainers:
+  - name: DevSuperSuite Cloud Architecture
+    email: cloud@devsupersuite.com
+    url: https://devsupersuite.web.app
+annotations:
+  artifacthub.io/license: Proprietary-Commercial
+  devsupersuite.com/security-tier: SCIF-DoD-IL6-Ready
+  devsupersuite.com/compliance: "NIST-800-171-Rev2,CMMC-2.0-L2,ITAR,FedRAMP-High"

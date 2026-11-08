@@ -1,0 +1,109 @@
+{
+  "payloadType": "application/vnd.in-toto+json",
+  "payload": "eyJfdHlwZSI6ICJodHRwczovL2luLXRvdG8uaW8vU3RhdGVtZW50L3YwLjEiLCAicHJlZGljYXRlIjogeyJidWlsZENvbmZpZyI6IHsiZXBoZW1lcmFsX3NhbmRib3giOiB0cnVlLCAiaGVybWV0aWNfYnVpbGQiOiB0cnVlLCAiaW1tdXRhYmxlX2RlcGVuZGVuY2llcyI6IHRydWUsICJpc29sYXRlZF92aXJ0dWFsX25ldHdvcmsiOiB0cnVlfSwgImJ1aWxkVHlwZSI6ICJodHRwczovL2RldnN1cGVyc3VpdGUuY29tL2J1aWxkdHlwZXMvc292ZXJlaWduLWNvbnRhaW5lci92MSIsICJidWlsZGVyIjogeyJpZCI6ICJodHRwczovL2RldnN1cGVyc3VpdGUuY29tL2J1aWxkZXJzL2hlcm1ldGljLWNpQHYzIn0sICJpbnZvY2F0aW9uIjogeyJjb25maWdTb3VyY2UiOiB7ImRpZ2VzdCI6IHsic2hhMSI6ICI3YTNiNDlmOTI4ZTFiNjRkMTJjOGEzZjllMGViODYyN2JjYmZkYjQwIn0sICJlbnRyeVBvaW50IjogInNjcmlwdHMvYnVpbGRfcmVsZWFzZV9wYWNrYWdlLnNoIiwgInVyaSI6ICJnaXQraHR0cHM6Ly9naXRodWIuY29tL2RldnN1cGVyc3VpdGUvYWdlbnQtY29tbWVyY2UuZ2l0In0sICJlbnZpcm9ubWVudCI6IHsiYXJjaCI6ICJ4ODZfNjQiLCAiY29tcGlsZXIiOiAicHl0aG9uLTMuMTQtZGlzdHJvbGVzcyIsICJvcyI6ICJMaW51eC1Db250YWluZXItQWxwaW5lLTMuMTkifSwgInBhcmFtZXRlcnMiOiB7Imhlcm1ldGljIjogdHJ1ZSwgIm5ldHdvcmtfaXNvbGF0ZWQiOiB0cnVlLCAicmVwcm9kdWNpYmxlX2RpZ2VzdCI6IHRydWUsICJzbHNhX2xldmVsIjogM319LCAibWF0ZXJpYWxzIjogW3siZGlnZXN0IjogeyJzaGEyNTYiOiAiNGI2OGZmNTI4N2YzYjVhZDA4M2MyN2U4YTkzOWUwZWI4NjI3YmNiZmRiNDBlM2E2YzExNzA3MGRhODI3YTRkNiJ9LCAidXJpIjogInBrZzpweXBpL2ZsYXNrQDMuMC4zIn0sIHsiZGlnZXN0IjogeyJzaGEyNTYiOiAiMThjZmM3NTkwOGNmZDYwMDZmMWQyZTFjOTQ0NDE1ODkzZDU2YTczYzFjNzNlY2ZlOTI0MmQ5M2UxNTc3OWM0YSJ9LCAidXJpIjogInBrZzpweXBpL3B5ZGFudGljQDIuNy40In0sIHsiZGlnZXN0IjogeyJzaGEyNTYiOiAiOGEwNDkxOGU3ZDdmOWM4ZDUwNjkyNWZjYmIxNTU5ODY4ZjExYTg3NzU0ZmZiNDllNmYwYjRkNGRjMGE2YTRlMyJ9LCAidXJpIjogInBrZzpweXBpL2NyeXB0b2dyYXBoeUA0Mi4wLjgifSwgeyJkaWdlc3QiOiB7InNoYTI1NiI6ICI1NjM5MTRhNTEzZDJmOTJjMDA3ZWFiNTYzNTlkNjAyNzJmYTE4YjZiZmE4ZDlmMjAyMzM0ODAzOWY0MmI2MDRkIn0sICJ1cmkiOiAicGtnOnB5cGkvcmVxdWVzdHNAMi4zMi4zIn0sIHsiZGlnZXN0IjogeyJzaGEyNTYiOiAiNDBjZTM4MThlODdlMTQ2ZWZjZTU1ZjI4YjQ5NTI1MWEzNGE4MTc0Zjg4NGE0NGIxYzJiNWJjMWE2YzExNzBiMiJ9LCAidXJpIjogInBrZzpweXBpL3B5dGVzdEA5LjIuMCJ9LCB7ImRpZ2VzdCI6IHsic2hhMjU2IjogImRmN2E2NDExMmNlOGQ5MzdhMjhlOTMwZGIxOGM2NGJiNTJiMDI4ODhjZjNlMjg0MDA0OWUyOWEyODc5Y2ZkZjQifSwgInVyaSI6ICJwa2c6cHlwaS9udW1weUAxLjI2LjQifSwgeyJkaWdlc3QiOiB7InNoYTI1NiI6ICJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0sICJ1cmkiOiAicGtnOnB5cGkvZ29vZ2xlLWdlbmFpQDEuMC4wIn1dLCAibWV0YWRhdGEiOiB7ImJ1aWxkRmluaXNoZWRPbiI6ICIyMDI2LTExLTA4VDEwOjQ2OjM0LjU1MTAxOCswMDowMCIsICJidWlsZEludm9jYXRpb25JZCI6ICJidWlsZC1ydW4tNzMxMDNlYTMtZjcwYy00NDBlLTk2MmQtZDM2NDFlYjcwNjljIiwgImJ1aWxkU3RhcnRlZE9uIjogIjIwMjYtMTEtMDhUMTA6NDY6MzQuNTUxMDE4KzAwOjAwIiwgImNvbXBsZXRlbmVzcyI6IHsiZW52aXJvbm1lbnQiOiB0cnVlLCAibWF0ZXJpYWxzIjogdHJ1ZSwgInBhcmFtZXRlcnMiOiB0cnVlfSwgInJlcHJvZHVjaWJsZSI6IHRydWV9fSwgInByZWRpY2F0ZVR5cGUiOiAiaHR0cHM6Ly9zbHNhLmRldi9wcm92ZW5hbmNlL3YwLjIiLCAic3ViamVjdCI6IFt7ImRpZ2VzdCI6IHsic2hhMjU2IjogIjRmOWEwMzk3N2E0YzdlNjNiNjUyOGQyMmVmMTRkYmY1NTZiNDYxOGU3ZDdmOWM4ZDUwNjkyNWZjYmIxNTU5ODYifSwgIm5hbWUiOiAiYWdlbnQtY29tbWVyY2UifV19",
+  "signatures": [
+    {
+      "keyid": "KID-ED25519-DEVSS-SLSA-ROOT-01",
+      "sig": "SIG-ED25519-2ca9c1ab503335da57f43e86ed78fa30"
+    }
+  ],
+  "_decoded_statement": {
+    "_type": "https://in-toto.io/Statement/v0.1",
+    "subject": [
+      {
+        "name": "agent-commerce",
+        "digest": {
+          "sha256": "4f9a03977a4c7e63b6528d22ef14dbf556b4618e7d7f9c8d506925fcbb155986"
+        }
+      }
+    ],
+    "predicateType": "https://slsa.dev/provenance/v0.2",
+    "predicate": {
+      "builder": {
+        "id": "https://devsupersuite.com/builders/hermetic-ci@v3"
+      },
+      "buildType": "https://devsupersuite.com/buildtypes/sovereign-container/v1",
+      "invocation": {
+        "configSource": {
+          "uri": "git+https://github.com/devsupersuite/agent-commerce.git",
+          "digest": {
+            "sha1": "7a3b49f928e1b64d12c8a3f9e0eb8627bcbfdb40"
+          },
+          "entryPoint": "scripts/build_release_package.sh"
+        },
+        "parameters": {
+          "hermetic": true,
+          "network_isolated": true,
+          "reproducible_digest": true,
+          "slsa_level": 3
+        },
+        "environment": {
+          "arch": "x86_64",
+          "os": "Linux-Container-Alpine-3.19",
+          "compiler": "python-3.14-distroless"
+        }
+      },
+      "buildConfig": {
+        "hermetic_build": true,
+        "ephemeral_sandbox": true,
+        "isolated_virtual_network": true,
+        "immutable_dependencies": true
+      },
+      "metadata": {
+        "buildInvocationId": "build-run-73103ea3-f70c-440e-962d-d3641eb7069c",
+        "buildStartedOn": "2026-11-08T10:46:34.551018+00:00",
+        "buildFinishedOn": "2026-11-08T10:46:34.551018+00:00",
+        "completeness": {
+          "parameters": true,
+          "environment": true,
+          "materials": true
+        },
+        "reproducible": true
+      },
+      "materials": [
+        {
+          "uri": "pkg:pypi/flask@3.0.3",
+          "digest": {
+            "sha256": "4b68ff5287f3b5ad083c27e8a939e0eb8627bcbfdb40e3a6c117070da827a4d6"
+          }
+        },
+        {
+          "uri": "pkg:pypi/pydantic@2.7.4",
+          "digest": {
+            "sha256": "18cfc75908cfd6006f1d2e1c944415893d56a73c1c73ecfe9242d93e15779c4a"
+          }
+        },
+        {
+          "uri": "pkg:pypi/cryptography@42.0.8",
+          "digest": {
+            "sha256": "8a04918e7d7f9c8d506925fcbb1559868f11a87754ffb49e6f0b4d4dc0a6a4e3"
+          }
+        },
+        {
+          "uri": "pkg:pypi/requests@2.32.3",
+          "digest": {
+            "sha256": "563914a513d2f92c007eab56359d60272fa18b6bfa8d9f2023348039f42b604d"
+          }
+        },
+        {
+          "uri": "pkg:pypi/pytest@9.2.0",
+          "digest": {
+            "sha256": "40ce3818e87e146efce55f28b495251a34a8174f884a44b1c2b5bc1a6c1170b2"
+          }
+        },
+        {
+          "uri": "pkg:pypi/numpy@1.26.4",
+          "digest": {
+            "sha256": "df7a64112ce8d937a28e930db18c64bb52b02888cf3e2840049e29a2879cfdf4"
+          }
+        },
+        {
+          "uri": "pkg:pypi/google-genai@1.0.0",
+          "digest": {
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        }
+      ]
+    }
+  }
+}

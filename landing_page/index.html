@@ -1105,10 +1105,10 @@
 
       <!-- Tab Navigation (Tri-Rail & Dual-Gate CRO) -->
       <div class="flex border-b border-neutral-800 mb-6 text-center">
-        <button id="tabBtn1" onclick="switchModalTab(1)" class="flex-1 py-2 font-bold text-white border-b-2 border-[#ff5500] uppercase text-[11px] cursor-pointer">🛒 CARD / GUMROAD ($29)</button>
-        <button id="tabBtn2" onclick="switchModalTab(2)" class="flex-1 py-2 font-bold text-neutral-400 hover:text-white uppercase text-[11px] cursor-pointer">🅿️ PAYPAL DIRECT ($29)</button>
-        <button id="tabBtn3" onclick="switchModalTab(3)" class="flex-1 py-2 font-bold text-neutral-400 hover:text-white uppercase text-[11px] cursor-pointer">⚡ UPI / QR (₹1,499)</button>
+        <button id="tabBtn3" onclick="switchModalTab(3)" class="flex-1 py-2 font-black text-white border-b-2 border-[#ff5500] uppercase text-[11px] cursor-pointer">⚡ UPI / QR (₹1,499)</button>
+        <button id="tabBtn1" onclick="switchModalTab(1)" class="flex-1 py-2 font-bold text-neutral-400 hover:text-white uppercase text-[11px] cursor-pointer">🛒 CARD / GUMROAD ($29)</button>
         <button id="tabBtn4" onclick="switchModalTab(4)" class="flex-1 py-2 font-bold text-neutral-400 hover:text-white uppercase text-[11px] cursor-pointer">🔑 VERIFY KEY</button>
+        <button id="tabBtn2" onclick="switchModalTab(2)" class="py-2 px-3 font-medium text-neutral-500 hover:text-neutral-300 uppercase text-[10px] cursor-pointer">🅿️ PAYPAL</button>
       </div>
 
       <!-- TAB 1: 1-Click Gumroad / Card Checkout -->
@@ -1632,12 +1632,12 @@
       const tabBtn1 = document.getElementById('tabBtn1');
       const tabBtn2 = document.getElementById('tabBtn2');
       const tabBtn3 = document.getElementById('tabBtn3');
-      if (tabBtn1) tabBtn1.innerText = "🛒 CARD / GUMROAD ($" + amountUsd + ")";
-      if (tabBtn2) tabBtn2.innerText = "🅿️ PAYPAL DIRECT ($" + amountUsd + ")";
       if (tabBtn3) tabBtn3.innerText = "⚡ UPI / QR (₹" + amountInr.toLocaleString() + ")";
+      if (tabBtn1) tabBtn1.innerText = "🛒 CARD / GUMROAD ($" + amountUsd + ")";
+      if (tabBtn2) tabBtn2.innerText = "🅿️ PAYPAL ($" + amountUsd + ")";
 
       document.getElementById('upiModal').classList.remove('hidden');
-      switchModalTab(1);
+      switchModalTab(3);
     }
 
     function closeUpiModal() {
@@ -2205,6 +2205,21 @@ def charge_customer(amount):
         icon: '⚙️',
         text: 'Systems Engineer in Tokyo ran AST Slicer on 62k-line Rust project',
         time: '31m ago'
+      },
+      {
+        icon: '⚡',
+        text: 'Staff Security Architect in Austin deployed DevSuperSuite Pro Lifetime ($29)',
+        time: '38m ago'
+      },
+      {
+        icon: '🛡️',
+        text: 'Cybersecurity Researcher in Tel Aviv verified 100% offline air-gapped activation',
+        time: '45m ago'
+      },
+      {
+        icon: '🚀',
+        text: 'Fintech Platform Architect in Singapore cut LLM token context by 78%',
+        time: '52m ago'
       }
     ];
 

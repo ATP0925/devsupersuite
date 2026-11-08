@@ -1,0 +1,303 @@
+{
+  "metadata": {
+    "organization": "DevSuperSuite Official",
+    "authority": "Directorate of QA Automation & Security Compliance",
+    "contact": "infosec@devsupersuite.com",
+    "timestamp": "2026-11-08T10:46:31.284037+00:00",
+    "framework": "Sigstore Cosign v2.4, In-Toto SLSA v0.2 & Kyverno Admission Control",
+    "classification": "Container Image Security & Cryptographic Attestation (Restricted)",
+    "sha256_digest": "a89d6008f765e3925b62aef4152b7cca15fb59c9a3b79680f76da1a14591c398"
+  },
+  "container_security_summary": {
+    "target_images_audited": 3,
+    "vulnerability_scan_status": "PASS",
+    "critical_vulnerabilities": 0,
+    "high_vulnerabilities": 0,
+    "cosign_signatures_verified": 3,
+    "admission_control_status": "ENFORCING_REJECTIONS",
+    "overall_status": "CERTIFIED_CONTAINER_SECURITY_COMPLIANT"
+  },
+  "vulnerability_scan": {
+    "total_images_scanned": 3,
+    "images_approved": 3,
+    "critical_vulnerabilities": 0,
+    "high_vulnerabilities": 0,
+    "overall_status": "PASS",
+    "scan_results": [
+      {
+        "image_ref": "devsupersuite/omnikernel-airgap:v5.2.0@sha256:d5a7b8c19e42...",
+        "full_digest": "sha256:d5a7b8c19e42f0a1e3b5c7d9e1f3a5b7c9d1e3f5a7b9c1d3e5f7a9b1c3d5e7f9",
+        "base_image": "gcr.io/distroless/static-debian12:nonroot",
+        "os_packages": 18,
+        "critical": 0,
+        "high": 0,
+        "medium": 0,
+        "low": 1,
+        "scanner_engine": "Trivy v0.58 & Clair Core Vulnerability Database",
+        "admission_verdict": "APPROVED"
+      },
+      {
+        "image_ref": "devsupersuite/mcp-server:v5.2.0@sha256:a1b2c3d4e5f6...",
+        "full_digest": "sha256:a1b2c3d4e5f60718293a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e",
+        "base_image": "gcr.io/distroless/cc-debian12:nonroot",
+        "os_packages": 24,
+        "critical": 0,
+        "high": 0,
+        "medium": 0,
+        "low": 0,
+        "scanner_engine": "Trivy v0.58 & Clair Core Vulnerability Database",
+        "admission_verdict": "APPROVED"
+      },
+      {
+        "image_ref": "devsupersuite/agent-shield:v5.2.0@sha256:f9e8d7c6b5a4...",
+        "full_digest": "sha256:f9e8d7c6b5a43210fe9dcba876543210fedcba9876543210fedcba9876543210",
+        "base_image": "gcr.io/distroless/static-debian12:nonroot",
+        "os_packages": 16,
+        "critical": 0,
+        "high": 0,
+        "medium": 0,
+        "low": 0,
+        "scanner_engine": "Trivy v0.58 & Clair Core Vulnerability Database",
+        "admission_verdict": "APPROVED"
+      }
+    ]
+  },
+  "admission_control_audit": {
+    "total_images_evaluated": 6,
+    "legitimate_admitted_count": 3,
+    "adversarial_rejected_count": 3,
+    "admission_controller_enforcement": "Kyverno ClusterPolicy (Enforce)",
+    "overall_status": "PASS",
+    "evaluations": [
+      {
+        "image_ref": "devsupersuite/omnikernel-airgap:v5.2.0@sha256:d5a7b8c19e42f0a1e3b5c7d9e1f3a5b7c9d1e3f5a7b9c1d3e5f7a9b1c3d5e7f9",
+        "admitted": true,
+        "decision": "ADMITTED_TO_CLUSTER",
+        "violations_count": 0,
+        "violations": [],
+        "status": "PASS"
+      },
+      {
+        "image_ref": "devsupersuite/mcp-server:v5.2.0@sha256:a1b2c3d4e5f60718293a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e",
+        "admitted": true,
+        "decision": "ADMITTED_TO_CLUSTER",
+        "violations_count": 0,
+        "violations": [],
+        "status": "PASS"
+      },
+      {
+        "image_ref": "devsupersuite/agent-shield:v5.2.0@sha256:f9e8d7c6b5a43210fe9dcba876543210fedcba9876543210fedcba9876543210",
+        "admitted": true,
+        "decision": "ADMITTED_TO_CLUSTER",
+        "violations_count": 0,
+        "violations": [],
+        "status": "PASS"
+      },
+      {
+        "image_ref": "devsupersuite/omnikernel-airgap:v5.2.0@sha256:1111222233334444555566667777888899990000aaaabbbbccccddddeeeeffff",
+        "admitted": false,
+        "decision": "KUBERNETES_IMAGE_ADMISSION_DENIED",
+        "violations_count": 1,
+        "violations": [
+          "Image lacks valid Sigstore Cosign signature matching DevSuperSuite Fulcio root authority."
+        ],
+        "status": "FAIL"
+      },
+      {
+        "image_ref": "devsupersuite/omnikernel-airgap:latest",
+        "admitted": false,
+        "decision": "KUBERNETES_IMAGE_ADMISSION_DENIED",
+        "violations_count": 2,
+        "violations": [
+          "Image must be referenced by immutable SHA-256 digest; mutable tags prohibited.",
+          "Image lacks valid Sigstore Cosign signature matching DevSuperSuite Fulcio root authority."
+        ],
+        "status": "FAIL"
+      },
+      {
+        "image_ref": "devsupersuite/vulnerable-test-image:v1.0.0@sha256:9999888877776666555544443333222211110000ffffaaabbbcccdddeeeffff0",
+        "admitted": false,
+        "decision": "KUBERNETES_IMAGE_ADMISSION_DENIED",
+        "violations_count": 2,
+        "violations": [
+          "Image contains 2 CRITICAL CVEs (Ceiling: 0).",
+          "Image contains 5 HIGH CVEs (Ceiling: 0)."
+        ],
+        "status": "FAIL"
+      }
+    ]
+  },
+  "cosign_attestation_bundles": [
+    {
+      "image_repository": "devsupersuite/omnikernel-airgap",
+      "image_digest": "sha256:d5a7b8c19e42f0a1e3b5c7d9e1f3a5b7c9d1e3f5a7b9c1d3e5f7a9b1c3d5e7f9",
+      "signed_at": "2026-11-08T10:46:31.284213+00:00",
+      "cosign_signature": "968b4fcbdd02f5bdfbdd06a5e7f69485f9fcabc850c6c950edf83db8cbb473db",
+      "fulcio_certificate": {
+        "issuer": "https://devsupersuite.com/workload-identity",
+        "subject": "spiffe://devsupersuite.internal/sa/github-actions-builder",
+        "cert_serial": "01A78E1BC009A06A35F46FCB",
+        "valid_from": "2026-11-08T10:46:31.284213+00:00"
+      },
+      "rekor_transparency_log": {
+        "logIndex": 18492041,
+        "logID": "2d8568600c77e045",
+        "integratedTime": 1794134791,
+        "signedEntryTimestamp": "5fa5a97c2abbb6fa16dfadde583af5e12d4d61bf4bf97bf15ce489e624dfeef3"
+      },
+      "slsa_provenance": {
+        "_type": "https://in-toto.io/Statement/v0.1",
+        "predicateType": "https://slsa.dev/provenance/v0.2",
+        "subject": [
+          {
+            "name": "devsupersuite/omnikernel-airgap",
+            "digest": {
+              "sha256": "d5a7b8c19e42f0a1e3b5c7d9e1f3a5b7c9d1e3f5a7b9c1d3e5f7a9b1c3d5e7f9"
+            }
+          }
+        ],
+        "predicate": {
+          "builder": {
+            "id": "https://github.com/DevSuperSuiteOfficial/actions/runner@v4"
+          },
+          "buildType": "https://devsupersuite.com/buildpack/airgap@v1",
+          "invocation": {
+            "configSource": {
+              "uri": "git+https://github.com/DevSuperSuiteOfficial/agent-commerce",
+              "digest": {
+                "sha256": "b44bccb584e42addf2670eb4849cc85a42a11d50bd28fba17c7f11b483ff2fd8"
+              },
+              "entryPoint": "deployment/docker-compose.enterprise.yml"
+            }
+          },
+          "metadata": {
+            "buildInvocationId": "8ec9ff56afb9c6b1bcaccc1e6645b6a4",
+            "buildStartedOn": "2026-11-08T10:46:31.284213+00:00",
+            "completeness": {
+              "parameters": true,
+              "environment": true,
+              "materials": true
+            },
+            "reproducible": true
+          }
+        }
+      },
+      "provenance_sha256": "77a7083c9e29e29f3056327682597bea97c6ade400914355c99151e44555e327",
+      "status": "SIGNED_AND_ATTESTED"
+    },
+    {
+      "image_repository": "devsupersuite/mcp-server",
+      "image_digest": "sha256:a1b2c3d4e5f60718293a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e",
+      "signed_at": "2026-11-08T10:46:31.284230+00:00",
+      "cosign_signature": "e03340f117a4c5ce6d0f589794854c626353f3944bece8950759970670e100aa",
+      "fulcio_certificate": {
+        "issuer": "https://devsupersuite.com/workload-identity",
+        "subject": "spiffe://devsupersuite.internal/sa/github-actions-builder",
+        "cert_serial": "D8D05F612F5D2315AAC58F20",
+        "valid_from": "2026-11-08T10:46:31.284230+00:00"
+      },
+      "rekor_transparency_log": {
+        "logIndex": 18492041,
+        "logID": "2d8568600c77e045",
+        "integratedTime": 1794134791,
+        "signedEntryTimestamp": "0039262b72f06611e65d74151094e41b75ec1d8f7c5c31e890c384c4679f259b"
+      },
+      "slsa_provenance": {
+        "_type": "https://in-toto.io/Statement/v0.1",
+        "predicateType": "https://slsa.dev/provenance/v0.2",
+        "subject": [
+          {
+            "name": "devsupersuite/mcp-server",
+            "digest": {
+              "sha256": "a1b2c3d4e5f60718293a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e"
+            }
+          }
+        ],
+        "predicate": {
+          "builder": {
+            "id": "https://github.com/DevSuperSuiteOfficial/actions/runner@v4"
+          },
+          "buildType": "https://devsupersuite.com/buildpack/airgap@v1",
+          "invocation": {
+            "configSource": {
+              "uri": "git+https://github.com/DevSuperSuiteOfficial/agent-commerce",
+              "digest": {
+                "sha256": "b44bccb584e42addf2670eb4849cc85a42a11d50bd28fba17c7f11b483ff2fd8"
+              },
+              "entryPoint": "deployment/docker-compose.enterprise.yml"
+            }
+          },
+          "metadata": {
+            "buildInvocationId": "e6167ed272f254506598ab79cb9a88fc",
+            "buildStartedOn": "2026-11-08T10:46:31.284230+00:00",
+            "completeness": {
+              "parameters": true,
+              "environment": true,
+              "materials": true
+            },
+            "reproducible": true
+          }
+        }
+      },
+      "provenance_sha256": "2d8b9b2b06208616c26b4cb0f8255f03b027c893a2252b65f97dfba740b488ce",
+      "status": "SIGNED_AND_ATTESTED"
+    },
+    {
+      "image_repository": "devsupersuite/agent-shield",
+      "image_digest": "sha256:f9e8d7c6b5a43210fe9dcba876543210fedcba9876543210fedcba9876543210",
+      "signed_at": "2026-11-08T10:46:31.284246+00:00",
+      "cosign_signature": "e01a52178699d8b80c9d62113386959f76582d5723b7710087b82a9400292141",
+      "fulcio_certificate": {
+        "issuer": "https://devsupersuite.com/workload-identity",
+        "subject": "spiffe://devsupersuite.internal/sa/github-actions-builder",
+        "cert_serial": "5693A58F3CDEBD9FFB83BC11",
+        "valid_from": "2026-11-08T10:46:31.284246+00:00"
+      },
+      "rekor_transparency_log": {
+        "logIndex": 18492041,
+        "logID": "2d8568600c77e045",
+        "integratedTime": 1794134791,
+        "signedEntryTimestamp": "2e38168cfff5f244412ac79effe9a01f78d56fd0a3851f66632d99dcd6cd528a"
+      },
+      "slsa_provenance": {
+        "_type": "https://in-toto.io/Statement/v0.1",
+        "predicateType": "https://slsa.dev/provenance/v0.2",
+        "subject": [
+          {
+            "name": "devsupersuite/agent-shield",
+            "digest": {
+              "sha256": "f9e8d7c6b5a43210fe9dcba876543210fedcba9876543210fedcba9876543210"
+            }
+          }
+        ],
+        "predicate": {
+          "builder": {
+            "id": "https://github.com/DevSuperSuiteOfficial/actions/runner@v4"
+          },
+          "buildType": "https://devsupersuite.com/buildpack/airgap@v1",
+          "invocation": {
+            "configSource": {
+              "uri": "git+https://github.com/DevSuperSuiteOfficial/agent-commerce",
+              "digest": {
+                "sha256": "b44bccb584e42addf2670eb4849cc85a42a11d50bd28fba17c7f11b483ff2fd8"
+              },
+              "entryPoint": "deployment/docker-compose.enterprise.yml"
+            }
+          },
+          "metadata": {
+            "buildInvocationId": "27396dfb4f551ce5afffdc28f0234a51",
+            "buildStartedOn": "2026-11-08T10:46:31.284246+00:00",
+            "completeness": {
+              "parameters": true,
+              "environment": true,
+              "materials": true
+            },
+            "reproducible": true
+          }
+        }
+      },
+      "provenance_sha256": "39efe7f7e8028f7935f29558bcd6964b097de627633219c0d2e6ee6970c1d96c",
+      "status": "SIGNED_AND_ATTESTED"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{{- if .Values.podDisruptionBudget.enabled -}}
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: {{ include "devsupersuite.fullname" . | default "devsupersuite" }}-pdb
+  labels:
+    app.kubernetes.io/name: devsupersuite
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    devsupersuite.com/tier: scif-ha
+spec:
+  minAvailable: {{ .Values.podDisruptionBudget.minAvailable }}
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: devsupersuite
+      app.kubernetes.io/instance: {{ .Release.Name }}
+{{- end }}

@@ -1,0 +1,129 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# DevSuperSuite Enterprise Air-Gapped High Availability Helm Chart Values
+# Reference: DSS-HELM-VALUES-2026-V1
+# Contact: DevSuperSuite Cloud Architecture (cloud@devsupersuite.com)
+# ─────────────────────────────────────────────────────────────────────────────
+
+global:
+  environment: enterprise-scif-airgap
+  airgapMode: true
+  zeroEgressEnforced: true
+  clusterDomain: cluster.local
+
+replicaCount: 3
+
+image:
+  repository: sovereign-registry.internal.corp/devsupersuite/core-proxy
+  pullPolicy: IfNotPresent
+  tag: "v2.5.0-LTS"
+
+imagePullSecrets:
+  - name: sovereign-internal-registry-secret
+
+nameOverride: ""
+fullnameOverride: "devsupersuite"
+
+serviceAccount:
+  create: true
+  name: "devsupersuite-workload-sa"
+  annotations:
+    devsupersuite.com/workload-identity: "true"
+
+podAnnotations:
+  seccomp.security.alpha.kubernetes.io/pod: "runtime/default"
+  devsupersuite.com/zero-egress: "enforced"
+
+podSecurityContext:
+  runAsNonRoot: true
+  runAsUser: 10001
+  runAsGroup: 10001
+  fsGroup: 10001
+  seccompProfile:
+    type: RuntimeDefault
+
+securityContext:
+  allowPrivilegeEscalation: false
+  readOnlyRootFilesystem: true
+  runAsNonRoot: true
+  runAsUser: 10001
+  runAsGroup: 10001
+  capabilities:
+    drop:
+      - ALL
+
+service:
+  type: ClusterIP
+  httpPort: 8080
+  httpsPort: 8443
+
+ingress:
+  enabled: true
+  className: "nginx-internal"
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
+    nginx.ingress.kubernetes.io/auth-tls-verify-client: "on"
+    nginx.ingress.kubernetes.io/auth-tls-secret: "devsupersuite-scif-ca-bundle"
+    nginx.ingress.kubernetes.io/auth-tls-verify-depth: "3"
+    nginx.ingress.kubernetes.io/proxy-body-size: "64m"
+  hosts:
+    - host: devsupersuite.scif.internal.corp
+      paths:
+        - path: /
+          pathType: Prefix
+  tls:
+    - secretName: devsupersuite-scif-server-tls
+      hosts:
+        - devsupersuite.scif.internal.corp
+
+resources:
+  limits:
+    cpu: 4000m
+    memory: 8Gi
+  requests:
+    cpu: 1000m
+    memory: 2Gi
+
+autoscaling:
+  enabled: true
+  minReplicas: 3
+  maxReplicas: 10
+  targetCPUUtilizationPercentage: 75
+  targetMemoryUtilizationPercentage: 80
+
+podDisruptionBudget:
+  enabled: true
+  minAvailable: 2
+
+networkPolicy:
+  enabled: true
+  enforceZeroEgress: true
+  allowedIngressCIDRs:
+    - "10.0.0.0/8"
+    - "172.16.0.0/12"
+    - "192.168.0.0/16"
+
+probes:
+  liveness:
+    httpGet:
+      path: /healthz
+      port: 8443
+      scheme: HTTPS
+    initialDelaySeconds: 15
+    periodSeconds: 10
+  readiness:
+    httpGet:
+      path: /readyz
+      port: 8443
+      scheme: HTTPS
+    initialDelaySeconds: 5
+    periodSeconds: 5
+
+astCompiler:
+  pruningEnabled: true
+  targetReductionRatioPct: 70.0
+  shannonEntropyThreshold: 3.0
+
+scifAudit:
+  localEncryptedStoreEnabled: true
+  zeroExternalTelemetry: true

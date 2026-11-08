@@ -1,0 +1,42 @@
+apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+metadata:
+  name: "require-cosign-image-verification"
+  annotations:
+    policies.kyverno.io/title: "Verify Sigstore Cosign Signatures and SLSA Provenance"
+    policies.kyverno.io/category: "Supply Chain Security & Admission Control"
+    policies.kyverno.io/severity: "critical"
+    policies.kyverno.io/subject: "Pod"
+    policies.kyverno.io/description: >-
+      Enforces that all container images deployed to the cluster possess a valid
+      Sigstore Cosign keyless digital signature from DevSuperSuite Fulcio OIDC
+      and zero Critical/High CVEs. Rejects non-compliant pods with KUBERNETES_IMAGE_ADMISSION_DENIED.
+spec:
+  validationFailureAction: Enforce
+  background: true
+  rules:
+    - name: "verify-image-signature-and-digest"
+      match:
+        any:
+          - resources:
+              kinds:
+                - Pod
+      verifyImages:
+        - imageReferences:
+            - "devsupersuite/*"
+          attestors:
+            - entries:
+                - keyless:
+                    issuer: "https://devsupersuite.com/workload-identity"
+                    subject: "spiffe://devsupersuite.internal/sa/*"
+                    rekor:
+                      url: "https://rekor.sigstore.dev"
+          attestations:
+            - predicateType: "https://slsa.dev/provenance/v0.2"
+              conditions:
+                - all:
+                    - key: "{{ builder.id }}"
+                      operator: Equals
+                      value: "https://github.com/DevSuperSuiteOfficial/actions/runner@v4"
+          mutateDigest: true
+          required: true

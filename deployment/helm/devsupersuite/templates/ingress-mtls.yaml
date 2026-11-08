@@ -1,0 +1,31 @@
+{{- if .Values.ingress.enabled -}}
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{ include "devsupersuite.fullname" . | default "devsupersuite" }}-ingress-mtls
+  labels:
+    app.kubernetes.io/name: devsupersuite
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    devsupersuite.com/security: scif-mtls
+  annotations:
+    {{- toYaml .Values.ingress.annotations | nindent 4 }}
+spec:
+  ingressClassName: {{ .Values.ingress.className }}
+  tls:
+    {{- toYaml .Values.ingress.tls | nindent 4 }}
+  rules:
+    {{- range .Values.ingress.hosts }}
+    - host: {{ .host | quote }}
+      http:
+        paths:
+          {{- range .paths }}
+          - path: {{ .path }}
+            pathType: {{ .pathType }}
+            backend:
+              service:
+                name: {{ include "devsupersuite.fullname" $ | default "devsupersuite" }}
+                port:
+                  number: {{ $.Values.service.httpsPort }}
+          {{- end }}
+    {{- end }}
+{{- end }}

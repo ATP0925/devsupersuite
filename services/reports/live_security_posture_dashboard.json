@@ -3,9 +3,9 @@
     "organization": "DevSuperSuite Official",
     "authority": "Directorate of QA Automation & Security Compliance",
     "classification": "Sovereign Enterprise Security Telemetry (Restricted)",
-    "generated_at": "2026-11-08T10:22:26.861077+00:00",
+    "generated_at": "2026-11-08T10:46:13.542549+00:00",
     "target_repository": "agent-commerce",
-    "sha256_digest": "af779e16876f8e7e83161b17a4491c2cf3838b06a847be1762e8d3c025bb04e2"
+    "sha256_digest": "c5f5c4d8794e931d5e86a5d9175daf23af4a8310b55083de3515f67f8c5f1758"
   },
   "enterprise_trust_index": {
     "composite_score": 100.0,
@@ -18,8 +18,8 @@
       "weight_percentage": 20,
       "score": 100.0,
       "metrics": {
-        "total_suites": 31,
-        "total_tests": 288,
+        "total_suites": 50,
+        "total_tests": 466,
         "pass_rate_percentage": 100.0,
         "fail_count": 0,
         "skipped_count": 0,
@@ -43,7 +43,19 @@
             "coverage_domain": "Air-Gapped Isolation & Orchestration"
           },
           {
+            "module": "test_automated_dr_failover.py",
+            "test_count": 10,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
             "module": "test_automated_pentest_ci_gate.py",
+            "test_count": 10,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_benchmark_profiler.py",
             "test_count": 10,
             "status": "PASS",
             "coverage_domain": "Core Architecture & MCP Harness"
@@ -51,6 +63,12 @@
           {
             "module": "test_cap_table_safe_model.py",
             "test_count": 8,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_checkout_gateway_failover.py",
+            "test_count": 9,
             "status": "PASS",
             "coverage_domain": "Core Architecture & MCP Harness"
           },
@@ -73,6 +91,12 @@
             "coverage_domain": "Regulatory Compliance & Invariants"
           },
           {
+            "module": "test_container_cosign_attestation.py",
+            "test_count": 10,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
             "module": "test_cro_frontend_components.py",
             "test_count": 9,
             "status": "PASS",
@@ -91,6 +115,12 @@
             "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
+            "module": "test_dynamic_ppp_pricing.py",
+            "test_count": 9,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
             "module": "test_enterprise_compliance.py",
             "test_count": 9,
             "status": "PASS",
@@ -103,10 +133,22 @@
             "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
+            "module": "test_enterprise_usage_metering.py",
+            "test_count": 9,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
             "module": "test_financial_forecast.py",
             "test_count": 9,
             "status": "PASS",
             "coverage_domain": "Financial Engine & Statutory Ledgers"
+          },
+          {
+            "module": "test_fips_cryptographic_audit.py",
+            "test_count": 10,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
             "module": "test_funnel_monitor.py",
@@ -119,6 +161,18 @@
             "test_count": 9,
             "status": "PASS",
             "coverage_domain": "Financial Engine & Statutory Ledgers"
+          },
+          {
+            "module": "test_general_ledger_audit.py",
+            "test_count": 11,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_helm_validation.py",
+            "test_count": 12,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
             "module": "test_hsm_enclave_attestation.py",
@@ -145,10 +199,22 @@
             "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
+            "module": "test_pilot_telemetry.py",
+            "test_count": 9,
+            "status": "PASS",
+            "coverage_domain": "Real-Time DevSecOps Telemetry"
+          },
+          {
             "module": "test_poc_deployment_kit.py",
             "test_count": 15,
             "status": "PASS",
             "coverage_domain": "Air-Gapped Isolation & Orchestration"
+          },
+          {
+            "module": "test_rate_limiting_circuit_breaker.py",
+            "test_count": 10,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
             "module": "test_reconciliation_engine.py",
@@ -169,10 +235,22 @@
             "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
+            "module": "test_saas_cohort_ltv.py",
+            "test_count": 6,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
             "module": "test_saas_unit_economics.py",
             "test_count": 8,
             "status": "PASS",
             "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_sbom_cyclonedx_slsa_validator.py",
+            "test_count": 10,
+            "status": "PASS",
+            "coverage_domain": "Software Supply Chain & SBOM (SLSA-3)"
           },
           {
             "module": "test_security_fuzzing.py",
@@ -187,6 +265,30 @@
             "coverage_domain": "Adversarial Fuzzing & SAST/DAST"
           },
           {
+            "module": "test_sms_whatsapp_recovery.py",
+            "test_count": 9,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_social_proof_toast.py",
+            "test_count": 8,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_solution_sizing_calculator.py",
+            "test_count": 7,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_sox_soc1_controls.py",
+            "test_count": 10,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
             "module": "test_stride_threat_modeling.py",
             "test_count": 10,
             "status": "PASS",
@@ -199,7 +301,19 @@
             "coverage_domain": "Adversarial Fuzzing & SAST/DAST"
           },
           {
+            "module": "test_tax_audit_defense.py",
+            "test_count": 11,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
             "module": "test_tax_withholding.py",
+            "test_count": 8,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_technical_sales_chat.py",
             "test_count": 8,
             "status": "PASS",
             "coverage_domain": "Core Architecture & MCP Harness"
@@ -244,7 +358,7 @@
       "weight_percentage": 15,
       "score": 100.0,
       "metrics": {
-        "redos_execution_time_ms": 0.0072,
+        "redos_execution_time_ms": 0.0079,
         "redos_ceiling_limit_ms": 1.0,
         "redos_immunity": "PASS",
         "ast_max_recursion_depth": 30,
@@ -260,7 +374,7 @@
       "metrics": {
         "spdx_v23_present": true,
         "cyclonedx_v15_present": true,
-        "tracked_dependency_packages": 17,
+        "tracked_dependency_packages": 8,
         "slsa_provenance_level": "SLSA Level 3 (Cryptographically Sealed)",
         "known_cve_count": 0,
         "copyleft_license_risks": 0,
