@@ -1,0 +1,175 @@
+{
+  "metadata": {
+    "generated_at": "2026-11-08T11:39:25.484549+00:00",
+    "reporting_entity": "DevSuperSuite Group",
+    "department": "DevSuperSuite Global Treasury Desk",
+    "treasury_contact": "treasury@devsupersuite.com",
+    "legal_compliance": "South Dakota v. Wayfair & 8 Del. C. \u00a7 503"
+  },
+  "economic_nexus_audit": {
+    "wayfair_compliance_standard": "South Dakota v. Wayfair, 138 S. Ct. 2080 (2018)",
+    "total_us_commercial_revenue_usd": 552000.0,
+    "total_direct_enterprise_revenue_usd": 425000.0,
+    "total_marketplace_gumroad_revenue_usd": 127000.0,
+    "total_direct_transactions": 52,
+    "total_marketplace_transactions": 890,
+    "marketplace_facilitator_relief_pct": 100.0,
+    "states_with_direct_nexus_count": 0,
+    "states_with_nexus": [],
+    "overall_economic_nexus_status": "ZERO_UNREGISTERED_NEXUS_EXPOSURE",
+    "state_nexus_audits": [
+      {
+        "state_code": "CA",
+        "state_name": "California",
+        "statutory_revenue_threshold_usd": 500000.0,
+        "statutory_transaction_threshold": null,
+        "direct_enterprise_sales_usd": 165000.0,
+        "direct_transaction_count": 18,
+        "direct_revenue_utilization_pct": 33.0,
+        "marketplace_gumroad_sales_usd": 45000.0,
+        "marketplace_transaction_count": 350,
+        "marketplace_facilitator_statute": "Cal. Rev. & Tax. Code \u00a7 6041",
+        "marketplace_tax_remitted_by": "Gumroad, Inc. (Marketplace Facilitator)",
+        "seller_direct_nexus_established": false,
+        "nexus_status": "SAFE_HARBOR_EXEMPT"
+      },
+      {
+        "state_code": "NY",
+        "state_name": "New York",
+        "statutory_revenue_threshold_usd": 500000.0,
+        "statutory_transaction_threshold": 100,
+        "direct_enterprise_sales_usd": 95000.0,
+        "direct_transaction_count": 12,
+        "direct_revenue_utilization_pct": 19.0,
+        "marketplace_gumroad_sales_usd": 28000.0,
+        "marketplace_transaction_count": 180,
+        "marketplace_facilitator_statute": "N.Y. Tax Law \u00a7 1101(e)",
+        "marketplace_tax_remitted_by": "Gumroad, Inc. (Marketplace Facilitator)",
+        "seller_direct_nexus_established": false,
+        "nexus_status": "SAFE_HARBOR_EXEMPT"
+      },
+      {
+        "state_code": "TX",
+        "state_name": "Texas",
+        "statutory_revenue_threshold_usd": 500000.0,
+        "statutory_transaction_threshold": null,
+        "direct_enterprise_sales_usd": 75000.0,
+        "direct_transaction_count": 9,
+        "direct_revenue_utilization_pct": 15.0,
+        "marketplace_gumroad_sales_usd": 22000.0,
+        "marketplace_transaction_count": 150,
+        "marketplace_facilitator_statute": "Tex. Tax Code \u00a7 151.0242",
+        "marketplace_tax_remitted_by": "Gumroad, Inc. (Marketplace Facilitator)",
+        "seller_direct_nexus_established": false,
+        "nexus_status": "SAFE_HARBOR_EXEMPT"
+      },
+      {
+        "state_code": "WA",
+        "state_name": "Washington",
+        "statutory_revenue_threshold_usd": 100000.0,
+        "statutory_transaction_threshold": null,
+        "direct_enterprise_sales_usd": 45000.0,
+        "direct_transaction_count": 6,
+        "direct_revenue_utilization_pct": 45.0,
+        "marketplace_gumroad_sales_usd": 14000.0,
+        "marketplace_transaction_count": 90,
+        "marketplace_facilitator_statute": "Wash. Rev. Code \u00a7 82.08.0531",
+        "marketplace_tax_remitted_by": "Gumroad, Inc. (Marketplace Facilitator)",
+        "seller_direct_nexus_established": false,
+        "nexus_status": "SAFE_HARBOR_EXEMPT"
+      },
+      {
+        "state_code": "IL",
+        "state_name": "Illinois",
+        "statutory_revenue_threshold_usd": 100000.0,
+        "statutory_transaction_threshold": 200,
+        "direct_enterprise_sales_usd": 35000.0,
+        "direct_transaction_count": 5,
+        "direct_revenue_utilization_pct": 35.0,
+        "marketplace_gumroad_sales_usd": 10000.0,
+        "marketplace_transaction_count": 70,
+        "marketplace_facilitator_statute": "35 ILCS 120/2-8",
+        "marketplace_tax_remitted_by": "Gumroad, Inc. (Marketplace Facilitator)",
+        "seller_direct_nexus_established": false,
+        "nexus_status": "SAFE_HARBOR_EXEMPT"
+      }
+    ]
+  },
+  "delaware_franchise_tax_optimization": {
+    "entity_name": "DevSuperSuite Tech Services (Delaware C-Corp)",
+    "state_of_incorporation": "Delaware",
+    "statutory_authorized_shares": 13821138,
+    "nominal_par_value_usd": 0.0001,
+    "total_gross_assets_usd": 125000.0,
+    "annual_report_filing_fee_usd": 50.0,
+    "authorized_shares_method": {
+      "method_name": "Delaware Authorized Shares Method",
+      "calculated_franchise_tax_usd": 117720.0,
+      "annual_report_fee_usd": 50.0,
+      "total_liability_usd": 117770.0,
+      "statutory_formula": "$250 base + $85 per 10,000 shares over 10,000 (Capped at $200,000)"
+    },
+    "assumed_par_value_capital_method": {
+      "method_name": "Delaware Assumed Par Value Capital Method",
+      "assumed_par_value_per_share_usd": 0.009044,
+      "assumed_par_value_capital_usd": 125000.0,
+      "calculated_franchise_tax_usd": 400.0,
+      "annual_report_fee_usd": 50.0,
+      "total_liability_usd": 450.0,
+      "statutory_formula": "$400 per $1,000,000 or fraction of Assumed Par Value Capital (Minimum $400)"
+    },
+    "tax_savings_usd": 117320.0,
+    "savings_percentage": 99.62,
+    "optimal_method_selected": "ASSUMED_PAR_VALUE_CAPITAL_METHOD",
+    "affirmation": "Utilizing the Assumed Par Value Capital Method legally reduces Delaware Franchise Tax liability from $117,770.00 to $450.00, saving $117,320.00 USD (99.62% reduction)."
+  },
+  "single_sales_factor_apportionment": {
+    "total_apportionable_us_direct_revenue_usd": 425000.0,
+    "sourcing_doctrine": "Market-Based Sourcing (Client Consumption Location)",
+    "alternative_doctrine_comparison": "Cost of Performance (COP) would source 100% of revenue to offshore R&D / IP hubs, resulting in 0% state corporate apportionment in customer states.",
+    "apportionment_schedule": [
+      {
+        "state_code": "CA",
+        "state_name": "California",
+        "apportionment_method": "Single Sales Factor (Market-Based Sourcing)",
+        "market_sourced_revenue_usd": 165000.0,
+        "single_sales_factor_pct": 38.82
+      },
+      {
+        "state_code": "NY",
+        "state_name": "New York",
+        "apportionment_method": "Single Sales Factor (Customer Delivery Sourcing)",
+        "market_sourced_revenue_usd": 95000.0,
+        "single_sales_factor_pct": 22.35
+      },
+      {
+        "state_code": "TX",
+        "state_name": "Texas",
+        "apportionment_method": "Single Sales Factor (Gross Receipts Sourcing)",
+        "market_sourced_revenue_usd": 75000.0,
+        "single_sales_factor_pct": 17.65
+      },
+      {
+        "state_code": "WA",
+        "state_name": "Washington",
+        "apportionment_method": "Single Sales Factor (Customer Benefit Sourcing)",
+        "market_sourced_revenue_usd": 45000.0,
+        "single_sales_factor_pct": 10.59
+      },
+      {
+        "state_code": "IL",
+        "state_name": "Illinois",
+        "apportionment_method": "Single Sales Factor (Market-Based Sourcing)",
+        "market_sourced_revenue_usd": 35000.0,
+        "single_sales_factor_pct": 8.24
+      },
+      {
+        "state_code": "OTHER_STATES",
+        "state_name": "Other Non-Apportioned States",
+        "apportionment_method": "Throwback / Non-Taxable Market",
+        "market_sourced_revenue_usd": 10000.0,
+        "single_sales_factor_pct": 2.35
+      }
+    ]
+  }
+}

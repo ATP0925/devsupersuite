@@ -1460,10 +1460,98 @@
       "public_key_b64": "ZWHHnA4JsKBXD7knocu1knxEvyg064xvyOCCykVyvi0=",
       "sha256_fingerprint": "40ba6dedfddf4918d808f8fd64a96bb15d0a96f48d8649873bfb2bf8d7ef2189",
       "created_at": "2026-11-08T11:35:55.849337+00:00",
+      "state": "ARCHIVED",
+      "rotation_interval_days": 90,
+      "retired_at": "2026-11-08T11:36:42.492577+00:00"
+    },
+    {
+      "key_id": "KID-ED25519-36BA1AE3C210",
+      "algorithm": "Ed25519 (FIPS 186-5 & RFC 8032)",
+      "key_length_bits": 256,
+      "public_key_b64": "6TUCKY7Gln/6dFLzq3MT0DCkO4NzA9ahy6gxxYAYBsw=",
+      "sha256_fingerprint": "36ba1ae3c2109267de9a22be1d01aeb5d4de4cd62c5ee4a1f3628c27ac346b67",
+      "created_at": "2026-11-08T11:36:42.492716+00:00",
+      "state": "ARCHIVED",
+      "rotation_interval_days": 90,
+      "retired_at": "2026-11-08T11:36:42.514923+00:00"
+    },
+    {
+      "key_id": "KID-ED25519-64FEB00E857E",
+      "algorithm": "Ed25519 (FIPS 186-5 & RFC 8032)",
+      "key_length_bits": 256,
+      "public_key_b64": "BOm9kLMyWLy05/yLeNgvGF10wc14e+C26s0K8qvLgHg=",
+      "sha256_fingerprint": "64feb00e857e6419a3d205487a53e9dd32a3b2b0c787c35684be575ed7c15907",
+      "created_at": "2026-11-08T11:36:42.515059+00:00",
+      "state": "ARCHIVED",
+      "rotation_interval_days": 90,
+      "retired_at": "2026-11-08T11:37:31.416713+00:00"
+    },
+    {
+      "key_id": "KID-ED25519-EC46851B273A",
+      "algorithm": "Ed25519 (FIPS 186-5 & RFC 8032)",
+      "key_length_bits": 256,
+      "public_key_b64": "zWo0/30Kk3g7Xu/TYu9bMTfFIpB/zC1V8VcyydAmt7o=",
+      "sha256_fingerprint": "ec46851b273addcbd63c482b86db50754abbaf7b3975a33896fbb0434113d484",
+      "created_at": "2026-11-08T11:37:31.416872+00:00",
+      "state": "ARCHIVED",
+      "rotation_interval_days": 90,
+      "retired_at": "2026-11-08T11:37:31.441406+00:00"
+    },
+    {
+      "key_id": "KID-ED25519-9A312A5044DC",
+      "algorithm": "Ed25519 (FIPS 186-5 & RFC 8032)",
+      "key_length_bits": 256,
+      "public_key_b64": "fVg6WCitUWigueDP0PYw7KOnGVpbMObvWBiHb235+xU=",
+      "sha256_fingerprint": "9a312a5044dc8d9dfdbb68008ba449db9f0d6b9cb95701f83eb9dfa2fdc89b36",
+      "created_at": "2026-11-08T11:37:31.441613+00:00",
+      "state": "ARCHIVED",
+      "rotation_interval_days": 90,
+      "retired_at": "2026-11-08T11:39:14.479908+00:00"
+    },
+    {
+      "key_id": "KID-ED25519-AF8B69D71940",
+      "algorithm": "Ed25519 (FIPS 186-5 & RFC 8032)",
+      "key_length_bits": 256,
+      "public_key_b64": "9MEtnv95s9nk/bZE+pUlfm4KmJc+wxcTiABLL+Rex3s=",
+      "sha256_fingerprint": "af8b69d71940836fac83ae397edfc35ea2c9483df68945cd434ec051a7542b94",
+      "created_at": "2026-11-08T11:39:14.480123+00:00",
+      "state": "ARCHIVED",
+      "rotation_interval_days": 90,
+      "retired_at": "2026-11-08T11:39:14.508179+00:00"
+    },
+    {
+      "key_id": "KID-ED25519-1BA965664238",
+      "algorithm": "Ed25519 (FIPS 186-5 & RFC 8032)",
+      "key_length_bits": 256,
+      "public_key_b64": "Fuc7nnzuzAJ2I+/3JIhF4sLbDADXKNKcc28g5GeBZy8=",
+      "sha256_fingerprint": "1ba9656642384ba1fc83f4664f5801a021f7011c43c761831fce576e52d612d3",
+      "created_at": "2026-11-08T11:39:14.508383+00:00",
+      "state": "ARCHIVED",
+      "rotation_interval_days": 90,
+      "retired_at": "2026-11-08T11:39:32.169627+00:00"
+    },
+    {
+      "key_id": "KID-ED25519-BF5E962FAC7C",
+      "algorithm": "Ed25519 (FIPS 186-5 & RFC 8032)",
+      "key_length_bits": 256,
+      "public_key_b64": "QEb4V5Yk8WN0hQq7LFpmrPkwaULXqWmlHHVjY0H9CvQ=",
+      "sha256_fingerprint": "bf5e962fac7cd1a8883c1a7af572d44751af0e7a898527fc18b550ba3861bcf1",
+      "created_at": "2026-11-08T11:39:32.169766+00:00",
+      "state": "ARCHIVED",
+      "rotation_interval_days": 90,
+      "retired_at": "2026-11-08T11:39:32.193149+00:00"
+    },
+    {
+      "key_id": "KID-ED25519-94E9AE45C1CD",
+      "algorithm": "Ed25519 (FIPS 186-5 & RFC 8032)",
+      "key_length_bits": 256,
+      "public_key_b64": "NDvU+X7QHCudaMmP7H9Mzs6FivxqRZs0hqhriXU4vpU=",
+      "sha256_fingerprint": "94e9ae45c1cddd7a82a111c6e1bfba1472f0e6236bdc878b612625ebf2432f12",
+      "created_at": "2026-11-08T11:39:32.193329+00:00",
       "state": "ACTIVE",
       "rotation_interval_days": 90
     }
   ],
-  "last_rotated_at": "2026-11-08T11:35:55.849337+00:00",
-  "active_key_id": "KID-ED25519-40BA6DEDFDDF"
+  "last_rotated_at": "2026-11-08T11:39:32.193329+00:00",
+  "active_key_id": "KID-ED25519-94E9AE45C1CD"
 }

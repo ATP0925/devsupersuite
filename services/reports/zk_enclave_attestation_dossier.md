@@ -1,7 +1,7 @@
 # DevSuperSuite Cryptographic Engineering - ZK & Enclave Attestation Dossier
 
 **Document Reference**: `DSS-ZK-ENCLAVE-2026-V1`  
-**Execution Timestamp**: `2026-11-08 11:36:10 UTC`  
+**Execution Timestamp**: `2026-11-08 11:39:47 UTC`  
 **Classification**: Sovereign Confidential Computing & Zero-Knowledge Attestation (Tier-1 Restricted)  
 **Issuing Authority**: DevSuperSuite Cryptographic Engineering & Applied Research Desk  
 **Contact**: `cryptography@devsupersuite.com`  
@@ -23,7 +23,7 @@ PCR1 OS / Init Services Verification:  VERIFIED (Matches Golden Baseline)
 PCR2 Application Binary Verification:  VERIFIED (Matches Golden Baseline)
 NIZKP Zero-Defects Verification:       MATHEMATICALLY PROVEN (Perfect Zero Knowledge)
 Cryptographic Proof Sealer:            Dual-Signature (Ed25519 + ML-DSA-87 PQC)
-Attestation Token ID:                  ATTEST-TOKEN-DSS-20261108-328C432D
+Attestation Token ID:                  ATTEST-TOKEN-DSS-20261108-C2E626D0
 Overall Security Determination:        100% CONFIDENTIAL COMPUTING PASS
 ═══════════════════════════════════════════════════════════════════════════════════
 ```
@@ -43,11 +43,11 @@ Overall Security Determination:        100% CONFIDENTIAL COMPUTING PASS
 
 ## 3. Non-Interactive Zero-Knowledge Proof (NIZKP) Ledger
 
-- **Proof Identifier**: `ZK-PRF-E9F536E0CFC91130`
+- **Proof Identifier**: `ZK-PRF-B927503DCF53B27B`
 - **Statement Verified**: `DevSuperSuite-Zero-Defects-Proof`
 - **Zero-Knowledge Property**: Proves `Critical Vulnerability Count == 0` without disclosing source code or proprietary vulnerability reports.
-- **Pedersen Commitment**: `0x266eb63b643004807aadd0700ea04a...`
-- **Announcement T**: `0x8d74092f51ce175986d2f003222906...`
+- **Pedersen Commitment**: `0x3535c8d3dcf036c6ed28fb37132cb4...`
+- **Announcement T**: `0xce0c59bfd5aa866505db9f5198c783...`
 - **Verification Verdict**: **`PASS (Perfect Zero Knowledge & Computational Soundness)`**
 
 ---
@@ -58,5 +58,5 @@ The attestation token is sealed under dual cryptographic authorities:
 1. **Classical Authority**: RFC 8032 PureEdDSA Ed25519 Digital Signature.
 2. **Post-Quantum Authority**: NIST FIPS 204 ML-DSA-87 (Dilithium-5, Level 5 CNSA 2.0).
 
-- **Sealed Token ID**: `ATTEST-TOKEN-DSS-20261108-328C432D`
+- **Sealed Token ID**: `ATTEST-TOKEN-DSS-20261108-C2E626D0`
 - **Issuing Authority**: DevSuperSuite Cryptographic Engineering (`cryptography@devsupersuite.com`).

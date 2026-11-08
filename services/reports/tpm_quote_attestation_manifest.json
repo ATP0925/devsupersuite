@@ -1,0 +1,41 @@
+{
+  "title": "DevSuperSuite Air-Gapped TPM 2.0 PCR Quote Attestation Manifest",
+  "generated_at": "2026-11-08T11:39:45.209382+00:00",
+  "authority": "DevSuperSuite Cryptographic Engineering (cryptography@devsupersuite.com)",
+  "attestation_status": "AIR_GAP_INTEGRITY_VERIFIED",
+  "hardware_ek_profile": {
+    "manufacturer": "Infineon Technologies (OPTIGA)",
+    "serial_number": "TPM20-SN-1DEF3C802BC6",
+    "tpm_model": "SLB9672-TPM2.0-FW15.22",
+    "firmware_revision": "15.22.1485.0",
+    "root_ca_subject": "CN=Infineon OPTIGA TPM Root CA, O=Infineon Technologies AG, C=DE",
+    "intermediate_ca_subject": "CN=Infineon Technologies (OPTIGA) Intermediate CA 2026, C=US",
+    "ek_public_key_fingerprint": "ca856d202d1050995e50825f767079bd926ea485483bec45c79188fa5685ce82",
+    "certificate_validity": true,
+    "tcg_extensions_verified": true
+  },
+  "attested_quote_details": {
+    "status": "AIR_GAP_INTEGRITY_VERIFIED",
+    "manufacturer": "Infineon Technologies (OPTIGA)",
+    "firmware_version": "0xf001600000000",
+    "clock_seconds": 1794137985,
+    "safe_clock": true,
+    "composite_pcr_digest": "df489f709ffe4734545e6f2fe4c54a4de8c4f01bb4669f0136cedf4200584596",
+    "golden_baseline_match": true,
+    "pcr_bank_eval": {
+      "PCR0": true,
+      "PCR2": true,
+      "PCR4": true,
+      "PCR7": true
+    },
+    "ak_fingerprint": "f78aa31cf04b970fd5ee013fd0fd3809624f61c34bcb733f047836625e2d8b59",
+    "ek_serial_number": "TPM20-SN-1DEF3C802BC6"
+  },
+  "golden_baseline_pcrs": {
+    "PCR0": "b753a4736fdf06e890c0bc064ad7154f67d26425c27633e9d8e578c7c91ad9f1",
+    "PCR2": "4a3b8e7261a99540b64d42b362650f9d98e57b98f981dc2645607ef2489c7438",
+    "PCR4": "8c459c3f0b2f568a913495f3c1628d32b508d59458ec73f2a36b12984620f491",
+    "PCR7": "f940b3726a8d31a547b3b9072c6e736a5b9c028a4128f73b6452899478f69201"
+  },
+  "composite_golden_digest": "df489f709ffe4734545e6f2fe4c54a4de8c4f01bb4669f0136cedf4200584596"
+}

@@ -1,0 +1,191 @@
+{
+  "$schema": "https://devsupersuite.com/schemas/edge-pop-topology-v1.json",
+  "metadata": {
+    "manifest_version": "1.0.0",
+    "reference": "DSS-EDGE-CDN-2026-V1",
+    "generated_at": "2026-11-08T11:39:51.159328+00:00",
+    "organization": "DevSuperSuite Solutions Architecture / OmniKernel Labs",
+    "contact": "solutions@devsupersuite.com",
+    "technical_contact": "edge@devsupersuite.com"
+  },
+  "network_routing": {
+    "bgp_asn": 64512,
+    "anycast_ipv4": "198.51.100.1",
+    "failover_probe_interval_ms": 100,
+    "failover_failure_threshold": 3,
+    "failover_sla_max_ms": 300,
+    "rate_limiting": {
+      "algorithm": "TokenBucket",
+      "default_burst_capacity": 20.0,
+      "default_refill_rate_rps": 10.0,
+      "mitigation_http_status": 429
+    }
+  },
+  "edge_pops": {
+    "iad-01": {
+      "pop_id": "iad-01",
+      "name": "Ashburn Metro Edge PoP",
+      "region": "North America",
+      "metro": "Ashburn, VA",
+      "country": "US",
+      "latitude": 39.0438,
+      "longitude": -77.4874,
+      "anycast_ip": "198.51.100.1",
+      "unicast_vip": "198.51.100.11",
+      "capacity_rps": 100000,
+      "origin_target": "origin-us-east.devsupersuite.internal",
+      "bgp_anycast_asn": 64512,
+      "status": "HEALTHY",
+      "health_score": 100.0,
+      "consecutive_failures": 0,
+      "consecutive_successes": 10,
+      "active_connections": 14250,
+      "tier": "Tier-1 Hub"
+    },
+    "fra-01": {
+      "pop_id": "fra-01",
+      "name": "Frankfurt Central Edge PoP",
+      "region": "Europe",
+      "metro": "Frankfurt am Main",
+      "country": "DE",
+      "latitude": 50.1109,
+      "longitude": 8.6821,
+      "anycast_ip": "198.51.100.1",
+      "unicast_vip": "198.51.100.22",
+      "capacity_rps": 85000,
+      "origin_target": "origin-eu-central.devsupersuite.internal",
+      "bgp_anycast_asn": 64512,
+      "status": "HEALTHY",
+      "health_score": 100.0,
+      "consecutive_failures": 0,
+      "consecutive_successes": 10,
+      "active_connections": 11800,
+      "tier": "Tier-1 Hub"
+    },
+    "nrt-01": {
+      "pop_id": "nrt-01",
+      "name": "Tokyo Pacific Edge PoP",
+      "region": "Asia-Pacific",
+      "metro": "Tokyo / Narita",
+      "country": "JP",
+      "latitude": 35.6762,
+      "longitude": 139.6503,
+      "anycast_ip": "198.51.100.1",
+      "unicast_vip": "198.51.100.33",
+      "capacity_rps": 75000,
+      "origin_target": "origin-ap-northeast.devsupersuite.internal",
+      "bgp_anycast_asn": 64512,
+      "status": "HEALTHY",
+      "health_score": 100.0,
+      "consecutive_failures": 0,
+      "consecutive_successes": 10,
+      "active_connections": 9400,
+      "tier": "Tier-1 Hub"
+    },
+    "sin-01": {
+      "pop_id": "sin-01",
+      "name": "Singapore Equatorial Edge PoP",
+      "region": "Southeast Asia",
+      "metro": "Singapore Metro",
+      "country": "SG",
+      "latitude": 1.3521,
+      "longitude": 103.8198,
+      "anycast_ip": "198.51.100.1",
+      "unicast_vip": "198.51.100.44",
+      "capacity_rps": 65000,
+      "origin_target": "origin-ap-southeast.devsupersuite.internal",
+      "bgp_anycast_asn": 64512,
+      "status": "HEALTHY",
+      "health_score": 100.0,
+      "consecutive_failures": 0,
+      "consecutive_successes": 10,
+      "active_connections": 8100,
+      "tier": "Tier-2 Transit Hub"
+    },
+    "bom-01": {
+      "pop_id": "bom-01",
+      "name": "Mumbai Gateway Edge PoP",
+      "region": "South Asia",
+      "metro": "Mumbai Suburban",
+      "country": "IN",
+      "latitude": 19.076,
+      "longitude": 72.8777,
+      "anycast_ip": "198.51.100.1",
+      "unicast_vip": "198.51.100.55",
+      "capacity_rps": 70000,
+      "origin_target": "origin-ap-south.devsupersuite.internal",
+      "bgp_anycast_asn": 64512,
+      "status": "HEALTHY",
+      "health_score": 100.0,
+      "consecutive_failures": 0,
+      "consecutive_successes": 10,
+      "active_connections": 8900,
+      "tier": "Tier-2 Transit Hub"
+    }
+  },
+  "client_routing_presets": {
+    "client_us_ny": {
+      "name": "New York City, USA",
+      "latitude": 40.7128,
+      "longitude": -74.006,
+      "ip": "192.0.2.10",
+      "expected_primary": "iad-01"
+    },
+    "client_us_sf": {
+      "name": "San Francisco, CA, USA",
+      "latitude": 37.7749,
+      "longitude": -122.4194,
+      "ip": "192.0.2.25",
+      "expected_primary": "iad-01"
+    },
+    "client_uk_lon": {
+      "name": "London, United Kingdom",
+      "latitude": 51.5074,
+      "longitude": -0.1278,
+      "ip": "198.51.100.15",
+      "expected_primary": "fra-01"
+    },
+    "client_de_ber": {
+      "name": "Berlin, Germany",
+      "latitude": 52.52,
+      "longitude": 13.405,
+      "ip": "198.51.100.30",
+      "expected_primary": "fra-01"
+    },
+    "client_jp_osa": {
+      "name": "Osaka, Japan",
+      "latitude": 34.6937,
+      "longitude": 135.5023,
+      "ip": "203.0.113.40",
+      "expected_primary": "nrt-01"
+    },
+    "client_in_del": {
+      "name": "New Delhi, India",
+      "latitude": 28.6139,
+      "longitude": 77.209,
+      "ip": "103.25.10.5",
+      "expected_primary": "bom-01"
+    },
+    "client_in_blr": {
+      "name": "Bengaluru, India",
+      "latitude": 12.9716,
+      "longitude": 77.5946,
+      "ip": "103.25.20.8",
+      "expected_primary": "bom-01"
+    },
+    "client_sg_jur": {
+      "name": "Jurong, Singapore",
+      "latitude": 1.3329,
+      "longitude": 103.7436,
+      "ip": "175.45.10.12",
+      "expected_primary": "sin-01"
+    },
+    "client_au_syd": {
+      "name": "Sydney, Australia",
+      "latitude": -33.8688,
+      "longitude": 151.2093,
+      "ip": "203.0.113.88",
+      "expected_primary": "sin-01"
+    }
+  }
+}

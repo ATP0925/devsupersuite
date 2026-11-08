@@ -3,9 +3,9 @@
     "organization": "DevSuperSuite Official",
     "authority": "Directorate of QA Automation & Security Compliance",
     "classification": "Sovereign Enterprise Security Telemetry (Restricted)",
-    "generated_at": "2026-11-08T11:36:03.597190+00:00",
+    "generated_at": "2026-11-08T11:39:39.762934+00:00",
     "target_repository": "agent-commerce",
-    "sha256_digest": "eb5a8994239053d09f9b3b740c1325af47cb26e85e2f2bc974a1df5be8893df1"
+    "sha256_digest": "736e13fb253f1139e01d08146546d70407bf1a47d90d0c30657ead0bf1f9249b"
   },
   "enterprise_trust_index": {
     "composite_score": 100.0,
@@ -18,8 +18,8 @@
       "weight_percentage": 20,
       "score": 100.0,
       "metrics": {
-        "total_suites": 78,
-        "total_tests": 742,
+        "total_suites": 81,
+        "total_tests": 778,
         "pass_rate_percentage": 100.0,
         "fail_count": 0,
         "skipped_count": 0,
@@ -115,6 +115,12 @@
             "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
+            "module": "test_corporate_nexus_engine.py",
+            "test_count": 10,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
             "module": "test_cro_frontend_components.py",
             "test_count": 9,
             "status": "PASS",
@@ -141,6 +147,12 @@
           {
             "module": "test_ebpf_siem_forensics.py",
             "test_count": 10,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_edge_cdn_controller.py",
+            "test_count": 15,
             "status": "PASS",
             "coverage_domain": "Core Architecture & MCP Harness"
           },
@@ -463,6 +475,12 @@
             "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
+            "module": "test_tpm_quote_attestation.py",
+            "test_count": 11,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
             "module": "test_transfer_pricing_engine.py",
             "test_count": 11,
             "status": "PASS",
@@ -526,7 +544,7 @@
       "weight_percentage": 15,
       "score": 100.0,
       "metrics": {
-        "redos_execution_time_ms": 0.0089,
+        "redos_execution_time_ms": 0.0142,
         "redos_ceiling_limit_ms": 1.0,
         "redos_immunity": "PASS",
         "ast_max_recursion_depth": 30,

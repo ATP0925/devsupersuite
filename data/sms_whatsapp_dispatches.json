@@ -3998,5 +3998,405 @@
     },
     "status": "QUEUED_FOR_DISPATCH",
     "created_at": "2026-11-08T11:36:04.699976+00:00"
+  },
+  {
+    "dispatch_id": "DISP-SMS-5DBC0EE3",
+    "session_id": "ABND-DEV-101",
+    "customer_name": "Marcus Vance",
+    "customer_email": "dev.marcus@quantumcloud.de",
+    "phone_e164": "+491708829102",
+    "country": "DE",
+    "stage_id": "STAGE_1_15M",
+    "elapsed_minutes": 22.0,
+    "coupon_applied": null,
+    "recovery_url": "https://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_1_15m&email=dev.marcus@quantumcloud.de",
+    "sms_payload": {
+      "channel": "SMS",
+      "body": "DevSuperSuite: Did you experience any checkout or IDE setup friction? Our engineering team is here to assist. Resume setup: https://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_1_15m&email=dev.marcus@quantumcloud.de Reply STOP to opt-out.",
+      "character_count": 302,
+      "opt_out_compliant": true
+    },
+    "whatsapp_payload": {
+      "channel": "WHATSAPP",
+      "body": "\ud83d\udc4b *Hi Marcus*,\n\nWe noticed your DevSuperSuite Pro setup was paused. If you ran into monorepo configuration questions or payment issues, our customer success engineers are here to assist.\n\n\ud83d\udc49 *Resume Pro License Setup:*\nhttps://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_1_15m&email=dev.marcus@quantumcloud.de\n\n_Reply STOP to unsubscribe at any time._",
+      "opt_out_compliant": true
+    },
+    "status": "QUEUED_FOR_DISPATCH",
+    "created_at": "2026-11-08T11:36:51.226645+00:00"
+  },
+  {
+    "dispatch_id": "DISP-SMS-950C1137",
+    "session_id": "ABND-DEV-202",
+    "customer_name": "Priya Sharma",
+    "customer_email": "techlead.priya@fintechscale.in",
+    "phone_e164": "+919876543210",
+    "country": "IN",
+    "stage_id": "STAGE_2_4H",
+    "elapsed_minutes": 300.0,
+    "coupon_applied": null,
+    "recovery_url": "https://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_2_4h&email=techlead.priya@fintechscale.in",
+    "sms_payload": {
+      "channel": "SMS",
+      "body": "DevSuperSuite: Monorepos burn 40k+ tokens/prompt in Cursor. OmniKernel slices 82% of that context locally before LLMs run. Claim your workstation license: https://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_2_4h&email=techlead.priya@fintechscale.in Reply STOP to opt-out.",
+      "character_count": 336,
+      "opt_out_compliant": true
+    },
+    "whatsapp_payload": {
+      "channel": "WHATSAPP",
+      "body": "\u26a1 *DevSuperSuite Engineering Digest:*\n\nDid you know unpruned context files burn ~40k prompt tokens per completion in Claude Code and Cursor? OmniKernel slices 80%+ of that context deterministically in < 15ms.\n\n\ud83d\udc49 *Test Live AST Compression:*\nhttps://devsupersuite.web.app/#demo\n\n\ud83d\udc49 *Activate Pro Lifetime ($29):*\nhttps://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_2_4h&email=techlead.priya@fintechscale.in\n\n_100% Offline \u2022 30-Day Money-Back Guarantee. Reply STOP to mute._",
+      "opt_out_compliant": true
+    },
+    "status": "QUEUED_FOR_DISPATCH",
+    "created_at": "2026-11-08T11:36:51.230838+00:00"
+  },
+  {
+    "dispatch_id": "DISP-SMS-FDC6A15D",
+    "session_id": "ABND-DEV-303",
+    "customer_name": "Lucas Silva",
+    "customer_email": "lucas.silva@nubank.com.br",
+    "phone_e164": "+5511987654321",
+    "country": "BR",
+    "stage_id": "STAGE_3_24H",
+    "elapsed_minutes": 1560.0,
+    "coupon_applied": "RECOVER20",
+    "recovery_url": "https://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_3_24h&discount=RECOVER20&email=lucas.silva@nubank.com.br",
+    "sms_payload": {
+      "channel": "SMS",
+      "body": "\u26a1 DevSuperSuite: Final 4 hours to claim Pro Lifetime with 20% OFF coupon RECOVER20 ($23.20 instead of $29). Activate here: https://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_3_24h&discount=RECOVER20&email=lucas.silva@nubank.com.br Text STOP to opt-out.",
+      "character_count": 318,
+      "opt_out_compliant": true
+    },
+    "whatsapp_payload": {
+      "channel": "WHATSAPP",
+      "body": "\ud83d\udea8 *Last Chance: 20% Cart Recovery Incentive*\n\nYour reserved DevSuperSuite Pro Lifetime checkout is expiring shortly. We unlocked an exclusive 20% OFF discount for you:\n\n\u2022 **Plan:** Hacker Solo Pro Lifetime\n\u2022 **Offer Price:** $23.20 USD (was $29)\n\u2022 **Coupon Code:** `RECOVER20`\n\u2022 **Terms:** 100% Offline \u2022 Ed25519 Standalone Keys \u2022 30-Day Guarantee\n\n\ud83d\udc49 *Claim Your 20% Parity Discount:*\nhttps://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_3_24h&discount=RECOVER20&email=lucas.silva@nubank.com.br\n\n_Reply STOP to unsubscribe._",
+      "opt_out_compliant": true
+    },
+    "status": "QUEUED_FOR_DISPATCH",
+    "created_at": "2026-11-08T11:36:51.234580+00:00"
+  },
+  {
+    "dispatch_id": "DISP-SMS-E6123BA2",
+    "session_id": "ABND-DEV-404",
+    "customer_name": "Alex Vance",
+    "customer_email": "alex.vance@legacycorp.org",
+    "phone_e164": "+14155550199",
+    "country": "US/CA",
+    "stage_id": "STAGE_1_15M",
+    "elapsed_minutes": 45.0,
+    "coupon_applied": null,
+    "recovery_url": "https://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_1_15m&email=alex.vance@legacycorp.org",
+    "sms_payload": {
+      "channel": "SMS",
+      "body": "DevSuperSuite: Did you experience any checkout or IDE setup friction? Our engineering team is here to assist. Resume setup: https://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_1_15m&email=alex.vance@legacycorp.org Reply STOP to opt-out.",
+      "character_count": 301,
+      "opt_out_compliant": true
+    },
+    "whatsapp_payload": {
+      "channel": "WHATSAPP",
+      "body": "\ud83d\udc4b *Hi Alex*,\n\nWe noticed your DevSuperSuite Pro setup was paused. If you ran into monorepo configuration questions or payment issues, our customer success engineers are here to assist.\n\n\ud83d\udc49 *Resume Pro License Setup:*\nhttps://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_1_15m&email=alex.vance@legacycorp.org\n\n_Reply STOP to unsubscribe at any time._",
+      "opt_out_compliant": true
+    },
+    "status": "QUEUED_FOR_DISPATCH",
+    "created_at": "2026-11-08T11:36:51.239000+00:00"
+  },
+  {
+    "dispatch_id": "DISP-SMS-2D46F099",
+    "session_id": "ABND-DEV-101",
+    "customer_name": "Marcus Vance",
+    "customer_email": "dev.marcus@quantumcloud.de",
+    "phone_e164": "+491708829102",
+    "country": "DE",
+    "stage_id": "STAGE_1_15M",
+    "elapsed_minutes": 22.0,
+    "coupon_applied": null,
+    "recovery_url": "https://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_1_15m&email=dev.marcus@quantumcloud.de",
+    "sms_payload": {
+      "channel": "SMS",
+      "body": "DevSuperSuite: Did you experience any checkout or IDE setup friction? Our engineering team is here to assist. Resume setup: https://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_1_15m&email=dev.marcus@quantumcloud.de Reply STOP to opt-out.",
+      "character_count": 302,
+      "opt_out_compliant": true
+    },
+    "whatsapp_payload": {
+      "channel": "WHATSAPP",
+      "body": "\ud83d\udc4b *Hi Marcus*,\n\nWe noticed your DevSuperSuite Pro setup was paused. If you ran into monorepo configuration questions or payment issues, our customer success engineers are here to assist.\n\n\ud83d\udc49 *Resume Pro License Setup:*\nhttps://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_1_15m&email=dev.marcus@quantumcloud.de\n\n_Reply STOP to unsubscribe at any time._",
+      "opt_out_compliant": true
+    },
+    "status": "QUEUED_FOR_DISPATCH",
+    "created_at": "2026-11-08T11:37:40.052760+00:00"
+  },
+  {
+    "dispatch_id": "DISP-SMS-0A23B45D",
+    "session_id": "ABND-DEV-202",
+    "customer_name": "Priya Sharma",
+    "customer_email": "techlead.priya@fintechscale.in",
+    "phone_e164": "+919876543210",
+    "country": "IN",
+    "stage_id": "STAGE_2_4H",
+    "elapsed_minutes": 300.0,
+    "coupon_applied": null,
+    "recovery_url": "https://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_2_4h&email=techlead.priya@fintechscale.in",
+    "sms_payload": {
+      "channel": "SMS",
+      "body": "DevSuperSuite: Monorepos burn 40k+ tokens/prompt in Cursor. OmniKernel slices 82% of that context locally before LLMs run. Claim your workstation license: https://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_2_4h&email=techlead.priya@fintechscale.in Reply STOP to opt-out.",
+      "character_count": 336,
+      "opt_out_compliant": true
+    },
+    "whatsapp_payload": {
+      "channel": "WHATSAPP",
+      "body": "\u26a1 *DevSuperSuite Engineering Digest:*\n\nDid you know unpruned context files burn ~40k prompt tokens per completion in Claude Code and Cursor? OmniKernel slices 80%+ of that context deterministically in < 15ms.\n\n\ud83d\udc49 *Test Live AST Compression:*\nhttps://devsupersuite.web.app/#demo\n\n\ud83d\udc49 *Activate Pro Lifetime ($29):*\nhttps://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_2_4h&email=techlead.priya@fintechscale.in\n\n_100% Offline \u2022 30-Day Money-Back Guarantee. Reply STOP to mute._",
+      "opt_out_compliant": true
+    },
+    "status": "QUEUED_FOR_DISPATCH",
+    "created_at": "2026-11-08T11:37:40.057403+00:00"
+  },
+  {
+    "dispatch_id": "DISP-SMS-39E37784",
+    "session_id": "ABND-DEV-303",
+    "customer_name": "Lucas Silva",
+    "customer_email": "lucas.silva@nubank.com.br",
+    "phone_e164": "+5511987654321",
+    "country": "BR",
+    "stage_id": "STAGE_3_24H",
+    "elapsed_minutes": 1560.0,
+    "coupon_applied": "RECOVER20",
+    "recovery_url": "https://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_3_24h&discount=RECOVER20&email=lucas.silva@nubank.com.br",
+    "sms_payload": {
+      "channel": "SMS",
+      "body": "\u26a1 DevSuperSuite: Final 4 hours to claim Pro Lifetime with 20% OFF coupon RECOVER20 ($23.20 instead of $29). Activate here: https://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_3_24h&discount=RECOVER20&email=lucas.silva@nubank.com.br Text STOP to opt-out.",
+      "character_count": 318,
+      "opt_out_compliant": true
+    },
+    "whatsapp_payload": {
+      "channel": "WHATSAPP",
+      "body": "\ud83d\udea8 *Last Chance: 20% Cart Recovery Incentive*\n\nYour reserved DevSuperSuite Pro Lifetime checkout is expiring shortly. We unlocked an exclusive 20% OFF discount for you:\n\n\u2022 **Plan:** Hacker Solo Pro Lifetime\n\u2022 **Offer Price:** $23.20 USD (was $29)\n\u2022 **Coupon Code:** `RECOVER20`\n\u2022 **Terms:** 100% Offline \u2022 Ed25519 Standalone Keys \u2022 30-Day Guarantee\n\n\ud83d\udc49 *Claim Your 20% Parity Discount:*\nhttps://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_3_24h&discount=RECOVER20&email=lucas.silva@nubank.com.br\n\n_Reply STOP to unsubscribe._",
+      "opt_out_compliant": true
+    },
+    "status": "QUEUED_FOR_DISPATCH",
+    "created_at": "2026-11-08T11:37:40.061663+00:00"
+  },
+  {
+    "dispatch_id": "DISP-SMS-12FEBB17",
+    "session_id": "ABND-DEV-404",
+    "customer_name": "Alex Vance",
+    "customer_email": "alex.vance@legacycorp.org",
+    "phone_e164": "+14155550199",
+    "country": "US/CA",
+    "stage_id": "STAGE_1_15M",
+    "elapsed_minutes": 45.0,
+    "coupon_applied": null,
+    "recovery_url": "https://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_1_15m&email=alex.vance@legacycorp.org",
+    "sms_payload": {
+      "channel": "SMS",
+      "body": "DevSuperSuite: Did you experience any checkout or IDE setup friction? Our engineering team is here to assist. Resume setup: https://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_1_15m&email=alex.vance@legacycorp.org Reply STOP to opt-out.",
+      "character_count": 301,
+      "opt_out_compliant": true
+    },
+    "whatsapp_payload": {
+      "channel": "WHATSAPP",
+      "body": "\ud83d\udc4b *Hi Alex*,\n\nWe noticed your DevSuperSuite Pro setup was paused. If you ran into monorepo configuration questions or payment issues, our customer success engineers are here to assist.\n\n\ud83d\udc49 *Resume Pro License Setup:*\nhttps://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_1_15m&email=alex.vance@legacycorp.org\n\n_Reply STOP to unsubscribe at any time._",
+      "opt_out_compliant": true
+    },
+    "status": "QUEUED_FOR_DISPATCH",
+    "created_at": "2026-11-08T11:37:40.066610+00:00"
+  },
+  {
+    "dispatch_id": "DISP-SMS-BFE96AF3",
+    "session_id": "ABND-DEV-101",
+    "customer_name": "Marcus Vance",
+    "customer_email": "dev.marcus@quantumcloud.de",
+    "phone_e164": "+491708829102",
+    "country": "DE",
+    "stage_id": "STAGE_1_15M",
+    "elapsed_minutes": 22.0,
+    "coupon_applied": null,
+    "recovery_url": "https://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_1_15m&email=dev.marcus@quantumcloud.de",
+    "sms_payload": {
+      "channel": "SMS",
+      "body": "DevSuperSuite: Did you experience any checkout or IDE setup friction? Our engineering team is here to assist. Resume setup: https://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_1_15m&email=dev.marcus@quantumcloud.de Reply STOP to opt-out.",
+      "character_count": 302,
+      "opt_out_compliant": true
+    },
+    "whatsapp_payload": {
+      "channel": "WHATSAPP",
+      "body": "\ud83d\udc4b *Hi Marcus*,\n\nWe noticed your DevSuperSuite Pro setup was paused. If you ran into monorepo configuration questions or payment issues, our customer success engineers are here to assist.\n\n\ud83d\udc49 *Resume Pro License Setup:*\nhttps://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_1_15m&email=dev.marcus@quantumcloud.de\n\n_Reply STOP to unsubscribe at any time._",
+      "opt_out_compliant": true
+    },
+    "status": "QUEUED_FOR_DISPATCH",
+    "created_at": "2026-11-08T11:39:23.212817+00:00"
+  },
+  {
+    "dispatch_id": "DISP-SMS-1C621CD4",
+    "session_id": "ABND-DEV-202",
+    "customer_name": "Priya Sharma",
+    "customer_email": "techlead.priya@fintechscale.in",
+    "phone_e164": "+919876543210",
+    "country": "IN",
+    "stage_id": "STAGE_2_4H",
+    "elapsed_minutes": 300.0,
+    "coupon_applied": null,
+    "recovery_url": "https://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_2_4h&email=techlead.priya@fintechscale.in",
+    "sms_payload": {
+      "channel": "SMS",
+      "body": "DevSuperSuite: Monorepos burn 40k+ tokens/prompt in Cursor. OmniKernel slices 82% of that context locally before LLMs run. Claim your workstation license: https://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_2_4h&email=techlead.priya@fintechscale.in Reply STOP to opt-out.",
+      "character_count": 336,
+      "opt_out_compliant": true
+    },
+    "whatsapp_payload": {
+      "channel": "WHATSAPP",
+      "body": "\u26a1 *DevSuperSuite Engineering Digest:*\n\nDid you know unpruned context files burn ~40k prompt tokens per completion in Claude Code and Cursor? OmniKernel slices 80%+ of that context deterministically in < 15ms.\n\n\ud83d\udc49 *Test Live AST Compression:*\nhttps://devsupersuite.web.app/#demo\n\n\ud83d\udc49 *Activate Pro Lifetime ($29):*\nhttps://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_2_4h&email=techlead.priya@fintechscale.in\n\n_100% Offline \u2022 30-Day Money-Back Guarantee. Reply STOP to mute._",
+      "opt_out_compliant": true
+    },
+    "status": "QUEUED_FOR_DISPATCH",
+    "created_at": "2026-11-08T11:39:23.216848+00:00"
+  },
+  {
+    "dispatch_id": "DISP-SMS-CB47BF76",
+    "session_id": "ABND-DEV-303",
+    "customer_name": "Lucas Silva",
+    "customer_email": "lucas.silva@nubank.com.br",
+    "phone_e164": "+5511987654321",
+    "country": "BR",
+    "stage_id": "STAGE_3_24H",
+    "elapsed_minutes": 1560.0,
+    "coupon_applied": "RECOVER20",
+    "recovery_url": "https://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_3_24h&discount=RECOVER20&email=lucas.silva@nubank.com.br",
+    "sms_payload": {
+      "channel": "SMS",
+      "body": "\u26a1 DevSuperSuite: Final 4 hours to claim Pro Lifetime with 20% OFF coupon RECOVER20 ($23.20 instead of $29). Activate here: https://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_3_24h&discount=RECOVER20&email=lucas.silva@nubank.com.br Text STOP to opt-out.",
+      "character_count": 318,
+      "opt_out_compliant": true
+    },
+    "whatsapp_payload": {
+      "channel": "WHATSAPP",
+      "body": "\ud83d\udea8 *Last Chance: 20% Cart Recovery Incentive*\n\nYour reserved DevSuperSuite Pro Lifetime checkout is expiring shortly. We unlocked an exclusive 20% OFF discount for you:\n\n\u2022 **Plan:** Hacker Solo Pro Lifetime\n\u2022 **Offer Price:** $23.20 USD (was $29)\n\u2022 **Coupon Code:** `RECOVER20`\n\u2022 **Terms:** 100% Offline \u2022 Ed25519 Standalone Keys \u2022 30-Day Guarantee\n\n\ud83d\udc49 *Claim Your 20% Parity Discount:*\nhttps://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_3_24h&discount=RECOVER20&email=lucas.silva@nubank.com.br\n\n_Reply STOP to unsubscribe._",
+      "opt_out_compliant": true
+    },
+    "status": "QUEUED_FOR_DISPATCH",
+    "created_at": "2026-11-08T11:39:23.221822+00:00"
+  },
+  {
+    "dispatch_id": "DISP-SMS-A13D24B6",
+    "session_id": "ABND-DEV-404",
+    "customer_name": "Alex Vance",
+    "customer_email": "alex.vance@legacycorp.org",
+    "phone_e164": "+14155550199",
+    "country": "US/CA",
+    "stage_id": "STAGE_1_15M",
+    "elapsed_minutes": 45.0,
+    "coupon_applied": null,
+    "recovery_url": "https://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_1_15m&email=alex.vance@legacycorp.org",
+    "sms_payload": {
+      "channel": "SMS",
+      "body": "DevSuperSuite: Did you experience any checkout or IDE setup friction? Our engineering team is here to assist. Resume setup: https://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_1_15m&email=alex.vance@legacycorp.org Reply STOP to opt-out.",
+      "character_count": 301,
+      "opt_out_compliant": true
+    },
+    "whatsapp_payload": {
+      "channel": "WHATSAPP",
+      "body": "\ud83d\udc4b *Hi Alex*,\n\nWe noticed your DevSuperSuite Pro setup was paused. If you ran into monorepo configuration questions or payment issues, our customer success engineers are here to assist.\n\n\ud83d\udc49 *Resume Pro License Setup:*\nhttps://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_1_15m&email=alex.vance@legacycorp.org\n\n_Reply STOP to unsubscribe at any time._",
+      "opt_out_compliant": true
+    },
+    "status": "QUEUED_FOR_DISPATCH",
+    "created_at": "2026-11-08T11:39:23.226376+00:00"
+  },
+  {
+    "dispatch_id": "DISP-SMS-FBE21D8C",
+    "session_id": "ABND-DEV-101",
+    "customer_name": "Marcus Vance",
+    "customer_email": "dev.marcus@quantumcloud.de",
+    "phone_e164": "+491708829102",
+    "country": "DE",
+    "stage_id": "STAGE_1_15M",
+    "elapsed_minutes": 22.0,
+    "coupon_applied": null,
+    "recovery_url": "https://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_1_15m&email=dev.marcus@quantumcloud.de",
+    "sms_payload": {
+      "channel": "SMS",
+      "body": "DevSuperSuite: Did you experience any checkout or IDE setup friction? Our engineering team is here to assist. Resume setup: https://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_1_15m&email=dev.marcus@quantumcloud.de Reply STOP to opt-out.",
+      "character_count": 302,
+      "opt_out_compliant": true
+    },
+    "whatsapp_payload": {
+      "channel": "WHATSAPP",
+      "body": "\ud83d\udc4b *Hi Marcus*,\n\nWe noticed your DevSuperSuite Pro setup was paused. If you ran into monorepo configuration questions or payment issues, our customer success engineers are here to assist.\n\n\ud83d\udc49 *Resume Pro License Setup:*\nhttps://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_1_15m&email=dev.marcus@quantumcloud.de\n\n_Reply STOP to unsubscribe at any time._",
+      "opt_out_compliant": true
+    },
+    "status": "QUEUED_FOR_DISPATCH",
+    "created_at": "2026-11-08T11:39:40.986352+00:00"
+  },
+  {
+    "dispatch_id": "DISP-SMS-9A2E6783",
+    "session_id": "ABND-DEV-202",
+    "customer_name": "Priya Sharma",
+    "customer_email": "techlead.priya@fintechscale.in",
+    "phone_e164": "+919876543210",
+    "country": "IN",
+    "stage_id": "STAGE_2_4H",
+    "elapsed_minutes": 300.0,
+    "coupon_applied": null,
+    "recovery_url": "https://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_2_4h&email=techlead.priya@fintechscale.in",
+    "sms_payload": {
+      "channel": "SMS",
+      "body": "DevSuperSuite: Monorepos burn 40k+ tokens/prompt in Cursor. OmniKernel slices 82% of that context locally before LLMs run. Claim your workstation license: https://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_2_4h&email=techlead.priya@fintechscale.in Reply STOP to opt-out.",
+      "character_count": 336,
+      "opt_out_compliant": true
+    },
+    "whatsapp_payload": {
+      "channel": "WHATSAPP",
+      "body": "\u26a1 *DevSuperSuite Engineering Digest:*\n\nDid you know unpruned context files burn ~40k prompt tokens per completion in Claude Code and Cursor? OmniKernel slices 80%+ of that context deterministically in < 15ms.\n\n\ud83d\udc49 *Test Live AST Compression:*\nhttps://devsupersuite.web.app/#demo\n\n\ud83d\udc49 *Activate Pro Lifetime ($29):*\nhttps://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_2_4h&email=techlead.priya@fintechscale.in\n\n_100% Offline \u2022 30-Day Money-Back Guarantee. Reply STOP to mute._",
+      "opt_out_compliant": true
+    },
+    "status": "QUEUED_FOR_DISPATCH",
+    "created_at": "2026-11-08T11:39:40.991671+00:00"
+  },
+  {
+    "dispatch_id": "DISP-SMS-5B7498E6",
+    "session_id": "ABND-DEV-303",
+    "customer_name": "Lucas Silva",
+    "customer_email": "lucas.silva@nubank.com.br",
+    "phone_e164": "+5511987654321",
+    "country": "BR",
+    "stage_id": "STAGE_3_24H",
+    "elapsed_minutes": 1560.0,
+    "coupon_applied": "RECOVER20",
+    "recovery_url": "https://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_3_24h&discount=RECOVER20&email=lucas.silva@nubank.com.br",
+    "sms_payload": {
+      "channel": "SMS",
+      "body": "\u26a1 DevSuperSuite: Final 4 hours to claim Pro Lifetime with 20% OFF coupon RECOVER20 ($23.20 instead of $29). Activate here: https://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_3_24h&discount=RECOVER20&email=lucas.silva@nubank.com.br Text STOP to opt-out.",
+      "character_count": 318,
+      "opt_out_compliant": true
+    },
+    "whatsapp_payload": {
+      "channel": "WHATSAPP",
+      "body": "\ud83d\udea8 *Last Chance: 20% Cart Recovery Incentive*\n\nYour reserved DevSuperSuite Pro Lifetime checkout is expiring shortly. We unlocked an exclusive 20% OFF discount for you:\n\n\u2022 **Plan:** Hacker Solo Pro Lifetime\n\u2022 **Offer Price:** $23.20 USD (was $29)\n\u2022 **Coupon Code:** `RECOVER20`\n\u2022 **Terms:** 100% Offline \u2022 Ed25519 Standalone Keys \u2022 30-Day Guarantee\n\n\ud83d\udc49 *Claim Your 20% Parity Discount:*\nhttps://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_3_24h&discount=RECOVER20&email=lucas.silva@nubank.com.br\n\n_Reply STOP to unsubscribe._",
+      "opt_out_compliant": true
+    },
+    "status": "QUEUED_FOR_DISPATCH",
+    "created_at": "2026-11-08T11:39:40.996702+00:00"
+  },
+  {
+    "dispatch_id": "DISP-SMS-44810155",
+    "session_id": "ABND-DEV-404",
+    "customer_name": "Alex Vance",
+    "customer_email": "alex.vance@legacycorp.org",
+    "phone_e164": "+14155550199",
+    "country": "US/CA",
+    "stage_id": "STAGE_1_15M",
+    "elapsed_minutes": 45.0,
+    "coupon_applied": null,
+    "recovery_url": "https://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_1_15m&email=alex.vance@legacycorp.org",
+    "sms_payload": {
+      "channel": "SMS",
+      "body": "DevSuperSuite: Did you experience any checkout or IDE setup friction? Our engineering team is here to assist. Resume setup: https://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_1_15m&email=alex.vance@legacycorp.org Reply STOP to opt-out.",
+      "character_count": 301,
+      "opt_out_compliant": true
+    },
+    "whatsapp_payload": {
+      "channel": "WHATSAPP",
+      "body": "\ud83d\udc4b *Hi Alex*,\n\nWe noticed your DevSuperSuite Pro setup was paused. If you ran into monorepo configuration questions or payment issues, our customer success engineers are here to assist.\n\n\ud83d\udc49 *Resume Pro License Setup:*\nhttps://devsupersuite.web.app/#claim?utm_source=sms_recovery&utm_medium=direct_mobile&utm_campaign=abandonment_stage_1_15m&email=alex.vance@legacycorp.org\n\n_Reply STOP to unsubscribe at any time._",
+      "opt_out_compliant": true
+    },
+    "status": "QUEUED_FOR_DISPATCH",
+    "created_at": "2026-11-08T11:39:41.002235+00:00"
   }
 ]
