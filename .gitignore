@@ -19,6 +19,7 @@ __pycache__/
 !generate_orange_og.py
 !build/DevSuperSuite/**
 !tests/**
+!services/**
 
 .vercel
 .firebase/
