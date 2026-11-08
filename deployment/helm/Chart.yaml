@@ -1,0 +1,26 @@
+apiVersion: v2
+name: devsupersuite-enterprise-airgap
+description: DevSuperSuite Enterprise Air-Gapped Stack (OmniKernel AST, AgentShield, Local MCP Proxy) for Zero-Trust Kubernetes Enclaves
+type: application
+version: 5.2.0
+appVersion: "5.2.0-LTS"
+keywords:
+  - ast-compiler
+  - context-compression
+  - secret-scanning
+  - mcp-proxy
+  - airgap
+  - zero-trust
+  - banking
+  - defense
+home: https://devsupersuite.web.app
+sources:
+  - https://devsupersuite.web.app
+maintainers:
+  - name: DevSuperSuite Official
+    email: compliance@devsupersuite.web.app
+    url: https://devsupersuite.web.app
+annotations:
+  artifacthub.io/license: Proprietary-Commercial
+  devsupersuite.com/security-classification: Enterprise-Restricted
+  devsupersuite.com/compliance: "SOC2-Type-II,ISO-27001,HIPAA,GDPR"

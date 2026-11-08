@@ -765,7 +765,54 @@
     </div>
   </footer>
 
-    <!-- Global Acquisition & Checkout Modal -->
+    <!-- Sticky Floating Quick-Buy Checkout Drawer (Phase 6 CRO) -->
+  <aside id="quickBuyDrawer" aria-label="Quick-Buy Pro License Bar" class="fixed bottom-0 left-0 right-0 z-40 bg-neutral-950/95 backdrop-blur-md border-t-2 border-[#ff5500] shadow-[0_-5px_35px_rgba(255,85,0,0.35)] transform translate-y-full transition-transform duration-500 ease-out py-3.5 px-4 sm:px-6">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 font-mono relative">
+      <!-- Live Scarcity & Urgency Indicator -->
+      <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
+        <div class="flex items-center gap-2">
+          <span class="relative flex h-2.5 w-2.5">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#ff5500] opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#ff5500]"></span>
+          </span>
+          <span class="text-white font-black text-xs sm:text-sm uppercase tracking-wide">
+            ⚡ Batch 01: 42/50 Pro Lifetime Licenses Claimed
+            <span class="text-[#ff5500]">($29 instead of $149/yr)</span>
+          </span>
+        </div>
+        
+        <!-- Trusted Payment Badges -->
+        <div class="flex items-center gap-2 text-[11px] text-neutral-400">
+          <span class="hidden lg:inline text-neutral-600">|</span>
+          <span class="flex items-center gap-1 text-neutral-300">
+            <i class="fa-brands fa-paypal text-[#0070ba]"></i> PayPal Verified
+          </span>
+          <span class="text-neutral-600">•</span>
+          <span class="flex items-center gap-1 text-neutral-300">
+            <i class="fa-brands fa-stripe text-[#635bff]"></i> Stripe
+          </span>
+          <span class="text-neutral-600">•</span>
+          <span class="flex items-center gap-1 text-emerald-400">
+            <i class="fa-solid fa-key"></i> Instant Ed25519 Key Delivery
+          </span>
+        </div>
+      </div>
+
+      <!-- Action Button & Dismiss Controls -->
+      <div class="flex items-center gap-3 w-full sm:w-auto justify-center">
+        <button onclick="openUpiModal('Hacker Solo', 1499, 29)" class="w-full sm:w-auto px-6 py-2.5 bg-[#ff5500] hover:bg-[#ff6a00] text-black font-black uppercase tracking-wider text-xs sm:text-sm transition flex items-center justify-center gap-2 border border-[#ff5500] shadow-[0_0_20px_rgba(255,85,0,0.5)] cursor-pointer">
+          <span>CLAIM $29 LICENSE NOW</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <button onclick="dismissQuickBuyDrawer()" class="text-neutral-500 hover:text-white text-lg font-mono p-1 transition" title="Dismiss Drawer" aria-label="Dismiss quick-buy drawer">
+          ✕
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Global Acquisition & Checkout Modal -->
   <div id="upiModal" class="fixed inset-0 bg-black/95 backdrop-blur-md z-50 flex items-center justify-center p-4 hidden">
     <div class="bg-neutral-950 border-2 border-[#ff5500] max-w-lg w-full p-6 sm:p-8 font-mono text-xs relative shadow-[0_0_60px_rgba(255,85,0,0.35)]">
       
@@ -1365,6 +1412,40 @@ def charge_customer(amount):
         loadOmniSnippet('fastapi');
       }
     });
+
+    // --- Sticky Floating Quick-Buy Checkout Drawer Controller (Phase 6 CRO) ---
+    let drawerDismissed = false;
+
+    function checkDrawerScroll() {
+      if (drawerDismissed) return;
+      try {
+        if (sessionStorage.getItem('dss_drawer_dismissed') === 'true') return;
+      } catch (e) {}
+
+      const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (scrollHeight <= 0) return;
+
+      const scrollPercent = window.scrollY / scrollHeight;
+      const drawer = document.getElementById('quickBuyDrawer');
+      if (!drawer) return;
+
+      if (scrollPercent >= 0.30) {
+        drawer.classList.remove('translate-y-full');
+      }
+    }
+
+    function dismissQuickBuyDrawer() {
+      drawerDismissed = true;
+      try {
+        sessionStorage.setItem('dss_drawer_dismissed', 'true');
+      } catch (e) {}
+      const drawer = document.getElementById('quickBuyDrawer');
+      if (drawer) {
+        drawer.classList.add('translate-y-full');
+      }
+    }
+
+    window.addEventListener('scroll', checkDrawerScroll, { passive: true });
   </script>
 </body>
 </html>

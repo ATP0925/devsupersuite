@@ -1,0 +1,53 @@
+{{- if .Values.networkPolicy.enabled }}
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: {{ .Release.Name }}-airgap-isolation
+  labels:
+    app.kubernetes.io/name: devsupersuite-airgap
+    app.kubernetes.io/instance: {{ .Release.Name }}
+spec:
+  podSelector: {}
+  policyTypes:
+    - Ingress
+    - Egress
+  ingress:
+    # Allow intra-namespace pod communication
+    - from:
+        - podSelector: {}
+      ports:
+        - protocol: TCP
+          port: 8080
+        - protocol: TCP
+          port: 8081
+        - protocol: TCP
+          port: 9090
+    # Allow allowed enterprise ingress CIDRs
+    {{- range .Values.networkPolicy.allowedIngressCIDRs }}
+    - from:
+        - ipBlock:
+            cidr: {{ . }}
+    {{- end }}
+  egress:
+    # Strictly allow egress ONLY to pods in the same namespace (Zero Internet Egress)
+    - to:
+        - podSelector: {}
+      ports:
+        - protocol: TCP
+          port: 8080
+        - protocol: TCP
+          port: 8081
+        - protocol: TCP
+          port: 9090
+    # Allow CoreDNS within cluster for local service discovery
+    - to:
+        - namespaceSelector: {}
+          podSelector:
+            matchLabels:
+              k8s-app: kube-dns
+      ports:
+        - protocol: UDP
+          port: 53
+        - protocol: TCP
+          port: 53
+{{- end }}

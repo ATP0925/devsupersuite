@@ -1,0 +1,64 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Release.Name }}-omnikernel
+  labels:
+    app.kubernetes.io/name: omnikernel
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/component: ast-engine
+spec:
+  replicas: {{ .Values.omnikernel.replicaCount }}
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: omnikernel
+      app.kubernetes.io/instance: {{ .Release.Name }}
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: omnikernel
+        app.kubernetes.io/instance: {{ .Release.Name }}
+    spec:
+      securityContext:
+        runAsUser: {{ .Values.securityContext.runAsUser }}
+        runAsGroup: {{ .Values.securityContext.runAsGroup }}
+        runAsNonRoot: {{ .Values.securityContext.runAsNonRoot }}
+        fsGroup: {{ .Values.securityContext.fsGroup }}
+        seccompProfile:
+          type: {{ .Values.securityContext.seccompProfile.type }}
+      containers:
+        - name: omnikernel
+          image: "{{ .Values.global.imageRegistry }}/{{ .Values.omnikernel.image.repository }}:{{ .Values.omnikernel.image.tag }}"
+          imagePullPolicy: {{ .Values.omnikernel.image.pullPolicy }}
+          securityContext:
+            readOnlyRootFilesystem: {{ .Values.containerSecurityContext.readOnlyRootFilesystem }}
+            allowPrivilegeEscalation: {{ .Values.containerSecurityContext.allowPrivilegeEscalation }}
+            capabilities:
+              drop:
+                {{- toYaml .Values.containerSecurityContext.capabilities.drop | nindent 16 }}
+          ports:
+            - name: http
+              containerPort: 8080
+              protocol: TCP
+          env:
+            {{- range $key, $val := .Values.omnikernel.env }}
+            - name: {{ $key }}
+              value: {{ $val | quote }}
+            {{- end }}
+          resources:
+            {{- toYaml .Values.omnikernel.resources | nindent 12 }}
+          volumeMounts:
+            {{- range .Values.omnikernel.ephemeralVolumes }}
+            - name: {{ .name }}
+              mountPath: {{ .mountPath }}
+            {{- end }}
+          livenessProbe:
+            {{- toYaml .Values.omnikernel.livenessProbe | nindent 12 }}
+          readinessProbe:
+            {{- toYaml .Values.omnikernel.readinessProbe | nindent 12 }}
+      volumes:
+        {{- range .Values.omnikernel.ephemeralVolumes }}
+        - name: {{ .name }}
+          emptyDir:
+            medium: {{ .emptyDir.medium }}
+            sizeLimit: {{ .emptyDir.sizeLimit }}
+        {{- end }}

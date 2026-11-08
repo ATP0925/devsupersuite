@@ -1,0 +1,205 @@
+# ═══════════════════════════════════════════════════════════════════════════════════
+# DevSuperSuite Tech Services - Enterprise Air-Gapped Helm Values Baseline
+# Target: Sovereign Kubernetes Enclaves, Banking Bastions, Defense OpenShift
+# Compliance: NSA/CISA Kubernetes Hardening Guidance, NIST SP 800-190, SOC 2 Type II
+# ═══════════════════════════════════════════════════════════════════════════════════
+
+global:
+  environment: production
+  airgap: true
+  zeroEgress: true
+  telemetryEnabled: false
+  imageRegistry: registry.devsupersuite.internal/enterprise
+  imagePullSecrets:
+    - name: dss-enterprise-registry-secret
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Pod Security Standards (Restricted Profile)
+# ─────────────────────────────────────────────────────────────────────────────
+securityContext:
+  runAsUser: 10001
+  runAsGroup: 10001
+  runAsNonRoot: true
+  fsGroup: 10001
+  seccompProfile:
+    type: RuntimeDefault
+
+containerSecurityContext:
+  readOnlyRootFilesystem: true
+  allowPrivilegeEscalation: false
+  capabilities:
+    drop:
+      - ALL
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 1. OmniKernel 5.0 AST Context Slicing Engine
+# ─────────────────────────────────────────────────────────────────────────────
+omnikernel:
+  enabled: true
+  replicaCount: 3
+  image:
+    repository: omnikernel
+    tag: 5.2.0-airgap
+    pullPolicy: IfNotPresent
+
+  env:
+    OMNIKERNEL_ENV: production
+    OMNIKERNEL_OFFLINE_MODE: "1"
+    OMNIKERNEL_ZERO_EGRESS: "1"
+    OMNIKERNEL_SIMD_INSTRUCTIONS: "AVX512"
+    OMNIKERNEL_CACHE_BACKEND: "memory"
+    OMNIKERNEL_WORKERS: "4"
+    PYTHONUNBUFFERED: "1"
+    PYTHONDONTWRITEBYTECODE: "1"
+
+  resources:
+    limits:
+      cpu: "8000m"
+      memory: "16Gi"
+    requests:
+      cpu: "2000m"
+      memory: "4Gi"
+
+  livenessProbe:
+    httpGet:
+      path: /health
+      port: 8080
+    initialDelaySeconds: 5
+    periodSeconds: 10
+    timeoutSeconds: 3
+    failureThreshold: 3
+
+  readinessProbe:
+    httpGet:
+      path: /ready
+      port: 8080
+    initialDelaySeconds: 3
+    periodSeconds: 5
+    timeoutSeconds: 2
+    failureThreshold: 2
+
+  ephemeralVolumes:
+    - name: ram-tmp
+      mountPath: /tmp
+      emptyDir:
+        medium: Memory
+        sizeLimit: 2Gi
+    - name: ram-run
+      mountPath: /run
+      emptyDir:
+        medium: Memory
+        sizeLimit: 128Mi
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 2. AgentShield Pre-Commit Secret Scanner
+# ─────────────────────────────────────────────────────────────────────────────
+agentshield:
+  enabled: true
+  replicaCount: 3
+  image:
+    repository: agentshield
+    tag: 5.2.0-airgap
+    pullPolicy: IfNotPresent
+
+  env:
+    AGENTSHIELD_ENV: production
+    AGENTSHIELD_OFFLINE_MODE: "1"
+    AGENTSHIELD_ZERO_EGRESS: "1"
+    AGENTSHIELD_SHANNON_THRESHOLD: "4.2"
+    PYTHONUNBUFFERED: "1"
+
+  resources:
+    limits:
+      cpu: "4000m"
+      memory: "8Gi"
+    requests:
+      cpu: "1000m"
+      memory: "2Gi"
+
+  livenessProbe:
+    httpGet:
+      path: /health
+      port: 8081
+    initialDelaySeconds: 5
+    periodSeconds: 10
+
+  readinessProbe:
+    httpGet:
+      path: /ready
+      port: 8081
+    initialDelaySeconds: 3
+    periodSeconds: 5
+
+  ephemeralVolumes:
+    - name: ram-tmp
+      mountPath: /tmp
+      emptyDir:
+        medium: Memory
+        sizeLimit: 1Gi
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 3. Model Context Protocol (MCP) Air-Gapped JSON-RPC Proxy
+# ─────────────────────────────────────────────────────────────────────────────
+mcpProxy:
+  enabled: true
+  replicaCount: 2
+  image:
+    repository: mcp-proxy
+    tag: 5.2.0-airgap
+    pullPolicy: IfNotPresent
+
+  service:
+    type: ClusterIP
+    port: 9090
+
+  env:
+    MCP_PROXY_ENV: production
+    MCP_OFFLINE_MODE: "1"
+    MCP_ALLOW_EXTERNAL_CALLS: "0"
+
+  resources:
+    limits:
+      cpu: "2000m"
+      memory: "4Gi"
+    requests:
+      cpu: "500m"
+      memory: "1Gi"
+
+  livenessProbe:
+    httpGet:
+      path: /health
+      port: 9090
+    initialDelaySeconds: 5
+    periodSeconds: 10
+
+  ephemeralVolumes:
+    - name: ram-tmp
+      mountPath: /tmp
+      emptyDir:
+        medium: Memory
+        sizeLimit: 512Mi
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 4. Air-Gapped NetworkPolicy (Zero External Egress Enforcement)
+# ─────────────────────────────────────────────────────────────────────────────
+networkPolicy:
+  enabled: true
+  denyExternalEgress: true
+  allowIntraNamespace: true
+  allowedIngressCIDRs:
+    # Restrict ingress strictly to enterprise VPN / developer bastion CIDRs
+    - 10.0.0.0/8
+    - 172.16.0.0/12
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Node Affinity & SIMD CPU Tolerations
+# ─────────────────────────────────────────────────────────────────────────────
+affinity:
+  nodeAffinity:
+    requiredDuringSchedulingIgnoredDuringExecution:
+      nodeSelectorTerms:
+        - matchExpressions:
+            - key: feature.node.kubernetes.io/cpu-cpuid.AVX512F
+              operator: In
+              values:
+                - "true"

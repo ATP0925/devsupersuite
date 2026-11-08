@@ -1,0 +1,200 @@
+# ═══════════════════════════════════════════════════════════════════════════════════
+# DevSuperSuite Tech Services - Air-Gapped Enterprise Deployment Orchestration
+# Reference: DSS-DEP-DOCKER-AIRGAP-2026-V1
+# Target Environments: Fortune 500 Banking, Defense Enclaves (SCIF), Sovereign Clouds
+# Compliance: Zero Internet Egress, Non-Root UID 10001, Read-Only RootFS, Drop ALL Caps
+# ═══════════════════════════════════════════════════════════════════════════════════
+
+version: "3.9"
+
+services:
+  # ─────────────────────────────────────────────────────────────────────────────
+  # 1. OmniKernel 5.0 AST Context Slicing & Parse-Tree Optimization Engine
+  # ─────────────────────────────────────────────────────────────────────────────
+  omnikernel-ast-engine:
+    image: registry.devsupersuite.internal/enterprise/omnikernel:5.2.0-airgap
+    container_name: dss-omnikernel-ast
+    restart: always
+    user: "10001:10001"
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    environment:
+      - OMNIKERNEL_ENV=production
+      - OMNIKERNEL_OFFLINE_MODE=1
+      - OMNIKERNEL_ZERO_EGRESS=1
+      - OMNIKERNEL_TELEMETRY=0
+      - OMNIKERNEL_SIMD_INSTRUCTIONS=AVX512
+      - OMNIKERNEL_WORKERS=8
+      - OMNIKERNEL_CACHE_BACKEND=memory
+      - OMNIKERNEL_PORT=8080
+      - PYTHONUNBUFFERED=1
+      - PYTHONDONTWRITEBYTECODE=1
+    tmpfs:
+      - /tmp:size=2G,mode=1777
+      - /run:size=128M,mode=1777
+      - /dev/shm:size=1G
+    deploy:
+      resources:
+        limits:
+          cpus: "8.0"
+          memory: 16G
+        reservations:
+          cpus: "4.0"
+          memory: 8G
+    healthcheck:
+      test: ["CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/health', timeout=2)"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+    networks:
+      - airgap_internal
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # 2. AgentShield Pre-Commit Entropy Validator & Terminal Proxy
+  # ─────────────────────────────────────────────────────────────────────────────
+  agentshield-precommit-validator:
+    image: registry.devsupersuite.internal/enterprise/agentshield:5.2.0-airgap
+    container_name: dss-agentshield-validator
+    restart: always
+    user: "10001:10001"
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    environment:
+      - AGENTSHIELD_ENV=production
+      - AGENTSHIELD_OFFLINE_MODE=1
+      - AGENTSHIELD_ZERO_EGRESS=1
+      - AGENTSHIELD_SHANNON_THRESHOLD=4.2
+      - AGENTSHIELD_PORT=8081
+      - PYTHONUNBUFFERED=1
+    tmpfs:
+      - /tmp:size=1G,mode=1777
+      - /run:size=64M,mode=1777
+    deploy:
+      resources:
+        limits:
+          cpus: "4.0"
+          memory: 8G
+        reservations:
+          cpus: "2.0"
+          memory: 4G
+    healthcheck:
+      test: ["CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8081/health', timeout=2)"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+    networks:
+      - airgap_internal
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # 3. Model Context Protocol (MCP) Air-Gapped JSON-RPC 2.0 Gateway
+  # ─────────────────────────────────────────────────────────────────────────────
+  mcp-enterprise-proxy:
+    image: registry.devsupersuite.internal/enterprise/mcp-proxy:5.2.0-airgap
+    container_name: dss-mcp-proxy
+    restart: always
+    user: "10001:10001"
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    environment:
+      - MCP_PROXY_ENV=production
+      - MCP_OFFLINE_MODE=1
+      - MCP_LISTEN_PORT=9090
+      - OMNIKERNEL_UPSTREAM_URL=http://omnikernel-ast-engine:8080
+      - AGENTSHIELD_UPSTREAM_URL=http://agentshield-precommit-validator:8081
+      - MCP_ALLOW_EXTERNAL_CALLS=0
+    tmpfs:
+      - /tmp:size=512M,mode=1777
+      - /run:size=32M,mode=1777
+    ports:
+      # Exposed locally to internal enterprise subnet / developer bastions only
+      - "127.0.0.1:9090:9090"
+    depends_on:
+      omnikernel-ast-engine:
+        condition: service_healthy
+      agentshield-precommit-validator:
+        condition: service_healthy
+    deploy:
+      resources:
+        limits:
+          cpus: "4.0"
+          memory: 4G
+        reservations:
+          cpus: "1.0"
+          memory: 1G
+    healthcheck:
+      test: ["CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:9090/health', timeout=2)"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+    networks:
+      - airgap_internal
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # 4. Local Air-Gapped High-Performance Inference Server (vLLM / llama.cpp)
+  # ─────────────────────────────────────────────────────────────────────────────
+  local-inference-gateway:
+    image: registry.devsupersuite.internal/enterprise/local-inference:5.2.0-airgap
+    container_name: dss-local-inference
+    restart: always
+    user: "10001:10001"
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    environment:
+      - MODEL_WEIGHTS_PATH=/models/deepseek-r1-distill-qwen-14b.gguf
+      - CONTEXT_WINDOW_SIZE=32768
+      - N_GPU_LAYERS=35
+      - SERVER_PORT=8082
+      - OFFLINE_AIRGAP=1
+      - TELEMETRY_DISABLED=1
+    volumes:
+      - type: bind
+        source: /opt/dss/models
+        target: /models
+        read_only: true
+    tmpfs:
+      - /tmp:size=4G,mode=1777
+      - /dev/shm:size=8G
+    deploy:
+      resources:
+        limits:
+          cpus: "16.0"
+          memory: 32G
+        reservations:
+          cpus: "8.0"
+          memory: 16G
+    healthcheck:
+      test: ["CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8082/v1/models', timeout=3)"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+    networks:
+      - airgap_internal
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Air-Gapped Network Topology
+# internal: true mathematically disables outbound default gateway routing.
+# No container on this network can establish an outbound internet connection.
+# ─────────────────────────────────────────────────────────────────────────────
+networks:
+  airgap_internal:
+    driver: bridge
+    internal: true
+    driver_opts:
+      com.docker.network.bridge.enable_icc: "true"
+      com.docker.network.bridge.enable_ip_masquerade: "false"
