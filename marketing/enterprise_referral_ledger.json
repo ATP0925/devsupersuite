@@ -2,7 +2,7 @@
   "version": "1.0.0",
   "governing_entity": "DevSuperSuite Growth & Revenue Operations (growth@devsupersuite.com)",
   "compliance_protocol": "100% Brand Anonymity - Zero Founder Personal Identifiers",
-  "last_updated": "2026-11-08T11:58:26.998061+00:00",
+  "last_updated": "2026-11-08T12:01:26.240329+00:00",
   "referrals": [
     {
       "token_code": "ref_v1_d892a01bf64c_tier_sovereign_unlimited_38fa091cb4d8e907a11209bcae7102f9",
@@ -879,6 +879,29 @@
       },
       "status": "ACTIVE_UNREDEEMED",
       "issued_at": "2026-11-08T11:58:26.865369+00:00"
+    },
+    {
+      "token_code": "ref_v1_977275b4f500_tier_sovereign_unlimited_68f39d9c1d232bd693fd92b314885d3d",
+      "claim_url": "https://devsupersuite.web.app/#claim?ref=ref_v1_977275b4f500_tier_sovereign_unlimited_68f39d9c1d232bd693fd92b314885d3d&utm_source=enterprise_ref&account=DEAL-RTX-2026-01",
+      "account_id": "DEAL-RTX-2026-01",
+      "originating_domain": "rtx.com",
+      "tier": "TIER_SOVEREIGN_UNLIMITED",
+      "champion_email": "champion@rtx.com",
+      "account_hash": "977275b4f500",
+      "timestamp": "202611081201",
+      "canonical_payload": "REF:DEAL-RTX-2026-01:rtx.com:TIER_SOVEREIGN_UNLIMITED:champion@rtx.com:202611081201",
+      "signature_hex": "68f39d9c1d232bd693fd92b314885d3d655ec182a123b3dd7c71ea5e4f8361af758e1340bce2951a5071fdf4fd5d25c5d7a235b9864a0ec34aa1ebd4fa790d0b",
+      "algorithm": "Ed25519",
+      "rewards": {
+        "tier_name": "Air-Gap On-Prem SCIF Unlimited Tier",
+        "base_acv_usd": 250000.0,
+        "bonus_seats_per_referral": 100,
+        "ast_throughput_boost_pct": 100.0,
+        "referrer_discount_pct": 18.0,
+        "referee_discount_pct": 12.0
+      },
+      "status": "ACTIVE_UNREDEEMED",
+      "issued_at": "2026-11-08T12:01:26.075671+00:00"
     }
   ],
   "seat_pools": [
@@ -907,7 +930,7 @@
         "Pratt": 250,
         "Space": 250
       },
-      "last_rebalance_timestamp": "2026-11-08T11:58:26.998038+00:00",
+      "last_rebalance_timestamp": "2026-11-08T12:01:26.240303+00:00",
       "cross_division_friction": "ZERO_PROCUREMENT_OVERHEAD"
     }
   ]

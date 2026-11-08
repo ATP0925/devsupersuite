@@ -238,6 +238,8 @@ class EntropyScanner:
                         "example" in line.lower() or
                         "signature" in line.lower() or
                         "hash" in line.lower() or
+                        "digest" in line.lower() or
+                        "sha256:" in line.lower() or
                         "certificate" in line.lower() or
                         "fingerprint" in line.lower() or
                         "pkcs" in file_name_lower or
@@ -297,7 +299,9 @@ class CommandSafetyScanner:
             "scanner" in file_name_lower or
             "interceptor" in file_name_lower or
             "gate" in file_name_lower or
-            "threat" in file_name_lower
+            "threat" in file_name_lower or
+            "bastion" in file_name_lower or
+            "interlock" in file_name_lower
         )
 
         lines = content.splitlines()

@@ -1391,5 +1391,20 @@
     "created_at": "2026-11-08T11:58:14.467378+00:00",
     "sha256_fingerprint": "b3cb3fcec275b6bb0123f12073cec8270227a2d83f678a8abde8ab69cf2e5e5a",
     "quote_file_path": "C:\\Users\\atpad\\.gemini\\antigravity\\scratch\\agent-commerce\\data\\quotes\\ENTERPRISE_QUOTE_DSS-ENT-Q2026-8F06D.md"
+  },
+  {
+    "quote_id": "DSS-ENT-Q2026-22898",
+    "client_organization": "Test Defense Corp",
+    "tier_id": "tier_25",
+    "seats": 25,
+    "sla_level": "standard",
+    "has_dedicated_tam": false,
+    "term_years": 1,
+    "total_contract_value_usd": 14000.0,
+    "annual_billed_usd": 14000.0,
+    "status": "FORMAL_QUOTE_ISSUED",
+    "created_at": "2026-11-08T12:01:09.636627+00:00",
+    "sha256_fingerprint": "d405e6154aa530fd28eda74e5234061af9ac43bd0a60ab610a46ca2bf952d3c8",
+    "quote_file_path": "C:\\Users\\atpad\\.gemini\\antigravity\\scratch\\agent-commerce\\data\\quotes\\ENTERPRISE_QUOTE_DSS-ENT-Q2026-22898.md"
   }
 ]

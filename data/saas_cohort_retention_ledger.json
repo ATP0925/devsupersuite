@@ -3,10 +3,10 @@
     "organization": "DevSuperSuite Official",
     "entity": "DevSuperSuite Tech Services",
     "treasury_contact": "cfo@devsupersuite.com",
-    "last_updated": "2026-11-08T11:58:27.925392+00:00"
+    "last_updated": "2026-11-08T12:01:27.174032+00:00"
   },
   "unit_economics": {
-    "timestamp": "2026-11-08T11:58:27.925408+00:00",
+    "timestamp": "2026-11-08T12:01:27.174053+00:00",
     "blended_monthly_arpu_usd": 785.0,
     "annualized_run_rate_arpu_usd": 9420.0,
     "gross_margin_pct": 79.3,

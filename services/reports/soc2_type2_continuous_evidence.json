@@ -5,7 +5,7 @@
   "contact": "DevSuperSuite Information Security (infosec@devsupersuite.com)",
   "observation_window": {
     "period_start": "2026-01-01T00:00:00Z",
-    "period_end": "2026-11-08T11:58:31.196225+00:00",
+    "period_end": "2026-11-08T12:01:30.638699+00:00",
     "type": "SOC 2 Type II Continuous 12-Month Lookback"
   },
   "trust_services_criteria_coverage": {
@@ -20,14 +20,14 @@
       "title": "Logical Access & FIPS 140-3 Cryptographic Enforcement",
       "description": "Verifies AES-256-GCM authenticated encryption, Ed25519 signatures, and TLS 1.3 mTLS enforcement.",
       "source_artifact_path": "services/reports/fips_140_3_audit.json",
-      "evidence_sha256": "531f7277c01e1a175c991ca7bdebf1ea44246f5aa81827b346cd6a20689edddb",
-      "collected_at": "2026-11-08T11:58:31.192853+00:00",
+      "evidence_sha256": "e76204b06b37c611d19f8582f83e8007e448afcf15e0cf28efc001cb6fd46ab3",
+      "collected_at": "2026-11-08T12:01:30.636320+00:00",
       "status": "COMPLIANT_VERIFIED",
       "verification_metadata": {
         "fips_status": "PASS",
         "approved_ciphers": "AES-256-GCM, Ed25519, TLS 1.3"
       },
-      "freshness_hours": 0.0,
+      "freshness_hours": 0.01,
       "is_fresh": true
     },
     {
@@ -36,14 +36,14 @@
       "title": "Zero-Trust Network Architecture & Cilium eBPF Microsegmentation",
       "description": "Evaluates default-deny network ingress/egress rules and lateral movement blast radius mitigation.",
       "source_artifact_path": "services/reports/ztna_microsegmentation_audit.json",
-      "evidence_sha256": "13f4d0a01fd26049c842aab8405f0bcc03c1c0367b505ba61a16c97f91384856",
-      "collected_at": "2026-11-08T11:58:31.192853+00:00",
+      "evidence_sha256": "404419cc8dab8d1d1344e656b6eca27eacb443fcfac58f0391983a6c08e499ec",
+      "collected_at": "2026-11-08T12:01:30.636320+00:00",
       "status": "COMPLIANT_VERIFIED",
       "verification_metadata": {
         "ebpf_status": "ENFORCED",
         "lateral_movement_risk": "MINIMAL"
       },
-      "freshness_hours": 0.01,
+      "freshness_hours": 0.05,
       "is_fresh": true
     },
     {
@@ -52,15 +52,15 @@
       "title": "Automated Pre-Commit Secret Screening & Static Analysis",
       "description": "Continuous Shannon entropy secret scanner (H(X) > 4.5) and dangerous command rejection gate.",
       "source_artifact_path": "services/reports/vulnerability_scan_report.md",
-      "evidence_sha256": "ee980a3bc9cbc16cdb1e4811ee6c95bc50f47519c6a6a993ccce6f9980c769c9",
-      "collected_at": "2026-11-08T11:58:31.192853+00:00",
+      "evidence_sha256": "352997dc4192354552f87058812939d76ba43045878c69a880979df14d3959d5",
+      "collected_at": "2026-11-08T12:01:30.636320+00:00",
       "status": "COMPLIANT_VERIFIED",
       "verification_metadata": {
         "critical_vulns": 0,
         "high_vulns": 0,
         "gate_status": "CLEAN_PASS"
       },
-      "freshness_hours": 0.0,
+      "freshness_hours": 0.01,
       "is_fresh": true
     },
     {
@@ -69,8 +69,8 @@
       "title": "Cryptographic Hardware Security (HSM) & Root Key Rotation",
       "description": "TPM 2.0 and AWS Nitro Enclave cryptographic attestation with 90-day automated root key rotation.",
       "source_artifact_path": "services/reports/hsm_enclave_attestation.json",
-      "evidence_sha256": "b9dd00f547d78db39b096273445fcbe6c4f418ae9b29e291d5007265e3653ea0",
-      "collected_at": "2026-11-08T11:58:31.192853+00:00",
+      "evidence_sha256": "096543e9e3255f5fa8ca561422aa553124b21795125f13656f57729c9761b566",
+      "collected_at": "2026-11-08T12:01:30.636320+00:00",
       "status": "COMPLIANT_VERIFIED",
       "verification_metadata": {
         "hardware_enclave": "ACTIVE",
@@ -85,8 +85,8 @@
       "title": "Container Image Security & Sigstore Cosign Attestation",
       "description": "Kubernetes Kyverno admission controller enforcement rejecting unsigned container images.",
       "source_artifact_path": "services/reports/container_cosign_attestation.json",
-      "evidence_sha256": "f368dd4a4f42e4fa0f07e49ee5b2573ca1438213e0c494b5d3e2066dcb33e716",
-      "collected_at": "2026-11-08T11:58:31.192853+00:00",
+      "evidence_sha256": "b0e2f827f4a0ffd1fa43a9f447af5f99546a150e60dd956d9c92923b20aa7272",
+      "collected_at": "2026-11-08T12:01:30.636320+00:00",
       "status": "COMPLIANT_VERIFIED",
       "verification_metadata": {
         "admission_controller_rule": "REJECT_UNSIGNED",
@@ -101,8 +101,8 @@
       "title": "API Rate Limiting & Token Bucket DDoS Circuit Breakers",
       "description": "Automated circuit breaker preventing cascading failures under third-party upstream outage.",
       "source_artifact_path": "services/reports/api_resilience_circuit_breaker.json",
-      "evidence_sha256": "d625d5109b9691956fb67ea055c26db62889dbbc79d474cb30f9534e1ab72617",
-      "collected_at": "2026-11-08T11:58:31.192853+00:00",
+      "evidence_sha256": "02ead2eb589d9d185631befe324d3eff098017f366744b3534a9e837d16abdc0",
+      "collected_at": "2026-11-08T12:01:30.636320+00:00",
       "status": "COMPLIANT_VERIFIED",
       "verification_metadata": {
         "circuit_breaker_states": [
@@ -121,8 +121,8 @@
       "title": "Multi-Region Disaster Recovery & RPO/RTO SLA Verification",
       "description": "Automated 7-step failover gate verifying sub-second RPO (< 1.0s) and rapid RTO (< 60.0s).",
       "source_artifact_path": "services/reports/disaster_recovery_audit.json",
-      "evidence_sha256": "0c962d04c7dbb1735833e43e32caed8d4af79474daa5b469feceadac05046332",
-      "collected_at": "2026-11-08T11:58:31.192853+00:00",
+      "evidence_sha256": "ebe521c68892d715727687398fc768d046716817788c4f6bb2f1e58168241cea",
+      "collected_at": "2026-11-08T12:01:30.636320+00:00",
       "status": "COMPLIANT_VERIFIED",
       "verification_metadata": {
         "measured_rpo_ms": 120.0,
@@ -138,8 +138,8 @@
       "title": "Continuous Chaos Fault Injection & Resilience Testing",
       "description": "Simulated transit gateway partition, KMS outage, database crash, and DNS routing blackholes.",
       "source_artifact_path": "services/reports/disaster_recovery_chaos_report.md",
-      "evidence_sha256": "7cf4416d87a4e0fc2dd18da799888fb560c34806efa6bc2b6336d2eb73ac13d1",
-      "collected_at": "2026-11-08T11:58:31.192853+00:00",
+      "evidence_sha256": "0acdd2430555fe789f920a83418c27478a390be7e087be53b084462665b93951",
+      "collected_at": "2026-11-08T12:01:30.636320+00:00",
       "status": "COMPLIANT_VERIFIED",
       "verification_metadata": {
         "chaos_scenarios_passed": 4,
@@ -154,15 +154,15 @@
       "title": "DoD 5220.22-M Cryptographic Memory Zeroization Hygiene",
       "description": "Confirms sensitive key material in RAM is actively sanitized with 3-pass overwrite upon release.",
       "source_artifact_path": "services/reports/fips_140_3_audit.json",
-      "evidence_sha256": "531f7277c01e1a175c991ca7bdebf1ea44246f5aa81827b346cd6a20689edddb",
-      "collected_at": "2026-11-08T11:58:31.192853+00:00",
+      "evidence_sha256": "e76204b06b37c611d19f8582f83e8007e448afcf15e0cf28efc001cb6fd46ab3",
+      "collected_at": "2026-11-08T12:01:30.636320+00:00",
       "status": "COMPLIANT_VERIFIED",
       "verification_metadata": {
         "passes_executed": 3,
         "final_state": "0x00",
         "remanence_zero": true
       },
-      "freshness_hours": 0.0,
+      "freshness_hours": 0.01,
       "is_fresh": true
     },
     {
@@ -172,13 +172,13 @@
       "description": "Physical and logical data isolation procedures for air-gapped SCIF environments with zero internet egress.",
       "source_artifact_path": "services/enterprise_airgapped_scif_runbook.md",
       "evidence_sha256": "38f53690c39c91913e059a6df9265a3c32d5a6301c280984e756727e84c8088c",
-      "collected_at": "2026-11-08T11:58:31.192853+00:00",
+      "collected_at": "2026-11-08T12:01:30.636320+00:00",
       "status": "COMPLIANT_VERIFIED",
       "verification_metadata": {
         "scif_isolation": "AIR_GAPPED",
         "internet_egress": "BLOCKED"
       },
-      "freshness_hours": 1.55,
+      "freshness_hours": 1.6,
       "is_fresh": true
     },
     {
@@ -187,8 +187,8 @@
       "title": "Software Supply Chain Integrity & SLSA Level 3 Provenance",
       "description": "In-toto cryptographically signed provenance envelopes certifying hermetic reproducible builds.",
       "source_artifact_path": "services/reports/slsa_provenance_attestation.json",
-      "evidence_sha256": "65d600c7bc6d9d1ae0a57cb6484ec3a0256f89296314ae7ed14e08150df81bf2",
-      "collected_at": "2026-11-08T11:58:31.192853+00:00",
+      "evidence_sha256": "3998f11681f9ee54e793d6ff24d7efe954acfa540050e2dd4bda5b0995030f46",
+      "collected_at": "2026-11-08T12:01:30.636320+00:00",
       "status": "COMPLIANT_VERIFIED",
       "verification_metadata": {
         "slsa_level": 3,
@@ -204,8 +204,8 @@
       "title": "Dual-Format SBOM & NTIA Minimum Elements Compliance",
       "description": "Verified CycloneDX 1.5 and SPDX 2.3 manifests recording all third-party dependencies.",
       "source_artifact_path": "services/reports/sbom_cyclonedx_manifest.json",
-      "evidence_sha256": "f711b6fa4278e9f98df12bc820bffd7c9348d0a18f2a6de6a36e55190110609a",
-      "collected_at": "2026-11-08T11:58:31.192853+00:00",
+      "evidence_sha256": "c83bb867e1ab14d3065ef52bf1217c15e6ec871c45c6dd7eb77c7aa8ce32ec86",
+      "collected_at": "2026-11-08T12:01:30.636320+00:00",
       "status": "COMPLIANT_VERIFIED",
       "verification_metadata": {
         "ntia_elements_verified": 7,
@@ -220,15 +220,15 @@
       "title": "Dynamic STRIDE Threat Modeling & DREAD Scoring Matrix",
       "description": "Continuous risk assessment tracking 12 enterprise threat vectors and mitigation reductions.",
       "source_artifact_path": "services/reports/threat_model_stride_matrix.json",
-      "evidence_sha256": "c6be85fa898135014fde3dfbea8fd8bd6c0f376c13ad3464ed5228168f536e50",
-      "collected_at": "2026-11-08T11:58:31.192853+00:00",
+      "evidence_sha256": "518e7c0dd3dd29edfe4dbd575c73f211539a69c85c73a3b2297e4aa5d9f755b9",
+      "collected_at": "2026-11-08T12:01:30.636320+00:00",
       "status": "COMPLIANT_VERIFIED",
       "verification_metadata": {
         "initial_dread": 7.42,
         "residual_dread": 1.31,
         "risk_reduction_pct": 82.3
       },
-      "freshness_hours": 0.01,
+      "freshness_hours": 0.05,
       "is_fresh": true
     },
     {
@@ -237,8 +237,8 @@
       "title": "Continuous Automated Penetration Testing & DAST CI Gate",
       "description": "Automated injection, token brute-forcing, and AST parser denial-of-service tests prior to merge.",
       "source_artifact_path": "services/reports/automated_pentest_ci_gate_report.md",
-      "evidence_sha256": "60fd3505fbb6d17f64cf697d1d5e8aa993963f3983ba3062249c733f4329162c",
-      "collected_at": "2026-11-08T11:58:31.192853+00:00",
+      "evidence_sha256": "452713cdd4821d90ddcce1f5de1f488bb6ed1d4796f3ad61cc3536daf660b516",
+      "collected_at": "2026-11-08T12:01:30.636320+00:00",
       "status": "COMPLIANT_VERIFIED",
       "verification_metadata": {
         "dast_attacks_simulated": 6,
@@ -253,8 +253,8 @@
       "title": "Real-Time DevSecOps Telemetry & Enterprise Trust Index",
       "description": "Continuous posture aggregator computing 100.0/100.0 sovereign trust index across all test suites.",
       "source_artifact_path": "services/reports/live_security_posture_dashboard.json",
-      "evidence_sha256": "41a2cd7ffbda306e2fdd879fa4b1a423d4e2fcb2792801086d99b876ad488846",
-      "collected_at": "2026-11-08T11:58:31.192853+00:00",
+      "evidence_sha256": "010e5d6a62e1c83c785f796fa5fb6db2ad4bfb0efae32ad28014d5c2f45a02fb",
+      "collected_at": "2026-11-08T12:01:30.636320+00:00",
       "status": "COMPLIANT_VERIFIED",
       "verification_metadata": {
         "trust_index": 100.0,

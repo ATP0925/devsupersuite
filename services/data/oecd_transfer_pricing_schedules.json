@@ -1,0 +1,212 @@
+{
+  "binder_id": "DSS-OECD-TP-2026-DOSSIER",
+  "generation_timestamp": "2026-11-08T12:01:20.472129+00:00",
+  "commercial_principal": "DevSuperSuite Tech Services Corporation",
+  "treasury_desk": "DevSuperSuite Global Treasury Desk",
+  "treasury_email": "treasury@devsupersuite.com",
+  "executive_summary": {
+    "annual_idc_pool_usd": 125000.0,
+    "regional_csa_reimbursements_usd": 31250.0,
+    "cup_royalty_tested_rate_pct": 18.0,
+    "emea_tnmm_margin_pct": 4.6,
+    "apac_tnmm_margin_pct": 4.4,
+    "us_dempe_score_pct": 67.75,
+    "global_unrelated_revenues_usd": 558992.16
+  },
+  "cost_sharing_arrangement": {
+    "csa_audit_timestamp": "2026-11-08T12:01:20.472086+00:00",
+    "regulatory_framework": "Treas. Reg. \u00a7 1.482-7 / OECD BEPS Action 8-10 Chapter VI",
+    "csa_agreement_title": "Master Software Intangibles Cost-Sharing & Co-Development Agreement",
+    "annual_intangible_development_costs_usd": 125000.0,
+    "total_regional_csa_contributions_usd": 31250.0,
+    "net_us_borne_rd_costs_usd": 93750.0,
+    "csa_allocations": {
+      "US_PARENT": {
+        "entity_code": "US_PARENT",
+        "entity_name": "DevSuperSuite Tech Services Corporation",
+        "jurisdiction": "United States (Delaware)",
+        "rab_share_pct": 75.0,
+        "allocated_idc_usd": 93750.0,
+        "csa_true_up_reimbursement_to_us_usd": 0.0
+      },
+      "IE_EMEA": {
+        "entity_code": "IE_EMEA",
+        "entity_name": "DevSuperSuite EMEA Limited",
+        "jurisdiction": "Ireland (Dublin)",
+        "rab_share_pct": 18.0,
+        "allocated_idc_usd": 22500.0,
+        "csa_true_up_reimbursement_to_us_usd": 22500.0
+      },
+      "SG_APAC": {
+        "entity_code": "SG_APAC",
+        "entity_name": "DevSuperSuite APAC Pte. Ltd.",
+        "jurisdiction": "Singapore",
+        "rab_share_pct": 7.0,
+        "allocated_idc_usd": 8750.0,
+        "csa_true_up_reimbursement_to_us_usd": 8750.0
+      }
+    }
+  },
+  "arm_length_benchmarks": {
+    "benchmark_timestamp": "2026-11-08T12:01:20.472105+00:00",
+    "overall_alp_compliance": "CONFIRMED_ARM_LENGTH",
+    "safe_harbor_standards": "OECD Guidelines 2022 / US IRC Section 482",
+    "benchmarks": {
+      "CUP_SOFTWARE_ROYALTY": {
+        "benchmark_name": "CUP_SOFTWARE_ROYALTY",
+        "methodology": "Comparable Uncontrolled Price (CUP)",
+        "tested_financial_metric": "Software IP Royalty (% of Net Revenue)",
+        "lower_quartile_pct": 15.0,
+        "median_pct": 18.5,
+        "upper_quartile_pct": 22.0,
+        "tested_rate_pct": 18.0,
+        "interquartile_position": "SAFE_HARBOR_ALIGNED",
+        "variance_from_median_bps": -50.0
+      },
+      "TNMM_EMEA_DISTRIBUTOR": {
+        "benchmark_name": "TNMM_EMEA_DISTRIBUTOR",
+        "methodology": "Transactional Net Margin Method (TNMM)",
+        "tested_financial_metric": "Operating Margin (% of Net Revenue)",
+        "lower_quartile_pct": 3.1,
+        "median_pct": 4.5,
+        "upper_quartile_pct": 5.8,
+        "tested_rate_pct": 4.6,
+        "interquartile_position": "SAFE_HARBOR_ALIGNED",
+        "variance_from_median_bps": 10.0
+      },
+      "TNMM_APAC_DISTRIBUTOR": {
+        "benchmark_name": "TNMM_APAC_DISTRIBUTOR",
+        "methodology": "Transactional Net Margin Method (TNMM)",
+        "tested_financial_metric": "Operating Margin (% of Net Revenue)",
+        "lower_quartile_pct": 3.1,
+        "median_pct": 4.5,
+        "upper_quartile_pct": 5.8,
+        "tested_rate_pct": 4.4,
+        "interquartile_position": "SAFE_HARBOR_ALIGNED",
+        "variance_from_median_bps": -10.0
+      }
+    }
+  },
+  "dempe_analysis": {
+    "dempe_timestamp": "2026-11-08T12:01:20.472119+00:00",
+    "bepps_action": "OECD BEPS Action 8-10 (Aligning Transfer Pricing Outcomes with Value Creation)",
+    "dempe_categories": {
+      "DEVELOPMENT": {
+        "category": "DEVELOPMENT",
+        "description": "Core software architecture, compiler algorithms, and automated agents",
+        "weight_pct": 30.0,
+        "entity_contributions": {
+          "US_PARENT": 75.0,
+          "IE_EMEA": 15.0,
+          "SG_APAC": 10.0
+        }
+      },
+      "ENHANCEMENT": {
+        "category": "ENHANCEMENT",
+        "description": "Enterprise feature extension, API integrations, and continuous telemetry",
+        "weight_pct": 25.0,
+        "entity_contributions": {
+          "US_PARENT": 70.0,
+          "IE_EMEA": 20.0,
+          "SG_APAC": 10.0
+        }
+      },
+      "MAINTENANCE": {
+        "category": "MAINTENANCE",
+        "description": "Bug fixes, patch orchestration, security advisories, and SLA support",
+        "weight_pct": 15.0,
+        "entity_contributions": {
+          "US_PARENT": 50.0,
+          "IE_EMEA": 30.0,
+          "SG_APAC": 20.0
+        }
+      },
+      "PROTECTION": {
+        "category": "PROTECTION",
+        "description": "Patent filings, copyright enforcement, trade secret governance, and audit defense",
+        "weight_pct": 15.0,
+        "entity_contributions": {
+          "US_PARENT": 90.0,
+          "IE_EMEA": 5.0,
+          "SG_APAC": 5.0
+        }
+      },
+      "EXPLOITATION": {
+        "category": "EXPLOITATION",
+        "description": "Commercial licensing, enterprise sales execution, distribution, and contracting",
+        "weight_pct": 15.0,
+        "entity_contributions": {
+          "US_PARENT": 45.0,
+          "IE_EMEA": 35.0,
+          "SG_APAC": 20.0
+        }
+      }
+    },
+    "entity_dempe_scores": {
+      "US_PARENT": {
+        "entity_code": "US_PARENT",
+        "entity_name": "DevSuperSuite Tech Services Corporation",
+        "jurisdiction": "United States (Delaware)",
+        "dempe_weighted_score_pct": 67.75,
+        "profit_allocation_entitlement_pct": 67.75
+      },
+      "IE_EMEA": {
+        "entity_code": "IE_EMEA",
+        "entity_name": "DevSuperSuite EMEA Limited",
+        "jurisdiction": "Ireland (Dublin)",
+        "dempe_weighted_score_pct": 20.0,
+        "profit_allocation_entitlement_pct": 20.0
+      },
+      "SG_APAC": {
+        "entity_code": "SG_APAC",
+        "entity_name": "DevSuperSuite APAC Pte. Ltd.",
+        "jurisdiction": "Singapore",
+        "dempe_weighted_score_pct": 12.25,
+        "profit_allocation_entitlement_pct": 12.25
+      }
+    }
+  },
+  "country_by_country_reporting": {
+    "cbcr_reporting_year": 2026,
+    "reporting_currency": "USD",
+    "global_consolidated_unrelated_revenues_usd": 558992.16,
+    "global_profit_before_tax_usd": 391101.66,
+    "global_full_time_headcount": 24,
+    "cbcr_table_1": [
+      {
+        "tax_jurisdiction": "United States",
+        "entity_name": "DevSuperSuite Tech Services Corporation",
+        "unrelated_party_revenues_usd": 429000.0,
+        "related_party_csa_revenues_usd": 31250.0,
+        "total_revenues_usd": 460250.0,
+        "profit_before_tax_usd": 385200.0,
+        "tangible_assets_usd": 494394.29,
+        "number_of_employees": 18,
+        "statutory_tax_rate_pct": 21.0
+      },
+      {
+        "tax_jurisdiction": "Ireland",
+        "entity_name": "DevSuperSuite EMEA Limited",
+        "unrelated_party_revenues_usd": 91000.0,
+        "related_party_csa_revenues_usd": 0.0,
+        "total_revenues_usd": 91000.0,
+        "profit_before_tax_usd": 4186.0,
+        "tangible_assets_usd": 50000.0,
+        "number_of_employees": 4,
+        "statutory_tax_rate_pct": 12.5
+      },
+      {
+        "tax_jurisdiction": "Singapore",
+        "entity_name": "DevSuperSuite APAC Pte. Ltd.",
+        "unrelated_party_revenues_usd": 38992.16,
+        "related_party_csa_revenues_usd": 0.0,
+        "total_revenues_usd": 38992.16,
+        "profit_before_tax_usd": 1715.66,
+        "tangible_assets_usd": 25000.0,
+        "number_of_employees": 2,
+        "statutory_tax_rate_pct": 17.0
+      }
+    ]
+  },
+  "legal_defense_attestation": "The DevSuperSuite Global Treasury Desk certifies that this OECD BEPS Transfer Pricing Dossier substantiates arm's length intercompany pricing across CUP and TNMM methodologies, reflects actual DEMPE economic contributions, and satisfies OECD Actions 8-10 and Action 13 documentation mandates."
+}

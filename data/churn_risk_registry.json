@@ -16,7 +16,7 @@
       "precommit_drop_penalty": 0.0,
       "crash_rate_penalty": 0.0
     },
-    "audited_at": "2026-11-08T11:58:05.758019+00:00"
+    "audited_at": "2026-11-08T12:01:00.683006+00:00"
   },
   {
     "customer_email": "techlead.priya@fintechscale.in",
@@ -35,7 +35,7 @@
       "precommit_drop_penalty": 8.0,
       "crash_rate_penalty": 1.2
     },
-    "audited_at": "2026-11-08T11:58:05.758019+00:00"
+    "audited_at": "2026-11-08T12:01:00.683006+00:00"
   },
   {
     "customer_email": "kenji.sato@systems-tokyo.jp",
@@ -54,7 +54,7 @@
       "precommit_drop_penalty": 15.0,
       "crash_rate_penalty": 2.5
     },
-    "audited_at": "2026-11-08T11:58:05.758019+00:00"
+    "audited_at": "2026-11-08T12:01:00.683006+00:00"
   },
   {
     "customer_email": "alex.vance@legacycorp.org",
@@ -73,6 +73,6 @@
       "precommit_drop_penalty": 20.0,
       "crash_rate_penalty": 8.0
     },
-    "audited_at": "2026-11-08T11:58:05.758019+00:00"
+    "audited_at": "2026-11-08T12:01:00.683006+00:00"
   }
 ]

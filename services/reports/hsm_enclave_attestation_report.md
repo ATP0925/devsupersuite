@@ -9,8 +9,8 @@
 | Metric Name | Quantitative Value | Regulatory Standard | Status |
 | :--- | :--- | :--- | :--- |
 | **Cryptographic Compliance** | **`CERTIFIED_FIPS_140_3_COMPLIANT`** | FIPS 140-3 Level 3 | **`PASS`** |
-| **Active Root Signing Key** | **`KID-ED25519-0BAF70C22B12`** | Ed25519 (256-bit) | **PASS** |
-| **Key Fingerprint (SHA-256)** | **`0baf70c22b12b61a0a1e33c7c7f5e5fe...`** | RFC 8032 Authentic | **PASS** |
+| **Active Root Signing Key** | **`KID-ED25519-F411A621C84A`** | Ed25519 (256-bit) | **PASS** |
+| **Key Fingerprint (SHA-256)** | **`f411a621c84acead3f60af6d328a179b...`** | RFC 8032 Authentic | **PASS** |
 | **Hardware Enclaves Audited** | **`4 Platforms`** | TPM 2.0 / Nitro / SEV-SNP / Apple SEP | **PASS** |
 | **Memory Zeroization Protocol** | **`ZEROIZED`** | DoD 5220.22-M 3-Pass Overwrite | **PASS** |
 | **Ephemeral RAM Isolation** | **`tmpfs Mounting Active`** | Zero Persistent Memory | **PASS** |
@@ -21,10 +21,10 @@
 
 | Platform ID | Hardware Architecture | Root of Trust | PCR Count | Quote Signature (SHA-256) | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **`TPM_2_0`** | Trusted Platform Module (TPM 2.0) | Endorsement Key (EK) & Attestation Key (AK) | 5 Registers | `b100e46ad88db288c8f360ba...` | **`VERIFIED_AUTHENTIC`** |
-| **`AWS_NITRO`** | AWS Nitro Enclave | AWS Nitro Secure Cryptoprocessor / COSE Sign1 | 3 Registers | `fed8e6ffc71354e1e8c9cc91...` | **`VERIFIED_AUTHENTIC`** |
-| **`GCP_CONFIDENTIAL_VM`** | GCP Confidential Computing (AMD SEV-SNP / Intel TDX) | AMD SEV-SNP Firmware Certificate Authority | 3 Registers | `e823c62088cfabf27d593fc8...` | **`VERIFIED_AUTHENTIC`** |
-| **`APPLE_SECURE_ENCLAVE`** | Apple Silicon Secure Enclave Processor (SEP) | Apple Root CA & UID-Derived Key Wrapping | 3 Registers | `ad33c307f4b0c60f8eec8519...` | **`VERIFIED_AUTHENTIC`** |
+| **`TPM_2_0`** | Trusted Platform Module (TPM 2.0) | Endorsement Key (EK) & Attestation Key (AK) | 5 Registers | `bf785d91f3159782a3e9701c...` | **`VERIFIED_AUTHENTIC`** |
+| **`AWS_NITRO`** | AWS Nitro Enclave | AWS Nitro Secure Cryptoprocessor / COSE Sign1 | 3 Registers | `0fff6e7688c16ce4914ffd83...` | **`VERIFIED_AUTHENTIC`** |
+| **`GCP_CONFIDENTIAL_VM`** | GCP Confidential Computing (AMD SEV-SNP / Intel TDX) | AMD SEV-SNP Firmware Certificate Authority | 3 Registers | `f802555bbc5fd766f103fc72...` | **`VERIFIED_AUTHENTIC`** |
+| **`APPLE_SECURE_ENCLAVE`** | Apple Silicon Secure Enclave Processor (SEP) | Apple Root CA & UID-Derived Key Wrapping | 3 Registers | `c89a9bd63dbaca1c5fc6a86c...` | **`VERIFIED_AUTHENTIC`** |
 
 ---
 
@@ -45,14 +45,14 @@ All volatile memory buffers containing sensitive key material, customer tokens, 
 - **Attestation Authority**: `Directorate of QA Automation & Security Compliance`
 - **Legal Organization**: `DevSuperSuite Official`
 - **Security Inquiries**: `infosec@devsupersuite.com`
-- **Execution Timestamp**: `2026-11-08T11:58:19.089943+00:00`
-- **Cryptographic SHA-256 Seal**: `9c7e3e7253f956933ce2252d0b544774868dd3831b916ff1731fc34ce7cc6f20`
+- **Execution Timestamp**: `2026-11-08T12:01:14.907561+00:00`
+- **Cryptographic SHA-256 Seal**: `52b2a2c80d3d9fd75837587eb587beec6d9f8ea872a13cf8e9ce90c6c6b16440`
 
 ```
 ══════════════════════════════════════════════════════════════════════════════
 OFFICIAL HARDWARE SECURITY MODULE & FIPS 140-3 ATTESTATION SEAL
 PLATFORM INTEGRITY: VERIFIED AUTHENTIC (TPM 2.0 / NITRO / SEV-SNP)
-SHA-256: 9c7e3e7253f956933ce2252d0b544774868dd3831b916ff1731fc34ce7cc6f20
+SHA-256: 52b2a2c80d3d9fd75837587eb587beec6d9f8ea872a13cf8e9ce90c6c6b16440
 STATUS: AUDITED & CERTIFIED FOR SOVEREIGN ENTERPRISE OPERATIONS
 ══════════════════════════════════════════════════════════════════════════════
 ```

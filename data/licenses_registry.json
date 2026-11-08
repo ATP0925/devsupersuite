@@ -1654,5 +1654,23 @@
     "cli_install_bash": "curl -fsSL https://devsupersuite.web.app/install.sh | bash -s -- --license-key DSS-PRO-2026-246A-2870-D044 --email cli@test.com",
     "cli_install_powershell": "iwr -useb https://devsupersuite.web.app/install.ps1 | iex; omnikernel activate --key DSS-PRO-2026-246A-2870-D044",
     "cli_offline_activate": "devsupersuite license activate --offline-payload '{\"customer_email\": \"cli@test.com\", \"customer_name\": \"Senior Engineer\", \"features\": [\"omnikernel_ast_slicing\", \"agentshield_entropy_defense\", \"sub110ms_voice_dsp\", \"zero_telemetry_localhost\"], \"is_airgap\": false, \"issued_at\": \"2026-11-08T11:58:20.718245+00:00\", \"issuer\": \"DevSuperSuite Official Customer Engineering\", \"issuer_email\": \"support@devsupersuite.com\", \"license_key\": \"DSS-PRO-2026-246A-2870-D044\", \"order_id\": \"CLI-TEST-001\", \"plan_name\": \"Hacker Solo\", \"seats\": 1, \"valid_until\": \"LIFETIME_STANDALONE\"}' --signature 8d0677980bf04cb8175a7384d0a52b33a519d0fb817d348f4d8653c254d988a73bec652845cef9fc98fe7b549db71ba91df9230ca1d0eb139057bff20b794801 --public-key 2ff8dc53e80126d74d31d614a236b6e9c51ee0db207a3f590ce5ca93392982fc"
+  },
+  {
+    "license_key": "DSS-PRO-2026-2C4D-6564-812D",
+    "order_id": "CLI-TEST-001",
+    "customer_email": "cli@test.com",
+    "customer_name": "Senior Engineer",
+    "plan_name": "Hacker Solo",
+    "seats": 1,
+    "issued_at": "2026-11-08T12:01:16.423847+00:00",
+    "status": "ISSUED",
+    "is_airgap": false,
+    "canonical_payload": "{\"customer_email\": \"cli@test.com\", \"customer_name\": \"Senior Engineer\", \"features\": [\"omnikernel_ast_slicing\", \"agentshield_entropy_defense\", \"sub110ms_voice_dsp\", \"zero_telemetry_localhost\"], \"is_airgap\": false, \"issued_at\": \"2026-11-08T12:01:16.423847+00:00\", \"issuer\": \"DevSuperSuite Official Customer Engineering\", \"issuer_email\": \"support@devsupersuite.com\", \"license_key\": \"DSS-PRO-2026-2C4D-6564-812D\", \"order_id\": \"CLI-TEST-001\", \"plan_name\": \"Hacker Solo\", \"seats\": 1, \"valid_until\": \"LIFETIME_STANDALONE\"}",
+    "signature_hex": "7ff237985500b9626617941634ba2c0e802ade4eab3a2b41cb7ca464920bf06cffb03b8bdd4701a6f438565b60d60450d90c79971a8cfd69a5576b7eef538a04",
+    "sha256_digest": "e2a1cde5f6d2d432167fad604fa25427f47e9fde3164fb327e3ec48285e2b135",
+    "signer_public_key_hex": "2ff8dc53e80126d74d31d614a236b6e9c51ee0db207a3f590ce5ca93392982fc",
+    "cli_install_bash": "curl -fsSL https://devsupersuite.web.app/install.sh | bash -s -- --license-key DSS-PRO-2026-2C4D-6564-812D --email cli@test.com",
+    "cli_install_powershell": "iwr -useb https://devsupersuite.web.app/install.ps1 | iex; omnikernel activate --key DSS-PRO-2026-2C4D-6564-812D",
+    "cli_offline_activate": "devsupersuite license activate --offline-payload '{\"customer_email\": \"cli@test.com\", \"customer_name\": \"Senior Engineer\", \"features\": [\"omnikernel_ast_slicing\", \"agentshield_entropy_defense\", \"sub110ms_voice_dsp\", \"zero_telemetry_localhost\"], \"is_airgap\": false, \"issued_at\": \"2026-11-08T12:01:16.423847+00:00\", \"issuer\": \"DevSuperSuite Official Customer Engineering\", \"issuer_email\": \"support@devsupersuite.com\", \"license_key\": \"DSS-PRO-2026-2C4D-6564-812D\", \"order_id\": \"CLI-TEST-001\", \"plan_name\": \"Hacker Solo\", \"seats\": 1, \"valid_until\": \"LIFETIME_STANDALONE\"}' --signature 7ff237985500b9626617941634ba2c0e802ade4eab3a2b41cb7ca464920bf06cffb03b8bdd4701a6f438565b60d60450d90c79971a8cfd69a5576b7eef538a04 --public-key 2ff8dc53e80126d74d31d614a236b6e9c51ee0db207a3f590ce5ca93392982fc"
   }
 ]

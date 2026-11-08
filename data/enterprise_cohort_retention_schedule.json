@@ -8,7 +8,7 @@
     "minimum_ltv_cac_ratio": 7.4,
     "maximum_cac_payback_months": 8.0
   },
-  "last_updated": "2026-11-08T11:58:23.311313+00:00",
+  "last_updated": "2026-11-08T12:01:18.645330+00:00",
   "cohorts": [
     {
       "cohort_id": "COHORT-2024-Q1",

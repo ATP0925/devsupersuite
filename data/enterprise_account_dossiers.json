@@ -2,7 +2,7 @@
   "version": "1.0.0",
   "governing_authority": "DevSuperSuite Enterprise Solutions Directorate (enterprise@devsupersuite.com)",
   "compliance_protocol": "100% Brand Anonymity - Zero Founder Personal Identifiers",
-  "total_dossiers": 240,
+  "total_dossiers": 244,
   "dossiers": [
     {
       "session_id": "SESS-ABM-73E0E05F",
@@ -7679,6 +7679,134 @@
       "alert_payload": {
         "channel": "#enterprise-leads-live",
         "alert_id": "ALERT-7FDF05",
+        "text": "\ud83d\udea8 *ENTERPRISE HIGH-INTENT SURGE: Uber Technologies (uber.com)*\n\u2022 *Intent Score:* 80.0 / 100 [HIGH_INTENT_SURGE]\n\u2022 *Visitor IP:* `199.231.209.100` (Matched ASN: `AS393406`)\n\u2022 *Target ACV:* $120,000 USD (Enterprise 500-Seat Commercial)\n\u2022 *Tech Stack:* Go, Java, Python, Swift, Kotlin\n\u2022 *Recommended Play:* Dispatch tailored Air-Gap SCIF proposal to Lead Systems Architect.\n\u2022 *Enterprise Desk:* enterprise@devsupersuite.com",
+        "status": "DISPATCHED"
+      },
+      "alert_dispatched": true
+    },
+    {
+      "session_id": "SESS-ABM-9B9747BB",
+      "visitor_ip": "160.43.12.88",
+      "account_id": "ENT-001",
+      "company_name": "Bloomberg LP",
+      "domain": "bloomberg.com",
+      "industry": "Financial Technology & Market Data",
+      "employee_tier": "10,000+",
+      "asn": "AS26554",
+      "primary_stack": "C++, Python, TypeScript, Kafka",
+      "target_acv_usd": 120000,
+      "recommended_tier": "Enterprise 500-Seat Commercial",
+      "intent_score": 100.0,
+      "intent_tier": "HIGH_INTENT_SURGE",
+      "is_surge_alert": true,
+      "action_recommended": "IMMEDIATE_ENTERPRISE_AE_OUTREACH",
+      "score_breakdown": {
+        "page_depth_pts": 20.0,
+        "playground_dwell_pts": 30.0,
+        "pricing_visit_pts": 20.0,
+        "security_docs_pts": 15.0,
+        "repeat_visit_pts": 15.0
+      },
+      "timestamp": "2026-11-08T12:01:07.729535+00:00",
+      "alert_payload": {
+        "channel": "#enterprise-leads-live",
+        "alert_id": "ALERT-86EB8B",
+        "text": "\ud83d\udea8 *ENTERPRISE HIGH-INTENT SURGE: Bloomberg LP (bloomberg.com)*\n\u2022 *Intent Score:* 100.0 / 100 [HIGH_INTENT_SURGE]\n\u2022 *Visitor IP:* `160.43.12.88` (Matched ASN: `AS26554`)\n\u2022 *Target ACV:* $120,000 USD (Enterprise 500-Seat Commercial)\n\u2022 *Tech Stack:* C++, Python, TypeScript, Kafka\n\u2022 *Recommended Play:* Dispatch tailored Air-Gap SCIF proposal to Lead Systems Architect.\n\u2022 *Enterprise Desk:* enterprise@devsupersuite.com",
+        "status": "DISPATCHED"
+      },
+      "alert_dispatched": true
+    },
+    {
+      "session_id": "SESS-ABM-08E2654E",
+      "visitor_ip": "159.53.20.44",
+      "account_id": "ENT-002",
+      "company_name": "JPMorgan Chase & Co.",
+      "domain": "jpmorganchase.com",
+      "industry": "Investment Banking & Wealth",
+      "employee_tier": "100,000+",
+      "asn": "AS109",
+      "primary_stack": "Java, Python, C++, AWS, Kubernetes",
+      "target_acv_usd": 250000,
+      "recommended_tier": "Air-Gap On-Prem SCIF Unlimited",
+      "intent_score": 76.7,
+      "intent_tier": "HIGH_INTENT_SURGE",
+      "is_surge_alert": true,
+      "action_recommended": "IMMEDIATE_ENTERPRISE_AE_OUTREACH",
+      "score_breakdown": {
+        "page_depth_pts": 20.0,
+        "playground_dwell_pts": 21.7,
+        "pricing_visit_pts": 20.0,
+        "security_docs_pts": 15.0,
+        "repeat_visit_pts": 0.0
+      },
+      "timestamp": "2026-11-08T12:01:07.740071+00:00",
+      "alert_payload": {
+        "channel": "#enterprise-leads-live",
+        "alert_id": "ALERT-F8BAC4",
+        "text": "\ud83d\udea8 *ENTERPRISE HIGH-INTENT SURGE: JPMorgan Chase & Co. (jpmorganchase.com)*\n\u2022 *Intent Score:* 76.7 / 100 [HIGH_INTENT_SURGE]\n\u2022 *Visitor IP:* `159.53.20.44` (Matched ASN: `AS109`)\n\u2022 *Target ACV:* $250,000 USD (Air-Gap On-Prem SCIF Unlimited)\n\u2022 *Tech Stack:* Java, Python, C++, AWS, Kubernetes\n\u2022 *Recommended Play:* Dispatch tailored Air-Gap SCIF proposal to Lead Systems Architect.\n\u2022 *Enterprise Desk:* enterprise@devsupersuite.com",
+        "status": "DISPATCHED"
+      },
+      "alert_dispatched": true
+    },
+    {
+      "session_id": "SESS-ABM-885C100A",
+      "visitor_ip": "192.138.10.15",
+      "account_id": "ENT-003",
+      "company_name": "Raytheon Technologies",
+      "domain": "rtx.com",
+      "industry": "Defense & Aerospace Systems",
+      "employee_tier": "100,000+",
+      "asn": "AS10887",
+      "primary_stack": "Ada, C++, Rust, Embedded Linux",
+      "target_acv_usd": 250000,
+      "recommended_tier": "Air-Gap On-Prem SCIF Unlimited",
+      "intent_score": 100.0,
+      "intent_tier": "HIGH_INTENT_SURGE",
+      "is_surge_alert": true,
+      "action_recommended": "IMMEDIATE_ENTERPRISE_AE_OUTREACH",
+      "score_breakdown": {
+        "page_depth_pts": 20.0,
+        "playground_dwell_pts": 30.0,
+        "pricing_visit_pts": 20.0,
+        "security_docs_pts": 15.0,
+        "repeat_visit_pts": 15.0
+      },
+      "timestamp": "2026-11-08T12:01:07.749661+00:00",
+      "alert_payload": {
+        "channel": "#enterprise-leads-live",
+        "alert_id": "ALERT-F5DE70",
+        "text": "\ud83d\udea8 *ENTERPRISE HIGH-INTENT SURGE: Raytheon Technologies (rtx.com)*\n\u2022 *Intent Score:* 100.0 / 100 [HIGH_INTENT_SURGE]\n\u2022 *Visitor IP:* `192.138.10.15` (Matched ASN: `AS10887`)\n\u2022 *Target ACV:* $250,000 USD (Air-Gap On-Prem SCIF Unlimited)\n\u2022 *Tech Stack:* Ada, C++, Rust, Embedded Linux\n\u2022 *Recommended Play:* Dispatch tailored Air-Gap SCIF proposal to Lead Systems Architect.\n\u2022 *Enterprise Desk:* enterprise@devsupersuite.com",
+        "status": "DISPATCHED"
+      },
+      "alert_dispatched": true
+    },
+    {
+      "session_id": "SESS-ABM-27896459",
+      "visitor_ip": "199.231.209.100",
+      "account_id": "ENT-006",
+      "company_name": "Uber Technologies",
+      "domain": "uber.com",
+      "industry": "Mobility & Logistics Platforms",
+      "employee_tier": "30,000+",
+      "asn": "AS393406",
+      "primary_stack": "Go, Java, Python, Swift, Kotlin",
+      "target_acv_usd": 120000,
+      "recommended_tier": "Enterprise 500-Seat Commercial",
+      "intent_score": 80.0,
+      "intent_tier": "HIGH_INTENT_SURGE",
+      "is_surge_alert": true,
+      "action_recommended": "IMMEDIATE_ENTERPRISE_AE_OUTREACH",
+      "score_breakdown": {
+        "page_depth_pts": 20.0,
+        "playground_dwell_pts": 25.0,
+        "pricing_visit_pts": 20.0,
+        "security_docs_pts": 15.0,
+        "repeat_visit_pts": 0.0
+      },
+      "timestamp": "2026-11-08T12:01:07.777638+00:00",
+      "alert_payload": {
+        "channel": "#enterprise-leads-live",
+        "alert_id": "ALERT-A35E13",
         "text": "\ud83d\udea8 *ENTERPRISE HIGH-INTENT SURGE: Uber Technologies (uber.com)*\n\u2022 *Intent Score:* 80.0 / 100 [HIGH_INTENT_SURGE]\n\u2022 *Visitor IP:* `199.231.209.100` (Matched ASN: `AS393406`)\n\u2022 *Target ACV:* $120,000 USD (Enterprise 500-Seat Commercial)\n\u2022 *Tech Stack:* Go, Java, Python, Swift, Kotlin\n\u2022 *Recommended Play:* Dispatch tailored Air-Gap SCIF proposal to Lead Systems Architect.\n\u2022 *Enterprise Desk:* enterprise@devsupersuite.com",
         "status": "DISPATCHED"
       },

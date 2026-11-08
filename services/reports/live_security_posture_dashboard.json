@@ -3,9 +3,9 @@
     "organization": "DevSuperSuite Official",
     "authority": "Directorate of QA Automation & Security Compliance",
     "classification": "Sovereign Enterprise Security Telemetry (Restricted)",
-    "generated_at": "2026-11-08T11:58:29.460612+00:00",
+    "generated_at": "2026-11-08T12:01:28.750875+00:00",
     "target_repository": "agent-commerce",
-    "sha256_digest": "1ad8d490dd6300eb55419e9994e40e71d0e02aaf7949f2c12e26c3dc3b563ccd"
+    "sha256_digest": "8e835d5c2f4c7cec53dd40a9fa0515de700d859d6f27d157e47c631e5d86f79e"
   },
   "enterprise_trust_index": {
     "composite_score": 100.0,
@@ -18,8 +18,8 @@
       "weight_percentage": 20,
       "score": 100.0,
       "metrics": {
-        "total_suites": 105,
-        "total_tests": 1065,
+        "total_suites": 108,
+        "total_tests": 1104,
         "pass_rate_percentage": 100.0,
         "fail_count": 0,
         "skipped_count": 0,
@@ -111,6 +111,12 @@
           {
             "module": "test_checkout_recovery.py",
             "test_count": 10,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_churn_interdiction.py",
+            "test_count": 13,
             "status": "PASS",
             "coverage_domain": "Core Architecture & MCP Harness"
           },
@@ -319,6 +325,12 @@
             "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
+            "module": "test_gitops_promotion_controller.py",
+            "test_count": 14,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
             "module": "test_hardware_appliance_configurator.py",
             "test_count": 11,
             "status": "PASS",
@@ -395,6 +407,12 @@
             "test_count": 12,
             "status": "PASS",
             "coverage_domain": "Financial Engine & Statutory Ledgers"
+          },
+          {
+            "module": "test_oecd_transfer_pricing.py",
+            "test_count": 12,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
             "module": "test_pilot_telemetry.py",
@@ -688,7 +706,7 @@
       "weight_percentage": 15,
       "score": 100.0,
       "metrics": {
-        "redos_execution_time_ms": 0.0126,
+        "redos_execution_time_ms": 0.014,
         "redos_ceiling_limit_ms": 1.0,
         "redos_immunity": "PASS",
         "ast_max_recursion_depth": 30,

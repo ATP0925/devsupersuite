@@ -2,7 +2,7 @@
   "version": "1.0.0",
   "governing_entity": "DevSuperSuite Revenue Operations (growth@devsupersuite.com)",
   "compliance_protocol": "100% Brand Anonymity - Zero Founder Personal Identifiers",
-  "last_updated": "2026-11-08T11:58:06.883876+00:00",
+  "last_updated": "2026-11-08T12:01:02.090292+00:00",
   "quotes": [
     {
       "quote_id": "QTE-BC964D61",
@@ -548,6 +548,27 @@
       "airgap_support": true,
       "dedicated_tam": false,
       "quote_created_at": "2026-11-08T11:58:06.625082+00:00",
+      "valid_until_date": "2026-12-08"
+    },
+    {
+      "quote_id": "QTE-D2D0CFBB",
+      "company_name": "Palantir Tech",
+      "domain": "palantir.com",
+      "tier_id": "TIER_ENTERPRISE_1",
+      "tier_name": "Enterprise Tier 1",
+      "licensed_seats": 100,
+      "base_annual_price_usd": 4999.0,
+      "multi_year_commitment_years": 1,
+      "multi_year_discount_pct": 0.0,
+      "discount_amount_usd": 0.0,
+      "net_annual_price_usd": 4999.0,
+      "total_contract_value_usd": 4999.0,
+      "sla_uptime_pct": 99.9,
+      "support_response_p1_hrs": 4,
+      "ip_indemnity_cap_usd": 250000.0,
+      "airgap_support": true,
+      "dedicated_tam": false,
+      "quote_created_at": "2026-11-08T12:01:01.741870+00:00",
       "valid_until_date": "2026-12-08"
     }
   ],
@@ -1225,6 +1246,32 @@
           "signed_at": "2026-11-08T11:58:06.883805+00:00",
           "nonce": "e5ec5d7d6a8a44dd",
           "counterparty_signature_token": "3161c8247132bd91ec28797fb536d5a68c56980511f631f1d07115172f5f8c87"
+        }
+      ]
+    },
+    {
+      "contract_id": "MSA-D2D0CFBB",
+      "quote_id": "QTE-D2D0CFBB",
+      "company_name": "Palantir Tech",
+      "domain": "palantir.com",
+      "tier_name": "Enterprise Tier 1",
+      "licensed_seats": 100,
+      "annual_arr_usd": 4999.0,
+      "total_contract_value_usd": 4999.0,
+      "status": "EXECUTED_ACTIVE",
+      "effective_date": "2026-11-08",
+      "expiration_date": "2027-11-08",
+      "contract_body": "# MASTER SOFTWARE LICENSE AND SERVICES AGREEMENT (MSA)\n**Contract Reference**: `MSA-D2D0CFBB`  \n**Quote Reference**: `QTE-D2D0CFBB`  \n**Effective Date**: 2026-11-08  \n**Term**: 1 Year(s) (Expiring 2027-11-08)  \n**Provider**: **DevSuperSuite Official** (DevSuperSuite Revenue Operations, `growth@devsupersuite.com`)  \n**Customer**: **Palantir Tech** (`palantir.com`)  \n**Classification**: Sovereign Enterprise Software Agreement (Strict Brand Anonymity Enforced)  \n\n---\n\n## 1. Grant of Software License & Air-Gap Enclaves\nProvider hereby grants to Customer a non-exclusive, perpetual commercial license to deploy and execute DevSuperSuite software binaries and WebAssembly engines across **100 licensed seats**.\nCustomer is granted full authorization to deploy software within sovereign, offline, air-gapped SCIF defense facilities and private corporate VPC enclaves. The software executes 100% locally with zero external network connectivity or telemetry required.\n\n## 2. Service Level Agreement (SLA) & Incident Response\n- **Uptime Commitment**: Provider warrants that the software engine operates with **99.9% availability**.\n- **Support Severity Levels**:\n  * **Priority 1 (Critical Outage)**: Initial response within **4 hour(s)**.\n  * **Priority 2 (Degraded Performance)**: Initial response within 4 hours.\n  * **Priority 3 (General Inquiries)**: Initial response within 1 business day.\n- **Dedicated TAM**: Standard enterprise engineering desk support.\n\n## 3. Intellectual Property Infringement Indemnification\nProvider agrees to defend, indemnify, and hold harmless Customer and its affiliates against any third-party claim alleging that the software infringes any patent, copyright, or trade secret, up to an aggregate liability cap of **$250,000.00 USD**.\n\n## 4. Zero-Telemetry & Sovereign Confidentiality\nProvider represents and warrants that DevSuperSuite contains zero phone-home routines, zero remote telemetry trackers, and zero code-ingestion mechanisms. All AST slicing and secret zeroization operations execute strictly within local workstation memory.\n\n## 5. Commercial Fees & Payment Schedule\nCustomer agrees to settle Net Annual Fees of **$4,999.00 USD** (Total Contract Value: **$4,999.00 USD**) payable Net 30 upon invoice issuance.\n\n---\n\n## 6. Cryptographic Signatures & Verification Audit\nThis Agreement is executed by the authorized digital signature of both parties under asymmetric Ed25519 verification.\n",
+      "digest_sha256": "d726b0dfb178eed3a4b454a62128c4d8d62082d5812aa3ebc62f3e31bbc6205f",
+      "provider_signature_hex": "9681ba016eadc910ca1b8758232a38eb8fff6fc3917bc415e161a16f9811a43c3c2e9f0ae670b53aec8b0a8e38fe17aa379297ec43fdd1e7c0540bf6d8518b0a",
+      "provider_public_key_hex": "5195255e01d23d23e57af82fd0e7fee20e28663b7155b2cc73eff4b84e3956da",
+      "counterparty_signatures": [
+        {
+          "signatory_email": "legal@palantir.com",
+          "signatory_title": "Authorized Representative",
+          "signed_at": "2026-11-08T12:01:02.090173+00:00",
+          "nonce": "c1d2e06596494411",
+          "counterparty_signature_token": "5bcd4a985541126535250fe9a3ed28c2355795945819d8c9e971823060e1b2c5"
         }
       ]
     }

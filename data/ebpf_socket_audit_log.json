@@ -6668,5 +6668,730 @@
       }
     },
     "authority": "DevSuperSuite Security & Compliance (security@devsupersuite.com)"
+  },
+  {
+    "log_id": "EBPF-LOG-000231",
+    "timestamp_iso": "2026-11-08T12:01:05.495941+00:00",
+    "prev_hash": "678d1c303259bf9281ac69d1951ef7156695562a0b7cc19dcc11fe6c8b7e4478",
+    "entry_hash": "e7e8969d8ce357cb50ffd7cfa32d252409aa4692d5ba6905688552b328f28a11",
+    "decision": {
+      "verdict": "ALLOW_SCIF_LOOPBACK",
+      "allowed": true,
+      "reason": "Authorized local SCIF loopback address (127.0.0.1)",
+      "latency_us": 4.8,
+      "timestamp_iso": "2026-11-08T12:01:05.495941+00:00",
+      "rule_matched": "RULE-LSM-IP-LOOPBACK-01",
+      "request": {
+        "request_id": "REQ-SCIF-001",
+        "timestamp_ns": 196209359854600,
+        "pid": 4012,
+        "comm": "devsupersuite-api",
+        "uid": 1000,
+        "family": "AF_INET",
+        "protocol": "TCP",
+        "src_addr": "127.0.0.1",
+        "src_port": 54210,
+        "dst_addr": "127.0.0.1",
+        "dst_port": 8080,
+        "cgroup_path": "/sys/fs/cgroup/devsupersuite-scif"
+      }
+    },
+    "authority": "DevSuperSuite Security & Compliance (security@devsupersuite.com)"
+  },
+  {
+    "log_id": "EBPF-LOG-000232",
+    "timestamp_iso": "2026-11-08T12:01:05.504484+00:00",
+    "prev_hash": "e7e8969d8ce357cb50ffd7cfa32d252409aa4692d5ba6905688552b328f28a11",
+    "entry_hash": "4f75fd62353fe40929370aba946bfa5883addbe709e9accaf02d5b8ebf8c0a6a",
+    "decision": {
+      "verdict": "ALLOW_UNIX_SOCKET",
+      "allowed": true,
+      "reason": "Authorized local Unix domain socket IPC (/var/run/devsupersuite/vault.sock)",
+      "latency_us": 4.8,
+      "timestamp_iso": "2026-11-08T12:01:05.504484+00:00",
+      "rule_matched": "RULE-LSM-UNIX-LOCAL-01",
+      "request": {
+        "request_id": "REQ-SCIF-002",
+        "timestamp_ns": 196209359866400,
+        "pid": 4015,
+        "comm": "devsupersuite-vault",
+        "uid": 1000,
+        "family": "AF_UNIX",
+        "protocol": "UNIX_STREAM",
+        "src_addr": "",
+        "src_port": 0,
+        "dst_addr": "/var/run/devsupersuite/vault.sock",
+        "dst_port": 0,
+        "cgroup_path": "/sys/fs/cgroup/devsupersuite-scif"
+      }
+    },
+    "authority": "DevSuperSuite Security & Compliance (security@devsupersuite.com)"
+  },
+  {
+    "log_id": "EBPF-LOG-000233",
+    "timestamp_iso": "2026-11-08T12:01:05.512195+00:00",
+    "prev_hash": "4f75fd62353fe40929370aba946bfa5883addbe709e9accaf02d5b8ebf8c0a6a",
+    "entry_hash": "ff0ffcf613ebe97530c3e73e6b9be5798f8a4d270f1127f84cb7735ca451880e",
+    "decision": {
+      "verdict": "ALLOW_INTERNAL_ENCLAVE",
+      "allowed": true,
+      "reason": "Authorized internal sovereign SCIF enclave route (10.240.2.20)",
+      "latency_us": 4.9,
+      "timestamp_iso": "2026-11-08T12:01:05.512195+00:00",
+      "rule_matched": "RULE-LSM-IP-SCIF-ENCLAVE-02",
+      "request": {
+        "request_id": "REQ-SCIF-003",
+        "timestamp_ns": 196209359869700,
+        "pid": 4020,
+        "comm": "devsupersuite-cluster",
+        "uid": 1000,
+        "family": "AF_INET",
+        "protocol": "TCP",
+        "src_addr": "10.240.1.15",
+        "src_port": 48920,
+        "dst_addr": "10.240.2.20",
+        "dst_port": 9443,
+        "cgroup_path": "/sys/fs/cgroup/devsupersuite-scif"
+      }
+    },
+    "authority": "DevSuperSuite Security & Compliance (security@devsupersuite.com)"
+  },
+  {
+    "log_id": "EBPF-LOG-000234",
+    "timestamp_iso": "2026-11-08T12:01:05.520035+00:00",
+    "prev_hash": "ff0ffcf613ebe97530c3e73e6b9be5798f8a4d270f1127f84cb7735ca451880e",
+    "entry_hash": "7c80706aeda3671313e91e9d31f96ab4f6b5067b3509bdedf149d68e7a7e368c",
+    "decision": {
+      "verdict": "DROP_AIRGAP_VIOLATION",
+      "allowed": false,
+      "reason": "Zero-Trust air-gap isolation: blocked egress attempt to external destination (8.8.8.8:53)",
+      "latency_us": 4.95,
+      "timestamp_iso": "2026-11-08T12:01:05.520035+00:00",
+      "rule_matched": "RULE-LSM-IP-AIRGAP-KILL-03",
+      "request": {
+        "request_id": "REQ-SCIF-004",
+        "timestamp_ns": 196209359871600,
+        "pid": 8192,
+        "comm": "malicious-payload",
+        "uid": 1001,
+        "family": "AF_INET",
+        "protocol": "TCP",
+        "src_addr": "10.240.1.15",
+        "src_port": 51234,
+        "dst_addr": "8.8.8.8",
+        "dst_port": 53,
+        "cgroup_path": "/sys/fs/cgroup/devsupersuite-scif"
+      }
+    },
+    "authority": "DevSuperSuite Security & Compliance (security@devsupersuite.com)"
+  },
+  {
+    "log_id": "EBPF-LOG-000235",
+    "timestamp_iso": "2026-11-08T12:01:05.527597+00:00",
+    "prev_hash": "7c80706aeda3671313e91e9d31f96ab4f6b5067b3509bdedf149d68e7a7e368c",
+    "entry_hash": "d31bd02c30aac2c6f5b451d2a02e2cd0cab839f8b54879a1cbd0778e4b4075d7",
+    "decision": {
+      "verdict": "DROP_AIRGAP_VIOLATION",
+      "allowed": false,
+      "reason": "Zero-Trust air-gap isolation: blocked egress attempt to external destination (2001:4860:4860::8888:443)",
+      "latency_us": 4.95,
+      "timestamp_iso": "2026-11-08T12:01:05.527597+00:00",
+      "rule_matched": "RULE-LSM-IP-AIRGAP-KILL-03",
+      "request": {
+        "request_id": "REQ-SCIF-005",
+        "timestamp_ns": 196209359872800,
+        "pid": 8194,
+        "comm": "unauthorized-curl",
+        "uid": 1001,
+        "family": "AF_INET6",
+        "protocol": "TCP",
+        "src_addr": "::1",
+        "src_port": 58912,
+        "dst_addr": "2001:4860:4860::8888",
+        "dst_port": 443,
+        "cgroup_path": "/sys/fs/cgroup/devsupersuite-scif"
+      }
+    },
+    "authority": "DevSuperSuite Security & Compliance (security@devsupersuite.com)"
+  },
+  {
+    "log_id": "EBPF-LOG-000236",
+    "timestamp_iso": "2026-11-08T12:01:05.646576+00:00",
+    "prev_hash": "d31bd02c30aac2c6f5b451d2a02e2cd0cab839f8b54879a1cbd0778e4b4075d7",
+    "entry_hash": "9a18a33663b11523d55bf6defd1437e2637d8bb5dda574720965dd5689f4c253",
+    "decision": {
+      "verdict": "ALLOW_SCIF_LOOPBACK",
+      "allowed": true,
+      "reason": "Authorized local SCIF loopback address (127.0.0.1)",
+      "latency_us": 4.8,
+      "timestamp_iso": "2026-11-08T12:01:05.646576+00:00",
+      "rule_matched": "RULE-LSM-IP-LOOPBACK-01",
+      "request": {
+        "request_id": "REQ-SCIF-001",
+        "timestamp_ns": 196209510495800,
+        "pid": 4012,
+        "comm": "devsupersuite-api",
+        "uid": 1000,
+        "family": "AF_INET",
+        "protocol": "TCP",
+        "src_addr": "127.0.0.1",
+        "src_port": 54210,
+        "dst_addr": "127.0.0.1",
+        "dst_port": 8080,
+        "cgroup_path": "/sys/fs/cgroup/devsupersuite-scif"
+      }
+    },
+    "authority": "DevSuperSuite Security & Compliance (security@devsupersuite.com)"
+  },
+  {
+    "log_id": "EBPF-LOG-000237",
+    "timestamp_iso": "2026-11-08T12:01:05.654380+00:00",
+    "prev_hash": "9a18a33663b11523d55bf6defd1437e2637d8bb5dda574720965dd5689f4c253",
+    "entry_hash": "7ee00c7a002a8a87988db368b21e72d915f46d5bbd39555daac5374b253a7353",
+    "decision": {
+      "verdict": "ALLOW_UNIX_SOCKET",
+      "allowed": true,
+      "reason": "Authorized local Unix domain socket IPC (/var/run/devsupersuite/vault.sock)",
+      "latency_us": 4.8,
+      "timestamp_iso": "2026-11-08T12:01:05.654380+00:00",
+      "rule_matched": "RULE-LSM-UNIX-LOCAL-01",
+      "request": {
+        "request_id": "REQ-SCIF-002",
+        "timestamp_ns": 196209510505000,
+        "pid": 4015,
+        "comm": "devsupersuite-vault",
+        "uid": 1000,
+        "family": "AF_UNIX",
+        "protocol": "UNIX_STREAM",
+        "src_addr": "",
+        "src_port": 0,
+        "dst_addr": "/var/run/devsupersuite/vault.sock",
+        "dst_port": 0,
+        "cgroup_path": "/sys/fs/cgroup/devsupersuite-scif"
+      }
+    },
+    "authority": "DevSuperSuite Security & Compliance (security@devsupersuite.com)"
+  },
+  {
+    "log_id": "EBPF-LOG-000238",
+    "timestamp_iso": "2026-11-08T12:01:05.661983+00:00",
+    "prev_hash": "7ee00c7a002a8a87988db368b21e72d915f46d5bbd39555daac5374b253a7353",
+    "entry_hash": "ba21f1186c20252f083e148f9b15fab9ae1e2ea332eec0cbce24d11dc8e1fd10",
+    "decision": {
+      "verdict": "ALLOW_INTERNAL_ENCLAVE",
+      "allowed": true,
+      "reason": "Authorized internal sovereign SCIF enclave route (10.240.2.20)",
+      "latency_us": 4.9,
+      "timestamp_iso": "2026-11-08T12:01:05.661983+00:00",
+      "rule_matched": "RULE-LSM-IP-SCIF-ENCLAVE-02",
+      "request": {
+        "request_id": "REQ-SCIF-003",
+        "timestamp_ns": 196209510507200,
+        "pid": 4020,
+        "comm": "devsupersuite-cluster",
+        "uid": 1000,
+        "family": "AF_INET",
+        "protocol": "TCP",
+        "src_addr": "10.240.1.15",
+        "src_port": 48920,
+        "dst_addr": "10.240.2.20",
+        "dst_port": 9443,
+        "cgroup_path": "/sys/fs/cgroup/devsupersuite-scif"
+      }
+    },
+    "authority": "DevSuperSuite Security & Compliance (security@devsupersuite.com)"
+  },
+  {
+    "log_id": "EBPF-LOG-000239",
+    "timestamp_iso": "2026-11-08T12:01:05.669935+00:00",
+    "prev_hash": "ba21f1186c20252f083e148f9b15fab9ae1e2ea332eec0cbce24d11dc8e1fd10",
+    "entry_hash": "87bd7355a729641ac907b2390ce52cf378e71f67763b6b6811a394cc073f58a7",
+    "decision": {
+      "verdict": "DROP_AIRGAP_VIOLATION",
+      "allowed": false,
+      "reason": "Zero-Trust air-gap isolation: blocked egress attempt to external destination (8.8.8.8:53)",
+      "latency_us": 4.95,
+      "timestamp_iso": "2026-11-08T12:01:05.669935+00:00",
+      "rule_matched": "RULE-LSM-IP-AIRGAP-KILL-03",
+      "request": {
+        "request_id": "REQ-SCIF-004",
+        "timestamp_ns": 196209510509000,
+        "pid": 8192,
+        "comm": "malicious-payload",
+        "uid": 1001,
+        "family": "AF_INET",
+        "protocol": "TCP",
+        "src_addr": "10.240.1.15",
+        "src_port": 51234,
+        "dst_addr": "8.8.8.8",
+        "dst_port": 53,
+        "cgroup_path": "/sys/fs/cgroup/devsupersuite-scif"
+      }
+    },
+    "authority": "DevSuperSuite Security & Compliance (security@devsupersuite.com)"
+  },
+  {
+    "log_id": "EBPF-LOG-000240",
+    "timestamp_iso": "2026-11-08T12:01:05.677805+00:00",
+    "prev_hash": "87bd7355a729641ac907b2390ce52cf378e71f67763b6b6811a394cc073f58a7",
+    "entry_hash": "f0189ec9f244cada55fe9a956ce55b6b88a5f394853124499b952b060abb7227",
+    "decision": {
+      "verdict": "DROP_AIRGAP_VIOLATION",
+      "allowed": false,
+      "reason": "Zero-Trust air-gap isolation: blocked egress attempt to external destination (2001:4860:4860::8888:443)",
+      "latency_us": 4.95,
+      "timestamp_iso": "2026-11-08T12:01:05.677805+00:00",
+      "rule_matched": "RULE-LSM-IP-AIRGAP-KILL-03",
+      "request": {
+        "request_id": "REQ-SCIF-005",
+        "timestamp_ns": 196209510510000,
+        "pid": 8194,
+        "comm": "unauthorized-curl",
+        "uid": 1001,
+        "family": "AF_INET6",
+        "protocol": "TCP",
+        "src_addr": "::1",
+        "src_port": 58912,
+        "dst_addr": "2001:4860:4860::8888",
+        "dst_port": 443,
+        "cgroup_path": "/sys/fs/cgroup/devsupersuite-scif"
+      }
+    },
+    "authority": "DevSuperSuite Security & Compliance (security@devsupersuite.com)"
+  },
+  {
+    "log_id": "EBPF-LOG-000241",
+    "timestamp_iso": "2026-11-08T12:01:05.791511+00:00",
+    "prev_hash": "f0189ec9f244cada55fe9a956ce55b6b88a5f394853124499b952b060abb7227",
+    "entry_hash": "2f9d28d90492090355a2c9d55c98baef1044eeb91a667c4a77e6c40c0b87c095",
+    "decision": {
+      "verdict": "ALLOW_SCIF_LOOPBACK",
+      "allowed": true,
+      "reason": "Authorized local SCIF loopback address (127.0.0.1)",
+      "latency_us": 4.8,
+      "timestamp_iso": "2026-11-08T12:01:05.791511+00:00",
+      "rule_matched": "RULE-LSM-IP-LOOPBACK-01",
+      "request": {
+        "request_id": "REQ-SCIF-001",
+        "timestamp_ns": 196209655423400,
+        "pid": 4012,
+        "comm": "devsupersuite-api",
+        "uid": 1000,
+        "family": "AF_INET",
+        "protocol": "TCP",
+        "src_addr": "127.0.0.1",
+        "src_port": 54210,
+        "dst_addr": "127.0.0.1",
+        "dst_port": 8080,
+        "cgroup_path": "/sys/fs/cgroup/devsupersuite-scif"
+      }
+    },
+    "authority": "DevSuperSuite Security & Compliance (security@devsupersuite.com)"
+  },
+  {
+    "log_id": "EBPF-LOG-000242",
+    "timestamp_iso": "2026-11-08T12:01:05.799970+00:00",
+    "prev_hash": "2f9d28d90492090355a2c9d55c98baef1044eeb91a667c4a77e6c40c0b87c095",
+    "entry_hash": "910ec5db1c18feb2ec4f8d4f43a31fef61d7f5f9040506ad67f5c1227618fb53",
+    "decision": {
+      "verdict": "ALLOW_UNIX_SOCKET",
+      "allowed": true,
+      "reason": "Authorized local Unix domain socket IPC (/var/run/devsupersuite/vault.sock)",
+      "latency_us": 4.8,
+      "timestamp_iso": "2026-11-08T12:01:05.799970+00:00",
+      "rule_matched": "RULE-LSM-UNIX-LOCAL-01",
+      "request": {
+        "request_id": "REQ-SCIF-002",
+        "timestamp_ns": 196209655438000,
+        "pid": 4015,
+        "comm": "devsupersuite-vault",
+        "uid": 1000,
+        "family": "AF_UNIX",
+        "protocol": "UNIX_STREAM",
+        "src_addr": "",
+        "src_port": 0,
+        "dst_addr": "/var/run/devsupersuite/vault.sock",
+        "dst_port": 0,
+        "cgroup_path": "/sys/fs/cgroup/devsupersuite-scif"
+      }
+    },
+    "authority": "DevSuperSuite Security & Compliance (security@devsupersuite.com)"
+  },
+  {
+    "log_id": "EBPF-LOG-000243",
+    "timestamp_iso": "2026-11-08T12:01:05.808245+00:00",
+    "prev_hash": "910ec5db1c18feb2ec4f8d4f43a31fef61d7f5f9040506ad67f5c1227618fb53",
+    "entry_hash": "3ea24a71cd6f32ea49a684ac864d251d400d93e9d1519012e0d2d9eb20b74296",
+    "decision": {
+      "verdict": "ALLOW_INTERNAL_ENCLAVE",
+      "allowed": true,
+      "reason": "Authorized internal sovereign SCIF enclave route (10.240.2.20)",
+      "latency_us": 4.9,
+      "timestamp_iso": "2026-11-08T12:01:05.808245+00:00",
+      "rule_matched": "RULE-LSM-IP-SCIF-ENCLAVE-02",
+      "request": {
+        "request_id": "REQ-SCIF-003",
+        "timestamp_ns": 196209655441200,
+        "pid": 4020,
+        "comm": "devsupersuite-cluster",
+        "uid": 1000,
+        "family": "AF_INET",
+        "protocol": "TCP",
+        "src_addr": "10.240.1.15",
+        "src_port": 48920,
+        "dst_addr": "10.240.2.20",
+        "dst_port": 9443,
+        "cgroup_path": "/sys/fs/cgroup/devsupersuite-scif"
+      }
+    },
+    "authority": "DevSuperSuite Security & Compliance (security@devsupersuite.com)"
+  },
+  {
+    "log_id": "EBPF-LOG-000244",
+    "timestamp_iso": "2026-11-08T12:01:05.816229+00:00",
+    "prev_hash": "3ea24a71cd6f32ea49a684ac864d251d400d93e9d1519012e0d2d9eb20b74296",
+    "entry_hash": "4a348b830b32cf04991580112d327156aa9c7d6e25cd5218ff7321888930be96",
+    "decision": {
+      "verdict": "DROP_AIRGAP_VIOLATION",
+      "allowed": false,
+      "reason": "Zero-Trust air-gap isolation: blocked egress attempt to external destination (8.8.8.8:53)",
+      "latency_us": 4.95,
+      "timestamp_iso": "2026-11-08T12:01:05.816229+00:00",
+      "rule_matched": "RULE-LSM-IP-AIRGAP-KILL-03",
+      "request": {
+        "request_id": "REQ-SCIF-004",
+        "timestamp_ns": 196209655442900,
+        "pid": 8192,
+        "comm": "malicious-payload",
+        "uid": 1001,
+        "family": "AF_INET",
+        "protocol": "TCP",
+        "src_addr": "10.240.1.15",
+        "src_port": 51234,
+        "dst_addr": "8.8.8.8",
+        "dst_port": 53,
+        "cgroup_path": "/sys/fs/cgroup/devsupersuite-scif"
+      }
+    },
+    "authority": "DevSuperSuite Security & Compliance (security@devsupersuite.com)"
+  },
+  {
+    "log_id": "EBPF-LOG-000245",
+    "timestamp_iso": "2026-11-08T12:01:05.824770+00:00",
+    "prev_hash": "4a348b830b32cf04991580112d327156aa9c7d6e25cd5218ff7321888930be96",
+    "entry_hash": "0d4b7b7e9d35dbbc351a395878bb14838ce569f2696511e7427d7c6a7e4a803e",
+    "decision": {
+      "verdict": "DROP_AIRGAP_VIOLATION",
+      "allowed": false,
+      "reason": "Zero-Trust air-gap isolation: blocked egress attempt to external destination (2001:4860:4860::8888:443)",
+      "latency_us": 4.95,
+      "timestamp_iso": "2026-11-08T12:01:05.824770+00:00",
+      "rule_matched": "RULE-LSM-IP-AIRGAP-KILL-03",
+      "request": {
+        "request_id": "REQ-SCIF-005",
+        "timestamp_ns": 196209655444100,
+        "pid": 8194,
+        "comm": "unauthorized-curl",
+        "uid": 1001,
+        "family": "AF_INET6",
+        "protocol": "TCP",
+        "src_addr": "::1",
+        "src_port": 58912,
+        "dst_addr": "2001:4860:4860::8888",
+        "dst_port": 443,
+        "cgroup_path": "/sys/fs/cgroup/devsupersuite-scif"
+      }
+    },
+    "authority": "DevSuperSuite Security & Compliance (security@devsupersuite.com)"
+  },
+  {
+    "log_id": "EBPF-LOG-000246",
+    "timestamp_iso": "2026-11-08T12:01:05.956966+00:00",
+    "prev_hash": "0d4b7b7e9d35dbbc351a395878bb14838ce569f2696511e7427d7c6a7e4a803e",
+    "entry_hash": "fe3b53be57124d1b4451c3be94a138e6010f3884fe6370ffa120845742e7195a",
+    "decision": {
+      "verdict": "ALLOW_SCIF_LOOPBACK",
+      "allowed": true,
+      "reason": "Authorized local SCIF loopback address (127.0.0.1)",
+      "latency_us": 4.8,
+      "timestamp_iso": "2026-11-08T12:01:05.956966+00:00",
+      "rule_matched": "RULE-LSM-IP-LOOPBACK-01",
+      "request": {
+        "request_id": "REQ-SCIF-001",
+        "timestamp_ns": 196209820871300,
+        "pid": 4012,
+        "comm": "devsupersuite-api",
+        "uid": 1000,
+        "family": "AF_INET",
+        "protocol": "TCP",
+        "src_addr": "127.0.0.1",
+        "src_port": 54210,
+        "dst_addr": "127.0.0.1",
+        "dst_port": 8080,
+        "cgroup_path": "/sys/fs/cgroup/devsupersuite-scif"
+      }
+    },
+    "authority": "DevSuperSuite Security & Compliance (security@devsupersuite.com)"
+  },
+  {
+    "log_id": "EBPF-LOG-000247",
+    "timestamp_iso": "2026-11-08T12:01:05.967274+00:00",
+    "prev_hash": "fe3b53be57124d1b4451c3be94a138e6010f3884fe6370ffa120845742e7195a",
+    "entry_hash": "6ea2c7ee1580f2267f1cb03f6dc59571dc122c05dedf1ff51b30176c1593d536",
+    "decision": {
+      "verdict": "ALLOW_UNIX_SOCKET",
+      "allowed": true,
+      "reason": "Authorized local Unix domain socket IPC (/var/run/devsupersuite/vault.sock)",
+      "latency_us": 4.8,
+      "timestamp_iso": "2026-11-08T12:01:05.967274+00:00",
+      "rule_matched": "RULE-LSM-UNIX-LOCAL-01",
+      "request": {
+        "request_id": "REQ-SCIF-002",
+        "timestamp_ns": 196209820888400,
+        "pid": 4015,
+        "comm": "devsupersuite-vault",
+        "uid": 1000,
+        "family": "AF_UNIX",
+        "protocol": "UNIX_STREAM",
+        "src_addr": "",
+        "src_port": 0,
+        "dst_addr": "/var/run/devsupersuite/vault.sock",
+        "dst_port": 0,
+        "cgroup_path": "/sys/fs/cgroup/devsupersuite-scif"
+      }
+    },
+    "authority": "DevSuperSuite Security & Compliance (security@devsupersuite.com)"
+  },
+  {
+    "log_id": "EBPF-LOG-000248",
+    "timestamp_iso": "2026-11-08T12:01:05.976560+00:00",
+    "prev_hash": "6ea2c7ee1580f2267f1cb03f6dc59571dc122c05dedf1ff51b30176c1593d536",
+    "entry_hash": "92924698d0cf9ff81fac29901ab6cbed5f70f47771e30f1ca8f8a748e6b2e9da",
+    "decision": {
+      "verdict": "ALLOW_INTERNAL_ENCLAVE",
+      "allowed": true,
+      "reason": "Authorized internal sovereign SCIF enclave route (10.240.2.20)",
+      "latency_us": 4.9,
+      "timestamp_iso": "2026-11-08T12:01:05.976560+00:00",
+      "rule_matched": "RULE-LSM-IP-SCIF-ENCLAVE-02",
+      "request": {
+        "request_id": "REQ-SCIF-003",
+        "timestamp_ns": 196209820892600,
+        "pid": 4020,
+        "comm": "devsupersuite-cluster",
+        "uid": 1000,
+        "family": "AF_INET",
+        "protocol": "TCP",
+        "src_addr": "10.240.1.15",
+        "src_port": 48920,
+        "dst_addr": "10.240.2.20",
+        "dst_port": 9443,
+        "cgroup_path": "/sys/fs/cgroup/devsupersuite-scif"
+      }
+    },
+    "authority": "DevSuperSuite Security & Compliance (security@devsupersuite.com)"
+  },
+  {
+    "log_id": "EBPF-LOG-000249",
+    "timestamp_iso": "2026-11-08T12:01:05.986034+00:00",
+    "prev_hash": "92924698d0cf9ff81fac29901ab6cbed5f70f47771e30f1ca8f8a748e6b2e9da",
+    "entry_hash": "9c3b49dd7c433f452eb60993ba61b3e1f5a89927c19066a8181486ac78fccd3b",
+    "decision": {
+      "verdict": "DROP_AIRGAP_VIOLATION",
+      "allowed": false,
+      "reason": "Zero-Trust air-gap isolation: blocked egress attempt to external destination (8.8.8.8:53)",
+      "latency_us": 4.95,
+      "timestamp_iso": "2026-11-08T12:01:05.986034+00:00",
+      "rule_matched": "RULE-LSM-IP-AIRGAP-KILL-03",
+      "request": {
+        "request_id": "REQ-SCIF-004",
+        "timestamp_ns": 196209820894600,
+        "pid": 8192,
+        "comm": "malicious-payload",
+        "uid": 1001,
+        "family": "AF_INET",
+        "protocol": "TCP",
+        "src_addr": "10.240.1.15",
+        "src_port": 51234,
+        "dst_addr": "8.8.8.8",
+        "dst_port": 53,
+        "cgroup_path": "/sys/fs/cgroup/devsupersuite-scif"
+      }
+    },
+    "authority": "DevSuperSuite Security & Compliance (security@devsupersuite.com)"
+  },
+  {
+    "log_id": "EBPF-LOG-000250",
+    "timestamp_iso": "2026-11-08T12:01:05.995392+00:00",
+    "prev_hash": "9c3b49dd7c433f452eb60993ba61b3e1f5a89927c19066a8181486ac78fccd3b",
+    "entry_hash": "56105dbd925d52b21d0e63980a0e9e7086bfe9a0827d196b3bdca6e0e93f3442",
+    "decision": {
+      "verdict": "DROP_AIRGAP_VIOLATION",
+      "allowed": false,
+      "reason": "Zero-Trust air-gap isolation: blocked egress attempt to external destination (2001:4860:4860::8888:443)",
+      "latency_us": 4.95,
+      "timestamp_iso": "2026-11-08T12:01:05.995392+00:00",
+      "rule_matched": "RULE-LSM-IP-AIRGAP-KILL-03",
+      "request": {
+        "request_id": "REQ-SCIF-005",
+        "timestamp_ns": 196209820897100,
+        "pid": 8194,
+        "comm": "unauthorized-curl",
+        "uid": 1001,
+        "family": "AF_INET6",
+        "protocol": "TCP",
+        "src_addr": "::1",
+        "src_port": 58912,
+        "dst_addr": "2001:4860:4860::8888",
+        "dst_port": 443,
+        "cgroup_path": "/sys/fs/cgroup/devsupersuite-scif"
+      }
+    },
+    "authority": "DevSuperSuite Security & Compliance (security@devsupersuite.com)"
+  },
+  {
+    "log_id": "EBPF-LOG-000251",
+    "timestamp_iso": "2026-11-08T12:01:06.137274+00:00",
+    "prev_hash": "56105dbd925d52b21d0e63980a0e9e7086bfe9a0827d196b3bdca6e0e93f3442",
+    "entry_hash": "ba65767d0172c8f4a460a228053014638eeea46845a7f828a8616320e8311e66",
+    "decision": {
+      "verdict": "ALLOW_SCIF_LOOPBACK",
+      "allowed": true,
+      "reason": "Authorized local SCIF loopback address (127.0.0.1)",
+      "latency_us": 4.8,
+      "timestamp_iso": "2026-11-08T12:01:06.137274+00:00",
+      "rule_matched": "RULE-LSM-IP-LOOPBACK-01",
+      "request": {
+        "request_id": "REQ-SCIF-001",
+        "timestamp_ns": 196210001177600,
+        "pid": 4012,
+        "comm": "devsupersuite-api",
+        "uid": 1000,
+        "family": "AF_INET",
+        "protocol": "TCP",
+        "src_addr": "127.0.0.1",
+        "src_port": 54210,
+        "dst_addr": "127.0.0.1",
+        "dst_port": 8080,
+        "cgroup_path": "/sys/fs/cgroup/devsupersuite-scif"
+      }
+    },
+    "authority": "DevSuperSuite Security & Compliance (security@devsupersuite.com)"
+  },
+  {
+    "log_id": "EBPF-LOG-000252",
+    "timestamp_iso": "2026-11-08T12:01:06.148144+00:00",
+    "prev_hash": "ba65767d0172c8f4a460a228053014638eeea46845a7f828a8616320e8311e66",
+    "entry_hash": "ce19e79f2041dbd49f5e31de83c09c7797052df6443465bac9b149f7d436896e",
+    "decision": {
+      "verdict": "ALLOW_UNIX_SOCKET",
+      "allowed": true,
+      "reason": "Authorized local Unix domain socket IPC (/var/run/devsupersuite/vault.sock)",
+      "latency_us": 4.8,
+      "timestamp_iso": "2026-11-08T12:01:06.148144+00:00",
+      "rule_matched": "RULE-LSM-UNIX-LOCAL-01",
+      "request": {
+        "request_id": "REQ-SCIF-002",
+        "timestamp_ns": 196210001195800,
+        "pid": 4015,
+        "comm": "devsupersuite-vault",
+        "uid": 1000,
+        "family": "AF_UNIX",
+        "protocol": "UNIX_STREAM",
+        "src_addr": "",
+        "src_port": 0,
+        "dst_addr": "/var/run/devsupersuite/vault.sock",
+        "dst_port": 0,
+        "cgroup_path": "/sys/fs/cgroup/devsupersuite-scif"
+      }
+    },
+    "authority": "DevSuperSuite Security & Compliance (security@devsupersuite.com)"
+  },
+  {
+    "log_id": "EBPF-LOG-000253",
+    "timestamp_iso": "2026-11-08T12:01:06.156451+00:00",
+    "prev_hash": "ce19e79f2041dbd49f5e31de83c09c7797052df6443465bac9b149f7d436896e",
+    "entry_hash": "6185e0ea24639b6bef77700279dec64cc4df0303ef78049cdf0208fd30b3de84",
+    "decision": {
+      "verdict": "ALLOW_INTERNAL_ENCLAVE",
+      "allowed": true,
+      "reason": "Authorized internal sovereign SCIF enclave route (10.240.2.20)",
+      "latency_us": 4.9,
+      "timestamp_iso": "2026-11-08T12:01:06.156451+00:00",
+      "rule_matched": "RULE-LSM-IP-SCIF-ENCLAVE-02",
+      "request": {
+        "request_id": "REQ-SCIF-003",
+        "timestamp_ns": 196210001200300,
+        "pid": 4020,
+        "comm": "devsupersuite-cluster",
+        "uid": 1000,
+        "family": "AF_INET",
+        "protocol": "TCP",
+        "src_addr": "10.240.1.15",
+        "src_port": 48920,
+        "dst_addr": "10.240.2.20",
+        "dst_port": 9443,
+        "cgroup_path": "/sys/fs/cgroup/devsupersuite-scif"
+      }
+    },
+    "authority": "DevSuperSuite Security & Compliance (security@devsupersuite.com)"
+  },
+  {
+    "log_id": "EBPF-LOG-000254",
+    "timestamp_iso": "2026-11-08T12:01:06.167723+00:00",
+    "prev_hash": "6185e0ea24639b6bef77700279dec64cc4df0303ef78049cdf0208fd30b3de84",
+    "entry_hash": "681899ce71cafe2ad292e2fa6117cce5ab93015ddb7712235bf651e9e0dec3f3",
+    "decision": {
+      "verdict": "DROP_AIRGAP_VIOLATION",
+      "allowed": false,
+      "reason": "Zero-Trust air-gap isolation: blocked egress attempt to external destination (8.8.8.8:53)",
+      "latency_us": 4.95,
+      "timestamp_iso": "2026-11-08T12:01:06.167723+00:00",
+      "rule_matched": "RULE-LSM-IP-AIRGAP-KILL-03",
+      "request": {
+        "request_id": "REQ-SCIF-004",
+        "timestamp_ns": 196210001202500,
+        "pid": 8192,
+        "comm": "malicious-payload",
+        "uid": 1001,
+        "family": "AF_INET",
+        "protocol": "TCP",
+        "src_addr": "10.240.1.15",
+        "src_port": 51234,
+        "dst_addr": "8.8.8.8",
+        "dst_port": 53,
+        "cgroup_path": "/sys/fs/cgroup/devsupersuite-scif"
+      }
+    },
+    "authority": "DevSuperSuite Security & Compliance (security@devsupersuite.com)"
+  },
+  {
+    "log_id": "EBPF-LOG-000255",
+    "timestamp_iso": "2026-11-08T12:01:06.176536+00:00",
+    "prev_hash": "681899ce71cafe2ad292e2fa6117cce5ab93015ddb7712235bf651e9e0dec3f3",
+    "entry_hash": "b156098ca678be9bd0f44ffea1d22faf08fe43c36d797c6409ed4c8b5f7476dc",
+    "decision": {
+      "verdict": "DROP_AIRGAP_VIOLATION",
+      "allowed": false,
+      "reason": "Zero-Trust air-gap isolation: blocked egress attempt to external destination (2001:4860:4860::8888:443)",
+      "latency_us": 4.95,
+      "timestamp_iso": "2026-11-08T12:01:06.176536+00:00",
+      "rule_matched": "RULE-LSM-IP-AIRGAP-KILL-03",
+      "request": {
+        "request_id": "REQ-SCIF-005",
+        "timestamp_ns": 196210001204200,
+        "pid": 8194,
+        "comm": "unauthorized-curl",
+        "uid": 1001,
+        "family": "AF_INET6",
+        "protocol": "TCP",
+        "src_addr": "::1",
+        "src_port": 58912,
+        "dst_addr": "2001:4860:4860::8888",
+        "dst_port": 443,
+        "cgroup_path": "/sys/fs/cgroup/devsupersuite-scif"
+      }
+    },
+    "authority": "DevSuperSuite Security & Compliance (security@devsupersuite.com)"
   }
 ]

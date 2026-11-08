@@ -1,0 +1,266 @@
+{
+  "version": "1.0.0",
+  "governing_entity": "DevSuperSuite Revenue Operations (growth@devsupersuite.com)",
+  "compliance_protocol": "100% Brand Anonymity - Zero Founder Personal Identifiers",
+  "last_updated": "2026-11-08T12:01:00.111295+00:00",
+  "customer_accounts": [
+    {
+      "account_id": "ACC-RTX-01",
+      "company_name": "Raytheon Intelligence & Space",
+      "domain": "rtx.com",
+      "contract_arr_usd": 24999.0,
+      "health_score": 99.7,
+      "status": "HEALTHY",
+      "recommended_action": "EXPANSION_UPSELL_OPPORTUNITY",
+      "subscores": {
+        "ast_volume_trend_score": 100.0,
+        "secret_scan_score": 100.0,
+        "active_cli_score": 100.0,
+        "seat_utilization_score": 100.0,
+        "support_sentiment_score": 98.0
+      },
+      "raw_metrics": {
+        "ast_volume_trend_pct": 35.0,
+        "weekly_secret_scans": 250,
+        "daily_active_cli_users": 48,
+        "licensed_seats": 50,
+        "active_seats": 48,
+        "seat_utilization_pct": 96.0,
+        "support_csat_score": 4.9,
+        "open_critical_tickets": 0
+      },
+      "last_evaluated_at": "2026-11-08T11:59:53.382206+00:00",
+      "interdiction_active": false,
+      "active_interventions": [
+        {
+          "event_id": "INT-044A8D90",
+          "account_id": "ACC-RTX-01",
+          "severity": "OPPORTUNITY",
+          "triggered_at": "2026-11-08T11:59:53.382666+00:00",
+          "executive_email": "security-leads@rtx.com",
+          "actions_executed": [
+            "Logged customer as high-health reference candidate",
+            "Prepared expansion proposal for additional seats & FIPS 140-3 HSM module"
+          ],
+          "extension_token": null,
+          "status": "COMPLETED"
+        }
+      ]
+    },
+    {
+      "account_id": "ACC-FTC-02",
+      "company_name": "Fintech Cloud Systems",
+      "domain": "fintechcloud.io",
+      "contract_arr_usd": 12000.0,
+      "health_score": 68.9,
+      "status": "AT_RISK",
+      "recommended_action": "PROACTIVE_TAM_OPTIMIZATION_TOUCHPOINT",
+      "subscores": {
+        "ast_volume_trend_score": 55.0,
+        "secret_scan_score": 68.8,
+        "active_cli_score": 81.8,
+        "seat_utilization_score": 65.0,
+        "support_sentiment_score": 80.0
+      },
+      "raw_metrics": {
+        "ast_volume_trend_pct": -15.0,
+        "weekly_secret_scans": 35,
+        "daily_active_cli_users": 18,
+        "licensed_seats": 40,
+        "active_seats": 22,
+        "seat_utilization_pct": 55.0,
+        "support_csat_score": 4.0,
+        "open_critical_tickets": 0
+      },
+      "last_evaluated_at": "2026-11-08T11:59:53.383369+00:00",
+      "interdiction_active": true,
+      "active_interventions": [
+        {
+          "event_id": "INT-73443CD2",
+          "account_id": "ACC-FTC-02",
+          "severity": "WARNING",
+          "triggered_at": "2026-11-08T11:59:53.383825+00:00",
+          "executive_email": "dev-ops@fintechcloud.io",
+          "actions_executed": [
+            "Dispatched proactive Technical Account Manager (TAM) optimization review email",
+            "Attached Enterprise AST CLI adoption & IDE integration playbook",
+            "Scheduled quarterly business review (QBR) check-in"
+          ],
+          "extension_token": null,
+          "status": "DISPATCHED_ACTIVE"
+        }
+      ]
+    },
+    {
+      "account_id": "ACC-LEG-03",
+      "company_name": "Legacy Defense Integrators",
+      "domain": "legacydefense.com",
+      "contract_arr_usd": 24999.0,
+      "health_score": 24.5,
+      "status": "CRITICAL_INTERDICTION",
+      "recommended_action": "EMERGENCY_SOLUTIONS_ARCHITECT_OFFICE_HOURS_AND_EXTENSION",
+      "subscores": {
+        "ast_volume_trend_score": 16.0,
+        "secret_scan_score": 20.0,
+        "active_cli_score": 62.5,
+        "seat_utilization_score": 20.0,
+        "support_sentiment_score": 0.0
+      },
+      "raw_metrics": {
+        "ast_volume_trend_pct": -60.0,
+        "weekly_secret_scans": 4,
+        "daily_active_cli_users": 5,
+        "licensed_seats": 50,
+        "active_seats": 8,
+        "seat_utilization_pct": 16.0,
+        "support_csat_score": 2.5,
+        "open_critical_tickets": 2
+      },
+      "last_evaluated_at": "2026-11-08T11:59:53.384388+00:00",
+      "interdiction_active": true,
+      "active_interventions": [
+        {
+          "event_id": "INT-3252475F",
+          "account_id": "ACC-LEG-03",
+          "severity": "CRITICAL",
+          "triggered_at": "2026-11-08T11:59:53.384882+00:00",
+          "executive_email": "leadership@legacydefense.com",
+          "actions_executed": [
+            "Automated high-priority escalation logged to solutions@devsupersuite.com",
+            "Generated 14-day zero-cost license grace extension token: DSS-EXT-14D-7066B5786657",
+            "Dispatched dedicated Solutions Architect 1-on-1 office hours invitation",
+            "Activated AST tuning and secret false-positive remediation desk"
+          ],
+          "extension_token": "DSS-EXT-14D-7066B5786657",
+          "status": "DISPATCHED_ACTIVE"
+        }
+      ]
+    },
+    {
+      "account_id": "ACC-CLI-01",
+      "company_name": "Northrop",
+      "domain": "noc.com",
+      "contract_arr_usd": 20000.0,
+      "health_score": 95.1,
+      "status": "HEALTHY",
+      "recommended_action": "EXPANSION_UPSELL_OPPORTUNITY",
+      "subscores": {
+        "ast_volume_trend_score": 90.0,
+        "secret_scan_score": 100.0,
+        "active_cli_score": 89.3,
+        "seat_utilization_score": 100.0,
+        "support_sentiment_score": 98.0
+      },
+      "raw_metrics": {
+        "ast_volume_trend_pct": 20.0,
+        "weekly_secret_scans": 100,
+        "daily_active_cli_users": 25,
+        "licensed_seats": 30,
+        "active_seats": 28,
+        "seat_utilization_pct": 93.3,
+        "support_csat_score": 4.9,
+        "open_critical_tickets": 0
+      },
+      "last_evaluated_at": "2026-11-08T12:00:59.998195+00:00",
+      "interdiction_active": false,
+      "active_interventions": [
+        {
+          "event_id": "INT-DF90B4DC",
+          "account_id": "ACC-CLI-01",
+          "severity": "OPPORTUNITY",
+          "triggered_at": "2026-11-08T12:01:00.111254+00:00",
+          "executive_email": "ciso@noc.com",
+          "actions_executed": [
+            "Logged customer as high-health reference candidate",
+            "Prepared expansion proposal for additional seats & FIPS 140-3 HSM module"
+          ],
+          "extension_token": null,
+          "status": "COMPLETED"
+        }
+      ]
+    }
+  ],
+  "interdiction_events": [
+    {
+      "event_id": "INT-044A8D90",
+      "account_id": "ACC-RTX-01",
+      "severity": "OPPORTUNITY",
+      "triggered_at": "2026-11-08T11:59:53.382666+00:00",
+      "executive_email": "security-leads@rtx.com",
+      "actions_executed": [
+        "Logged customer as high-health reference candidate",
+        "Prepared expansion proposal for additional seats & FIPS 140-3 HSM module"
+      ],
+      "extension_token": null,
+      "status": "COMPLETED"
+    },
+    {
+      "event_id": "INT-73443CD2",
+      "account_id": "ACC-FTC-02",
+      "severity": "WARNING",
+      "triggered_at": "2026-11-08T11:59:53.383825+00:00",
+      "executive_email": "dev-ops@fintechcloud.io",
+      "actions_executed": [
+        "Dispatched proactive Technical Account Manager (TAM) optimization review email",
+        "Attached Enterprise AST CLI adoption & IDE integration playbook",
+        "Scheduled quarterly business review (QBR) check-in"
+      ],
+      "extension_token": null,
+      "status": "DISPATCHED_ACTIVE"
+    },
+    {
+      "event_id": "INT-3252475F",
+      "account_id": "ACC-LEG-03",
+      "severity": "CRITICAL",
+      "triggered_at": "2026-11-08T11:59:53.384882+00:00",
+      "executive_email": "leadership@legacydefense.com",
+      "actions_executed": [
+        "Automated high-priority escalation logged to solutions@devsupersuite.com",
+        "Generated 14-day zero-cost license grace extension token: DSS-EXT-14D-7066B5786657",
+        "Dispatched dedicated Solutions Architect 1-on-1 office hours invitation",
+        "Activated AST tuning and secret false-positive remediation desk"
+      ],
+      "extension_token": "DSS-EXT-14D-7066B5786657",
+      "status": "DISPATCHED_ACTIVE"
+    },
+    {
+      "event_id": "INT-1F1CE898",
+      "account_id": "ACC-CLI-01",
+      "severity": "OPPORTUNITY",
+      "triggered_at": "2026-11-08T12:00:39.794186+00:00",
+      "executive_email": "ciso@noc.com",
+      "actions_executed": [
+        "Logged customer as high-health reference candidate",
+        "Prepared expansion proposal for additional seats & FIPS 140-3 HSM module"
+      ],
+      "extension_token": null,
+      "status": "COMPLETED"
+    },
+    {
+      "event_id": "INT-37E64366",
+      "account_id": "ACC-CLI-01",
+      "severity": "OPPORTUNITY",
+      "triggered_at": "2026-11-08T12:00:46.912864+00:00",
+      "executive_email": "ciso@noc.com",
+      "actions_executed": [
+        "Logged customer as high-health reference candidate",
+        "Prepared expansion proposal for additional seats & FIPS 140-3 HSM module"
+      ],
+      "extension_token": null,
+      "status": "COMPLETED"
+    },
+    {
+      "event_id": "INT-DF90B4DC",
+      "account_id": "ACC-CLI-01",
+      "severity": "OPPORTUNITY",
+      "triggered_at": "2026-11-08T12:01:00.111254+00:00",
+      "executive_email": "ciso@noc.com",
+      "actions_executed": [
+        "Logged customer as high-health reference candidate",
+        "Prepared expansion proposal for additional seats & FIPS 140-3 HSM module"
+      ],
+      "extension_token": null,
+      "status": "COMPLETED"
+    }
+  ]
+}
