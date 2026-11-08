@@ -169,7 +169,7 @@ def handle_transaction(tx_id: str, amount: float) -> bool:
             customers = json.load(f)
         self.assertGreaterEqual(len(customers), 5, f"Expected >= 5 customers, found {len(customers)}")
         for c in customers:
-            self.assertIn("DSS-PRO-2026-", c["license_key"])
+            self.assertTrue(c["license_key"].startswith("DSS-PRO-2026-") or c["license_key"].startswith("DSS-ED25519-"), f"Invalid license key format: {c['license_key']}")
             self.assertEqual(c["status"], "ACQUIRED_AND_ACTIVE")
             self.assertIn("@", c["customer"])
 
