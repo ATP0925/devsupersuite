@@ -1,7 +1,7 @@
 # DevSuperSuite Security & Compliance - Post-Quantum Cryptography (PQC) ML-KEM & CNSA 2.0 Attestation Report
 
 **Document Reference**: `AUDIT-CNSA2-MLKEM-2026-V1`  
-**Evaluation Date**: `2026-11-08 11:51:22 UTC`  
+**Evaluation Date**: `2026-11-08 11:55:06 UTC`  
 **Classification**: Sovereign Enterprise Cryptographic Readiness (Tier-1 Restricted)  
 **Issuing Authority**: DevSuperSuite Security & Compliance Desk  
 **Official Inquiries**: `security@devsupersuite.com`  
@@ -62,13 +62,13 @@ The table below outlines the exact mathematical dimensions defined under NIST FI
 
 A simulated TLS 1.3 dual-encapsulation handshake was conducted using `HybridTLSKeyExchangeSimulator`:
 
-- **Handshake Session ID**: `SCIF-TLS-191F9B961110`
-- **Execution Timestamp**: `2026-11-08T11:51:22.451645+00:00`
+- **Handshake Session ID**: `SCIF-TLS-018DD2182E7B`
+- **Execution Timestamp**: `2026-11-08T11:55:06.108505+00:00`
 - **SCIF Enclave ID**: `SCIF-USA-EAST-SECURE-ENCLAVE-01`
 - **ClientHello Keyshare Payload**: `1216 bytes` (X25519 PK + ML-KEM-768 PK)
 - **ServerHello Keyshare Payload**: `1120 bytes` (X25519 Ephemeral PK + ML-KEM-768 CT)
 - **Shared Secret Verification**: `CONFIRMED_MATCH` (32 bytes derived via HKDF-SHA256)
-- **Handshake Transcript SHA-256**: `f989db1d34cd9d77d089553e0c9be524146a83146d9439e5a9ef4f3821572eee`
+- **Handshake Transcript SHA-256**: `daea8a928b0bd310733de8f757076ce7783f524cd97845898b4bcd4693083b09`
 - **Sovereign Air-Gap Verification**: `VERIFIED_ACTIVE`
 
 ---
@@ -87,7 +87,7 @@ DevSuperSuite adheres strictly to the official NSA migration schedule:
 
 This report and its companion manifest (`services/reports/pqc_mlkem_cnsa2_manifest.json`) have been cryptographically sealed by the DevSuperSuite Security & Compliance Desk using an authorized dual-signature mechanism:
 
-- **Classical Ed25519 Verification Key**: `b58bbcc52da7b0835e3a3c7db0771cc7c1b1ab2a882db3e5784b037277694ad0`
-- **Post-Quantum ML-DSA-87 Key Fingerprint**: `MLDSA-13825441360a7ffc`
+- **Classical Ed25519 Verification Key**: `70d6294024a9e357229b9400bf39ee78dc6799182f8efe18abc1164efdef57bf`
+- **Post-Quantum ML-DSA-87 Key Fingerprint**: `MLDSA-5f2552a0758f0762`
 - **Attestation State**: `VALID_SEALED`
 - **Contact Authority**: `security@devsupersuite.com`

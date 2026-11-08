@@ -1,6 +1,6 @@
 {
   "audit_reference": "AUDIT-CNSA2-MLKEM-2026-V1",
-  "evaluation_timestamp_utc": "2026-11-08T11:51:22.463554+00:00",
+  "evaluation_timestamp_utc": "2026-11-08T11:55:06.122638+00:00",
   "governing_body": "DevSuperSuite Security & Compliance Desk",
   "official_contact": "security@devsupersuite.com",
   "standards_baseline": [
@@ -150,23 +150,23 @@
     }
   },
   "cryptographic_attestation": {
-    "classical_ed25519_pk": "b58bbcc52da7b0835e3a3c7db0771cc7c1b1ab2a882db3e5784b037277694ad0",
-    "classical_ed25519_sig": "5bc0f997f5e8a786e33ac78ae26591709116674ab0acfe7ac63e7b258cedd58973a65a72b14340f775bdadb7dad6ab4e96c0d59426b8de23095158ae27f0220a",
-    "quantum_mldsa87_pk_fingerprint": "MLDSA-13825441360a7ffc",
+    "classical_ed25519_pk": "70d6294024a9e357229b9400bf39ee78dc6799182f8efe18abc1164efdef57bf",
+    "classical_ed25519_sig": "47a5f48d1b3a62f91e1e8efcd953cd0b04b23d9588ec2259033578c1de103ac97dbe76436e3aba59b49fe8a51dc049776c14dd717e252ec7074f6dff9487150d",
+    "quantum_mldsa87_pk_fingerprint": "MLDSA-5f2552a0758f0762",
     "quantum_mldsa87_sig_bytes": 4627,
-    "quantum_mldsa87_sig_preview": "cc02d603a903d300d8005e02c0027b0158002400a902c802ea036302ed01a400",
+    "quantum_mldsa87_sig_preview": "40019a00b700ff0269005d016903000158029601f40246024d001100a9028702",
     "attestation_status": "VALID_SEALED"
   },
   "simulated_hybrid_handshake": {
-    "session_id": "SCIF-TLS-191F9B961110",
-    "timestamp_utc": "2026-11-08T11:51:22.451645+00:00",
+    "session_id": "SCIF-TLS-018DD2182E7B",
+    "timestamp_utc": "2026-11-08T11:55:06.108505+00:00",
     "scif_enclave_id": "SCIF-USA-EAST-SECURE-ENCLAVE-01",
     "initiator_public_key_bytes": 1216,
     "responder_ciphertext_bytes": 1120,
-    "client_shared_secret": "692ce568b22ef59784c006d3f3a5522061a1aaaa589a3e0ab076da0e4737e2c0",
-    "server_shared_secret": "692ce568b22ef59784c006d3f3a5522061a1aaaa589a3e0ab076da0e4737e2c0",
+    "client_shared_secret": "4ae13468a8c9ad0516fc175a88df9c539b9773bff19199145f3de449723916cb",
+    "server_shared_secret": "4ae13468a8c9ad0516fc175a88df9c539b9773bff19199145f3de449723916cb",
     "secrets_match": true,
-    "handshake_transcript_hash": "f989db1d34cd9d77d089553e0c9be524146a83146d9439e5a9ef4f3821572eee",
+    "handshake_transcript_hash": "daea8a928b0bd310733de8f757076ce7783f524cd97845898b4bcd4693083b09",
     "cnsa2_attested": true,
     "sovereign_airgap_verified": true
   }

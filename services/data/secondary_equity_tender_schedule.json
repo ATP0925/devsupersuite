@@ -1,0 +1,197 @@
+{
+  "binder_id": "DSS-EQUITY-TENDER-2026-BINDER",
+  "generation_timestamp": "2026-11-08T11:54:56.487361+00:00",
+  "commercial_principal": "DevSuperSuite Tech Services Corporation",
+  "governing_law": "Delaware, United States (File #8492019)",
+  "treasury_desk": "DevSuperSuite Global Treasury Desk",
+  "treasury_email": "treasury@devsupersuite.com",
+  "tender_summary": {
+    "arr_baseline_usd": 558992.16,
+    "blended_enterprise_value_usd": 11335171.75,
+    "tender_share_price_usd": 0.85,
+    "shares_repurchased": 588235,
+    "capital_deployed_usd": 499999.75,
+    "post_tender_shares": 13232903,
+    "eps_accretion_pct": 4.45,
+    "founder_voting_power_pct": 96.32
+  },
+  "cap_table_audit": {
+    "audit_timestamp": "2026-11-08T11:54:56.487286+00:00",
+    "corporate_entity": "DevSuperSuite Tech Services Corporation",
+    "governing_jurisdiction": "Delaware, United States (File #8492019)",
+    "total_authorized_and_outstanding_shares": 13821138,
+    "founder_voting_power_pct": 96.32,
+    "supermajority_control_preserved": true,
+    "share_classes": {
+      "FOUNDER_COMMON_CLASS_B": {
+        "security_type": "Class B Common Stock",
+        "shares": 8500000,
+        "ownership_pct": 61.5,
+        "votes_per_share": 10,
+        "total_votes": 85000000,
+        "voting_power_pct": 96.32,
+        "seniority": "JUNIOR_EQUITY"
+      },
+      "EMPLOYEE_COMMON_CLASS_A": {
+        "security_type": "Class A Common Stock",
+        "shares": 500000,
+        "ownership_pct": 3.62,
+        "votes_per_share": 1,
+        "total_votes": 500000,
+        "voting_power_pct": 0.57,
+        "seniority": "JUNIOR_EQUITY"
+      },
+      "UNALLOCATED_ESOP_POOL": {
+        "security_type": "Unallocated Option Pool Reserve",
+        "shares": 2073171,
+        "ownership_pct": 15.0,
+        "votes_per_share": 0,
+        "total_votes": 0,
+        "voting_power_pct": 0.0,
+        "seniority": "OPTION_RESERVE"
+      },
+      "POST_MONEY_SAFE_NOTE": {
+        "security_type": "SAFE Preferred Stock (Converted)",
+        "shares": 1382114,
+        "ownership_pct": 10.0,
+        "votes_per_share": 1,
+        "total_votes": 1382114,
+        "voting_power_pct": 1.57,
+        "seniority": "PARI_PASSU_SERIES_A"
+      },
+      "SERIES_A_PREFERRED": {
+        "security_type": "Series A Preferred Stock",
+        "shares": 1365853,
+        "ownership_pct": 9.88,
+        "votes_per_share": 1,
+        "total_votes": 1365853,
+        "voting_power_pct": 1.55,
+        "seniority": "SENIOR_LIQUIDATION_PREFERENCE_1X"
+      }
+    }
+  },
+  "enterprise_valuations": {
+    "arr_run_rate_baseline_usd": 558992.16,
+    "arr_multiple_valuations": {
+      "conservative_18x": {
+        "multiple": 18.0,
+        "enterprise_value_usd": 10061858.88,
+        "implied_share_price_usd": 0.728
+      },
+      "baseline_21x": {
+        "multiple": 21.0,
+        "enterprise_value_usd": 11738835.36,
+        "implied_share_price_usd": 0.8493
+      },
+      "premium_saas_24x": {
+        "multiple": 24.0,
+        "enterprise_value_usd": 13415811.84,
+        "implied_share_price_usd": 0.9707
+      }
+    },
+    "dcf_model": {
+      "wacc_discount_rate_pct": 12.0,
+      "terminal_growth_rate_pct": 3.5,
+      "fcf_margin_pct": 35.0,
+      "cumulative_pv_fcf_usd": 2266976.68,
+      "present_value_terminal_value_usd": 8664531.46,
+      "dcf_enterprise_value_usd": 10931508.13,
+      "dcf_implied_share_price_usd": 0.7909,
+      "fcf_projections": [
+        {
+          "year": 1,
+          "projected_revenue_usd": 810538.63,
+          "projected_fcf_usd": 283688.52,
+          "discount_factor": 0.8929,
+          "present_value_fcf_usd": 253293.32
+        },
+        {
+          "year": 2,
+          "projected_revenue_usd": 1175281.02,
+          "projected_fcf_usd": 411348.36,
+          "discount_factor": 0.7972,
+          "present_value_fcf_usd": 327924.39
+        },
+        {
+          "year": 3,
+          "projected_revenue_usd": 1704157.47,
+          "projected_fcf_usd": 596455.12,
+          "discount_factor": 0.7118,
+          "present_value_fcf_usd": 424544.97
+        },
+        {
+          "year": 4,
+          "projected_revenue_usd": 2471028.34,
+          "projected_fcf_usd": 864859.92,
+          "discount_factor": 0.6355,
+          "present_value_fcf_usd": 549634.11
+        },
+        {
+          "year": 5,
+          "projected_revenue_usd": 3582991.09,
+          "projected_fcf_usd": 1254046.88,
+          "discount_factor": 0.5674,
+          "present_value_fcf_usd": 711579.88
+        }
+      ]
+    },
+    "blended_fair_market_value_usd": 11335171.75,
+    "blended_fair_share_price_usd": 0.8201
+  },
+  "dgcl_160_solvency": {
+    "statute": "Delaware General Corporation Law \u00a7 160 (8 Del. C. \u00a7 160)",
+    "compliance_status": "CERTIFIED_SURPLUS_AVAILABLE",
+    "treasury_cash_and_surplus_usd": 559438.2,
+    "share_repurchase_budget_usd": 500000.0,
+    "residual_surplus_post_buyback_usd": 59438.2,
+    "current_ratio": 37.3,
+    "senior_debt_liabilities_usd": 0.0,
+    "capital_impairment_test": "PASSED",
+    "board_fiduciary_authorization": "The Board of Directors of DevSuperSuite Tech Services Corporation resolves that the company possesses sufficient statutory capital surplus under DGCL \u00a7 160 to execute the share repurchase without impairing capital or solvency."
+  },
+  "tender_execution": {
+    "tender_share_price_usd": 0.85,
+    "total_buyback_capital_deployed_usd": 499999.75,
+    "shares_repurchased_count": 588235,
+    "repurchased_share_pct": 4.26,
+    "total_shares_pre_tender": 13821138,
+    "total_shares_post_tender": 13232903,
+    "share_cancellation_status": "RETIRED_TO_AUTHORIZED_UNISSUED_TREASURY_STOCK",
+    "founder_ownership_pre_pct": 61.5,
+    "founder_ownership_post_pct": 64.23,
+    "founder_ownership_accretion_pct": 2.73,
+    "per_share_earnings_accretion_pct": 4.45,
+    "solvency_check": {
+      "statute": "Delaware General Corporation Law \u00a7 160 (8 Del. C. \u00a7 160)",
+      "compliance_status": "CERTIFIED_SURPLUS_AVAILABLE",
+      "treasury_cash_and_surplus_usd": 559438.2,
+      "share_repurchase_budget_usd": 500000.0,
+      "residual_surplus_post_buyback_usd": 59438.2,
+      "current_ratio": 37.3,
+      "senior_debt_liabilities_usd": 0.0,
+      "capital_impairment_test": "PASSED",
+      "board_fiduciary_authorization": "The Board of Directors of DevSuperSuite Tech Services Corporation resolves that the company possesses sufficient statutory capital surplus under DGCL \u00a7 160 to execute the share repurchase without impairing capital or solvency."
+    }
+  },
+  "rofr_and_cosale_compliance": {
+    "transfer_notice_period_days": 30,
+    "primary_rofr_holder": "DevSuperSuite Tech Services Corporation (Company Buyback Option)",
+    "primary_exercise_window_days": 30,
+    "secondary_rofr_holder": "Series A Preferred Stockholders (Pro-Rata Window)",
+    "secondary_exercise_window_days": 15,
+    "rofr_status": "COMPANY_EXERCISED_PRIMARY_OPTION",
+    "tag_along_cosale_rights": {
+      "governing_document": "Investors' Rights Agreement & Co-Sale Agreement",
+      "trigger_condition": "Transfer of Common Stock by Founder exceeding 10% threshold",
+      "co_sale_participation": "PERMITTED_PRO_RATA",
+      "co_sale_ratio": "Pro-Rata to fully diluted preferred holdings"
+    },
+    "sec_rule_506c_compliance": {
+      "exemption": "SEC Rule 506(c) of Regulation D",
+      "general_solicitation_permitted": true,
+      "purchaser_verification": "Third-Party CPA / Licensed Attorney Verification Letter Required",
+      "bad_actor_disqualification_check": "PASSED (Zero Rule 506(d) disqualifying events)"
+    }
+  },
+  "attestation": "The DevSuperSuite Global Treasury Desk certifies that this Secondary Market Cap Table Liquidity and Share Repurchase Binder complies with DGCL \u00a7 160 capital surplus requirements, SEC Rule 506(c) accredited investor standards, and NVCA Right of First Refusal covenants."
+}

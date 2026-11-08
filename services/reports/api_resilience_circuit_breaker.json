@@ -3,10 +3,10 @@
     "organization": "DevSuperSuite Official",
     "authority": "Directorate of QA Automation & Security Compliance",
     "contact": "infosec@devsupersuite.com",
-    "timestamp": "2026-11-08T11:51:23.260809+00:00",
+    "timestamp": "2026-11-08T11:55:06.935962+00:00",
     "framework": "NIST SP 800-53 SC-5 Denial of Service Protection & Netflix Hystrix Fault Tolerance",
     "classification": "API Resilience & DDoS Mitigation Attestation (Restricted)",
-    "sha256_digest": "c9574b07aba20802da9f81eaac6a8aca59e4e5616447d4782d9358454a80093c"
+    "sha256_digest": "b7603d27cfb02a64529e8e350d5e1d8a4222282b34962e476c46b39dbe736a14"
   },
   "resilience_summary": {
     "standard_tier_limit": "100 req/min (Token Bucket)",

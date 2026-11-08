@@ -1,0 +1,85 @@
+{
+  "$schema": "https://devsupersuite.com/schemas/firecracker-jailer-v1.json",
+  "metadata": {
+    "manifest_name": "DevSuperSuite Firecracker Jailer Security Manifest",
+    "reference": "DSS-MICROVM-FIRECRACKER-2026-V1",
+    "classification": "Hardware-Isolated MicroVM Enclave Specification (Restricted)",
+    "organization": "DevSuperSuite Solutions Architecture / OmniKernel Labs",
+    "contact": "solutions@devsupersuite.com",
+    "technical_contact": "microvm@devsupersuite.com",
+    "generated_at": "2026-11-08T11:55:03.568227+00:00"
+  },
+  "jailer_configuration": {
+    "jailer_uid": 10001,
+    "jailer_gid": 10001,
+    "chroot_base_dir": "/srv/jailer/firecracker",
+    "unshare_flags": "CLONE_NEWNS | CLONE_NEWPID | CLONE_NEWNET | CLONE_NEWIPC | CLONE_NEWCGROUP",
+    "kernel_image_path": "/var/lib/firecracker/vmlinux-6.1-x86_64.bin",
+    "kernel_bootargs": "console=ttyS0 reboot=k panic=1 pci=off nomodules quiet rw",
+    "rootfs_path": "/var/lib/firecracker/rootfs-agent-runtime.ext4",
+    "rootfs_read_only": true,
+    "tmpfs_scratch_size_mb": 128
+  },
+  "cgroup_v2_throttling": {
+    "cpu_max": "200000 100000",
+    "max_vcpus": 2,
+    "memory_max_bytes": 536870912,
+    "memory_swap_max_bytes": 0,
+    "io_max": "8:0 rbps=52428800 wbps=52428800 riops=2000 wiops=2000",
+    "pids_max": 128
+  },
+  "seccomp_bpf_policy": {
+    "default_action": "SECCOMP_RET_KILL_PROCESS",
+    "allowed_syscalls": [
+      "accept4",
+      "bind",
+      "brk",
+      "clock_gettime",
+      "close",
+      "connect",
+      "epoll_create1",
+      "epoll_ctl",
+      "epoll_wait",
+      "exit",
+      "exit_group",
+      "fstat",
+      "futex",
+      "getpid",
+      "gettid",
+      "listen",
+      "lseek",
+      "mmap",
+      "mprotect",
+      "munmap",
+      "nanosleep",
+      "openat",
+      "read",
+      "readv",
+      "rt_sigaction",
+      "rt_sigprocmask",
+      "socket",
+      "write",
+      "writev"
+    ],
+    "forbidden_syscalls": {
+      "ptrace": "Debugging & memory inspection disallowed in enclave",
+      "bpf": "Kernel eBPF manipulation forbidden inside guest runtime",
+      "sys_chroot": "Filesystem escape / jailbreak attempt blocked",
+      "kexec_load": "Kernel replacement prohibited",
+      "reboot": "Host machine reboot attack intercepted",
+      "init_module": "Kernel module injection blocked",
+      "finit_module": "Kernel module loading blocked",
+      "delete_module": "Kernel module unloading blocked",
+      "mount": "Filesystem mount escalation prohibited",
+      "umount2": "Filesystem unmount prohibited",
+      "setns": "Namespace hop / container breakout prohibited",
+      "unshare": "Unauthorized nested namespace creation prohibited"
+    },
+    "vsock_domain_id": 40
+  },
+  "performance_slas": {
+    "max_boot_time_ms": 5.0,
+    "max_teardown_time_ms": 2.0,
+    "zero_disk_leakage": true
+  }
+}

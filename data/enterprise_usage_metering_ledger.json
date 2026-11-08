@@ -3,7 +3,7 @@
     "organization": "DevSuperSuite Official",
     "entity": "DevSuperSuite Tech Services",
     "treasury_contact": "cfo@devsupersuite.com",
-    "last_updated": "2026-11-08T11:51:13.763066+00:00"
+    "last_updated": "2026-11-08T11:54:55.587363+00:00"
   },
   "tiers": {
     "ENTERPRISE_CORE": {
@@ -38,7 +38,7 @@
     "compute_hours_per_hour_usd": 0.2
   },
   "monthly_summary": {
-    "metering_run_timestamp": "2026-11-08T11:51:13.763059+00:00",
+    "metering_run_timestamp": "2026-11-08T11:54:55.587353+00:00",
     "total_accounts_processed": 3,
     "total_base_subscription_revenue_usd": 21500.0,
     "total_token_overage_revenue_usd": 142.0,

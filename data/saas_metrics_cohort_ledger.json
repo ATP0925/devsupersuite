@@ -3,10 +3,10 @@
     "organization": "DevSuperSuite Official",
     "entity": "DevSuperSuite Tech Services",
     "treasury_contact": "cfo@devsupersuite.com",
-    "last_updated": "2026-11-08T11:51:25.146837+00:00"
+    "last_updated": "2026-11-08T11:55:08.805409+00:00"
   },
   "unit_economics": {
-    "timestamp": "2026-11-08T11:51:25.146860+00:00",
+    "timestamp": "2026-11-08T11:55:08.805426+00:00",
     "benchmarks": {
       "min_ltv_cac_ratio": 3.0,
       "min_magic_number": 1.2,

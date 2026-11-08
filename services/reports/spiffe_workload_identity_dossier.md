@@ -1,7 +1,7 @@
 # DevSuperSuite Tech Services - SPIFFE/SPIRE Workload Identity Audit Dossier
 
 **Document Reference**: `DSS-SPIFFE-MANIFEST-2026-V1`  
-**Audit Execution Timestamp**: `2026-11-08 11:51:29 UTC`  
+**Audit Execution Timestamp**: `2026-11-08 11:55:13 UTC`  
 **Classification**: Sovereign Enterprise Zero-Trust Identity Fabric (Tier-1 Restricted)  
 **Issuing Authority**: Directorate of QA Automation & Office of the CSCO, DevSuperSuite Official  
 **Contact**: DevSuperSuite Information Security (`infosec@devsupersuite.com`)  
@@ -24,11 +24,11 @@
 
 | SPIFFE ID | Workload | Component | Serial Number | SHA-256 Fingerprint | Expiration (UTC) | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| `spiffe://devsupersuite.io/agent/ast-parser` | `ast-parser` | `agent` | `SN-5EDA3908F...` | `dad87da41e90a84b...` | `2026-11-08T12:21:29.715942+00:00` | **`ATTESTED_VALID`** |
-| `spiffe://devsupersuite.io/agent/mcp-daemon` | `mcp-daemon` | `agent` | `SN-1444AFC8A...` | `6be12319dec65f5e...` | `2026-11-08T12:21:29.716302+00:00` | **`ATTESTED_VALID`** |
-| `spiffe://devsupersuite.io/service/billing-engine` | `billing-engine` | `service` | `SN-62B8AD75A...` | `9cc89387e1543a48...` | `2026-11-08T12:21:29.716486+00:00` | **`ATTESTED_VALID`** |
-| `spiffe://devsupersuite.io/service/license-verifier` | `license-verifier` | `service` | `SN-4E4FFE947...` | `a672a9227fc12de6...` | `2026-11-08T12:21:29.716619+00:00` | **`ATTESTED_VALID`** |
-| `spiffe://devsupersuite.io/service/dispute-defense` | `dispute-defense` | `service` | `SN-3A2B8B4E0...` | `2cfb8a4ef4640fb6...` | `2026-11-08T12:21:29.716746+00:00` | **`ATTESTED_VALID`** |
+| `spiffe://devsupersuite.io/agent/ast-parser` | `ast-parser` | `agent` | `SN-5B2A7C1C7...` | `6c90e46b288cd310...` | `2026-11-08T12:25:13.789886+00:00` | **`ATTESTED_VALID`** |
+| `spiffe://devsupersuite.io/agent/mcp-daemon` | `mcp-daemon` | `agent` | `SN-42BA37911...` | `2c081154f581159a...` | `2026-11-08T12:25:13.790224+00:00` | **`ATTESTED_VALID`** |
+| `spiffe://devsupersuite.io/service/billing-engine` | `billing-engine` | `service` | `SN-7414C9ACD...` | `bb7e08dad1f008a6...` | `2026-11-08T12:25:13.790471+00:00` | **`ATTESTED_VALID`** |
+| `spiffe://devsupersuite.io/service/license-verifier` | `license-verifier` | `service` | `SN-4AE0AE02E...` | `2e1778245e1c5400...` | `2026-11-08T12:25:13.790639+00:00` | **`ATTESTED_VALID`** |
+| `spiffe://devsupersuite.io/service/dispute-defense` | `dispute-defense` | `service` | `SN-43BB48B8B...` | `c308419eb5bd54a2...` | `2026-11-08T12:25:13.790792+00:00` | **`ATTESTED_VALID`** |
 
 ---
 

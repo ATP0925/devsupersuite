@@ -1,6 +1,6 @@
 {
   "binder_id": "DSS-REM-2026-GLOBAL-BINDER",
-  "compilation_timestamp": "2026-11-08T11:51:38.359867+00:00",
+  "compilation_timestamp": "2026-11-08T11:54:47.570262+00:00",
   "commercial_principal": "DevSuperSuite Tech Services Corporation",
   "treasury_contact": "treasury@devsupersuite.com",
   "portfolio_summary": {
@@ -13,7 +13,7 @@
   "w8bene_certificate": {
     "form_title": "Form W-8BEN-E: Certificate of Status of Beneficial Owner for United States Tax Withholding and Reporting",
     "revision_date": "October 2021 (IRS Current)",
-    "generation_timestamp": "2026-11-08T11:51:38.359829+00:00",
+    "generation_timestamp": "2026-11-08T11:54:47.570175+00:00",
     "part_I_identification_of_beneficial_owner": {
       "line_1_name_of_organization": "DevSuperSuite Tech Services Corporation",
       "line_2_country_of_incorporation": "United States (Delaware)",
@@ -57,7 +57,7 @@
       "recipient_code": "02"
     },
     "lob_substantiation_summary": {
-      "evaluation_timestamp": "2026-11-08T11:51:38.359826+00:00",
+      "evaluation_timestamp": "2026-11-08T11:54:47.570170+00:00",
       "beneficial_owner": "DevSuperSuite Tech Services Corporation",
       "tax_jurisdiction": "United States (Delaware C-Corp) / Multilateral Treaty Partner",
       "lob_overall_status": "FULLY_COMPLIANT_QUALIFIED_PERSON",
@@ -92,7 +92,7 @@
   },
   "reconciliation": {
     "reconciliation_fiscal_year": 2026,
-    "reconciliation_timestamp": "2026-11-08T11:51:38.359861+00:00",
+    "reconciliation_timestamp": "2026-11-08T11:54:47.570248+00:00",
     "gross_portfolio_volume_usd": 558992.16,
     "statutory_default_withholding_usd": 147847.7,
     "treaty_mitigated_withholding_usd": 2900.0,

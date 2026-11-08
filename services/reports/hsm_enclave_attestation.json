@@ -3,16 +3,16 @@
     "organization": "DevSuperSuite Official",
     "authority": "Directorate of QA Automation & Security Compliance",
     "contact": "infosec@devsupersuite.com",
-    "timestamp": "2026-11-08T11:51:17.352260+00:00",
+    "timestamp": "2026-11-08T11:55:00.122371+00:00",
     "classification": "FIPS 140-3 Hardware Enclave Attestation (Restricted)",
     "governing_standard": "FIPS 140-3 Level 3 & NIST SP 800-88 Rev 1",
-    "sha256_digest": "871433a9148c93116c64733976db3656bb7717a9ba52c7d7247210789e728bbe"
+    "sha256_digest": "20f3b8d9a3347085b7cf7d3dfc7e25768b8bfc9c9df1822c39d0c26eb0946796"
   },
   "cryptographic_attestation_summary": {
     "fips_level": "FIPS 140-3 Level 3 (Hardware Rooted Enclaves)",
-    "active_key_id": "KID-ED25519-BC2F08F3BAF2",
+    "active_key_id": "KID-ED25519-18D21BCE9787",
     "active_key_algorithm": "Ed25519 (FIPS 186-5 & RFC 8032)",
-    "key_fingerprint": "bc2f08f3baf28a54f131c30ca2432854fae912f5754a8ebc35788f47eb97b9e6",
+    "key_fingerprint": "18d21bce9787236994083d732e3e683fd70a97a1bbf11bc4b23db702bdfe65a8",
     "hardware_enclaves_verified": 4,
     "memory_zeroization_state": "ZEROIZED",
     "overall_status": "CERTIFIED_FIPS_140_3_COMPLIANT"
@@ -20,12 +20,12 @@
   "posture_details": {
     "fips_140_compliance_level": "FIPS 140-3 Level 3 (Hardware Rooted Enclaves)",
     "active_root_key": {
-      "key_id": "KID-ED25519-BC2F08F3BAF2",
+      "key_id": "KID-ED25519-18D21BCE9787",
       "algorithm": "Ed25519 (FIPS 186-5 & RFC 8032)",
       "key_length_bits": 256,
-      "public_key_b64": "MM98sFJkddAkDiUD3x5JTTXB+hSlT5RUUDF3RGjBeYs=",
-      "sha256_fingerprint": "bc2f08f3baf28a54f131c30ca2432854fae912f5754a8ebc35788f47eb97b9e6",
-      "created_at": "2026-11-08T11:51:17.346056+00:00",
+      "public_key_b64": "lDHYUtQ2F9J35kPEoNcAT4TXsl9vDSVmjqSaWxHNn24=",
+      "sha256_fingerprint": "18d21bce9787236994083d732e3e683fd70a97a1bbf11bc4b23db702bdfe65a8",
+      "created_at": "2026-11-08T11:55:00.115464+00:00",
       "state": "ACTIVE",
       "rotation_interval_days": 90
     },
@@ -40,7 +40,7 @@
           "root_of_trust": "Endorsement Key (EK) & Attestation Key (AK)",
           "fips_compliance": "FIPS 140-3 Level 3",
           "nonce_verified": true,
-          "nonce": "4c688c7406e59da1cd59c1ad1a4918cb1d0b56de885fe0bc45a512e307f3cf37",
+          "nonce": "a3dc8ddcd0e2390d5fc83b38e4868e8ce3bf1b1c148ea4a154effa2c6532ada1",
           "pcr_count": 5,
           "pcr_measurements": {
             "SHA256:0": "cba3afe32f012b77217446df22ebcc82fedf9722f89897f2f73acb08af9a1f8b",
@@ -49,7 +49,7 @@
             "SHA256:7": "286872bc159bbfe8e065c294cfe520e8a20250683e381836e3a706e7d4916ec8",
             "SHA256:8": "baeee61d4022ee47a96c03412800fca4630b4a21cb5adac1fd424e813b021352"
           },
-          "quote_signature_sha256": "dbf5f9743c6119dcd36b3f79e6068bf3b6bef9252fb4991bb24a04510ba37d97",
+          "quote_signature_sha256": "65b0bfdcb0cada5630ba34f9062755275ef0a316139e8642bee1550feb1b892e",
           "attestation_status": "VERIFIED_AUTHENTIC"
         },
         "AWS_NITRO": {
@@ -58,14 +58,14 @@
           "root_of_trust": "AWS Nitro Secure Cryptoprocessor / COSE Sign1",
           "fips_compliance": "FIPS 140-3 Level 3",
           "nonce_verified": true,
-          "nonce": "0514a0fe2bdff9af7339063e771e53e3e78e281f1e30804f1374b378fe424a5b",
+          "nonce": "10d10ce38fcd986434e516180b301cae9c8180ada2356c907f0abaa2317ac3af",
           "pcr_count": 3,
           "pcr_measurements": {
             "PCR0 (Image)": "3b250c98ca98eada80eb5371b5db6da88c61c775ec9fd695182602cb0e7fbe21",
             "PCR1 (Kernel)": "c130f73a2cce44ca127337e56f418dcdb3730c556d515610d6964e87d6f34a64",
             "PCR2 (Application)": "abfeb77ef8c93dbc30da92c87d589774b34309a1bf0213cbe4ca564e05a2e426"
           },
-          "quote_signature_sha256": "0f01467c49b2ce649d3bc3c407682de72e6d56257ec32cf8b3877dd24fd061a6",
+          "quote_signature_sha256": "af213dc7e0c269fc6f89f44c40d5ce0fcf7acdf925dbcb53001ca69ea988ee91",
           "attestation_status": "VERIFIED_AUTHENTIC"
         },
         "GCP_CONFIDENTIAL_VM": {
@@ -74,14 +74,14 @@
           "root_of_trust": "AMD SEV-SNP Firmware Certificate Authority",
           "fips_compliance": "FIPS 140-3 Level 3",
           "nonce_verified": true,
-          "nonce": "a6bd1d3401bc09206b4017026ac834d5b8db7889185df5d5ab9da74f82f480f0",
+          "nonce": "7c18fc88faef109ed85b2083c5265cf833f779db665e05507c07cff473bd9673",
           "pcr_count": 3,
           "pcr_measurements": {
             "Launch Digest": "907aba09e20b85ddcbb275eb7ae0a41a389287ada8092be8abb9c3419120faa9",
             "Firmware Measurement": "6a6c3d27c130186c451d5139331703630c5d1c7e7adce22e6cc695bf259e6e56",
             "Host Data": "b77805d6b97e18b9e68f58cd52ac5b3f2be0b79aa9d6d10493ac259b6fb6df1b"
           },
-          "quote_signature_sha256": "08231bd5ce5ad6dc5ad177ebccc1d840f68de6e3aef4eb1781a739d73c45da09",
+          "quote_signature_sha256": "58d83104dd41b7c89a12183cbf829383eac78e9978a48198c87cd8ae49d5e5da",
           "attestation_status": "VERIFIED_AUTHENTIC"
         },
         "APPLE_SECURE_ENCLAVE": {
@@ -90,14 +90,14 @@
           "root_of_trust": "Apple Root CA & UID-Derived Key Wrapping",
           "fips_compliance": "FIPS 140-3 Level 2+",
           "nonce_verified": true,
-          "nonce": "3d3707caf2dff70174e9f43b44ea1081cda26c1043a0c8f1fc8bafcd33b0d5dd",
+          "nonce": "0880564df043efdb196e0973b3b9cee125d2c63bb15f5351474586214b94fd5d",
           "pcr_count": 3,
           "pcr_measurements": {
             "SEP Boot ROM": "17fc4a24af267e17395f901876014f26a02f6e44c75fc219465f3c446cb37d51",
             "SEP OS Kernel": "b934e84785e081eca74558fa53fe808cd4332203416ec5cdeaf4cf3ebee0da80",
             "Local Enclave Seal": "8ef548e9d9f36d655fcde3df9d9877861623a81d9be385b453e86a10ebc722f7"
           },
-          "quote_signature_sha256": "3bf9ccc3e880214c1a86260aa6b5a498859ccf194e0e701338e819e4e8cff1d0",
+          "quote_signature_sha256": "36df60ee0089616c1df2ff0046625968bc2fee99c30ab92ef04c4e9cab431cc3",
           "attestation_status": "VERIFIED_AUTHENTIC"
         }
       }
