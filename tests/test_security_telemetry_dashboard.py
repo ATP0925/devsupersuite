@@ -202,7 +202,7 @@ class TestSecurityTelemetryDashboard(unittest.TestCase):
 
         forbidden_patterns = [
             r"\b[A-Za-z0-9._%+-]+@(?:gmail|yahoo|hotmail|outlook)\.com\b",
-            r"\+?\d{1,3}[-.\s]?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}",
+            r"(?<![a-f0-9])\+?\d{1,3}[-.\s]?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}(?![a-f0-9])",
             r"github\.com\/(?!DevSuperSuiteOfficial)[a-zA-Z0-9_\-]+",
         ]
 

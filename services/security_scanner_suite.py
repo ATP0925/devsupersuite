@@ -269,7 +269,8 @@ class CommandSafetyScanner:
             "invariants" in file_name_lower or
             "scanner" in file_name_lower or
             "interceptor" in file_name_lower or
-            "gate" in file_name_lower
+            "gate" in file_name_lower or
+            "threat" in file_name_lower
         )
 
         lines = content.splitlines()

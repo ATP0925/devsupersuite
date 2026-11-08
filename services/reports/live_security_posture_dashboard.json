@@ -3,9 +3,9 @@
     "organization": "DevSuperSuite Official",
     "authority": "Directorate of QA Automation & Security Compliance",
     "classification": "Sovereign Enterprise Security Telemetry (Restricted)",
-    "generated_at": "2026-11-08T10:09:00.540721+00:00",
+    "generated_at": "2026-11-08T10:12:33.450205+00:00",
     "target_repository": "agent-commerce",
-    "sha256_digest": "8fbb11e15a3b53e5f23210c9b692444cbde7a1b0c019d9e630b66b0c2d7bafbd"
+    "sha256_digest": "05d5002107ac0e5f64e3abdc4cde0d86f7dc3d3c351b5828705f76c43d21ab08"
   },
   "enterprise_trust_index": {
     "composite_score": 100.0,
@@ -18,12 +18,18 @@
       "weight_percentage": 20,
       "score": 100.0,
       "metrics": {
-        "total_suites": 20,
-        "total_tests": 178,
+        "total_suites": 23,
+        "total_tests": 207,
         "pass_rate_percentage": 100.0,
         "fail_count": 0,
         "skipped_count": 0,
         "suite_breakdown": [
+          {
+            "module": "test_affiliate_referral.py",
+            "test_count": 11,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
           {
             "module": "test_ai_company_harness.py",
             "test_count": 10,
@@ -39,6 +45,12 @@
           {
             "module": "test_automated_pentest_ci_gate.py",
             "test_count": 10,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_cap_table_safe_model.py",
+            "test_count": 8,
             "status": "PASS",
             "coverage_domain": "Core Architecture & MCP Harness"
           },
@@ -133,6 +145,12 @@
             "coverage_domain": "Adversarial Fuzzing & SAST/DAST"
           },
           {
+            "module": "test_stride_threat_modeling.py",
+            "test_count": 10,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
             "module": "test_supply_chain_security.py",
             "test_count": 8,
             "status": "PASS",
@@ -178,7 +196,7 @@
       "weight_percentage": 15,
       "score": 100.0,
       "metrics": {
-        "redos_execution_time_ms": 0.0061,
+        "redos_execution_time_ms": 0.014,
         "redos_ceiling_limit_ms": 1.0,
         "redos_immunity": "PASS",
         "ast_max_recursion_depth": 30,
