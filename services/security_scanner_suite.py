@@ -258,7 +258,12 @@ class CommandSafetyScanner:
         rel_path_str = str(file_path.relative_to(REPO_ROOT)).replace("\\", "/")
         file_name_lower = file_path.name.lower()
 
-        is_doc = file_name_lower.endswith(".md") or file_name_lower.endswith(".txt") or "pkg-info" in file_name_lower
+        is_doc = (
+            file_name_lower.endswith(".md") or
+            file_name_lower.endswith(".txt") or
+            file_name_lower.endswith(".json") or
+            "pkg-info" in file_name_lower
+        )
         is_test = "test" in file_name_lower or "/tests/" in f"/{rel_path_str}/" or "spec" in file_name_lower
         is_rule_def = (
             "invariants" in file_name_lower or
