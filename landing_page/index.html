@@ -110,20 +110,31 @@
       </p>
 
       <!-- Action Buttons -->
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
         <a href="#demo" class="w-full sm:w-auto px-8 py-4 bg-[#ff5500] hover:bg-[#ff6a00] text-black font-black text-sm uppercase tracking-widest transition border border-[#ff5500] shadow-[0_0_30px_rgba(255,85,0,0.4)] flex items-center justify-center gap-2">
           <i class="fa-solid fa-terminal"></i>
           <span>LAUNCH LIVE PLAYGROUND</span>
         </a>
 
-        <a href="https://gumroad.com/l/tlzdco" target="_blank" class="w-full sm:w-auto px-8 py-4 bg-black hover:bg-neutral-950 text-white font-bold text-sm uppercase tracking-widest transition border border-neutral-700 hover:border-[#ff5500] flex items-center justify-center gap-2">
-          <i class="fa-solid fa-cart-shopping text-[#ff5500]"></i>
-          <span>BUY ON GUMROAD ($29)</span>
+        <a href="https://devsupersuite.web.app/DevSuperSuite_Commercial_v1.0.zip" class="w-full sm:w-auto px-8 py-4 bg-black hover:bg-neutral-950 text-white font-bold text-sm uppercase tracking-widest transition border border-neutral-700 hover:border-[#ff5500] flex items-center justify-center gap-2">
+          <i class="fa-solid fa-download text-[#ff5500]"></i>
+          <span>DOWNLOAD COMMERCIAL SUITE (ZIP)</span>
         </a>
 
         <button onclick="openUpiModal('Hacker Solo', 1499, 29)" class="w-full sm:w-auto px-8 py-4 bg-neutral-950 hover:bg-neutral-900 text-[#ff5500] font-mono font-bold text-sm uppercase tracking-widest transition border border-neutral-800 hover:border-[#ff5500] flex items-center justify-center gap-2">
-          <i class="fa-solid fa-qrcode"></i>
-          <span>INSTANT UPI (₹1,499)</span>
+          <i class="fa-solid fa-key"></i>
+          <span>PRO LICENSE CHECKOUT ($29 / ₹1,499)</span>
+        </button>
+      </div>
+
+      <!-- 1-Click Terminal Quick Install Box -->
+      <div class="max-w-2xl mx-auto bg-neutral-950 border border-neutral-800 rounded-sm p-3 mb-12 flex flex-col sm:flex-row items-center justify-between gap-3 font-mono text-xs">
+        <div class="flex items-center gap-2 overflow-x-auto w-full text-left">
+          <span class="text-[#ff5500] font-bold">PS &gt;</span>
+          <span class="text-neutral-200 select-all font-medium">irm https://devsupersuite.web.app/install.ps1 | iex</span>
+        </div>
+        <button onclick="navigator.clipboard.writeText('irm https://devsupersuite.web.app/install.ps1 | iex'); this.innerText='COPIED!';" class="shrink-0 px-4 py-1.5 bg-neutral-900 hover:bg-[#ff5500] hover:text-black border border-neutral-700 text-neutral-300 font-bold uppercase tracking-wider text-[11px] transition">
+          <i class="fa-solid fa-copy mr-1"></i> COPY
         </button>
       </div>
 
