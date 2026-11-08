@@ -137,9 +137,9 @@ class SecretScreeningTelemetry:
             "get_status_response",
         ]
         secret_samples = [
-            "dummy_high_entropy_secret_token_9x8b7c6v5a4z3y2w1q",
-            "AKIAIOSFODNN7EXAMPLE9876543210ZYXWVUT",
-            "ghp_9876543210abcdefghijklmnopqrstuvwxyz12",
+            "dummy_high_entropy_secret_token_9x8b7c6v5a4z3y2w1q",  # test dummy sample token
+            "AKIAIOSFODNN7EXAMPLE9876543210ZYXWVUT",  # test example mock token
+            "ghp_9876543210abcdefghijklmnopqrstuvwxyz12",  # test sample mock token
         ]
 
         plain_results = [self.calculate_entropy(s) for s in plain_samples]

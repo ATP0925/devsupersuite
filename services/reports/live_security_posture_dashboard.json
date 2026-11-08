@@ -3,9 +3,9 @@
     "organization": "DevSuperSuite Official",
     "authority": "Directorate of QA Automation & Security Compliance",
     "classification": "Sovereign Enterprise Security Telemetry (Restricted)",
-    "generated_at": "2026-11-08T10:03:01.663788+00:00",
+    "generated_at": "2026-11-08T10:06:12.098932+00:00",
     "target_repository": "agent-commerce",
-    "sha256_digest": "2b1a7abfe58ceeb275c3a9bb9de2a35fa0aee21c7276f1cbd317bfbe0c469a73"
+    "sha256_digest": "c32907aedab0b59c308c4ff48a5327e82d42dce0001a58606ca8ba03b67e7f43"
   },
   "enterprise_trust_index": {
     "composite_score": 100.0,
@@ -18,8 +18,8 @@
       "weight_percentage": 20,
       "score": 100.0,
       "metrics": {
-        "total_suites": 15,
-        "total_tests": 125,
+        "total_suites": 16,
+        "total_tests": 135,
         "pass_rate_percentage": 100.0,
         "fail_count": 0,
         "skipped_count": 0,
@@ -35,6 +35,12 @@
             "test_count": 10,
             "status": "PASS",
             "coverage_domain": "Air-Gapped Isolation & Orchestration"
+          },
+          {
+            "module": "test_checkout_recovery.py",
+            "test_count": 10,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
             "module": "test_compliance_audit_engine.py",
@@ -148,7 +154,7 @@
       "weight_percentage": 15,
       "score": 100.0,
       "metrics": {
-        "redos_execution_time_ms": 0.0066,
+        "redos_execution_time_ms": 0.0069,
         "redos_ceiling_limit_ms": 1.0,
         "redos_immunity": "PASS",
         "ast_max_recursion_depth": 30,
