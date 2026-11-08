@@ -3,7 +3,7 @@
 **Recipient Entity (Counterparty Withholding Agent):** `Nexus Enterprise Technologies Corp.`  
 **Issuing Authority:** DevSuperSuite Treasury & Tax Office (`tax@devsupersuite.com`)  
 **Certificate Reference:** `DSS-W8BENE-FY2026-NEXUS`  
-**Issuance Date:** 2026-11-08 10:12:33 UTC  
+**Issuance Date:** 2026-11-08 10:16:42 UTC  
 **Validity Horizon:** 3 Calendar Years (Through December 31, 2028)  
 **Classification:** Institutional Commercial Tax Standard — 100% Brand Anonymity Protocol  
 
