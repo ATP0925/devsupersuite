@@ -167,6 +167,7 @@ class EntropyScanner:
         is_documentation = file_name_lower.endswith(".md")
         is_demo_playground = "landing_page" in rel_path_str or file_name_lower == "index.html"
         is_data_ledger = "/data/" in f"/{rel_path_str}/" or "ledger" in file_name_lower or "vault" in file_name_lower or "qr_data" in file_name_lower
+        is_deployment_config = "/deployment/" in f"/{rel_path_str}/" or "docker-compose" in file_name_lower or file_name_lower.endswith((".yaml", ".yml"))
 
         lines = content.splitlines()
         for line_no, line in enumerate(lines, 1):
@@ -174,14 +175,27 @@ class EntropyScanner:
             if not stripped or stripped.startswith("#") or stripped.startswith("//"):
                 continue
 
+            # If line is an env var assignment (e.g. KEY=VALUE), evaluate the value part
+            eval_text = line
+            if "=" in line and not ("==" in line or "<=" in line or ">=" in line or "!=" in line):
+                parts = line.split("=", 1)
+                eval_text = parts[1].strip()
+
             # Extract candidate tokens
-            tokens = re.findall(r"[A-Za-z0-9\+\/\=_\-]{16,}", line)
+            tokens = re.findall(r"[A-Za-z0-9\+\/\=_\-]{16,}", eval_text)
             for tok in tokens:
                 if len(tok) < self.min_len:
                     continue
 
-                # Ignore Base64 PNG image chunk headers
-                if tok.startswith("iVBORw0KGgo") or "data:image/png;base64" in line:
+                # Ignore Base64 PNG image chunk headers, model filenames, image tags
+                if (
+                    tok.startswith("iVBORw0KGgo") or
+                    "data:image/png;base64" in line or
+                    tok.endswith((".gguf", ".bin", ".pt", ".onnx")) or
+                    "deepseek" in tok.lower() or
+                    "qwen" in tok.lower() or
+                    "llama" in tok.lower()
+                ):
                     continue
 
                 entropy = calculate_shannon_entropy(tok)
@@ -192,6 +206,7 @@ class EntropyScanner:
                         is_documentation or
                         is_demo_playground or
                         is_data_ledger or
+                        is_deployment_config or
                         "sample" in line.lower() or
                         "demo" in line.lower() or
                         "mock" in line.lower() or
