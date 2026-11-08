@@ -143,3 +143,4 @@ class ASTContextCompressor:
             "compression_ratio_pct": savings_ratio,
             "estimated_cost_saved_per_turn_usd": round(((orig_tokens - comp_tokens) / 1_000_000) * 3.00, 6)
         }
+

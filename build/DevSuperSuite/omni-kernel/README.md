@@ -46,3 +46,4 @@ Add OmniKernel to `.cursor/mcp.json` or `.mcp.json`:
 OmniKernel is part of the **DevSuperSuite Commercial Enterprise Edition**:
 - **Official Enterprise Portal:** [https://devsupersuite.web.app](https://devsupersuite.web.app)
 - **Instant Commercial Purchase:** [https://gumroad.com/l/tlzdco](https://gumroad.com/l/tlzdco)
+

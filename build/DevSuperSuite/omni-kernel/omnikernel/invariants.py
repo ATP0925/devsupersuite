@@ -59,3 +59,4 @@ class InvariantGuard:
             "new_external_modules": list(new_deps),
             "recommendation": "Block edit and demand explanation" if violations else "Patch conforms to system invariants"
         }
+
