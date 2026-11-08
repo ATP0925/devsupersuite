@@ -721,7 +721,7 @@
               <i class="fa-solid fa-qrcode mr-1"></i> PAY VIA UPI (<span id="soloUpiPrice">₹1,499</span>)
             </button>
             <a href="https://gumroad.com/l/tlzdco" target="_blank" class="block w-full py-3 bg-black hover:bg-neutral-900 text-white text-center font-mono font-bold text-xs uppercase tracking-wider transition border border-neutral-700 hover:border-[#ff5500]">
-              CARD / PAYPAL (<span id="soloCardPrice">$29</span>)
+              CARD / INTERNATIONAL (<span id="soloCardPrice">$29</span>)
             </a>
           </div>
         </div>
@@ -777,7 +777,7 @@
               <i class="fa-solid fa-qrcode mr-1"></i> PAY VIA UPI / WIRE (<span id="teamUpiPrice">₹7,999</span>)
             </button>
             <a href="https://gumroad.com/l/tlzdco" target="_blank" class="block w-full py-3 bg-black hover:bg-neutral-900 text-white text-center font-mono font-bold text-xs uppercase tracking-wider transition border border-neutral-700 hover:border-white">
-              CARD / PAYPAL (<span id="teamCardPrice">$149</span>)
+              CARD / INTERNATIONAL (<span id="teamCardPrice">$149</span>)
             </a>
           </div>
         </div>
@@ -1061,8 +1061,8 @@
         <!-- Trusted Payment Badges -->
         <div class="flex items-center gap-2 text-[11px] text-neutral-400">
           <span class="hidden lg:inline text-neutral-600">|</span>
-          <span class="flex items-center gap-1 text-neutral-300">
-            <i class="fa-brands fa-paypal text-[#0070ba]"></i> PayPal Verified
+          <span class="flex items-center gap-1 text-[#ff5500] font-bold">
+            <i class="fa-solid fa-qrcode text-[#ff5500]"></i> Instant UPI & QR
           </span>
           <span class="text-neutral-600">•</span>
           <span class="flex items-center gap-1 text-neutral-300">
@@ -1103,95 +1103,67 @@
         <span class="text-[10px] text-neutral-400 uppercase tracking-widest mt-1 block">INSTANT ACCESS & CRYPTOGRAPHIC LICENSE KEY</span>
       </div>
 
-      <!-- Tab Navigation (Tri-Rail & Dual-Gate CRO) -->
+      <!-- Tab Navigation (UPI-First Instant Dual-Rail) -->
       <div class="flex border-b border-neutral-800 mb-6 text-center">
-        <button id="tabBtn3" onclick="switchModalTab(3)" class="flex-1 py-2 font-black text-white border-b-2 border-[#ff5500] uppercase text-[11px] cursor-pointer">⚡ UPI / QR (₹1,499)</button>
-        <button id="tabBtn1" onclick="switchModalTab(1)" class="flex-1 py-2 font-bold text-neutral-400 hover:text-white uppercase text-[11px] cursor-pointer">🛒 CARD / GUMROAD ($29)</button>
-        <button id="tabBtn4" onclick="switchModalTab(4)" class="flex-1 py-2 font-bold text-neutral-400 hover:text-white uppercase text-[11px] cursor-pointer">🔑 VERIFY KEY</button>
-        <button id="tabBtn2" onclick="switchModalTab(2)" class="py-2 px-3 font-medium text-neutral-500 hover:text-neutral-300 uppercase text-[10px] cursor-pointer">🅿️ PAYPAL</button>
+        <button id="tabBtn1" onclick="switchModalTab(1)" class="flex-1 py-2 font-black text-white border-b-2 border-[#ff5500] uppercase text-[11px] cursor-pointer">⚡ UPI / QR (₹1,499)</button>
+        <button id="tabBtn2" onclick="switchModalTab(2)" class="flex-1 py-2 font-bold text-neutral-400 hover:text-white uppercase text-[11px] cursor-pointer">🛒 CARD / INTERNATIONAL ($29)</button>
+        <button id="tabBtn3" onclick="switchModalTab(3)" class="flex-1 py-2 font-bold text-neutral-400 hover:text-white uppercase text-[11px] cursor-pointer">🔑 VERIFY KEY</button>
       </div>
 
-      <!-- TAB 1: 1-Click Gumroad / Card Checkout -->
-      <div id="tabContent1" class="space-y-4 text-center">
-        <div class="p-4 bg-black border border-neutral-800 rounded">
-          <div id="modalTab1PlanHeader" class="text-[#ff5500] font-black text-lg mb-1">PRO LIFETIME LICENSE — $29</div>
-          <p class="text-xs text-neutral-300 leading-relaxed mb-4">
-            Instant worldwide checkout. Pay via Credit Card, Debit Card, Apple Pay, Google Pay, or PayPal with instant binary package delivery.
-          </p>
-          <a id="modalGumroadBtn" href="https://gumroad.com/l/tlzdco" target="_blank" class="block w-full py-4 bg-[#ff5500] hover:bg-[#ff6a00] text-black font-black uppercase tracking-widest text-xs rounded transition shadow-[0_0_25px_rgba(255,85,0,0.4)] cursor-pointer">
-            <i class="fa-solid fa-lock mr-1.5"></i> BUY NOW ON GUMROAD ($29) ➔
-          </a>
-          <span class="text-[10px] text-neutral-500 block mt-2">Instant download + cryptographic Ed25519 license key delivered to your email immediately upon checkout.</span>
-        </div>
-        <p class="text-[11px] text-neutral-400">
-          Already purchased? Switch to <span onclick="switchModalTab(4)" class="text-[#ff5500] underline cursor-pointer">VERIFY PAYMENT & KEY</span> to download anytime.
-        </p>
-      </div>
-
-      <!-- TAB 2: Direct PayPal Business Gateway (Dual-Gate Fallback) -->
-      <div id="tabContent2" class="hidden space-y-4">
-        <p class="text-[11px] text-neutral-300 leading-relaxed text-center">
-          Instant worldwide checkout via verified PayPal Business Gateway (zero 3DS card friction):
-        </p>
-
-        <!-- PayPal 1-Click Pay Link -->
-        <a id="modalPaypalDirectBtn" href="https://paypal.me/devsupersuite/29USD" target="_blank" class="block w-full py-3.5 bg-[#0070ba] hover:bg-[#003087] text-white text-center font-black uppercase tracking-wider text-xs transition flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(0,112,186,0.4)] cursor-pointer">
-          <i class="fa-brands fa-paypal text-base mr-1"></i>
-          <span>⚡ 1-CLICK PAYPAL CHECKOUT ($29 USD) ➔</span>
-        </a>
-
-        <!-- PayPal QR Scan Box -->
-        <div class="bg-black border border-neutral-800 p-4 flex flex-col items-center justify-center rounded">
-          <div class="bg-white p-2 border border-neutral-700 rounded-sm">
-            <img src="./paypal_qr_clean.png" alt="PayPal QR Code" class="w-40 h-40 object-contain" />
-          </div>
-          <span class="text-[10px] text-neutral-400 font-mono uppercase tracking-widest mt-2.5">SCAN WITH PAYPAL APP OR CAMERA</span>
-          <span class="text-[9px] text-[#0070ba] font-bold mt-1">VERIFIED MERCHANT: DEVSUPERSUITE OFFICIAL</span>
-        </div>
-
-        <div class="pt-1">
-          <button onclick="switchModalTab(4)" class="block w-full py-2.5 bg-neutral-900 hover:bg-neutral-800 text-neutral-300 hover:text-white border border-neutral-700 text-center font-bold uppercase text-[11px] transition cursor-pointer">
-            Completed payment? Enter Transaction ID here ➔
-          </button>
-        </div>
-      </div>
-
-      <!-- TAB 3: Instant Domestic UPI Rail (Zero Intermediary Fees) -->
-      <div id="tabContent3" class="hidden space-y-4">
+      <!-- TAB 1: Instant Domestic UPI Rail (Zero Intermediary Fees, Instant Direct Bank Settlement) -->
+      <div id="tabContent1" class="space-y-4">
         <div class="bg-black border border-neutral-800 p-3 flex flex-col items-center justify-center">
           <div class="bg-white p-2 border border-neutral-700">
             <img id="modalQrImg" src="./qr_upi.png" alt="UPI QR Code" class="w-40 h-40 object-contain" />
           </div>
-          <span class="text-[10px] text-neutral-400 uppercase tracking-widest mt-2">GOOGLE PAY / PHONEPE / PAYTM / BHIM</span>
+          <span class="text-[10px] text-neutral-400 uppercase tracking-widest mt-2 font-mono">GOOGLE PAY / PHONEPE / PAYTM / BHIM / CRED</span>
+          <span class="text-[9px] text-[#ff5500] font-mono mt-0.5">INSTANT DIRECT BANK SETTLEMENT • ZERO FEES</span>
         </div>
 
         <div class="bg-black border border-neutral-800 p-2.5 flex items-center justify-between">
           <div>
-            <span class="text-[10px] text-neutral-500 uppercase block">MERCHANT VPA</span>
-            <span class="text-white font-bold select-all">devsupersuite@upi</span>
+            <span class="text-[10px] text-neutral-500 uppercase block font-mono">MERCHANT VPA</span>
+            <span class="text-white font-bold select-all font-mono">devsupersuite@upi</span>
           </div>
           <button onclick="copyUpi()" class="px-2 py-1 bg-[#ff5500] text-black font-bold text-[10px] uppercase hover:bg-[#ff6a00] cursor-pointer">COPY</button>
         </div>
 
         <div class="space-y-2">
-          <span class="text-[10px] text-neutral-400 uppercase block">// ENTER UPI REF / UTR FOR INSTANT VERIFICATION</span>
+          <span class="text-[10px] text-neutral-400 uppercase block font-mono">// ENTER UPI REF / UTR FOR INSTANT ACTIVATION</span>
           <div class="flex gap-2">
-            <input type="text" id="utrInput" placeholder="12-digit UTR number" class="flex-1 bg-black border border-neutral-800 p-2 text-white font-mono text-xs focus:outline-none focus:border-[#ff5500]" />
+            <input type="text" id="utrInput" placeholder="12-digit UTR number (from UPI app)" class="flex-1 bg-black border border-neutral-800 p-2 text-white font-mono text-xs focus:outline-none focus:border-[#ff5500]" />
             <button onclick="submitUtr()" class="px-3 py-2 bg-[#ff5500] hover:bg-[#ff6a00] text-black font-black uppercase text-xs cursor-pointer">VERIFY</button>
           </div>
         </div>
       </div>
 
-      <!-- TAB 4: Verify Paid License & Instant Key Unlock -->
-      <div id="tabContent4" class="hidden space-y-4">
+      <!-- TAB 2: 1-Click Gumroad / International Card Checkout -->
+      <div id="tabContent2" class="hidden space-y-4 text-center">
+        <div class="p-4 bg-black border border-neutral-800 rounded">
+          <div id="modalTab2PlanHeader" class="text-[#ff5500] font-black text-lg mb-1">PRO LIFETIME LICENSE — $29</div>
+          <p class="text-xs text-neutral-300 leading-relaxed mb-4">
+            Instant worldwide checkout for international developers. Pay via Credit Card, Debit Card, Apple Pay, or Google Pay with instant package delivery.
+          </p>
+          <a id="modalGumroadBtn" href="https://gumroad.com/l/tlzdco" target="_blank" class="block w-full py-4 bg-[#ff5500] hover:bg-[#ff6a00] text-black font-black uppercase tracking-widest text-xs rounded transition shadow-[0_0_25px_rgba(255,85,0,0.4)] cursor-pointer">
+            <i class="fa-solid fa-lock mr-1.5"></i> BUY NOW ON GUMROAD ($29) ➔
+          </a>
+          <span class="text-[10px] text-neutral-500 block mt-2 font-mono">Instant download + cryptographic Ed25519 license key delivered to your email immediately upon checkout.</span>
+        </div>
+        <p class="text-[11px] text-neutral-400">
+          Already purchased? Switch to <span onclick="switchModalTab(3)" class="text-[#ff5500] underline cursor-pointer">VERIFY PAYMENT & KEY</span> to download anytime.
+        </p>
+      </div>
+
+      <!-- TAB 3: Verify Paid License & Instant Key Unlock -->
+      <div id="tabContent3" class="hidden space-y-4">
         <div class="bg-black border border-neutral-800 p-4 rounded space-y-3">
           <div>
             <label class="text-[10px] text-neutral-400 uppercase block mb-1">DEVELOPER WORK EMAIL OR GITHUB USERNAME</label>
             <input type="text" id="devEmailInput" placeholder="dev@company.com or @username" class="w-full bg-neutral-950 border border-neutral-800 p-3 text-white font-mono text-xs focus:outline-none focus:border-[#ff5500]" />
           </div>
           <div>
-            <label class="text-[10px] text-neutral-400 uppercase block mb-1">GUMROAD ORDER ID / PAYPAL TRANSACTION ID / UTR</label>
-            <input type="text" id="paymentRefInput" placeholder="e.g. GUM-123456 or PP-TX-98765" class="w-full bg-neutral-950 border border-neutral-800 p-3 text-white font-mono text-xs focus:outline-none focus:border-[#ff5500]" />
+            <label class="text-[10px] text-neutral-400 uppercase block mb-1">UPI UTR (12 DIGITS) OR GUMROAD ORDER ID</label>
+            <input type="text" id="paymentRefInput" placeholder="e.g. 12-digit UPI UTR or GUM-123456" class="w-full bg-neutral-950 border border-neutral-800 p-3 text-white font-mono text-xs focus:outline-none focus:border-[#ff5500]" />
           </div>
 
           <button onclick="generateInstantLicense()" class="w-full py-3 bg-[#ff5500] hover:bg-[#ff6a00] text-black font-black uppercase tracking-wider text-xs transition flex items-center justify-center gap-2 cursor-pointer">
@@ -1202,17 +1174,17 @@
         <div id="licenseResultBox" class="hidden mt-4 p-4 bg-neutral-900 border border-emerald-500 space-y-2">
           <div class="flex items-center justify-between">
             <span class="text-emerald-400 font-bold uppercase text-[11px]">✓ LICENSE KEY ACTIVATED</span>
-            <span class="text-[10px] text-neutral-400">Ed25519 Standalone</span>
+            <span class="text-[10px] text-neutral-400 font-mono">Ed25519 Standalone</span>
           </div>
           <div class="bg-black p-2.5 border border-neutral-800 flex items-center justify-between">
-            <code id="licenseKeyText" class="text-white font-bold select-all tracking-wider">DSS-PRO-2026-X89F-992A-4B7C</code>
+            <code id="licenseKeyText" class="text-white font-bold select-all tracking-wider font-mono">DSS-PRO-2026-X89F-992A-4B7C</code>
             <button onclick="copyLicenseKey()" class="px-2 py-1 bg-emerald-500 text-black font-bold text-[10px] uppercase hover:bg-emerald-400 cursor-pointer">COPY</button>
           </div>
-          <p class="text-[10px] text-neutral-400 leading-relaxed">
+          <p class="text-[10px] text-neutral-400 leading-relaxed font-mono">
             Your verified package is ready. Extract the archive and paste your key into <code class="text-white">Setup_DevSuite.bat</code> or run <code class="text-white">omnikernel --activate</code>.
           </p>
           <div class="pt-2">
-            <a id="directZipLink" href="/DevSuperSuite_Commercial_v1.0.zip" download class="block w-full py-2 bg-emerald-500 hover:bg-emerald-400 text-black text-center font-bold uppercase text-xs cursor-pointer">
+            <a id="directZipLink" href="/DevSuperSuite_Commercial_v1.0.zip" download class="block w-full py-2 bg-emerald-500 hover:bg-emerald-400 text-black text-center font-bold uppercase text-xs cursor-pointer font-mono">
               DOWNLOAD PRO COMMERCIAL SUITE (ZIP)
             </a>
           </div>
@@ -1621,23 +1593,16 @@
         modalGumroadBtn.innerHTML = '<i class="fa-solid fa-lock mr-1.5"></i> BUY NOW ON GUMROAD ($' + amountUsd + ') ➔';
       }
 
-      // Dynamic 1-Click PayPal Direct fallback link
-      const modalPaypalDirectBtn = document.getElementById('modalPaypalDirectBtn');
-      if (modalPaypalDirectBtn) {
-        modalPaypalDirectBtn.href = 'https://paypal.me/devsupersuite/' + amountUsd + 'USD';
-        modalPaypalDirectBtn.innerHTML = '<i class="fa-brands fa-paypal text-base mr-1"></i><span>⚡ 1-CLICK PAYPAL CHECKOUT ($' + amountUsd + ' USD) ➔</span>';
-      }
-
       // Update Tab button labels with accurate pricing
       const tabBtn1 = document.getElementById('tabBtn1');
       const tabBtn2 = document.getElementById('tabBtn2');
       const tabBtn3 = document.getElementById('tabBtn3');
-      if (tabBtn3) tabBtn3.innerText = "⚡ UPI / QR (₹" + amountInr.toLocaleString() + ")";
-      if (tabBtn1) tabBtn1.innerText = "🛒 CARD / GUMROAD ($" + amountUsd + ")";
-      if (tabBtn2) tabBtn2.innerText = "🅿️ PAYPAL ($" + amountUsd + ")";
+      if (tabBtn1) tabBtn1.innerText = "⚡ UPI / QR (₹" + amountInr.toLocaleString() + ")";
+      if (tabBtn2) tabBtn2.innerText = "🛒 CARD / INTERNATIONAL ($" + amountUsd + ")";
+      if (tabBtn3) tabBtn3.innerText = "🔑 VERIFY KEY";
 
       document.getElementById('upiModal').classList.remove('hidden');
-      switchModalTab(3);
+      switchModalTab(1);
     }
 
     function closeUpiModal() {
@@ -1645,7 +1610,7 @@
     }
 
     function switchModalTab(tabIndex) {
-      [1, 2, 3, 4].forEach(i => {
+      [1, 2, 3].forEach(i => {
         const content = document.getElementById('tabContent' + i);
         const btn = document.getElementById('tabBtn' + i);
         if (content) content.classList.add('hidden');
@@ -1673,7 +1638,7 @@
       }
 
       if (!paymentRef || paymentRef.length < 5) {
-        alert("Please enter your verified Gumroad Order ID, PayPal Transaction ID, or UPI UTR reference to unlock your license.");
+        alert("Please enter your verified 12-digit UPI UTR reference or Gumroad Order ID to unlock your license.");
         return;
       }
       

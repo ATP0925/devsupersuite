@@ -1,0 +1,55 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# DevSuperSuite Tech Services - ArgoCD Application Manifest
+# Automated Prune, Self-Heal, and Foreground Deletion Policies
+# Contact: DevSuperSuite Solutions Architecture (solutions@devsupersuite.com)
+# ═══════════════════════════════════════════════════════════════════════════════
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: devsupersuite-core
+  namespace: argocd
+  labels:
+    app.kubernetes.io/name: devsupersuite-core
+    app.kubernetes.io/part-of: devsupersuite-gitops
+    app.kubernetes.io/managed-by: devsupersuite-delivery-controller
+  annotations:
+    notifications.argoproj.io/subscribe.on-sync-failed.slack: gitops-alerts
+    notifications.argoproj.io/subscribe.on-health-degraded.slack: gitops-alerts
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/devsupersuite/enterprise-gitops.git
+    targetRevision: HEAD
+    path: deployment/helm/devsupersuite
+    helm:
+      valueFiles:
+      - values.yaml
+      - values-production.yaml
+      parameters:
+      - name: security.runAsUser
+        value: '10001'
+      - name: security.zeroEgress
+        value: 'true'
+      - name: image.registry
+        value: registry.devsupersuite.io
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: devsupersuite-system
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+      allowEmpty: false
+    syncOptions:
+    - CreateNamespace=true
+    - PrunePropagationPolicy=foreground
+    - PruneLast=true
+    - ApplyOutOfSyncOnly=true
+    retry:
+      limit: 5
+      backoff:
+        duration: 5s
+        factor: 2
+        maxDuration: 3m

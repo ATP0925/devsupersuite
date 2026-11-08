@@ -1,0 +1,44 @@
+{
+  "PRICING_AND_LICENSING": {
+    "title": "Transparent Lifetime Licensing & Promo Incentives",
+    "summary": "One-time $29 Pro Lifetime license with zero recurring subscriptions; commercial rights included.",
+    "reply_text": "DevSuperSuite operates on a developer-first, zero-subscription pricing model:\n\n\u2022 **Hacker Solo Pro ($29 Lifetime):** 1 Developer, unlimited monorepos, permanent commercial rights, and 100% offline Ed25519 key verification.\n\u2022 **Team Commercial Pack ($149 Lifetime):** 5 Developer seats, shared entropy configurations, and priority engineering bridge.\n\u2022 **Enterprise Tier:** Unlimited seats, custom SLA (99.99%), air-gapped on-premise SCIF licensing, and dedicated TAM support.\n\n\u26a1 **VIP Developer Perk:** Use coupon code `VIPDEV5` at checkout to unlock an instant **$5 OFF** your Pro license ($24 total):\n\ud83d\udc49 Claim Your Pro License: https://gumroad.com/l/tlzdco?wanted=true&discount=VIPDEV5\n\ud83d\udc49 Explore Full Pricing Matrix: https://devsupersuite.web.app/#pricing",
+    "cta_url": "https://gumroad.com/l/tlzdco?wanted=true&discount=VIPDEV5",
+    "cta_label": "Claim Pro License ($VIPDEV5 Applied)"
+  },
+  "AST_SLICING_ARCHITECTURE": {
+    "title": "Deterministic AST Slicing Architecture",
+    "summary": "Tree-sitter grammar pruning extracting exact dependency slices to reduce LLM token load by 70-90%.",
+    "reply_text": "DevSuperSuite's OmniKernel employs native C-compiled Tree-sitter parsers to parse monorepos deterministically in < 15ms:\n\n1. **Call-Graph Dependency Slicing:** Rather than dumping entire 5,000-line files into Cursor or Claude Code, OmniKernel constructs an in-memory AST and isolates only the reachable symbols, interfaces, and function signatures.\n2. **70% to 90% Token Reduction:** Production monorepos (FastAPI, Tokio, React) drop from ~45,000 prompt tokens to ~4,800 tokens with zero loss of semantic context.\n3. **Multi-Language Support:** First-class Tree-sitter grammars for Rust, Go, Python, TypeScript/JavaScript, and C++.\n\n\u26a1 **Interactive Proof:** Test AST compression live in your browser sandbox without installing anything:\n\ud83d\udc49 Launch Browser Sandbox: https://devsupersuite.web.app/#demo\n\ud83d\udc49 Technical Architecture Docs: https://devsupersuite.web.app/#features",
+    "cta_url": "https://devsupersuite.web.app/#demo",
+    "cta_label": "Test Live AST Sandbox"
+  },
+  "SECRET_INTERCEPTION": {
+    "title": "Zero-Day High-Entropy Secret Defense",
+    "summary": "Sub-millisecond Shannon entropy analysis blocking uncommitted keys directly in pre-commit hooks.",
+    "reply_text": "DevSuperSuite stops credentials from ever hitting remote repositories through mathematical tripwires:\n\n\u2022 **Shannon Entropy Tripwire:** Measures character distribution disorder (H > 3.8 bits/char) to flag cryptographic private keys and high-entropy API tokens before execution.\n\u2022 **Zero-Day Pattern Engine:** Detects AWS access keys (`AKIA...`), OpenAI API keys (`sk-...`), GCP Service Accounts, GitHub PATs, and Stripe secrets.\n\u2022 **Pre-Commit Gate (< 4ms):** Integrates directly as a standalone Git pre-commit hook (`devsupersuite hook install --git`), rejecting commits locally before any outbound network call.\n\nUnlike cloud-based scanners that notify you *after* a secret is leaked, DevSuperSuite blocks it locally at the workstation boundary.\n\n\ud83d\udc49 Inspect Zero-Telemetry Security: https://devsupersuite.web.app/#features\n\ud83d\udc49 Secure Your Workstation ($24 with `VIPDEV5`): https://gumroad.com/l/tlzdco?wanted=true&discount=VIPDEV5",
+    "cta_url": "https://gumroad.com/l/tlzdco?wanted=true&discount=VIPDEV5",
+    "cta_label": "Secure Workstation Now"
+  },
+  "OFFLINE_AIRGAP": {
+    "title": "100% Offline & SCIF Zero-Telemetry Guarantee",
+    "summary": "Zero outbound network calls; asymmetric Ed25519 digital signature validation for air-gapped environments.",
+    "reply_text": "Security and IP privacy are foundational design principles of DevSuperSuite:\n\n\u2022 **Zero Telemetry:** The OmniKernel daemon runs completely locally. It initiates zero HTTP/gRPC requests, transmits no analytics, and does not phone home.\n\u2022 **SCIF & Defense Ready:** Safe for air-gapped environments, national defense labs, and strict proprietary IP perimeters.\n\u2022 **Offline Ed25519 License Validation:** Licenses are verified mathematically via asymmetric digital signatures using a local public key (`dss_ed25519_public.key`). No licensing server lookup is ever performed.\n\nYour source code, AST graphs, and environment variables never leave your physical machine.\n\n\ud83d\udc49 Verify Air-Gap Attestation: https://devsupersuite.web.app/#features\n\ud83d\udc49 Order Airgap-Safe License: https://gumroad.com/l/tlzdco?wanted=true&discount=VIPDEV5",
+    "cta_url": "https://gumroad.com/l/tlzdco?wanted=true&discount=VIPDEV5",
+    "cta_label": "Get Airgap-Safe License"
+  },
+  "REFUND_GUARANTEE": {
+    "title": "Unconditional 30-Day Money-Back Guarantee",
+    "summary": "Full refund guarantee within 30 days if DevSuperSuite does not deliver immediate tangible value.",
+    "reply_text": "We stand behind the engineering of DevSuperSuite with an unconditional guarantee:\n\n\u2022 **30-Day Money-Back Guarantee:** If DevSuperSuite doesn't significantly speed up your workflow, cut token costs, or seamlessly fit your IDE environment, you are entitled to a 100% refund.\n\u2022 **Zero-Friction Processing:** Simply email `support@devsupersuite.com` with your order ID. No interrogation, no lengthy forms.\n\u2022 **Keep Your License Key:** You retain your testing insights and offline tool evaluation.\n\nThere is zero financial risk to equipping your environment today.\n\n\ud83d\udc49 Activate DevSuperSuite Risk-Free: https://gumroad.com/l/tlzdco?wanted=true&discount=VIPDEV5",
+    "cta_url": "https://gumroad.com/l/tlzdco?wanted=true&discount=VIPDEV5",
+    "cta_label": "Claim Risk-Free License"
+  },
+  "FALLBACK_GENERAL": {
+    "title": "Technical Sales Engineering Support",
+    "summary": "Direct escalation to DevSuperSuite Principal Systems Architects for custom monorepo inquiries.",
+    "reply_text": "Thanks for reaching out to DevSuperSuite Sales Engineering!\n\nDevSuperSuite is an offline developer workstation suite providing deterministic AST context slicing (70-90% LLM token savings) and high-entropy secret defense for modern AI IDEs (Cursor, Windsurf, Claude Code, VS Code).\n\n\u2022 **Live Browser Demo:** Experience our AST compression engine in real-time: https://devsupersuite.web.app/#demo\n\u2022 **Pro Lifetime License ($29 / $24 with `VIPDEV5`):** https://gumroad.com/l/tlzdco?wanted=true&discount=VIPDEV5\n\nHave a specialized question regarding custom AST grammar parsers, Enterprise air-gap deployments, or volume licensing? Email our engineering team directly at `sales@devsupersuite.com` and a Principal Systems Architect will reply within 2 business hours.",
+    "cta_url": "https://gumroad.com/l/tlzdco?wanted=true&discount=VIPDEV5",
+    "cta_label": "Explore Pro License ($29)"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "community_desk": {
+    "entity_name": "DevSuperSuite Community Engineering",
+    "contact_email": "community@devsupersuite.com",
+    "website": "https://devsupersuite.web.app",
+    "voucher_code": "REDDIT-AMA-VIP",
+    "compliance": "100% Brand Anonymity Protocol Verified | Zero Founder Personal Disclosures"
+  },
+  "subreddits": [
+    {
+      "sub_id": "SUB-01",
+      "name": "r/programming",
+      "subscribers": 5900000,
+      "tier": "Tier 1 Mega Community",
+      "culture": "Strict anti-spam, 9:1 participation ratio, heavily cynical toward AI hype, demands deep systems engineering and reproducible proofs.",
+      "best_posting_window": "Tuesday 13:00 - 15:00 UTC (06:00 - 08:00 PT)",
+      "target_flair": "Article / Discussion",
+      "post_architecture": "POST-01: AST Interface Slicing vs Attention Sink Dilution",
+      "mod_outreach_subject": "Technical deep dive: AST interface slicing benchmarks on 25 monorepos (Zero marketing pitch)",
+      "mod_outreach_body": "Hi r/programming mod team, we have prepared a purely technical systems post analyzing transformer Attention Sink Dilution and comparing line-based Vector RAG against Tree-sitter AST interface extraction across 25 open-source monorepos. Zero affiliate links, zero gated signups, with a completely free client-side WebAssembly parser link. Would love your confirmation that this complies with community guidelines."
+    },
+    {
+      "sub_id": "SUB-02",
+      "name": "r/rust",
+      "subscribers": 315000,
+      "tier": "Tier 1 Specialized Systems",
+      "culture": "Passionate about memory safety, zero-cost abstractions, SIMD vectorization, and clean crate designs. Hostile to unsubstantiated speed claims.",
+      "best_posting_window": "Wednesday 14:00 - 16:00 UTC (07:00 - 09:00 PT)",
+      "target_flair": "Project / Deep Dive",
+      "post_architecture": "POST-02: Zero-Token Invariants & Shannon Entropy in Rust",
+      "mod_outreach_subject": "Technical post: Building CPU-register Shannon entropy checks and Tree-sitter AST queries in Rust",
+      "mod_outreach_body": "Hi r/rust mods, we wrote an in-depth technical post on how we leveraged Rust and Tree-sitter C-bindings with AVX-512 SIMD to compute Shannon entropy density on AST literal nodes in sub-0.8ms. Contains full code snippets and benchmark comparisons against regex scanners. Requesting review for community submission."
+    },
+    {
+      "sub_id": "SUB-03",
+      "name": "r/golang",
+      "subscribers": 285000,
+      "tier": "Tier 1 Specialized Language",
+      "culture": "Values simplicity, readability, standard library idioms, and microservice concurrency. Skeptical of bloated abstraction layers.",
+      "best_posting_window": "Thursday 13:30 - 15:30 UTC (06:30 - 08:30 PT)",
+      "target_flair": "Article / Discussion",
+      "post_architecture": "POST-01: AST Interface Slicing on Go Microservice Fleets",
+      "mod_outreach_subject": "Technical post: Slicing Go interface contracts across 50 microservices for AI pair programming",
+      "mod_outreach_body": "Hi r/golang mods, sharing an engineering retrospective on extracting Go struct and interface contracts across microservices to prevent context window saturation in LLMs without sacrificing static typing. Includes full Go AST walk examples."
+    },
+    {
+      "sub_id": "SUB-04",
+      "name": "r/Python",
+      "subscribers": 1450000,
+      "tier": "Tier 1 Mega Language",
+      "culture": "Broad spectrum from beginners to core CPython contributors. Responds strongly to performance optimizations and tooling breakthroughs.",
+      "best_posting_window": "Tuesday 14:00 - 16:00 UTC (07:00 - 09:00 PT)",
+      "target_flair": "Discussion / Project",
+      "post_architecture": "POST-01: Tree-sitter vs Python `ast` Module for Codebase Skeletonization",
+      "mod_outreach_subject": "Technical writeup: Why Tree-sitter outperforms Python's standard `ast` module by 8x on large codebases",
+      "mod_outreach_body": "Hi r/Python moderators, we conducted comprehensive benchmarks comparing CPython's standard `ast` module with Tree-sitter C bindings for codebase interface extraction, detailing token reduction metrics for LLM contexts. All code is openly reproducible."
+    },
+    {
+      "sub_id": "SUB-05",
+      "name": "r/neovim",
+      "subscribers": 188000,
+      "tier": "Tier 1 Power User Tooling",
+      "culture": "Extreme focus on latency, Lua scripting, modal speed, and local-first offline execution. Deeply appreciative of native Tree-sitter integrations.",
+      "best_posting_window": "Monday 15:00 - 17:00 UTC (08:00 - 10:00 PT)",
+      "target_flair": "Plugin / Showcase",
+      "post_architecture": "POST-02: Local Tree-sitter AST Slicing & Entropy Scanning in Neovim",
+      "mod_outreach_subject": "Showcase: devsupersuite.nvim - Local Tree-sitter AST slicer and pre-commit secret shield",
+      "mod_outreach_body": "Hi r/neovim team, we built a zero-latency Neovim Lua plugin that hooks directly into nvim-treesitter to slice code buffers into lean interface contracts and scan staged buffers for high-entropy secrets in <2ms. Looking to share with the community."
+    },
+    {
+      "sub_id": "SUB-06",
+      "name": "r/LocalLLaMA",
+      "subscribers": 385000,
+      "tier": "Tier 1 Cutting-Edge AI",
+      "culture": "Obsessed with local-first, air-gapped AI inference, quantization, attention mechanisms, and cutting token bloat without cloud telemetry.",
+      "best_posting_window": "Friday 14:00 - 16:00 UTC (07:00 - 09:00 PT)",
+      "target_flair": "Discussion / Benchmark",
+      "post_architecture": "POST-01: AST Interface Slicing to Fit 100k Monorepos into Local 8k/16k Context Models",
+      "mod_outreach_subject": "Technical writeup: How AST interface boundary slicing fits 100k LOC codebases into local 8k/16k context LLMs",
+      "mod_outreach_body": "Hi r/LocalLLaMA mods, we have prepared an architectural breakdown showing how local developers can run agentic pair programming on 7B/14B quantized models by pre-processing codebases into Tree-sitter AST skeletons instead of blowing through context limits. Free client-side WASM demo included."
+    },
+    {
+      "sub_id": "SUB-07",
+      "name": "r/devops",
+      "subscribers": 495000,
+      "tier": "Tier 1 Enterprise Infrastructure",
+      "culture": "Pragmatic, cynical toward broken CI pipelines, passionate about shift-left security, zero-trust, and secret leak prevention.",
+      "best_posting_window": "Wednesday 13:00 - 15:00 UTC (06:00 - 08:00 PT)",
+      "target_flair": "Discussion / Architecture",
+      "post_architecture": "POST-02: Pre-Commit Invariant Gates: Stopping Agents from Muting Tests & Leaking Secrets",
+      "mod_outreach_subject": "Engineering report: Preventing autonomous AI tools from deleting test assertions and leaking API keys in CI/CD",
+      "mod_outreach_body": "Hi r/devops mods, sharing an operational post detailing how our platform team instituted deterministic pre-commit AST assertion density tracking and syntax-scoped Shannon entropy checks to stop AI agents from faking passing builds and committing credentials."
+    },
+    {
+      "sub_id": "SUB-08",
+      "name": "r/webdev",
+      "subscribers": 2420000,
+      "tier": "Tier 1 Mega Web Engineering",
+      "culture": "Full-stack web developers, heavily affected by AI tool subscriptions and token billing overages, interested in practical productivity.",
+      "best_posting_window": "Thursday 14:00 - 16:00 UTC (07:00 - 09:00 PT)",
+      "target_flair": "Discussion / Tools",
+      "post_architecture": "POST-03: The Death of $20/Month AI SaaS Seat Taxes",
+      "mod_outreach_subject": "Discussion: Why local-first AST tooling beats $20/month cloud wrappers for Cursor and Copilot users",
+      "mod_outreach_body": "Hi r/webdev mod team, we wrote an engineering economic analysis exploring why frontend/TypeScript developers burn hundreds in token overages and how local AST pre-processing eliminates the need for expensive multi-tenant SaaS extensions."
+    },
+    {
+      "sub_id": "SUB-09",
+      "name": "r/softwarearchitecture",
+      "subscribers": 125000,
+      "tier": "Tier 1 High-Level Systems",
+      "culture": "Focus on system boundaries, domain-driven design, interface encapsulation, and long-term codebase maintainability.",
+      "best_posting_window": "Tuesday 15:00 - 17:00 UTC (08:00 - 10:00 PT)",
+      "target_flair": "Architecture / Discussion",
+      "post_architecture": "POST-03: Interface Segregation in the Age of LLM Code Assistants",
+      "mod_outreach_subject": "Architectural discussion: Applying Interface Segregation Principles to LLM Context Windows",
+      "mod_outreach_body": "Hi r/softwarearchitecture moderators, we authored an architecture essay demonstrating how classical Interface Segregation Principle (ISP) applies directly to LLM prompt representation via AST skeletonization, dramatically reducing coupling and context rot."
+    },
+    {
+      "sub_id": "SUB-10",
+      "name": "r/experienceddevs",
+      "subscribers": 295000,
+      "tier": "Tier 1 Senior Practitioners",
+      "culture": "Verified senior/staff developers, strictly zero tolerance for junior questions, buzzwords, or marketing fluff. Responds to hard engineering realities.",
+      "best_posting_window": "Monday 14:00 - 16:00 UTC (07:00 - 09:00 PT)",
+      "target_flair": "Discussion / Career & Tech",
+      "post_architecture": "POST-03: The Hidden Costs of AI Code Assistants on Enterprise Technical Debt",
+      "mod_outreach_subject": "Technical post: Post-mortem on AI agent-induced technical debt and deterministic pre-commit remedies",
+      "mod_outreach_body": "Hi r/experienceddevs mods, sharing an engineering retrospective on the silent technical debt introduced by LLM coding assistants (test suppression, context rot, key leakage) and the mathematical pre-commit invariant gates we implemented to address it."
+    }
+  ]
+}

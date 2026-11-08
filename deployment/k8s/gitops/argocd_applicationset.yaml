@@ -1,0 +1,67 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# DevSuperSuite Tech Services - ArgoCD ApplicationSet Matrix Generator
+# Multi-Cluster Sovereign Cloud Orchestration (Staging, EU, US, SCIF)
+# Contact: DevSuperSuite Solutions Architecture (solutions@devsupersuite.com)
+# ═══════════════════════════════════════════════════════════════════════════════
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: devsupersuite-cluster-matrix
+  namespace: argocd
+  labels:
+    app.kubernetes.io/name: devsupersuite-matrix
+    app.kubernetes.io/part-of: devsupersuite-gitops
+spec:
+  generators:
+  - list:
+      elements:
+      - cluster: staging-us-west
+        url: https://k8s-staging.internal:6443
+        env: staging
+        edition: Enterprise
+        replicas: '2'
+      - cluster: prod-eu-central-1
+        url: https://k8s-eu.internal:6443
+        env: production-eu
+        edition: Enterprise
+        replicas: '4'
+      - cluster: prod-us-east-1
+        url: https://k8s-us.internal:6443
+        env: production-us
+        edition: FedRAMP
+        replicas: '6'
+      - cluster: scif-isolated-dc01
+        url: https://k8s-scif.internal:6443
+        env: scif-airgap
+        edition: SCIF-AirGap
+        replicas: '8'
+  template:
+    metadata:
+      name: devsupersuite-{{cluster}}
+      labels:
+        environment: '{{env}}'
+        edition: '{{edition}}'
+    spec:
+      project: default
+      source:
+        repoURL: https://github.com/devsupersuite/enterprise-gitops.git
+        targetRevision: HEAD
+        path: deployment/overlays/{{env}}
+        helm:
+          parameters:
+          - name: edition
+            value: '{{edition}}'
+          - name: replicas
+            value: '{{replicas}}'
+          - name: security.runAsUser
+            value: '10001'
+      destination:
+        server: '{{url}}'
+        namespace: devsupersuite-system
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
+        syncOptions:
+        - CreateNamespace=true
+        - ApplyOutOfSyncOnly=true

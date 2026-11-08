@@ -1,0 +1,79 @@
+{
+  "version": "1.0.0",
+  "governing_authority": "DevSuperSuite Payment Engineering (payments@devsupersuite.com)",
+  "compliance_protocol": "100% Brand Anonymity - Zero Founder Personal Identifiers",
+  "gateway_profiles": {
+    "GUMROAD": {
+      "name": "Gumroad Storefront Direct",
+      "priority": 1,
+      "base_url": "https://gumroad.com/l/tlzdco",
+      "target_sla": 99.9,
+      "max_latency_ms": 2500.0,
+      "supported_methods": [
+        "Credit Card",
+        "Apple Pay",
+        "Google Pay",
+        "PayPal"
+      ]
+    },
+    "STRIPE_DIRECT": {
+      "name": "Stripe Direct Hosted Checkout",
+      "priority": 2,
+      "base_url": "https://buy.stripe.com/devsupersuite_pro_lifetime",
+      "target_sla": 99.99,
+      "max_latency_ms": 1200.0,
+      "supported_methods": [
+        "Credit Card",
+        "Apple Pay",
+        "Google Pay",
+        "iDEAL",
+        "SEPA"
+      ]
+    },
+    "PAYPAL_EXPRESS": {
+      "name": "PayPal Express Direct Gateway",
+      "priority": 3,
+      "base_url": "https://www.paypal.com/ncp/payment/DEVSUPERSUITE_PRO",
+      "target_sla": 99.95,
+      "max_latency_ms": 1800.0,
+      "supported_methods": [
+        "PayPal Balance",
+        "PayPal Credit",
+        "UPI QR",
+        "Cards"
+      ]
+    }
+  },
+  "gateway_health": {
+    "GUMROAD": {
+      "gateway_id": "GUMROAD",
+      "circuit_state": "CLOSED",
+      "latency_ms": 420.0,
+      "error_rate_pct": 0.2,
+      "consecutive_failures": 0,
+      "uptime_sla_pct": 99.94,
+      "last_health_check": "2026-11-08T11:03:11.759426+00:00",
+      "active_traffic_pct": 100.0
+    },
+    "STRIPE_DIRECT": {
+      "gateway_id": "STRIPE_DIRECT",
+      "circuit_state": "CLOSED",
+      "latency_ms": 280.0,
+      "error_rate_pct": 0.05,
+      "consecutive_failures": 0,
+      "uptime_sla_pct": 99.99,
+      "last_health_check": "2026-11-08T11:03:11.759426+00:00",
+      "active_traffic_pct": 0.0
+    },
+    "PAYPAL_EXPRESS": {
+      "gateway_id": "PAYPAL_EXPRESS",
+      "circuit_state": "CLOSED",
+      "latency_ms": 610.0,
+      "error_rate_pct": 0.4,
+      "consecutive_failures": 0,
+      "uptime_sla_pct": 99.95,
+      "last_health_check": "2026-11-08T11:03:11.759426+00:00",
+      "active_traffic_pct": 0.0
+    }
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "metadata": {
+    "organization": "DevSuperSuite Official",
+    "entity": "DevSuperSuite Tech Services",
+    "treasury_contact": "cfo@devsupersuite.com",
+    "last_updated": "2026-11-08T11:03:18.170383+00:00"
+  },
+  "pools_audit": {
+    "timestamp": "2026-11-08T11:03:18.170399+00:00",
+    "benchmarks": {
+      "USD_TO_INR": 84.5,
+      "EUR_TO_USD": 1.085,
+      "GBP_TO_USD": 1.275
+    },
+    "total_pools_usd_equivalent": 24894.78,
+    "target_combined_operating_float_usd": 7177.65,
+    "pools": {
+      "USD": {
+        "pool_name": "USD Primary Clearing Vault",
+        "currency": "USD",
+        "clearing_rail": "Corporate Wire (SWIFT OUR) & Stripe USD",
+        "native_balance": 24683.0,
+        "usd_equivalent": 24683.0,
+        "target_float_native": 2500.0,
+        "target_float_usd": 2500.0,
+        "purpose": "Primary operational clearing & software revenues"
+      },
+      "EUR": {
+        "pool_name": "EUR Natural Currency Vault",
+        "currency": "EUR",
+        "clearing_rail": "European SEPA & Stripe Multi-Currency",
+        "native_balance": 100.0,
+        "usd_equivalent": 108.5,
+        "target_float_native": 1500.0,
+        "target_float_usd": 1627.5,
+        "purpose": "Offsets European GPU instances & EU dev services"
+      },
+      "GBP": {
+        "pool_name": "GBP Natural Currency Vault",
+        "currency": "GBP",
+        "clearing_rail": "UK Faster Payments & BACS Direct",
+        "native_balance": 50.0,
+        "usd_equivalent": 63.75,
+        "target_float_native": 1000.0,
+        "target_float_usd": 1275.0,
+        "purpose": "Offsets UK developer tooling & specialized services"
+      },
+      "INR": {
+        "pool_name": "INR Domestic Operating Vault",
+        "currency": "INR",
+        "clearing_rail": "Domestic Instant UPI / IMPS Direct",
+        "native_balance": 3340.0,
+        "usd_equivalent": 39.53,
+        "target_float_native": 150000.0,
+        "target_float_usd": 1775.15,
+        "purpose": "Domestic infrastructure & administrative clearing"
+      }
+    }
+  },
+  "zba_sweep": {
+    "timestamp": "2026-11-08T11:03:18.170422+00:00",
+    "sweep_protocol": "Daily ZBA Cash Concentration (17:00 EST / 21:30 UTC)",
+    "sovereign_target_vault": "U.S. Treasury Bills & Institutional Money Market Vault (4.95% APY)",
+    "total_opening_liquidity_usd": 24894.78,
+    "total_retained_operating_float_usd": 2711.78,
+    "total_swept_capital_usd": 22183.0,
+    "yield_accrual": {
+      "principal_swept_usd": 22183.0,
+      "sovereign_apy_pct": 4.95,
+      "daily_effective_rate": 0.00013238,
+      "daily_accrued_yield_usd": 2.94,
+      "monthly_accrued_yield_usd": 91.5,
+      "annualized_yield_usd": 1098.06,
+      "scenarios": [
+        {
+          "scenario": "Current Realized Treasury Surplus",
+          "principal_usd": 22183.0,
+          "apy_pct": 4.95,
+          "daily_yield_usd": 2.94,
+          "annual_yield_usd": 1098.06
+        },
+        {
+          "scenario": "Post-Seed SAFE Tranche Pool",
+          "principal_usd": 500000.0,
+          "apy_pct": 4.95,
+          "daily_yield_usd": 66.19,
+          "annual_yield_usd": 24750.0
+        },
+        {
+          "scenario": "Series A Post-Financing Treasury Vault",
+          "principal_usd": 10000000.0,
+          "apy_pct": 4.95,
+          "daily_yield_usd": 1323.76,
+          "annual_yield_usd": 495000.0
+        }
+      ]
+    },
+    "actions": [
+      {
+        "currency": "USD",
+        "pool_name": "USD Primary Clearing Vault",
+        "opening_balance_native": 24683.0,
+        "target_float_native": 2500.0,
+        "retained_float_usd": 2500.0,
+        "swept_surplus_native": 22183.0,
+        "swept_surplus_usd": 22183.0,
+        "action": "SURPLUS_SWEPT_TO_TREASURY_VAULT"
+      },
+      {
+        "currency": "EUR",
+        "pool_name": "EUR Natural Currency Vault",
+        "opening_balance_native": 100.0,
+        "target_float_native": 1500.0,
+        "retained_float_usd": 108.5,
+        "swept_surplus_native": 0.0,
+        "swept_surplus_usd": 0.0,
+        "action": "RETAINED_AS_WORKING_OPERATING_FLOAT"
+      },
+      {
+        "currency": "GBP",
+        "pool_name": "GBP Natural Currency Vault",
+        "opening_balance_native": 50.0,
+        "target_float_native": 1000.0,
+        "retained_float_usd": 63.75,
+        "swept_surplus_native": 0.0,
+        "swept_surplus_usd": 0.0,
+        "action": "RETAINED_AS_WORKING_OPERATING_FLOAT"
+      },
+      {
+        "currency": "INR",
+        "pool_name": "INR Domestic Operating Vault",
+        "opening_balance_native": 3340.0,
+        "target_float_native": 150000.0,
+        "retained_float_usd": 39.53,
+        "swept_surplus_native": 0.0,
+        "swept_surplus_usd": 0.0,
+        "action": "RETAINED_AS_WORKING_OPERATING_FLOAT"
+      }
+    ]
+  }
+}

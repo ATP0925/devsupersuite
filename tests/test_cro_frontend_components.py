@@ -112,27 +112,27 @@ def test_08_dynamic_utm_preserver_phase11(landing_soup):
     assert "utm_campaign" in html
 
 
-def test_09_dual_gate_paypal_checkout_modal_phase11(landing_soup):
+def test_09_upi_first_checkout_modal(landing_soup):
     soup, html = landing_soup
     modal = soup.find(id="upiModal")
     assert modal is not None, "Missing #upiModal"
 
-    # Verify 4 distinct tabs exist
-    for i in range(1, 5):
+    # Verify tabs exist for UPI, Card/International, and Key verification
+    for i in range(1, 4):
         btn = soup.find(id=f"tabBtn{i}")
         assert btn is not None, f"Missing #tabBtn{i}"
         content = soup.find(id=f"tabContent{i}")
         assert content is not None, f"Missing #tabContent{i}"
 
-    # Verify Dual-Gate payment triggers: Gumroad in Tab 1 & PayPal direct in Tab 2
+    # Verify UPI is Primary Tab 1
+    assert "UPI" in soup.find(id="tabBtn1").text.upper()
+    qr_img = soup.find(id="modalQrImg")
+    assert qr_img is not None, "Missing #modalQrImg"
+
+    # Verify Gumroad button in Tab 2 for International Card
     gumroad_btn = soup.find(id="modalGumroadBtn")
     assert gumroad_btn is not None, "Missing #modalGumroadBtn"
     assert "gumroad.com" in gumroad_btn.get("href", "")
-
-    paypal_btn = soup.find(id="modalPaypalDirectBtn")
-    assert paypal_btn is not None, "Missing #modalPaypalDirectBtn"
-    assert "paypal.me/devsupersuite" in paypal_btn.get("href", "")
-    assert "PAYPAL" in paypal_btn.text.upper()
 
 
 def test_10_strict_brand_anonymity():

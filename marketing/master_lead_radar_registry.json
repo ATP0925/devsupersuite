@@ -1,0 +1,2925 @@
+{
+  "metadata": {
+    "system": "DevSuperSuite Unified Master Lead Radar Control Tower",
+    "brand_entity": "DevSuperSuite Commercial Fleet",
+    "sender_inbox": "leads@devsupersuite.com",
+    "last_synced_at": "2026-11-08T10:01:55.807642+00:00",
+    "total_unified_leads": 145,
+    "financial_summary": {
+      "gross_modeled_annual_token_savings": "$4,634,898",
+      "gross_commercial_contract_pipeline": "$6,109,285",
+      "weighted_probability_pipeline_value": "$1,930,148"
+    },
+    "pool_counts": {
+      "enterprise_procurement": 30,
+      "abm_yc_ai_scaleups": 50,
+      "github_technical_threads": 15,
+      "discord_slack_hubs": 15,
+      "social_surveillance_leads": 15,
+      "oss_ecosystem_repositories": 20
+    },
+    "compliance": "100% Brand Anonymity Guaranteed | Zero Founder Personal Data"
+  },
+  "registry": [
+    {
+      "lead_id": "RADAR-SIG-TW-003",
+      "pool_origin": "Multi-Platform Social Surveillance",
+      "entity_name": "@startup_cto_alex (Twitter / X)",
+      "domain": "twitter",
+      "channel_or_platform": "Twitter / X",
+      "tier": "DEVELOPER_SURVEILLANCE",
+      "engineering_headcount": 1,
+      "primary_angle": "Tree-Sitter AST Interface Slicing (-83.0% Context Token Reduction)",
+      "urgency_score": 100,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.5,
+        "weighted_deal_value": 14
+      },
+      "status": "QUEUED_FOR_ENGAGEMENT",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=social_daemon&utm_medium=surveillance_reply&utm_campaign=surveillance_sig_tw_003"
+    },
+    {
+      "lead_id": "RADAR-SIG-RD-004",
+      "pool_origin": "Multi-Platform Social Surveillance",
+      "entity_name": "u/junior_react_dev (Reddit (r/webdev))",
+      "domain": "reddit",
+      "channel_or_platform": "Reddit (r/webdev)",
+      "tier": "DEVELOPER_SURVEILLANCE",
+      "engineering_headcount": 1,
+      "primary_angle": "Mathematical Zero-Day Pre-Commit Secret Defense ($H > 4.5$)",
+      "urgency_score": 93,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.47,
+        "weighted_deal_value": 13
+      },
+      "status": "QUEUED_FOR_ENGAGEMENT",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=social_daemon&utm_medium=surveillance_reply&utm_campaign=surveillance_sig_rd_004"
+    },
+    {
+      "lead_id": "RADAR-SIG-HN-001",
+      "pool_origin": "Multi-Platform Social Surveillance",
+      "entity_name": "patio11_fan (Hacker News)",
+      "domain": "hacker",
+      "channel_or_platform": "Hacker News",
+      "tier": "DEVELOPER_SURVEILLANCE",
+      "engineering_headcount": 1,
+      "primary_angle": "Tree-Sitter AST Interface Slicing (-83.0% Context Token Reduction)",
+      "urgency_score": 93,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.47,
+        "weighted_deal_value": 13
+      },
+      "status": "QUEUED_FOR_ENGAGEMENT",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=social_daemon&utm_medium=surveillance_reply&utm_campaign=surveillance_sig_hn_001"
+    },
+    {
+      "lead_id": "RADAR-ABM-006",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Weights & Biases",
+      "domain": "wandb.ai",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 180,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 92,
+      "financial_metrics": {
+        "annual_token_savings": 90069,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 54000,
+        "deal_probability": 0.4,
+        "weighted_deal_value": 21600
+      },
+      "status": "ENGAGED",
+      "attribution_url": "https://devsupersuite.web.app?company=wandb_ai&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-012",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Retool",
+      "domain": "retool.com",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 220,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 92,
+      "financial_metrics": {
+        "annual_token_savings": 110084,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 54000,
+        "deal_probability": 0.4,
+        "weighted_deal_value": 21600
+      },
+      "status": "ENGAGED",
+      "attribution_url": "https://devsupersuite.web.app?company=retool_com&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-013",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Ramp",
+      "domain": "ramp.com",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 290,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 92,
+      "financial_metrics": {
+        "annual_token_savings": 145111,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 54000,
+        "deal_probability": 0.4,
+        "weighted_deal_value": 21600
+      },
+      "status": "ENGAGED",
+      "attribution_url": "https://devsupersuite.web.app?company=ramp_com&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-014",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Brex",
+      "domain": "brex.com",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 260,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 92,
+      "financial_metrics": {
+        "annual_token_savings": 130100,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 54000,
+        "deal_probability": 0.4,
+        "weighted_deal_value": 21600
+      },
+      "status": "ENGAGED",
+      "attribution_url": "https://devsupersuite.web.app?company=brex_com&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-015",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Gusto",
+      "domain": "gusto.com",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 280,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 92,
+      "financial_metrics": {
+        "annual_token_savings": 140107,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 54000,
+        "deal_probability": 0.4,
+        "weighted_deal_value": 21600
+      },
+      "status": "ENGAGED",
+      "attribution_url": "https://devsupersuite.web.app?company=gusto_com&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-016",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Plaid",
+      "domain": "plaid.com",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 270,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 92,
+      "financial_metrics": {
+        "annual_token_savings": 135104,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 54000,
+        "deal_probability": 0.4,
+        "weighted_deal_value": 21600
+      },
+      "status": "TARGETED",
+      "attribution_url": "https://devsupersuite.web.app?company=plaid_com&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-018",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Cohere",
+      "domain": "cohere.com",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 190,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 92,
+      "financial_metrics": {
+        "annual_token_savings": 95073,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 54000,
+        "deal_probability": 0.4,
+        "weighted_deal_value": 21600
+      },
+      "status": "TARGETED",
+      "attribution_url": "https://devsupersuite.web.app?company=cohere_com&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-019",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Scale AI",
+      "domain": "scale.com",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 250,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 92,
+      "financial_metrics": {
+        "annual_token_savings": 125096,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 54000,
+        "deal_probability": 0.4,
+        "weighted_deal_value": 21600
+      },
+      "status": "TARGETED",
+      "attribution_url": "https://devsupersuite.web.app?company=scale_com&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-025",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Groq",
+      "domain": "groq.com",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 210,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 92,
+      "financial_metrics": {
+        "annual_token_savings": 105080,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 54000,
+        "deal_probability": 0.4,
+        "weighted_deal_value": 21600
+      },
+      "status": "TARGETED",
+      "attribution_url": "https://devsupersuite.web.app?company=groq_com&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-038",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Vercel",
+      "domain": "vercel.com",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 280,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 92,
+      "financial_metrics": {
+        "annual_token_savings": 140107,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 54000,
+        "deal_probability": 0.4,
+        "weighted_deal_value": 21600
+      },
+      "status": "TARGETED",
+      "attribution_url": "https://devsupersuite.web.app?company=vercel_com&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-042",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Sourcegraph",
+      "domain": "sourcegraph.com",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 190,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 92,
+      "financial_metrics": {
+        "annual_token_savings": 95073,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 54000,
+        "deal_probability": 0.4,
+        "weighted_deal_value": 21600
+      },
+      "status": "TARGETED",
+      "attribution_url": "https://devsupersuite.web.app?company=sourcegraph_com&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-SIG-TW-001",
+      "pool_origin": "Multi-Platform Social Surveillance",
+      "entity_name": "@vibecoder_dan (Twitter / X)",
+      "domain": "twitter",
+      "channel_or_platform": "Twitter / X",
+      "tier": "DEVELOPER_SURVEILLANCE",
+      "engineering_headcount": 1,
+      "primary_angle": "Tree-Sitter AST Interface Slicing (-83.0% Context Token Reduction)",
+      "urgency_score": 90,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.45,
+        "weighted_deal_value": 13
+      },
+      "status": "QUEUED_FOR_ENGAGEMENT",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=social_daemon&utm_medium=surveillance_reply&utm_campaign=surveillance_sig_tw_001"
+    },
+    {
+      "lead_id": "RADAR-ENT-001",
+      "pool_origin": "Enterprise Procurement Fleet",
+      "entity_name": "Synthesia",
+      "domain": "synthesia.io",
+      "channel_or_platform": "LinkedIn InMail / Executive Email",
+      "tier": "ENTERPRISE",
+      "engineering_headcount": 160,
+      "primary_angle": "Unallocated Token Tax (-83% AST reduction) & Pre-Commit Invariants",
+      "urgency_score": 88,
+      "financial_metrics": {
+        "annual_token_savings": 80061,
+        "commercial_deal_type": "Enterprise Pilot + Retainer ($54k / $8,500/mo)",
+        "contract_gross_value": 156000,
+        "deal_probability": 0.35,
+        "weighted_deal_value": 54600
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=lead_radar&utm_medium=enterprise&utm_campaign=synthesia_io"
+    },
+    {
+      "lead_id": "RADAR-ENT-010",
+      "pool_origin": "Enterprise Procurement Fleet",
+      "entity_name": "Weights & Biases",
+      "domain": "wandb.ai",
+      "channel_or_platform": "LinkedIn InMail / Executive Email",
+      "tier": "ENTERPRISE",
+      "engineering_headcount": 180,
+      "primary_angle": "Unallocated Token Tax (-83% AST reduction) & Pre-Commit Invariants",
+      "urgency_score": 88,
+      "financial_metrics": {
+        "annual_token_savings": 90069,
+        "commercial_deal_type": "Enterprise Pilot + Retainer ($54k / $8,500/mo)",
+        "contract_gross_value": 156000,
+        "deal_probability": 0.35,
+        "weighted_deal_value": 54600
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=lead_radar&utm_medium=enterprise&utm_campaign=wandb_ai"
+    },
+    {
+      "lead_id": "RADAR-ENT-013",
+      "pool_origin": "Enterprise Procurement Fleet",
+      "entity_name": "Retool",
+      "domain": "retool.com",
+      "channel_or_platform": "LinkedIn InMail / Executive Email",
+      "tier": "ENTERPRISE",
+      "engineering_headcount": 220,
+      "primary_angle": "Unallocated Token Tax (-83% AST reduction) & Pre-Commit Invariants",
+      "urgency_score": 88,
+      "financial_metrics": {
+        "annual_token_savings": 110084,
+        "commercial_deal_type": "Enterprise Pilot + Retainer ($54k / $8,500/mo)",
+        "contract_gross_value": 156000,
+        "deal_probability": 0.35,
+        "weighted_deal_value": 54600
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=lead_radar&utm_medium=enterprise&utm_campaign=retool_com"
+    },
+    {
+      "lead_id": "RADAR-ENT-014",
+      "pool_origin": "Enterprise Procurement Fleet",
+      "entity_name": "Ramp",
+      "domain": "ramp.com",
+      "channel_or_platform": "LinkedIn InMail / Executive Email",
+      "tier": "ENTERPRISE",
+      "engineering_headcount": 290,
+      "primary_angle": "Unallocated Token Tax (-83% AST reduction) & Pre-Commit Invariants",
+      "urgency_score": 88,
+      "financial_metrics": {
+        "annual_token_savings": 145111,
+        "commercial_deal_type": "Enterprise Pilot + Retainer ($54k / $8,500/mo)",
+        "contract_gross_value": 156000,
+        "deal_probability": 0.35,
+        "weighted_deal_value": 54600
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=lead_radar&utm_medium=enterprise&utm_campaign=ramp_com"
+    },
+    {
+      "lead_id": "RADAR-ENT-015",
+      "pool_origin": "Enterprise Procurement Fleet",
+      "entity_name": "Brex",
+      "domain": "brex.com",
+      "channel_or_platform": "LinkedIn InMail / Executive Email",
+      "tier": "ENTERPRISE",
+      "engineering_headcount": 260,
+      "primary_angle": "Unallocated Token Tax (-83% AST reduction) & Pre-Commit Invariants",
+      "urgency_score": 88,
+      "financial_metrics": {
+        "annual_token_savings": 130100,
+        "commercial_deal_type": "Enterprise Pilot + Retainer ($54k / $8,500/mo)",
+        "contract_gross_value": 156000,
+        "deal_probability": 0.35,
+        "weighted_deal_value": 54600
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=lead_radar&utm_medium=enterprise&utm_campaign=brex_com"
+    },
+    {
+      "lead_id": "RADAR-ENT-016",
+      "pool_origin": "Enterprise Procurement Fleet",
+      "entity_name": "Gusto",
+      "domain": "gusto.com",
+      "channel_or_platform": "LinkedIn InMail / Executive Email",
+      "tier": "ENTERPRISE",
+      "engineering_headcount": 280,
+      "primary_angle": "Unallocated Token Tax (-83% AST reduction) & Pre-Commit Invariants",
+      "urgency_score": 88,
+      "financial_metrics": {
+        "annual_token_savings": 140107,
+        "commercial_deal_type": "Enterprise Pilot + Retainer ($54k / $8,500/mo)",
+        "contract_gross_value": 156000,
+        "deal_probability": 0.35,
+        "weighted_deal_value": 54600
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=lead_radar&utm_medium=enterprise&utm_campaign=gusto_com"
+    },
+    {
+      "lead_id": "RADAR-ENT-017",
+      "pool_origin": "Enterprise Procurement Fleet",
+      "entity_name": "Plaid",
+      "domain": "plaid.com",
+      "channel_or_platform": "LinkedIn InMail / Executive Email",
+      "tier": "ENTERPRISE",
+      "engineering_headcount": 270,
+      "primary_angle": "Unallocated Token Tax (-83% AST reduction) & Pre-Commit Invariants",
+      "urgency_score": 88,
+      "financial_metrics": {
+        "annual_token_savings": 135104,
+        "commercial_deal_type": "Enterprise Pilot + Retainer ($54k / $8,500/mo)",
+        "contract_gross_value": 156000,
+        "deal_probability": 0.35,
+        "weighted_deal_value": 54600
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=lead_radar&utm_medium=enterprise&utm_campaign=plaid_com"
+    },
+    {
+      "lead_id": "RADAR-ENT-019",
+      "pool_origin": "Enterprise Procurement Fleet",
+      "entity_name": "Cohere",
+      "domain": "cohere.com",
+      "channel_or_platform": "LinkedIn InMail / Executive Email",
+      "tier": "ENTERPRISE",
+      "engineering_headcount": 190,
+      "primary_angle": "Unallocated Token Tax (-83% AST reduction) & Pre-Commit Invariants",
+      "urgency_score": 88,
+      "financial_metrics": {
+        "annual_token_savings": 95073,
+        "commercial_deal_type": "Enterprise Pilot + Retainer ($54k / $8,500/mo)",
+        "contract_gross_value": 156000,
+        "deal_probability": 0.35,
+        "weighted_deal_value": 54600
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=lead_radar&utm_medium=enterprise&utm_campaign=cohere_com"
+    },
+    {
+      "lead_id": "RADAR-ENT-020",
+      "pool_origin": "Enterprise Procurement Fleet",
+      "entity_name": "Scale AI",
+      "domain": "scale.com",
+      "channel_or_platform": "LinkedIn InMail / Executive Email",
+      "tier": "ENTERPRISE",
+      "engineering_headcount": 250,
+      "primary_angle": "Unallocated Token Tax (-83% AST reduction) & Pre-Commit Invariants",
+      "urgency_score": 88,
+      "financial_metrics": {
+        "annual_token_savings": 125096,
+        "commercial_deal_type": "Enterprise Pilot + Retainer ($54k / $8,500/mo)",
+        "contract_gross_value": 156000,
+        "deal_probability": 0.35,
+        "weighted_deal_value": 54600
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=lead_radar&utm_medium=enterprise&utm_campaign=scale_com"
+    },
+    {
+      "lead_id": "RADAR-ENT-027",
+      "pool_origin": "Enterprise Procurement Fleet",
+      "entity_name": "Groq",
+      "domain": "groq.com",
+      "channel_or_platform": "LinkedIn InMail / Executive Email",
+      "tier": "ENTERPRISE",
+      "engineering_headcount": 210,
+      "primary_angle": "Unallocated Token Tax (-83% AST reduction) & Pre-Commit Invariants",
+      "urgency_score": 88,
+      "financial_metrics": {
+        "annual_token_savings": 105080,
+        "commercial_deal_type": "Enterprise Pilot + Retainer ($54k / $8,500/mo)",
+        "contract_gross_value": 156000,
+        "deal_probability": 0.35,
+        "weighted_deal_value": 54600
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=lead_radar&utm_medium=enterprise&utm_campaign=groq_com"
+    },
+    {
+      "lead_id": "RADAR-SIG-RD-005",
+      "pool_origin": "Multi-Platform Social Surveillance",
+      "entity_name": "u/senior_systems_swe (Reddit (r/programming))",
+      "domain": "reddit",
+      "channel_or_platform": "Reddit (r/programming)",
+      "tier": "DEVELOPER_SURVEILLANCE",
+      "engineering_headcount": 1,
+      "primary_angle": "Tree-Sitter AST Interface Slicing (-83.0% Context Token Reduction)",
+      "urgency_score": 88,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.44,
+        "weighted_deal_value": 12
+      },
+      "status": "QUEUED_FOR_ENGAGEMENT",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=social_daemon&utm_medium=surveillance_reply&utm_campaign=surveillance_sig_rd_005"
+    },
+    {
+      "lead_id": "RADAR-TRIG-001",
+      "pool_origin": "Discord & Slack Dev Hubs",
+      "entity_name": "Cursor Community Discord (#troubleshooting)",
+      "domain": "discord",
+      "channel_or_platform": "Discord (#troubleshooting)",
+      "tier": "DEVELOPER_COMMUNITY",
+      "engineering_headcount": 1,
+      "primary_angle": "Theme 1: Fast Request Token Burn & Overages",
+      "urgency_score": 87,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.4,
+        "weighted_deal_value": 11
+      },
+      "status": "DISPATCHED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=cursor_composer_burn"
+    },
+    {
+      "lead_id": "RADAR-TRIG-002",
+      "pool_origin": "Discord & Slack Dev Hubs",
+      "entity_name": "Cursor Community Discord (#composer)",
+      "domain": "discord",
+      "channel_or_platform": "Discord (#composer)",
+      "tier": "DEVELOPER_COMMUNITY",
+      "engineering_headcount": 1,
+      "primary_angle": "Theme 1: Fast Request Token Burn & Overages",
+      "urgency_score": 87,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.4,
+        "weighted_deal_value": 11
+      },
+      "status": "DISPATCHED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=cursor_usage_bill"
+    },
+    {
+      "lead_id": "RADAR-TRIG-003",
+      "pool_origin": "Discord & Slack Dev Hubs",
+      "entity_name": "AI Engineers Foundation Slack (#ai-coding-tools)",
+      "domain": "slack",
+      "channel_or_platform": "Slack (#ai-coding-tools)",
+      "tier": "DEVELOPER_COMMUNITY",
+      "engineering_headcount": 1,
+      "primary_angle": "Theme 1: Fast Request Token Burn & Overages",
+      "urgency_score": 87,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.4,
+        "weighted_deal_value": 11
+      },
+      "status": "DISPATCHED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=slack_ai_finops"
+    },
+    {
+      "lead_id": "RADAR-TRIG-004",
+      "pool_origin": "Discord & Slack Dev Hubs",
+      "entity_name": "Windsurf / Codeium Discord (#troubleshooting)",
+      "domain": "discord",
+      "channel_or_platform": "Discord (#troubleshooting)",
+      "tier": "DEVELOPER_COMMUNITY",
+      "engineering_headcount": 1,
+      "primary_angle": "Theme 1: Fast Request Token Burn & Overages",
+      "urgency_score": 87,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.4,
+        "weighted_deal_value": 11
+      },
+      "status": "DISPATCHED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=windsurf_cascade_tokens"
+    },
+    {
+      "lead_id": "RADAR-TRIG-009",
+      "pool_origin": "Discord & Slack Dev Hubs",
+      "entity_name": "Cursor Community Discord (#general)",
+      "domain": "discord",
+      "channel_or_platform": "Discord (#general)",
+      "tier": "DEVELOPER_COMMUNITY",
+      "engineering_headcount": 1,
+      "primary_angle": "Theme 3: Accidental API Key Commits",
+      "urgency_score": 87,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.4,
+        "weighted_deal_value": 11
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=cursor_leaked_stripe_env"
+    },
+    {
+      "lead_id": "RADAR-TRIG-010",
+      "pool_origin": "Discord & Slack Dev Hubs",
+      "entity_name": "Continue.dev Discord (#help)",
+      "domain": "discord",
+      "channel_or_platform": "Discord (#help)",
+      "tier": "DEVELOPER_COMMUNITY",
+      "engineering_headcount": 1,
+      "primary_angle": "Theme 3: Accidental API Key Commits",
+      "urgency_score": 87,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.4,
+        "weighted_deal_value": 11
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=continue_precommit_secret"
+    },
+    {
+      "lead_id": "RADAR-TRIG-011",
+      "pool_origin": "Discord & Slack Dev Hubs",
+      "entity_name": "Ollama Discord (#tooling)",
+      "domain": "discord",
+      "channel_or_platform": "Discord (#tooling)",
+      "tier": "DEVELOPER_COMMUNITY",
+      "engineering_headcount": 1,
+      "primary_angle": "Theme 3: Accidental API Key Commits",
+      "urgency_score": 87,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.4,
+        "weighted_deal_value": 11
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=ollama_offline_secret_scan"
+    },
+    {
+      "lead_id": "RADAR-TRIG-012",
+      "pool_origin": "Discord & Slack Dev Hubs",
+      "entity_name": "Latent Space (Swyx) Discord (#dev-tools)",
+      "domain": "discord",
+      "channel_or_platform": "Discord (#dev-tools)",
+      "tier": "DEVELOPER_COMMUNITY",
+      "engineering_headcount": 1,
+      "primary_angle": "Theme 3: Accidental API Key Commits",
+      "urgency_score": 87,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.4,
+        "weighted_deal_value": 11
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=latent_space_entropy_hook"
+    },
+    {
+      "lead_id": "RADAR-GH-TH-001",
+      "pool_origin": "GitHub Technical Discussions",
+      "entity_name": "anthropics/claude-code (@monorepo-architect)",
+      "domain": "github.com",
+      "channel_or_platform": "GitHub Discussion / Issue (anthropics/claude-code)",
+      "tier": "DEVELOPER_COMMUNITY",
+      "engineering_headcount": 1,
+      "primary_angle": "Category A: Token Exhaustion & Context Window Rot",
+      "urgency_score": 85,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.35,
+        "weighted_deal_value": 10
+      },
+      "status": "DISPATCHED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=github_dispatcher&utm_medium=issue_reply&utm_campaign=anthropics_claude_code"
+    },
+    {
+      "lead_id": "RADAR-GH-TH-002",
+      "pool_origin": "GitHub Technical Discussions",
+      "entity_name": "continuedev/continue (@dev-productivity-lead)",
+      "domain": "github.com",
+      "channel_or_platform": "GitHub Discussion / Issue (continuedev/continue)",
+      "tier": "DEVELOPER_COMMUNITY",
+      "engineering_headcount": 1,
+      "primary_angle": "Category A: Token Exhaustion & Context Window Rot",
+      "urgency_score": 85,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.35,
+        "weighted_deal_value": 10
+      },
+      "status": "DISPATCHED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=github_dispatcher&utm_medium=issue_reply&utm_campaign=continuedev_continue"
+    },
+    {
+      "lead_id": "RADAR-GH-TH-003",
+      "pool_origin": "GitHub Technical Discussions",
+      "entity_name": "aider-ai/aider (@local-ai-builder)",
+      "domain": "github.com",
+      "channel_or_platform": "GitHub Discussion / Issue (aider-ai/aider)",
+      "tier": "DEVELOPER_COMMUNITY",
+      "engineering_headcount": 1,
+      "primary_angle": "Category A: Token Exhaustion & Context Window Rot",
+      "urgency_score": 85,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.35,
+        "weighted_deal_value": 10
+      },
+      "status": "DISPATCHED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=github_dispatcher&utm_medium=issue_reply&utm_campaign=aider_ai_aider"
+    },
+    {
+      "lead_id": "RADAR-GH-TH-004",
+      "pool_origin": "GitHub Technical Discussions",
+      "entity_name": "langchain-ai/langchain (@finops-engineer)",
+      "domain": "github.com",
+      "channel_or_platform": "GitHub Discussion / Issue (langchain-ai/langchain)",
+      "tier": "DEVELOPER_COMMUNITY",
+      "engineering_headcount": 1,
+      "primary_angle": "Category A: Token Exhaustion & Context Window Rot",
+      "urgency_score": 85,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.35,
+        "weighted_deal_value": 10
+      },
+      "status": "DISPATCHED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=github_dispatcher&utm_medium=issue_reply&utm_campaign=langchain_ai_langchain"
+    },
+    {
+      "lead_id": "RADAR-GH-TH-005",
+      "pool_origin": "GitHub Technical Discussions",
+      "entity_name": "BerriAI/litellm (@security-analyst)",
+      "domain": "github.com",
+      "channel_or_platform": "GitHub Discussion / Issue (BerriAI/litellm)",
+      "tier": "DEVELOPER_COMMUNITY",
+      "engineering_headcount": 1,
+      "primary_angle": "Category B: Accidental Secret Leaks in Git History",
+      "urgency_score": 85,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.35,
+        "weighted_deal_value": 10
+      },
+      "status": "DISPATCHED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=github_dispatcher&utm_medium=issue_reply&utm_campaign=BerriAI_litellm"
+    },
+    {
+      "lead_id": "RADAR-GH-TH-006",
+      "pool_origin": "GitHub Technical Discussions",
+      "entity_name": "pre-commit/pre-commit (@performance-freak)",
+      "domain": "github.com",
+      "channel_or_platform": "GitHub Discussion / Issue (pre-commit/pre-commit)",
+      "tier": "DEVELOPER_COMMUNITY",
+      "engineering_headcount": 1,
+      "primary_angle": "Category B: Accidental Secret Leaks in Git History",
+      "urgency_score": 85,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.35,
+        "weighted_deal_value": 10
+      },
+      "status": "DISPATCHED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=github_dispatcher&utm_medium=issue_reply&utm_campaign=pre_commit_pre_commit"
+    },
+    {
+      "lead_id": "RADAR-GH-TH-007",
+      "pool_origin": "GitHub Technical Discussions",
+      "entity_name": "GitGuardian/ggshield (@appsec-engineer)",
+      "domain": "github.com",
+      "channel_or_platform": "GitHub Discussion / Issue (GitGuardian/ggshield)",
+      "tier": "DEVELOPER_COMMUNITY",
+      "engineering_headcount": 1,
+      "primary_angle": "Category B: Accidental Secret Leaks in Git History",
+      "urgency_score": 85,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.35,
+        "weighted_deal_value": 10
+      },
+      "status": "DISPATCHED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=github_dispatcher&utm_medium=issue_reply&utm_campaign=GitGuardian_ggshield"
+    },
+    {
+      "lead_id": "RADAR-GH-TH-008",
+      "pool_origin": "GitHub Technical Discussions",
+      "entity_name": "continuedev/continue (@devops-lead)",
+      "domain": "github.com",
+      "channel_or_platform": "GitHub Discussion / Issue (continuedev/continue)",
+      "tier": "DEVELOPER_COMMUNITY",
+      "engineering_headcount": 1,
+      "primary_angle": "Category B: Accidental Secret Leaks in Git History",
+      "urgency_score": 85,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.35,
+        "weighted_deal_value": 10
+      },
+      "status": "DISPATCHED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=github_dispatcher&utm_medium=issue_reply&utm_campaign=continuedev_continue"
+    },
+    {
+      "lead_id": "RADAR-SIG-TW-004",
+      "pool_origin": "Multi-Platform Social Surveillance",
+      "entity_name": "@devops_marcus (Twitter / X)",
+      "domain": "twitter",
+      "channel_or_platform": "Twitter / X",
+      "tier": "DEVELOPER_SURVEILLANCE",
+      "engineering_headcount": 1,
+      "primary_angle": "Deterministic Pre-Execution Invariant Gate for Agent Diffs",
+      "urgency_score": 84,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.42,
+        "weighted_deal_value": 12
+      },
+      "status": "QUEUED_FOR_ENGAGEMENT",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=social_daemon&utm_medium=surveillance_reply&utm_campaign=surveillance_sig_tw_004"
+    },
+    {
+      "lead_id": "RADAR-ABM-002",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Replit",
+      "domain": "replit.com",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 110,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 55042,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 54000,
+        "deal_probability": 0.4,
+        "weighted_deal_value": 21600
+      },
+      "status": "ENGAGED",
+      "attribution_url": "https://devsupersuite.web.app?company=replit_com&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-008",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Supabase",
+      "domain": "supabase.com",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 120,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 60046,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 54000,
+        "deal_probability": 0.4,
+        "weighted_deal_value": 21600
+      },
+      "status": "ENGAGED",
+      "attribution_url": "https://devsupersuite.web.app?company=supabase_com&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-017",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Synthesia",
+      "domain": "synthesia.io",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 160,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 80061,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 54000,
+        "deal_probability": 0.4,
+        "weighted_deal_value": 21600
+      },
+      "status": "TARGETED",
+      "attribution_url": "https://devsupersuite.web.app?company=synthesia_io&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-021",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Writer",
+      "domain": "writer.com",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 115,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 57544,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 54000,
+        "deal_probability": 0.4,
+        "weighted_deal_value": 21600
+      },
+      "status": "TARGETED",
+      "attribution_url": "https://devsupersuite.web.app?company=writer_com&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-030",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Pinecone",
+      "domain": "pinecone.io",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 140,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 70053,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 54000,
+        "deal_probability": 0.4,
+        "weighted_deal_value": 21600
+      },
+      "status": "TARGETED",
+      "attribution_url": "https://devsupersuite.web.app?company=pinecone_io&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-037",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "ElevenLabs",
+      "domain": "elevenlabs.io",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 105,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 52540,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 54000,
+        "deal_probability": 0.4,
+        "weighted_deal_value": 21600
+      },
+      "status": "TARGETED",
+      "attribution_url": "https://devsupersuite.web.app?company=elevenlabs_io&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-001",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Modal Labs",
+      "domain": "modal.com",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 45,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 22517,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 28000,
+        "deal_probability": 0.3,
+        "weighted_deal_value": 8400
+      },
+      "status": "ENGAGED",
+      "attribution_url": "https://devsupersuite.web.app?company=modal_com&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-003",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Cursor / Anysphere",
+      "domain": "cursor.com",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 38,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 19014,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 28000,
+        "deal_probability": 0.3,
+        "weighted_deal_value": 8400
+      },
+      "status": "ENGAGED",
+      "attribution_url": "https://devsupersuite.web.app?company=cursor_com&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-004",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Together AI",
+      "domain": "together.ai",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 65,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 32525,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 28000,
+        "deal_probability": 0.3,
+        "weighted_deal_value": 8400
+      },
+      "status": "ENGAGED",
+      "attribution_url": "https://devsupersuite.web.app?company=together_ai&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-005",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Perplexity AI",
+      "domain": "perplexity.ai",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 85,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 42532,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 28000,
+        "deal_probability": 0.3,
+        "weighted_deal_value": 8400
+      },
+      "status": "ENGAGED",
+      "attribution_url": "https://devsupersuite.web.app?company=perplexity_ai&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-007",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Resend",
+      "domain": "resend.com",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 35,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 17513,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 28000,
+        "deal_probability": 0.3,
+        "weighted_deal_value": 8400
+      },
+      "status": "ENGAGED",
+      "attribution_url": "https://devsupersuite.web.app?company=resend_com&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-009",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "PostHog",
+      "domain": "posthog.com",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 65,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 32525,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 28000,
+        "deal_probability": 0.3,
+        "weighted_deal_value": 8400
+      },
+      "status": "ENGAGED",
+      "attribution_url": "https://devsupersuite.web.app?company=posthog_com&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-010",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Linear",
+      "domain": "linear.app",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 55,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 27521,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 28000,
+        "deal_probability": 0.3,
+        "weighted_deal_value": 8400
+      },
+      "status": "ENGAGED",
+      "attribution_url": "https://devsupersuite.web.app?company=linear_app&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-011",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Railway",
+      "domain": "railway.com",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 32,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 16012,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 28000,
+        "deal_probability": 0.3,
+        "weighted_deal_value": 8400
+      },
+      "status": "ENGAGED",
+      "attribution_url": "https://devsupersuite.web.app?company=railway_com&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-020",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Jasper",
+      "domain": "jasper.ai",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 95,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 47536,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 28000,
+        "deal_probability": 0.3,
+        "weighted_deal_value": 8400
+      },
+      "status": "TARGETED",
+      "attribution_url": "https://devsupersuite.web.app?company=jasper_ai&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-022",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Baseten",
+      "domain": "baseten.co",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 48,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 24018,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 28000,
+        "deal_probability": 0.3,
+        "weighted_deal_value": 8400
+      },
+      "status": "TARGETED",
+      "attribution_url": "https://devsupersuite.web.app?company=baseten_co&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-023",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "RunPod",
+      "domain": "runpod.io",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 40,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 20015,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 28000,
+        "deal_probability": 0.3,
+        "weighted_deal_value": 8400
+      },
+      "status": "TARGETED",
+      "attribution_url": "https://devsupersuite.web.app?company=runpod_io&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-024",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "OctoAI",
+      "domain": "octoai.cloud",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 75,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 37528,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 28000,
+        "deal_probability": 0.3,
+        "weighted_deal_value": 8400
+      },
+      "status": "TARGETED",
+      "attribution_url": "https://devsupersuite.web.app?company=octoai_cloud&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-026",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Augment Code",
+      "domain": "augmentcode.com",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 52,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 26020,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 28000,
+        "deal_probability": 0.3,
+        "weighted_deal_value": 8400
+      },
+      "status": "TARGETED",
+      "attribution_url": "https://devsupersuite.web.app?company=augmentcode_com&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-027",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Windsurf / Codeium",
+      "domain": "codeium.com",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 90,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 45034,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 28000,
+        "deal_probability": 0.3,
+        "weighted_deal_value": 8400
+      },
+      "status": "TARGETED",
+      "attribution_url": "https://devsupersuite.web.app?company=codeium_com&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-028",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "LangChain",
+      "domain": "langchain.com",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 50,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 25019,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 28000,
+        "deal_probability": 0.3,
+        "weighted_deal_value": 8400
+      },
+      "status": "TARGETED",
+      "attribution_url": "https://devsupersuite.web.app?company=langchain_com&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-029",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Weaviate",
+      "domain": "weaviate.io",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 70,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 35026,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 28000,
+        "deal_probability": 0.3,
+        "weighted_deal_value": 8400
+      },
+      "status": "TARGETED",
+      "attribution_url": "https://devsupersuite.web.app?company=weaviate_io&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-031",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "E2B",
+      "domain": "e2b.dev",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 30,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 15011,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 28000,
+        "deal_probability": 0.3,
+        "weighted_deal_value": 8400
+      },
+      "status": "TARGETED",
+      "attribution_url": "https://devsupersuite.web.app?company=e2b_dev&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-032",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Continue.dev",
+      "domain": "continue.dev",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 32,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 16012,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 28000,
+        "deal_probability": 0.3,
+        "weighted_deal_value": 8400
+      },
+      "status": "TARGETED",
+      "attribution_url": "https://devsupersuite.web.app?company=continue_dev&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-033",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "LiteLLM",
+      "domain": "litellm.ai",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 30,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 15011,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 28000,
+        "deal_probability": 0.3,
+        "weighted_deal_value": 8400
+      },
+      "status": "TARGETED",
+      "attribution_url": "https://devsupersuite.web.app?company=litellm_ai&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-034",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Fireworks AI",
+      "domain": "fireworks.ai",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 58,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 29022,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 28000,
+        "deal_probability": 0.3,
+        "weighted_deal_value": 8400
+      },
+      "status": "TARGETED",
+      "attribution_url": "https://devsupersuite.web.app?company=fireworks_ai&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-035",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Mistral AI",
+      "domain": "mistral.ai",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 80,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 40030,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 28000,
+        "deal_probability": 0.3,
+        "weighted_deal_value": 8400
+      },
+      "status": "TARGETED",
+      "attribution_url": "https://devsupersuite.web.app?company=mistral_ai&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-036",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Deepgram",
+      "domain": "deepgram.com",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 95,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 47536,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 28000,
+        "deal_probability": 0.3,
+        "weighted_deal_value": 8400
+      },
+      "status": "TARGETED",
+      "attribution_url": "https://devsupersuite.web.app?company=deepgram_com&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-039",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Neon",
+      "domain": "neon.tech",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 85,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 42532,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 28000,
+        "deal_probability": 0.3,
+        "weighted_deal_value": 8400
+      },
+      "status": "TARGETED",
+      "attribution_url": "https://devsupersuite.web.app?company=neon_tech&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-040",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Fly.io",
+      "domain": "fly.io",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 72,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 36027,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 28000,
+        "deal_probability": 0.3,
+        "weighted_deal_value": 8400
+      },
+      "status": "TARGETED",
+      "attribution_url": "https://devsupersuite.web.app?company=fly_io&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-041",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Render",
+      "domain": "render.com",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 68,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 34026,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 28000,
+        "deal_probability": 0.3,
+        "weighted_deal_value": 8400
+      },
+      "status": "TARGETED",
+      "attribution_url": "https://devsupersuite.web.app?company=render_com&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-043",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Warp",
+      "domain": "warp.dev",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 54,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 27020,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 28000,
+        "deal_probability": 0.3,
+        "weighted_deal_value": 8400
+      },
+      "status": "TARGETED",
+      "attribution_url": "https://devsupersuite.web.app?company=warp_dev&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-044",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Zed",
+      "domain": "zed.dev",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 35,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 17513,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 28000,
+        "deal_probability": 0.3,
+        "weighted_deal_value": 8400
+      },
+      "status": "TARGETED",
+      "attribution_url": "https://devsupersuite.web.app?company=zed_dev&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-045",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Gitpod",
+      "domain": "gitpod.io",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 60,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 30023,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 28000,
+        "deal_probability": 0.3,
+        "weighted_deal_value": 8400
+      },
+      "status": "TARGETED",
+      "attribution_url": "https://devsupersuite.web.app?company=gitpod_io&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-046",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Dagger",
+      "domain": "dagger.io",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 42,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 21016,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 28000,
+        "deal_probability": 0.3,
+        "weighted_deal_value": 8400
+      },
+      "status": "TARGETED",
+      "attribution_url": "https://devsupersuite.web.app?company=dagger_io&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-047",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Astral / Ruff",
+      "domain": "astral.sh",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 32,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 16012,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 28000,
+        "deal_probability": 0.3,
+        "weighted_deal_value": 8400
+      },
+      "status": "TARGETED",
+      "attribution_url": "https://devsupersuite.web.app?company=astral_sh&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-048",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Roo-Code",
+      "domain": "roocode.com",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 34,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 17013,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 28000,
+        "deal_probability": 0.3,
+        "weighted_deal_value": 8400
+      },
+      "status": "TARGETED",
+      "attribution_url": "https://devsupersuite.web.app?company=roocode_com&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-049",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "OpenHands",
+      "domain": "all-hands.dev",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 36,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 18013,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 28000,
+        "deal_probability": 0.3,
+        "weighted_deal_value": 8400
+      },
+      "status": "TARGETED",
+      "attribution_url": "https://devsupersuite.web.app?company=all-hands_dev&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-ABM-050",
+      "pool_origin": "Top 50 YC & AI Scale-Ups ABM",
+      "entity_name": "Aider AI",
+      "domain": "aider.chat",
+      "channel_or_platform": "Multi-Stakeholder ABM (CTO, CISO, DevEx)",
+      "tier": "SCALE_UP_ABM",
+      "engineering_headcount": 30,
+      "primary_angle": "Multi-Stakeholder Infiltration (Token Tax, Shannon Entropy, Voice Coding)",
+      "urgency_score": 82,
+      "financial_metrics": {
+        "annual_token_savings": 15011,
+        "commercial_deal_type": "Enterprise POC + Support ($54k / $28k)",
+        "contract_gross_value": 28000,
+        "deal_probability": 0.3,
+        "weighted_deal_value": 8400
+      },
+      "status": "TARGETED",
+      "attribution_url": "https://devsupersuite.web.app?company=aider_chat&utm_source=lead_radar&utm_campaign=abm"
+    },
+    {
+      "lead_id": "RADAR-OSS-003",
+      "pool_origin": "Open-Source Flagship Repos",
+      "entity_name": "aider-ai/aider (28,600 stars)",
+      "domain": "github.com",
+      "channel_or_platform": "GitHub Maintainer Sponsorship / PR",
+      "tier": "OSS_ECOSYSTEM",
+      "engineering_headcount": 15,
+      "primary_angle": "MCP Integration (Terminal AI Pair Programmer)",
+      "urgency_score": 80,
+      "financial_metrics": {
+        "annual_token_savings": 7500,
+        "commercial_deal_type": "VIP Free Core Sponsorship + DevSuperSuite Studio ($99)",
+        "contract_gross_value": 99,
+        "deal_probability": 0.45,
+        "weighted_deal_value": 44
+      },
+      "status": "QUEUED_FOR_OUTREACH",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=aider_ai_aider"
+    },
+    {
+      "lead_id": "RADAR-OSS-004",
+      "pool_origin": "Open-Source Flagship Repos",
+      "entity_name": "All-Hands-AI/OpenHands (42,500 stars)",
+      "domain": "github.com",
+      "channel_or_platform": "GitHub Maintainer Sponsorship / PR",
+      "tier": "OSS_ECOSYSTEM",
+      "engineering_headcount": 15,
+      "primary_angle": "MCP Integration (Autonomous Software Engineer)",
+      "urgency_score": 80,
+      "financial_metrics": {
+        "annual_token_savings": 7500,
+        "commercial_deal_type": "VIP Free Core Sponsorship + DevSuperSuite Studio ($99)",
+        "contract_gross_value": 99,
+        "deal_probability": 0.45,
+        "weighted_deal_value": 44
+      },
+      "status": "QUEUED_FOR_OUTREACH",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=All_Hands_AI_OpenHands"
+    },
+    {
+      "lead_id": "RADAR-OSS-014",
+      "pool_origin": "Open-Source Flagship Repos",
+      "entity_name": "AntonOsika/gpt-engineer (53,200 stars)",
+      "domain": "github.com",
+      "channel_or_platform": "GitHub Maintainer Sponsorship / PR",
+      "tier": "OSS_ECOSYSTEM",
+      "engineering_headcount": 15,
+      "primary_angle": "MCP Integration (Automated Software Generator)",
+      "urgency_score": 80,
+      "financial_metrics": {
+        "annual_token_savings": 7500,
+        "commercial_deal_type": "VIP Free Core Sponsorship + DevSuperSuite Studio ($99)",
+        "contract_gross_value": 99,
+        "deal_probability": 0.45,
+        "weighted_deal_value": 44
+      },
+      "status": "QUEUED_FOR_OUTREACH",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=AntonOsika_gpt_engineer"
+    },
+    {
+      "lead_id": "RADAR-OSS-015",
+      "pool_origin": "Open-Source Flagship Repos",
+      "entity_name": "Significant-Gravitas/AutoGPT (171,000 stars)",
+      "domain": "github.com",
+      "channel_or_platform": "GitHub Maintainer Sponsorship / PR",
+      "tier": "OSS_ECOSYSTEM",
+      "engineering_headcount": 15,
+      "primary_angle": "MCP Integration (Autonomous Agent Platform)",
+      "urgency_score": 80,
+      "financial_metrics": {
+        "annual_token_savings": 7500,
+        "commercial_deal_type": "VIP Free Core Sponsorship + DevSuperSuite Studio ($99)",
+        "contract_gross_value": 99,
+        "deal_probability": 0.45,
+        "weighted_deal_value": 44
+      },
+      "status": "QUEUED_FOR_OUTREACH",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=Significant_Gravitas_AutoGPT"
+    },
+    {
+      "lead_id": "RADAR-OSS-018",
+      "pool_origin": "Open-Source Flagship Repos",
+      "entity_name": "langchain-ai/langchain (98,500 stars)",
+      "domain": "github.com",
+      "channel_or_platform": "GitHub Maintainer Sponsorship / PR",
+      "tier": "OSS_ECOSYSTEM",
+      "engineering_headcount": 15,
+      "primary_angle": "MCP Integration (LLM Orchestration Framework)",
+      "urgency_score": 80,
+      "financial_metrics": {
+        "annual_token_savings": 7500,
+        "commercial_deal_type": "VIP Free Core Sponsorship + DevSuperSuite Studio ($99)",
+        "contract_gross_value": 99,
+        "deal_probability": 0.45,
+        "weighted_deal_value": 44
+      },
+      "status": "QUEUED_FOR_OUTREACH",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=langchain_ai_langchain"
+    },
+    {
+      "lead_id": "RADAR-OSS-019",
+      "pool_origin": "Open-Source Flagship Repos",
+      "entity_name": "run-llama/llama_index (38,900 stars)",
+      "domain": "github.com",
+      "channel_or_platform": "GitHub Maintainer Sponsorship / PR",
+      "tier": "OSS_ECOSYSTEM",
+      "engineering_headcount": 15,
+      "primary_angle": "MCP Integration (Data Framework for LLMs)",
+      "urgency_score": 80,
+      "financial_metrics": {
+        "annual_token_savings": 7500,
+        "commercial_deal_type": "VIP Free Core Sponsorship + DevSuperSuite Studio ($99)",
+        "contract_gross_value": 99,
+        "deal_probability": 0.45,
+        "weighted_deal_value": 44
+      },
+      "status": "QUEUED_FOR_OUTREACH",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=run_llama_llama_index"
+    },
+    {
+      "lead_id": "RADAR-OSS-020",
+      "pool_origin": "Open-Source Flagship Repos",
+      "entity_name": "microsoft/autogen (37,600 stars)",
+      "domain": "github.com",
+      "channel_or_platform": "GitHub Maintainer Sponsorship / PR",
+      "tier": "OSS_ECOSYSTEM",
+      "engineering_headcount": 15,
+      "primary_angle": "MCP Integration (Multi-Agent Conversation Framework)",
+      "urgency_score": 80,
+      "financial_metrics": {
+        "annual_token_savings": 7500,
+        "commercial_deal_type": "VIP Free Core Sponsorship + DevSuperSuite Studio ($99)",
+        "contract_gross_value": 99,
+        "deal_probability": 0.45,
+        "weighted_deal_value": 44
+      },
+      "status": "QUEUED_FOR_OUTREACH",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=microsoft_autogen"
+    },
+    {
+      "lead_id": "RADAR-ENT-006",
+      "pool_origin": "Enterprise Procurement Fleet",
+      "entity_name": "Supabase",
+      "domain": "supabase.com",
+      "channel_or_platform": "LinkedIn InMail / Executive Email",
+      "tier": "ENTERPRISE",
+      "engineering_headcount": 120,
+      "primary_angle": "Unallocated Token Tax (-83% AST reduction) & Pre-Commit Invariants",
+      "urgency_score": 76,
+      "financial_metrics": {
+        "annual_token_savings": 60046,
+        "commercial_deal_type": "Enterprise Pilot + Retainer ($54k / $8,500/mo)",
+        "contract_gross_value": 156000,
+        "deal_probability": 0.35,
+        "weighted_deal_value": 54600
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=lead_radar&utm_medium=enterprise&utm_campaign=supabase_com"
+    },
+    {
+      "lead_id": "RADAR-ENT-009",
+      "pool_origin": "Enterprise Procurement Fleet",
+      "entity_name": "Pinecone",
+      "domain": "pinecone.io",
+      "channel_or_platform": "LinkedIn InMail / Executive Email",
+      "tier": "ENTERPRISE",
+      "engineering_headcount": 140,
+      "primary_angle": "Unallocated Token Tax (-83% AST reduction) & Pre-Commit Invariants",
+      "urgency_score": 76,
+      "financial_metrics": {
+        "annual_token_savings": 70053,
+        "commercial_deal_type": "Enterprise Pilot + Retainer ($54k / $8,500/mo)",
+        "contract_gross_value": 156000,
+        "deal_probability": 0.35,
+        "weighted_deal_value": 54600
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=lead_radar&utm_medium=enterprise&utm_campaign=pinecone_io"
+    },
+    {
+      "lead_id": "RADAR-ENT-011",
+      "pool_origin": "Enterprise Procurement Fleet",
+      "entity_name": "Replit",
+      "domain": "replit.com",
+      "channel_or_platform": "LinkedIn InMail / Executive Email",
+      "tier": "ENTERPRISE",
+      "engineering_headcount": 110,
+      "primary_angle": "Unallocated Token Tax (-83% AST reduction) & Pre-Commit Invariants",
+      "urgency_score": 76,
+      "financial_metrics": {
+        "annual_token_savings": 55042,
+        "commercial_deal_type": "Enterprise Pilot + Retainer ($54k / $8,500/mo)",
+        "contract_gross_value": 156000,
+        "deal_probability": 0.35,
+        "weighted_deal_value": 54600
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=lead_radar&utm_medium=enterprise&utm_campaign=replit_com"
+    },
+    {
+      "lead_id": "RADAR-ENT-022",
+      "pool_origin": "Enterprise Procurement Fleet",
+      "entity_name": "Writer",
+      "domain": "writer.com",
+      "channel_or_platform": "LinkedIn InMail / Executive Email",
+      "tier": "ENTERPRISE",
+      "engineering_headcount": 115,
+      "primary_angle": "Unallocated Token Tax (-83% AST reduction) & Pre-Commit Invariants",
+      "urgency_score": 76,
+      "financial_metrics": {
+        "annual_token_savings": 57544,
+        "commercial_deal_type": "Enterprise Pilot + Retainer ($54k / $8,500/mo)",
+        "contract_gross_value": 156000,
+        "deal_probability": 0.35,
+        "weighted_deal_value": 54600
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=lead_radar&utm_medium=enterprise&utm_campaign=writer_com"
+    },
+    {
+      "lead_id": "RADAR-ENT-002",
+      "pool_origin": "Enterprise Procurement Fleet",
+      "entity_name": "PostHog",
+      "domain": "posthog.com",
+      "channel_or_platform": "LinkedIn InMail / Executive Email",
+      "tier": "ENTERPRISE",
+      "engineering_headcount": 65,
+      "primary_angle": "Unallocated Token Tax (-83% AST reduction) & Pre-Commit Invariants",
+      "urgency_score": 76,
+      "financial_metrics": {
+        "annual_token_savings": 32525,
+        "commercial_deal_type": "Enterprise Pilot + Retainer ($54k / $8,500/mo)",
+        "contract_gross_value": 130000,
+        "deal_probability": 0.25,
+        "weighted_deal_value": 32500
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=lead_radar&utm_medium=enterprise&utm_campaign=posthog_com"
+    },
+    {
+      "lead_id": "RADAR-ENT-003",
+      "pool_origin": "Enterprise Procurement Fleet",
+      "entity_name": "Modal Labs",
+      "domain": "modal.com",
+      "channel_or_platform": "LinkedIn InMail / Executive Email",
+      "tier": "ENTERPRISE",
+      "engineering_headcount": 45,
+      "primary_angle": "Unallocated Token Tax (-83% AST reduction) & Pre-Commit Invariants",
+      "urgency_score": 76,
+      "financial_metrics": {
+        "annual_token_savings": 22517,
+        "commercial_deal_type": "Enterprise Pilot + Retainer ($54k / $8,500/mo)",
+        "contract_gross_value": 130000,
+        "deal_probability": 0.25,
+        "weighted_deal_value": 32500
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=lead_radar&utm_medium=enterprise&utm_campaign=modal_com"
+    },
+    {
+      "lead_id": "RADAR-ENT-004",
+      "pool_origin": "Enterprise Procurement Fleet",
+      "entity_name": "Linear",
+      "domain": "linear.app",
+      "channel_or_platform": "LinkedIn InMail / Executive Email",
+      "tier": "ENTERPRISE",
+      "engineering_headcount": 55,
+      "primary_angle": "Unallocated Token Tax (-83% AST reduction) & Pre-Commit Invariants",
+      "urgency_score": 76,
+      "financial_metrics": {
+        "annual_token_savings": 27521,
+        "commercial_deal_type": "Enterprise Pilot + Retainer ($54k / $8,500/mo)",
+        "contract_gross_value": 130000,
+        "deal_probability": 0.25,
+        "weighted_deal_value": 32500
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=lead_radar&utm_medium=enterprise&utm_campaign=linear_app"
+    },
+    {
+      "lead_id": "RADAR-ENT-005",
+      "pool_origin": "Enterprise Procurement Fleet",
+      "entity_name": "Resend",
+      "domain": "resend.com",
+      "channel_or_platform": "LinkedIn InMail / Executive Email",
+      "tier": "ENTERPRISE",
+      "engineering_headcount": 35,
+      "primary_angle": "Unallocated Token Tax (-83% AST reduction) & Pre-Commit Invariants",
+      "urgency_score": 76,
+      "financial_metrics": {
+        "annual_token_savings": 17513,
+        "commercial_deal_type": "Enterprise Pilot + Retainer ($54k / $8,500/mo)",
+        "contract_gross_value": 130000,
+        "deal_probability": 0.25,
+        "weighted_deal_value": 32500
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=lead_radar&utm_medium=enterprise&utm_campaign=resend_com"
+    },
+    {
+      "lead_id": "RADAR-ENT-007",
+      "pool_origin": "Enterprise Procurement Fleet",
+      "entity_name": "LangChain",
+      "domain": "langchain.com",
+      "channel_or_platform": "LinkedIn InMail / Executive Email",
+      "tier": "ENTERPRISE",
+      "engineering_headcount": 50,
+      "primary_angle": "Unallocated Token Tax (-83% AST reduction) & Pre-Commit Invariants",
+      "urgency_score": 76,
+      "financial_metrics": {
+        "annual_token_savings": 25019,
+        "commercial_deal_type": "Enterprise Pilot + Retainer ($54k / $8,500/mo)",
+        "contract_gross_value": 130000,
+        "deal_probability": 0.25,
+        "weighted_deal_value": 32500
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=lead_radar&utm_medium=enterprise&utm_campaign=langchain_com"
+    },
+    {
+      "lead_id": "RADAR-ENT-008",
+      "pool_origin": "Enterprise Procurement Fleet",
+      "entity_name": "Weaviate",
+      "domain": "weaviate.io",
+      "channel_or_platform": "LinkedIn InMail / Executive Email",
+      "tier": "ENTERPRISE",
+      "engineering_headcount": 70,
+      "primary_angle": "Unallocated Token Tax (-83% AST reduction) & Pre-Commit Invariants",
+      "urgency_score": 76,
+      "financial_metrics": {
+        "annual_token_savings": 35026,
+        "commercial_deal_type": "Enterprise Pilot + Retainer ($54k / $8,500/mo)",
+        "contract_gross_value": 130000,
+        "deal_probability": 0.25,
+        "weighted_deal_value": 32500
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=lead_radar&utm_medium=enterprise&utm_campaign=weaviate_io"
+    },
+    {
+      "lead_id": "RADAR-ENT-012",
+      "pool_origin": "Enterprise Procurement Fleet",
+      "entity_name": "Railway",
+      "domain": "railway.com",
+      "channel_or_platform": "LinkedIn InMail / Executive Email",
+      "tier": "ENTERPRISE",
+      "engineering_headcount": 32,
+      "primary_angle": "Unallocated Token Tax (-83% AST reduction) & Pre-Commit Invariants",
+      "urgency_score": 76,
+      "financial_metrics": {
+        "annual_token_savings": 16012,
+        "commercial_deal_type": "Enterprise Pilot + Retainer ($54k / $8,500/mo)",
+        "contract_gross_value": 130000,
+        "deal_probability": 0.25,
+        "weighted_deal_value": 32500
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=lead_radar&utm_medium=enterprise&utm_campaign=railway_com"
+    },
+    {
+      "lead_id": "RADAR-ENT-018",
+      "pool_origin": "Enterprise Procurement Fleet",
+      "entity_name": "Perplexity AI",
+      "domain": "perplexity.ai",
+      "channel_or_platform": "LinkedIn InMail / Executive Email",
+      "tier": "ENTERPRISE",
+      "engineering_headcount": 85,
+      "primary_angle": "Unallocated Token Tax (-83% AST reduction) & Pre-Commit Invariants",
+      "urgency_score": 76,
+      "financial_metrics": {
+        "annual_token_savings": 42532,
+        "commercial_deal_type": "Enterprise Pilot + Retainer ($54k / $8,500/mo)",
+        "contract_gross_value": 130000,
+        "deal_probability": 0.25,
+        "weighted_deal_value": 32500
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=lead_radar&utm_medium=enterprise&utm_campaign=perplexity_ai"
+    },
+    {
+      "lead_id": "RADAR-ENT-021",
+      "pool_origin": "Enterprise Procurement Fleet",
+      "entity_name": "Jasper",
+      "domain": "jasper.ai",
+      "channel_or_platform": "LinkedIn InMail / Executive Email",
+      "tier": "ENTERPRISE",
+      "engineering_headcount": 95,
+      "primary_angle": "Unallocated Token Tax (-83% AST reduction) & Pre-Commit Invariants",
+      "urgency_score": 76,
+      "financial_metrics": {
+        "annual_token_savings": 47536,
+        "commercial_deal_type": "Enterprise Pilot + Retainer ($54k / $8,500/mo)",
+        "contract_gross_value": 130000,
+        "deal_probability": 0.25,
+        "weighted_deal_value": 32500
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=lead_radar&utm_medium=enterprise&utm_campaign=jasper_ai"
+    },
+    {
+      "lead_id": "RADAR-ENT-023",
+      "pool_origin": "Enterprise Procurement Fleet",
+      "entity_name": "Baseten",
+      "domain": "baseten.co",
+      "channel_or_platform": "LinkedIn InMail / Executive Email",
+      "tier": "ENTERPRISE",
+      "engineering_headcount": 48,
+      "primary_angle": "Unallocated Token Tax (-83% AST reduction) & Pre-Commit Invariants",
+      "urgency_score": 76,
+      "financial_metrics": {
+        "annual_token_savings": 24018,
+        "commercial_deal_type": "Enterprise Pilot + Retainer ($54k / $8,500/mo)",
+        "contract_gross_value": 130000,
+        "deal_probability": 0.25,
+        "weighted_deal_value": 32500
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=lead_radar&utm_medium=enterprise&utm_campaign=baseten_co"
+    },
+    {
+      "lead_id": "RADAR-ENT-024",
+      "pool_origin": "Enterprise Procurement Fleet",
+      "entity_name": "RunPod",
+      "domain": "runpod.io",
+      "channel_or_platform": "LinkedIn InMail / Executive Email",
+      "tier": "ENTERPRISE",
+      "engineering_headcount": 40,
+      "primary_angle": "Unallocated Token Tax (-83% AST reduction) & Pre-Commit Invariants",
+      "urgency_score": 76,
+      "financial_metrics": {
+        "annual_token_savings": 20015,
+        "commercial_deal_type": "Enterprise Pilot + Retainer ($54k / $8,500/mo)",
+        "contract_gross_value": 130000,
+        "deal_probability": 0.25,
+        "weighted_deal_value": 32500
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=lead_radar&utm_medium=enterprise&utm_campaign=runpod_io"
+    },
+    {
+      "lead_id": "RADAR-ENT-025",
+      "pool_origin": "Enterprise Procurement Fleet",
+      "entity_name": "OctoAI",
+      "domain": "octoai.cloud",
+      "channel_or_platform": "LinkedIn InMail / Executive Email",
+      "tier": "ENTERPRISE",
+      "engineering_headcount": 75,
+      "primary_angle": "Unallocated Token Tax (-83% AST reduction) & Pre-Commit Invariants",
+      "urgency_score": 76,
+      "financial_metrics": {
+        "annual_token_savings": 37528,
+        "commercial_deal_type": "Enterprise Pilot + Retainer ($54k / $8,500/mo)",
+        "contract_gross_value": 130000,
+        "deal_probability": 0.25,
+        "weighted_deal_value": 32500
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=lead_radar&utm_medium=enterprise&utm_campaign=octoai_cloud"
+    },
+    {
+      "lead_id": "RADAR-ENT-026",
+      "pool_origin": "Enterprise Procurement Fleet",
+      "entity_name": "Together AI",
+      "domain": "together.ai",
+      "channel_or_platform": "LinkedIn InMail / Executive Email",
+      "tier": "ENTERPRISE",
+      "engineering_headcount": 65,
+      "primary_angle": "Unallocated Token Tax (-83% AST reduction) & Pre-Commit Invariants",
+      "urgency_score": 76,
+      "financial_metrics": {
+        "annual_token_savings": 32525,
+        "commercial_deal_type": "Enterprise Pilot + Retainer ($54k / $8,500/mo)",
+        "contract_gross_value": 130000,
+        "deal_probability": 0.25,
+        "weighted_deal_value": 32500
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=lead_radar&utm_medium=enterprise&utm_campaign=together_ai"
+    },
+    {
+      "lead_id": "RADAR-ENT-028",
+      "pool_origin": "Enterprise Procurement Fleet",
+      "entity_name": "Cursor / Anysphere",
+      "domain": "cursor.com",
+      "channel_or_platform": "LinkedIn InMail / Executive Email",
+      "tier": "ENTERPRISE",
+      "engineering_headcount": 38,
+      "primary_angle": "Unallocated Token Tax (-83% AST reduction) & Pre-Commit Invariants",
+      "urgency_score": 76,
+      "financial_metrics": {
+        "annual_token_savings": 19014,
+        "commercial_deal_type": "Enterprise Pilot + Retainer ($54k / $8,500/mo)",
+        "contract_gross_value": 130000,
+        "deal_probability": 0.25,
+        "weighted_deal_value": 32500
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=lead_radar&utm_medium=enterprise&utm_campaign=cursor_com"
+    },
+    {
+      "lead_id": "RADAR-ENT-029",
+      "pool_origin": "Enterprise Procurement Fleet",
+      "entity_name": "Windsurf / Codeium",
+      "domain": "codeium.com",
+      "channel_or_platform": "LinkedIn InMail / Executive Email",
+      "tier": "ENTERPRISE",
+      "engineering_headcount": 90,
+      "primary_angle": "Unallocated Token Tax (-83% AST reduction) & Pre-Commit Invariants",
+      "urgency_score": 76,
+      "financial_metrics": {
+        "annual_token_savings": 45034,
+        "commercial_deal_type": "Enterprise Pilot + Retainer ($54k / $8,500/mo)",
+        "contract_gross_value": 130000,
+        "deal_probability": 0.25,
+        "weighted_deal_value": 32500
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=lead_radar&utm_medium=enterprise&utm_campaign=codeium_com"
+    },
+    {
+      "lead_id": "RADAR-ENT-030",
+      "pool_origin": "Enterprise Procurement Fleet",
+      "entity_name": "Augment Code",
+      "domain": "augmentcode.com",
+      "channel_or_platform": "LinkedIn InMail / Executive Email",
+      "tier": "ENTERPRISE",
+      "engineering_headcount": 52,
+      "primary_angle": "Unallocated Token Tax (-83% AST reduction) & Pre-Commit Invariants",
+      "urgency_score": 76,
+      "financial_metrics": {
+        "annual_token_savings": 26020,
+        "commercial_deal_type": "Enterprise Pilot + Retainer ($54k / $8,500/mo)",
+        "contract_gross_value": 130000,
+        "deal_probability": 0.25,
+        "weighted_deal_value": 32500
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=lead_radar&utm_medium=enterprise&utm_campaign=augmentcode_com"
+    },
+    {
+      "lead_id": "RADAR-SIG-GH-001",
+      "pool_origin": "Multi-Platform Social Surveillance",
+      "entity_name": "@monorepo_lead (GitHub Discussions (anthropics/claude-code))",
+      "domain": "github",
+      "channel_or_platform": "GitHub Discussions (anthropics/claude-code)",
+      "tier": "DEVELOPER_SURVEILLANCE",
+      "engineering_headcount": 1,
+      "primary_angle": "Tree-Sitter AST Interface Slicing (-83.0% Context Token Reduction)",
+      "urgency_score": 75,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.38,
+        "weighted_deal_value": 10
+      },
+      "status": "QUEUED_FOR_ENGAGEMENT",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=social_daemon&utm_medium=surveillance_reply&utm_campaign=surveillance_sig_gh_001"
+    },
+    {
+      "lead_id": "RADAR-TRIG-005",
+      "pool_origin": "Discord & Slack Dev Hubs",
+      "entity_name": "Anthropic Claude Developers Discord (#claude-code)",
+      "domain": "discord",
+      "channel_or_platform": "Discord (#claude-code)",
+      "tier": "DEVELOPER_COMMUNITY",
+      "engineering_headcount": 1,
+      "primary_angle": "Theme 2: Context Rot & Instruction Drift",
+      "urgency_score": 74,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.4,
+        "weighted_deal_value": 11
+      },
+      "status": "DISPATCHED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=claude_code_context_rot"
+    },
+    {
+      "lead_id": "RADAR-TRIG-006",
+      "pool_origin": "Discord & Slack Dev Hubs",
+      "entity_name": "Anthropic Claude Developers Discord (#prompt-engineering)",
+      "domain": "discord",
+      "channel_or_platform": "Discord (#prompt-engineering)",
+      "tier": "DEVELOPER_COMMUNITY",
+      "engineering_headcount": 1,
+      "primary_angle": "Theme 2: Context Rot & Instruction Drift",
+      "urgency_score": 74,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.4,
+        "weighted_deal_value": 11
+      },
+      "status": "DISPATCHED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=claude_attention_decay"
+    },
+    {
+      "lead_id": "RADAR-TRIG-007",
+      "pool_origin": "Discord & Slack Dev Hubs",
+      "entity_name": "LocalLLaMA Discord (#tools)",
+      "domain": "discord",
+      "channel_or_platform": "Discord (#tools)",
+      "tier": "DEVELOPER_COMMUNITY",
+      "engineering_headcount": 1,
+      "primary_angle": "Theme 2: Context Rot & Instruction Drift",
+      "urgency_score": 74,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.4,
+        "weighted_deal_value": 11
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=localllama_ast_pruner"
+    },
+    {
+      "lead_id": "RADAR-TRIG-008",
+      "pool_origin": "Discord & Slack Dev Hubs",
+      "entity_name": "Reactiflux Discord (#typescript)",
+      "domain": "discord",
+      "channel_or_platform": "Discord (#typescript)",
+      "tier": "DEVELOPER_COMMUNITY",
+      "engineering_headcount": 1,
+      "primary_angle": "Theme 2: Context Rot & Instruction Drift",
+      "urgency_score": 74,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.4,
+        "weighted_deal_value": 11
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=reactiflux_tsx_ast"
+    },
+    {
+      "lead_id": "RADAR-TRIG-013",
+      "pool_origin": "Discord & Slack Dev Hubs",
+      "entity_name": "OpenHands (OpenDevin) Discord (#runtime-sandbox)",
+      "domain": "discord",
+      "channel_or_platform": "Discord (#runtime-sandbox)",
+      "tier": "DEVELOPER_COMMUNITY",
+      "engineering_headcount": 1,
+      "primary_angle": "Theme 4: Agent Deleting Test Cases",
+      "urgency_score": 74,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.4,
+        "weighted_deal_value": 11
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=openhands_test_deletion"
+    },
+    {
+      "lead_id": "RADAR-TRIG-014",
+      "pool_origin": "Discord & Slack Dev Hubs",
+      "entity_name": "Cursor Community Discord (#troubleshooting)",
+      "domain": "discord",
+      "channel_or_platform": "Discord (#troubleshooting)",
+      "tier": "DEVELOPER_COMMUNITY",
+      "engineering_headcount": 1,
+      "primary_angle": "Theme 4: Agent Deleting Test Cases",
+      "urgency_score": 74,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.4,
+        "weighted_deal_value": 11
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=cursor_security_bypass_diff"
+    },
+    {
+      "lead_id": "RADAR-TRIG-015",
+      "pool_origin": "Discord & Slack Dev Hubs",
+      "entity_name": "Latent Space (Swyx) Discord (#ai-engineers)",
+      "domain": "discord",
+      "channel_or_platform": "Discord (#ai-engineers)",
+      "tier": "DEVELOPER_COMMUNITY",
+      "engineering_headcount": 1,
+      "primary_angle": "Theme 4: Agent Deleting Test Cases",
+      "urgency_score": 74,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.4,
+        "weighted_deal_value": 11
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=latent_space_diff_invariants"
+    },
+    {
+      "lead_id": "RADAR-GH-TH-009",
+      "pool_origin": "GitHub Technical Discussions",
+      "entity_name": "All-Hands-AI/OpenHands (@qa-automation-lead)",
+      "domain": "github.com",
+      "channel_or_platform": "GitHub Discussion / Issue (All-Hands-AI/OpenHands)",
+      "tier": "DEVELOPER_COMMUNITY",
+      "engineering_headcount": 1,
+      "primary_angle": "Category C: Autonomous Agent Test Deletions",
+      "urgency_score": 72,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.35,
+        "weighted_deal_value": 10
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=github_dispatcher&utm_medium=issue_reply&utm_campaign=All_Hands_AI_OpenHands"
+    },
+    {
+      "lead_id": "RADAR-GH-TH-010",
+      "pool_origin": "GitHub Technical Discussions",
+      "entity_name": "Roo-Code/Roo-Code (@backend-sec-lead)",
+      "domain": "github.com",
+      "channel_or_platform": "GitHub Discussion / Issue (Roo-Code/Roo-Code)",
+      "tier": "DEVELOPER_COMMUNITY",
+      "engineering_headcount": 1,
+      "primary_angle": "Category C: Autonomous Agent Test Deletions",
+      "urgency_score": 72,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.35,
+        "weighted_deal_value": 10
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=github_dispatcher&utm_medium=issue_reply&utm_campaign=Roo_Code_Roo_Code"
+    },
+    {
+      "lead_id": "RADAR-GH-TH-011",
+      "pool_origin": "GitHub Technical Discussions",
+      "entity_name": "aider-ai/aider (@principal-swe)",
+      "domain": "github.com",
+      "channel_or_platform": "GitHub Discussion / Issue (aider-ai/aider)",
+      "tier": "DEVELOPER_COMMUNITY",
+      "engineering_headcount": 1,
+      "primary_angle": "Category C: Autonomous Agent Test Deletions",
+      "urgency_score": 72,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.35,
+        "weighted_deal_value": 10
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=github_dispatcher&utm_medium=issue_reply&utm_campaign=aider_ai_aider"
+    },
+    {
+      "lead_id": "RADAR-GH-TH-012",
+      "pool_origin": "GitHub Technical Discussions",
+      "entity_name": "Significant-Gravitas/AutoGPT (@fullstack-maintainer)",
+      "domain": "github.com",
+      "channel_or_platform": "GitHub Discussion / Issue (Significant-Gravitas/AutoGPT)",
+      "tier": "DEVELOPER_COMMUNITY",
+      "engineering_headcount": 1,
+      "primary_angle": "Category C: Autonomous Agent Test Deletions",
+      "urgency_score": 72,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.35,
+        "weighted_deal_value": 10
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=github_dispatcher&utm_medium=issue_reply&utm_campaign=Significant_Gravitas_AutoGPT"
+    },
+    {
+      "lead_id": "RADAR-GH-TH-013",
+      "pool_origin": "GitHub Technical Discussions",
+      "entity_name": "continuedev/continue (@ergonomic-dev)",
+      "domain": "github.com",
+      "channel_or_platform": "GitHub Discussion / Issue (continuedev/continue)",
+      "tier": "DEVELOPER_COMMUNITY",
+      "engineering_headcount": 1,
+      "primary_angle": "Category D: Cloud Latency in Voice-Assisted Coding",
+      "urgency_score": 72,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.35,
+        "weighted_deal_value": 10
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=github_dispatcher&utm_medium=issue_reply&utm_campaign=continuedev_continue"
+    },
+    {
+      "lead_id": "RADAR-GH-TH-014",
+      "pool_origin": "GitHub Technical Discussions",
+      "entity_name": "e2b-dev/E2B (@voice-ai-researcher)",
+      "domain": "github.com",
+      "channel_or_platform": "GitHub Discussion / Issue (e2b-dev/E2B)",
+      "tier": "DEVELOPER_COMMUNITY",
+      "engineering_headcount": 1,
+      "primary_angle": "Category D: Cloud Latency in Voice-Assisted Coding",
+      "urgency_score": 72,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.35,
+        "weighted_deal_value": 10
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=github_dispatcher&utm_medium=issue_reply&utm_campaign=e2b_dev_E2B"
+    },
+    {
+      "lead_id": "RADAR-GH-TH-015",
+      "pool_origin": "GitHub Technical Discussions",
+      "entity_name": "anthropics/claude-code (@terminal-hacker)",
+      "domain": "github.com",
+      "channel_or_platform": "GitHub Discussion / Issue (anthropics/claude-code)",
+      "tier": "DEVELOPER_COMMUNITY",
+      "engineering_headcount": 1,
+      "primary_angle": "Category D: Cloud Latency in Voice-Assisted Coding",
+      "urgency_score": 72,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.35,
+        "weighted_deal_value": 10
+      },
+      "status": "STAGED",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=github_dispatcher&utm_medium=issue_reply&utm_campaign=anthropics_claude_code"
+    },
+    {
+      "lead_id": "RADAR-SIG-RD-001",
+      "pool_origin": "Multi-Platform Social Surveillance",
+      "entity_name": "u/cursor_power_user (Reddit (r/Cursor))",
+      "domain": "reddit",
+      "channel_or_platform": "Reddit (r/Cursor)",
+      "tier": "DEVELOPER_SURVEILLANCE",
+      "engineering_headcount": 1,
+      "primary_angle": "Tree-Sitter AST Interface Slicing (-83.0% Context Token Reduction)",
+      "urgency_score": 70,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.35,
+        "weighted_deal_value": 10
+      },
+      "status": "QUEUED_FOR_ENGAGEMENT",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=social_daemon&utm_medium=surveillance_reply&utm_campaign=surveillance_sig_rd_001"
+    },
+    {
+      "lead_id": "RADAR-OSS-001",
+      "pool_origin": "Open-Source Flagship Repos",
+      "entity_name": "continuedev/continue (21,400 stars)",
+      "domain": "github.com",
+      "channel_or_platform": "GitHub Maintainer Sponsorship / PR",
+      "tier": "OSS_ECOSYSTEM",
+      "engineering_headcount": 15,
+      "primary_angle": "MCP Integration (AI Coding Assistant)",
+      "urgency_score": 68,
+      "financial_metrics": {
+        "annual_token_savings": 7500,
+        "commercial_deal_type": "VIP Free Core Sponsorship + DevSuperSuite Studio ($99)",
+        "contract_gross_value": 99,
+        "deal_probability": 0.45,
+        "weighted_deal_value": 44
+      },
+      "status": "QUEUED_FOR_OUTREACH",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=continuedev_continue"
+    },
+    {
+      "lead_id": "RADAR-OSS-002",
+      "pool_origin": "Open-Source Flagship Repos",
+      "entity_name": "Roo-Code/Roo-Code (15,200 stars)",
+      "domain": "github.com",
+      "channel_or_platform": "GitHub Maintainer Sponsorship / PR",
+      "tier": "OSS_ECOSYSTEM",
+      "engineering_headcount": 15,
+      "primary_angle": "MCP Integration (Autonomous Coding Agent)",
+      "urgency_score": 68,
+      "financial_metrics": {
+        "annual_token_savings": 7500,
+        "commercial_deal_type": "VIP Free Core Sponsorship + DevSuperSuite Studio ($99)",
+        "contract_gross_value": 99,
+        "deal_probability": 0.45,
+        "weighted_deal_value": 44
+      },
+      "status": "QUEUED_FOR_OUTREACH",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=Roo_Code_Roo_Code"
+    },
+    {
+      "lead_id": "RADAR-OSS-005",
+      "pool_origin": "Open-Source Flagship Repos",
+      "entity_name": "BerriAI/litellm (23,800 stars)",
+      "domain": "github.com",
+      "channel_or_platform": "GitHub Maintainer Sponsorship / PR",
+      "tier": "OSS_ECOSYSTEM",
+      "engineering_headcount": 15,
+      "primary_angle": "MCP Integration (LLM Proxy & Token Budgeting)",
+      "urgency_score": 68,
+      "financial_metrics": {
+        "annual_token_savings": 7500,
+        "commercial_deal_type": "VIP Free Core Sponsorship + DevSuperSuite Studio ($99)",
+        "contract_gross_value": 99,
+        "deal_probability": 0.45,
+        "weighted_deal_value": 44
+      },
+      "status": "QUEUED_FOR_OUTREACH",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=BerriAI_litellm"
+    },
+    {
+      "lead_id": "RADAR-OSS-006",
+      "pool_origin": "Open-Source Flagship Repos",
+      "entity_name": "cline/cline (24,100 stars)",
+      "domain": "github.com",
+      "channel_or_platform": "GitHub Maintainer Sponsorship / PR",
+      "tier": "OSS_ECOSYSTEM",
+      "engineering_headcount": 15,
+      "primary_angle": "MCP Integration (Autonomous Coding Extension)",
+      "urgency_score": 68,
+      "financial_metrics": {
+        "annual_token_savings": 7500,
+        "commercial_deal_type": "VIP Free Core Sponsorship + DevSuperSuite Studio ($99)",
+        "contract_gross_value": 99,
+        "deal_probability": 0.45,
+        "weighted_deal_value": 44
+      },
+      "status": "QUEUED_FOR_OUTREACH",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=cline_cline"
+    },
+    {
+      "lead_id": "RADAR-OSS-007",
+      "pool_origin": "Open-Source Flagship Repos",
+      "entity_name": "tree-sitter/tree-sitter (20,100 stars)",
+      "domain": "github.com",
+      "channel_or_platform": "GitHub Maintainer Sponsorship / PR",
+      "tier": "OSS_ECOSYSTEM",
+      "engineering_headcount": 15,
+      "primary_angle": "MCP Integration (Incremental Parser)",
+      "urgency_score": 68,
+      "financial_metrics": {
+        "annual_token_savings": 7500,
+        "commercial_deal_type": "VIP Free Core Sponsorship + DevSuperSuite Studio ($99)",
+        "contract_gross_value": 99,
+        "deal_probability": 0.45,
+        "weighted_deal_value": 44
+      },
+      "status": "QUEUED_FOR_OUTREACH",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=tree_sitter_tree_sitter"
+    },
+    {
+      "lead_id": "RADAR-OSS-008",
+      "pool_origin": "Open-Source Flagship Repos",
+      "entity_name": "modelcontextprotocol/servers (12,800 stars)",
+      "domain": "github.com",
+      "channel_or_platform": "GitHub Maintainer Sponsorship / PR",
+      "tier": "OSS_ECOSYSTEM",
+      "engineering_headcount": 15,
+      "primary_angle": "MCP Integration (Reference MCP Servers)",
+      "urgency_score": 68,
+      "financial_metrics": {
+        "annual_token_savings": 7500,
+        "commercial_deal_type": "VIP Free Core Sponsorship + DevSuperSuite Studio ($99)",
+        "contract_gross_value": 99,
+        "deal_probability": 0.45,
+        "weighted_deal_value": 44
+      },
+      "status": "QUEUED_FOR_OUTREACH",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=modelcontextprotocol_servers"
+    },
+    {
+      "lead_id": "RADAR-OSS-009",
+      "pool_origin": "Open-Source Flagship Repos",
+      "entity_name": "PyCQA/bandit (6,200 stars)",
+      "domain": "github.com",
+      "channel_or_platform": "GitHub Maintainer Sponsorship / PR",
+      "tier": "OSS_ECOSYSTEM",
+      "engineering_headcount": 15,
+      "primary_angle": "MCP Integration (Security Linter)",
+      "urgency_score": 68,
+      "financial_metrics": {
+        "annual_token_savings": 7500,
+        "commercial_deal_type": "VIP Free Core Sponsorship + DevSuperSuite Studio ($99)",
+        "contract_gross_value": 99,
+        "deal_probability": 0.45,
+        "weighted_deal_value": 44
+      },
+      "status": "QUEUED_FOR_OUTREACH",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=PyCQA_bandit"
+    },
+    {
+      "lead_id": "RADAR-OSS-010",
+      "pool_origin": "Open-Source Flagship Repos",
+      "entity_name": "GitGuardian/ggshield (3,400 stars)",
+      "domain": "github.com",
+      "channel_or_platform": "GitHub Maintainer Sponsorship / PR",
+      "tier": "OSS_ECOSYSTEM",
+      "engineering_headcount": 15,
+      "primary_angle": "MCP Integration (Git Secret Detection)",
+      "urgency_score": 68,
+      "financial_metrics": {
+        "annual_token_savings": 7500,
+        "commercial_deal_type": "VIP Free Core Sponsorship + DevSuperSuite Studio ($99)",
+        "contract_gross_value": 99,
+        "deal_probability": 0.45,
+        "weighted_deal_value": 44
+      },
+      "status": "QUEUED_FOR_OUTREACH",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=GitGuardian_ggshield"
+    },
+    {
+      "lead_id": "RADAR-OSS-011",
+      "pool_origin": "Open-Source Flagship Repos",
+      "entity_name": "trufflesecurity/trufflehog (19,500 stars)",
+      "domain": "github.com",
+      "channel_or_platform": "GitHub Maintainer Sponsorship / PR",
+      "tier": "OSS_ECOSYSTEM",
+      "engineering_headcount": 15,
+      "primary_angle": "MCP Integration (Secret Scanner)",
+      "urgency_score": 68,
+      "financial_metrics": {
+        "annual_token_savings": 7500,
+        "commercial_deal_type": "VIP Free Core Sponsorship + DevSuperSuite Studio ($99)",
+        "contract_gross_value": 99,
+        "deal_probability": 0.45,
+        "weighted_deal_value": 44
+      },
+      "status": "QUEUED_FOR_OUTREACH",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=trufflesecurity_trufflehog"
+    },
+    {
+      "lead_id": "RADAR-OSS-012",
+      "pool_origin": "Open-Source Flagship Repos",
+      "entity_name": "ast-grep/ast-grep (8,600 stars)",
+      "domain": "github.com",
+      "channel_or_platform": "GitHub Maintainer Sponsorship / PR",
+      "tier": "OSS_ECOSYSTEM",
+      "engineering_headcount": 15,
+      "primary_angle": "MCP Integration (Structural Code Search)",
+      "urgency_score": 68,
+      "financial_metrics": {
+        "annual_token_savings": 7500,
+        "commercial_deal_type": "VIP Free Core Sponsorship + DevSuperSuite Studio ($99)",
+        "contract_gross_value": 99,
+        "deal_probability": 0.45,
+        "weighted_deal_value": 44
+      },
+      "status": "QUEUED_FOR_OUTREACH",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=ast_grep_ast_grep"
+    },
+    {
+      "lead_id": "RADAR-OSS-013",
+      "pool_origin": "Open-Source Flagship Repos",
+      "entity_name": "pre-commit/pre-commit (12,400 stars)",
+      "domain": "github.com",
+      "channel_or_platform": "GitHub Maintainer Sponsorship / PR",
+      "tier": "OSS_ECOSYSTEM",
+      "engineering_headcount": 15,
+      "primary_angle": "MCP Integration (Git Hook Framework)",
+      "urgency_score": 68,
+      "financial_metrics": {
+        "annual_token_savings": 7500,
+        "commercial_deal_type": "VIP Free Core Sponsorship + DevSuperSuite Studio ($99)",
+        "contract_gross_value": 99,
+        "deal_probability": 0.45,
+        "weighted_deal_value": 44
+      },
+      "status": "QUEUED_FOR_OUTREACH",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=pre_commit_pre_commit"
+    },
+    {
+      "lead_id": "RADAR-OSS-016",
+      "pool_origin": "Open-Source Flagship Repos",
+      "entity_name": "yoheinakajima/babyagi (21,800 stars)",
+      "domain": "github.com",
+      "channel_or_platform": "GitHub Maintainer Sponsorship / PR",
+      "tier": "OSS_ECOSYSTEM",
+      "engineering_headcount": 15,
+      "primary_angle": "MCP Integration (Task-Driven Autonomous Agent)",
+      "urgency_score": 68,
+      "financial_metrics": {
+        "annual_token_savings": 7500,
+        "commercial_deal_type": "VIP Free Core Sponsorship + DevSuperSuite Studio ($99)",
+        "contract_gross_value": 99,
+        "deal_probability": 0.45,
+        "weighted_deal_value": 44
+      },
+      "status": "QUEUED_FOR_OUTREACH",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=yoheinakajima_babyagi"
+    },
+    {
+      "lead_id": "RADAR-OSS-017",
+      "pool_origin": "Open-Source Flagship Repos",
+      "entity_name": "e2b-dev/E2B (7,400 stars)",
+      "domain": "github.com",
+      "channel_or_platform": "GitHub Maintainer Sponsorship / PR",
+      "tier": "OSS_ECOSYSTEM",
+      "engineering_headcount": 15,
+      "primary_angle": "MCP Integration (Sandboxed AI Execution)",
+      "urgency_score": 68,
+      "financial_metrics": {
+        "annual_token_savings": 7500,
+        "commercial_deal_type": "VIP Free Core Sponsorship + DevSuperSuite Studio ($99)",
+        "contract_gross_value": 99,
+        "deal_probability": 0.45,
+        "weighted_deal_value": 44
+      },
+      "status": "QUEUED_FOR_OUTREACH",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=e2b_dev_E2B"
+    },
+    {
+      "lead_id": "RADAR-SIG-RD-002",
+      "pool_origin": "Multi-Platform Social Surveillance",
+      "entity_name": "u/ai_compiler_guy (Reddit (r/ClaudeAI))",
+      "domain": "reddit",
+      "channel_or_platform": "Reddit (r/ClaudeAI)",
+      "tier": "DEVELOPER_SURVEILLANCE",
+      "engineering_headcount": 1,
+      "primary_angle": "Tree-Sitter AST Interface Slicing (-83.0% Context Token Reduction)",
+      "urgency_score": 66,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.33,
+        "weighted_deal_value": 9
+      },
+      "status": "QUEUED_FOR_ENGAGEMENT",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=social_daemon&utm_medium=surveillance_reply&utm_campaign=surveillance_sig_rd_002"
+    },
+    {
+      "lead_id": "RADAR-SIG-HN-002",
+      "pool_origin": "Multi-Platform Social Surveillance",
+      "entity_name": "cyber_architect (Hacker News)",
+      "domain": "hacker",
+      "channel_or_platform": "Hacker News",
+      "tier": "DEVELOPER_SURVEILLANCE",
+      "engineering_headcount": 1,
+      "primary_angle": "Deterministic Pre-Execution Invariant Gate for Agent Diffs",
+      "urgency_score": 66,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.33,
+        "weighted_deal_value": 9
+      },
+      "status": "QUEUED_FOR_ENGAGEMENT",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=social_daemon&utm_medium=surveillance_reply&utm_campaign=surveillance_sig_hn_002"
+    },
+    {
+      "lead_id": "RADAR-SIG-TW-002",
+      "pool_origin": "Multi-Platform Social Surveillance",
+      "entity_name": "@fullstack_sarah (Twitter / X)",
+      "domain": "twitter",
+      "channel_or_platform": "Twitter / X",
+      "tier": "DEVELOPER_SURVEILLANCE",
+      "engineering_headcount": 1,
+      "primary_angle": "Tree-Sitter AST Interface Slicing (-83.0% Context Token Reduction)",
+      "urgency_score": 65,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.33,
+        "weighted_deal_value": 9
+      },
+      "status": "QUEUED_FOR_ENGAGEMENT",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=social_daemon&utm_medium=surveillance_reply&utm_campaign=surveillance_sig_tw_002"
+    },
+    {
+      "lead_id": "RADAR-SIG-RD-003",
+      "pool_origin": "Multi-Platform Social Surveillance",
+      "entity_name": "u/local_tensor_hacker (Reddit (r/LocalLLaMA))",
+      "domain": "reddit",
+      "channel_or_platform": "Reddit (r/LocalLLaMA)",
+      "tier": "DEVELOPER_SURVEILLANCE",
+      "engineering_headcount": 1,
+      "primary_angle": "Tree-Sitter AST Interface Slicing (-83.0% Context Token Reduction)",
+      "urgency_score": 65,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.33,
+        "weighted_deal_value": 9
+      },
+      "status": "QUEUED_FOR_ENGAGEMENT",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=social_daemon&utm_medium=surveillance_reply&utm_campaign=surveillance_sig_rd_003"
+    },
+    {
+      "lead_id": "RADAR-SIG-GH-004",
+      "pool_origin": "Multi-Platform Social Surveillance",
+      "entity_name": "@ollama_hacker (GitHub Discussions (aider-ai/aider))",
+      "domain": "github",
+      "channel_or_platform": "GitHub Discussions (aider-ai/aider)",
+      "tier": "DEVELOPER_SURVEILLANCE",
+      "engineering_headcount": 1,
+      "primary_angle": "Tree-Sitter AST Interface Slicing (-83.0% Context Token Reduction)",
+      "urgency_score": 60,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.3,
+        "weighted_deal_value": 8
+      },
+      "status": "QUEUED_FOR_ENGAGEMENT",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=social_daemon&utm_medium=surveillance_reply&utm_campaign=surveillance_sig_gh_004"
+    },
+    {
+      "lead_id": "RADAR-SIG-GH-002",
+      "pool_origin": "Multi-Platform Social Surveillance",
+      "entity_name": "@ai_devops_guru (GitHub Discussions (continuedev/continue))",
+      "domain": "github",
+      "channel_or_platform": "GitHub Discussions (continuedev/continue)",
+      "tier": "DEVELOPER_SURVEILLANCE",
+      "engineering_headcount": 1,
+      "primary_angle": "Tree-Sitter AST Interface Slicing (-83.0% Context Token Reduction)",
+      "urgency_score": 55,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.28,
+        "weighted_deal_value": 7
+      },
+      "status": "QUEUED_FOR_ENGAGEMENT",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=social_daemon&utm_medium=surveillance_reply&utm_campaign=surveillance_sig_gh_002"
+    },
+    {
+      "lead_id": "RADAR-SIG-GH-003",
+      "pool_origin": "Multi-Platform Social Surveillance",
+      "entity_name": "@qa_evaluator (GitHub Discussions (All-Hands-AI/OpenHands))",
+      "domain": "github",
+      "channel_or_platform": "GitHub Discussions (All-Hands-AI/OpenHands)",
+      "tier": "DEVELOPER_SURVEILLANCE",
+      "engineering_headcount": 1,
+      "primary_angle": "Deterministic Pre-Execution Invariant Gate for Agent Diffs",
+      "urgency_score": 35,
+      "financial_metrics": {
+        "annual_token_savings": 500,
+        "commercial_deal_type": "Developer Pro Lifetime ($29)",
+        "contract_gross_value": 29,
+        "deal_probability": 0.17,
+        "weighted_deal_value": 5
+      },
+      "status": "QUEUED_FOR_ENGAGEMENT",
+      "attribution_url": "https://devsupersuite.web.app?utm_source=social_daemon&utm_medium=surveillance_reply&utm_campaign=surveillance_sig_gh_003"
+    }
+  ]
+}

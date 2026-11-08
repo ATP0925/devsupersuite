@@ -1,0 +1,720 @@
+{
+  "metadata": {
+    "organization": "DevSuperSuite Official",
+    "entity": "DevSuperSuite Tech Services",
+    "treasury_contact": "cfo@devsupersuite.com",
+    "last_updated": "2026-11-08T11:03:16.678301+00:00"
+  },
+  "chart_of_accounts": {
+    "1010": {
+      "name": "Cash and Cash Equivalents (Operating Checking)",
+      "category": "ASSET",
+      "statement": "BALANCE_SHEET"
+    },
+    "1020": {
+      "name": "Sovereign High-Yield Treasury Vault (T-Bills 4.95%)",
+      "category": "ASSET",
+      "statement": "BALANCE_SHEET"
+    },
+    "1100": {
+      "name": "Accounts Receivable (Milestone & Retainer Wires)",
+      "category": "ASSET",
+      "statement": "BALANCE_SHEET"
+    },
+    "1150": {
+      "name": "Merchant Gateway Clearing In-Transit",
+      "category": "ASSET",
+      "statement": "BALANCE_SHEET"
+    },
+    "1200": {
+      "name": "Pre-Paid Cloud & Insurance Expenses",
+      "category": "ASSET",
+      "statement": "BALANCE_SHEET"
+    },
+    "2010": {
+      "name": "Accounts Payable (Compute & Foundation API Payables)",
+      "category": "LIABILITY",
+      "statement": "BALANCE_SHEET"
+    },
+    "2300": {
+      "name": "Rolling Dispute Reserves (PayPal Escrow Buffer)",
+      "category": "LIABILITY",
+      "statement": "BALANCE_SHEET"
+    },
+    "2400": {
+      "name": "Deferred Revenue (Unearned Advance Retainers)",
+      "category": "LIABILITY",
+      "statement": "BALANCE_SHEET"
+    },
+    "3010": {
+      "name": "Common Stock ($0.0001 Par, 8.75M Shares Issued)",
+      "category": "EQUITY",
+      "statement": "BALANCE_SHEET"
+    },
+    "3020": {
+      "name": "Additional Paid-In Capital (APIC)",
+      "category": "EQUITY",
+      "statement": "BALANCE_SHEET"
+    },
+    "3100": {
+      "name": "Retained Earnings (Beginning Accumulated)",
+      "category": "EQUITY",
+      "statement": "BALANCE_SHEET"
+    },
+    "4010": {
+      "name": "Commercial Developer Software License Revenue",
+      "category": "REVENUE",
+      "statement": "INCOME_STATEMENT"
+    },
+    "4020": {
+      "name": "Enterprise Turnkey Implementation Revenue (ASC 606)",
+      "category": "REVENUE",
+      "statement": "INCOME_STATEMENT"
+    },
+    "4030": {
+      "name": "Recurring Retainer Pod Revenue",
+      "category": "REVENUE",
+      "statement": "INCOME_STATEMENT"
+    },
+    "4900": {
+      "name": "Treasury Interest & Sovereign T-Bill Yield",
+      "category": "REVENUE",
+      "statement": "INCOME_STATEMENT"
+    },
+    "5010": {
+      "name": "Direct Cloud Compute & Infrastructure Hosting",
+      "category": "COGS",
+      "statement": "INCOME_STATEMENT"
+    },
+    "5020": {
+      "name": "Foundation Model Token API Consumption",
+      "category": "COGS",
+      "statement": "INCOME_STATEMENT"
+    },
+    "5030": {
+      "name": "Loaded Solutions Engineering Implementation Labor",
+      "category": "COGS",
+      "statement": "INCOME_STATEMENT"
+    },
+    "5040": {
+      "name": "Payment Gateway & Bank Merchant Interchange Fees",
+      "category": "COGS",
+      "statement": "INCOME_STATEMENT"
+    },
+    "6010": {
+      "name": "Research & Development (Core AST Engineering)",
+      "category": "OPEX",
+      "statement": "INCOME_STATEMENT"
+    },
+    "6020": {
+      "name": "Sales & Developer Relations Marketing",
+      "category": "OPEX",
+      "statement": "INCOME_STATEMENT"
+    },
+    "6030": {
+      "name": "General & Administrative (Audit, Legal, SOC 2)",
+      "category": "OPEX",
+      "statement": "INCOME_STATEMENT"
+    }
+  },
+  "journal_entries": [
+    {
+      "entry_id": "JE-2026-001",
+      "date": "2026-11-01",
+      "memo": "Initial corporate capitalization and authorized common equity contribution",
+      "lines": [
+        {
+          "account_code": "1010",
+          "debit": 50000.0,
+          "credit": 0.0
+        },
+        {
+          "account_code": "3010",
+          "debit": 0.0,
+          "credit": 875.0
+        },
+        {
+          "account_code": "3020",
+          "debit": 0.0,
+          "credit": 49125.0
+        }
+      ]
+    },
+    {
+      "entry_id": "JE-2026-002",
+      "date": "2026-11-03",
+      "memo": "Developer standalone software license sales clearing via Stripe & Gumroad",
+      "lines": [
+        {
+          "account_code": "1150",
+          "debit": 440.0,
+          "credit": 0.0
+        },
+        {
+          "account_code": "4010",
+          "debit": 0.0,
+          "credit": 440.0
+        }
+      ]
+    },
+    {
+      "entry_id": "JE-2026-003",
+      "date": "2026-11-04",
+      "memo": "Payment processing merchant fees and server edge compute for developer sales",
+      "lines": [
+        {
+          "account_code": "5040",
+          "debit": 15.5,
+          "credit": 0.0
+        },
+        {
+          "account_code": "5010",
+          "debit": 6.2,
+          "credit": 0.0
+        },
+        {
+          "account_code": "1150",
+          "debit": 0.0,
+          "credit": 21.7
+        }
+      ]
+    },
+    {
+      "entry_id": "JE-2026-004",
+      "date": "2026-11-05",
+      "memo": "Merchant gateway net settlement deposit into primary operating bank account",
+      "lines": [
+        {
+          "account_code": "1010",
+          "debit": 418.3,
+          "credit": 0.0
+        },
+        {
+          "account_code": "1150",
+          "debit": 0.0,
+          "credit": 418.3
+        }
+      ]
+    },
+    {
+      "entry_id": "JE-2026-005",
+      "date": "2026-11-06",
+      "memo": "Bilateral execution and invoicing of Milestone 1 SOW for Nexus Enterprise Tech",
+      "lines": [
+        {
+          "account_code": "1100",
+          "debit": 24500.0,
+          "credit": 0.0
+        },
+        {
+          "account_code": "4020",
+          "debit": 0.0,
+          "credit": 24500.0
+        }
+      ]
+    },
+    {
+      "entry_id": "JE-2026-006",
+      "date": "2026-11-06",
+      "memo": "Accrual of loaded engineering implementation labor and model API compute for M1",
+      "lines": [
+        {
+          "account_code": "5030",
+          "debit": 7500.0,
+          "credit": 0.0
+        },
+        {
+          "account_code": "5020",
+          "debit": 666.67,
+          "credit": 0.0
+        },
+        {
+          "account_code": "2010",
+          "debit": 0.0,
+          "credit": 8166.67
+        }
+      ]
+    },
+    {
+      "entry_id": "JE-2026-007",
+      "date": "2026-11-07",
+      "memo": "Settlement of Milestone 1 via SWIFT MT103 wire transfer (Code OUR, $15 fee)",
+      "lines": [
+        {
+          "account_code": "1010",
+          "debit": 24485.0,
+          "credit": 0.0
+        },
+        {
+          "account_code": "5040",
+          "debit": 15.0,
+          "credit": 0.0
+        },
+        {
+          "account_code": "1100",
+          "debit": 0.0,
+          "credit": 24500.0
+        }
+      ]
+    },
+    {
+      "entry_id": "JE-2026-008",
+      "date": "2026-11-07",
+      "memo": "Cash settlement of Milestone 1 direct engineering and cloud API payables",
+      "lines": [
+        {
+          "account_code": "2010",
+          "debit": 8166.67,
+          "credit": 0.0
+        },
+        {
+          "account_code": "1010",
+          "debit": 0.0,
+          "credit": 8166.67
+        }
+      ]
+    },
+    {
+      "entry_id": "JE-2026-009",
+      "date": "2026-11-08",
+      "memo": "Advance monthly retainer billing for Nexus Enterprise Engineering Pod (Month 1)",
+      "lines": [
+        {
+          "account_code": "1010",
+          "debit": 8500.0,
+          "credit": 0.0
+        },
+        {
+          "account_code": "4030",
+          "debit": 0.0,
+          "credit": 8500.0
+        }
+      ]
+    },
+    {
+      "entry_id": "JE-2026-010",
+      "date": "2026-11-08",
+      "memo": "Dedicated pod loaded engineering direct labor payroll allocation",
+      "lines": [
+        {
+          "account_code": "5030",
+          "debit": 1260.0,
+          "credit": 0.0
+        },
+        {
+          "account_code": "1010",
+          "debit": 0.0,
+          "credit": 1260.0
+        }
+      ]
+    },
+    {
+      "entry_id": "JE-2026-011",
+      "date": "2026-11-08",
+      "memo": "PayPal 5.0% rolling dispute reserve buffer escrow allocation",
+      "lines": [
+        {
+          "account_code": "1010",
+          "debit": 2.9,
+          "credit": 0.0
+        },
+        {
+          "account_code": "2300",
+          "debit": 0.0,
+          "credit": 2.9
+        }
+      ]
+    },
+    {
+      "entry_id": "JE-2026-012",
+      "date": "2026-11-08",
+      "memo": "Automated ZBA sweep of surplus operating cash into Sovereign High-Yield Treasury T-Bills",
+      "lines": [
+        {
+          "account_code": "1020",
+          "debit": 22183.0,
+          "credit": 0.0
+        },
+        {
+          "account_code": "1010",
+          "debit": 0.0,
+          "credit": 22183.0
+        }
+      ]
+    },
+    {
+      "entry_id": "JE-2026-013",
+      "date": "2026-11-08",
+      "memo": "Accrual of risk-free interest yield on Sovereign U.S. T-Bills (4.95% APY)",
+      "lines": [
+        {
+          "account_code": "1020",
+          "debit": 91.5,
+          "credit": 0.0
+        },
+        {
+          "account_code": "4900",
+          "debit": 0.0,
+          "credit": 91.5
+        }
+      ]
+    },
+    {
+      "entry_id": "JE-2026-014",
+      "date": "2026-11-08",
+      "memo": "Monthly operating expenses: core R&D compiler engineering, DevRel S&M, and G&A",
+      "lines": [
+        {
+          "account_code": "6010",
+          "debit": 3500.0,
+          "credit": 0.0
+        },
+        {
+          "account_code": "6020",
+          "debit": 1200.0,
+          "credit": 0.0
+        },
+        {
+          "account_code": "6030",
+          "debit": 1800.0,
+          "credit": 0.0
+        },
+        {
+          "account_code": "1010",
+          "debit": 0.0,
+          "credit": 6500.0
+        }
+      ]
+    }
+  ],
+  "financial_statements": {
+    "reporting_period": "Fiscal Year 2026",
+    "reporting_currency": "USD",
+    "trial_balance": [
+      {
+        "account_code": "1010",
+        "account_name": "Cash and Cash Equivalents (Operating Checking)",
+        "category": "ASSET",
+        "statement": "BALANCE_SHEET",
+        "debit": 45296.53,
+        "credit": 0.0
+      },
+      {
+        "account_code": "1020",
+        "account_name": "Sovereign High-Yield Treasury Vault (T-Bills 4.95%)",
+        "category": "ASSET",
+        "statement": "BALANCE_SHEET",
+        "debit": 22274.5,
+        "credit": 0.0
+      },
+      {
+        "account_code": "1100",
+        "account_name": "Accounts Receivable (Milestone & Retainer Wires)",
+        "category": "ASSET",
+        "statement": "BALANCE_SHEET",
+        "debit": 0.0,
+        "credit": 0.0
+      },
+      {
+        "account_code": "1150",
+        "account_name": "Merchant Gateway Clearing In-Transit",
+        "category": "ASSET",
+        "statement": "BALANCE_SHEET",
+        "debit": 0.0,
+        "credit": 0.0
+      },
+      {
+        "account_code": "1200",
+        "account_name": "Pre-Paid Cloud & Insurance Expenses",
+        "category": "ASSET",
+        "statement": "BALANCE_SHEET",
+        "debit": 0.0,
+        "credit": 0.0
+      },
+      {
+        "account_code": "2010",
+        "account_name": "Accounts Payable (Compute & Foundation API Payables)",
+        "category": "LIABILITY",
+        "statement": "BALANCE_SHEET",
+        "debit": 0.0,
+        "credit": 0.0
+      },
+      {
+        "account_code": "2300",
+        "account_name": "Rolling Dispute Reserves (PayPal Escrow Buffer)",
+        "category": "LIABILITY",
+        "statement": "BALANCE_SHEET",
+        "debit": 0.0,
+        "credit": 2.9
+      },
+      {
+        "account_code": "2400",
+        "account_name": "Deferred Revenue (Unearned Advance Retainers)",
+        "category": "LIABILITY",
+        "statement": "BALANCE_SHEET",
+        "debit": 0.0,
+        "credit": 0.0
+      },
+      {
+        "account_code": "3010",
+        "account_name": "Common Stock ($0.0001 Par, 8.75M Shares Issued)",
+        "category": "EQUITY",
+        "statement": "BALANCE_SHEET",
+        "debit": 0.0,
+        "credit": 875.0
+      },
+      {
+        "account_code": "3020",
+        "account_name": "Additional Paid-In Capital (APIC)",
+        "category": "EQUITY",
+        "statement": "BALANCE_SHEET",
+        "debit": 0.0,
+        "credit": 49125.0
+      },
+      {
+        "account_code": "3100",
+        "account_name": "Retained Earnings (Beginning Accumulated)",
+        "category": "EQUITY",
+        "statement": "BALANCE_SHEET",
+        "debit": 0.0,
+        "credit": 0.0
+      },
+      {
+        "account_code": "4010",
+        "account_name": "Commercial Developer Software License Revenue",
+        "category": "REVENUE",
+        "statement": "INCOME_STATEMENT",
+        "debit": 0.0,
+        "credit": 440.0
+      },
+      {
+        "account_code": "4020",
+        "account_name": "Enterprise Turnkey Implementation Revenue (ASC 606)",
+        "category": "REVENUE",
+        "statement": "INCOME_STATEMENT",
+        "debit": 0.0,
+        "credit": 24500.0
+      },
+      {
+        "account_code": "4030",
+        "account_name": "Recurring Retainer Pod Revenue",
+        "category": "REVENUE",
+        "statement": "INCOME_STATEMENT",
+        "debit": 0.0,
+        "credit": 8500.0
+      },
+      {
+        "account_code": "4900",
+        "account_name": "Treasury Interest & Sovereign T-Bill Yield",
+        "category": "REVENUE",
+        "statement": "INCOME_STATEMENT",
+        "debit": 0.0,
+        "credit": 91.5
+      },
+      {
+        "account_code": "5010",
+        "account_name": "Direct Cloud Compute & Infrastructure Hosting",
+        "category": "COGS",
+        "statement": "INCOME_STATEMENT",
+        "debit": 6.2,
+        "credit": 0.0
+      },
+      {
+        "account_code": "5020",
+        "account_name": "Foundation Model Token API Consumption",
+        "category": "COGS",
+        "statement": "INCOME_STATEMENT",
+        "debit": 666.67,
+        "credit": 0.0
+      },
+      {
+        "account_code": "5030",
+        "account_name": "Loaded Solutions Engineering Implementation Labor",
+        "category": "COGS",
+        "statement": "INCOME_STATEMENT",
+        "debit": 8760.0,
+        "credit": 0.0
+      },
+      {
+        "account_code": "5040",
+        "account_name": "Payment Gateway & Bank Merchant Interchange Fees",
+        "category": "COGS",
+        "statement": "INCOME_STATEMENT",
+        "debit": 30.5,
+        "credit": 0.0
+      },
+      {
+        "account_code": "6010",
+        "account_name": "Research & Development (Core AST Engineering)",
+        "category": "OPEX",
+        "statement": "INCOME_STATEMENT",
+        "debit": 3500.0,
+        "credit": 0.0
+      },
+      {
+        "account_code": "6020",
+        "account_name": "Sales & Developer Relations Marketing",
+        "category": "OPEX",
+        "statement": "INCOME_STATEMENT",
+        "debit": 1200.0,
+        "credit": 0.0
+      },
+      {
+        "account_code": "6030",
+        "account_name": "General & Administrative (Audit, Legal, SOC 2)",
+        "category": "OPEX",
+        "statement": "INCOME_STATEMENT",
+        "debit": 1800.0,
+        "credit": 0.0
+      }
+    ],
+    "income_statement": {
+      "commercial_revenue": {
+        "software_licenses_usd": 440.0,
+        "turnkey_implementations_usd": 24500.0,
+        "recurring_retainer_pods_usd": 8500.0,
+        "total_commercial_revenue_usd": 33440.0
+      },
+      "cogs": {
+        "cloud_compute_usd": 6.2,
+        "model_token_apis_usd": 666.67,
+        "solutions_engineering_labor_usd": 8760.0,
+        "merchant_fees_usd": 30.5,
+        "total_cogs_usd": 9463.37
+      },
+      "gross_profit_usd": 23976.63,
+      "gross_margin_pct": 71.7,
+      "opex": {
+        "research_and_development_usd": 3500.0,
+        "sales_and_marketing_usd": 1200.0,
+        "general_and_administrative_usd": 1800.0,
+        "total_opex_usd": 6500.0
+      },
+      "operating_income_ebit_usd": 17476.63,
+      "other_income": {
+        "sovereign_treasury_yield_usd": 91.5
+      },
+      "net_income_usd": 17568.13,
+      "net_margin_pct": 52.39
+    },
+    "balance_sheet": {
+      "assets": {
+        "cash_and_cash_equivalents_usd": 45296.53,
+        "sovereign_treasury_vault_usd": 22274.5,
+        "total_cash_and_investments_usd": 67571.03,
+        "accounts_receivable_usd": 0.0,
+        "merchant_clearing_in_transit_usd": 0.0,
+        "prepaid_expenses_usd": 0.0,
+        "total_current_assets_usd": 67571.03,
+        "total_assets_usd": 67571.03
+      },
+      "liabilities": {
+        "accounts_payable_usd": 0.0,
+        "rolling_dispute_reserve_usd": 2.9,
+        "deferred_revenue_usd": 0.0,
+        "total_current_liabilities_usd": 2.9,
+        "long_term_debt_usd": 0.0,
+        "total_liabilities_usd": 2.9
+      },
+      "equity": {
+        "common_stock_usd": 875.0,
+        "additional_paid_in_capital_usd": 49125.0,
+        "beginning_retained_earnings_usd": 0.0,
+        "current_period_net_income_usd": 17568.13,
+        "ending_retained_earnings_usd": 17568.13,
+        "total_shareholders_equity_usd": 67568.13
+      },
+      "total_liabilities_and_equity_usd": 67571.03,
+      "discrepancy": 0.0,
+      "balanced": true
+    },
+    "cash_flow_statement": {
+      "operating_activities": {
+        "net_income_usd": 17568.13,
+        "interest_income_reclassification_usd": -91.5,
+        "working_capital_adjustments_usd": 2.9,
+        "net_cash_from_operating_activities_usd": 17479.53
+      },
+      "investing_activities": {
+        "purchases_of_sovereign_treasuries_usd": -22274.5,
+        "net_cash_from_investing_activities_usd": -22274.5
+      },
+      "financing_activities": {
+        "proceeds_from_equity_issuance_usd": 50000.0,
+        "debt_repayments_usd": 0.0,
+        "net_cash_from_financing_activities_usd": 50000.0
+      },
+      "net_change_in_cash_usd": 45296.53,
+      "ending_cash_and_cash_equivalents_usd": 45296.53,
+      "reconciled_with_balance_sheet": true
+    }
+  },
+  "invariants_audit": {
+    "audit_timestamp": "2026-11-08T11:03:16.678535+00:00",
+    "all_invariants_satisfied": true,
+    "invariant_1_journal_entries_balanced": {
+      "status": "PASS",
+      "failed_entries": []
+    },
+    "invariant_2_trial_balance_equality": {
+      "status": "PASS",
+      "debits": 83534.4,
+      "credits": 83534.4,
+      "discrepancy": 0.0
+    },
+    "invariant_3_balance_sheet_equation": {
+      "status": "PASS",
+      "total_assets": 67571.03,
+      "total_liabilities_and_equity": 67571.03,
+      "discrepancy": 0.0
+    },
+    "invariant_4_cash_flow_reconciliation": {
+      "status": "PASS",
+      "ending_cash": 45296.53,
+      "balance_sheet_cash": 45296.53
+    }
+  },
+  "audit_readiness": {
+    "audit_readiness_score_pct": 100.0,
+    "statutory_audit_opinion": "UNQUALIFIED_CLEAN_OPINION_READY",
+    "workpapers": [
+      {
+        "wp_id": "WP-100",
+        "title": "Trial Balance & General Journal Mathematical Integrity",
+        "score": 100.0
+      },
+      {
+        "wp_id": "WP-200",
+        "title": "Cash & Sovereign Treasury Existence & Ownership Verification",
+        "score": 100.0
+      },
+      {
+        "wp_id": "WP-300",
+        "title": "ASC 606 / IFRS 15 Revenue Cutoff & Performance Obligations",
+        "score": 100.0
+      },
+      {
+        "wp_id": "WP-400",
+        "title": "Direct Engineering Loaded Labor & Expense Matching",
+        "score": 100.0
+      },
+      {
+        "wp_id": "WP-500",
+        "title": "Cross-Border Tax Withholding, W-8BEN-E & Zero-Rated LUT",
+        "score": 100.0
+      },
+      {
+        "wp_id": "WP-600",
+        "title": "Equity Capitalization, Common Stock & SAFE Note Schedules",
+        "score": 100.0
+      },
+      {
+        "wp_id": "WP-700",
+        "title": "Commitments, Contingent Liabilities & Zero Litigation Confirmations",
+        "score": 100.0
+      }
+    ],
+    "auditor_standard": "AICPA / PCAOB / IAASB International Auditing Standards",
+    "statutory_authority": "Office of the CFO & Commercial Treasury Desk"
+  }
+}

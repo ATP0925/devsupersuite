@@ -3,9 +3,9 @@
     "organization": "DevSuperSuite Official",
     "authority": "Directorate of QA Automation & Security Compliance",
     "classification": "Sovereign Enterprise Security Telemetry (Restricted)",
-    "generated_at": "2026-11-08T10:46:13.542549+00:00",
+    "generated_at": "2026-11-08T11:03:20.214696+00:00",
     "target_repository": "agent-commerce",
-    "sha256_digest": "c5f5c4d8794e931d5e86a5d9175daf23af4a8310b55083de3515f67f8c5f1758"
+    "sha256_digest": "022c77e655c22db9639b7e2d4275a19bd5a5aaa556c74b8258f66a3e72b43286"
   },
   "enterprise_trust_index": {
     "composite_score": 100.0,
@@ -18,8 +18,8 @@
       "weight_percentage": 20,
       "score": 100.0,
       "metrics": {
-        "total_suites": 50,
-        "total_tests": 466,
+        "total_suites": 62,
+        "total_tests": 574,
         "pass_rate_percentage": 100.0,
         "fail_count": 0,
         "skipped_count": 0,
@@ -41,6 +41,12 @@
             "test_count": 10,
             "status": "PASS",
             "coverage_domain": "Air-Gapped Isolation & Orchestration"
+          },
+          {
+            "module": "test_apm_observability.py",
+            "test_count": 7,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
             "module": "test_automated_dr_failover.py",
@@ -121,6 +127,18 @@
             "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
+            "module": "test_enterprise_abm_deanonymizer.py",
+            "test_count": 9,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_enterprise_ae_pipeline.py",
+            "test_count": 9,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
             "module": "test_enterprise_compliance.py",
             "test_count": 9,
             "status": "PASS",
@@ -135,6 +153,18 @@
           {
             "module": "test_enterprise_usage_metering.py",
             "test_count": 9,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_enterprise_vpc_migration.py",
+            "test_count": 7,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_fedramp_high_dod_ssp.py",
+            "test_count": 10,
             "status": "PASS",
             "coverage_domain": "Core Architecture & MCP Harness"
           },
@@ -163,6 +193,12 @@
             "coverage_domain": "Financial Engine & Statutory Ledgers"
           },
           {
+            "module": "test_fx_hedging_treasury.py",
+            "test_count": 8,
+            "status": "PASS",
+            "coverage_domain": "Financial Engine & Statutory Ledgers"
+          },
+          {
             "module": "test_general_ledger_audit.py",
             "test_count": 11,
             "status": "PASS",
@@ -183,6 +219,12 @@
           {
             "module": "test_iac_orchestration.py",
             "test_count": 14,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_k8s_operator.py",
+            "test_count": 12,
             "status": "PASS",
             "coverage_domain": "Core Architecture & MCP Harness"
           },
@@ -209,6 +251,12 @@
             "test_count": 15,
             "status": "PASS",
             "coverage_domain": "Air-Gapped Isolation & Orchestration"
+          },
+          {
+            "module": "test_quality_of_earnings.py",
+            "test_count": 7,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
             "module": "test_rate_limiting_circuit_breaker.py",
@@ -265,10 +313,22 @@
             "coverage_domain": "Adversarial Fuzzing & SAST/DAST"
           },
           {
+            "module": "test_service_mesh_traffic_controller.py",
+            "test_count": 12,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
             "module": "test_sms_whatsapp_recovery.py",
             "test_count": 9,
             "status": "PASS",
             "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_soc2_evidence_collector.py",
+            "test_count": 10,
+            "status": "PASS",
+            "coverage_domain": "Regulatory Compliance & Invariants"
           },
           {
             "module": "test_social_proof_toast.py",
@@ -284,6 +344,12 @@
           },
           {
             "module": "test_sox_soc1_controls.py",
+            "test_count": 10,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_spiffe_spire_workload_identity.py",
             "test_count": 10,
             "status": "PASS",
             "coverage_domain": "Core Architecture & MCP Harness"
@@ -315,6 +381,12 @@
           {
             "module": "test_technical_sales_chat.py",
             "test_count": 8,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_vendor_risk_solvency.py",
+            "test_count": 7,
             "status": "PASS",
             "coverage_domain": "Core Architecture & MCP Harness"
           },
@@ -358,7 +430,7 @@
       "weight_percentage": 15,
       "score": 100.0,
       "metrics": {
-        "redos_execution_time_ms": 0.0079,
+        "redos_execution_time_ms": 0.0062,
         "redos_ceiling_limit_ms": 1.0,
         "redos_immunity": "PASS",
         "ast_max_recursion_depth": 30,

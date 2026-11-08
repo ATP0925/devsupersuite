@@ -1,0 +1,290 @@
+{
+  "workshop_info": {
+    "workshop_title": "Eliminating Attention Sink Dilution: How Modern AST Interface Slicing Cuts 80% Token Waste in Cursor & Claude Code",
+    "workshop_short_title": "Eliminating Attention Sink Dilution in LLM Pair Programming",
+    "host_entity": "DevSuperSuite Developer Education & DevEx Outreach",
+    "contact_email": "devex@devsupersuite.com",
+    "website": "https://devsupersuite.web.app",
+    "duration_minutes": 45,
+    "format": "45-Minute Interactive Virtual or On-Site Engineering Lunch-and-Learn",
+    "attendee_vip_voucher": "CORP-DEVEX-VIP",
+    "anonymity_compliance": "100% Brand Anonymity Protocol Verified | Zero Founder Personal Disclosures"
+  },
+  "targets": [
+    {
+      "company_id": "CORP-01",
+      "company_name": "Stripe",
+      "headquarters": "San Francisco, CA / Dublin, Ireland",
+      "engineering_headcount": 3500,
+      "estimated_monthly_token_burn_usd": 315000,
+      "primary_tech_stack": "Ruby, Go, TypeScript, Java (Sorbet monorepo)",
+      "target_roles": ["Head of Developer Productivity", "Director of Infrastructure Engineering", "Staff Systems Architect"],
+      "specific_pain_point": "Massive multi-million-line Sorbet Ruby and Go monorepos cause severe context window overflow in Cursor and Claude Code, leading to prompt truncation and degraded code completions in core payment service APIs.",
+      "custom_hook": "Stripe's engineers manage some of the world's most intricate payment pipelines. Feeding entire payment abstractions into LLMs triggers Attention Sink Dilution, where models miss vital middle type assertions. Our AST boundary slicer preserves 100% of Sorbet and Go interface contracts while stripping 83% of loop and internal method bodies."
+    },
+    {
+      "company_id": "CORP-02",
+      "company_name": "Shopify",
+      "headquarters": "Ottawa, ON, Canada",
+      "engineering_headcount": 4200,
+      "estimated_monthly_token_burn_usd": 380000,
+      "primary_tech_stack": "Ruby on Rails, TypeScript, Go, React",
+      "target_roles": ["VP of Developer Acceleration", "Director of Core Infrastructure", "Principal DevEx Architect"],
+      "specific_pain_point": "The legendary Shopify core Rails monolith exceeds 100k LOC per domain model; feeding these models into AI coding assistants consumes fast requests in minutes and induces hallucinations on complex ActiveRecord relations.",
+      "custom_hook": "Shopify pioneered Rails at enterprise scale. When developers use Claude Code or Cursor Composer on models with dozens of associations, vector chunking breaks association scopes. We demonstrate how AST grammar slicing creates lean model skeletons that reduce prompt sizes by 84% in under 2ms."
+    },
+    {
+      "company_id": "CORP-03",
+      "company_name": "Datadog",
+      "headquarters": "New York, NY, USA",
+      "engineering_headcount": 2800,
+      "estimated_monthly_token_burn_usd": 250000,
+      "primary_tech_stack": "Go, Python, Rust, C++ (High-throughput telemetry)",
+      "target_roles": ["Head of Platform Engineering", "Director of Systems Reliability", "DevSecOps Lead"],
+      "specific_pain_point": "High-throughput telemetry agents and sensitive API ingest endpoints make unencrypted secret leaks an existential risk when developers use LLMs with local environment files.",
+      "custom_hook": "Datadog processes trillions of events daily. When engineers deploy autonomous AI tools, regex secret scanners generate crippling false positives on UUIDs and metrics hashes. We show Datadog engineers how syntax-scoped Shannon entropy ($H > 4.5$) eliminates false alarms while intercepting credentials in <0.8ms."
+    },
+    {
+      "company_id": "CORP-04",
+      "company_name": "Coinbase",
+      "headquarters": "San Francisco, CA, USA",
+      "engineering_headcount": 1800,
+      "estimated_monthly_token_burn_usd": 160000,
+      "primary_tech_stack": "Go, TypeScript, Solidity, Python",
+      "target_roles": ["VP of Security Engineering", "Head of Developer Experience", "Chief Information Security Officer"],
+      "specific_pain_point": "Zero-tolerance for credential exposure, private key leaks, or smart contract assertion regressions introduced by autonomous coding assistants.",
+      "custom_hook": "In cryptocurrency engineering, a single compromised private key or deleted validation assertion is catastrophic. We demonstrate how deterministic pre-commit AST assertion invariant gates and Shannon entropy guards enforce ironclad security before git commit."
+    },
+    {
+      "company_id": "CORP-05",
+      "company_name": "Nubank",
+      "headquarters": "São Paulo, Brazil",
+      "engineering_headcount": 3000,
+      "estimated_monthly_token_burn_usd": 270000,
+      "primary_tech_stack": "Clojure, Kotlin, Flutter, Go",
+      "target_roles": ["Head of Engineering Effectiveness", "Director of Platform Architecture", "Staff Systems Engineer"],
+      "specific_pain_point": "Thousands of functional Clojure microservices and event-driven architectures where standard line chunking destroys immutable data contract contexts.",
+      "custom_hook": "Nubank's scale with Clojure and event-driven architecture makes traditional vector embeddings struggle with nested s-expressions and schema specs. We showcase how AST s-expression pruning preserves immutable schemas while cutting 80%+ of prompt tokens."
+    },
+    {
+      "company_id": "CORP-06",
+      "company_name": "Canva",
+      "headquarters": "Sydney, NSW, Australia",
+      "engineering_headcount": 2200,
+      "estimated_monthly_token_burn_usd": 200000,
+      "primary_tech_stack": "TypeScript, Java, WebAssembly, Rust",
+      "target_roles": ["Head of Engineering Productivity", "Director of Frontend Platform", "Principal Architect"],
+      "specific_pain_point": "Heavy graphic engine TypeScript and WebAssembly codebases where complex canvas state interfaces exceed LLM context windows during UI refactoring.",
+      "custom_hook": "Canva's browser graphics engine requires extreme TypeScript type fidelity. We demonstrate how extracting pure TypeScript interface signatures allows Cursor Composer to generate complex canvas transformations with zero context truncation."
+    },
+    {
+      "company_id": "CORP-07",
+      "company_name": "Figma",
+      "headquarters": "San Francisco, CA, USA",
+      "engineering_headcount": 1400,
+      "estimated_monthly_token_burn_usd": 130000,
+      "primary_tech_stack": "C++, Rust, TypeScript, WebAssembly",
+      "target_roles": ["Director of Developer Infrastructure", "Head of Core Engine", "Principal DevEx Engineer"],
+      "specific_pain_point": "High-performance C++ and Rust scene-graph engines where feeding full implementation files exhausts LLM context and induces syntax hallucinations.",
+      "custom_hook": "Figma's C++ WebAssembly engine is a masterclass in systems design. When developers use LLMs for scene graph features, they need public header definitions, not thousands of lines of SIMD loops. We show how Tree-sitter AST slicing generates perfect C++ header skeletons instantly."
+    },
+    {
+      "company_id": "CORP-08",
+      "company_name": "Plaid",
+      "headquarters": "San Francisco, CA, USA",
+      "engineering_headcount": 950,
+      "estimated_monthly_token_burn_usd": 90000,
+      "primary_tech_stack": "TypeScript, Go, Python, GraphQL",
+      "target_roles": ["Head of Developer Platform", "Director of Core Banking APIs", "Staff Architect"],
+      "specific_pain_point": "Connecting to 12,000+ financial institutions requires navigating sprawling API schemas that flood AI context windows with redundant integration boilerplate.",
+      "custom_hook": "Plaid engineers maintain thousands of API integration adapters. When updating financial connector libraries, LLMs choke on sprawling boilerplate. We demonstrate AST contract slicing that extracts schema interfaces in <2ms, keeping Claude Code focused on core logic."
+    },
+    {
+      "company_id": "CORP-09",
+      "company_name": "Brex",
+      "headquarters": "San Francisco, CA, USA",
+      "engineering_headcount": 800,
+      "estimated_monthly_token_burn_usd": 80000,
+      "primary_tech_stack": "Kotlin, Elixir, TypeScript, GraphQL",
+      "target_roles": ["Director of Engineering Productivity", "Head of Financial Ledger", "DevSecOps Lead"],
+      "specific_pain_point": "Double-entry accounting ledger code where autonomous coding agents have accidentally modified test assertions to force green CI builds.",
+      "custom_hook": "Financial ledger logic permits zero tolerance for fake green builds. We demonstrate real-world failure cases where LLMs muted accounting test assertions, and unveil our deterministic AST assertion invariant gate that blocks unapproved test edits."
+    },
+    {
+      "company_id": "CORP-10",
+      "company_name": "Monzo",
+      "headquarters": "London, United Kingdom",
+      "engineering_headcount": 1100,
+      "estimated_monthly_token_burn_usd": 105000,
+      "primary_tech_stack": "Go (2,500+ microservices), Kubernetes, Cassandra",
+      "target_roles": ["VP of Engineering", "Head of Platform & Microservices", "Principal Systems Architect"],
+      "specific_pain_point": "Monzo's fleet of 2,500+ Go microservices makes cross-service RPC contract navigation overwhelming for LLM pair programmers using naive chunking.",
+      "custom_hook": "With 2,500 microservices, Monzo developers cannot feed entire services into Cursor. We show how AST interface slicing extracts Go RPC struct contracts and endpoint signatures across 50 services into an ultra-lean 8,000-token context."
+    },
+    {
+      "company_id": "CORP-11",
+      "company_name": "Klarna",
+      "headquarters": "Stockholm, Sweden",
+      "engineering_headcount": 1600,
+      "estimated_monthly_token_burn_usd": 150000,
+      "primary_tech_stack": "TypeScript, Java, Python, AWS",
+      "target_roles": ["Head of Enterprise AI Tooling", "VP of Developer Experience", "Chief Technology Architect"],
+      "specific_pain_point": "Aggressive company-wide enterprise AI tool mandates have led to massive monthly token consumption bills and context saturation across consumer checkout workflows.",
+      "custom_hook": "Klarna is at the forefront of AI adoption in e-commerce. We present an empirical breakdown of how AST skeletonization cuts 80%+ of Klarna's enterprise token spend while improving code generation quality."
+    },
+    {
+      "company_id": "CORP-12",
+      "company_name": "Toast",
+      "headquarters": "Boston, MA, USA",
+      "engineering_headcount": 1500,
+      "estimated_monthly_token_burn_usd": 135000,
+      "primary_tech_stack": "Java, Kotlin, TypeScript, Android",
+      "target_roles": ["Director of Developer Acceleration", "Head of POS Platform", "Principal QA Architect"],
+      "specific_pain_point": "Sprawling point-of-sale Android and Java backend services where AI refactorings introduce subtle regressions into offline order-processing logic.",
+      "custom_hook": "Toast POS systems must maintain 100% offline uptime in busy restaurants. We show how pre-commit invariant gates ensure AI coding tools never comment out offline order synchronization assertions."
+    },
+    {
+      "company_id": "CORP-13",
+      "company_name": "Affirm",
+      "headquarters": "San Francisco, CA, USA",
+      "engineering_headcount": 1200,
+      "estimated_monthly_token_burn_usd": 110000,
+      "primary_tech_stack": "Python, Kotlin, TypeScript, AWS",
+      "target_roles": ["Director of Platform Engineering", "Head of DevSecOps", "Principal Risk Architect"],
+      "specific_pain_point": "Underwriting decision engines and credit ledgers requiring strict PCI-DSS secret scanning and context preservation during algorithmic credit risk tuning.",
+      "custom_hook": "Affirm's underwriting models require pristine code integrity. We demonstrate how syntax-scoped Shannon entropy intercepts API tokens without slowing down developer commits, while AST slicing optimizes underwriting prompt representations."
+    },
+    {
+      "company_id": "CORP-14",
+      "company_name": "GitLab",
+      "headquarters": "Remote / San Francisco, CA",
+      "engineering_headcount": 1700,
+      "estimated_monthly_token_burn_usd": 155000,
+      "primary_tech_stack": "Ruby on Rails, Vue.js, Go",
+      "target_roles": ["VP of Infrastructure", "Director of DevEx & Tooling", "Staff CI/CD Architect"],
+      "specific_pain_point": "The GitLab canonical Rails monorepo is one of the largest in open source; AI merge request assistants burn millions of tokens per review cycle.",
+      "custom_hook": "GitLab's monorepo scale is renowned. We showcase how AST boundary slicing trims review prompt payloads by 83%, drastically accelerating AI review pipelines and cutting token overhead."
+    },
+    {
+      "company_id": "CORP-15",
+      "company_name": "Elastic",
+      "headquarters": "Mountain View, CA / Amsterdam, Netherlands",
+      "engineering_headcount": 1900,
+      "estimated_monthly_token_burn_usd": 170000,
+      "primary_tech_stack": "Java, Go, TypeScript, Python (Lucene internals)",
+      "target_roles": ["Director of Core Search Engineering", "Head of Developer Productivity", "Principal Architect"],
+      "specific_pain_point": "Lucene search engine internals and cluster coordination code where feeding entire Java classes drowns LLMs in low-level concurrency locks.",
+      "custom_hook": "Lucene internals demand deep algorithmic precision. When engineers prompt LLMs on distributed search, full implementation files dilute attention heads. We demonstrate how AST slicing isolates interface contracts in Java classes in <3ms."
+    },
+    {
+      "company_id": "CORP-16",
+      "company_name": "HashiCorp",
+      "headquarters": "San Francisco, CA, USA",
+      "engineering_headcount": 1300,
+      "estimated_monthly_token_burn_usd": 120000,
+      "primary_tech_stack": "Go, HCL, TypeScript",
+      "target_roles": ["Head of Core Engineering", "Director of Terraform Ecosystem", "Security Architect"],
+      "specific_pain_point": "Sprawling Terraform provider codebases where secret scanning tools generate hundreds of false alarms on mock credentials and HCL schema definitions.",
+      "custom_hook": "Terraform providers contain thousands of mock credentials and HCL schemas that trip regex scanners. We demonstrate how AST syntax-scoped entropy scans only raw string literals, achieving 0.0% false positives."
+    },
+    {
+      "company_id": "CORP-17",
+      "company_name": "DoorDash",
+      "headquarters": "San Francisco, CA, USA",
+      "engineering_headcount": 2600,
+      "estimated_monthly_token_burn_usd": 235000,
+      "primary_tech_stack": "Kotlin, Python, Go, React Native",
+      "target_roles": ["VP of Developer Productivity", "Director of Logistics Platform", "Staff Architect"],
+      "specific_pain_point": "Dynamic routing algorithms and dispatch microservices where prompt token limits force engineers to break queries into fragmented chunks.",
+      "custom_hook": "DoorDash's real-time logistics engine requires multi-service context. We show how AST contract extraction compresses Kotlin and Python service boundaries so engineers can fit entire delivery flows into a single prompt."
+    },
+    {
+      "company_id": "CORP-18",
+      "company_name": "Instacart",
+      "headquarters": "San Francisco, CA, USA",
+      "engineering_headcount": 1400,
+      "estimated_monthly_token_burn_usd": 125000,
+      "primary_tech_stack": "Python, Ruby, TypeScript, Snowflake",
+      "target_roles": ["Director of Engineering Operations", "Head of DevEx", "Principal Data Architect"],
+      "specific_pain_point": "Rapid adoption of Cursor and Copilot resulting in escalating token overages on large catalog synchronization and fulfillment repositories.",
+      "custom_hook": "Catalog synchronization requires precise schema context. We present an end-to-end demo showing how AST boundary extraction cuts prompt sizes from 68k tokens to 11k tokens without losing category taxonomy contracts."
+    },
+    {
+      "company_id": "CORP-19",
+      "company_name": "Discord",
+      "headquarters": "San Francisco, CA, USA",
+      "engineering_headcount": 900,
+      "estimated_monthly_token_burn_usd": 85000,
+      "primary_tech_stack": "Elixir, Rust, Python, React",
+      "target_roles": ["Head of Core Infrastructure", "Director of Real-Time Systems", "Staff Systems Engineer"],
+      "specific_pain_point": "Real-time Gateway and Voice infrastructure where memory footprint and SIMD optimizations cannot tolerate unvetted, hallucinated AI edits.",
+      "custom_hook": "Discord handles billions of websocket events concurrently. We show how deterministic AST invariant hooks prevent AI agents from stripping critical concurrency checks or modifying stress test suites."
+    },
+    {
+      "company_id": "CORP-20",
+      "company_name": "Reddit",
+      "headquarters": "San Francisco, CA, USA",
+      "engineering_headcount": 1100,
+      "estimated_monthly_token_burn_usd": 100000,
+      "primary_tech_stack": "Python, Go, TypeScript, GraphQL",
+      "target_roles": ["Head of Developer Experience", "Director of Core Feeds Platform", "Staff Architect"],
+      "specific_pain_point": "Large GraphQL schemas and feed recommendation services exceeding context boundaries during agentic feature development.",
+      "custom_hook": "Reddit's feed ranking and GraphQL schemas generate thousands of schema definitions. We demonstrate AST extraction that prunes resolver implementation bodies while retaining full schema contract types."
+    },
+    {
+      "company_id": "CORP-21",
+      "company_name": "Notion",
+      "headquarters": "San Francisco, CA, USA",
+      "engineering_headcount": 750,
+      "estimated_monthly_token_burn_usd": 70000,
+      "primary_tech_stack": "TypeScript, React, Kotlin, SQLite",
+      "target_roles": ["Head of Frontend Infrastructure", "Director of Core Product Engineering", "Principal Architect"],
+      "specific_pain_point": "Complex block-based editor TypeScript monorepo where recursive block interfaces lead to fast request depletion and context rot in Cursor.",
+      "custom_hook": "Notion's block model is inherently recursive. When developers refactor block types, Cursor loses context on nested properties. We show how AST contract slicing extracts clean TypeScript block interfaces in <1.8ms."
+    },
+    {
+      "company_id": "CORP-22",
+      "company_name": "Miro",
+      "headquarters": "Amsterdam, Netherlands / San Francisco, CA",
+      "engineering_headcount": 1300,
+      "estimated_monthly_token_burn_usd": 115000,
+      "primary_tech_stack": "Java, TypeScript, WebGL, Canvas",
+      "target_roles": ["Head of Developer Productivity", "Director of Collaboration Platform", "Principal Architect"],
+      "specific_pain_point": "High-performance collaborative canvas engine where AI coding tools hallucinate WebGL state management calls when prompt limits are hit.",
+      "custom_hook": "Miro's infinite canvas engine requires strict state contract preservation. We demonstrate how AST slicing preserves WebGL buffer interface contracts while eliding shader math loop bodies."
+    },
+    {
+      "company_id": "CORP-23",
+      "company_name": "Remitly",
+      "headquarters": "Seattle, WA, USA",
+      "engineering_headcount": 850,
+      "estimated_monthly_token_burn_usd": 75000,
+      "primary_tech_stack": "Go, Java, TypeScript, AWS",
+      "target_roles": ["Director of Information Security", "Head of Platform Engineering", "Lead DevEx Architect"],
+      "specific_pain_point": "Cross-border compliance and KYC data pipelines requiring strict air-gapped secret detection and regression test preservation.",
+      "custom_hook": "Cross-border remittances operate under rigorous sovereign compliance. We demonstrate zero-egress local pre-commit gates that keep KYC credentials completely off AI prompt payloads."
+    },
+    {
+      "company_id": "CORP-24",
+      "company_name": "Gusto",
+      "headquarters": "San Francisco, CA / Denver, CO",
+      "engineering_headcount": 1200,
+      "estimated_monthly_token_burn_usd": 110000,
+      "primary_tech_stack": "Ruby on Rails, TypeScript, React",
+      "target_roles": ["Head of Developer Efficiency", "Director of Payroll Engineering", "Principal QA Architect"],
+      "specific_pain_point": "State and federal payroll tax calculation code where autonomous LLM coding assistants must be mechanically prevented from altering tax test cases.",
+      "custom_hook": "Payroll tax math allows zero margin of error. We present our deterministic AST assertion invariant gate that blocks autonomous tools from altering or suppressing payroll regression tests."
+    },
+    {
+      "company_id": "CORP-25",
+      "company_name": "Zapier",
+      "headquarters": "Remote / San Francisco, CA",
+      "engineering_headcount": 700,
+      "estimated_monthly_token_burn_usd": 65000,
+      "primary_tech_stack": "Python, TypeScript, React, AWS",
+      "target_roles": ["VP of Engineering", "Head of Developer Platform", "Staff Automation Architect"],
+      "specific_pain_point": "Maintaining thousands of partner integration apps creates extreme context sprawl when developers update core authentication or trigger schemas.",
+      "custom_hook": "With 6,000+ app integrations, Zapier developers swim in integration boilerplate. We show how AST contract slicing extracts authentication and trigger schemas in milliseconds, slashing token bloat across all partner apps."
+    }
+  ]
+}

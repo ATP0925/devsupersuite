@@ -3,9 +3,9 @@
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
   "name": "DevSuperSuite-agent-commerce-SPDX-SBOM",
-  "documentNamespace": "https://devsupersuite.com/spdx/agent-commerce/v2.4.0/953d8c44-c301-41a5-aeb5-c777e94681f9",
+  "documentNamespace": "https://devsupersuite.com/spdx/agent-commerce/v2.4.0/a4acb755-79ca-4c87-b83e-cf7b6ba5c0d2",
   "creationInfo": {
-    "created": "2026-11-08T10:46:34.550964+00:00",
+    "created": "2026-11-08T11:03:19.339746+00:00",
     "creators": [
       "Organization: DevSuperSuite Tech Services",
       "Tool: DevSuperSuite-SPDX-Engine-2.0",

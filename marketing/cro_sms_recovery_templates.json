@@ -1,0 +1,34 @@
+{
+  "version": "1.0.0",
+  "governing_authority": "DevSuperSuite Growth Engineering Directorate (growth@devsupersuite.com)",
+  "compliance": "TCPA & GDPR Compliant • STOP Keyword Suppression Supported • 100% Brand Anonymous",
+  "sequences": {
+    "STAGE_1_15M": {
+      "stage_id": "STAGE_1_15M",
+      "delay_minutes": 15,
+      "theme": "Technical Friction Triage & Assistance",
+      "sms_template": "DevSuperSuite: Did you experience any checkout or IDE setup friction? Our engineering team is here to assist. Resume setup: {recovery_url} Reply STOP to opt-out.",
+      "whatsapp_template": "👋 *Hi {first_name}*,\n\nWe noticed your DevSuperSuite Pro setup was paused. If you ran into monorepo configuration questions or payment issues, our customer success engineers are here to assist.\n\n👉 *Resume Pro License Setup:*\n{recovery_url}\n\n_Reply STOP to unsubscribe at any time._",
+      "discount_code": null,
+      "discount_pct": 0
+    },
+    "STAGE_2_4H": {
+      "stage_id": "STAGE_2_4H",
+      "delay_minutes": 240,
+      "theme": "Monorepo Token Waste & Context Pruning Proof",
+      "sms_template": "DevSuperSuite: Monorepos burn 40k+ tokens/prompt in Cursor. OmniKernel slices 82% of that context locally before LLMs run. Claim your workstation license: {recovery_url} Reply STOP to opt-out.",
+      "whatsapp_template": "⚡ *DevSuperSuite Engineering Digest:*\n\nDid you know unpruned context files burn ~40k prompt tokens per completion in Claude Code and Cursor? OmniKernel slices 80%+ of that context deterministically in < 15ms.\n\n👉 *Test Live AST Compression:*\nhttps://devsupersuite.web.app/#demo\n\n👉 *Activate Pro Lifetime ($29):*\n{recovery_url}\n\n_100% Offline • 30-Day Money-Back Guarantee. Reply STOP to mute._",
+      "discount_code": null,
+      "discount_pct": 0
+    },
+    "STAGE_3_24H": {
+      "stage_id": "STAGE_3_24H",
+      "delay_minutes": 1440,
+      "theme": "Final Expiry Incentive — 20% Extra OFF (RECOVER20)",
+      "sms_template": "⚡ DevSuperSuite: Final 4 hours to claim Pro Lifetime with 20% OFF coupon RECOVER20 ($23.20 instead of $29). Activate here: {recovery_url} Text STOP to opt-out.",
+      "whatsapp_template": "🚨 *Last Chance: 20% Cart Recovery Incentive*\n\nYour reserved DevSuperSuite Pro Lifetime checkout is expiring shortly. We unlocked an exclusive 20% OFF discount for you:\n\n• **Plan:** Hacker Solo Pro Lifetime\n• **Offer Price:** $23.20 USD (was $29)\n• **Coupon Code:** `RECOVER20`\n• **Terms:** 100% Offline • Ed25519 Standalone Keys • 30-Day Guarantee\n\n👉 *Claim Your 20% Parity Discount:*\n{recovery_url}\n\n_Reply STOP to unsubscribe._",
+      "discount_code": "RECOVER20",
+      "discount_pct": 20
+    }
+  }
+}

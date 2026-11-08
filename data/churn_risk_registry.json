@@ -1,0 +1,78 @@
+[
+  {
+    "customer_email": "dev.marcus@quantumcloud.de",
+    "customer_name": "Marcus Vance",
+    "plan_name": "Hacker Solo",
+    "primary_language": "Python",
+    "ide_environment": "Cursor",
+    "days_inactive": 1.5,
+    "ast_volume_drop_pct": 5.0,
+    "churn_risk_score": 1.5,
+    "risk_tier": "LOW",
+    "recommended_action": "MONITOR_HEALTHY",
+    "breakdown": {
+      "recency_penalty": 0.0,
+      "ast_volume_drop_penalty": 1.5,
+      "precommit_drop_penalty": 0.0,
+      "crash_rate_penalty": 0.0
+    },
+    "audited_at": "2026-11-08T11:03:12.632594+00:00"
+  },
+  {
+    "customer_email": "techlead.priya@fintechscale.in",
+    "customer_name": "Priya Sharma",
+    "plan_name": "Team 5-Seat",
+    "primary_language": "TypeScript",
+    "ide_environment": "Claude Code",
+    "days_inactive": 5.0,
+    "ast_volume_drop_pct": 45.0,
+    "churn_risk_score": 32.7,
+    "risk_tier": "MEDIUM",
+    "recommended_action": "LANGUAGE_OPTIMIZATION_NURTURE",
+    "breakdown": {
+      "recency_penalty": 10.0,
+      "ast_volume_drop_penalty": 13.5,
+      "precommit_drop_penalty": 8.0,
+      "crash_rate_penalty": 1.2
+    },
+    "audited_at": "2026-11-08T11:03:12.632594+00:00"
+  },
+  {
+    "customer_email": "kenji.sato@systems-tokyo.jp",
+    "customer_name": "Kenji Sato",
+    "plan_name": "Hacker Solo",
+    "primary_language": "Rust",
+    "ide_environment": "Windsurf",
+    "days_inactive": 11.0,
+    "ast_volume_drop_pct": 85.0,
+    "churn_risk_score": 73.0,
+    "risk_tier": "HIGH",
+    "recommended_action": "OFFER_50_PCT_TEAM_UPGRADE",
+    "breakdown": {
+      "recency_penalty": 30.0,
+      "ast_volume_drop_penalty": 25.5,
+      "precommit_drop_penalty": 15.0,
+      "crash_rate_penalty": 2.5
+    },
+    "audited_at": "2026-11-08T11:03:12.632594+00:00"
+  },
+  {
+    "customer_email": "alex.vance@legacycorp.org",
+    "customer_name": "Alex Vance",
+    "plan_name": "Hacker Solo",
+    "primary_language": "C++",
+    "ide_environment": "VS Code",
+    "days_inactive": 18.0,
+    "ast_volume_drop_pct": 100.0,
+    "churn_risk_score": 98.0,
+    "risk_tier": "CRITICAL",
+    "recommended_action": "DEDICATED_ARCHITECT_TRIAGE_CALL",
+    "breakdown": {
+      "recency_penalty": 40.0,
+      "ast_volume_drop_penalty": 30.0,
+      "precommit_drop_penalty": 20.0,
+      "crash_rate_penalty": 8.0
+    },
+    "audited_at": "2026-11-08T11:03:12.632594+00:00"
+  }
+]

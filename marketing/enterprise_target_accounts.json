@@ -1,0 +1,1274 @@
+{
+  "metadata": {
+    "campaign": "Enterprise Procurement & High-Growth AI Startup Outreach (Series A/B/C ICP)",
+    "brand_entity": "DevSuperSuite Enterprise Solutions",
+    "sender_inbox": "enterprise@devsupersuite.com",
+    "generated_at": "2026-11-08T09:43:10.790400+00:00",
+    "total_accounts": 30,
+    "total_engineers_in_scope": 3735,
+    "total_annual_token_savings_pipeline": "$1,868,925",
+    "compliance": "100% Brand Anonymity Guaranteed | Zero Founder Personal Data"
+  },
+  "accounts": [
+    {
+      "account_id": "ENT-001",
+      "company_name": "Synthesia",
+      "domain": "synthesia.io",
+      "industry": "AI Video Generation",
+      "stage": "Series C",
+      "headquarters": "London / NYC",
+      "engineering_headcount": 160,
+      "core_tech_stack": "Python, TypeScript, React, PyTorch",
+      "target_buyer_personas": [
+        {
+          "title": "VP of Engineering",
+          "focus": "Developer Productivity & Cloud/AI Budgets"
+        },
+        {
+          "title": "Chief Technology Officer (CTO)",
+          "focus": "System Architecture & Unit Economics"
+        },
+        {
+          "title": "Chief Information Security Officer (CISO)",
+          "focus": "Zero-Day Secret Scanning & Git Pre-Commit Security"
+        },
+        {
+          "title": "Head of Platform / DevEx",
+          "focus": "Cursor / Claude Code Tooling & Context Rot"
+        }
+      ],
+      "token_economics": {
+        "engineers": 160,
+        "daily_tokens_per_eng": 810000,
+        "current_annual_token_spend_est": 102643,
+        "annual_tokens_saved": 26687232000,
+        "annual_dollar_savings": 80061,
+        "monthly_dollar_savings": 6671,
+        "enterprise_pilot_fee": 54000,
+        "net_roi_multiple": "1.5x"
+      },
+      "cadence_status": "STAGED",
+      "last_touch": null,
+      "next_scheduled_touch": "Day 1 (Touch 1: Unallocated Token Tax)",
+      "outreach_contact_channel": "enterprise@devsupersuite.com"
+    },
+    {
+      "account_id": "ENT-002",
+      "company_name": "PostHog",
+      "domain": "posthog.com",
+      "industry": "Dev Analytics & Feature Flags",
+      "stage": "Series B",
+      "headquarters": "San Francisco, CA",
+      "engineering_headcount": 65,
+      "core_tech_stack": "Python, TypeScript, ClickHouse, Django",
+      "target_buyer_personas": [
+        {
+          "title": "VP of Engineering",
+          "focus": "Developer Productivity & Cloud/AI Budgets"
+        },
+        {
+          "title": "Chief Technology Officer (CTO)",
+          "focus": "System Architecture & Unit Economics"
+        },
+        {
+          "title": "Chief Information Security Officer (CISO)",
+          "focus": "Zero-Day Secret Scanning & Git Pre-Commit Security"
+        },
+        {
+          "title": "Head of Platform / DevEx",
+          "focus": "Cursor / Claude Code Tooling & Context Rot"
+        }
+      ],
+      "token_economics": {
+        "engineers": 65,
+        "daily_tokens_per_eng": 810000,
+        "current_annual_token_spend_est": 41698,
+        "annual_tokens_saved": 10841688000,
+        "annual_dollar_savings": 32525,
+        "monthly_dollar_savings": 2710,
+        "enterprise_pilot_fee": 28000,
+        "net_roi_multiple": "1.2x"
+      },
+      "cadence_status": "STAGED",
+      "last_touch": null,
+      "next_scheduled_touch": "Day 1 (Touch 1: Unallocated Token Tax)",
+      "outreach_contact_channel": "enterprise@devsupersuite.com"
+    },
+    {
+      "account_id": "ENT-003",
+      "company_name": "Modal Labs",
+      "domain": "modal.com",
+      "industry": "Cloud GPU & Serverless AI",
+      "stage": "Series A",
+      "headquarters": "San Francisco, CA",
+      "engineering_headcount": 45,
+      "core_tech_stack": "Python, Rust, Kubernetes",
+      "target_buyer_personas": [
+        {
+          "title": "VP of Engineering",
+          "focus": "Developer Productivity & Cloud/AI Budgets"
+        },
+        {
+          "title": "Chief Technology Officer (CTO)",
+          "focus": "System Architecture & Unit Economics"
+        },
+        {
+          "title": "Chief Information Security Officer (CISO)",
+          "focus": "Zero-Day Secret Scanning & Git Pre-Commit Security"
+        },
+        {
+          "title": "Head of Platform / DevEx",
+          "focus": "Cursor / Claude Code Tooling & Context Rot"
+        }
+      ],
+      "token_economics": {
+        "engineers": 45,
+        "daily_tokens_per_eng": 810000,
+        "current_annual_token_spend_est": 28868,
+        "annual_tokens_saved": 7505784000,
+        "annual_dollar_savings": 22517,
+        "monthly_dollar_savings": 1876,
+        "enterprise_pilot_fee": 28000,
+        "net_roi_multiple": "0.8x"
+      },
+      "cadence_status": "STAGED",
+      "last_touch": null,
+      "next_scheduled_touch": "Day 1 (Touch 1: Unallocated Token Tax)",
+      "outreach_contact_channel": "enterprise@devsupersuite.com"
+    },
+    {
+      "account_id": "ENT-004",
+      "company_name": "Linear",
+      "domain": "linear.app",
+      "industry": "Issue Tracking & Dev Tooling",
+      "stage": "Series B",
+      "headquarters": "San Francisco, CA",
+      "engineering_headcount": 55,
+      "core_tech_stack": "TypeScript, React, Node.js, GraphQL",
+      "target_buyer_personas": [
+        {
+          "title": "VP of Engineering",
+          "focus": "Developer Productivity & Cloud/AI Budgets"
+        },
+        {
+          "title": "Chief Technology Officer (CTO)",
+          "focus": "System Architecture & Unit Economics"
+        },
+        {
+          "title": "Chief Information Security Officer (CISO)",
+          "focus": "Zero-Day Secret Scanning & Git Pre-Commit Security"
+        },
+        {
+          "title": "Head of Platform / DevEx",
+          "focus": "Cursor / Claude Code Tooling & Context Rot"
+        }
+      ],
+      "token_economics": {
+        "engineers": 55,
+        "daily_tokens_per_eng": 810000,
+        "current_annual_token_spend_est": 35283,
+        "annual_tokens_saved": 9173736000,
+        "annual_dollar_savings": 27521,
+        "monthly_dollar_savings": 2293,
+        "enterprise_pilot_fee": 28000,
+        "net_roi_multiple": "1.0x"
+      },
+      "cadence_status": "STAGED",
+      "last_touch": null,
+      "next_scheduled_touch": "Day 1 (Touch 1: Unallocated Token Tax)",
+      "outreach_contact_channel": "enterprise@devsupersuite.com"
+    },
+    {
+      "account_id": "ENT-005",
+      "company_name": "Resend",
+      "domain": "resend.com",
+      "industry": "Developer Email Infrastructure",
+      "stage": "Series A",
+      "headquarters": "San Francisco, CA",
+      "engineering_headcount": 35,
+      "core_tech_stack": "TypeScript, React, Next.js, Rust",
+      "target_buyer_personas": [
+        {
+          "title": "VP of Engineering",
+          "focus": "Developer Productivity & Cloud/AI Budgets"
+        },
+        {
+          "title": "Chief Technology Officer (CTO)",
+          "focus": "System Architecture & Unit Economics"
+        },
+        {
+          "title": "Chief Information Security Officer (CISO)",
+          "focus": "Zero-Day Secret Scanning & Git Pre-Commit Security"
+        },
+        {
+          "title": "Head of Platform / DevEx",
+          "focus": "Cursor / Claude Code Tooling & Context Rot"
+        }
+      ],
+      "token_economics": {
+        "engineers": 35,
+        "daily_tokens_per_eng": 810000,
+        "current_annual_token_spend_est": 22453,
+        "annual_tokens_saved": 5837832000,
+        "annual_dollar_savings": 17513,
+        "monthly_dollar_savings": 1459,
+        "enterprise_pilot_fee": 28000,
+        "net_roi_multiple": "0.6x"
+      },
+      "cadence_status": "STAGED",
+      "last_touch": null,
+      "next_scheduled_touch": "Day 1 (Touch 1: Unallocated Token Tax)",
+      "outreach_contact_channel": "enterprise@devsupersuite.com"
+    },
+    {
+      "account_id": "ENT-006",
+      "company_name": "Supabase",
+      "domain": "supabase.com",
+      "industry": "Open Source Backend / DB",
+      "stage": "Series B",
+      "headquarters": "Remote / Singapore",
+      "engineering_headcount": 120,
+      "core_tech_stack": "PostgreSQL, Elixir, TypeScript, Go",
+      "target_buyer_personas": [
+        {
+          "title": "VP of Engineering",
+          "focus": "Developer Productivity & Cloud/AI Budgets"
+        },
+        {
+          "title": "Chief Technology Officer (CTO)",
+          "focus": "System Architecture & Unit Economics"
+        },
+        {
+          "title": "Chief Information Security Officer (CISO)",
+          "focus": "Zero-Day Secret Scanning & Git Pre-Commit Security"
+        },
+        {
+          "title": "Head of Platform / DevEx",
+          "focus": "Cursor / Claude Code Tooling & Context Rot"
+        }
+      ],
+      "token_economics": {
+        "engineers": 120,
+        "daily_tokens_per_eng": 810000,
+        "current_annual_token_spend_est": 76982,
+        "annual_tokens_saved": 20015424000,
+        "annual_dollar_savings": 60046,
+        "monthly_dollar_savings": 5003,
+        "enterprise_pilot_fee": 54000,
+        "net_roi_multiple": "1.1x"
+      },
+      "cadence_status": "STAGED",
+      "last_touch": null,
+      "next_scheduled_touch": "Day 1 (Touch 1: Unallocated Token Tax)",
+      "outreach_contact_channel": "enterprise@devsupersuite.com"
+    },
+    {
+      "account_id": "ENT-007",
+      "company_name": "LangChain",
+      "domain": "langchain.com",
+      "industry": "LLM Orchestration Framework",
+      "stage": "Series A",
+      "headquarters": "San Francisco, CA",
+      "engineering_headcount": 50,
+      "core_tech_stack": "Python, TypeScript, LangSmith",
+      "target_buyer_personas": [
+        {
+          "title": "VP of Engineering",
+          "focus": "Developer Productivity & Cloud/AI Budgets"
+        },
+        {
+          "title": "Chief Technology Officer (CTO)",
+          "focus": "System Architecture & Unit Economics"
+        },
+        {
+          "title": "Chief Information Security Officer (CISO)",
+          "focus": "Zero-Day Secret Scanning & Git Pre-Commit Security"
+        },
+        {
+          "title": "Head of Platform / DevEx",
+          "focus": "Cursor / Claude Code Tooling & Context Rot"
+        }
+      ],
+      "token_economics": {
+        "engineers": 50,
+        "daily_tokens_per_eng": 810000,
+        "current_annual_token_spend_est": 32076,
+        "annual_tokens_saved": 8339760000,
+        "annual_dollar_savings": 25019,
+        "monthly_dollar_savings": 2084,
+        "enterprise_pilot_fee": 28000,
+        "net_roi_multiple": "0.9x"
+      },
+      "cadence_status": "STAGED",
+      "last_touch": null,
+      "next_scheduled_touch": "Day 1 (Touch 1: Unallocated Token Tax)",
+      "outreach_contact_channel": "enterprise@devsupersuite.com"
+    },
+    {
+      "account_id": "ENT-008",
+      "company_name": "Weaviate",
+      "domain": "weaviate.io",
+      "industry": "AI Vector Database",
+      "stage": "Series B",
+      "headquarters": "Amsterdam / NYC",
+      "engineering_headcount": 70,
+      "core_tech_stack": "Go, Python, Vector Search",
+      "target_buyer_personas": [
+        {
+          "title": "VP of Engineering",
+          "focus": "Developer Productivity & Cloud/AI Budgets"
+        },
+        {
+          "title": "Chief Technology Officer (CTO)",
+          "focus": "System Architecture & Unit Economics"
+        },
+        {
+          "title": "Chief Information Security Officer (CISO)",
+          "focus": "Zero-Day Secret Scanning & Git Pre-Commit Security"
+        },
+        {
+          "title": "Head of Platform / DevEx",
+          "focus": "Cursor / Claude Code Tooling & Context Rot"
+        }
+      ],
+      "token_economics": {
+        "engineers": 70,
+        "daily_tokens_per_eng": 810000,
+        "current_annual_token_spend_est": 44906,
+        "annual_tokens_saved": 11675664000,
+        "annual_dollar_savings": 35026,
+        "monthly_dollar_savings": 2918,
+        "enterprise_pilot_fee": 28000,
+        "net_roi_multiple": "1.3x"
+      },
+      "cadence_status": "STAGED",
+      "last_touch": null,
+      "next_scheduled_touch": "Day 1 (Touch 1: Unallocated Token Tax)",
+      "outreach_contact_channel": "enterprise@devsupersuite.com"
+    },
+    {
+      "account_id": "ENT-009",
+      "company_name": "Pinecone",
+      "domain": "pinecone.io",
+      "industry": "Vector Search Infrastructure",
+      "stage": "Series B",
+      "headquarters": "San Francisco, CA",
+      "engineering_headcount": 140,
+      "core_tech_stack": "Rust, C++, Go, Python",
+      "target_buyer_personas": [
+        {
+          "title": "VP of Engineering",
+          "focus": "Developer Productivity & Cloud/AI Budgets"
+        },
+        {
+          "title": "Chief Technology Officer (CTO)",
+          "focus": "System Architecture & Unit Economics"
+        },
+        {
+          "title": "Chief Information Security Officer (CISO)",
+          "focus": "Zero-Day Secret Scanning & Git Pre-Commit Security"
+        },
+        {
+          "title": "Head of Platform / DevEx",
+          "focus": "Cursor / Claude Code Tooling & Context Rot"
+        }
+      ],
+      "token_economics": {
+        "engineers": 140,
+        "daily_tokens_per_eng": 810000,
+        "current_annual_token_spend_est": 89812,
+        "annual_tokens_saved": 23351328000,
+        "annual_dollar_savings": 70053,
+        "monthly_dollar_savings": 5837,
+        "enterprise_pilot_fee": 54000,
+        "net_roi_multiple": "1.3x"
+      },
+      "cadence_status": "STAGED",
+      "last_touch": null,
+      "next_scheduled_touch": "Day 1 (Touch 1: Unallocated Token Tax)",
+      "outreach_contact_channel": "enterprise@devsupersuite.com"
+    },
+    {
+      "account_id": "ENT-010",
+      "company_name": "Weights & Biases",
+      "domain": "wandb.ai",
+      "industry": "MLOps & AI Observability",
+      "stage": "Series C",
+      "headquarters": "San Francisco, CA",
+      "engineering_headcount": 180,
+      "core_tech_stack": "Python, Go, React, Kubernetes",
+      "target_buyer_personas": [
+        {
+          "title": "VP of Engineering",
+          "focus": "Developer Productivity & Cloud/AI Budgets"
+        },
+        {
+          "title": "Chief Technology Officer (CTO)",
+          "focus": "System Architecture & Unit Economics"
+        },
+        {
+          "title": "Chief Information Security Officer (CISO)",
+          "focus": "Zero-Day Secret Scanning & Git Pre-Commit Security"
+        },
+        {
+          "title": "Head of Platform / DevEx",
+          "focus": "Cursor / Claude Code Tooling & Context Rot"
+        }
+      ],
+      "token_economics": {
+        "engineers": 180,
+        "daily_tokens_per_eng": 810000,
+        "current_annual_token_spend_est": 115473,
+        "annual_tokens_saved": 30023136000,
+        "annual_dollar_savings": 90069,
+        "monthly_dollar_savings": 7505,
+        "enterprise_pilot_fee": 54000,
+        "net_roi_multiple": "1.7x"
+      },
+      "cadence_status": "STAGED",
+      "last_touch": null,
+      "next_scheduled_touch": "Day 1 (Touch 1: Unallocated Token Tax)",
+      "outreach_contact_channel": "enterprise@devsupersuite.com"
+    },
+    {
+      "account_id": "ENT-011",
+      "company_name": "Replit",
+      "domain": "replit.com",
+      "industry": "AI Cloud Development Platform",
+      "stage": "Series B",
+      "headquarters": "San Francisco, CA",
+      "engineering_headcount": 110,
+      "core_tech_stack": "Python, Go, TypeScript, React",
+      "target_buyer_personas": [
+        {
+          "title": "VP of Engineering",
+          "focus": "Developer Productivity & Cloud/AI Budgets"
+        },
+        {
+          "title": "Chief Technology Officer (CTO)",
+          "focus": "System Architecture & Unit Economics"
+        },
+        {
+          "title": "Chief Information Security Officer (CISO)",
+          "focus": "Zero-Day Secret Scanning & Git Pre-Commit Security"
+        },
+        {
+          "title": "Head of Platform / DevEx",
+          "focus": "Cursor / Claude Code Tooling & Context Rot"
+        }
+      ],
+      "token_economics": {
+        "engineers": 110,
+        "daily_tokens_per_eng": 810000,
+        "current_annual_token_spend_est": 70567,
+        "annual_tokens_saved": 18347472000,
+        "annual_dollar_savings": 55042,
+        "monthly_dollar_savings": 4586,
+        "enterprise_pilot_fee": 54000,
+        "net_roi_multiple": "1.0x"
+      },
+      "cadence_status": "STAGED",
+      "last_touch": null,
+      "next_scheduled_touch": "Day 1 (Touch 1: Unallocated Token Tax)",
+      "outreach_contact_channel": "enterprise@devsupersuite.com"
+    },
+    {
+      "account_id": "ENT-012",
+      "company_name": "Railway",
+      "domain": "railway.com",
+      "industry": "Cloud Deployment Infrastructure",
+      "stage": "Series A",
+      "headquarters": "San Francisco, CA",
+      "engineering_headcount": 32,
+      "core_tech_stack": "Rust, Go, TypeScript, GraphQL",
+      "target_buyer_personas": [
+        {
+          "title": "VP of Engineering",
+          "focus": "Developer Productivity & Cloud/AI Budgets"
+        },
+        {
+          "title": "Chief Technology Officer (CTO)",
+          "focus": "System Architecture & Unit Economics"
+        },
+        {
+          "title": "Chief Information Security Officer (CISO)",
+          "focus": "Zero-Day Secret Scanning & Git Pre-Commit Security"
+        },
+        {
+          "title": "Head of Platform / DevEx",
+          "focus": "Cursor / Claude Code Tooling & Context Rot"
+        }
+      ],
+      "token_economics": {
+        "engineers": 32,
+        "daily_tokens_per_eng": 810000,
+        "current_annual_token_spend_est": 20528,
+        "annual_tokens_saved": 5337446400,
+        "annual_dollar_savings": 16012,
+        "monthly_dollar_savings": 1334,
+        "enterprise_pilot_fee": 28000,
+        "net_roi_multiple": "0.6x"
+      },
+      "cadence_status": "STAGED",
+      "last_touch": null,
+      "next_scheduled_touch": "Day 1 (Touch 1: Unallocated Token Tax)",
+      "outreach_contact_channel": "enterprise@devsupersuite.com"
+    },
+    {
+      "account_id": "ENT-013",
+      "company_name": "Retool",
+      "domain": "retool.com",
+      "industry": "Internal Tooling & AI Workflows",
+      "stage": "Series C",
+      "headquarters": "San Francisco, CA",
+      "engineering_headcount": 220,
+      "core_tech_stack": "TypeScript, React, Node.js, PostgreSQL",
+      "target_buyer_personas": [
+        {
+          "title": "VP of Engineering",
+          "focus": "Developer Productivity & Cloud/AI Budgets"
+        },
+        {
+          "title": "Chief Technology Officer (CTO)",
+          "focus": "System Architecture & Unit Economics"
+        },
+        {
+          "title": "Chief Information Security Officer (CISO)",
+          "focus": "Zero-Day Secret Scanning & Git Pre-Commit Security"
+        },
+        {
+          "title": "Head of Platform / DevEx",
+          "focus": "Cursor / Claude Code Tooling & Context Rot"
+        }
+      ],
+      "token_economics": {
+        "engineers": 220,
+        "daily_tokens_per_eng": 810000,
+        "current_annual_token_spend_est": 141134,
+        "annual_tokens_saved": 36694944000,
+        "annual_dollar_savings": 110084,
+        "monthly_dollar_savings": 9173,
+        "enterprise_pilot_fee": 54000,
+        "net_roi_multiple": "2.0x"
+      },
+      "cadence_status": "STAGED",
+      "last_touch": null,
+      "next_scheduled_touch": "Day 1 (Touch 1: Unallocated Token Tax)",
+      "outreach_contact_channel": "enterprise@devsupersuite.com"
+    },
+    {
+      "account_id": "ENT-014",
+      "company_name": "Ramp",
+      "domain": "ramp.com",
+      "industry": "Corporate Card & FinOps",
+      "stage": "Series D",
+      "headquarters": "New York, NY",
+      "engineering_headcount": 290,
+      "core_tech_stack": "Python, Elixir, TypeScript, React",
+      "target_buyer_personas": [
+        {
+          "title": "VP of Engineering",
+          "focus": "Developer Productivity & Cloud/AI Budgets"
+        },
+        {
+          "title": "Chief Technology Officer (CTO)",
+          "focus": "System Architecture & Unit Economics"
+        },
+        {
+          "title": "Chief Information Security Officer (CISO)",
+          "focus": "Zero-Day Secret Scanning & Git Pre-Commit Security"
+        },
+        {
+          "title": "Head of Platform / DevEx",
+          "focus": "Cursor / Claude Code Tooling & Context Rot"
+        }
+      ],
+      "token_economics": {
+        "engineers": 290,
+        "daily_tokens_per_eng": 810000,
+        "current_annual_token_spend_est": 186040,
+        "annual_tokens_saved": 48370608000,
+        "annual_dollar_savings": 145111,
+        "monthly_dollar_savings": 12092,
+        "enterprise_pilot_fee": 54000,
+        "net_roi_multiple": "2.7x"
+      },
+      "cadence_status": "STAGED",
+      "last_touch": null,
+      "next_scheduled_touch": "Day 1 (Touch 1: Unallocated Token Tax)",
+      "outreach_contact_channel": "enterprise@devsupersuite.com"
+    },
+    {
+      "account_id": "ENT-015",
+      "company_name": "Brex",
+      "domain": "brex.com",
+      "industry": "AI Financial OS & Spend Mgmt",
+      "stage": "Series D",
+      "headquarters": "San Francisco, CA",
+      "engineering_headcount": 260,
+      "core_tech_stack": "Elixir, Kotlin, TypeScript, React",
+      "target_buyer_personas": [
+        {
+          "title": "VP of Engineering",
+          "focus": "Developer Productivity & Cloud/AI Budgets"
+        },
+        {
+          "title": "Chief Technology Officer (CTO)",
+          "focus": "System Architecture & Unit Economics"
+        },
+        {
+          "title": "Chief Information Security Officer (CISO)",
+          "focus": "Zero-Day Secret Scanning & Git Pre-Commit Security"
+        },
+        {
+          "title": "Head of Platform / DevEx",
+          "focus": "Cursor / Claude Code Tooling & Context Rot"
+        }
+      ],
+      "token_economics": {
+        "engineers": 260,
+        "daily_tokens_per_eng": 810000,
+        "current_annual_token_spend_est": 166795,
+        "annual_tokens_saved": 43366752000,
+        "annual_dollar_savings": 130100,
+        "monthly_dollar_savings": 10841,
+        "enterprise_pilot_fee": 54000,
+        "net_roi_multiple": "2.4x"
+      },
+      "cadence_status": "STAGED",
+      "last_touch": null,
+      "next_scheduled_touch": "Day 1 (Touch 1: Unallocated Token Tax)",
+      "outreach_contact_channel": "enterprise@devsupersuite.com"
+    },
+    {
+      "account_id": "ENT-016",
+      "company_name": "Gusto",
+      "domain": "gusto.com",
+      "industry": "Payroll & HR Infrastructure",
+      "stage": "Series E",
+      "headquarters": "San Francisco / Denver",
+      "engineering_headcount": 280,
+      "core_tech_stack": "Ruby, TypeScript, React, Kafka",
+      "target_buyer_personas": [
+        {
+          "title": "VP of Engineering",
+          "focus": "Developer Productivity & Cloud/AI Budgets"
+        },
+        {
+          "title": "Chief Technology Officer (CTO)",
+          "focus": "System Architecture & Unit Economics"
+        },
+        {
+          "title": "Chief Information Security Officer (CISO)",
+          "focus": "Zero-Day Secret Scanning & Git Pre-Commit Security"
+        },
+        {
+          "title": "Head of Platform / DevEx",
+          "focus": "Cursor / Claude Code Tooling & Context Rot"
+        }
+      ],
+      "token_economics": {
+        "engineers": 280,
+        "daily_tokens_per_eng": 810000,
+        "current_annual_token_spend_est": 179625,
+        "annual_tokens_saved": 46702656000,
+        "annual_dollar_savings": 140107,
+        "monthly_dollar_savings": 11675,
+        "enterprise_pilot_fee": 54000,
+        "net_roi_multiple": "2.6x"
+      },
+      "cadence_status": "STAGED",
+      "last_touch": null,
+      "next_scheduled_touch": "Day 1 (Touch 1: Unallocated Token Tax)",
+      "outreach_contact_channel": "enterprise@devsupersuite.com"
+    },
+    {
+      "account_id": "ENT-017",
+      "company_name": "Plaid",
+      "domain": "plaid.com",
+      "industry": "Financial Data APIs",
+      "stage": "Series D",
+      "headquarters": "San Francisco, CA",
+      "engineering_headcount": 270,
+      "core_tech_stack": "Go, TypeScript, Python, AWS",
+      "target_buyer_personas": [
+        {
+          "title": "VP of Engineering",
+          "focus": "Developer Productivity & Cloud/AI Budgets"
+        },
+        {
+          "title": "Chief Technology Officer (CTO)",
+          "focus": "System Architecture & Unit Economics"
+        },
+        {
+          "title": "Chief Information Security Officer (CISO)",
+          "focus": "Zero-Day Secret Scanning & Git Pre-Commit Security"
+        },
+        {
+          "title": "Head of Platform / DevEx",
+          "focus": "Cursor / Claude Code Tooling & Context Rot"
+        }
+      ],
+      "token_economics": {
+        "engineers": 270,
+        "daily_tokens_per_eng": 810000,
+        "current_annual_token_spend_est": 173210,
+        "annual_tokens_saved": 45034704000,
+        "annual_dollar_savings": 135104,
+        "monthly_dollar_savings": 11258,
+        "enterprise_pilot_fee": 54000,
+        "net_roi_multiple": "2.5x"
+      },
+      "cadence_status": "STAGED",
+      "last_touch": null,
+      "next_scheduled_touch": "Day 1 (Touch 1: Unallocated Token Tax)",
+      "outreach_contact_channel": "enterprise@devsupersuite.com"
+    },
+    {
+      "account_id": "ENT-018",
+      "company_name": "Perplexity AI",
+      "domain": "perplexity.ai",
+      "industry": "Conversational AI Search",
+      "stage": "Series B",
+      "headquarters": "San Francisco, CA",
+      "engineering_headcount": 85,
+      "core_tech_stack": "Python, PyTorch, TypeScript, React",
+      "target_buyer_personas": [
+        {
+          "title": "VP of Engineering",
+          "focus": "Developer Productivity & Cloud/AI Budgets"
+        },
+        {
+          "title": "Chief Technology Officer (CTO)",
+          "focus": "System Architecture & Unit Economics"
+        },
+        {
+          "title": "Chief Information Security Officer (CISO)",
+          "focus": "Zero-Day Secret Scanning & Git Pre-Commit Security"
+        },
+        {
+          "title": "Head of Platform / DevEx",
+          "focus": "Cursor / Claude Code Tooling & Context Rot"
+        }
+      ],
+      "token_economics": {
+        "engineers": 85,
+        "daily_tokens_per_eng": 810000,
+        "current_annual_token_spend_est": 54529,
+        "annual_tokens_saved": 14177592000,
+        "annual_dollar_savings": 42532,
+        "monthly_dollar_savings": 3544,
+        "enterprise_pilot_fee": 28000,
+        "net_roi_multiple": "1.5x"
+      },
+      "cadence_status": "STAGED",
+      "last_touch": null,
+      "next_scheduled_touch": "Day 1 (Touch 1: Unallocated Token Tax)",
+      "outreach_contact_channel": "enterprise@devsupersuite.com"
+    },
+    {
+      "account_id": "ENT-019",
+      "company_name": "Cohere",
+      "domain": "cohere.com",
+      "industry": "Enterprise LLMs & Embeddings",
+      "stage": "Series C",
+      "headquarters": "Toronto / London",
+      "engineering_headcount": 190,
+      "core_tech_stack": "Python, JAX, C++, Go",
+      "target_buyer_personas": [
+        {
+          "title": "VP of Engineering",
+          "focus": "Developer Productivity & Cloud/AI Budgets"
+        },
+        {
+          "title": "Chief Technology Officer (CTO)",
+          "focus": "System Architecture & Unit Economics"
+        },
+        {
+          "title": "Chief Information Security Officer (CISO)",
+          "focus": "Zero-Day Secret Scanning & Git Pre-Commit Security"
+        },
+        {
+          "title": "Head of Platform / DevEx",
+          "focus": "Cursor / Claude Code Tooling & Context Rot"
+        }
+      ],
+      "token_economics": {
+        "engineers": 190,
+        "daily_tokens_per_eng": 810000,
+        "current_annual_token_spend_est": 121888,
+        "annual_tokens_saved": 31691088000,
+        "annual_dollar_savings": 95073,
+        "monthly_dollar_savings": 7922,
+        "enterprise_pilot_fee": 54000,
+        "net_roi_multiple": "1.8x"
+      },
+      "cadence_status": "STAGED",
+      "last_touch": null,
+      "next_scheduled_touch": "Day 1 (Touch 1: Unallocated Token Tax)",
+      "outreach_contact_channel": "enterprise@devsupersuite.com"
+    },
+    {
+      "account_id": "ENT-020",
+      "company_name": "Scale AI",
+      "domain": "scale.com",
+      "industry": "AI Training Data & Evaluation",
+      "stage": "Series E",
+      "headquarters": "San Francisco, CA",
+      "engineering_headcount": 250,
+      "core_tech_stack": "Python, TypeScript, React, Kubernetes",
+      "target_buyer_personas": [
+        {
+          "title": "VP of Engineering",
+          "focus": "Developer Productivity & Cloud/AI Budgets"
+        },
+        {
+          "title": "Chief Technology Officer (CTO)",
+          "focus": "System Architecture & Unit Economics"
+        },
+        {
+          "title": "Chief Information Security Officer (CISO)",
+          "focus": "Zero-Day Secret Scanning & Git Pre-Commit Security"
+        },
+        {
+          "title": "Head of Platform / DevEx",
+          "focus": "Cursor / Claude Code Tooling & Context Rot"
+        }
+      ],
+      "token_economics": {
+        "engineers": 250,
+        "daily_tokens_per_eng": 810000,
+        "current_annual_token_spend_est": 160380,
+        "annual_tokens_saved": 41698800000,
+        "annual_dollar_savings": 125096,
+        "monthly_dollar_savings": 10424,
+        "enterprise_pilot_fee": 54000,
+        "net_roi_multiple": "2.3x"
+      },
+      "cadence_status": "STAGED",
+      "last_touch": null,
+      "next_scheduled_touch": "Day 1 (Touch 1: Unallocated Token Tax)",
+      "outreach_contact_channel": "enterprise@devsupersuite.com"
+    },
+    {
+      "account_id": "ENT-021",
+      "company_name": "Jasper",
+      "domain": "jasper.ai",
+      "industry": "Enterprise AI Marketing Platform",
+      "stage": "Series A",
+      "headquarters": "Austin, TX",
+      "engineering_headcount": 95,
+      "core_tech_stack": "TypeScript, React, Python, AWS",
+      "target_buyer_personas": [
+        {
+          "title": "VP of Engineering",
+          "focus": "Developer Productivity & Cloud/AI Budgets"
+        },
+        {
+          "title": "Chief Technology Officer (CTO)",
+          "focus": "System Architecture & Unit Economics"
+        },
+        {
+          "title": "Chief Information Security Officer (CISO)",
+          "focus": "Zero-Day Secret Scanning & Git Pre-Commit Security"
+        },
+        {
+          "title": "Head of Platform / DevEx",
+          "focus": "Cursor / Claude Code Tooling & Context Rot"
+        }
+      ],
+      "token_economics": {
+        "engineers": 95,
+        "daily_tokens_per_eng": 810000,
+        "current_annual_token_spend_est": 60944,
+        "annual_tokens_saved": 15845544000,
+        "annual_dollar_savings": 47536,
+        "monthly_dollar_savings": 3961,
+        "enterprise_pilot_fee": 28000,
+        "net_roi_multiple": "1.7x"
+      },
+      "cadence_status": "STAGED",
+      "last_touch": null,
+      "next_scheduled_touch": "Day 1 (Touch 1: Unallocated Token Tax)",
+      "outreach_contact_channel": "enterprise@devsupersuite.com"
+    },
+    {
+      "account_id": "ENT-022",
+      "company_name": "Writer",
+      "domain": "writer.com",
+      "industry": "Enterprise Generative AI OS",
+      "stage": "Series B",
+      "headquarters": "San Francisco, CA",
+      "engineering_headcount": 115,
+      "core_tech_stack": "Python, TypeScript, React, Go",
+      "target_buyer_personas": [
+        {
+          "title": "VP of Engineering",
+          "focus": "Developer Productivity & Cloud/AI Budgets"
+        },
+        {
+          "title": "Chief Technology Officer (CTO)",
+          "focus": "System Architecture & Unit Economics"
+        },
+        {
+          "title": "Chief Information Security Officer (CISO)",
+          "focus": "Zero-Day Secret Scanning & Git Pre-Commit Security"
+        },
+        {
+          "title": "Head of Platform / DevEx",
+          "focus": "Cursor / Claude Code Tooling & Context Rot"
+        }
+      ],
+      "token_economics": {
+        "engineers": 115,
+        "daily_tokens_per_eng": 810000,
+        "current_annual_token_spend_est": 73774,
+        "annual_tokens_saved": 19181448000,
+        "annual_dollar_savings": 57544,
+        "monthly_dollar_savings": 4795,
+        "enterprise_pilot_fee": 54000,
+        "net_roi_multiple": "1.1x"
+      },
+      "cadence_status": "STAGED",
+      "last_touch": null,
+      "next_scheduled_touch": "Day 1 (Touch 1: Unallocated Token Tax)",
+      "outreach_contact_channel": "enterprise@devsupersuite.com"
+    },
+    {
+      "account_id": "ENT-023",
+      "company_name": "Baseten",
+      "domain": "baseten.co",
+      "industry": "ML Inference Infrastructure",
+      "stage": "Series B",
+      "headquarters": "San Francisco, CA",
+      "engineering_headcount": 48,
+      "core_tech_stack": "Python, Rust, Kubernetes, CUDA",
+      "target_buyer_personas": [
+        {
+          "title": "VP of Engineering",
+          "focus": "Developer Productivity & Cloud/AI Budgets"
+        },
+        {
+          "title": "Chief Technology Officer (CTO)",
+          "focus": "System Architecture & Unit Economics"
+        },
+        {
+          "title": "Chief Information Security Officer (CISO)",
+          "focus": "Zero-Day Secret Scanning & Git Pre-Commit Security"
+        },
+        {
+          "title": "Head of Platform / DevEx",
+          "focus": "Cursor / Claude Code Tooling & Context Rot"
+        }
+      ],
+      "token_economics": {
+        "engineers": 48,
+        "daily_tokens_per_eng": 810000,
+        "current_annual_token_spend_est": 30792,
+        "annual_tokens_saved": 8006169600,
+        "annual_dollar_savings": 24018,
+        "monthly_dollar_savings": 2001,
+        "enterprise_pilot_fee": 28000,
+        "net_roi_multiple": "0.9x"
+      },
+      "cadence_status": "STAGED",
+      "last_touch": null,
+      "next_scheduled_touch": "Day 1 (Touch 1: Unallocated Token Tax)",
+      "outreach_contact_channel": "enterprise@devsupersuite.com"
+    },
+    {
+      "account_id": "ENT-024",
+      "company_name": "RunPod",
+      "domain": "runpod.io",
+      "industry": "Distributed Cloud GPU",
+      "stage": "Series A",
+      "headquarters": "Mount Laurel, NJ",
+      "engineering_headcount": 40,
+      "core_tech_stack": "Python, Go, React, Linux",
+      "target_buyer_personas": [
+        {
+          "title": "VP of Engineering",
+          "focus": "Developer Productivity & Cloud/AI Budgets"
+        },
+        {
+          "title": "Chief Technology Officer (CTO)",
+          "focus": "System Architecture & Unit Economics"
+        },
+        {
+          "title": "Chief Information Security Officer (CISO)",
+          "focus": "Zero-Day Secret Scanning & Git Pre-Commit Security"
+        },
+        {
+          "title": "Head of Platform / DevEx",
+          "focus": "Cursor / Claude Code Tooling & Context Rot"
+        }
+      ],
+      "token_economics": {
+        "engineers": 40,
+        "daily_tokens_per_eng": 810000,
+        "current_annual_token_spend_est": 25660,
+        "annual_tokens_saved": 6671808000,
+        "annual_dollar_savings": 20015,
+        "monthly_dollar_savings": 1667,
+        "enterprise_pilot_fee": 28000,
+        "net_roi_multiple": "0.7x"
+      },
+      "cadence_status": "STAGED",
+      "last_touch": null,
+      "next_scheduled_touch": "Day 1 (Touch 1: Unallocated Token Tax)",
+      "outreach_contact_channel": "enterprise@devsupersuite.com"
+    },
+    {
+      "account_id": "ENT-025",
+      "company_name": "OctoAI",
+      "domain": "octoai.cloud",
+      "industry": "Cloud Inference Platform",
+      "stage": "Series B",
+      "headquarters": "Seattle, WA",
+      "engineering_headcount": 75,
+      "core_tech_stack": "C++, Python, TVM, Kubernetes",
+      "target_buyer_personas": [
+        {
+          "title": "VP of Engineering",
+          "focus": "Developer Productivity & Cloud/AI Budgets"
+        },
+        {
+          "title": "Chief Technology Officer (CTO)",
+          "focus": "System Architecture & Unit Economics"
+        },
+        {
+          "title": "Chief Information Security Officer (CISO)",
+          "focus": "Zero-Day Secret Scanning & Git Pre-Commit Security"
+        },
+        {
+          "title": "Head of Platform / DevEx",
+          "focus": "Cursor / Claude Code Tooling & Context Rot"
+        }
+      ],
+      "token_economics": {
+        "engineers": 75,
+        "daily_tokens_per_eng": 810000,
+        "current_annual_token_spend_est": 48114,
+        "annual_tokens_saved": 12509640000,
+        "annual_dollar_savings": 37528,
+        "monthly_dollar_savings": 3127,
+        "enterprise_pilot_fee": 28000,
+        "net_roi_multiple": "1.3x"
+      },
+      "cadence_status": "STAGED",
+      "last_touch": null,
+      "next_scheduled_touch": "Day 1 (Touch 1: Unallocated Token Tax)",
+      "outreach_contact_channel": "enterprise@devsupersuite.com"
+    },
+    {
+      "account_id": "ENT-026",
+      "company_name": "Together AI",
+      "domain": "together.ai",
+      "industry": "Decentralized Cloud Inference",
+      "stage": "Series A",
+      "headquarters": "Menlo Park, CA",
+      "engineering_headcount": 65,
+      "core_tech_stack": "Python, PyTorch, C++, CUDA",
+      "target_buyer_personas": [
+        {
+          "title": "VP of Engineering",
+          "focus": "Developer Productivity & Cloud/AI Budgets"
+        },
+        {
+          "title": "Chief Technology Officer (CTO)",
+          "focus": "System Architecture & Unit Economics"
+        },
+        {
+          "title": "Chief Information Security Officer (CISO)",
+          "focus": "Zero-Day Secret Scanning & Git Pre-Commit Security"
+        },
+        {
+          "title": "Head of Platform / DevEx",
+          "focus": "Cursor / Claude Code Tooling & Context Rot"
+        }
+      ],
+      "token_economics": {
+        "engineers": 65,
+        "daily_tokens_per_eng": 810000,
+        "current_annual_token_spend_est": 41698,
+        "annual_tokens_saved": 10841688000,
+        "annual_dollar_savings": 32525,
+        "monthly_dollar_savings": 2710,
+        "enterprise_pilot_fee": 28000,
+        "net_roi_multiple": "1.2x"
+      },
+      "cadence_status": "STAGED",
+      "last_touch": null,
+      "next_scheduled_touch": "Day 1 (Touch 1: Unallocated Token Tax)",
+      "outreach_contact_channel": "enterprise@devsupersuite.com"
+    },
+    {
+      "account_id": "ENT-027",
+      "company_name": "Groq",
+      "domain": "groq.com",
+      "industry": "LPU AI Inference Silicon & Cloud",
+      "stage": "Series C",
+      "headquarters": "Mountain View, CA",
+      "engineering_headcount": 210,
+      "core_tech_stack": "C++, Python, Compiler Theory, Linux",
+      "target_buyer_personas": [
+        {
+          "title": "VP of Engineering",
+          "focus": "Developer Productivity & Cloud/AI Budgets"
+        },
+        {
+          "title": "Chief Technology Officer (CTO)",
+          "focus": "System Architecture & Unit Economics"
+        },
+        {
+          "title": "Chief Information Security Officer (CISO)",
+          "focus": "Zero-Day Secret Scanning & Git Pre-Commit Security"
+        },
+        {
+          "title": "Head of Platform / DevEx",
+          "focus": "Cursor / Claude Code Tooling & Context Rot"
+        }
+      ],
+      "token_economics": {
+        "engineers": 210,
+        "daily_tokens_per_eng": 810000,
+        "current_annual_token_spend_est": 134719,
+        "annual_tokens_saved": 35026992000,
+        "annual_dollar_savings": 105080,
+        "monthly_dollar_savings": 8756,
+        "enterprise_pilot_fee": 54000,
+        "net_roi_multiple": "1.9x"
+      },
+      "cadence_status": "STAGED",
+      "last_touch": null,
+      "next_scheduled_touch": "Day 1 (Touch 1: Unallocated Token Tax)",
+      "outreach_contact_channel": "enterprise@devsupersuite.com"
+    },
+    {
+      "account_id": "ENT-028",
+      "company_name": "Cursor / Anysphere",
+      "domain": "cursor.com",
+      "industry": "AI-First Code Editor",
+      "stage": "Series A",
+      "headquarters": "San Francisco, CA",
+      "engineering_headcount": 38,
+      "core_tech_stack": "TypeScript, C++, Electron, Python",
+      "target_buyer_personas": [
+        {
+          "title": "VP of Engineering",
+          "focus": "Developer Productivity & Cloud/AI Budgets"
+        },
+        {
+          "title": "Chief Technology Officer (CTO)",
+          "focus": "System Architecture & Unit Economics"
+        },
+        {
+          "title": "Chief Information Security Officer (CISO)",
+          "focus": "Zero-Day Secret Scanning & Git Pre-Commit Security"
+        },
+        {
+          "title": "Head of Platform / DevEx",
+          "focus": "Cursor / Claude Code Tooling & Context Rot"
+        }
+      ],
+      "token_economics": {
+        "engineers": 38,
+        "daily_tokens_per_eng": 810000,
+        "current_annual_token_spend_est": 24377,
+        "annual_tokens_saved": 6338217600,
+        "annual_dollar_savings": 19014,
+        "monthly_dollar_savings": 1584,
+        "enterprise_pilot_fee": 28000,
+        "net_roi_multiple": "0.7x"
+      },
+      "cadence_status": "STAGED",
+      "last_touch": null,
+      "next_scheduled_touch": "Day 1 (Touch 1: Unallocated Token Tax)",
+      "outreach_contact_channel": "enterprise@devsupersuite.com"
+    },
+    {
+      "account_id": "ENT-029",
+      "company_name": "Windsurf / Codeium",
+      "domain": "codeium.com",
+      "industry": "AI Coding Assistant",
+      "stage": "Series C",
+      "headquarters": "Mountain View, CA",
+      "engineering_headcount": 90,
+      "core_tech_stack": "C++, Go, TypeScript, Python",
+      "target_buyer_personas": [
+        {
+          "title": "VP of Engineering",
+          "focus": "Developer Productivity & Cloud/AI Budgets"
+        },
+        {
+          "title": "Chief Technology Officer (CTO)",
+          "focus": "System Architecture & Unit Economics"
+        },
+        {
+          "title": "Chief Information Security Officer (CISO)",
+          "focus": "Zero-Day Secret Scanning & Git Pre-Commit Security"
+        },
+        {
+          "title": "Head of Platform / DevEx",
+          "focus": "Cursor / Claude Code Tooling & Context Rot"
+        }
+      ],
+      "token_economics": {
+        "engineers": 90,
+        "daily_tokens_per_eng": 810000,
+        "current_annual_token_spend_est": 57736,
+        "annual_tokens_saved": 15011568000,
+        "annual_dollar_savings": 45034,
+        "monthly_dollar_savings": 3752,
+        "enterprise_pilot_fee": 28000,
+        "net_roi_multiple": "1.6x"
+      },
+      "cadence_status": "STAGED",
+      "last_touch": null,
+      "next_scheduled_touch": "Day 1 (Touch 1: Unallocated Token Tax)",
+      "outreach_contact_channel": "enterprise@devsupersuite.com"
+    },
+    {
+      "account_id": "ENT-030",
+      "company_name": "Augment Code",
+      "domain": "augmentcode.com",
+      "industry": "Enterprise AI Code Assistance",
+      "stage": "Series B",
+      "headquarters": "Palo Alto, CA",
+      "engineering_headcount": 52,
+      "core_tech_stack": "Python, TypeScript, Rust, C++",
+      "target_buyer_personas": [
+        {
+          "title": "VP of Engineering",
+          "focus": "Developer Productivity & Cloud/AI Budgets"
+        },
+        {
+          "title": "Chief Technology Officer (CTO)",
+          "focus": "System Architecture & Unit Economics"
+        },
+        {
+          "title": "Chief Information Security Officer (CISO)",
+          "focus": "Zero-Day Secret Scanning & Git Pre-Commit Security"
+        },
+        {
+          "title": "Head of Platform / DevEx",
+          "focus": "Cursor / Claude Code Tooling & Context Rot"
+        }
+      ],
+      "token_economics": {
+        "engineers": 52,
+        "daily_tokens_per_eng": 810000,
+        "current_annual_token_spend_est": 33359,
+        "annual_tokens_saved": 8673350400,
+        "annual_dollar_savings": 26020,
+        "monthly_dollar_savings": 2168,
+        "enterprise_pilot_fee": 28000,
+        "net_roi_multiple": "0.9x"
+      },
+      "cadence_status": "STAGED",
+      "last_touch": null,
+      "next_scheduled_touch": "Day 1 (Touch 1: Unallocated Token Tax)",
+      "outreach_contact_channel": "enterprise@devsupersuite.com"
+    }
+  ]
+}

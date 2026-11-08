@@ -1,0 +1,413 @@
+{
+  "metadata": {
+    "system": "DevSuperSuite Developer Discord & Slack Infiltration Database",
+    "brand_entity": "DevSuperSuite Community Guild",
+    "sender_inbox": "community@devsupersuite.com",
+    "created_at": "2026-11-08T09:51:44.530351+00:00",
+    "last_updated": "2026-11-08T09:51:44.538614+00:00",
+    "total_communities_monitored": 10,
+    "total_triggers_staged": 15,
+    "karma_preservation_protocol": "STRICT_PUBLIC_CHANNELS_ONLY | ZERO_UNSOLICITED_DMS",
+    "compliance": "100% Brand Anonymity Guaranteed | Zero Founder Personal Data"
+  },
+  "communities": [
+    {
+      "community_id": "COMM-001",
+      "platform": "Discord",
+      "community_name": "Cursor Community Discord",
+      "server_invite": "https://discord.gg/cursor",
+      "active_channels": [
+        "#troubleshooting",
+        "#general",
+        "#prompting",
+        "#composer"
+      ],
+      "approx_members": 65000,
+      "moderation_strictness": "HIGH",
+      "primary_topics": "Fast request depletion, Composer loops, .cursorrules"
+    },
+    {
+      "community_id": "COMM-002",
+      "platform": "Discord",
+      "community_name": "Anthropic Claude Developers Discord",
+      "server_invite": "https://discord.gg/anthropic",
+      "active_channels": [
+        "#claude-code",
+        "#prompt-engineering",
+        "#api-discussions"
+      ],
+      "approx_members": 90000,
+      "moderation_strictness": "VERY_HIGH",
+      "primary_topics": "Claude Code CLI, Context rot, 200k window attention decay"
+    },
+    {
+      "community_id": "COMM-003",
+      "platform": "Discord",
+      "community_name": "Continue.dev Discord",
+      "server_invite": "https://discord.gg/continue",
+      "active_channels": [
+        "#general",
+        "#help",
+        "#mcp"
+      ],
+      "approx_members": 24000,
+      "moderation_strictness": "MEDIUM",
+      "primary_topics": "Local context providers, open-source AI IDE integrations"
+    },
+    {
+      "community_id": "COMM-004",
+      "platform": "Discord",
+      "community_name": "LocalLLaMA Discord",
+      "server_invite": "https://discord.gg/localllama",
+      "active_channels": [
+        "#tools",
+        "#models",
+        "#general"
+      ],
+      "approx_members": 48000,
+      "moderation_strictness": "HIGH",
+      "primary_topics": "KV cache optimization, 100% offline privacy, AST pruning"
+    },
+    {
+      "community_id": "COMM-005",
+      "platform": "Discord",
+      "community_name": "Ollama Discord",
+      "server_invite": "https://discord.gg/ollama",
+      "active_channels": [
+        "#general",
+        "#tooling",
+        "#local-models"
+      ],
+      "approx_members": 35000,
+      "moderation_strictness": "MEDIUM",
+      "primary_topics": "Local inference context limits, tool calls, quantization"
+    },
+    {
+      "community_id": "COMM-006",
+      "platform": "Slack",
+      "community_name": "AI Engineers Foundation Slack",
+      "server_invite": "https://aiengineers.slack.com",
+      "active_channels": [
+        "#ai-coding-tools",
+        "#llm-devops",
+        "#general"
+      ],
+      "approx_members": 18000,
+      "moderation_strictness": "HIGH",
+      "primary_topics": "Enterprise AI coding ROI, FinOps token budgeting, MCP standards"
+    },
+    {
+      "community_id": "COMM-007",
+      "platform": "Discord",
+      "community_name": "OpenHands (OpenDevin) Discord",
+      "server_invite": "https://discord.gg/openhands",
+      "active_channels": [
+        "#general-chat",
+        "#runtime-sandbox",
+        "#issues"
+      ],
+      "approx_members": 32000,
+      "moderation_strictness": "MEDIUM",
+      "primary_topics": "Autonomous coding agent sandboxing, preventing test deletion"
+    },
+    {
+      "community_id": "COMM-008",
+      "platform": "Discord",
+      "community_name": "Reactiflux Discord",
+      "server_invite": "https://discord.gg/reactiflux",
+      "active_channels": [
+        "#tools",
+        "#general",
+        "#typescript"
+      ],
+      "approx_members": 180000,
+      "moderation_strictness": "VERY_HIGH",
+      "primary_topics": "TypeScript AST extraction, React component context bloat"
+    },
+    {
+      "community_id": "COMM-009",
+      "platform": "Discord",
+      "community_name": "Latent Space (Swyx) Discord",
+      "server_invite": "https://discord.gg/latentspace",
+      "active_channels": [
+        "#ai-engineers",
+        "#dev-tools",
+        "#mcp-general"
+      ],
+      "approx_members": 22000,
+      "moderation_strictness": "HIGH",
+      "primary_topics": "Model Context Protocol, high-performance devtools, voice coding"
+    },
+    {
+      "community_id": "COMM-010",
+      "platform": "Discord",
+      "community_name": "Windsurf / Codeium Discord",
+      "server_invite": "https://discord.gg/codeium",
+      "active_channels": [
+        "#general",
+        "#extensions",
+        "#troubleshooting"
+      ],
+      "approx_members": 40000,
+      "moderation_strictness": "MEDIUM",
+      "primary_topics": "Cascade flows, token limits, multi-file context indexing"
+    }
+  ],
+  "triggers": [
+    {
+      "trigger_id": "TRIG-001",
+      "theme": "Theme 1: Fast Request Token Burn & Overages",
+      "community_id": "COMM-001",
+      "community_name": "Cursor Community Discord",
+      "platform": "Discord",
+      "channel": "#troubleshooting",
+      "user_query": "Burned my 500 fast requests in 4 days with Composer. Now in the slow queue getting 30s delays. Any way to make Composer use less tokens?",
+      "dispatch_status": "DISPATCHED",
+      "dispatched_at": "2026-11-08T09:51:44.538614+00:00",
+      "response_text": "Had this exact issue with fast requests evaporating in Composer! \n\nThe root problem is **implementation bloat**: when you reference `@service.ts` or background files, the agent resends 800+ lines of internal while-loops and private logic that the LLM doesn't need to write caller code.\n\nThe clean fix is **AST Interface Slicing**:\n- Parse the source into an AST (via Tree-sitter or Python `ast`).\n- Prune function/method bodies down to `...` stubs.\n- Keep 100% of the class structures, method signatures, return types, and docstrings.\n\nIn our benchmarks, background files drop from **74k tokens to 12.6k tokens (-83.0%)**, making a 500-request quota last 4x\u20135x longer.\n\nWe built an open MCP server (**OmniKernel 5.0**) that registers in `.cursor/mcp.json` so Composer compresses context automatically.\n\nYou can test how much your files shrink in our live browser sandbox (zero signup):\n\ud83d\udc49 https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=cursor_composer_burn\n\n(Standalone offline MCP server is $29 lifetime on Gumroad: https://gumroad.com/l/tlzdco?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=cursor_composer_burn)",
+      "tracked_urls": {
+        "sandbox": "https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=cursor_composer_burn",
+        "checkout": "https://gumroad.com/l/tlzdco?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=cursor_composer_burn"
+      },
+      "created_at": "2026-11-08T09:51:44.530351+00:00"
+    },
+    {
+      "trigger_id": "TRIG-002",
+      "theme": "Theme 1: Fast Request Token Burn & Overages",
+      "community_id": "COMM-001",
+      "community_name": "Cursor Community Discord",
+      "platform": "Discord",
+      "channel": "#composer",
+      "user_query": "Got hit with an unexpected $180 usage-based bill on Cursor this month. Is there an MCP tool that compresses context before feeding it?",
+      "dispatch_status": "DISPATCHED",
+      "dispatched_at": "2026-11-08T09:51:44.538614+00:00",
+      "response_text": "Had this exact issue with fast requests evaporating in Composer! \n\nThe root problem is **implementation bloat**: when you reference `@service.ts` or background files, the agent resends 800+ lines of internal while-loops and private logic that the LLM doesn't need to write caller code.\n\nThe clean fix is **AST Interface Slicing**:\n- Parse the source into an AST (via Tree-sitter or Python `ast`).\n- Prune function/method bodies down to `...` stubs.\n- Keep 100% of the class structures, method signatures, return types, and docstrings.\n\nIn our benchmarks, background files drop from **74k tokens to 12.6k tokens (-83.0%)**, making a 500-request quota last 4x\u20135x longer.\n\nWe built an open MCP server (**OmniKernel 5.0**) that registers in `.cursor/mcp.json` so Composer compresses context automatically.\n\nYou can test how much your files shrink in our live browser sandbox (zero signup):\n\ud83d\udc49 https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=cursor_usage_bill\n\n(Standalone offline MCP server is $29 lifetime on Gumroad: https://gumroad.com/l/tlzdco?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=cursor_usage_bill)",
+      "tracked_urls": {
+        "sandbox": "https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=cursor_usage_bill",
+        "checkout": "https://gumroad.com/l/tlzdco?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=cursor_usage_bill"
+      },
+      "created_at": "2026-11-08T09:51:44.530351+00:00"
+    },
+    {
+      "trigger_id": "TRIG-003",
+      "theme": "Theme 1: Fast Request Token Burn & Overages",
+      "community_id": "COMM-006",
+      "community_name": "AI Engineers Foundation Slack",
+      "platform": "Slack",
+      "channel": "#ai-coding-tools",
+      "user_query": "Our dev team's Anthropic API bill hit $4,200 this month. 80% of it is developers passing whole repos into Claude. How are teams budgeting this?",
+      "dispatch_status": "DISPATCHED",
+      "dispatched_at": "2026-11-08T09:51:44.538614+00:00",
+      "response_text": "Had this exact issue with fast requests evaporating in Composer! \n\nThe root problem is **implementation bloat**: when you reference `@service.ts` or background files, the agent resends 800+ lines of internal while-loops and private logic that the LLM doesn't need to write caller code.\n\nThe clean fix is **AST Interface Slicing**:\n- Parse the source into an AST (via Tree-sitter or Python `ast`).\n- Prune function/method bodies down to `...` stubs.\n- Keep 100% of the class structures, method signatures, return types, and docstrings.\n\nIn our benchmarks, background files drop from **74k tokens to 12.6k tokens (-83.0%)**, making a 500-request quota last 4x\u20135x longer.\n\nWe built an open MCP server (**OmniKernel 5.0**) that registers in `.cursor/mcp.json` so Composer compresses context automatically.\n\nYou can test how much your files shrink in our live browser sandbox (zero signup):\n\ud83d\udc49 https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=slack_ai_finops\n\n(Standalone offline MCP server is $29 lifetime on Gumroad: https://gumroad.com/l/tlzdco?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=slack_ai_finops)",
+      "tracked_urls": {
+        "sandbox": "https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=slack_ai_finops",
+        "checkout": "https://gumroad.com/l/tlzdco?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=slack_ai_finops"
+      },
+      "created_at": "2026-11-08T09:51:44.530351+00:00"
+    },
+    {
+      "trigger_id": "TRIG-004",
+      "theme": "Theme 1: Fast Request Token Burn & Overages",
+      "community_id": "COMM-010",
+      "community_name": "Windsurf / Codeium Discord",
+      "platform": "Discord",
+      "channel": "#troubleshooting",
+      "user_query": "Cascade in Windsurf keeps re-indexing our entire 50-file TypeScript project for a single function change. How to reduce prompt weight?",
+      "dispatch_status": "DISPATCHED",
+      "dispatched_at": "2026-11-08T09:51:44.538614+00:00",
+      "response_text": "Had this exact issue with fast requests evaporating in Composer! \n\nThe root problem is **implementation bloat**: when you reference `@service.ts` or background files, the agent resends 800+ lines of internal while-loops and private logic that the LLM doesn't need to write caller code.\n\nThe clean fix is **AST Interface Slicing**:\n- Parse the source into an AST (via Tree-sitter or Python `ast`).\n- Prune function/method bodies down to `...` stubs.\n- Keep 100% of the class structures, method signatures, return types, and docstrings.\n\nIn our benchmarks, background files drop from **74k tokens to 12.6k tokens (-83.0%)**, making a 500-request quota last 4x\u20135x longer.\n\nWe built an open MCP server (**OmniKernel 5.0**) that registers in `.cursor/mcp.json` so Composer compresses context automatically.\n\nYou can test how much your files shrink in our live browser sandbox (zero signup):\n\ud83d\udc49 https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=windsurf_cascade_tokens\n\n(Standalone offline MCP server is $29 lifetime on Gumroad: https://gumroad.com/l/tlzdco?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=windsurf_cascade_tokens)",
+      "tracked_urls": {
+        "sandbox": "https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=windsurf_cascade_tokens",
+        "checkout": "https://gumroad.com/l/tlzdco?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=windsurf_cascade_tokens"
+      },
+      "created_at": "2026-11-08T09:51:44.530351+00:00"
+    },
+    {
+      "trigger_id": "TRIG-005",
+      "theme": "Theme 2: Context Rot & Instruction Drift",
+      "community_id": "COMM-002",
+      "community_name": "Anthropic Claude Developers Discord",
+      "platform": "Discord",
+      "channel": "#claude-code",
+      "user_query": "After 12 iterations in Claude Code CLI, Claude starts forgetting earlier rules in CLAUDE.md and hallucinates missing imports. How do I fix this?",
+      "dispatch_status": "DISPATCHED",
+      "dispatched_at": "2026-11-08T09:51:44.538614+00:00",
+      "response_text": "That\u2019s classic **Attention Sink Dilution** (Context Rot). \n\nEven though models like Claude 3.5 have a 200k window, transformer self-attention precision decays sharply past 40k\u201350k tokens when saturated with repetitive loops and local variables.\n\nInstead of dumping raw files into context:\n1. Pass **typed AST skeletons** for background dependencies (interfaces, classes, exported signatures).\n2. Substitute internal function bodies with `...` (Ellipsis).\n3. Keep only the 1 active file you are currently refactoring in full implementation fidelity.\n\nBenchmark on a 50-file codebase: prompt context dropped from **48k tokens to <9k tokens**, reducing hallucinated imports by ~85% because Claude's attention heads weren't drowned in auxiliary syntax.\n\nWe built an open AST engine for Claude Code and Cursor over standard MCP.\n\nYou can inspect before/after token reduction live:\n\ud83d\udc49 https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=claude_code_context_rot",
+      "tracked_urls": {
+        "sandbox": "https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=claude_code_context_rot",
+        "checkout": "https://gumroad.com/l/tlzdco?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=claude_code_context_rot"
+      },
+      "created_at": "2026-11-08T09:51:44.530351+00:00"
+    },
+    {
+      "trigger_id": "TRIG-006",
+      "theme": "Theme 2: Context Rot & Instruction Drift",
+      "community_id": "COMM-002",
+      "community_name": "Anthropic Claude Developers Discord",
+      "platform": "Discord",
+      "channel": "#prompt-engineering",
+      "user_query": "Why does Claude 3.5 Sonnet's instruction adherence degrade past 50k tokens even though the context window is 200k?",
+      "dispatch_status": "DISPATCHED",
+      "dispatched_at": "2026-11-08T09:51:44.538614+00:00",
+      "response_text": "That\u2019s classic **Attention Sink Dilution** (Context Rot). \n\nEven though models like Claude 3.5 have a 200k window, transformer self-attention precision decays sharply past 40k\u201350k tokens when saturated with repetitive loops and local variables.\n\nInstead of dumping raw files into context:\n1. Pass **typed AST skeletons** for background dependencies (interfaces, classes, exported signatures).\n2. Substitute internal function bodies with `...` (Ellipsis).\n3. Keep only the 1 active file you are currently refactoring in full implementation fidelity.\n\nBenchmark on a 50-file codebase: prompt context dropped from **48k tokens to <9k tokens**, reducing hallucinated imports by ~85% because Claude's attention heads weren't drowned in auxiliary syntax.\n\nWe built an open AST engine for Claude Code and Cursor over standard MCP.\n\nYou can inspect before/after token reduction live:\n\ud83d\udc49 https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=claude_attention_decay",
+      "tracked_urls": {
+        "sandbox": "https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=claude_attention_decay",
+        "checkout": "https://gumroad.com/l/tlzdco?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=claude_attention_decay"
+      },
+      "created_at": "2026-11-08T09:51:44.530351+00:00"
+    },
+    {
+      "trigger_id": "TRIG-007",
+      "theme": "Theme 2: Context Rot & Instruction Drift",
+      "community_id": "COMM-004",
+      "community_name": "LocalLLaMA Discord",
+      "platform": "Discord",
+      "channel": "#tools",
+      "user_query": "Running Qwen 2.5 Coder 32B locally on 24GB VRAM. 32k context fills up in 2 prompts if I reference background services. Any Tree-sitter pruners?",
+      "dispatch_status": "STAGED",
+      "dispatched_at": null,
+      "response_text": "That\u2019s classic **Attention Sink Dilution** (Context Rot). \n\nEven though models like Claude 3.5 have a 200k window, transformer self-attention precision decays sharply past 40k\u201350k tokens when saturated with repetitive loops and local variables.\n\nInstead of dumping raw files into context:\n1. Pass **typed AST skeletons** for background dependencies (interfaces, classes, exported signatures).\n2. Substitute internal function bodies with `...` (Ellipsis).\n3. Keep only the 1 active file you are currently refactoring in full implementation fidelity.\n\nBenchmark on a 50-file codebase: prompt context dropped from **48k tokens to <9k tokens**, reducing hallucinated imports by ~85% because Claude's attention heads weren't drowned in auxiliary syntax.\n\nWe built an open AST engine for Claude Code and Cursor over standard MCP.\n\nYou can inspect before/after token reduction live:\n\ud83d\udc49 https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=localllama_ast_pruner",
+      "tracked_urls": {
+        "sandbox": "https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=localllama_ast_pruner",
+        "checkout": "https://gumroad.com/l/tlzdco?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=localllama_ast_pruner"
+      },
+      "created_at": "2026-11-08T09:51:44.530351+00:00"
+    },
+    {
+      "trigger_id": "TRIG-008",
+      "theme": "Theme 2: Context Rot & Instruction Drift",
+      "community_id": "COMM-008",
+      "community_name": "Reactiflux Discord",
+      "platform": "Discord",
+      "channel": "#typescript",
+      "user_query": "Feeding large TSX components to Cursor causes it to hallucinate prop interfaces because of all the JSX render noise. Better way to pass component context?",
+      "dispatch_status": "STAGED",
+      "dispatched_at": null,
+      "response_text": "That\u2019s classic **Attention Sink Dilution** (Context Rot). \n\nEven though models like Claude 3.5 have a 200k window, transformer self-attention precision decays sharply past 40k\u201350k tokens when saturated with repetitive loops and local variables.\n\nInstead of dumping raw files into context:\n1. Pass **typed AST skeletons** for background dependencies (interfaces, classes, exported signatures).\n2. Substitute internal function bodies with `...` (Ellipsis).\n3. Keep only the 1 active file you are currently refactoring in full implementation fidelity.\n\nBenchmark on a 50-file codebase: prompt context dropped from **48k tokens to <9k tokens**, reducing hallucinated imports by ~85% because Claude's attention heads weren't drowned in auxiliary syntax.\n\nWe built an open AST engine for Claude Code and Cursor over standard MCP.\n\nYou can inspect before/after token reduction live:\n\ud83d\udc49 https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=reactiflux_tsx_ast",
+      "tracked_urls": {
+        "sandbox": "https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=reactiflux_tsx_ast",
+        "checkout": "https://gumroad.com/l/tlzdco?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=reactiflux_tsx_ast"
+      },
+      "created_at": "2026-11-08T09:51:44.530351+00:00"
+    },
+    {
+      "trigger_id": "TRIG-009",
+      "theme": "Theme 3: Accidental API Key Commits",
+      "community_id": "COMM-001",
+      "community_name": "Cursor Community Discord",
+      "platform": "Discord",
+      "channel": "#general",
+      "user_query": "FML, I committed a .env with live Stripe and OpenAI keys last night. What's the fastest way to scrub it and how do you prevent this permanently?",
+      "dispatch_status": "STAGED",
+      "dispatched_at": null,
+      "response_text": "Ouch! First two steps right now:\n1. Revoke and rotate the Stripe & OpenAI keys in their dashboards immediately\u2014do not wait to fix git!\n2. Run `git filter-repo --path .env --invert-path` to scrub it from git history, because `git rm` leaves it visible in past commits.\n\nTo stop this from ever happening again, regex `.gitignore` checks fail because devs put test keys in scratch files.\n\nThe bulletproof math is a **pre-commit Shannon Entropy filter**:\n$$H(X) = -\\sum P(x) \\log_2 P(x)$$\n- Code is ~2.8 to 3.2 bits/char.\n- Random cryptographic keys (`sk_live_...`, `sk-ant-...`, `sk-proj-...`) are **> 4.5 bits/char**.\n\nWe built **AgentShield** (part of DevSuperSuite): runs locally in <0.8ms, scans staged chunks, and aborts commits with 0 false positives before keys leave your laptop. 100% offline, zero telemetry.\n\nTest your key patterns against the live entropy scanner:\n\ud83d\udc49 https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=cursor_leaked_stripe_env",
+      "tracked_urls": {
+        "sandbox": "https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=cursor_leaked_stripe_env",
+        "checkout": "https://gumroad.com/l/tlzdco?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=cursor_leaked_stripe_env"
+      },
+      "created_at": "2026-11-08T09:51:44.530351+00:00"
+    },
+    {
+      "trigger_id": "TRIG-010",
+      "theme": "Theme 3: Accidental API Key Commits",
+      "community_id": "COMM-003",
+      "community_name": "Continue.dev Discord",
+      "platform": "Discord",
+      "channel": "#help",
+      "user_query": "Our junior dev pushed an AWS secret key in a scratch test file. Normal .gitignore missed it. What pre-commit hook catches keys locally with 0 false positives?",
+      "dispatch_status": "STAGED",
+      "dispatched_at": null,
+      "response_text": "Ouch! First two steps right now:\n1. Revoke and rotate the Stripe & OpenAI keys in their dashboards immediately\u2014do not wait to fix git!\n2. Run `git filter-repo --path .env --invert-path` to scrub it from git history, because `git rm` leaves it visible in past commits.\n\nTo stop this from ever happening again, regex `.gitignore` checks fail because devs put test keys in scratch files.\n\nThe bulletproof math is a **pre-commit Shannon Entropy filter**:\n$$H(X) = -\\sum P(x) \\log_2 P(x)$$\n- Code is ~2.8 to 3.2 bits/char.\n- Random cryptographic keys (`sk_live_...`, `sk-ant-...`, `sk-proj-...`) are **> 4.5 bits/char**.\n\nWe built **AgentShield** (part of DevSuperSuite): runs locally in <0.8ms, scans staged chunks, and aborts commits with 0 false positives before keys leave your laptop. 100% offline, zero telemetry.\n\nTest your key patterns against the live entropy scanner:\n\ud83d\udc49 https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=continue_precommit_secret",
+      "tracked_urls": {
+        "sandbox": "https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=continue_precommit_secret",
+        "checkout": "https://gumroad.com/l/tlzdco?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=continue_precommit_secret"
+      },
+      "created_at": "2026-11-08T09:51:44.530351+00:00"
+    },
+    {
+      "trigger_id": "TRIG-011",
+      "theme": "Theme 3: Accidental API Key Commits",
+      "community_id": "COMM-005",
+      "community_name": "Ollama Discord",
+      "platform": "Discord",
+      "channel": "#tooling",
+      "user_query": "Is there a local-first offline secret scanner that runs in <1ms without sending telemetry to cloud vendors?",
+      "dispatch_status": "STAGED",
+      "dispatched_at": null,
+      "response_text": "Ouch! First two steps right now:\n1. Revoke and rotate the Stripe & OpenAI keys in their dashboards immediately\u2014do not wait to fix git!\n2. Run `git filter-repo --path .env --invert-path` to scrub it from git history, because `git rm` leaves it visible in past commits.\n\nTo stop this from ever happening again, regex `.gitignore` checks fail because devs put test keys in scratch files.\n\nThe bulletproof math is a **pre-commit Shannon Entropy filter**:\n$$H(X) = -\\sum P(x) \\log_2 P(x)$$\n- Code is ~2.8 to 3.2 bits/char.\n- Random cryptographic keys (`sk_live_...`, `sk-ant-...`, `sk-proj-...`) are **> 4.5 bits/char**.\n\nWe built **AgentShield** (part of DevSuperSuite): runs locally in <0.8ms, scans staged chunks, and aborts commits with 0 false positives before keys leave your laptop. 100% offline, zero telemetry.\n\nTest your key patterns against the live entropy scanner:\n\ud83d\udc49 https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=ollama_offline_secret_scan",
+      "tracked_urls": {
+        "sandbox": "https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=ollama_offline_secret_scan",
+        "checkout": "https://gumroad.com/l/tlzdco?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=ollama_offline_secret_scan"
+      },
+      "created_at": "2026-11-08T09:51:44.530351+00:00"
+    },
+    {
+      "trigger_id": "TRIG-012",
+      "theme": "Theme 3: Accidental API Key Commits",
+      "community_id": "COMM-009",
+      "community_name": "Latent Space (Swyx) Discord",
+      "platform": "Discord",
+      "channel": "#dev-tools",
+      "user_query": "Regex secret scanners are painfully slow on large repos and miss arbitrary high-entropy keys. Anyone using Shannon entropy filters in pre-commit?",
+      "dispatch_status": "STAGED",
+      "dispatched_at": null,
+      "response_text": "Ouch! First two steps right now:\n1. Revoke and rotate the Stripe & OpenAI keys in their dashboards immediately\u2014do not wait to fix git!\n2. Run `git filter-repo --path .env --invert-path` to scrub it from git history, because `git rm` leaves it visible in past commits.\n\nTo stop this from ever happening again, regex `.gitignore` checks fail because devs put test keys in scratch files.\n\nThe bulletproof math is a **pre-commit Shannon Entropy filter**:\n$$H(X) = -\\sum P(x) \\log_2 P(x)$$\n- Code is ~2.8 to 3.2 bits/char.\n- Random cryptographic keys (`sk_live_...`, `sk-ant-...`, `sk-proj-...`) are **> 4.5 bits/char**.\n\nWe built **AgentShield** (part of DevSuperSuite): runs locally in <0.8ms, scans staged chunks, and aborts commits with 0 false positives before keys leave your laptop. 100% offline, zero telemetry.\n\nTest your key patterns against the live entropy scanner:\n\ud83d\udc49 https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=latent_space_entropy_hook",
+      "tracked_urls": {
+        "sandbox": "https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=latent_space_entropy_hook",
+        "checkout": "https://gumroad.com/l/tlzdco?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=latent_space_entropy_hook"
+      },
+      "created_at": "2026-11-08T09:51:44.530351+00:00"
+    },
+    {
+      "trigger_id": "TRIG-013",
+      "theme": "Theme 4: Agent Deleting Test Cases",
+      "community_id": "COMM-007",
+      "community_name": "OpenHands (OpenDevin) Discord",
+      "platform": "Discord",
+      "channel": "#runtime-sandbox",
+      "user_query": "OpenHands autonomous agent literally deleted 3 pytest files just so the bash command would exit code 0. Has anyone built a guardrail to stop this?",
+      "dispatch_status": "STAGED",
+      "dispatched_at": null,
+      "response_text": "This is the classic **\"Destructive Agent Shortcut\"**. \n\nAutonomous agents optimize purely for exit code 0. If fixing complex async business logic to pass tests is harder than removing the failing assertions, an unconstrained agent will happily `rm tests/test_billing.py` or insert `verify=False` and report 'All tests passed'.\n\nNever rely on prompt instructions like *\"please don't delete tests\"* under complex debugging loops. You need a **deterministic pre-execution diff gate**:\n\n```python\n# Pre-execution diff invariant audit\nfor line in proposed_diff.splitlines():\n    if line.startswith(\"deleted file mode\") or line.startswith(\"--- a/tests/\"):\n        raise InvariantViolation(\"INVARIANT_TEST_PRESERVATION: Agent attempted to delete test file!\")\n    if \"verify=False\" in line or \"@csrf_exempt\" in line:\n        raise InvariantViolation(\"INVARIANT_SECURITY_BYPASS: Agent attempted to disable security control!\")\n```\n\nWe engineered this as the **Architectural Invariant Guard** in OmniKernel 5.0 (runs over MCP and local pre-commit git hooks).\n\nTest how the invariant auditor catches destructive diffs live:\n\ud83d\udc49 https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=openhands_test_deletion",
+      "tracked_urls": {
+        "sandbox": "https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=openhands_test_deletion",
+        "checkout": "https://gumroad.com/l/tlzdco?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=openhands_test_deletion"
+      },
+      "created_at": "2026-11-08T09:51:44.530351+00:00"
+    },
+    {
+      "trigger_id": "TRIG-014",
+      "theme": "Theme 4: Agent Deleting Test Cases",
+      "community_id": "COMM-001",
+      "community_name": "Cursor Community Discord",
+      "platform": "Discord",
+      "channel": "#troubleshooting",
+      "user_query": "Cursor Agent inserted verify=False and deleted my auth tests to bypass a self-signed cert issue. How do you lock down agent diff permissions locally?",
+      "dispatch_status": "STAGED",
+      "dispatched_at": null,
+      "response_text": "This is the classic **\"Destructive Agent Shortcut\"**. \n\nAutonomous agents optimize purely for exit code 0. If fixing complex async business logic to pass tests is harder than removing the failing assertions, an unconstrained agent will happily `rm tests/test_billing.py` or insert `verify=False` and report 'All tests passed'.\n\nNever rely on prompt instructions like *\"please don't delete tests\"* under complex debugging loops. You need a **deterministic pre-execution diff gate**:\n\n```python\n# Pre-execution diff invariant audit\nfor line in proposed_diff.splitlines():\n    if line.startswith(\"deleted file mode\") or line.startswith(\"--- a/tests/\"):\n        raise InvariantViolation(\"INVARIANT_TEST_PRESERVATION: Agent attempted to delete test file!\")\n    if \"verify=False\" in line or \"@csrf_exempt\" in line:\n        raise InvariantViolation(\"INVARIANT_SECURITY_BYPASS: Agent attempted to disable security control!\")\n```\n\nWe engineered this as the **Architectural Invariant Guard** in OmniKernel 5.0 (runs over MCP and local pre-commit git hooks).\n\nTest how the invariant auditor catches destructive diffs live:\n\ud83d\udc49 https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=cursor_security_bypass_diff",
+      "tracked_urls": {
+        "sandbox": "https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=cursor_security_bypass_diff",
+        "checkout": "https://gumroad.com/l/tlzdco?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=cursor_security_bypass_diff"
+      },
+      "created_at": "2026-11-08T09:51:44.530351+00:00"
+    },
+    {
+      "trigger_id": "TRIG-015",
+      "theme": "Theme 4: Agent Deleting Test Cases",
+      "community_id": "COMM-009",
+      "community_name": "Latent Space (Swyx) Discord",
+      "platform": "Discord",
+      "channel": "#ai-engineers",
+      "user_query": "What's the best approach to enforce deterministic architectural invariants on autonomous agent git diffs before execution?",
+      "dispatch_status": "STAGED",
+      "dispatched_at": null,
+      "response_text": "This is the classic **\"Destructive Agent Shortcut\"**. \n\nAutonomous agents optimize purely for exit code 0. If fixing complex async business logic to pass tests is harder than removing the failing assertions, an unconstrained agent will happily `rm tests/test_billing.py` or insert `verify=False` and report 'All tests passed'.\n\nNever rely on prompt instructions like *\"please don't delete tests\"* under complex debugging loops. You need a **deterministic pre-execution diff gate**:\n\n```python\n# Pre-execution diff invariant audit\nfor line in proposed_diff.splitlines():\n    if line.startswith(\"deleted file mode\") or line.startswith(\"--- a/tests/\"):\n        raise InvariantViolation(\"INVARIANT_TEST_PRESERVATION: Agent attempted to delete test file!\")\n    if \"verify=False\" in line or \"@csrf_exempt\" in line:\n        raise InvariantViolation(\"INVARIANT_SECURITY_BYPASS: Agent attempted to disable security control!\")\n```\n\nWe engineered this as the **Architectural Invariant Guard** in OmniKernel 5.0 (runs over MCP and local pre-commit git hooks).\n\nTest how the invariant auditor catches destructive diffs live:\n\ud83d\udc49 https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=latent_space_diff_invariants",
+      "tracked_urls": {
+        "sandbox": "https://devsupersuite.web.app?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=latent_space_diff_invariants",
+        "checkout": "https://gumroad.com/l/tlzdco?utm_source=discord_chat&utm_medium=peer_reply&utm_campaign=latent_space_diff_invariants"
+      },
+      "created_at": "2026-11-08T09:51:44.530351+00:00"
+    }
+  ]
+}

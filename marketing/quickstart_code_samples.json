@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DevSuperSuite Multi-Language SDK & Interactive Quickstart Code Samples",
+  "documentId": "DSS-DEVREL-SAMPLES-2026-V1",
+  "version": "5.2.0-LTS",
+  "classification": "Developer Relations & Technical Documentation",
+  "maintainedBy": "DevSuperSuite Developer Relations (devrel@devsupersuite.com)",
+  "publishedDate": "2026-11-08T16:31:00Z",
+  "summary": "Copy-pasteable configuration files, MCP server configurations, pre/post AST sliced code samples, and invariant test fixtures across 6 programming language ecosystems.",
+  "ecosystems": {
+    "python": {
+      "language": "Python 3.11+",
+      "frameworks": ["FastAPI", "Pydantic v2", "SQLAlchemy 2.0"],
+      "omnikernelrc": "[workspace]\nname = \"fastapi-payment-service\"\nlanguage = \"python\"\nroot = \".\"\n\n[slicer]\nmode = \"ast-simd\"\nstrip_function_bodies = true\npreserve_docstrings = true\npreserve_type_hints = true\nmax_recursion_depth = 8\nexclude = [\"venv/\", \".venv/\", \"__pycache__/\", \"*.pyc\", \".pytest_cache/\"]\n\n[agentshield]\nenforce_entropy = true\nentropy_threshold = 4.50\nblock_test_deletions = true\ntest_directory_pattern = \"tests/**/*.py\"\nposix_secret_exit_code = 1\nposix_test_exit_code = 2",
+      "mcpConfig": {
+        "mcpServers": {
+          "omnikernel": {
+            "command": "omnikernel",
+            "args": ["daemon", "--slice-mode", "ast-simd", "--lang", "python"],
+            "env": {
+              "AGENTSHIELD_ENTROPY_THRESHOLD": "4.50",
+              "AGENTSHIELD_LOCK_TESTS": "true"
+            }
+          }
+        }
+      },
+      "rawSourceSample": "from pydantic import BaseModel, Field\nfrom sqlalchemy.orm import Session\n\nclass PaymentPayload(BaseModel):\n    user_id: str = Field(..., description=\"Customer UUID\")\n    amount_cents: int = Field(gt=0)\n    currency: str = Field(default=\"USD\", min_length=3, max_length=3)\n\nclass PaymentProcessor:\n    def __init__(self, db: Session, key: str):\n        self.db = db\n        self.key = key\n\n    def process_transaction(self, payload: PaymentPayload) -> dict:\n        # Extensive database locks, Stripe API calls, and audit ledger entries\n        return {\"status\": \"SUCCESS\", \"id\": \"tx_12345\"}",
+      "slicedAstSample": "from pydantic import BaseModel, Field\nfrom sqlalchemy.orm import Session\n\nclass PaymentPayload(BaseModel):\n    user_id: str\n    amount_cents: int\n    currency: str\n\nclass PaymentProcessor:\n    def __init__(self, db: Session, key: str) -> None: ...\n    def process_transaction(self, payload: PaymentPayload) -> dict: ...",
+      "testFixture": "import pytest\nfrom services import PaymentProcessor, PaymentPayload\n\ndef test_process_transaction_valid():\n    payload = PaymentPayload(user_id=\"usr_99\", amount_cents=5000, currency=\"USD\")\n    assert payload.amount_cents == 5000\n    assert payload.currency == \"USD\"\n\ndef test_process_transaction_negative_amount():\n    with pytest.raises(Exception):\n        PaymentPayload(user_id=\"usr_99\", amount_cents=-100, currency=\"USD\")",
+      "secretLeakFixture": "STRIPE_SECRET_KEY = \"sk_test_SIMULATED_HIGH_ENTROPY_CREDENTIAL_KEY_TEST99\" # H = 4.88 bits/char -> BLOCKED EXIT 1"
+    },
+    "rust": {
+      "language": "Rust 2021 Edition",
+      "frameworks": ["Tokio", "Actix-web", "Async-Trait"],
+      "omnikernelrc": "[workspace]\nname = \"raft-consensus-node\"\nlanguage = \"rust\"\nroot = \".\"\n\n[slicer]\nmode = \"ast-simd\"\nstrip_function_bodies = true\npreserve_docstrings = true\nstrip_proc_macro_expansions = true\nexclude = [\"target/\", \"**/*.rs.bk\"]\n\n[agentshield]\nenforce_entropy = true\nentropy_threshold = 4.50\nblock_test_deletions = true\ntest_directory_pattern = \"tests/**/*.rs\"\nposix_secret_exit_code = 1\nposix_test_exit_code = 2",
+      "mcpConfig": {
+        "mcpServers": {
+          "omnikernel": {
+            "command": "omnikernel",
+            "args": ["daemon", "--slice-mode", "ast-simd", "--lang", "rust"]
+          }
+        }
+      },
+      "rawSourceSample": "use async_trait::async_trait;\n\n#[async_trait]\npub trait ConsensusEngine: Send + Sync {\n    async fn request_vote(&self, term: u64, candidate: u64) -> Result<bool, String>;\n}\n\npub struct RaftNode {\n    pub id: u64,\n    term: u64,\n}\n\n#[async_trait]\nimpl ConsensusEngine for RaftNode {\n    async fn request_vote(&self, term: u64, candidate: u64) -> Result<bool, String> {\n        // 80 lines of election timeout checks, term increments, and persistent disk writes\n        Ok(true)\n    }\n}",
+      "slicedAstSample": "use async_trait::async_trait;\n\n#[async_trait]\npub trait ConsensusEngine: Send + Sync {\n    async fn request_vote(&self, term: u64, candidate: u64) -> Result<bool, String>;\n}\n\npub struct RaftNode {\n    pub id: u64,\n}\n\n#[async_trait]\nimpl ConsensusEngine for RaftNode {\n    async fn request_vote(&self, term: u64, candidate: u64) -> Result<bool, String>;\n}",
+      "testFixture": "#[cfg(test)]\nmod tests {\n    use super::*;\n\n    #[tokio::test]\n    async fn test_election_vote_grant() {\n        let node = RaftNode { id: 1, term: 0 };\n        let vote_granted = node.request_vote(1, 2).await.unwrap();\n        assert!(vote_granted);\n    }\n}",
+      "secretLeakFixture": "const AWS_SECRET_KEY: &str = \"wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY\"; // H = 4.79 bits/char -> BLOCKED EXIT 1"
+    },
+    "go": {
+      "language": "Go 1.22+",
+      "frameworks": ["gRPC", "Protobuf v1.34", "Chi Router"],
+      "omnikernelrc": "[workspace]\nname = \"order-routing-service\"\nlanguage = \"go\"\nroot = \".\"\n\n[slicer]\nmode = \"ast-simd\"\nstrip_function_bodies = true\ncollapse_protobuf_stubs = true\nexclude = [\"vendor/\", \"bin/\"]\n\n[agentshield]\nenforce_entropy = true\nentropy_threshold = 4.50\nblock_test_deletions = true\ntest_directory_pattern = \"**/*_test.go\"\nposix_secret_exit_code = 1\nposix_test_exit_code = 2",
+      "mcpConfig": {
+        "mcpServers": {
+          "omnikernel": {
+            "command": "omnikernel",
+            "args": ["daemon", "--slice-mode", "ast-simd", "--lang", "go"]
+          }
+        }
+      },
+      "rawSourceSample": "package orders\n\nimport \"context\"\n\ntype OrderRouter interface {\n    RouteOrder(ctx context.Context, id string) (string, error)\n}\n\ntype Router struct {\n    dbConnString string\n}\n\nfunc NewRouter(conn string) *Router {\n    return &Router{dbConnString: conn}\n}\n\nfunc (r *Router) RouteOrder(ctx context.Context, id string) (string, error) {\n    // 50 lines of order queue routing, transaction locks, and metrics telemetry\n    return \"routed:\" + id, nil\n}",
+      "slicedAstSample": "package orders\n\nimport \"context\"\n\ntype OrderRouter interface {\n    RouteOrder(ctx context.Context, id string) (string, error)\n}\n\ntype Router struct {}\n\nfunc NewRouter(conn string) *Router { ... }\nfunc (r *Router) RouteOrder(ctx context.Context, id string) (string, error) { ... }",
+      "testFixture": "package orders\n\nimport (\n    \"context\"\n    \"testing\"\n)\n\nfunc TestRouteOrder(t *testing.T) {\n    router := NewRouter(\"memory://\")\n    res, err := router.RouteOrder(context.Background(), \"ord_101\")\n    if err != nil || res != \"routed:ord_101\" {\n        t.Fatalf(\"unexpected error or route result: %v\", err)\n    }\n}",
+      "secretLeakFixture": "const GitHubToken = \"ghp_ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890abcdef\"; // H = 4.62 bits/char -> BLOCKED EXIT 1"
+    },
+    "typescript": {
+      "language": "TypeScript 5.6+",
+      "frameworks": ["Next.js 15", "React 19", "Tailwind CSS"],
+      "omnikernelrc": "[workspace]\nname = \"enterprise-dashboard\"\nlanguage = \"typescript\"\nroot = \".\"\n\n[slicer]\nmode = \"ast-simd\"\nstrip_function_bodies = true\nstrip_jsx_trees = true\npreserve_type_interfaces = true\nexclude = [\"node_modules/\", \".next/\", \"dist/\"]\n\n[agentshield]\nenforce_entropy = true\nentropy_threshold = 4.50\nblock_test_deletions = true\ntest_directory_pattern = \"**/__tests__/**/*.ts*\"\nposix_secret_exit_code = 1\nposix_test_exit_code = 2",
+      "mcpConfig": {
+        "mcpServers": {
+          "omnikernel": {
+            "command": "omnikernel",
+            "args": ["daemon", "--slice-mode", "ast-simd", "--lang", "typescript"]
+          }
+        }
+      },
+      "rawSourceSample": "\"use server\";\n\nexport interface Invoice {\n    id: string;\n    totalCents: number;\n    status: \"PAID\" | \"PENDING\";\n}\n\nexport async function getInvoice(id: string): Promise<Invoice> {\n    // Database query, session validation, and permission checks\n    return { id, totalCents: 12500, status: \"PAID\" };\n}",
+      "slicedAstSample": "\"use server\";\n\nexport interface Invoice {\n    id: string;\n    totalCents: number;\n    status: \"PAID\" | \"PENDING\";\n}\n\nexport async function getInvoice(id: string): Promise<Invoice> { /* ... */ }",
+      "testFixture": "import { getInvoice } from \"./billing\";\n\ndescribe(\"Billing Invariants\", () => {\n    it(\"resolves valid invoices\", async () => {\n        const inv = await getInvoice(\"inv_01\");\n        expect(inv.id).toBe(\"inv_01\");\n        expect(inv.status).toBe(\"PAID\");\n    });\n});",
+      "secretLeakFixture": "export const OPENAI_API_KEY = \"sk-proj-abc123XYZ890def456GHI789jkl012MNO345pqr678STU\"; // H = 4.82 -> BLOCKED EXIT 1"
+    },
+    "cpp": {
+      "language": "Modern C++20",
+      "frameworks": ["CMake", "Concepts", "Stdlib Modules"],
+      "omnikernelrc": "[workspace]\nname = \"hft-trading-engine\"\nlanguage = \"cpp\"\nroot = \".\"\n\n[slicer]\nmode = \"ast-simd\"\nstrip_function_bodies = true\npreserve_concepts = true\nexclude = [\"build/\", \"cmake-build-debug/\"]\n\n[agentshield]\nenforce_entropy = true\nentropy_threshold = 4.50\nblock_test_deletions = true\ntest_directory_pattern = \"tests/**/*.cpp\"\nposix_secret_exit_code = 1\nposix_test_exit_code = 2",
+      "mcpConfig": {
+        "mcpServers": {
+          "omnikernel": {
+            "command": "omnikernel",
+            "args": ["daemon", "--slice-mode", "ast-simd", "--lang", "cpp"]
+          }
+        }
+      },
+      "rawSourceSample": "#pragma once\n#include <concepts>\n\ntemplate<typename T>\nconcept OrderType = requires(T o) {\n    { o.price() } -> std::same_as<int64_t>;\n};\n\ntemplate<OrderType T>\nclass OrderBook {\npublic:\n    bool insert_order(const T& order) {\n        // 120 lines of lock-free queue operations and match execution\n        return true;\n    }\n};",
+      "slicedAstSample": "#pragma once\n#include <concepts>\n\ntemplate<typename T>\nconcept OrderType = requires(T o) {\n    { o.price() } -> std::same_as<int64_t>;\n};\n\ntemplate<OrderType T>\nclass OrderBook {\npublic:\n    bool insert_order(const T& order);\n};",
+      "testFixture": "#include <cassert>\n#include \"order_book.hpp\"\n\nstruct SimpleOrder { int64_t price() const { return 10050; } };\n\nint main() {\n    OrderBook<SimpleOrder> book;\n    SimpleOrder ord;\n    assert(book.insert_order(ord) == true);\n    return 0;\n}",
+      "secretLeakFixture": "static constexpr const char* PRIVATE_PEM_KEY = \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC...\\n-----END PRIVATE KEY-----\"; // BLOCKED EXIT 1"
+    },
+    "java": {
+      "language": "Java 21 / Kotlin",
+      "frameworks": ["Spring Boot 3", "JPA Hibernate 6", "Virtual Threads"],
+      "omnikernelrc": "[workspace]\nname = \"core-banking-service\"\nlanguage = \"java\"\nroot = \".\"\n\n[slicer]\nmode = \"ast-simd\"\nstrip_function_bodies = true\npreserve_annotations = true\nexclude = [\"target/\", \".gradle/\", \"build/\"]\n\n[agentshield]\nenforce_entropy = true\nentropy_threshold = 4.50\nblock_test_deletions = true\ntest_directory_pattern = \"src/test/**/*.java\"\nposix_secret_exit_code = 1\nposix_test_exit_code = 2",
+      "mcpConfig": {
+        "mcpServers": {
+          "omnikernel": {
+            "command": "omnikernel",
+            "args": ["daemon", "--slice-mode", "ast-simd", "--lang", "java"]
+          }
+        }
+      },
+      "rawSourceSample": "package com.bank.service;\n\nimport org.springframework.stereotype.Service;\nimport org.springframework.transaction.annotation.Transactional;\nimport java.math.BigDecimal;\n\n@Service\npublic class WireTransferService {\n    @Transactional\n    public boolean transferFunds(String src, String dest, BigDecimal amount) {\n        // 90 lines of fraud checks, balance validation, ledger debiting, and Kafka event emitting\n        return true;\n    }\n}",
+      "slicedAstSample": "package com.bank.service;\n\nimport org.springframework.stereotype.Service;\nimport org.springframework.transaction.annotation.Transactional;\nimport java.math.BigDecimal;\n\n@Service\npublic class WireTransferService {\n    @Transactional\n    public boolean transferFunds(String src, String dest, BigDecimal amount) { ... }\n}",
+      "testFixture": "package com.bank.service;\n\nimport org.junit.jupiter.api.Test;\nimport static org.junit.jupiter.api.Assertions.*;\nimport java.math.BigDecimal;\n\npublic class WireTransferServiceTest {\n    @Test\n    public void testTransferFundsValid() {\n        WireTransferService service = new WireTransferService();\n        assertTrue(service.transferFunds(\"ACC1\", \"ACC2\", new BigDecimal(\"100.00\")));\n    }\n}",
+      "secretLeakFixture": "private static final String AWS_SECRET_ACCESS_KEY = \"vNyhL5PZqA4mO7K8j9R1s2T3u4V5w6X7y8Z90abc\"; // H = 4.75 -> BLOCKED EXIT 1"
+    }
+  },
+  "commercialContact": {
+    "developerRelations": "devrel@devsupersuite.com",
+    "proLifetimeCheckout": "https://gumroad.com/l/tlzdco",
+    "interactiveSandbox": "https://devsupersuite.web.app",
+    "enterpriseInquiries": "enterprise@devsupersuite.com"
+  }
+}

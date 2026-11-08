@@ -1,0 +1,52 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# DevSuperSuite Tech Services - Flux v2 GitRepository & HelmRelease Manifests
+# Continuous Source Reconciliation & Air-Gapped Helm Overrides
+# Contact: DevSuperSuite Solutions Architecture (solutions@devsupersuite.com)
+# ═══════════════════════════════════════════════════════════════════════════════
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: devsupersuite-repo
+  namespace: flux-system
+  labels:
+    app.kubernetes.io/part-of: devsupersuite-gitops
+spec:
+  interval: 1m
+  url: https://github.com/devsupersuite/enterprise-gitops.git
+  ref:
+    branch: master
+  timeout: 60s
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: devsupersuite-release
+  namespace: devsupersuite-system
+  labels:
+    app.kubernetes.io/name: devsupersuite-core
+    app.kubernetes.io/part-of: devsupersuite-gitops
+spec:
+  interval: 5m
+  chart:
+    spec:
+      chart: ./deployment/helm/devsupersuite
+      sourceRef:
+        kind: GitRepository
+        name: devsupersuite-repo
+        namespace: flux-system
+      interval: 1m
+  install:
+    remediation:
+      retries: 3
+  upgrade:
+    remediation:
+      retries: 3
+  values:
+    edition: SCIF-AirGap
+    replicaCount: 4
+    securityContext:
+      runAsUser: 10001
+      runAsNonRoot: true
+      readOnlyRootFilesystem: true
+    networkPolicy:
+      zeroEgress: true

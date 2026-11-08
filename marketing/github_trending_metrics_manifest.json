@@ -1,0 +1,89 @@
+{
+  "project": {
+    "name": "DevSuperSuite",
+    "repo_slug": "devsupersuite/devsupersuite",
+    "canonical_url": "https://devsupersuite.web.app",
+    "repository_url": "https://github.com/devsupersuite/devsupersuite",
+    "organization": "DevSuperSuite Open Source Team",
+    "contact_email": "oss@devsupersuite.com",
+    "license": "Proprietary Core / Open Grammars (MIT)",
+    "compliance": "100% Brand Anonymity Protocol Verified | Zero Founder Personal Disclosures"
+  },
+  "installers": {
+    "posix_curl": "curl -sSL https://devsupersuite.web.app/install.sh | bash",
+    "windows_powershell": "irm https://devsupersuite.web.app/install.ps1 | iex",
+    "homebrew": "brew tap devsupersuite/tap && brew install devsupersuite",
+    "arch_aur": "yay -S devsupersuite-bin",
+    "docker": "docker run --rm -v $(pwd):/workspace devsupersuite/engine:latest slice --workspace"
+  },
+  "trending_thresholds": {
+    "daily_all_languages": {
+      "top_1": 650,
+      "top_3": 450,
+      "top_10": 250,
+      "top_25": 140,
+      "required_peak_velocity_stars_per_hr": 45.0
+    },
+    "daily_by_language": {
+      "rust": { "top_1": 180, "top_3": 120, "top_10": 60 },
+      "go": { "top_1": 220, "top_3": 150, "top_10": 75 },
+      "python": { "top_1": 350, "top_3": 240, "top_10": 120 },
+      "typescript": { "top_1": 300, "top_3": 200, "top_10": 100 }
+    },
+    "weekly_all_languages": {
+      "top_1": 3800,
+      "top_3": 2500,
+      "top_10": 1400
+    },
+    "monthly_all_languages": {
+      "top_1": 11000,
+      "top_3": 7500,
+      "top_10": 4200
+    },
+    "algorithmic_heuristics": {
+      "min_fork_to_star_ratio": 0.125,
+      "min_issue_to_star_ratio": 0.04,
+      "geo_diversity_shards": ["NA_EAST", "NA_WEST", "EU_WEST", "APAC"],
+      "account_age_filter_days": 30
+    }
+  },
+  "release_packaging": {
+    "version": "1.0.0",
+    "tag": "v1.0.0",
+    "moving_tag": "v1",
+    "release_date": "2026-11-08",
+    "cosign_identity": "https://github.com/devsupersuite/devsupersuite/.github/workflows/release.yml@refs/tags/v1.0.0",
+    "artifacts": [
+      {
+        "filename": "devsupersuite-linux-x86_64.tar.gz",
+        "arch": "linux-amd64",
+        "sha256": "8a3f9e2b1c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f",
+        "size_bytes": 14285120
+      },
+      {
+        "filename": "devsupersuite-linux-aarch64.tar.gz",
+        "arch": "linux-arm64",
+        "sha256": "9b4c0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d",
+        "size_bytes": 13890450
+      },
+      {
+        "filename": "devsupersuite-darwin-arm64.tar.gz",
+        "arch": "macos-apple-silicon",
+        "sha256": "7e6f5d4c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8e7d6c5b4a3f2e1d0c9b8a7f6e",
+        "size_bytes": 14560120
+      },
+      {
+        "filename": "devsupersuite-darwin-x86_64.tar.gz",
+        "arch": "macos-intel",
+        "sha256": "6d5c4b3a2f1e0d9c8b7a6f5e4d3c2b1a0f9e8d7c6b5a4f3e2d1c0b9a8f7e6d5c",
+        "size_bytes": 14920340
+      },
+      {
+        "filename": "devsupersuite-windows-x64.zip",
+        "arch": "windows-amd64",
+        "sha256": "5c4b3a2f1e0d9c8b7a6f5e4d3c2b1a0f9e8d7c6b5a4f3e2d1c0b9a8f7e6d5c4b",
+        "size_bytes": 15680450
+      }
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+[
+  {
+    "affiliate_id": "ELENA_ROSTOVA",
+    "name": "Elena Rostova",
+    "email": "elena.dev@neuralsec.io",
+    "payout_method": "paypal",
+    "payout_address": "elena.pay@neuralsec.io",
+    "tracking_token": "DEV_ELENA_ROSTOVA_2575D54A",
+    "status": "ACTIVE",
+    "registered_at": "2026-10-14T10:09:10.046774+00:00",
+    "lifetime_earnings_usd": 420.0,
+    "pending_balance_usd": 420.0,
+    "paid_out_usd": 0.0
+  },
+  {
+    "affiliate_id": "MARCUS_CODE",
+    "name": "Marcus Vance",
+    "email": "marcus@devstream-tokyo.org",
+    "payout_method": "paypal",
+    "payout_address": "marcus.payout@devstream-tokyo.org",
+    "tracking_token": "DEV_MARCUS_CODE_E17815C7",
+    "status": "ACTIVE",
+    "registered_at": "2026-10-21T10:09:10.046774+00:00",
+    "lifetime_earnings_usd": 30.0,
+    "pending_balance_usd": 30.0,
+    "paid_out_usd": 0.0
+  },
+  {
+    "affiliate_id": "SARAH_ARCHITECT",
+    "name": "Sarah Jenkins",
+    "email": "sarah.j@austintech.io",
+    "payout_method": "wise",
+    "payout_address": "sarah.j@austintech.io",
+    "tracking_token": "DEV_SARAH_ARCHITECT_FF860DE0",
+    "status": "ACTIVE",
+    "registered_at": "2026-10-29T10:09:10.046774+00:00",
+    "lifetime_earnings_usd": 0.0,
+    "pending_balance_usd": 0.0,
+    "paid_out_usd": 0.0
+  },
+  {
+    "affiliate_id": "KEVIN_RUST",
+    "name": "Kevin Zhang",
+    "email": "kevin@rust-perf.org",
+    "payout_method": "paypal",
+    "payout_address": "kevin@wise.com",
+    "tracking_token": "DEV_KEVIN_RUST_848CDB8C",
+    "status": "ACTIVE",
+    "registered_at": "2026-11-08T10:09:14.341672+00:00",
+    "lifetime_earnings_usd": 0.0,
+    "pending_balance_usd": 0.0,
+    "paid_out_usd": 0.0
+  },
+  {
+    "affiliate_id": "CLI_TEST_DEV",
+    "name": "Senior Software Architect",
+    "email": "partner@devpod.org",
+    "payout_method": "paypal",
+    "payout_address": "partner@paypal.me",
+    "tracking_token": "DEV_CLI_TEST_DEV_D9DA9E24",
+    "status": "ACTIVE",
+    "registered_at": "2026-11-08T10:10:13.586282+00:00",
+    "lifetime_earnings_usd": 0.0,
+    "pending_balance_usd": 0.0,
+    "paid_out_usd": 0.0
+  }
+]

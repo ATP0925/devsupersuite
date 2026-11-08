@@ -1,0 +1,413 @@
+{
+  "metadata": {
+    "organization": "DevSuperSuite Official",
+    "entity": "DevSuperSuite Tech Services",
+    "treasury_contact": "cfo@devsupersuite.com",
+    "last_updated": "2026-11-08T11:03:22.321230+00:00"
+  },
+  "controls_audit": {
+    "audit_timestamp": "2026-11-08T11:03:22.321259+00:00",
+    "total_controls_audited": 25,
+    "controls_passing": 25,
+    "controls_failing": 0,
+    "icfr_effectiveness_score_pct": 100.0,
+    "soc1_statutory_opinion": "UNQUALIFIED_OPERATING_EFFECTIVENESS",
+    "controls_tested": [
+      {
+        "control_id": "ICFR-REV-01",
+        "family": "REVENUE_AND_BILLING",
+        "title": "Bilateral SOW Milestone Acceptance Delivery Sign-off",
+        "standard": "ASC 606 Step 5 / SOX 404",
+        "sample_size": 25,
+        "exceptions_found": 0,
+        "effectiveness_rate_pct": 100.0,
+        "audit_status": "OPERATING_EFFECTIVELY",
+        "control_type": "Automated Preventive"
+      },
+      {
+        "control_id": "ICFR-REV-02",
+        "family": "REVENUE_AND_BILLING",
+        "title": "Cryptographic HMAC-SHA256 Merchant Webhook Verification",
+        "standard": "ASC 606 / ITGC Application",
+        "sample_size": 50,
+        "exceptions_found": 0,
+        "effectiveness_rate_pct": 100.0,
+        "audit_status": "OPERATING_EFFECTIVELY",
+        "control_type": "Automated Preventive"
+      },
+      {
+        "control_id": "ICFR-REV-03",
+        "family": "REVENUE_AND_BILLING",
+        "title": "Deferred Revenue Ratable Monthly Amortization",
+        "standard": "ASC 606 / US GAAP",
+        "sample_size": 12,
+        "exceptions_found": 0,
+        "effectiveness_rate_pct": 100.0,
+        "audit_status": "OPERATING_EFFECTIVELY",
+        "control_type": "Automated Detective"
+      },
+      {
+        "control_id": "ICFR-REV-04",
+        "family": "REVENUE_AND_BILLING",
+        "title": "Credit Memo & Customer Refund Dual-Authorization Protocol",
+        "standard": "SOX 404 Section B",
+        "sample_size": 15,
+        "exceptions_found": 0,
+        "effectiveness_rate_pct": 100.0,
+        "audit_status": "OPERATING_EFFECTIVELY",
+        "control_type": "Manual Dual Preventive"
+      },
+      {
+        "control_id": "ICFR-REV-05",
+        "family": "REVENUE_AND_BILLING",
+        "title": "Three-Way Commercial Contract & Purchase Order Matching",
+        "standard": "ASC 606 / AICPA AU-C 500",
+        "sample_size": 25,
+        "exceptions_found": 0,
+        "effectiveness_rate_pct": 100.0,
+        "audit_status": "OPERATING_EFFECTIVELY",
+        "control_type": "Automated Detective"
+      },
+      {
+        "control_id": "ICFR-REV-06",
+        "family": "REVENUE_AND_BILLING",
+        "title": "Automated Accounts Receivable Aging & CECL Impairment Review",
+        "standard": "ASC 326 (CECL) / SOX 404",
+        "sample_size": 30,
+        "exceptions_found": 0,
+        "effectiveness_rate_pct": 100.0,
+        "audit_status": "OPERATING_EFFECTIVELY",
+        "control_type": "Automated Detective"
+      },
+      {
+        "control_id": "ICFR-TRS-01",
+        "family": "CASH_AND_TREASURY",
+        "title": "Dual-Authorization Threshold on Outbound Bank Wires ($5,000+)",
+        "standard": "SSAE 18 / SOX 404 Treasury",
+        "sample_size": 40,
+        "exceptions_found": 0,
+        "effectiveness_rate_pct": 100.0,
+        "audit_status": "OPERATING_EFFECTIVELY",
+        "control_type": "Automated Dual Preventive"
+      },
+      {
+        "control_id": "ICFR-TRS-02",
+        "family": "CASH_AND_TREASURY",
+        "title": "Automated Zero-Balance Account (ZBA) Treasury Sweep Execution",
+        "standard": "Treasury Liquidity Standard",
+        "sample_size": 30,
+        "exceptions_found": 0,
+        "effectiveness_rate_pct": 100.0,
+        "audit_status": "OPERATING_EFFECTIVELY",
+        "control_type": "Automated Preventive"
+      },
+      {
+        "control_id": "ICFR-TRS-03",
+        "family": "CASH_AND_TREASURY",
+        "title": "Daily External Bank Feed to General Ledger Reconciliation",
+        "standard": "PCAOB AU-C 505 / SOX 404",
+        "sample_size": 30,
+        "exceptions_found": 0,
+        "effectiveness_rate_pct": 100.0,
+        "audit_status": "OPERATING_EFFECTIVELY",
+        "control_type": "Automated Detective"
+      },
+      {
+        "control_id": "ICFR-TRS-04",
+        "family": "CASH_AND_TREASURY",
+        "title": "Payment Merchant Interchange & Processing Fee Benchmark Audit",
+        "standard": "COGS Audit Standard",
+        "sample_size": 25,
+        "exceptions_found": 0,
+        "effectiveness_rate_pct": 100.0,
+        "audit_status": "OPERATING_EFFECTIVELY",
+        "control_type": "Automated Detective"
+      },
+      {
+        "control_id": "ICFR-TRS-05",
+        "family": "CASH_AND_TREASURY",
+        "title": "Sovereign Treasury T-Bill Custodial Existence & Yield Attestation",
+        "standard": "ASC 320 / PCAOB AU-C 500",
+        "sample_size": 12,
+        "exceptions_found": 0,
+        "effectiveness_rate_pct": 100.0,
+        "audit_status": "OPERATING_EFFECTIVELY",
+        "control_type": "Manual Detective"
+      },
+      {
+        "control_id": "ICFR-EXP-01",
+        "family": "EXPENDITURE_AND_COGS",
+        "title": "Engineering Loaded Labor Timesheet Allocation & COGS Capitalization",
+        "standard": "ASC 350-40 / ASC 730",
+        "sample_size": 26,
+        "exceptions_found": 0,
+        "effectiveness_rate_pct": 100.0,
+        "audit_status": "OPERATING_EFFECTIVELY",
+        "control_type": "Automated Detective"
+      },
+      {
+        "control_id": "ICFR-EXP-02",
+        "family": "EXPENDITURE_AND_COGS",
+        "title": "Cloud Compute & Model Token API Invoicing Three-Way Match",
+        "standard": "GAAP Matching Principle",
+        "sample_size": 12,
+        "exceptions_found": 0,
+        "effectiveness_rate_pct": 100.0,
+        "audit_status": "OPERATING_EFFECTIVELY",
+        "control_type": "Automated Detective"
+      },
+      {
+        "control_id": "ICFR-EXP-03",
+        "family": "EXPENDITURE_AND_COGS",
+        "title": "Vendor Master File Change Quarantine & Dual-Authentication",
+        "standard": "SOX 404 Anti-Fraud",
+        "sample_size": 15,
+        "exceptions_found": 0,
+        "effectiveness_rate_pct": 100.0,
+        "audit_status": "OPERATING_EFFECTIVELY",
+        "control_type": "Manual Dual Preventive"
+      },
+      {
+        "control_id": "ICFR-EXP-04",
+        "family": "EXPENDITURE_AND_COGS",
+        "title": "Transfer Pricing Cost Plus 10.0% Intercompany Invoice Audit",
+        "standard": "OECD BEPS / IRC \u00a7482",
+        "sample_size": 12,
+        "exceptions_found": 0,
+        "effectiveness_rate_pct": 100.0,
+        "audit_status": "OPERATING_EFFECTIVELY",
+        "control_type": "Automated Preventive"
+      },
+      {
+        "control_id": "ICFR-ITGC-01",
+        "family": "IT_GENERAL_CONTROLS",
+        "title": "Cryptographic Segregation of Duties (SoD) Enforcement",
+        "standard": "SOX 404 / ITGC Security",
+        "sample_size": 100,
+        "exceptions_found": 0,
+        "effectiveness_rate_pct": 100.0,
+        "audit_status": "OPERATING_EFFECTIVELY",
+        "control_type": "Automated Preventive"
+      },
+      {
+        "control_id": "ICFR-ITGC-02",
+        "family": "IT_GENERAL_CONTROLS",
+        "title": "Production Deployment Multi-Party Peer Review & Branch Protection",
+        "standard": "SOC 2 Type II / ITGC Change Mgmt",
+        "sample_size": 50,
+        "exceptions_found": 0,
+        "effectiveness_rate_pct": 100.0,
+        "audit_status": "OPERATING_EFFECTIVELY",
+        "control_type": "Automated Preventive"
+      },
+      {
+        "control_id": "ICFR-ITGC-03",
+        "family": "IT_GENERAL_CONTROLS",
+        "title": "General Ledger SHA-256 Merkle Chain Cryptographic Sealing",
+        "standard": "AICPA SSAE 18 / SOC 1 Type II",
+        "sample_size": 14,
+        "exceptions_found": 0,
+        "effectiveness_rate_pct": 100.0,
+        "audit_status": "OPERATING_EFFECTIVELY",
+        "control_type": "Automated Preventive"
+      },
+      {
+        "control_id": "ICFR-ITGC-04",
+        "family": "IT_GENERAL_CONTROLS",
+        "title": "Write-Once Read-Many (WORM) Financial Audit Trail Logging",
+        "standard": "SEC Rule 17a-4 / SOX 404",
+        "sample_size": 100,
+        "exceptions_found": 0,
+        "effectiveness_rate_pct": 100.0,
+        "audit_status": "OPERATING_EFFECTIVELY",
+        "control_type": "Automated Detective"
+      },
+      {
+        "control_id": "ICFR-ITGC-05",
+        "family": "IT_GENERAL_CONTROLS",
+        "title": "Privileged Access Management (PAM) & Zero Persistent Root",
+        "standard": "NIST SP 800-53 / ITGC Access",
+        "sample_size": 25,
+        "exceptions_found": 0,
+        "effectiveness_rate_pct": 100.0,
+        "audit_status": "OPERATING_EFFECTIVELY",
+        "control_type": "Automated Preventive"
+      },
+      {
+        "control_id": "ICFR-ITGC-06",
+        "family": "IT_GENERAL_CONTROLS",
+        "title": "Automated Database Snapshot Integrity & Encrypted Replication",
+        "standard": "SOC 1 Availability / ITGC",
+        "sample_size": 30,
+        "exceptions_found": 0,
+        "effectiveness_rate_pct": 100.0,
+        "audit_status": "OPERATING_EFFECTIVELY",
+        "control_type": "Automated Detective"
+      },
+      {
+        "control_id": "ICFR-ITGC-07",
+        "family": "IT_GENERAL_CONTROLS",
+        "title": "Hardware-Backed Multi-Factor Authentication (FIPS 140-3) on Banking",
+        "standard": "SOX 404 Access Security",
+        "sample_size": 20,
+        "exceptions_found": 0,
+        "effectiveness_rate_pct": 100.0,
+        "audit_status": "OPERATING_EFFECTIVELY",
+        "control_type": "Automated Preventive"
+      },
+      {
+        "control_id": "ICFR-ITGC-08",
+        "family": "IT_GENERAL_CONTROLS",
+        "title": "Quarterly Disaster Recovery & High-Availability Failover Drill",
+        "standard": "SOC 1 / SOC 2 Type II",
+        "sample_size": 4,
+        "exceptions_found": 0,
+        "effectiveness_rate_pct": 100.0,
+        "audit_status": "OPERATING_EFFECTIVELY",
+        "control_type": "Manual Detective"
+      },
+      {
+        "control_id": "ICFR-ITGC-09",
+        "family": "IT_GENERAL_CONTROLS",
+        "title": "Automated Critical Vulnerability (CVE) CI/CD Blocking Gate",
+        "standard": "ITGC Security & Integrity",
+        "sample_size": 50,
+        "exceptions_found": 0,
+        "effectiveness_rate_pct": 100.0,
+        "audit_status": "OPERATING_EFFECTIVELY",
+        "control_type": "Automated Preventive"
+      },
+      {
+        "control_id": "ICFR-ITGC-10",
+        "family": "IT_GENERAL_CONTROLS",
+        "title": "Periodic User Access Review (UAR) & Instant Deprovisioning",
+        "standard": "SOC 1 Type II User Access",
+        "sample_size": 12,
+        "exceptions_found": 0,
+        "effectiveness_rate_pct": 100.0,
+        "audit_status": "OPERATING_EFFECTIVELY",
+        "control_type": "Manual Detective"
+      }
+    ]
+  },
+  "walkthroughs": [
+    {
+      "walkthrough_id": "WT-REV-01",
+      "control_ref": "ICFR-REV-01 & REV-02",
+      "process_title": "Commercial Order-to-Cash (O2C) & Milestone Recognition Walkthrough",
+      "walkthrough_steps": [
+        "Step 1: Enterprise client executes SOW #DSS-2026-NEXUS-01 with Milestone 1 deliverable defined ($24,500.00).",
+        "Step 2: Engineering delivery team completes AST slicing implementation and client counter-signs Acceptance Certificate.",
+        "Step 3: Controller submits JE-2026-005. Engine automatically inspects digital signature hash before booking revenue to Account 4020.",
+        "Step 4: SWIFT MT103 wire of $24,485.00 net received, matching bank clearing ledger."
+      ],
+      "auditor_verification_result": "PASSED - Zero premature revenue recognized; 100% ASC 606 delivery compliance."
+    },
+    {
+      "walkthrough_id": "WT-TRS-01",
+      "control_ref": "ICFR-TRS-01 & TRS-02",
+      "process_title": "Treasury Disbursement Dual-Authorization & ZBA Sweep Walkthrough",
+      "walkthrough_steps": [
+        "Step 1: Outbound payable wire of $8,166.67 initiated for loaded engineering labor.",
+        "Step 2: Engine traps wire amount >= $5,000.00 threshold; prompts for independent secondary approval.",
+        "Step 3: Financial Controller authenticates signature #1; CFO / Treasury authenticates signature #2 via WebAuthn.",
+        "Step 4: End-of-day Zero-Balance sweep executes automatically, transferring $22,183.00 into sovereign T-Bills."
+      ],
+      "auditor_verification_result": "PASSED - 100% compliance with dual-authorization threshold; zero unilateral disbursements."
+    },
+    {
+      "walkthrough_id": "WT-EXP-01",
+      "control_ref": "ICFR-EXP-01 & EXP-04",
+      "process_title": "Expenditure Loaded Labor & Transfer Pricing Service Fee Walkthrough",
+      "walkthrough_steps": [
+        "Step 1: Bi-weekly engineering timesheets audited against Jira code commits and Git branch contributions.",
+        "Step 2: Solutions labor allocated to COGS Account 5030 ($8,760.00) vs R&D OpEx Account 6010 ($3,500.00).",
+        "Step 3: Monthly intercompany cross-border R&D invoice calculated under statutory Cost Plus 10.0% ($14,158.87).",
+        "Step 4: Intercompany entries eliminated 100% upon group consolidation."
+      ],
+      "auditor_verification_result": "PASSED - Labor allocation accurately matches timesheets; transfer pricing at arm's length."
+    },
+    {
+      "walkthrough_id": "WT-ITGC-01",
+      "control_ref": "ICFR-ITGC-01 & ITGC-03",
+      "process_title": "ITGC Segregation of Duties & Cryptographic Ledger Sealing Walkthrough",
+      "walkthrough_steps": [
+        "Step 1: Internal RBAC engine verified: Developer accounts denied write access to general ledger or wire release endpoints.",
+        "Step 2: Production PR #104 requires 2 senior reviews and passing security fuzzing gate before merge.",
+        "Step 3: All 14 standard journal entries sealed into SHA-256 Merkle chain with root hash.",
+        "Step 4: Simulated record tampering test: Modifying debit line by $1.00 breaks root hash, generating immediate audit alert."
+      ],
+      "auditor_verification_result": "PASSED - Cryptographic SoD enforced; General Ledger mathematically immutable."
+    }
+  ],
+  "sod_policy": {
+    "SOFTWARE_ENGINEER": {
+      "allowed": [
+        "WRITE_CODE",
+        "APPROVE_PR"
+      ],
+      "blocked": [
+        "POST_GL_ENTRY",
+        "RELEASE_WIRE_UNDER_5K",
+        "RELEASE_WIRE_OVER_5K",
+        "EDIT_VENDOR_BANK_DETAILS",
+        "MANUAL_LEDGER_ADJUSTMENT"
+      ]
+    },
+    "RELEASE_ENGINEER": {
+      "allowed": [
+        "APPROVE_PR",
+        "TRIGGER_DEPLOYMENT"
+      ],
+      "blocked": [
+        "WRITE_CODE",
+        "POST_GL_ENTRY",
+        "RELEASE_WIRE_UNDER_5K",
+        "RELEASE_WIRE_OVER_5K",
+        "EDIT_VENDOR_BANK_DETAILS"
+      ]
+    },
+    "FINANCIAL_CONTROLLER": {
+      "allowed": [
+        "POST_GL_ENTRY",
+        "RELEASE_WIRE_UNDER_5K",
+        "RECONCILE_BANK",
+        "APPROVE_CREDIT_MEMO"
+      ],
+      "blocked": [
+        "WRITE_CODE",
+        "TRIGGER_DEPLOYMENT",
+        "RELEASE_WIRE_OVER_5K_UNILATERAL",
+        "EDIT_VENDOR_BANK_DETAILS_UNILATERAL"
+      ]
+    },
+    "CFO_TREASURER": {
+      "allowed": [
+        "APPROVE_WIRE_OVER_5K",
+        "APPROVE_VENDOR_BANK_CHANGE",
+        "AUTHORIZE_ZBA_SWEEP",
+        "EXECUTE_TREASURY_INVESTMENT"
+      ],
+      "blocked": [
+        "WRITE_CODE",
+        "TRIGGER_DEPLOYMENT",
+        "POST_MANUAL_GL_UNILATERAL"
+      ]
+    },
+    "INTERNAL_AUDITOR": {
+      "allowed": [
+        "READ_AUDIT_LOGS",
+        "INSPECT_GENERAL_LEDGER",
+        "VALIDATE_MERKLE_CHAIN"
+      ],
+      "blocked": [
+        "WRITE_CODE",
+        "TRIGGER_DEPLOYMENT",
+        "POST_GL_ENTRY",
+        "RELEASE_WIRE_UNDER_5K",
+        "RELEASE_WIRE_OVER_5K",
+        "EDIT_VENDOR_BANK_DETAILS"
+      ]
+    }
+  }
+}

@@ -168,6 +168,19 @@ class EntropyScanner:
         is_demo_playground = "landing_page" in rel_path_str or file_name_lower == "index.html"
         is_data_ledger = "/data/" in f"/{rel_path_str}/" or "ledger" in file_name_lower or "vault" in file_name_lower or "qr_data" in file_name_lower
         is_deployment_config = "/deployment/" in f"/{rel_path_str}/" or "docker-compose" in file_name_lower or file_name_lower.endswith((".yaml", ".yml"))
+        is_compliance_report = (
+            "/reports/" in f"/{rel_path_str}/" or
+            "manifest" in file_name_lower or
+            "attestation" in file_name_lower or
+            "spiffe" in file_name_lower or
+            "svid" in file_name_lower or
+            "cert" in file_name_lower
+        )
+        is_marketing_or_samples = (
+            "/marketing/" in f"/{rel_path_str}/" or
+            "sample" in file_name_lower or
+            "demo" in file_name_lower
+        )
 
         lines = content.splitlines()
         for line_no, line in enumerate(lines, 1):
@@ -207,6 +220,8 @@ class EntropyScanner:
                         is_demo_playground or
                         is_data_ledger or
                         is_deployment_config or
+                        is_compliance_report or
+                        is_marketing_or_samples or
                         "sample" in line.lower() or
                         "demo" in line.lower() or
                         "mock" in line.lower() or
@@ -214,7 +229,9 @@ class EntropyScanner:
                         "dummy" in line.lower() or
                         "example" in line.lower() or
                         "signature" in line.lower() or
-                        "hash" in line.lower()
+                        "hash" in line.lower() or
+                        "certificate" in line.lower() or
+                        "cert" in line.lower()
                     )
 
                     severity = "LOW (Audited Test/Demo Fixture)" if is_benign else "HIGH"

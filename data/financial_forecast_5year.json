@@ -1,0 +1,227 @@
+{
+  "metadata": {
+    "organization": "DevSuperSuite Official",
+    "department": "Financial Operations & Commercial Treasury",
+    "model_period": "5-Year Horizon (FY2026 - FY2030)",
+    "reporting_currency": "USD"
+  },
+  "streams": {
+    "software_licenses": {
+      "pricing_usd": [
+        29.0,
+        49.0,
+        79.0,
+        79.0,
+        79.0
+      ],
+      "units": [
+        2500,
+        8000,
+        18000,
+        32000,
+        50000
+      ],
+      "revenue_usd": [
+        72500.0,
+        392000.0,
+        1422000.0,
+        2528000.0,
+        3950000.0
+      ],
+      "cogs_usd": [
+        6887.5,
+        37240.0,
+        135090.0,
+        240160.0,
+        375250.0
+      ],
+      "gross_margin_pct": 90.5
+    },
+    "turnkey_implementations": {
+      "price_per_deal_usd": 54000.0,
+      "clients": [
+        10,
+        30,
+        65,
+        90,
+        120
+      ],
+      "revenue_usd": [
+        540000.0,
+        1620000.0,
+        3510000.0,
+        4860000.0,
+        6480000.0
+      ],
+      "cogs_usd": [
+        180900.0,
+        542700.0,
+        1175850.0,
+        1628100.0,
+        2170800.0
+      ],
+      "gross_margin_pct": 66.5
+    },
+    "recurring_retainer_pods": {
+      "monthly_pod_fee_usd": 8500.0,
+      "pods_active": [
+        5,
+        22,
+        50,
+        85,
+        130
+      ],
+      "ending_mrr_usd": [
+        42500.0,
+        187000.0,
+        425000.0,
+        722500.0,
+        1105000.0
+      ],
+      "ending_arr_usd": [
+        510000.0,
+        2244000.0,
+        5100000.0,
+        8670000.0,
+        13260000.0
+      ],
+      "recognized_revenue_usd": [
+        357000.0,
+        1727880.0,
+        4249830.0,
+        7629600.0,
+        11934000.0
+      ],
+      "cogs_usd": [
+        87465.0,
+        423330.6,
+        1041208.35,
+        1869252.0,
+        2923830.0
+      ],
+      "gross_margin_pct": 75.5
+    }
+  },
+  "consolidated": {
+    "years": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "total_gross_revenue_usd": [
+      969500.0,
+      3739880.0,
+      9181830.0,
+      15017600.0,
+      22364000.0
+    ],
+    "total_cogs_usd": [
+      275252.5,
+      1003270.6,
+      2352148.35,
+      3737512.0,
+      5469880.0
+    ],
+    "gross_profit_usd": [
+      694247.5,
+      2736609.4,
+      6829681.65,
+      11280088.0,
+      16894120.0
+    ],
+    "gross_margin_pct": [
+      71.61,
+      73.17,
+      74.38,
+      75.11,
+      75.54
+    ],
+    "total_opex_usd": [
+      420000,
+      1240000,
+      2810000,
+      4550000,
+      6500000
+    ],
+    "ebitda_usd": [
+      274247.5,
+      1496609.4,
+      4019681.65,
+      6730088.0,
+      10394120.0
+    ],
+    "ebitda_margin_pct": [
+      28.29,
+      40.02,
+      43.78,
+      44.81,
+      46.48
+    ],
+    "corporate_tax_usd": [
+      41137.12,
+      224491.41,
+      602952.25,
+      1009513.2,
+      1559118.0
+    ],
+    "net_income_usd": [
+      233110.38,
+      1272117.99,
+      3416729.4,
+      5720574.8,
+      8835002.0
+    ],
+    "net_margin_pct": [
+      24.04,
+      34.01,
+      37.21,
+      38.09,
+      39.51
+    ],
+    "free_cash_flow_usd": [
+      218110.38,
+      1227117.99,
+      3321729.4,
+      5570574.8,
+      8615002.0
+    ],
+    "cumulative_cash_usd": [
+      218110.38,
+      1445228.37,
+      4766957.77,
+      10337532.57,
+      18952534.57
+    ]
+  },
+  "unit_economics": {
+    "developer_software": {
+      "cac_usd": 4.5,
+      "ltv_usd": 79.0,
+      "gross_margin_pct": 90.5,
+      "ltv_cac_ratio": 17.6,
+      "payback_months": 0.1
+    },
+    "enterprise_retainer": {
+      "cac_usd": 7500.0,
+      "average_tenure_months": 24,
+      "monthly_fee_usd": 8500.0,
+      "gross_contract_value_usd": 204000.0,
+      "gross_margin_pct": 75.5,
+      "lifetime_contribution_usd": 154020.0,
+      "ltv_cac_ratio": 20.5,
+      "payback_months": 1.2
+    }
+  },
+  "valuation": {
+    "y3_retainer_arr_usd": 5100000.0,
+    "y3_software_arr_usd": 1422000.0,
+    "y3_blended_arr_usd": 6522000.0,
+    "ev_at_8x_arr_usd": 52176000.0,
+    "ev_at_9_2x_arr_usd": 60002400.0,
+    "ev_at_12x_arr_usd": 78264000.0,
+    "established_valuation_range": "$45,000,000.00 - $60,000,000.00 USD",
+    "dcf_model_enterprise_value_usd": 71489176.1
+  }
+}

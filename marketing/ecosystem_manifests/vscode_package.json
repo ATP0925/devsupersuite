@@ -1,0 +1,90 @@
+{
+  "name": "devsupersuite",
+  "displayName": "DevSuperSuite - AST Context Slicer & Pre-Commit Shield",
+  "description": "Local-first Tree-sitter AST interface slicing (-83% prompt tokens), Shannon entropy secret scanner, and test invariant gates.",
+  "version": "1.0.0",
+  "publisher": "devsupersuite",
+  "author": {
+    "name": "DevSuperSuite Ecosystem Engineering",
+    "email": "ecosystem@devsupersuite.com",
+    "url": "https://devsupersuite.web.app"
+  },
+  "license": "Proprietary",
+  "homepage": "https://devsupersuite.web.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devsupersuite/devsupersuite-vscode"
+  },
+  "icon": "assets/icon.png",
+  "categories": [
+    "Programming Languages",
+    "Linters",
+    "Snippets",
+    "Other"
+  ],
+  "keywords": [
+    "ast-slicing",
+    "tree-sitter",
+    "token-optimizer",
+    "context-rot",
+    "shannon-entropy",
+    "secret-scanner",
+    "cursor-composer",
+    "claude-code"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "devsupersuite.sliceCurrentFile",
+        "title": "DevSuperSuite: Extract AST Interface Contract (Current File)",
+        "category": "DevSuperSuite"
+      },
+      {
+        "command": "devsupersuite.sliceWorkspace",
+        "title": "DevSuperSuite: Slice Workspace to AST Skeleton (-83% Tokens)",
+        "category": "DevSuperSuite"
+      },
+      {
+        "command": "devsupersuite.scanEntropy",
+        "title": "DevSuperSuite: Scan Staged Diff for Leaked Secrets (H > 4.5)",
+        "category": "DevSuperSuite"
+      },
+      {
+        "command": "devsupersuite.verifyInvariants",
+        "title": "DevSuperSuite: Verify Test Invariant Non-Regression",
+        "category": "DevSuperSuite"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "devsupersuite.sliceCurrentFile",
+        "key": "ctrl+alt+s",
+        "mac": "cmd+alt+s"
+      }
+    ],
+    "configuration": {
+      "title": "DevSuperSuite",
+      "properties": {
+        "devsupersuite.entropyThreshold": {
+          "type": "number",
+          "default": 4.5,
+          "description": "Shannon entropy density threshold (bits/character) for secret interception."
+        },
+        "devsupersuite.enforceTestInvariants": {
+          "type": "boolean",
+          "default": true,
+          "description": "Rejects git commits where autonomous agents delete or silence unit test assertions."
+        },
+        "devsupersuite.zeroTelemetry": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enforces 100% local air-gapped execution with zero network tracking."
+        }
+      }
+    }
+  }
+}

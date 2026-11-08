@@ -1,0 +1,199 @@
+{
+  "metadata": {
+    "organization": "DevSuperSuite Official",
+    "entity": "DevSuperSuite Tech Services",
+    "treasury_contact": "cfo@devsupersuite.com",
+    "last_updated": "2026-11-08T11:03:19.320583+00:00"
+  },
+  "unit_economics": {
+    "timestamp": "2026-11-08T11:03:19.320599+00:00",
+    "benchmarks": {
+      "min_ltv_cac_ratio": 3.0,
+      "min_magic_number": 1.2,
+      "min_rule_of_40_pct": 40.0,
+      "min_nrr_pct": 120.0,
+      "min_grr_pct": 90.0,
+      "max_payback_months": 12.0
+    },
+    "segments": {
+      "developer_licenses": {
+        "name": "Standalone Developer Licenses",
+        "arpu_usd": 49.0,
+        "cogs_pct": 9.5,
+        "gross_margin_pct": 90.5,
+        "cac_usd": 12.5,
+        "lifespan_months": 24,
+        "ltv_usd": 98.0,
+        "ltv_cac_ratio": 7.84,
+        "payback_period_months": 0.28
+      },
+      "turnkey_implementations": {
+        "name": "Turnkey Custom Implementations",
+        "arpu_usd": 54000.0,
+        "cogs_pct": 33.5,
+        "gross_margin_pct": 66.5,
+        "cac_usd": 14500.0,
+        "lifespan_months": 12,
+        "ltv_usd": 71820.0,
+        "ltv_cac_ratio": 4.95,
+        "payback_period_months": 4.85
+      },
+      "recurring_retainer_pods": {
+        "name": "Enterprise Recurring Retainer Pods",
+        "monthly_fee_usd": 8500.0,
+        "annual_pod_revenue_usd": 102000.0,
+        "gross_margin_pct": 75.5,
+        "annual_churn_rate_pct": 6.0,
+        "cac_usd": 16000.0,
+        "lifespan_months": 36,
+        "ltv_usd": 1283500.0,
+        "ltv_cac_ratio": 80.22,
+        "payback_period_months": 2.49
+      }
+    },
+    "consolidated": {
+      "blended_cac_usd": 1850.0,
+      "blended_ltv_usd": 15170.0,
+      "blended_ltv_cac_ratio": 8.2,
+      "blended_payback_months": 2.1,
+      "saas_magic_number": 1.85,
+      "revenue_growth_rate_pct": 65.0,
+      "free_cash_flow_margin_pct": 32.2,
+      "rule_of_40_score_pct": 97.2,
+      "net_revenue_retention_nrr_pct": 137.5,
+      "gross_revenue_retention_grr_pct": 97.2,
+      "gross_margin_blended_pct": 75.5
+    }
+  },
+  "cohort_retention": {
+    "cohort_name": "FY2026 Enterprise Retainer Pod Cohort",
+    "initial_clients_count": 20,
+    "initial_cohort_mrr_usd": 170000.0,
+    "ending_cohort_mrr_usd": 233690.5,
+    "net_mrr_expansion_usd": 63690.5,
+    "final_logo_retention_pct": 95.0,
+    "final_net_dollar_retention_nrr_pct": 137.5,
+    "monthly_cohort_matrix": [
+      {
+        "month": 1,
+        "month_label": "Month 01",
+        "active_logos": 20,
+        "logo_retention_pct": 100.0,
+        "base_contract_mrr_usd": 170000.0,
+        "expansion_and_overage_mrr_usd": 0.0,
+        "total_cohort_mrr_usd": 170000.0,
+        "net_dollar_retention_nrr_pct": 100.0
+      },
+      {
+        "month": 2,
+        "month_label": "Month 02",
+        "active_logos": 20,
+        "logo_retention_pct": 100.0,
+        "base_contract_mrr_usd": 170000.0,
+        "expansion_and_overage_mrr_usd": 6800.0,
+        "total_cohort_mrr_usd": 176800.0,
+        "net_dollar_retention_nrr_pct": 104.0
+      },
+      {
+        "month": 3,
+        "month_label": "Month 03",
+        "active_logos": 20,
+        "logo_retention_pct": 100.0,
+        "base_contract_mrr_usd": 170000.0,
+        "expansion_and_overage_mrr_usd": 14450.0,
+        "total_cohort_mrr_usd": 184450.0,
+        "net_dollar_retention_nrr_pct": 108.5
+      },
+      {
+        "month": 4,
+        "month_label": "Month 04",
+        "active_logos": 20,
+        "logo_retention_pct": 100.0,
+        "base_contract_mrr_usd": 170000.0,
+        "expansion_and_overage_mrr_usd": 23800.0,
+        "total_cohort_mrr_usd": 193800.0,
+        "net_dollar_retention_nrr_pct": 114.0
+      },
+      {
+        "month": 5,
+        "month_label": "Month 05",
+        "active_logos": 19,
+        "logo_retention_pct": 95.0,
+        "base_contract_mrr_usd": 161500.0,
+        "expansion_and_overage_mrr_usd": 31492.5,
+        "total_cohort_mrr_usd": 192992.5,
+        "net_dollar_retention_nrr_pct": 113.5
+      },
+      {
+        "month": 6,
+        "month_label": "Month 06",
+        "active_logos": 19,
+        "logo_retention_pct": 95.0,
+        "base_contract_mrr_usd": 161500.0,
+        "expansion_and_overage_mrr_usd": 40859.5,
+        "total_cohort_mrr_usd": 202359.5,
+        "net_dollar_retention_nrr_pct": 119.0
+      },
+      {
+        "month": 7,
+        "month_label": "Month 07",
+        "active_logos": 19,
+        "logo_retention_pct": 95.0,
+        "base_contract_mrr_usd": 161500.0,
+        "expansion_and_overage_mrr_usd": 47642.5,
+        "total_cohort_mrr_usd": 209142.5,
+        "net_dollar_retention_nrr_pct": 123.0
+      },
+      {
+        "month": 8,
+        "month_label": "Month 08",
+        "active_logos": 19,
+        "logo_retention_pct": 95.0,
+        "base_contract_mrr_usd": 161500.0,
+        "expansion_and_overage_mrr_usd": 52649.0,
+        "total_cohort_mrr_usd": 214149.0,
+        "net_dollar_retention_nrr_pct": 126.0
+      },
+      {
+        "month": 9,
+        "month_label": "Month 09",
+        "active_logos": 19,
+        "logo_retention_pct": 95.0,
+        "base_contract_mrr_usd": 161500.0,
+        "expansion_and_overage_mrr_usd": 59432.0,
+        "total_cohort_mrr_usd": 220932.0,
+        "net_dollar_retention_nrr_pct": 130.0
+      },
+      {
+        "month": 10,
+        "month_label": "Month 10",
+        "active_logos": 19,
+        "logo_retention_pct": 95.0,
+        "base_contract_mrr_usd": 161500.0,
+        "expansion_and_overage_mrr_usd": 64600.0,
+        "total_cohort_mrr_usd": 226100.0,
+        "net_dollar_retention_nrr_pct": 133.0
+      },
+      {
+        "month": 11,
+        "month_label": "Month 11",
+        "active_logos": 19,
+        "logo_retention_pct": 95.0,
+        "base_contract_mrr_usd": 161500.0,
+        "expansion_and_overage_mrr_usd": 67991.5,
+        "total_cohort_mrr_usd": 229491.5,
+        "net_dollar_retention_nrr_pct": 135.0
+      },
+      {
+        "month": 12,
+        "month_label": "Month 12",
+        "active_logos": 19,
+        "logo_retention_pct": 95.0,
+        "base_contract_mrr_usd": 161500.0,
+        "expansion_and_overage_mrr_usd": 72190.5,
+        "total_cohort_mrr_usd": 233690.5,
+        "net_dollar_retention_nrr_pct": 137.5
+      }
+    ]
+  }
+}

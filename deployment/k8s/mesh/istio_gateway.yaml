@@ -1,0 +1,41 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# DevSuperSuite Tech Services - Istio Ingress & Multi-Cluster East-West Gateway
+# TLS 1.3 Termination & Multi-Cloud Cross-Region Federation (Port 15443)
+# Contact: DevSuperSuite Solutions Architecture (solutions@devsupersuite.com)
+# ═══════════════════════════════════════════════════════════════════════════════
+apiVersion: networking.istio.io/v1beta1
+kind: Gateway
+metadata:
+  name: devsupersuite-gateway
+  namespace: devsupersuite-system
+  labels:
+    app.kubernetes.io/name: devsupersuite-gateway
+    app.kubernetes.io/part-of: devsupersuite-mesh
+spec:
+  selector:
+    istio: ingressgateway
+  servers:
+  - port:
+      number: 443
+      name: https-external
+      protocol: HTTPS
+    tls:
+      mode: MUTUAL
+      credentialName: devsupersuite-mesh-tls-cert
+      minProtocolVersion: TLSV1_3
+      cipherSuites:
+      - ECDHE-ECDSA-AES256-GCM-SHA384
+      - ECDHE-RSA-AES256-GCM-SHA384
+      - ECDHE-ECDSA-CHACHA20-POLY1305
+    hosts:
+    - api.devsupersuite.internal
+    - '*.api.devsupersuite.internal'
+  - port:
+      number: 15443
+      name: tls-federation-eastwest
+      protocol: TLS
+    tls:
+      mode: AUTO_PASSTHROUGH
+    hosts:
+    - '*.devsupersuite.io'
+    - '*.global'

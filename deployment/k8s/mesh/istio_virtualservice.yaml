@@ -1,0 +1,61 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# DevSuperSuite Tech Services - Istio VirtualService Canary Router
+# Header-Based Overrides & Dynamic Traffic Weights
+# Contact: DevSuperSuite Solutions Architecture (solutions@devsupersuite.com)
+# ═══════════════════════════════════════════════════════════════════════════════
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: devsupersuite-ast-proxy
+  namespace: devsupersuite-system
+  labels:
+    app.kubernetes.io/name: devsupersuite-ast-proxy
+    app.kubernetes.io/part-of: devsupersuite-mesh
+    app.kubernetes.io/managed-by: devsupersuite-traffic-controller
+  annotations:
+    mesh.devsupersuite.io/canary-strategy: dynamic-weighted-rollout
+    mesh.devsupersuite.io/sla-error-ceiling: 0.01%
+    mesh.devsupersuite.io/sla-p99-ceiling: 250ms
+spec:
+  hosts:
+  - api.devsupersuite.internal
+  - devsupersuite-ast-proxy.devsupersuite-system.svc.cluster.local
+  gateways:
+  - devsupersuite-gateway
+  - mesh
+  http:
+  - name: internal-canary-override
+    match:
+    - headers:
+        x-canary-override:
+          exact: canary
+    route:
+    - destination:
+        host: devsupersuite-ast-proxy.devsupersuite-system.svc.cluster.local
+        subset: canary
+      weight: 100
+  - name: weighted-canary-split
+    route:
+    - destination:
+        host: devsupersuite-ast-proxy.devsupersuite-system.svc.cluster.local
+        subset: stable
+      weight: 95
+      headers:
+        response:
+          set:
+            x-mesh-routing-subset: stable
+            x-mesh-upstream-version: v2026.2.0
+    - destination:
+        host: devsupersuite-ast-proxy.devsupersuite-system.svc.cluster.local
+        subset: canary
+      weight: 5
+      headers:
+        response:
+          set:
+            x-mesh-routing-subset: canary
+            x-mesh-upstream-version: v2026.3.0
+    timeout: 10s
+    retries:
+      attempts: 3
+      perTryTimeout: 2s
+      retryOn: 5xx,connect-failure,refused-stream

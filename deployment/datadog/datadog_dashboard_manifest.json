@@ -1,0 +1,147 @@
+{
+  "title": "DevSuperSuite Sovereign AI Gateway & Compiler Observability",
+  "description": "Enterprise APM telemetry tracking AST context pruning, TTFT latency, Shannon entropy secret tripwires, and zero-egress invariants.",
+  "layout_type": "ordered",
+  "template_variables": [
+    {
+      "name": "env",
+      "prefix": "env",
+      "default": "production-airgap"
+    },
+    {
+      "name": "cluster",
+      "prefix": "cluster",
+      "default": "devsupersuite-sovereign-eks"
+    }
+  ],
+  "widgets": [
+    {
+      "definition": {
+        "title": "Tree-Sitter AST Token Reduction Ratio (%) [SLA: >= 70.0%]",
+        "type": "timeseries",
+        "requests": [
+          {
+            "q": "avg:devsupersuite.ast.token_reduction_pct{env:$env} by {language}",
+            "display_type": "line",
+            "style": {
+              "palette": "cool",
+              "line_type": "solid",
+              "line_width": "normal"
+            }
+          }
+        ],
+        "markers": [
+          {
+            "value": "y = 70.0",
+            "display_type": "error dashed",
+            "label": "70% Minimum SLA Ceiling"
+          }
+        ],
+        "yaxis": {
+          "min": 0,
+          "max": 100,
+          "label": "Reduction %"
+        }
+      }
+    },
+    {
+      "definition": {
+        "title": "Time-To-First-Token (TTFT) Acceleration & Proxy Latency (ms)",
+        "type": "timeseries",
+        "requests": [
+          {
+            "q": "p95:devsupersuite.proxy.ttft_ms{env:$env}",
+            "display_type": "line",
+            "style": {
+              "palette": "purple"
+            }
+          },
+          {
+            "q": "p95:devsupersuite.proxy.ast_prune_latency_ms{env:$env}",
+            "display_type": "line",
+            "style": {
+              "palette": "green"
+            }
+          }
+        ],
+        "markers": [
+          {
+            "value": "y = 2.4",
+            "display_type": "warning dashed",
+            "label": "2.4ms AST Generation Ceiling"
+          }
+        ]
+      }
+    },
+    {
+      "definition": {
+        "title": "Shannon Entropy Secret Interceptions (Blocked Outbound Leaks)",
+        "type": "timeseries",
+        "requests": [
+          {
+            "q": "sum:devsupersuite.security.secrets_intercepted_total{env:$env} by {secret_type}.as_count()",
+            "display_type": "bars",
+            "style": {
+              "palette": "warm"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "definition": {
+        "title": "Agent Invariant & Assertion Preservation Ratio (%) [Target: 100%]",
+        "type": "query_value",
+        "requests": [
+          {
+            "q": "avg:devsupersuite.ast.assertion_preservation_pct{env:$env}",
+            "aggregator": "last"
+          }
+        ],
+        "precision": 2,
+        "custom_unit": "%"
+      }
+    },
+    {
+      "definition": {
+        "title": "Active Developer Seats & Concurrent Sessions",
+        "type": "timeseries",
+        "requests": [
+          {
+            "q": "avg:devsupersuite.seats.active{env:$env}",
+            "display_type": "area"
+          },
+          {
+            "q": "max:devsupersuite.seats.licensed{env:$env}",
+            "display_type": "line",
+            "style": {
+              "line_type": "dashed"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "definition": {
+        "title": "Compiler Execution Error Rate (%) [SLA: < 0.01%]",
+        "type": "timeseries",
+        "requests": [
+          {
+            "q": "(sum:devsupersuite.ast.errors_total{env:$env} / sum:devsupersuite.ast.invocations_total{env:$env}) * 100",
+            "display_type": "line",
+            "style": {
+              "palette": "red"
+            }
+          }
+        ],
+        "markers": [
+          {
+            "value": "y = 0.01",
+            "display_type": "error solid",
+            "label": "0.01% Error Threshold"
+          }
+        ]
+      }
+    }
+  ]
+}

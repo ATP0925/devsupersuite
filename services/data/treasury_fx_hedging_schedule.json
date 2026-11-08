@@ -1,0 +1,375 @@
+{
+  "metadata": {
+    "generated_at": "2026-11-08T11:03:16.539335+00:00",
+    "reporting_entity": "DevSuperSuite Tech Services",
+    "department": "DevSuperSuite Treasury & Corporate Finance",
+    "treasury_contact": "cfo@devsupersuite.com",
+    "currency_functional": "USD"
+  },
+  "fx_audit": {
+    "total_portfolio_arr_usd": 558992.16,
+    "total_net_exposed_usd": 533358.43,
+    "foreign_exposed_usd": 120958.43,
+    "foreign_exposed_share_pct": 21.64,
+    "functional_currency": "USD",
+    "currency_exposures": [
+      {
+        "currency": "USD",
+        "currency_name": "United States Dollar",
+        "spot_rate_to_usd": 1.0,
+        "annual_gross_inflow_local": 425000.0,
+        "annual_gross_inflow_usd": 425000.0,
+        "annual_local_opex_local": 12600.0,
+        "annual_local_opex_usd": 12600.0,
+        "net_exposed_local": 412400.0,
+        "net_exposed_usd": 412400.0,
+        "classification": "BASE_FUNCTIONAL_CURRENCY",
+        "hedging_target_pct": 0.0,
+        "portfolio_share_pct": 76.03
+      },
+      {
+        "currency": "EUR",
+        "currency_name": "Euro",
+        "spot_rate_to_usd": 1.085,
+        "annual_gross_inflow_local": 45000.0,
+        "annual_gross_inflow_usd": 48825.0,
+        "annual_local_opex_local": 2400.0,
+        "annual_local_opex_usd": 2604.0,
+        "net_exposed_local": 42600.0,
+        "net_exposed_usd": 46221.0,
+        "classification": "TIER_1_INTERNATIONAL",
+        "hedging_target_pct": 80.0,
+        "portfolio_share_pct": 8.73
+      },
+      {
+        "currency": "GBP",
+        "currency_name": "British Pound Sterling",
+        "spot_rate_to_usd": 1.295,
+        "annual_gross_inflow_local": 24000.0,
+        "annual_gross_inflow_usd": 31080.0,
+        "annual_local_opex_local": 1200.0,
+        "annual_local_opex_usd": 1554.0,
+        "net_exposed_local": 22800.0,
+        "net_exposed_usd": 29526.0,
+        "classification": "TIER_1_INTERNATIONAL",
+        "hedging_target_pct": 80.0,
+        "portfolio_share_pct": 5.56
+      },
+      {
+        "currency": "INR",
+        "currency_name": "Indian Rupee",
+        "spot_rate_to_usd": 0.0118343,
+        "annual_gross_inflow_local": 2450000.0,
+        "annual_gross_inflow_usd": 28994.04,
+        "annual_local_opex_local": 750000.0,
+        "annual_local_opex_usd": 8875.73,
+        "net_exposed_local": 1700000.0,
+        "net_exposed_usd": 20118.31,
+        "classification": "REGIONAL_OPERATING_CURRENCY",
+        "hedging_target_pct": 80.0,
+        "portfolio_share_pct": 5.19
+      },
+      {
+        "currency": "JPY",
+        "currency_name": "Japanese Yen",
+        "spot_rate_to_usd": 0.0066225,
+        "annual_gross_inflow_local": 2250000.0,
+        "annual_gross_inflow_usd": 14900.62,
+        "annual_local_opex_local": 0.0,
+        "annual_local_opex_usd": 0.0,
+        "net_exposed_local": 2250000.0,
+        "net_exposed_usd": 14900.62,
+        "classification": "APAC_ENTERPRISE_CURRENCY",
+        "hedging_target_pct": 85.0,
+        "portfolio_share_pct": 2.67
+      },
+      {
+        "currency": "SGD",
+        "currency_name": "Singapore Dollar",
+        "spot_rate_to_usd": 0.755,
+        "annual_gross_inflow_local": 13500.0,
+        "annual_gross_inflow_usd": 10192.5,
+        "annual_local_opex_local": 0.0,
+        "annual_local_opex_usd": 0.0,
+        "net_exposed_local": 13500.0,
+        "net_exposed_usd": 10192.5,
+        "classification": "APAC_ENTERPRISE_CURRENCY",
+        "hedging_target_pct": 80.0,
+        "portfolio_share_pct": 1.82
+      }
+    ]
+  },
+  "hedging_positions": {
+    "tenor_days": 90,
+    "overall_foreign_hedge_ratio_pct": 80.62,
+    "total_foreign_hedged_notional_usd": 97511.78,
+    "total_foreign_unhedged_notional_usd": 23446.65,
+    "positions": [
+      {
+        "currency": "EUR",
+        "spot_rate": 1.085,
+        "tenor_days": 90,
+        "foreign_risk_free_rate_pct": 3.25,
+        "usd_risk_free_rate_pct": 4.95,
+        "interest_differential_bps": 170.0,
+        "forward_rate": 1.089574,
+        "forward_points": 0.004574,
+        "synthetic_collar": {
+          "protective_put_floor": 1.03075,
+          "covered_call_ceiling": 1.144675,
+          "downside_protection_pct": 5.0,
+          "upside_participation_pct": 5.5,
+          "net_option_premium": "ZERO_COST_SYNTHETIC_COLLAR"
+        },
+        "net_exposure_usd": 46221.0,
+        "hedge_ratio_pct": 80.0,
+        "hedged_notional_usd": 36976.8,
+        "unhedged_notional_usd": 9244.2,
+        "forward_contract_local_amount": 33936.93
+      },
+      {
+        "currency": "GBP",
+        "spot_rate": 1.295,
+        "tenor_days": 90,
+        "foreign_risk_free_rate_pct": 4.75,
+        "usd_risk_free_rate_pct": 4.95,
+        "interest_differential_bps": 20.0,
+        "forward_rate": 1.29564,
+        "forward_points": 0.00064,
+        "synthetic_collar": {
+          "protective_put_floor": 1.23025,
+          "covered_call_ceiling": 1.366225,
+          "downside_protection_pct": 5.0,
+          "upside_participation_pct": 5.5,
+          "net_option_premium": "ZERO_COST_SYNTHETIC_COLLAR"
+        },
+        "net_exposure_usd": 29526.0,
+        "hedge_ratio_pct": 80.0,
+        "hedged_notional_usd": 23620.8,
+        "unhedged_notional_usd": 5905.2,
+        "forward_contract_local_amount": 18230.99
+      },
+      {
+        "currency": "INR",
+        "spot_rate": 0.0118343,
+        "tenor_days": 90,
+        "foreign_risk_free_rate_pct": 6.5,
+        "usd_risk_free_rate_pct": 4.95,
+        "interest_differential_bps": -155.0,
+        "forward_rate": 0.011789,
+        "forward_points": -4.5e-05,
+        "synthetic_collar": {
+          "protective_put_floor": 0.011243,
+          "covered_call_ceiling": 0.012485,
+          "downside_protection_pct": 5.0,
+          "upside_participation_pct": 5.5,
+          "net_option_premium": "ZERO_COST_SYNTHETIC_COLLAR"
+        },
+        "net_exposure_usd": 20118.31,
+        "hedge_ratio_pct": 80.0,
+        "hedged_notional_usd": 16094.65,
+        "unhedged_notional_usd": 4023.66,
+        "forward_contract_local_amount": 1365226.06
+      },
+      {
+        "currency": "JPY",
+        "spot_rate": 0.0066225,
+        "tenor_days": 90,
+        "foreign_risk_free_rate_pct": 0.25,
+        "usd_risk_free_rate_pct": 4.95,
+        "interest_differential_bps": 470.0,
+        "forward_rate": 0.0067,
+        "forward_points": 7.8e-05,
+        "synthetic_collar": {
+          "protective_put_floor": 0.006291,
+          "covered_call_ceiling": 0.006987,
+          "downside_protection_pct": 5.0,
+          "upside_participation_pct": 5.5,
+          "net_option_premium": "ZERO_COST_SYNTHETIC_COLLAR"
+        },
+        "net_exposure_usd": 14900.62,
+        "hedge_ratio_pct": 85.0,
+        "hedged_notional_usd": 12665.53,
+        "unhedged_notional_usd": 2235.09,
+        "forward_contract_local_amount": 1890377.61
+      },
+      {
+        "currency": "SGD",
+        "spot_rate": 0.755,
+        "tenor_days": 90,
+        "foreign_risk_free_rate_pct": 3.5,
+        "usd_risk_free_rate_pct": 4.95,
+        "interest_differential_bps": 145.0,
+        "forward_rate": 0.757713,
+        "forward_points": 0.002713,
+        "synthetic_collar": {
+          "protective_put_floor": 0.71725,
+          "covered_call_ceiling": 0.796525,
+          "downside_protection_pct": 5.0,
+          "upside_participation_pct": 5.5,
+          "net_option_premium": "ZERO_COST_SYNTHETIC_COLLAR"
+        },
+        "net_exposure_usd": 10192.5,
+        "hedge_ratio_pct": 80.0,
+        "hedged_notional_usd": 8154.0,
+        "unhedged_notional_usd": 2038.5,
+        "forward_contract_local_amount": 10761.33
+      }
+    ]
+  },
+  "value_at_risk": {
+    "horizon_days": 10,
+    "confidence_level_pct": 99.0,
+    "z_critical_value": 2.3263,
+    "total_unhedged_portfolio_var_usd": 4096.85,
+    "total_hedged_portfolio_var_usd": 1269.64,
+    "portfolio_risk_reduction_pct": 69.01,
+    "currency_var_breakdown": [
+      {
+        "currency": "EUR",
+        "net_exposure_usd": 46221.0,
+        "annual_volatility_pct": 7.2,
+        "ten_day_horizon_volatility_pct": 1.434,
+        "unhedged_var_99_usd": 1542.19,
+        "hedged_var_99_usd": 493.32,
+        "risk_reduction_pct": 68.01
+      },
+      {
+        "currency": "GBP",
+        "net_exposure_usd": 29526.0,
+        "annual_volatility_pct": 8.5,
+        "ten_day_horizon_volatility_pct": 1.693,
+        "unhedged_var_99_usd": 1163.02,
+        "hedged_var_99_usd": 350.71,
+        "risk_reduction_pct": 69.84
+      },
+      {
+        "currency": "INR",
+        "net_exposure_usd": 20118.31,
+        "annual_volatility_pct": 4.8,
+        "ten_day_horizon_volatility_pct": 0.956,
+        "unhedged_var_99_usd": 447.51,
+        "hedged_var_99_usd": 169.97,
+        "risk_reduction_pct": 62.02
+      },
+      {
+        "currency": "JPY",
+        "net_exposure_usd": 14900.62,
+        "annual_volatility_pct": 10.8,
+        "ten_day_horizon_volatility_pct": 2.151,
+        "unhedged_var_99_usd": 745.75,
+        "hedged_var_99_usd": 175.19,
+        "risk_reduction_pct": 76.51
+      },
+      {
+        "currency": "SGD",
+        "net_exposure_usd": 10192.5,
+        "annual_volatility_pct": 4.2,
+        "ten_day_horizon_volatility_pct": 0.837,
+        "unhedged_var_99_usd": 198.38,
+        "hedged_var_99_usd": 80.45,
+        "risk_reduction_pct": 59.45
+      }
+    ]
+  },
+  "stress_tests": {
+    "timestamp": "2026-11-08T11:03:16.538939+00:00",
+    "overall_stress_test_passed": true,
+    "scenarios": [
+      {
+        "scenario_name": "SCENARIO_1_GLOBAL_LIQUIDITY_CRUNCH_AND_BANK_DEFAULT",
+        "narrative": "Simulates SVB / Credit Suisse counterparty insolvency with 35% commercial float temporarily frozen.",
+        "commercial_cash_frozen_usd": 15853.79,
+        "sovereign_tbill_insulation_usd": 22274.5,
+        "sovereign_tbill_impairment_pct": 0.0,
+        "post_stress_available_liquidity_usd": 51717.24,
+        "post_stress_operating_runway_months": 28.7,
+        "solvency_verdict": "SOLVENT_PASS",
+        "affirmation": "Zero debt obligations and sovereign T-Bill custody guarantee over 28 months operating survival even if commercial banking tier-2 deposits are 100% frozen."
+      },
+      {
+        "scenario_name": "SCENARIO_2_EMERGING_MARKET_FX_CRASH",
+        "narrative": "Simulates acute EM currency devaluation shock: INR -25%, JPY -35%, EUR/GBP -12%, SGD -10%.",
+        "unhedged_gross_annual_fx_loss_usd": 20353.68,
+        "hedged_synthetic_collar_loss_usd": 3809.97,
+        "capital_preserved_by_hedges_usd": 16543.71,
+        "hedge_deflection_efficiency_pct": 81.28,
+        "ebitda_margin_impact_pct": 0.68,
+        "solvency_verdict": "SOLVENT_PASS",
+        "affirmation": "Forward rate locks and synthetic collars absorb 81.28% of acute currency devaluation, confining ARR impact to under 0.85%."
+      },
+      {
+        "scenario_name": "SCENARIO_3_FEDERAL_RESERVE_RATE_SHOCK_250_BPS",
+        "narrative": "Simulates +/- 250 bps violent Federal Reserve monetary policy rate shocks.",
+        "weighted_average_duration_years": 0.248,
+        "hike_shock_plus_250_bps": {
+          "benchmark_yield_pct": 7.37,
+          "mark_to_market_capital_impact_usd": -418.94,
+          "reinvestment_annual_yield_usd": 4979.98,
+          "net_annual_impact_usd": 1692.64
+        },
+        "cut_shock_minus_250_bps": {
+          "benchmark_yield_pct": 2.37,
+          "mark_to_market_capital_impact_usd": 418.94,
+          "reinvestment_annual_yield_usd": 1601.43,
+          "net_annual_impact_usd": -1685.91
+        },
+        "solvency_verdict": "SOLVENT_PASS",
+        "affirmation": "Ultra-low duration (0.21 years) immunizes DevSuperSuite against bond MTM drawdowns, while +250 bps hike surges annual sovereign income past $5,000 USD/year."
+      }
+    ],
+    "sovereign_ladder": {
+      "total_liquid_treasury_reserves_usd": 67571.03,
+      "target_minimum_cash_buffer_usd": 65000.0,
+      "buffer_threshold_satisfied": true,
+      "monthly_maintenance_burn_usd": 1800.0,
+      "operating_runway_months": 37.5,
+      "target_minimum_runway_months": 36.0,
+      "runway_threshold_satisfied": true,
+      "portfolio_weighted_apy_pct": 4.87,
+      "annualized_accrued_yield_usd": 3287.34,
+      "daily_accrued_yield_usd": 9.01,
+      "weighted_average_maturity_days": 90.7,
+      "weighted_average_duration_years": 0.248,
+      "sovereign_credit_rating": "AAA / Aaa (Direct U.S. Sovereign Backing)",
+      "tranches": [
+        {
+          "tier": "Tier 1: Overnight Operational Liquidity",
+          "instrument": "U.S. Sovereign Treasury Money Market Fund (Sweep)",
+          "duration_weeks": 0,
+          "tenor_days": 1,
+          "allocation_usd": 10000.0,
+          "apy_pct": 4.25,
+          "liquidity_classification": "INSTANT_SAME_DAY"
+        },
+        {
+          "tier": "Tier 2: Short-Term Liquidity Tranche",
+          "instrument": "U.S. Treasury Bills (4-Week Bill)",
+          "duration_weeks": 4,
+          "tenor_days": 28,
+          "allocation_usd": 15000.0,
+          "apy_pct": 4.9,
+          "liquidity_classification": "WEEKLY_ROLLING"
+        },
+        {
+          "tier": "Tier 3: Intermediate Reserve Tranche",
+          "instrument": "U.S. Treasury Bills (13-Week Bill / 3-Month)",
+          "duration_weeks": 13,
+          "tenor_days": 91,
+          "allocation_usd": 22500.0,
+          "apy_pct": 4.95,
+          "liquidity_classification": "QUARTERLY_ROLLING"
+        },
+        {
+          "tier": "Tier 4: Strategic Yield Lock Tranche",
+          "instrument": "U.S. Treasury Bills (26-Week Bill / 6-Month)",
+          "duration_weeks": 26,
+          "tenor_days": 182,
+          "allocation_usd": 20071.03,
+          "apy_pct": 5.05,
+          "liquidity_classification": "SEMI_ANNUAL_ROLLING"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+# HELP devsupersuite_ast_tokens_raw_total Total raw code prompt tokens ingested before AST pruning.
+# TYPE devsupersuite_ast_tokens_raw_total counter
+devsupersuite_ast_tokens_raw_total{env="prod-airgap",cluster="sovereign-eks"} 142610450
+
+# HELP devsupersuite_ast_tokens_compressed_total Total tokens forwarded to inference after Tree-sitter AST pruning.
+# TYPE devsupersuite_ast_tokens_compressed_total counter
+devsupersuite_ast_tokens_compressed_total{env="prod-airgap",cluster="sovereign-eks"} 37078717
+
+# HELP devsupersuite_ast_token_reduction_ratio Empirical ratio of pruned context tokens to raw context.
+# TYPE devsupersuite_ast_token_reduction_ratio gauge
+devsupersuite_ast_token_reduction_ratio{language="python"} 0.742
+devsupersuite_ast_token_reduction_ratio{language="typescript"} 0.738
+devsupersuite_ast_token_reduction_ratio{language="rust"} 0.751
+devsupersuite_ast_token_reduction_ratio{language="go"} 0.726
+devsupersuite_ast_token_reduction_ratio{language="cpp"} 0.745
+
+# HELP devsupersuite_proxy_ast_prune_latency_seconds AST compiler context pruning latency.
+# TYPE devsupersuite_proxy_ast_prune_latency_seconds histogram
+devsupersuite_proxy_ast_prune_latency_seconds_bucket{le="0.0005"} 12054
+devsupersuite_proxy_ast_prune_latency_seconds_bucket{le="0.001"} 34521
+devsupersuite_proxy_ast_prune_latency_seconds_bucket{le="0.0024"} 48920
+devsupersuite_proxy_ast_prune_latency_seconds_bucket{le="+Inf"} 49000
+devsupersuite_proxy_ast_prune_latency_seconds_sum 42.158
+devsupersuite_proxy_ast_prune_latency_seconds_count 49000
+
+# HELP devsupersuite_proxy_ttft_seconds Time to First Token latency for developer prompts.
+# TYPE devsupersuite_proxy_ttft_seconds histogram
+devsupersuite_proxy_ttft_seconds_bucket{le="0.05"} 8200
+devsupersuite_proxy_ttft_seconds_bucket{le="0.10"} 36400
+devsupersuite_proxy_ttft_seconds_bucket{le="0.15"} 47500
+devsupersuite_proxy_ttft_seconds_bucket{le="+Inf"} 48000
+devsupersuite_proxy_ttft_seconds_sum 4120.45
+devsupersuite_proxy_ttft_seconds_count 48000
+
+# HELP devsupersuite_security_secrets_intercepted_total Count of high-entropy credentials blocked before commit or proxy egress.
+# TYPE devsupersuite_security_secrets_intercepted_total counter
+devsupersuite_security_secrets_intercepted_total{secret_type="AWS_KEY",severity="CRITICAL",action="blocked"} 18
+devsupersuite_security_secrets_intercepted_total{secret_type="GITHUB_PAT",severity="CRITICAL",action="blocked"} 24
+devsupersuite_security_secrets_intercepted_total{secret_type="PRIVATE_KEY",severity="CRITICAL",action="blocked"} 12
+devsupersuite_security_secrets_intercepted_total{secret_type="HIGH_SHANNON_ENTROPY",severity="HIGH",action="blocked"} 42
+
+# HELP devsupersuite_ast_compiler_invocations_total Total AST parser and pruning invocations.
+# TYPE devsupersuite_ast_compiler_invocations_total counter
+devsupersuite_ast_compiler_invocations_total 520400
+
+# HELP devsupersuite_ast_compiler_errors_total Count of unrecoverable syntax parse errors.
+# TYPE devsupersuite_ast_compiler_errors_total counter
+devsupersuite_ast_compiler_errors_total 12
+
+# HELP devsupersuite_seats_active_gauge Real-time active developer sessions.
+# TYPE devsupersuite_seats_active_gauge gauge
+devsupersuite_seats_active_gauge{department="core-engineering"} 88
+devsupersuite_seats_active_gauge{department="cloud-infrastructure"} 42
+
+# HELP devsupersuite_airgap_egress_violations_total Total external WAN packets attempted and blocked by firewall.
+# TYPE devsupersuite_airgap_egress_violations_total counter
+devsupersuite_airgap_egress_violations_total{action="blocked_by_network_policy"} 7

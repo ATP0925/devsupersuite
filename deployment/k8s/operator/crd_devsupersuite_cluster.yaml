@@ -1,0 +1,253 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# DevSuperSuite Tech Services - Kubernetes CustomResourceDefinition
+# Reference: devsupersuite.io/v1beta1 DevSuperSuiteCluster
+# Contact: DevSuperSuite Solutions Architecture (solutions@devsupersuite.com)
+# ═══════════════════════════════════════════════════════════════════════════════
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  name: devsupersuiteclusters.operator.devsupersuite.io
+  annotations:
+    controller-gen.kubebuilder.io/version: v0.14.0
+    description: DevSuperSuiteCluster custom resource definition managing high-security
+      AST slicing proxies.
+    contact: solutions@devsupersuite.com
+  labels:
+    app.kubernetes.io/name: devsupersuite-operator
+    app.kubernetes.io/part-of: devsupersuite
+    app.kubernetes.io/managed-by: kustomize
+spec:
+  group: operator.devsupersuite.io
+  names:
+    kind: DevSuperSuiteCluster
+    listKind: DevSuperSuiteClusterList
+    plural: devsupersuiteclusters
+    singular: devsupersuitecluster
+    shortNames:
+    - dssc
+    - dsscluster
+  scope: Namespaced
+  versions:
+  - name: v1alpha1
+    served: true
+    storage: false
+    subresources:
+      status: {}
+      scale:
+        specReplicasPath: .spec.replicas
+        statusReplicasPath: .status.currentReplicas
+        labelSelectorPath: .status.selector
+    schema:
+      openAPIV3Schema: &id001
+        type: object
+        properties:
+          spec:
+            type: object
+            required:
+            - edition
+            - version
+            properties:
+              replicas:
+                type: integer
+                minimum: 1
+                maximum: 100
+                default: 3
+                description: Base number of worker replicas running AST slicing proxies.
+              edition:
+                type: string
+                enum:
+                - Enterprise
+                - FedRAMP
+                - SCIF-AirGap
+                default: Enterprise
+                description: Operating compliance edition with hardware isolation
+                  boundaries.
+              version:
+                type: string
+                pattern: ^\d{4}\.\d+\.\d+$
+                description: Semantic release version for container image tags.
+              astEngine:
+                type: object
+                properties:
+                  maxQueueDepth:
+                    type: integer
+                    minimum: 50
+                    maximum: 5000
+                    default: 500
+                    description: AST slicing queue depth threshold triggering autoscaling.
+                  targetQueueLatencyMs:
+                    type: integer
+                    minimum: 1
+                    maximum: 100
+                    default: 15
+                    description: Target latency for AST AST generation in milliseconds.
+                  minReplicas:
+                    type: integer
+                    minimum: 1
+                    maximum: 10
+                    default: 2
+                    description: Lower bound for AST proxy replicas.
+                  maxReplicas:
+                    type: integer
+                    minimum: 2
+                    maximum: 100
+                    default: 50
+                    description: Upper bound for AST proxy replicas under peak load.
+                  treesitterLanguages:
+                    type: array
+                    items:
+                      type: string
+                    description: Enabled Tree-sitter AST parser languages.
+                  maxMemoryLimitPerPod:
+                    type: string
+                    default: 16Gi
+                    pattern: ^\d+(Mi|Gi)$
+                    description: Maximum memory boundary before pod restart.
+              security:
+                type: object
+                properties:
+                  mtlsSidecar:
+                    type: object
+                    properties:
+                      enabled:
+                        type: boolean
+                        default: true
+                      tlsMinVersion:
+                        type: string
+                        enum:
+                        - TLSv1.2
+                        - TLSv1.3
+                        default: TLSv1.3
+                      certManagerIssuer:
+                        type: string
+                        default: vault-issuer
+                  secretRotation:
+                    type: object
+                    properties:
+                      enabled:
+                        type: boolean
+                        default: true
+                      intervalHours:
+                        type: integer
+                        minimum: 1
+                        maximum: 720
+                        default: 24
+                      vaultPath:
+                        type: string
+                        default: secret/devsupersuite/cluster
+                  airgapZeroEgress:
+                    type: boolean
+                    default: true
+                    description: Enforce strict zero-egress NetworkPolicy blocking
+                      public IP egress.
+                  runAsUser:
+                    type: integer
+                    default: 10001
+                    description: Deterministic non-root UID for all container workloads.
+              deploymentStrategy:
+                type: object
+                properties:
+                  type:
+                    type: string
+                    enum:
+                    - RollingUpdate
+                    - Canary
+                    - BlueGreen
+                    default: Canary
+                  canaryStepPercent:
+                    type: integer
+                    minimum: 5
+                    maximum: 50
+                    default: 20
+                  canaryAnalysisMinutes:
+                    type: integer
+                    minimum: 1
+                    maximum: 60
+                    default: 10
+                  maxSurge:
+                    type: string
+                    default: 25%
+                  maxUnavailable:
+                    type: integer
+                    default: 0
+          status:
+            type: object
+            properties:
+              phase:
+                type: string
+                enum:
+                - Pending
+                - Reconciling
+                - Healthy
+                - Degraded
+                - Scaling
+                - RotatingSecrets
+                - CanaryActive
+                default: Pending
+              currentReplicas:
+                type: integer
+                default: 0
+              readyReplicas:
+                type: integer
+                default: 0
+              astQueueDepth:
+                type: integer
+                default: 0
+              activeVersion:
+                type: string
+              activeEdition:
+                type: string
+              lastSecretRotationTimestamp:
+                type: string
+              canaryWeight:
+                type: integer
+                default: 0
+              conditions:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    type:
+                      type: string
+                    status:
+                      type: string
+                    lastTransitionTime:
+                      type: string
+                    reason:
+                      type: string
+                    message:
+                      type: string
+    additionalPrinterColumns: &id002
+    - name: Edition
+      type: string
+      jsonPath: .spec.edition
+    - name: Phase
+      type: string
+      jsonPath: .status.phase
+    - name: Desired
+      type: integer
+      jsonPath: .spec.replicas
+    - name: Ready
+      type: integer
+      jsonPath: .status.readyReplicas
+    - name: Queue-Depth
+      type: integer
+      jsonPath: .status.astQueueDepth
+    - name: Canary%
+      type: integer
+      jsonPath: .status.canaryWeight
+    - name: Age
+      type: date
+      jsonPath: .metadata.creationTimestamp
+  - name: v1beta1
+    served: true
+    storage: true
+    subresources:
+      status: {}
+      scale:
+        specReplicasPath: .spec.replicas
+        statusReplicasPath: .status.currentReplicas
+        labelSelectorPath: .status.selector
+    schema:
+      openAPIV3Schema: *id001
+    additionalPrinterColumns: *id002

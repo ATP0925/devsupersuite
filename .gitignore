@@ -4,6 +4,7 @@ __pycache__/
 !qr_upi.png
 !og-image.png
 !landing_page/og-image.png
+!landing_page/qr_upi.png
 *.json
 !package.json
 !qr_data.json
@@ -14,12 +15,17 @@ __pycache__/
 !build/DevSuperSuite/agent-shield/mcp_template.json
 !firebase.json
 !.firebaserc
+!marketing/**/*.json
+!services/**/*.json
+!deployment/**/*.json
+!data/**/*.json
 *.py
 !package_product.py
 !generate_orange_og.py
 !build/DevSuperSuite/**
 !tests/**
 !services/**
+!marketing/**/*.py
 
 .vercel
 .firebase/

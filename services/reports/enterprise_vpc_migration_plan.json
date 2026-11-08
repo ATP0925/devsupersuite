@@ -1,0 +1,88 @@
+{
+  "plan_id": "VPC-MIG-9B7F5D19DD",
+  "customer_name": "L3Harris Tech",
+  "target_platform": "AWS GovCloud (US) / Commercial EKS",
+  "licensed_seats": 200,
+  "estimated_total_days": 14,
+  "guaranteed_downtime_minutes": 0,
+  "governing_desk": "DevSuperSuite Solutions Architecture / OmniKernel Labs",
+  "contact_email": "solutions@devsupersuite.com",
+  "phases": [
+    {
+      "phase_number": 1,
+      "name": "Phase 1: Dedicated Infrastructure & KMS Provisioning",
+      "duration_days": 4,
+      "downtime_minutes": 0,
+      "tasks": [
+        "Provision dedicated private VPC in AWS GovCloud (US) / Commercial EKS",
+        "Generate Customer-Managed Key (CMK) with 90-day automated rotation",
+        "Establish AWS PrivateLink / Azure Private Endpoint peering with customer corporate network",
+        "Deploy internal sovereign container registry cache"
+      ]
+    },
+    {
+      "phase_number": 2,
+      "name": "Phase 2: Configuration & Manifest Customization",
+      "duration_days": 3,
+      "downtime_minutes": 0,
+      "tasks": [
+        "Render dedicated Helm values (values-dedicated-vpc.yaml)",
+        "Configure Calico/Cilium zero-egress NetworkPolicies",
+        "Issue dedicated mTLS certificate authority bundle for developer workstations",
+        "Inject pre-commit Shannon entropy hooks across customer git repositories"
+      ]
+    },
+    {
+      "phase_number": 3,
+      "name": "Phase 3: Data Migration & Seamless DNS Cutover",
+      "duration_days": 4,
+      "downtime_minutes": 0,
+      "tasks": [
+        "Export encrypted historical telemetry from shared SaaS into customer-owned KMS volume",
+        "Synchronize Tree-sitter AST rules and custom repository indexing caches",
+        "Execute DNS alias switchover pointing IDE clients to internal private VPC endpoint",
+        "Verify sub-110ms duplex audio and 0% query packet loss during active cutover"
+      ]
+    },
+    {
+      "phase_number": 4,
+      "name": "Phase 4: Post-Migration Audit & Cryptographic De-Provisioning",
+      "duration_days": 3,
+      "downtime_minutes": 0,
+      "tasks": [
+        "Execute live zero-egress network probe (blocking all outbound 0.0.0.0/0)",
+        "Issue Architecture Review Board (ARB) compliance certification dossier",
+        "Perform DoD 5220.22-M cryptographic purge of historical customer tenant records from shared SaaS",
+        "Handoff dedicated VPC admin controls to customer SecOps team"
+      ]
+    }
+  ],
+  "manifest_overrides": {
+    "helm_values": {
+      "global": {
+        "customerName": "L3Harris Tech",
+        "environment": "dedicated-vpc",
+        "airgapMode": true,
+        "zeroEgressEnforced": true
+      },
+      "replicaCount": 5,
+      "serviceAccount": {
+        "name": "devsupersuite-l3harris-tech-sa"
+      },
+      "securityContext": {
+        "runAsUser": 10001,
+        "runAsGroup": 10001,
+        "readOnlyRootFilesystem": true
+      },
+      "networkPolicy": {
+        "enabled": true,
+        "enforceZeroEgress": true
+      },
+      "kmsEncryption": {
+        "provider": "aws",
+        "cmkKeyArn": "arn:aws-us-gov:kms:us-gov-west-1:123456789012:key/vpc-mig-9b7f5d19dd"
+      }
+    },
+    "terraform_snippet": "# DevSuperSuite Dedicated VPC Transit Gateway Attachment Override\nresource \"aws_ec2_transit_gateway_vpc_attachment\" \"customer_tgw_attach\" {\n  transit_gateway_id = \"tgw-0a1b2c3d4e5f6g7h8\"\n  vpc_id             = \"vpc-devsupersuite-l3harris-tech\"\n  subnet_ids         = [\"subnet-priv-1\", \"subnet-priv-2\"]\n\n  tags = {\n    Name     = \"dss-l3harris-tech-tgw-attachment\"\n    PlanId   = \"VPC-MIG-9B7F5D19DD\"\n    Security = \"Dedicated-VPC-AirGap\"\n  }\n}\n"
+  }
+}

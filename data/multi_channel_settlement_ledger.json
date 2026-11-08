@@ -1,0 +1,299 @@
+{
+  "metadata": {
+    "organization": "DevSuperSuite Official",
+    "entity": "DevSuperSuite Tech Services Commercial Operations",
+    "reporting_currency": "USD",
+    "lut_reference": "DSS-LUT-FY2026-REG-0994",
+    "period": "November 2026 (Monthly Settlement)",
+    "generated_at": "2026-11-08T09:43:16.241319+00:00"
+  },
+  "benchmark_fx": {
+    "USD_TO_INR": 84.5,
+    "USD_TO_EUR": 0.92,
+    "USD_TO_GBP": 0.785
+  },
+  "channels": {
+    "gumroad": {
+      "channel_name": "Gumroad Global Merchant Store",
+      "store_url": "https://gumroad.com/l/tlzdco",
+      "fee_structure": "10.0% Platform Fee + $0.30 per transaction",
+      "dispute_reserve_pct": 0.0,
+      "records": [
+        {
+          "record_id": "GUM-2026-11-001",
+          "timestamp": "2026-11-08T06:12:00Z",
+          "customer": "nathan.reed@cloudscale-ops.io",
+          "product": "DevSuperSuite Hacker Solo ($29)",
+          "gross_amount_usd": 29.0,
+          "platform_fee_usd": 3.2,
+          "dispute_reserve_usd": 0.0,
+          "net_payout_usd": 25.8,
+          "settlement_status": "PAYOUT_CLEARED",
+          "fira_status": "FIRA_ISSUED_AND_VERIFIED",
+          "fira_number": "FIRA-GUM-2026-9041",
+          "purpose_code": "P0807",
+          "purpose_label": "Off-Site Software Supply & Licensing",
+          "fx_settlement": {
+            "currency": "INR",
+            "benchmark_rate": 84.5,
+            "realized_rate": 84.72,
+            "realized_local_amount": 2185.78,
+            "fx_gain_loss_usd": 0.07
+          }
+        },
+        {
+          "record_id": "GUM-2026-11-002",
+          "timestamp": "2026-11-08T07:45:00Z",
+          "customer": "clara.m@vibe-foundry.dev",
+          "product": "DevSuperSuite Hacker Solo ($29)",
+          "gross_amount_usd": 29.0,
+          "platform_fee_usd": 3.2,
+          "dispute_reserve_usd": 0.0,
+          "net_payout_usd": 25.8,
+          "settlement_status": "PAYOUT_CLEARED",
+          "fira_status": "FIRA_ISSUED_AND_VERIFIED",
+          "fira_number": "FIRA-GUM-2026-9042",
+          "purpose_code": "P0807",
+          "purpose_label": "Off-Site Software Supply & Licensing",
+          "fx_settlement": {
+            "currency": "INR",
+            "benchmark_rate": 84.5,
+            "realized_rate": 84.68,
+            "realized_local_amount": 2184.74,
+            "fx_gain_loss_usd": 0.05
+          }
+        }
+      ]
+    },
+    "paypal": {
+      "channel_name": "PayPal Business Commerce Gateway",
+      "account_email": "billing@devsupersuite.com",
+      "fee_structure": "3.49% + $0.49 per transaction",
+      "dispute_reserve_pct": 5.0,
+      "records": [
+        {
+          "record_id": "PP-2026-11-001",
+          "timestamp": "2026-11-08T04:19:16Z",
+          "customer": "kevin.t@syntaxcapital.co.uk",
+          "product": "DevSuperSuite Hacker Solo ($29)",
+          "gross_amount_usd": 29.0,
+          "platform_fee_usd": 1.5,
+          "dispute_reserve_usd": 1.45,
+          "net_payout_usd": 26.05,
+          "settlement_status": "SETTLED_WITH_RESERVE_HOLD",
+          "fira_status": "FIRA_ISSUED_AND_VERIFIED",
+          "fira_number": "FIRA-PP-2026-4412",
+          "purpose_code": "P0807",
+          "purpose_label": "Off-Site Software Supply & Licensing",
+          "fx_settlement": {
+            "currency": "INR",
+            "benchmark_rate": 84.5,
+            "realized_rate": 84.75,
+            "realized_local_amount": 2207.74,
+            "fx_gain_loss_usd": 0.08
+          }
+        },
+        {
+          "record_id": "PP-2026-11-002",
+          "timestamp": "2026-11-08T09:29:26Z",
+          "customer": "torvalds.fan@helsinki-dev.fi",
+          "product": "DevSuperSuite Hacker Solo ($29)",
+          "gross_amount_usd": 29.0,
+          "platform_fee_usd": 1.5,
+          "dispute_reserve_usd": 1.45,
+          "net_payout_usd": 26.05,
+          "settlement_status": "SETTLED_WITH_RESERVE_HOLD",
+          "fira_status": "FIRA_ISSUED_AND_VERIFIED",
+          "fira_number": "FIRA-PP-2026-4413",
+          "purpose_code": "P0807",
+          "purpose_label": "Off-Site Software Supply & Licensing",
+          "fx_settlement": {
+            "currency": "INR",
+            "benchmark_rate": 84.5,
+            "realized_rate": 84.7,
+            "realized_local_amount": 2206.44,
+            "fx_gain_loss_usd": 0.06
+          }
+        }
+      ]
+    },
+    "enterprise_wire": {
+      "channel_name": "Institutional Corporate Wire (SWIFT / Fedwire)",
+      "depository_bank": "Silicon Valley Commercial Clearing Bank / JPMorgan Chase",
+      "swift_bic": "DEVSUS33XXX",
+      "routing_rules": "Strict Code OUR (Client absorbs sender & intermediary fees)",
+      "records": [
+        {
+          "record_id": "WIRE-2026-11-001",
+          "invoice_id": "INV-2026-001",
+          "timestamp": "2026-11-08T10:15:00Z",
+          "counterparty": "Nexus Enterprise Technologies Corp.",
+          "engagement": "OmniKernel AST Context Slicing Enterprise Rollout (Milestone 1)",
+          "gross_amount_usd": 24500.0,
+          "swift_code_protocol": "OUR",
+          "intermediary_deductions_usd": 0.0,
+          "incoming_wire_bank_fee_usd": 15.0,
+          "dispute_reserve_usd": 0.0,
+          "net_payout_usd": 24485.0,
+          "settlement_status": "CLEARED_IN_DEPOSITORY_VAULT",
+          "fira_status": "FIRA_ISSUED_AND_VERIFIED",
+          "fira_number": "FIRA-JPMC-2026-0881",
+          "purpose_code": "P0802",
+          "purpose_label": "Software Implementation Services",
+          "fx_settlement": {
+            "currency": "INR",
+            "benchmark_rate": 84.5,
+            "realized_rate": 84.82,
+            "realized_local_amount": 2076817.7,
+            "fx_gain_loss_usd": 92.75
+          }
+        },
+        {
+          "record_id": "WIRE-2026-11-002",
+          "invoice_id": "INV-2026-DSS-002",
+          "timestamp": "2026-11-08T04:19:16Z",
+          "counterparty": "Marcus Vance / Cursor Devs Studio",
+          "engagement": "DevSuperSuite Agency Studio Pack ($99)",
+          "gross_amount_usd": 99.0,
+          "swift_code_protocol": "OUR",
+          "intermediary_deductions_usd": 0.0,
+          "incoming_wire_bank_fee_usd": 0.0,
+          "dispute_reserve_usd": 0.0,
+          "net_payout_usd": 99.0,
+          "settlement_status": "CLEARED_IN_DEPOSITORY_VAULT",
+          "fira_status": "FIRA_ISSUED_AND_VERIFIED",
+          "fira_number": "FIRA-JPMC-2026-0882",
+          "purpose_code": "P0807",
+          "purpose_label": "Off-Site Software Supply & Licensing",
+          "fx_settlement": {
+            "currency": "INR",
+            "benchmark_rate": 84.5,
+            "realized_rate": 84.7,
+            "realized_local_amount": 8385.3,
+            "fx_gain_loss_usd": 0.23
+          }
+        }
+      ]
+    },
+    "stripe_and_domestic": {
+      "channel_name": "Stripe Corporate Card & Domestic Instant Clearing",
+      "records": [
+        {
+          "record_id": "ST-2026-11-001",
+          "timestamp": "2026-11-08T04:19:16Z",
+          "customer": "alex.chen@vibe-engineers.io",
+          "product": "DevSuperSuite Hacker Solo ($29)",
+          "channel": "stripe",
+          "gross_amount_usd": 29.0,
+          "platform_fee_usd": 1.58,
+          "dispute_reserve_usd": 0.0,
+          "net_payout_usd": 27.42,
+          "settlement_status": "SETTLED",
+          "fira_status": "FIRA_ISSUED_AND_VERIFIED",
+          "fira_number": "FIRA-STR-2026-1101",
+          "purpose_code": "P0807",
+          "purpose_label": "Off-Site Software Supply & Licensing",
+          "fx_settlement": {
+            "currency": "INR",
+            "benchmark_rate": 84.5,
+            "realized_rate": 84.7,
+            "realized_local_amount": 2322.47,
+            "fx_gain_loss_usd": 0.06
+          }
+        },
+        {
+          "record_id": "ST-2026-11-002",
+          "timestamp": "2026-11-08T04:19:16Z",
+          "customer": "elena.rostova@cloudscale-ai.de",
+          "product": "DevSuperSuite Hacker Solo ($29)",
+          "channel": "stripe",
+          "gross_amount_usd": 29.0,
+          "platform_fee_usd": 1.58,
+          "dispute_reserve_usd": 0.0,
+          "net_payout_usd": 27.42,
+          "settlement_status": "SETTLED",
+          "fira_status": "FIRA_ISSUED_AND_VERIFIED",
+          "fira_number": "FIRA-STR-2026-1102",
+          "purpose_code": "P0807",
+          "purpose_label": "Off-Site Software Supply & Licensing",
+          "fx_settlement": {
+            "currency": "INR",
+            "benchmark_rate": 84.5,
+            "realized_rate": 84.75,
+            "realized_local_amount": 2323.85,
+            "fx_gain_loss_usd": 0.08
+          }
+        },
+        {
+          "record_id": "ST-2026-11-003",
+          "timestamp": "2026-11-08T09:29:26Z",
+          "customer": "sarah.jenkins@deepcode-labs.com",
+          "product": "DevSuperSuite Hacker Solo ($29)",
+          "channel": "stripe",
+          "gross_amount_usd": 29.0,
+          "platform_fee_usd": 1.58,
+          "dispute_reserve_usd": 0.0,
+          "net_payout_usd": 27.42,
+          "settlement_status": "SETTLED",
+          "fira_status": "FIRA_ISSUED_AND_VERIFIED",
+          "fira_number": "FIRA-STR-2026-1103",
+          "purpose_code": "P0807",
+          "purpose_label": "Off-Site Software Supply & Licensing",
+          "fx_settlement": {
+            "currency": "INR",
+            "benchmark_rate": 84.5,
+            "realized_rate": 84.72,
+            "realized_local_amount": 2323.02,
+            "fx_gain_loss_usd": 0.07
+          }
+        },
+        {
+          "record_id": "ST-2026-11-004",
+          "timestamp": "2026-11-08T09:29:26Z",
+          "customer": "techlead@vibe-studios.co",
+          "product": "DevSuperSuite Agency Studio Pack ($99)",
+          "channel": "stripe",
+          "gross_amount_usd": 99.0,
+          "platform_fee_usd": 3.17,
+          "dispute_reserve_usd": 0.0,
+          "net_payout_usd": 95.83,
+          "settlement_status": "SETTLED",
+          "fira_status": "FIRA_ISSUED_AND_VERIFIED",
+          "fira_number": "FIRA-STR-2026-1104",
+          "purpose_code": "P0807",
+          "purpose_label": "Off-Site Software Supply & Licensing",
+          "fx_settlement": {
+            "currency": "INR",
+            "benchmark_rate": 84.5,
+            "realized_rate": 84.74,
+            "realized_local_amount": 8120.63,
+            "fx_gain_loss_usd": 0.27
+          }
+        },
+        {
+          "record_id": "UPI-2026-11-001",
+          "timestamp": "2026-11-08T04:19:16Z",
+          "customer": "dev.satish@synthetix.tech",
+          "product": "DevSuperSuite Hacker Solo (\u20b91,499 / $29)",
+          "channel": "upi",
+          "gross_amount_usd": 29.0,
+          "platform_fee_usd": 0.0,
+          "dispute_reserve_usd": 0.0,
+          "net_payout_usd": 29.0,
+          "settlement_status": "SETTLED",
+          "fira_status": "NOT_APPLICABLE_DOMESTIC",
+          "fira_number": "N/A - DOMESTIC UPI",
+          "purpose_code": "DOMESTIC",
+          "purpose_label": "Domestic Direct Settlement",
+          "fx_settlement": {
+            "currency": "INR",
+            "benchmark_rate": 84.5,
+            "realized_rate": 84.5,
+            "realized_local_amount": 2450.5,
+            "fx_gain_loss_usd": 0.0
+          }
+        }
+      ]
+    }
+  }
+}

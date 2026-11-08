@@ -1,0 +1,291 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "campaign": "Open Source Maintainer Outreach & Awesome-List Curators PR Campaign",
+    "brand_entity": "DevSuperSuite Open Source Guild",
+    "contact_email": "oss@devsupersuite.com",
+    "compliance": "100% Brand Anonymity Guaranteed | Zero Founder Personal Data",
+    "total_repositories": 25,
+    "aggregate_stars_reached": 1281800,
+    "promo_code": "DSS-OSS-VIP",
+    "promo_price": "$24",
+    "last_updated": "2026-11-08T10:17:56.622337+00:00"
+  },
+  "targets": [
+    {
+      "id": "AWESOME-01",
+      "repo": "sindresorhus/awesome",
+      "category": "Development Environment / Tools",
+      "stars": 340000,
+      "entry_name": "DevSuperSuite",
+      "entry_desc": "Local-first AST context slicer and deterministic pre-commit invariant shield for AI-assisted development.",
+      "target_file": "readme.md",
+      "target_section": "## Development",
+      "inclusion_justification": "Notable local-first development utility solving LLM context rot and secret leakage with zero telemetry."
+    },
+    {
+      "id": "AWESOME-02",
+      "repo": "analysis-tools-dev/static-analysis",
+      "category": "Static Analysis / Multi-Language",
+      "stars": 13500,
+      "entry_name": "DevSuperSuite",
+      "entry_desc": "Sub-millisecond Tree-sitter AST interface extractor and Shannon entropy cryptographic secret scanner.",
+      "target_file": "data/tools/devsupersuite.yml",
+      "target_section": "tools / multi-language",
+      "inclusion_justification": "Deterministic static analysis tool parsing concrete syntax trees across TypeScript, Rust, Python, Go, and C++."
+    },
+    {
+      "id": "AWESOME-03",
+      "repo": "shadcn/awesome-developer-tools",
+      "category": "Developer Utilities / Local-First",
+      "stars": 12800,
+      "entry_name": "DevSuperSuite",
+      "entry_desc": "Cuts Claude Code and Cursor token bloat by 83% via local AST interface extraction and blocks leaked secrets.",
+      "target_file": "README.md",
+      "target_section": "## Productivity Tools",
+      "inclusion_justification": "Modern, beautifully engineered developer utility with an instant browser-based WebAssembly demo."
+    },
+    {
+      "id": "AWESOME-04",
+      "repo": "f/awesome-chatgpt-prompts",
+      "category": "AI Coding Extensions & Helpers",
+      "stars": 115000,
+      "entry_name": "DevSuperSuite AST Pruner",
+      "entry_desc": "Optimizes AI coding context windows by pruning function implementation bodies while preserving interface contracts.",
+      "target_file": "README.md",
+      "target_section": "## Developer Tools",
+      "inclusion_justification": "Directly solves context rot and prompt payload bloat across Claude, GPT-4o, and Cursor Composer."
+    },
+    {
+      "id": "AWESOME-05",
+      "repo": "steven2358/awesome-generative-ai",
+      "category": "Code Assistants & Developer Tooling",
+      "stars": 49000,
+      "entry_name": "DevSuperSuite",
+      "entry_desc": "Localhost context distillation engine that slashes LLM prompt costs by 80% using Tree-sitter AST interface slicing.",
+      "target_file": "README.md",
+      "target_section": "### Code Generation & Assistants",
+      "inclusion_justification": "Solves LLM prompt cost blowouts and context rot with zero-telemetry local parsing."
+    },
+    {
+      "id": "AWESOME-06",
+      "repo": "rust-unofficial/awesome-rust",
+      "category": "Development Tools / Static Analysis",
+      "stars": 45000,
+      "entry_name": "DevSuperSuite",
+      "entry_desc": "High-performance Tree-sitter AST interface slicer and Shannon entropy pre-commit hook with native Rust support.",
+      "target_file": "README.md",
+      "target_section": "## Development tools",
+      "inclusion_justification": "High-performance toolchain supporting native Rust AST parsing and memory-safe secret scanning."
+    },
+    {
+      "id": "AWESOME-07",
+      "repo": "vinta/awesome-python",
+      "category": "Code Analysis and Linter",
+      "stars": 225000,
+      "entry_name": "DevSuperSuite",
+      "entry_desc": "Local AST interface extractor and Shannon entropy secret scanner for Python and polyglot repositories.",
+      "target_file": "README.md",
+      "target_section": "## Code Analysis",
+      "inclusion_justification": "Extracts Python type signatures and docstrings in <2.4ms, eliminating token bloat in AI coding workflows."
+    },
+    {
+      "id": "AWESOME-08",
+      "repo": "enaqx/awesome-react",
+      "category": "Developer Tools",
+      "stars": 65000,
+      "entry_name": "DevSuperSuite",
+      "entry_desc": "Instant client-side AST context compressor and pre-commit secret shield for React, Next.js, and TypeScript codebases.",
+      "target_file": "README.md",
+      "target_section": "### Developer Tools",
+      "inclusion_justification": "Optimizes React/TSX components for LLM context ingestion with an interactive browser sandbox."
+    },
+    {
+      "id": "AWESOME-09",
+      "repo": "sorrycc/awesome-javascript",
+      "category": "Developer Utilities / Code Analysis",
+      "stars": 33000,
+      "entry_name": "DevSuperSuite",
+      "entry_desc": "Sub-millisecond AST interface extraction for JavaScript and TypeScript, reducing LLM token consumption by 83%.",
+      "target_file": "README.md",
+      "target_section": "## Code Analysis",
+      "inclusion_justification": "Modern JS/TS tooling that runs in WebAssembly and prevents accidental credential leaks."
+    },
+    {
+      "id": "AWESOME-10",
+      "repo": "avelino/awesome-go",
+      "category": "Development Tools / Quality",
+      "stars": 138000,
+      "entry_name": "DevSuperSuite",
+      "entry_desc": "Extracts Go package contracts, struct definitions, and interfaces while eliding implementation bodies for AI contexts.",
+      "target_file": "README.md",
+      "target_section": "## Development Tools",
+      "inclusion_justification": "Native Tree-sitter grammar support for Go packages, interfaces, and methods."
+    },
+    {
+      "id": "AWESOME-11",
+      "repo": "modelcontextprotocol/servers",
+      "category": "Official Model Context Protocol Reference Servers",
+      "stars": 18500,
+      "entry_name": "DevSuperSuite MCP Server",
+      "entry_desc": "Local stdio MCP server providing AST context slicing and pre-commit invariant validation for Claude Code and Cursor.",
+      "target_file": "README.md",
+      "target_section": "## Community Servers",
+      "inclusion_justification": "Compliant Model Context Protocol server exposing `get_ast_slice` and `validate_diff_invariants` tools."
+    },
+    {
+      "id": "AWESOME-12",
+      "repo": "punkpeye/awesome-mcp-servers",
+      "category": "Developer Tools & Context Optimization",
+      "stars": 7500,
+      "entry_name": "DevSuperSuite MCP Server",
+      "entry_desc": "Model Context Protocol server for local AST pruning, reducing token payloads by 83% without cloud telemetry.",
+      "target_file": "README.md",
+      "target_section": "### Developer Tools",
+      "inclusion_justification": "Production-grade MCP server for autonomous agents with deterministic invariant gates."
+    },
+    {
+      "id": "AWESOME-13",
+      "repo": "yokoffing/awesome-privacy",
+      "category": "Developer Privacy & Security",
+      "stars": 11200,
+      "entry_name": "DevSuperSuite",
+      "entry_desc": "Zero-telemetry, localhost-only developer utility running AST context slicing and secret defense 100% offline.",
+      "target_file": "README.md",
+      "target_section": "## Developer Tools",
+      "inclusion_justification": "Air-gapped architecture that keeps source code, environment variables, and ASTs off third-party servers."
+    },
+    {
+      "id": "AWESOME-14",
+      "repo": "Lissy93/awesome-privacy",
+      "category": "Privacy-Respecting Developer Software",
+      "stars": 16800,
+      "entry_name": "DevSuperSuite",
+      "entry_desc": "Local-first alternative to cloud secret scanners and context services; operates offline with zero network phone-home.",
+      "target_file": "README.md",
+      "target_section": "## Security & Privacy Tools",
+      "inclusion_justification": "Strict anti-telemetry design with self-contained client-side WebAssembly execution."
+    },
+    {
+      "id": "AWESOME-15",
+      "repo": "alexpetros/awesome-local-first",
+      "category": "Developer Utilities",
+      "stars": 6200,
+      "entry_name": "DevSuperSuite",
+      "entry_desc": "Local-first static analysis engine and git invariant shield replacing subscription-based cloud developer SaaS.",
+      "target_file": "README.md",
+      "target_section": "## Developer Tools",
+      "inclusion_justification": "Exemplifies the local-first software ethos: zero cloud dependency, one-time ownership, and instant local execution."
+    },
+    {
+      "id": "AWESOME-16",
+      "repo": "jnv/awesome-git-addons",
+      "category": "Git Hooks & Security Addons",
+      "stars": 3200,
+      "entry_name": "DevSuperSuite Git Hooks",
+      "entry_desc": "Deterministic pre-commit hook using Shannon entropy density ($H > 4.5$) and test preservation invariant gates.",
+      "target_file": "README.md",
+      "target_section": "## Hooks",
+      "inclusion_justification": "Novel pre-commit hook combining mathematical secret detection with test invariant protection."
+    },
+    {
+      "id": "AWESOME-17",
+      "repo": "agarrharr/awesome-cli-apps",
+      "category": "Development CLI Applications",
+      "stars": 18900,
+      "entry_name": "devsupersuite",
+      "entry_desc": "Fast command-line tool for AST interface extraction, pre-commit entropy defense, and sub-110ms duplex voice pair coding.",
+      "target_file": "README.md",
+      "target_section": "## Development",
+      "inclusion_justification": "High-utility terminal application with native binary performance and sub-millisecond AST parsing."
+    },
+    {
+      "id": "AWESOME-18",
+      "repo": "alebcay/awesome-shell",
+      "category": "Command-Line Productivity Utilities",
+      "stars": 28500,
+      "entry_name": "DevSuperSuite CLI",
+      "entry_desc": "Shell utility to slice ASTs, enforce git invariants, and scan for unencrypted keys before commits.",
+      "target_file": "README.md",
+      "target_section": "## Utilities",
+      "inclusion_justification": "Single binary CLI utility with zero external runtime dependencies."
+    },
+    {
+      "id": "AWESOME-19",
+      "repo": "vitalets/awesome-smart-home",
+      "category": "Developer Productivity & Engineering Flow",
+      "stars": 14200,
+      "entry_name": "DevSuperSuite",
+      "entry_desc": "Local duplex voice pair programmer and AST context manager for distraction-free coding workflows.",
+      "target_file": "README.md",
+      "target_section": "## Developer Productivity",
+      "inclusion_justification": "Innovative sub-110ms interruption-tolerant voice companion using local Silero VAD."
+    },
+    {
+      "id": "AWESOME-20",
+      "repo": "parro-it/awesome-micro-npm-packages",
+      "category": "High Performance Developer Tools",
+      "stars": 9800,
+      "entry_name": "devsupersuite-core",
+      "entry_desc": "Ultra-lightweight Tree-sitter interface extractor and Shannon entropy scanner with zero runtime dependencies.",
+      "target_file": "README.md",
+      "target_section": "## Code Analysis",
+      "inclusion_justification": "Focused, lightweight developer utility prioritizing sub-millisecond execution and minimal memory footprint."
+    },
+    {
+      "id": "AWESOME-21",
+      "repo": "dastergon/awesome-sre-tools",
+      "category": "Reliability & Safety Guardrails",
+      "stars": 11500,
+      "entry_name": "DevSuperSuite Invariant Gate",
+      "entry_desc": "Pre-commit and CI/CD invariant gate preventing autonomous agents and developers from silencing test assertions.",
+      "target_file": "README.md",
+      "target_section": "## Testing & Verification",
+      "inclusion_justification": "Deterministic SRE safety guardrail halting silent regressions before they reach staging pipelines."
+    },
+    {
+      "id": "AWESOME-22",
+      "repo": "carol-h/awesome-software-architecture",
+      "category": "Architectural Documentation & Contracts",
+      "stars": 8900,
+      "entry_name": "DevSuperSuite",
+      "entry_desc": "Automatically distills monorepos into structural interface skeletons, exposing architectural boundaries without implementation noise.",
+      "target_file": "README.md",
+      "target_section": "## Architecture Documentation Tools",
+      "inclusion_justification": "Generates pure architectural interface contracts from polyglot codebases for human and LLM review."
+    },
+    {
+      "id": "AWESOME-23",
+      "repo": "david-engelmann/awesome-code-review",
+      "category": "Automated Review & Diff Safety",
+      "stars": 4800,
+      "entry_name": "DevSuperSuite Diff Guard",
+      "entry_desc": "Automated pre-commit reviewer that enforces test assertion preservation and blocks high-entropy secret commits.",
+      "target_file": "README.md",
+      "target_section": "## Automated Code Review Tools",
+      "inclusion_justification": "Automates diff validation against destructive agent edits and secret leaks."
+    },
+    {
+      "id": "AWESOME-24",
+      "repo": "zricethezav/gitleaks",
+      "category": "Secret Scanning & Information Theory Defense",
+      "stars": 19500,
+      "entry_name": "DevSuperSuite Entropy Guard",
+      "entry_desc": "Mathematical secret scanning plugin utilizing Shannon entropy density ($H > 4.5$) on AST literals to catch zero-day keys.",
+      "target_file": "README.md",
+      "target_section": "## Related Secret Scanning Tools",
+      "inclusion_justification": "Complements regex catalog scanners with sub-millisecond information-theory entropy density detection."
+    },
+    {
+      "id": "AWESOME-25",
+      "repo": "josephmisiti/awesome-machine-learning",
+      "category": "LLM Context & Prompt Optimization",
+      "stars": 66000,
+      "entry_name": "DevSuperSuite",
+      "entry_desc": "Prunes LLM prompt payloads by 83% using Tree-sitter concrete syntax trees, eliminating context rot in large-scale code synthesis.",
+      "target_file": "README.md",
+      "target_section": "## Tools / Code Generation Optimization",
+      "inclusion_justification": "Systematic optimization tool solving Attention Sink Dilution and context window economics for LLMs."
+    }
+  ]
+}

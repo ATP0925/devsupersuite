@@ -1,0 +1,167 @@
+{
+  "metadata": {
+    "organization": "DevSuperSuite Official",
+    "entity": "DevSuperSuite Tech Services",
+    "treasury_contact": "cfo@devsupersuite.com",
+    "last_updated": "2026-11-08T11:03:19.213623+00:00"
+  },
+  "unit_economics": {
+    "timestamp": "2026-11-08T11:03:19.213637+00:00",
+    "blended_monthly_arpu_usd": 785.0,
+    "annualized_run_rate_arpu_usd": 9420.0,
+    "gross_margin_pct": 79.3,
+    "monthly_gross_profit_per_user_usd": 622.5,
+    "average_customer_lifespan_months": 20.0,
+    "gross_margin_adjusted_ltv_usd": 12450.0,
+    "blended_cac_usd": 1480.0,
+    "ltv_cac_ratio": 8.4,
+    "cac_payback_period_months": 2.4,
+    "magic_number": 1.45,
+    "rule_of_40_score_pct": 68.5,
+    "benchmark_evaluation": {
+      "ltv_cac_status": "ELITE (> 5.0x)",
+      "payback_status": "EXEMPLARY (< 6 Mo)",
+      "rule_of_40_status": "PRISTINE (> 50%)"
+    }
+  },
+  "cohort_matrix": {
+    "initial_cohort_arr_usd": 100000.0,
+    "m12_net_dollar_retention_pct": 134.5,
+    "m24_net_dollar_retention_pct": 152.0,
+    "m12_gross_revenue_retention_pct": 94.8,
+    "m24_logo_retention_pct": 84.5,
+    "cohort_timeline": [
+      {
+        "interval": "Month 1 (M1)",
+        "month_number": 1,
+        "logo_retention_pct": 100.0,
+        "gross_revenue_retention_pct": 100.0,
+        "net_dollar_retention_pct": 100.0,
+        "expansion_multiplier": 1.0,
+        "cohort_arr_usd": 100000.0,
+        "expansion_gain_usd": 0.0
+      },
+      {
+        "interval": "Month 2 (M2)",
+        "month_number": 2,
+        "logo_retention_pct": 98.0,
+        "gross_revenue_retention_pct": 99.1,
+        "net_dollar_retention_pct": 105.5,
+        "expansion_multiplier": 1.055,
+        "cohort_arr_usd": 105500.0,
+        "expansion_gain_usd": 6400.0
+      },
+      {
+        "interval": "Month 3 (M3)",
+        "month_number": 3,
+        "logo_retention_pct": 96.5,
+        "gross_revenue_retention_pct": 98.2,
+        "net_dollar_retention_pct": 112.0,
+        "expansion_multiplier": 1.12,
+        "cohort_arr_usd": 112000.0,
+        "expansion_gain_usd": 13800.0
+      },
+      {
+        "interval": "Month 4 (M4)",
+        "month_number": 4,
+        "logo_retention_pct": 94.5,
+        "gross_revenue_retention_pct": 97.5,
+        "net_dollar_retention_pct": 115.0,
+        "expansion_multiplier": 1.15,
+        "cohort_arr_usd": 115000.0,
+        "expansion_gain_usd": 17500.0
+      },
+      {
+        "interval": "Month 5 (M5)",
+        "month_number": 5,
+        "logo_retention_pct": 93.0,
+        "gross_revenue_retention_pct": 97.0,
+        "net_dollar_retention_pct": 118.0,
+        "expansion_multiplier": 1.18,
+        "cohort_arr_usd": 118000.0,
+        "expansion_gain_usd": 21000.0
+      },
+      {
+        "interval": "Month 6 (M6)",
+        "month_number": 6,
+        "logo_retention_pct": 91.5,
+        "gross_revenue_retention_pct": 96.5,
+        "net_dollar_retention_pct": 121.0,
+        "expansion_multiplier": 1.21,
+        "cohort_arr_usd": 121000.0,
+        "expansion_gain_usd": 24500.0
+      },
+      {
+        "interval": "Month 9 (M9)",
+        "month_number": 9,
+        "logo_retention_pct": 89.5,
+        "gross_revenue_retention_pct": 95.5,
+        "net_dollar_retention_pct": 127.5,
+        "expansion_multiplier": 1.275,
+        "cohort_arr_usd": 127500.0,
+        "expansion_gain_usd": 32000.0
+      },
+      {
+        "interval": "Month 12 (M12)",
+        "month_number": 12,
+        "logo_retention_pct": 88.0,
+        "gross_revenue_retention_pct": 94.8,
+        "net_dollar_retention_pct": 134.5,
+        "expansion_multiplier": 1.345,
+        "cohort_arr_usd": 134500.0,
+        "expansion_gain_usd": 39700.0
+      },
+      {
+        "interval": "Month 15 (M15)",
+        "month_number": 15,
+        "logo_retention_pct": 87.0,
+        "gross_revenue_retention_pct": 94.0,
+        "net_dollar_retention_pct": 138.0,
+        "expansion_multiplier": 1.38,
+        "cohort_arr_usd": 138000.0,
+        "expansion_gain_usd": 44000.0
+      },
+      {
+        "interval": "Month 18 (M18)",
+        "month_number": 18,
+        "logo_retention_pct": 86.0,
+        "gross_revenue_retention_pct": 93.5,
+        "net_dollar_retention_pct": 143.0,
+        "expansion_multiplier": 1.43,
+        "cohort_arr_usd": 143000.0,
+        "expansion_gain_usd": 49500.0
+      },
+      {
+        "interval": "Month 21 (M21)",
+        "month_number": 21,
+        "logo_retention_pct": 85.0,
+        "gross_revenue_retention_pct": 93.0,
+        "net_dollar_retention_pct": 147.5,
+        "expansion_multiplier": 1.475,
+        "cohort_arr_usd": 147500.0,
+        "expansion_gain_usd": 54500.0
+      },
+      {
+        "interval": "Month 24 (M24)",
+        "month_number": 24,
+        "logo_retention_pct": 84.5,
+        "gross_revenue_retention_pct": 92.8,
+        "net_dollar_retention_pct": 152.0,
+        "expansion_multiplier": 1.52,
+        "cohort_arr_usd": 152000.0,
+        "expansion_gain_usd": 59200.0
+      }
+    ]
+  },
+  "revenue_waterfall": {
+    "starting_arr_usd": 100000.0,
+    "new_logo_arr_usd": 25000.0,
+    "expansion_arr_usd": 39700.0,
+    "contraction_arr_usd": -2100.0,
+    "churned_arr_usd": -3100.0,
+    "net_expansion_arr_usd": 34500.0,
+    "ending_arr_usd": 159500.0,
+    "net_new_arr_usd": 59500.0,
+    "annual_growth_rate_pct": 59.5
+  }
+}

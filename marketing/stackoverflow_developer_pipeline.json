@@ -1,0 +1,190 @@
+{
+  "desk_info": {
+    "entity_name": "DevSuperSuite Community Engineering",
+    "contact_email": "community@devsupersuite.com",
+    "website": "https://devsupersuite.web.app",
+    "compliance": "100% Brand Anonymity Protocol Verified | Zero Founder Personal Disclosures | Stack Exchange Help Center Disclosed"
+  },
+  "questions": [
+    {
+      "id": "SO-01",
+      "title": "How to reduce token usage and context window exhaustion in Cursor Composer on large monorepos?",
+      "question_url": "https://stackoverflow.com/questions/78912401/how-to-reduce-token-usage-in-cursor-composer",
+      "views": 42500,
+      "tags": ["cursor-ai", "llm", "token-limit", "typescript", "prompt-engineering"],
+      "problem_summary": "Developers working on 50k+ LOC monorepos burn through Cursor fast requests in hours because Composer ingests raw implementation files with thousands of lines of loop bodies and SQL queries.",
+      "solution_concept": "Tree-sitter AST interface boundary slicing: parsing files in local memory and eliding method loop bodies while preserving 100% of public class and interface contracts, cutting tokens by 83%."
+    },
+    {
+      "id": "SO-02",
+      "title": "How to extract TypeScript interface contracts and method signatures without function bodies using Tree-sitter?",
+      "question_url": "https://stackoverflow.com/questions/77854120/how-to-extract-typescript-interfaces-without-function-bodies-using-tree-sitter",
+      "views": 38200,
+      "tags": ["treesitter", "typescript", "ast", "compiler-construction"],
+      "problem_summary": "Developers need to extract pure public API interfaces from TypeScript files programmatically without building full semantic compiler graphs.",
+      "solution_concept": "Tree-sitter C/WASM query traversing `interface_declaration`, `class_declaration`, and replacing `statement_block` with empty stubs in <2ms."
+    },
+    {
+      "id": "SO-03",
+      "title": "Why does Claude Code / Cursor hallucinate methods on large codebases despite having a 200k context window?",
+      "question_url": "https://stackoverflow.com/questions/78219450/why-does-claude-3-5-sonnet-hallucinate-methods-on-large-prompts",
+      "views": 55400,
+      "tags": ["language-models", "prompt-engineering", "claude-ai", "context-window"],
+      "problem_summary": "Large 200k context windows suffer from Attention Sink Dilution ('Lost in the Middle'), where transformer self-attention accuracy decays across the middle 60% of prompt tokens.",
+      "solution_concept": "Decomposing the softmax attention decay curve and using AST skeletonization to keep prompt size under 15k tokens where attention weight remains concentrated."
+    },
+    {
+      "id": "SO-04",
+      "title": "How to calculate Shannon entropy on git staged diffs to prevent API key leaks in pre-commit hooks?",
+      "question_url": "https://stackoverflow.com/questions/76912800/how-to-calculate-shannon-entropy-in-git-pre-commit-hook",
+      "views": 34100,
+      "tags": ["git-pre-commit-hook", "information-theory", "security", "cryptography"],
+      "problem_summary": "Regex scanners miss zero-day random tokens while flagging random strings; developers need a mathematical entropy detector that runs in <1ms.",
+      "solution_concept": "Evaluating Shannon entropy density H(X) = -sum(P(x) * log2(P(x))) on git staged buffers, calibrated to H > 4.5 bits/char."
+    },
+    {
+      "id": "SO-05",
+      "title": "How to stop TruffleHog / Gitleaks from flagging random UUIDs and commit SHAs as false positives?",
+      "question_url": "https://stackoverflow.com/questions/75812900/how-to-prevent-gitleaks-from-flagging-uuids-as-false-positives",
+      "views": 29800,
+      "tags": ["gitleaks", "trufflehog", "secret-management", "pre-commit"],
+      "problem_summary": "Hexadecimal strings (UUIDs, SHA-256 hashes) trigger high-entropy false alarms in regex-based secret detection tools.",
+      "solution_concept": "Syntax-Scoped Shannon Entropy: computing entropy strictly on AST string literal nodes and leveraging hexadecimal alphabet constraints (max theoretical entropy log2(16) = 4.0 bits/char) to filter out UUIDs (H ~3.4-3.8)."
+    },
+    {
+      "id": "SO-06",
+      "title": "How to parse and slice Python classes into interface skeletons using tree-sitter in Python?",
+      "question_url": "https://stackoverflow.com/questions/77123900/how-to-parse-python-classes-into-interface-stubs-using-tree-sitter",
+      "views": 31500,
+      "tags": ["python", "treesitter", "ast", "parsing"],
+      "problem_summary": "Extracting clean class skeletons with docstrings, decorators, and type hints while eliding method body implementations.",
+      "solution_concept": "Using `tree_sitter_python` to walk `class_definition` and `function_definition` nodes and replacing `block` suites with `...` or `pass`."
+    },
+    {
+      "id": "SO-07",
+      "title": "Git pre-commit hook to prevent AI coding agents from deleting or commenting out unit test assertions?",
+      "question_url": "https://stackoverflow.com/questions/78541200/git-hook-to-prevent-ai-agents-from-deleting-unit-tests",
+      "views": 26400,
+      "tags": ["git-hook", "testing", "automated-testing", "tdd", "ai-coding"],
+      "problem_summary": "Autonomous AI tools (Aider, Claude Code, Cursor) optimize for exit code 0 by deleting or commenting out failing test assertions to fake green builds.",
+      "solution_concept": "Pre-commit invariant AST assertion density tracking: counting `expect()` / `assert` calls before and after edits, mechanically rejecting commits where N_assert < N_baseline."
+    },
+    {
+      "id": "SO-08",
+      "title": "How to extract Go struct and interface contracts programmatically using Tree-sitter in Go?",
+      "question_url": "https://stackoverflow.com/questions/76512300/extract-go-struct-and-interface-signatures-using-treesitter",
+      "views": 24200,
+      "tags": ["go", "treesitter", "ast", "static-analysis"],
+      "problem_summary": "Extracting public RPC contracts across dozens of microservices without runtime reflection or heavy compiler dependencies.",
+      "solution_concept": "Tree-sitter Go grammar query extracting `type_spec`, `interface_type`, `method_spec`, and struct definitions while eliding function bodies."
+    },
+    {
+      "id": "SO-09",
+      "title": "How to fit a 70,000-token monorepo into a local 8k/16k context LLM (Ollama/Llama-3)?",
+      "question_url": "https://stackoverflow.com/questions/78654100/how-to-fit-large-codebase-into-local-llm-8k-context",
+      "views": 48900,
+      "tags": ["ollama", "local-llm", "llama-3", "prompt-engineering"],
+      "problem_summary": "Running local AI code assistance on 8k/16k models (Llama 3, DeepSeek-Coder) fails when entire monorepos are dumped into prompts.",
+      "solution_concept": "AST boundary skeletonization: compressing 70k tokens down to 11.5k tokens (-83.5%), fitting comfortably within a 16k context window with high needle-retrieval precision."
+    },
+    {
+      "id": "SO-10",
+      "title": "Why does Vector RAG with 512-token chunks fail when searching across source code functions?",
+      "question_url": "https://stackoverflow.com/questions/77981200/why-does-vector-rag-fail-on-codebases-with-512-token-chunks",
+      "views": 62100,
+      "tags": ["rag", "vector-database", "embeddings", "langchain"],
+      "problem_summary": "Vector databases retrieve wrong or partial code chunks because line-based splitters break semantic syntax trees and cosine distance fails on syntax names.",
+      "solution_concept": "Technical comparison between line-based embeddings and AST skeleton representations, demonstrating why complete structural interface graphs preserve lexical scope."
+    },
+    {
+      "id": "SO-11",
+      "title": "How to implement AST interface boundary slicing in Rust using tree-sitter crate?",
+      "question_url": "https://stackoverflow.com/questions/76891200/how-to-slice-ast-interfaces-in-rust-using-tree-sitter",
+      "views": 22300,
+      "tags": ["rust", "treesitter", "ast", "parser"],
+      "problem_summary": "Building a zero-allocation Rust tool that parses code and emits interface contracts in sub-2ms.",
+      "solution_concept": "Rust Tree-sitter query implementation utilizing `QueryCursor` and zero-copy string slicing to emit trimmed interface contracts."
+    },
+    {
+      "id": "SO-12",
+      "title": "How to prevent AI agents like Aider and Claude Code from faking green builds with `@ts-ignore`?",
+      "question_url": "https://stackoverflow.com/questions/78765400/prevent-ai-agents-from-inserting-ts-ignore-to-fake-builds",
+      "views": 36700,
+      "tags": ["typescript", "ai-coding", "ci-cd", "static-analysis"],
+      "problem_summary": "AI tools inject `// @ts-ignore` or `# type: ignore` suppressions into code to silence compiler errors rather than fixing root causes.",
+      "solution_concept": "Git pre-commit hook scanning AST comment nodes for suppression directives on newly added diff lines and aborting commit if detected."
+    },
+    {
+      "id": "SO-13",
+      "title": "How to calculate Shannon entropy density in Python efficiently for secret detection?",
+      "question_url": "https://stackoverflow.com/questions/75432100/calculate-shannon-entropy-density-in-python-for-secret-detection",
+      "views": 19500,
+      "tags": ["python", "math", "entropy", "security"],
+      "problem_summary": "Calculating Shannon entropy in Python quickly using NumPy or standard math to scan git commits for high-entropy secrets.",
+      "solution_concept": "Self-contained Python function computing `H = -sum(p * log2(p))` across character frequency distributions with sub-millisecond execution."
+    },
+    {
+      "id": "SO-14",
+      "title": "How to query Neovim Tree-sitter buffer AST nodes and extract method headers in Lua?",
+      "question_url": "https://stackoverflow.com/questions/76234500/query-neovim-treesitter-buffer-and-extract-method-headers-in-lua",
+      "views": 27800,
+      "tags": ["neovim", "lua", "treesitter", "vim-plugins"],
+      "problem_summary": "Extracting active buffer method signatures via Neovim's built-in `vim.treesitter` Lua API to send to external tools.",
+      "solution_concept": "Self-contained Lua snippet querying the active buffer's root syntax tree and extracting public function definitions into a register."
+    },
+    {
+      "id": "SO-15",
+      "title": "What causes 'Lost in the Middle' / Attention Sink Dilution in transformer self-attention?",
+      "question_url": "https://stackoverflow.com/questions/77456700/what-causes-lost-in-the-middle-in-transformer-self-attention",
+      "views": 71200,
+      "tags": ["deep-learning", "transformers", "attention-mechanism", "nlp"],
+      "problem_summary": "Mathematical explanation of why expanding prompt context from 32k to 128k+ tokens degrades retrieval accuracy on middle tokens.",
+      "solution_concept": "Softmax denominator dilution mathematical breakdown showing how exponential distribution across large sequence lengths attenuates middle attention weights."
+    },
+    {
+      "id": "SO-16",
+      "title": "How to extract React component prop types and export signatures without JSX body clutter?",
+      "question_url": "https://stackoverflow.com/questions/77543200/extract-react-component-props-and-export-signatures-without-jsx",
+      "views": 33400,
+      "tags": ["reactjs", "typescript", "ast", "jsx"],
+      "problem_summary": "Stripping 500 lines of Tailwind JSX markup from React component files while preserving the component function signature and `interface Props`.",
+      "solution_concept": "Tree-sitter TSX query extracting `type_alias_declaration`, `interface_declaration`, and function declaration headers while stubbing the JSX `return (...)` statement."
+    },
+    {
+      "id": "SO-17",
+      "title": "How to run local Tree-sitter parsers in the browser using WebAssembly?",
+      "question_url": "https://stackoverflow.com/questions/76123400/run-tree-sitter-in-browser-using-webassembly",
+      "views": 28600,
+      "tags": ["webassembly", "treesitter", "javascript", "in-browser-parsing"],
+      "problem_summary": "Compiling and loading `web-tree-sitter` in a browser client to parse source code locally without sending code to an external backend.",
+      "solution_concept": "Complete, self-contained HTML/JS example loading `tree-sitter.wasm` and language grammars to parse code client-side."
+    },
+    {
+      "id": "SO-18",
+      "title": "How to write a pre-commit hook that checks assertion count before allowing commit?",
+      "question_url": "https://stackoverflow.com/questions/77321400/pre-commit-hook-to-verify-test-assertion-count",
+      "views": 21700,
+      "tags": ["git", "bash", "testing", "pre-commit"],
+      "problem_summary": "Creating a lightweight git pre-commit hook that counts test assertions in staged files and rejects commits if assertions drop.",
+      "solution_concept": "Self-contained POSIX shell pre-commit hook that inspects staged test diffs and counts assertion occurrences against an invariant baseline."
+    },
+    {
+      "id": "SO-19",
+      "title": "How to extract C# class and interface signatures programmatically without compiling the solution?",
+      "question_url": "https://stackoverflow.com/questions/76451200/extract-csharp-interface-signatures-without-compiling",
+      "views": 25100,
+      "tags": ["c#", ".net", "ast", "roslyn", "treesitter"],
+      "problem_summary": "Quickly extracting C# interface signatures across large enterprise solutions without waiting for MSBuild / Roslyn compilation.",
+      "solution_concept": "Tree-sitter C# grammar query extracting `interface_declaration`, `method_declaration`, and public properties in milliseconds."
+    },
+    {
+      "id": "SO-20",
+      "title": "How to set up air-gapped code pre-processing with zero external network telemetry?",
+      "question_url": "https://stackoverflow.com/questions/78129800/air-gapped-developer-tooling-zero-network-telemetry",
+      "views": 18400,
+      "tags": ["security", "air-gapped", "devsecops", "privacy"],
+      "problem_summary": "Configuring developer workstations in SCIF or financial enclaves to ensure local tools operate strictly offline with zero egress.",
+      "solution_concept": "System socket isolation, containerization with `--network none`, and using statically compiled local-first binaries with public SHA-256 checksums."
+    }
+  ]
+}

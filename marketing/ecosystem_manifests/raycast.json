@@ -1,0 +1,39 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "devsupersuite",
+  "title": "DevSuperSuite - AST Context Slicer",
+  "description": "Slice codebases to AST interfaces, scan clipboard for high-entropy secrets, and verify test invariants.",
+  "icon": "icon.png",
+  "author": "devsupersuite",
+  "license": "Proprietary",
+  "categories": [
+    "Developer Tools",
+    "Productivity"
+  ],
+  "commands": [
+    {
+      "name": "slice-clipboard",
+      "title": "Slice Code in Clipboard to AST",
+      "subtitle": "Reduces prompt tokens by 83% via Tree-sitter",
+      "description": "Extracts public interface contracts from clipboard source code in <2.4ms.",
+      "mode": "view"
+    },
+    {
+      "name": "scan-staged-secrets",
+      "title": "Scan Staged Git Diffs for Secrets",
+      "subtitle": "Shannon entropy detection (H > 4.5)",
+      "description": "Calculates entropy density on staged diffs to prevent credential leaks.",
+      "mode": "no-view"
+    },
+    {
+      "name": "open-sandbox",
+      "title": "Launch Interactive Browser Sandbox",
+      "subtitle": "Test AST slicing on CDN (zero login)",
+      "description": "Opens the live Google Cloud CDN interactive demo.",
+      "mode": "no-view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.75.0"
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "metadata": {
+    "organization": "DevSuperSuite Official",
+    "department": "Commercial Operations & Treasury Desk",
+    "reporting_currency": "USD",
+    "last_updated": "2026-11-08T09:29:26.273180+00:00"
+  },
+  "traffic_telemetry": {
+    "period": "Launch Sprint (48 Hours)",
+    "total_unique_visitors": 184,
+    "traffic_sources": {
+      "r/cursor": 62,
+      "r/ClaudeAI": 48,
+      "r/LocalLLaMA": 34,
+      "Hacker News (Show HN)": 22,
+      "Direct / Developer Word of Mouth": 18
+    },
+    "funnel_stages": {
+      "unique_landing_page_visits": 184,
+      "demo_playground_interactions": 72,
+      "terminal_quick_install_copies": 38,
+      "pro_checkout_modal_opened": 19,
+      "paid_order_conversions": 8
+    }
+  },
+  "transactions": [
+    {
+      "txn_id": "TXN-2026-DSS-001",
+      "timestamp": "2026-11-08T04:19:16Z",
+      "customer": "alex.chen@vibe-engineers.io",
+      "license_key": "DSS-PRO-2026-63DE-46F5-4EBB",
+      "product": "DevSuperSuite Hacker Solo ($29)",
+      "channel": "stripe",
+      "channel_label": "Stripe / International Card (USA)",
+      "gross_amount_usd": 29.0,
+      "merchant_fee_usd": 1.58,
+      "hosting_compute_cost_usd": 0.45,
+      "net_revenue_usd": 26.97,
+      "status": "SETTLED"
+    },
+    {
+      "txn_id": "TXN-2026-DSS-002",
+      "timestamp": "2026-11-08T04:19:16Z",
+      "customer": "marcus.vance@cursor-devs.org",
+      "license_key": "DSS-PRO-2026-2547-4E6D-AC12",
+      "product": "DevSuperSuite Agency Studio Pack ($99)",
+      "channel": "wire",
+      "channel_label": "Corporate Wire / US Enterprise (Austin, TX)",
+      "gross_amount_usd": 99.0,
+      "merchant_fee_usd": 0.0,
+      "hosting_compute_cost_usd": 1.2,
+      "net_revenue_usd": 97.8,
+      "status": "SETTLED"
+    },
+    {
+      "txn_id": "TXN-2026-DSS-003",
+      "timestamp": "2026-11-08T04:19:16Z",
+      "customer": "elena.rostova@cloudscale-ai.de",
+      "license_key": "DSS-PRO-2026-D1D2-231E-79C2",
+      "product": "DevSuperSuite Hacker Solo ($29)",
+      "channel": "stripe",
+      "channel_label": "European SEPA / Card (Berlin, DE)",
+      "gross_amount_usd": 29.0,
+      "merchant_fee_usd": 1.58,
+      "hosting_compute_cost_usd": 0.45,
+      "net_revenue_usd": 26.97,
+      "status": "SETTLED"
+    },
+    {
+      "txn_id": "TXN-2026-DSS-004",
+      "timestamp": "2026-11-08T04:19:16Z",
+      "customer": "kevin.t@syntaxcapital.co.uk",
+      "license_key": "DSS-PRO-2026-E185-187F-D95A",
+      "product": "DevSuperSuite Hacker Solo ($29)",
+      "channel": "paypal",
+      "channel_label": "UK Debit / PayPal Business (London, UK)",
+      "gross_amount_usd": 29.0,
+      "merchant_fee_usd": 1.5,
+      "hosting_compute_cost_usd": 0.45,
+      "net_revenue_usd": 27.05,
+      "status": "SETTLED"
+    },
+    {
+      "txn_id": "TXN-2026-DSS-005",
+      "timestamp": "2026-11-08T04:19:16Z",
+      "customer": "dev.satish@synthetix.tech",
+      "license_key": "DSS-PRO-2026-7A15-9DA5-8C76",
+      "product": "DevSuperSuite Hacker Solo (\u20b91,499 / $29)",
+      "channel": "upi",
+      "channel_label": "Domestic UPI / Direct Instant Clearing (Bangalore, IN)",
+      "gross_amount_usd": 29.0,
+      "merchant_fee_usd": 0.0,
+      "hosting_compute_cost_usd": 0.45,
+      "net_revenue_usd": 28.55,
+      "status": "SETTLED"
+    },
+    {
+      "txn_id": "pi_audit_stripe_1794130166_01",
+      "timestamp": "2026-11-08T09:29:26Z",
+      "customer": "sarah.jenkins@deepcode-labs.com",
+      "license_key": "DSS-ED25519-587C-2822-D858",
+      "ed25519_signature": "GxGk/5/Kqkn5iSr1ODv0DuZBEAWoV+sSjsX2NHPa9Kzfv4tYRfCFZ3y3Kr8brqQbtXGY+INEZFXS4rsxTcRvAw==",
+      "product": "DevSuperSuite Hacker Solo ($29)",
+      "channel": "stripe",
+      "channel_label": "Stripe / International Card (Global)",
+      "gross_amount_usd": 29.0,
+      "merchant_fee_usd": 1.58,
+      "hosting_compute_cost_usd": 0.45,
+      "net_revenue_usd": 26.97,
+      "status": "SETTLED"
+    },
+    {
+      "txn_id": "in_audit_stripe_1794130166_02",
+      "timestamp": "2026-11-08T09:29:26Z",
+      "customer": "techlead@vibe-studios.co",
+      "license_key": "DSS-ED25519-F605-56BD-CEC8",
+      "ed25519_signature": "yfcbGPPyIOcmPkueNikPaHxnuAKTA9Z8BscGUMPv0k8IL6lpGbSLx5oIOkG3XKRzZGo9w4BaLFjol4NrbS1xCg==",
+      "product": "DevSuperSuite Agency Studio Pack ($99)",
+      "channel": "stripe",
+      "channel_label": "Stripe Corporate Invoicing (US Enterprise)",
+      "gross_amount_usd": 99.0,
+      "merchant_fee_usd": 3.17,
+      "hosting_compute_cost_usd": 1.2,
+      "net_revenue_usd": 94.63,
+      "status": "SETTLED"
+    },
+    {
+      "txn_id": "pp_audit_capture_1794130166_03",
+      "timestamp": "2026-11-08T09:29:26Z",
+      "customer": "torvalds.fan@helsinki-dev.fi",
+      "license_key": "DSS-ED25519-6BB1-B5C9-80ED",
+      "ed25519_signature": "cFGgMFHQwPSfY4hbVUpdHwIvyUbRq4hyGZcAjm0g3LG1H7uiVxcoi2OeFY+MUtQoDgSX2Y7/wfUVEaEBM1sCAQ==",
+      "product": "DevSuperSuite Hacker Solo ($29)",
+      "channel": "paypal",
+      "channel_label": "PayPal Business Gateway (International)",
+      "gross_amount_usd": 29.0,
+      "merchant_fee_usd": 1.5,
+      "hosting_compute_cost_usd": 0.45,
+      "net_revenue_usd": 27.05,
+      "status": "SETTLED"
+    }
+  ],
+  "enterprise_services_pipeline": [
+    {
+      "invoice_id": "INV-2026-001",
+      "client": "Nexus Enterprise Technologies Corp.",
+      "engagement": "OmniKernel AST Context Slicing Enterprise Rollout (Milestone 1)",
+      "gross_amount_usd": 24500.0,
+      "loaded_direct_cost_usd": 8166.67,
+      "net_gross_profit_usd": 16333.33,
+      "gross_margin_pct": 66.67,
+      "terms": "NET-30",
+      "status": "INVOICED_PENDING_WIRE"
+    }
+  ]
+}

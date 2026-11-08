@@ -1,0 +1,175 @@
+{
+  "title": "DevSuperSuite Enterprise AI Gateway & Security Observability",
+  "uid": "dss-enterprise-apm",
+  "tags": [
+    "devsupersuite",
+    "omnikernel",
+    "ast-compiler",
+    "shannon-entropy",
+    "zero-egress"
+  ],
+  "timezone": "browser",
+  "schemaVersion": 38,
+  "version": 1,
+  "refresh": "10s",
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "panels": [
+    {
+      "id": 1,
+      "title": "Token Reduction Ratio (SLA >= 70%)",
+      "type": "stat",
+      "gridPos": {
+        "x": 0,
+        "y": 0,
+        "w": 6,
+        "h": 4
+      },
+      "targets": [
+        {
+          "expr": "devsupersuite_ast_token_reduction_ratio * 100",
+          "legendFormat": "{{language}}"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percent",
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "red",
+                "value": null
+              },
+              {
+                "color": "yellow",
+                "value": 65
+              },
+              {
+                "color": "green",
+                "value": 70
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": 2,
+      "title": "Cumulative API Dollars Saved ($)",
+      "type": "stat",
+      "gridPos": {
+        "x": 6,
+        "y": 0,
+        "w": 6,
+        "h": 4
+      },
+      "targets": [
+        {
+          "expr": "((devsupersuite_ast_tokens_raw_total - devsupersuite_ast_tokens_compressed_total) / 1000000) * 10.00",
+          "legendFormat": "USD Saved"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "currencyUSD",
+          "color": {
+            "mode": "palette-classic"
+          }
+        }
+      }
+    },
+    {
+      "id": 3,
+      "title": "Shannon Entropy Secrets Intercepted",
+      "type": "stat",
+      "gridPos": {
+        "x": 12,
+        "y": 0,
+        "w": 6,
+        "h": 4
+      },
+      "targets": [
+        {
+          "expr": "sum(devsupersuite_security_secrets_intercepted_total)",
+          "legendFormat": "Blocked Secrets"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short",
+          "color": {
+            "fixedColor": "green",
+            "mode": "fixed"
+          }
+        }
+      }
+    },
+    {
+      "id": 4,
+      "title": "Air-Gap Egress Violations Blocked",
+      "type": "stat",
+      "gridPos": {
+        "x": 18,
+        "y": 0,
+        "w": 6,
+        "h": 4
+      },
+      "targets": [
+        {
+          "expr": "sum(devsupersuite_airgap_egress_violations_total)",
+          "legendFormat": "Blocked Ingress/Egress"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short",
+          "color": {
+            "fixedColor": "blue",
+            "mode": "fixed"
+          }
+        }
+      }
+    },
+    {
+      "id": 5,
+      "title": "AST Slicing Latency Distribution (Sub-2.4ms SLA)",
+      "type": "timeseries",
+      "gridPos": {
+        "x": 0,
+        "y": 4,
+        "w": 12,
+        "h": 8
+      },
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.99, sum(rate(devsupersuite_proxy_ast_prune_latency_seconds_bucket[5m])) by (le)) * 1000",
+          "legendFormat": "p99 Latency (ms)"
+        },
+        {
+          "expr": "histogram_quantile(0.50, sum(rate(devsupersuite_proxy_ast_prune_latency_seconds_bucket[5m])) by (le)) * 1000",
+          "legendFormat": "p50 Latency (ms)"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Time to First Token (TTFT) Acceleration",
+      "type": "timeseries",
+      "gridPos": {
+        "x": 12,
+        "y": 4,
+        "w": 12,
+        "h": 8
+      },
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, sum(rate(devsupersuite_proxy_ttft_seconds_bucket[5m])) by (le)) * 1000",
+          "legendFormat": "p95 TTFT (ms)"
+        }
+      ]
+    }
+  ]
+}

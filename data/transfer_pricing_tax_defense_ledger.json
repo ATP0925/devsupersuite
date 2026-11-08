@@ -1,0 +1,197 @@
+{
+  "metadata": {
+    "organization": "DevSuperSuite Official",
+    "entity": "DevSuperSuite Tech Services",
+    "treasury_contact": "cfo@devsupersuite.com",
+    "last_updated": "2026-11-08T11:03:23.153925+00:00"
+  },
+  "benchmarks": {
+    "cost_plus_markup": {
+      "method": "Cost Plus Method (CPM) - Net Cost Plus Mark-up (NCPM)",
+      "applicable_activity": "Contract Software R&D and Solutions Engineering Services",
+      "lower_quartile_pct": 8.2,
+      "median_pct": 10.15,
+      "upper_quartile_pct": 12.4,
+      "statutory_safe_harbor_min_pct": 8.0,
+      "statutory_safe_harbor_max_pct": 12.0,
+      "default_policy_pct": 10.0
+    },
+    "distributor_operating_margin": {
+      "method": "Transactional Net Margin Method (TNMM) - Operating Margin (OM)",
+      "applicable_activity": "Limited-Risk Software Marketing, Reselling & Regional Distribution",
+      "lower_quartile_pct": 3.1,
+      "median_pct": 4.6,
+      "upper_quartile_pct": 5.85,
+      "statutory_safe_harbor_min_pct": 3.0,
+      "statutory_safe_harbor_max_pct": 6.0,
+      "default_policy_pct": 4.5
+    }
+  },
+  "transfer_pricing_model": {
+    "timestamp": "2026-11-08T11:03:23.153945+00:00",
+    "cost_plus_model": {
+      "direct_engineering_labor_usd": 8760.0,
+      "allocated_rd_engineering_usd": 3500.0,
+      "total_allowable_service_cost_base_usd": 12260.0,
+      "applied_markup_pct": 10.0,
+      "intercompany_service_markup_usd": 1226.0,
+      "pass_through_compute_and_tokens_usd": 672.87,
+      "total_intercompany_engineering_invoice_usd": 14158.87,
+      "performing_entity": "DevSuperSuite Tech Services",
+      "contracting_entity": "DevSuperSuite Global Holdings"
+    },
+    "tnmm_distribution_model": {
+      "total_commercial_revenue_distributed_usd": 33440.0,
+      "target_operating_margin_pct": 4.5,
+      "target_distributor_operating_profit_usd": 1504.8,
+      "distributor_operating_costs_and_fees_usd": 2130.5,
+      "distributor_retained_gross_margin_usd": 3635.3,
+      "intercompany_ip_license_royalty_usd": 29804.7,
+      "distributing_entity": "DevSuperSuite US LLC",
+      "licensor_principal_entity": "DevSuperSuite Global Holdings"
+    },
+    "dempe_governance": [
+      {
+        "element": "Development (D)",
+        "entity": "DevSuperSuite Global Holdings / Tech Services Hub",
+        "jurisdiction": "Multi-Regional (US / India Delivery Hub)",
+        "functions_scope": "Core AST parser slicing algorithms, deterministic automaton compilation engines",
+        "remuneration_basis": "Routine Cost Plus 10.0% Service Reimbursement",
+        "risk_profile": "Principal bears technological failure & funding risk; Hub is cost-reimbursed"
+      },
+      {
+        "element": "Enhancement (E)",
+        "entity": "DevSuperSuite Tech Services",
+        "jurisdiction": "Offshore Engineering Delivery Center",
+        "functions_scope": "Enterprise turnkey customized adapters, client-specific protocol integration",
+        "remuneration_basis": "Routine Cost Plus 10.0% Service Reimbursement",
+        "risk_profile": "Routine execution risk; fully insulated under bilateral cost-plus terms"
+      },
+      {
+        "element": "Maintenance (M)",
+        "entity": "DevSuperSuite Tech Services",
+        "jurisdiction": "Offshore Engineering Delivery Center",
+        "functions_scope": "Security vulnerability patching, CI/CD pipeline integrity, SLA support retainers",
+        "remuneration_basis": "Routine Cost Plus 10.0% Service Reimbursement",
+        "risk_profile": "Routine maintenance; zero IP ownership claims"
+      },
+      {
+        "element": "Protection (P)",
+        "entity": "DevSuperSuite Global Holdings",
+        "jurisdiction": "Delaware, United States",
+        "functions_scope": "Global IP title defense, trademark registration, commercial trade secret security",
+        "remuneration_basis": "Residual Intangible Economic Ownership",
+        "risk_profile": "Full legal defense risk, litigation exposure & capital funding"
+      },
+      {
+        "element": "Exploitation (E)",
+        "entity": "DevSuperSuite US LLC / DevSuperSuite Global Holdings",
+        "jurisdiction": "United States / International",
+        "functions_scope": "Commercial software licensing, enterprise SOW contracting, recurring retainer pods",
+        "remuneration_basis": "TNMM 4.5% Distributor Margin + Residual Licensor Royalties",
+        "risk_profile": "Commercial market acceptance risk, bad-debt risk, FX clearing volatility"
+      }
+    ]
+  },
+  "transfer_pricing_audit": {
+    "audit_timestamp": "2026-11-08T11:03:23.153958+00:00",
+    "overall_audit_status": "COMPLIANT_ARMS_LENGTH",
+    "cpm_service_markup_audit": {
+      "observed_markup_pct": 10.0,
+      "interquartile_range_pct": "8.2% - 12.4%",
+      "median_benchmark_pct": 10.15,
+      "statutory_safe_harbor_range": "8.0% - 12.0%",
+      "status": "PASS_ARMS_LENGTH",
+      "in_bounds": true
+    },
+    "tnmm_distribution_margin_audit": {
+      "observed_margin_pct": 4.5,
+      "interquartile_range_pct": "3.1% - 5.85%",
+      "median_benchmark_pct": 4.6,
+      "statutory_safe_harbor_range": "3.0% - 6.0%",
+      "status": "PASS_ARMS_LENGTH",
+      "in_bounds": true
+    }
+  },
+  "statutory_disclosures": {
+    "reporting_period": "Fiscal Year 2026",
+    "entity": "DevSuperSuite Official",
+    "note_1_asc_606_revenue_disaggregation": {
+      "offering": {
+        "developer_software_licenses_usd": 440.0,
+        "enterprise_turnkey_implementations_usd": 24500.0,
+        "recurring_engineering_retainers_usd": 8500.0,
+        "total_commercial_revenue_usd": 33440.0
+      },
+      "timing": {
+        "point_in_time_usd": 440.0,
+        "over_time_milestone_acceptance_usd": 33000.0,
+        "total_usd": 33440.0
+      },
+      "geography": {
+        "americas_usd": 24912.8,
+        "emea_usd": 5082.88,
+        "apac_usd": 3444.32,
+        "total_usd": 33440.0
+      }
+    },
+    "note_2_asc_740_income_tax_provision": {
+      "pretax_gaap_income_usd": 17568.13,
+      "statutory_federal_tax_rate_pct": 21.0,
+      "statutory_tax_expense_usd": 3689.31,
+      "permanent_tax_reconciliations": {
+        "irc_section_250_fdii_export_benefit_usd": -664.08,
+        "irc_section_41_rd_tax_credits_usd": -184.47
+      },
+      "current_tax_expense_usd": 2840.76,
+      "deferred_tax_expense_usd": 0.0,
+      "total_income_tax_provision_usd": 2840.76,
+      "effective_tax_rate_pct": 16.17,
+      "valuation_allowance_usd": 0.0,
+      "valuation_allowance_rationale": "More likely than not (>50% probability) that all tax attributes will be fully realized based on positive cumulative earnings."
+    },
+    "note_3_asc_280_segment_reporting": {
+      "segments": [
+        {
+          "segment_name": "Enterprise Solutions (Turnkey & Retainers)",
+          "revenue_usd": 33000.0,
+          "cogs_usd": 9441.67,
+          "gross_profit_usd": 23558.33,
+          "operating_income_usd": 17058.33,
+          "segment_assets_usd": 42000.0
+        },
+        {
+          "segment_name": "Developer Software Licenses (Self-Service)",
+          "revenue_usd": 440.0,
+          "cogs_usd": 21.7,
+          "gross_profit_usd": 418.3,
+          "operating_income_usd": 418.3,
+          "segment_assets_usd": 3296.53
+        },
+        {
+          "segment_name": "Corporate Treasury & Yield Management",
+          "revenue_usd": 91.5,
+          "cogs_usd": 0.0,
+          "gross_profit_usd": 91.5,
+          "operating_income_usd": 91.5,
+          "segment_assets_usd": 22274.5
+        }
+      ],
+      "reconciliation": {
+        "total_segment_revenue_usd": 33531.5,
+        "consolidated_revenue_usd": 33531.5,
+        "total_segment_profit_usd": 17568.13,
+        "consolidated_pretax_income_usd": 17568.13,
+        "total_segment_assets_usd": 67571.03,
+        "consolidated_total_assets_usd": 67571.03
+      }
+    },
+    "note_4_related_party_disclosures": {
+      "intercompany_service_fee_expense_usd": 14158.87,
+      "intercompany_ip_license_fee_usd": 29804.7,
+      "intercompany_receivables_usd": 0.0,
+      "intercompany_payables_usd": 0.0,
+      "elimination_status": "All intercompany revenues, expenses, and account balances are 100% eliminated upon corporate consolidation."
+    }
+  }
+}

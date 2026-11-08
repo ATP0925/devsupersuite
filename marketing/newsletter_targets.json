@@ -1,0 +1,183 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "campaign": "Substack & Technical Newsletter Sponsorship Pipeline",
+    "brand_entity": "DevSuperSuite Sponsorship Team",
+    "contact_email": "sponsor@devsupersuite.com",
+    "compliance": "100% Brand Anonymity Guaranteed | Zero Founder Personal Data",
+    "total_publications": 15,
+    "aggregate_subscriber_reach": 3470000,
+    "aggregate_sponsorship_budget": 65600,
+    "blended_cpm": 18.9,
+    "promo_code": "DSS-NEWSLETTER-20",
+    "promo_price": "$24",
+    "last_updated": "2026-11-08T10:28:58.641884+00:00"
+  },
+  "publications": [
+    {
+      "id": "NEWS-01",
+      "publication_name": "The Pragmatic Engineer",
+      "curator_name": "Gergely Orosz",
+      "subscribers": 650000,
+      "primary_audience": "Tech leads, senior/staff engineers, engineering managers, CTOs",
+      "focus_areas": "Software engineering macroeconomics, Big Tech tooling, LLM token burn",
+      "estimated_rate": 12000,
+      "ad_format": "Deep Featured Sponsor Editorial (120-150 words + code snippet)",
+      "editorial_hook": "How enterprise engineering teams are cutting 80% redundant prompt token waste using local Tree-sitter AST slicing."
+    },
+    {
+      "id": "NEWS-02",
+      "publication_name": "ByteByteGo Newsletter",
+      "curator_name": "Alex Xu",
+      "subscribers": 550000,
+      "primary_audience": "Systems architects, backend engineers, distributed systems developers",
+      "focus_areas": "System design, transformer attention mechanics, information theory",
+      "estimated_rate": 8500,
+      "ad_format": "Architectural Spotlight & System Diagram Sponsor",
+      "editorial_hook": "System Design Teardown: Why feeding raw implementations causes Attention Sink Dilution and how AST pruning preserves interface contracts."
+    },
+    {
+      "id": "NEWS-03",
+      "publication_name": "TLDR Web Dev / TLDR Tech",
+      "curator_name": "Dan & TLDR Editorial Team",
+      "subscribers": 1250000,
+      "primary_audience": "Broad developer base: full-stack, frontend, DevOps, cloud engineers",
+      "focus_areas": "Rapid developer utilities, AI coding assistants, secret scanning",
+      "estimated_rate": 15000,
+      "ad_format": "Primary Sponsor Header & Link Blurb (60 words)",
+      "editorial_hook": "Cut Cursor and Claude Code token bloat by 83% locally with DevSuperSuite. Zero telemetry, sub-2.4ms Tree-sitter AST slicing, and instant secret shield."
+    },
+    {
+      "id": "NEWS-04",
+      "publication_name": "Console.dev",
+      "curator_name": "David Mytton & Console Team",
+      "subscribers": 45000,
+      "primary_audience": "Hardcore developer tools early adopters, CLI purists, open-source hackers",
+      "focus_areas": "Local-first developer software, terminal CLI ergonomics, zero telemetry",
+      "estimated_rate": 1800,
+      "ad_format": "Developer Tool of the Week In-Depth Review",
+      "editorial_hook": "DevSuperSuite: A local-first, zero-telemetry CLI that prunes codebases into AST interfaces in <2.4ms and blocks leaked secrets."
+    },
+    {
+      "id": "NEWS-05",
+      "publication_name": "Pointer.io",
+      "curator_name": "Chris Celi",
+      "subscribers": 60000,
+      "primary_audience": "Senior engineers, software architects, engineering executives",
+      "focus_areas": "Deep engineering craft, compiler grammar design, software invariants",
+      "estimated_rate": 2200,
+      "ad_format": "Curated Engineering Resource Spotlight",
+      "editorial_hook": "Why transformer attention heads degrade over 40k tokens: An algorithmic approach to concrete syntax tree pruning."
+    },
+    {
+      "id": "NEWS-06",
+      "publication_name": "Changelog Weekly",
+      "curator_name": "Adam Stacoviak & Jerod Santo",
+      "subscribers": 110000,
+      "primary_audience": "Open-source maintainers, polyglot software developers, hackers",
+      "focus_areas": "Open source developer tools, anti-SaaS philosophy, hacker ethics",
+      "estimated_rate": 3200,
+      "ad_format": "Weekly Newsletter Sponsor & Pinned Community Link",
+      "editorial_hook": "DevSuperSuite takes a stand against recurring cloud developer rents: a local-first AST interface slicer and entropy secret shield with a one-time lifetime license."
+    },
+    {
+      "id": "NEWS-07",
+      "publication_name": "Software Lead Weekly",
+      "curator_name": "Oren Ellenbogen",
+      "subscribers": 40000,
+      "primary_audience": "VPs of Engineering, engineering directors, tech leads",
+      "focus_areas": "Team efficiency, developer culture, preventing automated code regressions",
+      "estimated_rate": 1600,
+      "ad_format": "Leadership & DevEx Spotlight",
+      "editorial_hook": "Protecting test suites from AI agent tampering: How deterministic diff invariant gates prevent silent production regressions."
+    },
+    {
+      "id": "NEWS-08",
+      "publication_name": "Architecture Notes",
+      "curator_name": "Mahdi Yusuf",
+      "subscribers": 85000,
+      "primary_audience": "Software architects, systems engineers, cloud architects",
+      "focus_areas": "Visual architectural diagrams, concrete syntax trees, information theory",
+      "estimated_rate": 2500,
+      "ad_format": "Visual Architectural Deep Dive Sponsor",
+      "editorial_hook": "Information Theory in Git: Using Shannon entropy density ($H > 4.5$) on AST syntax literals to catch leaked API keys with 0.0% false positives."
+    },
+    {
+      "id": "NEWS-09",
+      "publication_name": "Refactoring",
+      "curator_name": "Luca Rossi",
+      "subscribers": 120000,
+      "primary_audience": "Software leaders, staff engineers, engineering managers",
+      "focus_areas": "Code refactoring, software quality, testing best practices",
+      "estimated_rate": 3000,
+      "ad_format": "Featured Technical Sponsor Essay",
+      "editorial_hook": "Refactoring with AI without breaking your codebase: The case for structural interface extraction over raw file dumps."
+    },
+    {
+      "id": "NEWS-10",
+      "publication_name": "High Growth Engineer",
+      "curator_name": "Jordan Cutler",
+      "subscribers": 95000,
+      "primary_audience": "Mid, senior, and staff software engineers seeking promotion",
+      "focus_areas": "High-leverage engineering habits, AI pair programming workflows",
+      "estimated_rate": 2800,
+      "ad_format": "High-Leverage Tool Recommendation",
+      "editorial_hook": "10x your AI coding speed by cutting 80% of token context bloat: A guide to local AST interface slicing."
+    },
+    {
+      "id": "NEWS-11",
+      "publication_name": "Frontend Focus",
+      "curator_name": "Peter Cooper & Cooperpress",
+      "subscribers": 90000,
+      "primary_audience": "Frontend engineers, React, Next.js, and TypeScript developers",
+      "focus_areas": "TypeScript performance, WebAssembly, component architecture",
+      "estimated_rate": 2500,
+      "ad_format": "Main Issue Sponsor Blurb & Live Demo Link",
+      "editorial_hook": "Extracting clean TypeScript interfaces and React component contracts in <2ms with zero signup: Test DevSuperSuite's WebAssembly sandbox."
+    },
+    {
+      "id": "NEWS-12",
+      "publication_name": "Golang Weekly",
+      "curator_name": "Cooperpress Go Editorial Team",
+      "subscribers": 65000,
+      "primary_audience": "Go developers, cloud systems engineers, microservices developers",
+      "focus_areas": "Go compiler tooling, high performance, static analysis",
+      "estimated_rate": 2000,
+      "ad_format": "Curated Go Tooling Sponsor",
+      "editorial_hook": "Extracting Go struct definitions, interfaces, and package contracts in sub-millisecond AST passes to eliminate prompt bloat."
+    },
+    {
+      "id": "NEWS-13",
+      "publication_name": "Rust Weekly / This Week in Rust",
+      "curator_name": "Rust Community Editorial Team",
+      "subscribers": 55000,
+      "primary_audience": "Systems developers, compiler enthusiasts, Rustaceans",
+      "focus_areas": "Rust performance, memory safety, Tree-sitter C/Rust bindings",
+      "estimated_rate": 1800,
+      "ad_format": "Tools & Ecosystem Recommendation",
+      "editorial_hook": "DevSuperSuite: High-performance local Tree-sitter concrete syntax tree parser and Shannon entropy secret scanner with native Rust support."
+    },
+    {
+      "id": "NEWS-14",
+      "publication_name": "Byte-Sized Design",
+      "curator_name": "Alex Xu & Byte-Sized Team",
+      "subscribers": 75000,
+      "primary_audience": "Software engineers studying system design and scalable codebases",
+      "focus_areas": "Micro-architectural diagrams, token economics, LLM prefill latency",
+      "estimated_rate": 2200,
+      "ad_format": "Visual Breakdown Sponsor",
+      "editorial_hook": "Why prompt caching busts when you edit internal code, and how AST interface skeletons maintain hot cache prefixes."
+    },
+    {
+      "id": "NEWS-15",
+      "publication_name": "The New Stack",
+      "curator_name": "The New Stack Editorial Team",
+      "subscribers": 180000,
+      "primary_audience": "Cloud native developers, platform engineers, SREs, DevSecOps",
+      "focus_areas": "DevSecOps, air-gapped security, zero-trust developer software",
+      "estimated_rate": 4500,
+      "ad_format": "Featured Technical Sponsor Native Article",
+      "editorial_hook": "Air-Gapped AI Pair Programming: How DevSuperSuite delivers 83% token reduction and pre-commit entropy defense with zero cloud telemetry."
+    }
+  ]
+}

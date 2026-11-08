@@ -1,0 +1,471 @@
+{
+  "metadata": {
+    "campaign": "Technical Open-Source Maintainer Outreach & Awesome-List PR Blitz",
+    "brand_entity": "DevSuperSuite Community Guild",
+    "sender_inbox": "community@devsupersuite.com",
+    "generated_at": "2026-11-08T09:46:48.416137+00:00",
+    "total_repositories": 20,
+    "total_github_stars_represented": "667,000",
+    "awesome_lists_targeted": 5,
+    "compliance": "100% Brand Anonymity Guaranteed | Zero Founder Personal Data"
+  },
+  "repositories": [
+    {
+      "target_id": "OSS-001",
+      "repo": "continuedev/continue",
+      "github_stars": 21400,
+      "stars_formatted": "21,400",
+      "maintainer_handle": "@nate-continue / @sestinj",
+      "category": "AI Coding Assistant",
+      "primary_stack": "TypeScript, Python, React",
+      "bottleneck_identified": "Multi-file context token bloat in local/cloud LLM completion",
+      "mcp_blueprint": "Expose `compress_context` MCP endpoint inside Continue's context provider pipeline.",
+      "sponsorship_vip_code": "DSS-OSS-VIP-SPONSORSHIP",
+      "outreach_status": "QUEUED_FOR_OUTREACH",
+      "last_contact_date": null,
+      "pr_review_status": "PR_PROPOSAL_STAGED",
+      "pitch_payload": {
+        "subject": "OSS Sponsorship & Free Pro Lifetime Licenses for continuedev/continue Core Team",
+        "body": "Hi @nate-continue / @sestinj,\n\nFirst off, thank you for your incredible stewardship of continuedev/continue! The open-source community benefits immensely from your work.\n\nWe are **DevSuperSuite Community Guild**. We build local-first developer infrastructure designed to solve two acute problems in modern AI coding:\n1. **Context Token Bloat**: LLMs burning 80%+ of prompt tokens re-reading private implementation bodies.\n2. **Destructive Agent Diffs**: Autonomous agents deleting unit tests or leaking high-entropy secrets to git.\n\n#### \ud83c\udf81 VIP Open-Source Sponsorship Offer:\nWe want to sponsor the entire core team and active code contributors of **continuedev/continue** with **Permanent Free Pro Lifetime Licenses** (normally $29 solo / $99 team).\n\u2022 **Core Maintainer VIP Code**: `DSS-OSS-VIP-SPONSORSHIP` (100% off lifetime access)\n\u2022 Includes: OmniKernel 5.0 AST Context Slicer, AgentShield Entropy Scanner, Dual MCP Server, and Live Voice Typist.\n\u2022 100% local, runs offline, zero telemetry.\n\n#### \ud83d\udee0\ufe0f MCP Collaboration Blueprint for continuedev/continue:\nWe noticed your users frequently hit: *Multi-file context token bloat in local/cloud LLM completion*.\n\nWe engineered an open integration blueprint:\n*Expose `compress_context` MCP endpoint inside Continue's context provider pipeline.*\n\nUsing Tree-Sitter AST grammar pruning:\n\u2022 Function bodies are pruned to `...` stubs while preserving 100% of typed signatures, classes, and return types.\n\u2022 Benchmark: **-83.0% context token reduction** (74k \u2192 12k tokens) in <2.4ms per 1k LOC.\n\u2022 Eliminates Context Rot (Attention Sink Dilution) and keeps local models within KV cache bounds.\n\nYou can inspect the live AST reduction in browser (zero login):\n\ud83d\udc49 https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=continuedev_continue\n\nCommercial package overview:\n\ud83d\udc49 https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=continuedev_continue\n\nIf you\u2019d like to claim additional license keys for your team or collaborate on an upstream MCP integration PR, let us know!\n\nWith gratitude,  \nDevSuperSuite Community Guild  \ncommunity@devsupersuite.com | https://devsupersuite.web.app",
+        "utm_sandbox": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=continuedev_continue",
+        "utm_gumroad": "https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=continuedev_continue"
+      }
+    },
+    {
+      "target_id": "OSS-002",
+      "repo": "Roo-Code/Roo-Code",
+      "github_stars": 15200,
+      "stars_formatted": "15,200",
+      "maintainer_handle": "@RooVetGit / Core Maintainers",
+      "category": "Autonomous Coding Agent",
+      "primary_stack": "TypeScript, VS Code API",
+      "bottleneck_identified": "Agent loop re-reading full source files during multi-step tasks",
+      "mcp_blueprint": "Inject AST interface pruner before tools return file contents to model context.",
+      "sponsorship_vip_code": "DSS-OSS-VIP-SPONSORSHIP",
+      "outreach_status": "QUEUED_FOR_OUTREACH",
+      "last_contact_date": null,
+      "pr_review_status": "PR_PROPOSAL_STAGED",
+      "pitch_payload": {
+        "subject": "OSS Sponsorship & Free Pro Lifetime Licenses for Roo-Code/Roo-Code Core Team",
+        "body": "Hi @RooVetGit / Core Maintainers,\n\nFirst off, thank you for your incredible stewardship of Roo-Code/Roo-Code! The open-source community benefits immensely from your work.\n\nWe are **DevSuperSuite Community Guild**. We build local-first developer infrastructure designed to solve two acute problems in modern AI coding:\n1. **Context Token Bloat**: LLMs burning 80%+ of prompt tokens re-reading private implementation bodies.\n2. **Destructive Agent Diffs**: Autonomous agents deleting unit tests or leaking high-entropy secrets to git.\n\n#### \ud83c\udf81 VIP Open-Source Sponsorship Offer:\nWe want to sponsor the entire core team and active code contributors of **Roo-Code/Roo-Code** with **Permanent Free Pro Lifetime Licenses** (normally $29 solo / $99 team).\n\u2022 **Core Maintainer VIP Code**: `DSS-OSS-VIP-SPONSORSHIP` (100% off lifetime access)\n\u2022 Includes: OmniKernel 5.0 AST Context Slicer, AgentShield Entropy Scanner, Dual MCP Server, and Live Voice Typist.\n\u2022 100% local, runs offline, zero telemetry.\n\n#### \ud83d\udee0\ufe0f MCP Collaboration Blueprint for Roo-Code/Roo-Code:\nWe noticed your users frequently hit: *Agent loop re-reading full source files during multi-step tasks*.\n\nWe engineered an open integration blueprint:\n*Inject AST interface pruner before tools return file contents to model context.*\n\nUsing Tree-Sitter AST grammar pruning:\n\u2022 Function bodies are pruned to `...` stubs while preserving 100% of typed signatures, classes, and return types.\n\u2022 Benchmark: **-83.0% context token reduction** (74k \u2192 12k tokens) in <2.4ms per 1k LOC.\n\u2022 Eliminates Context Rot (Attention Sink Dilution) and keeps local models within KV cache bounds.\n\nYou can inspect the live AST reduction in browser (zero login):\n\ud83d\udc49 https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=Roo_Code_Roo_Code\n\nCommercial package overview:\n\ud83d\udc49 https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=Roo_Code_Roo_Code\n\nIf you\u2019d like to claim additional license keys for your team or collaborate on an upstream MCP integration PR, let us know!\n\nWith gratitude,  \nDevSuperSuite Community Guild  \ncommunity@devsupersuite.com | https://devsupersuite.web.app",
+        "utm_sandbox": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=Roo_Code_Roo_Code",
+        "utm_gumroad": "https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=Roo_Code_Roo_Code"
+      }
+    },
+    {
+      "target_id": "OSS-003",
+      "repo": "aider-ai/aider",
+      "github_stars": 28600,
+      "stars_formatted": "28,600",
+      "maintainer_handle": "@paul-gauthier",
+      "category": "Terminal AI Pair Programmer",
+      "primary_stack": "Python, Tree-sitter",
+      "bottleneck_identified": "Constrained KV cache budgets on local 16k/32k models",
+      "mcp_blueprint": "Provide native Tree-sitter AST pruning hook to collapse background dependencies to typed stubs.",
+      "sponsorship_vip_code": "DSS-OSS-VIP-SPONSORSHIP",
+      "outreach_status": "QUEUED_FOR_OUTREACH",
+      "last_contact_date": null,
+      "pr_review_status": "PR_PROPOSAL_STAGED",
+      "pitch_payload": {
+        "subject": "OSS Sponsorship & Free Pro Lifetime Licenses for aider-ai/aider Core Team",
+        "body": "Hi @paul-gauthier,\n\nFirst off, thank you for your incredible stewardship of aider-ai/aider! The open-source community benefits immensely from your work.\n\nWe are **DevSuperSuite Community Guild**. We build local-first developer infrastructure designed to solve two acute problems in modern AI coding:\n1. **Context Token Bloat**: LLMs burning 80%+ of prompt tokens re-reading private implementation bodies.\n2. **Destructive Agent Diffs**: Autonomous agents deleting unit tests or leaking high-entropy secrets to git.\n\n#### \ud83c\udf81 VIP Open-Source Sponsorship Offer:\nWe want to sponsor the entire core team and active code contributors of **aider-ai/aider** with **Permanent Free Pro Lifetime Licenses** (normally $29 solo / $99 team).\n\u2022 **Core Maintainer VIP Code**: `DSS-OSS-VIP-SPONSORSHIP` (100% off lifetime access)\n\u2022 Includes: OmniKernel 5.0 AST Context Slicer, AgentShield Entropy Scanner, Dual MCP Server, and Live Voice Typist.\n\u2022 100% local, runs offline, zero telemetry.\n\n#### \ud83d\udee0\ufe0f MCP Collaboration Blueprint for aider-ai/aider:\nWe noticed your users frequently hit: *Constrained KV cache budgets on local 16k/32k models*.\n\nWe engineered an open integration blueprint:\n*Provide native Tree-sitter AST pruning hook to collapse background dependencies to typed stubs.*\n\nUsing Tree-Sitter AST grammar pruning:\n\u2022 Function bodies are pruned to `...` stubs while preserving 100% of typed signatures, classes, and return types.\n\u2022 Benchmark: **-83.0% context token reduction** (74k \u2192 12k tokens) in <2.4ms per 1k LOC.\n\u2022 Eliminates Context Rot (Attention Sink Dilution) and keeps local models within KV cache bounds.\n\nYou can inspect the live AST reduction in browser (zero login):\n\ud83d\udc49 https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=aider_ai_aider\n\nCommercial package overview:\n\ud83d\udc49 https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=aider_ai_aider\n\nIf you\u2019d like to claim additional license keys for your team or collaborate on an upstream MCP integration PR, let us know!\n\nWith gratitude,  \nDevSuperSuite Community Guild  \ncommunity@devsupersuite.com | https://devsupersuite.web.app",
+        "utm_sandbox": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=aider_ai_aider",
+        "utm_gumroad": "https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=aider_ai_aider"
+      }
+    },
+    {
+      "target_id": "OSS-004",
+      "repo": "All-Hands-AI/OpenHands",
+      "github_stars": 42500,
+      "stars_formatted": "42,500",
+      "maintainer_handle": "@xingyaoww / @rbren",
+      "category": "Autonomous Software Engineer",
+      "primary_stack": "Python, Docker, TypeScript",
+      "bottleneck_identified": "Agents deleting unit tests to make verification commands exit code 0",
+      "mcp_blueprint": "Hook OmniKernel `audit_patch_invariants` into OpenHands action execution sandbox.",
+      "sponsorship_vip_code": "DSS-OSS-VIP-SPONSORSHIP",
+      "outreach_status": "QUEUED_FOR_OUTREACH",
+      "last_contact_date": null,
+      "pr_review_status": "PR_PROPOSAL_STAGED",
+      "pitch_payload": {
+        "subject": "OSS Sponsorship & Free Pro Lifetime Licenses for All-Hands-AI/OpenHands Core Team",
+        "body": "Hi @xingyaoww / @rbren,\n\nFirst off, thank you for your incredible stewardship of All-Hands-AI/OpenHands! The open-source community benefits immensely from your work.\n\nWe are **DevSuperSuite Community Guild**. We build local-first developer infrastructure designed to solve two acute problems in modern AI coding:\n1. **Context Token Bloat**: LLMs burning 80%+ of prompt tokens re-reading private implementation bodies.\n2. **Destructive Agent Diffs**: Autonomous agents deleting unit tests or leaking high-entropy secrets to git.\n\n#### \ud83c\udf81 VIP Open-Source Sponsorship Offer:\nWe want to sponsor the entire core team and active code contributors of **All-Hands-AI/OpenHands** with **Permanent Free Pro Lifetime Licenses** (normally $29 solo / $99 team).\n\u2022 **Core Maintainer VIP Code**: `DSS-OSS-VIP-SPONSORSHIP` (100% off lifetime access)\n\u2022 Includes: OmniKernel 5.0 AST Context Slicer, AgentShield Entropy Scanner, Dual MCP Server, and Live Voice Typist.\n\u2022 100% local, runs offline, zero telemetry.\n\n#### \ud83d\udee0\ufe0f MCP Collaboration Blueprint for All-Hands-AI/OpenHands:\nWe noticed your users frequently hit: *Agents deleting unit tests to make verification commands exit code 0*.\n\nWe engineered an open integration blueprint:\n*Hook OmniKernel `audit_patch_invariants` into OpenHands action execution sandbox.*\n\nUsing Tree-Sitter AST grammar pruning:\n\u2022 Function bodies are pruned to `...` stubs while preserving 100% of typed signatures, classes, and return types.\n\u2022 Benchmark: **-83.0% context token reduction** (74k \u2192 12k tokens) in <2.4ms per 1k LOC.\n\u2022 Eliminates Context Rot (Attention Sink Dilution) and keeps local models within KV cache bounds.\n\nYou can inspect the live AST reduction in browser (zero login):\n\ud83d\udc49 https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=All_Hands_AI_OpenHands\n\nCommercial package overview:\n\ud83d\udc49 https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=All_Hands_AI_OpenHands\n\nIf you\u2019d like to claim additional license keys for your team or collaborate on an upstream MCP integration PR, let us know!\n\nWith gratitude,  \nDevSuperSuite Community Guild  \ncommunity@devsupersuite.com | https://devsupersuite.web.app",
+        "utm_sandbox": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=All_Hands_AI_OpenHands",
+        "utm_gumroad": "https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=All_Hands_AI_OpenHands"
+      }
+    },
+    {
+      "target_id": "OSS-005",
+      "repo": "BerriAI/litellm",
+      "github_stars": 23800,
+      "stars_formatted": "23,800",
+      "maintainer_handle": "@krrishdholakia / @ishaan-jaff",
+      "category": "LLM Proxy & Token Budgeting",
+      "primary_stack": "Python",
+      "bottleneck_identified": "Proxying bloated prompts across 100+ LLM APIs driving up billing",
+      "mcp_blueprint": "Offer pre-call AST context compression layer in LiteLLM router pipeline.",
+      "sponsorship_vip_code": "DSS-OSS-VIP-SPONSORSHIP",
+      "outreach_status": "QUEUED_FOR_OUTREACH",
+      "last_contact_date": null,
+      "pr_review_status": "PR_PROPOSAL_STAGED",
+      "pitch_payload": {
+        "subject": "OSS Sponsorship & Free Pro Lifetime Licenses for BerriAI/litellm Core Team",
+        "body": "Hi @krrishdholakia / @ishaan-jaff,\n\nFirst off, thank you for your incredible stewardship of BerriAI/litellm! The open-source community benefits immensely from your work.\n\nWe are **DevSuperSuite Community Guild**. We build local-first developer infrastructure designed to solve two acute problems in modern AI coding:\n1. **Context Token Bloat**: LLMs burning 80%+ of prompt tokens re-reading private implementation bodies.\n2. **Destructive Agent Diffs**: Autonomous agents deleting unit tests or leaking high-entropy secrets to git.\n\n#### \ud83c\udf81 VIP Open-Source Sponsorship Offer:\nWe want to sponsor the entire core team and active code contributors of **BerriAI/litellm** with **Permanent Free Pro Lifetime Licenses** (normally $29 solo / $99 team).\n\u2022 **Core Maintainer VIP Code**: `DSS-OSS-VIP-SPONSORSHIP` (100% off lifetime access)\n\u2022 Includes: OmniKernel 5.0 AST Context Slicer, AgentShield Entropy Scanner, Dual MCP Server, and Live Voice Typist.\n\u2022 100% local, runs offline, zero telemetry.\n\n#### \ud83d\udee0\ufe0f MCP Collaboration Blueprint for BerriAI/litellm:\nWe noticed your users frequently hit: *Proxying bloated prompts across 100+ LLM APIs driving up billing*.\n\nWe engineered an open integration blueprint:\n*Offer pre-call AST context compression layer in LiteLLM router pipeline.*\n\nUsing Tree-Sitter AST grammar pruning:\n\u2022 Function bodies are pruned to `...` stubs while preserving 100% of typed signatures, classes, and return types.\n\u2022 Benchmark: **-83.0% context token reduction** (74k \u2192 12k tokens) in <2.4ms per 1k LOC.\n\u2022 Eliminates Context Rot (Attention Sink Dilution) and keeps local models within KV cache bounds.\n\nYou can inspect the live AST reduction in browser (zero login):\n\ud83d\udc49 https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=BerriAI_litellm\n\nCommercial package overview:\n\ud83d\udc49 https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=BerriAI_litellm\n\nIf you\u2019d like to claim additional license keys for your team or collaborate on an upstream MCP integration PR, let us know!\n\nWith gratitude,  \nDevSuperSuite Community Guild  \ncommunity@devsupersuite.com | https://devsupersuite.web.app",
+        "utm_sandbox": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=BerriAI_litellm",
+        "utm_gumroad": "https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=BerriAI_litellm"
+      }
+    },
+    {
+      "target_id": "OSS-006",
+      "repo": "cline/cline",
+      "github_stars": 24100,
+      "stars_formatted": "24,100",
+      "maintainer_handle": "@cline / Core Team",
+      "category": "Autonomous Coding Extension",
+      "primary_stack": "TypeScript, VS Code API",
+      "bottleneck_identified": "High token usage in iterative refactorings",
+      "mcp_blueprint": "Native MCP server integration via `.cursor/mcp.json` or `.cline/mcp.json`.",
+      "sponsorship_vip_code": "DSS-OSS-VIP-SPONSORSHIP",
+      "outreach_status": "QUEUED_FOR_OUTREACH",
+      "last_contact_date": null,
+      "pr_review_status": "PR_PROPOSAL_STAGED",
+      "pitch_payload": {
+        "subject": "OSS Sponsorship & Free Pro Lifetime Licenses for cline/cline Core Team",
+        "body": "Hi @cline / Core Team,\n\nFirst off, thank you for your incredible stewardship of cline/cline! The open-source community benefits immensely from your work.\n\nWe are **DevSuperSuite Community Guild**. We build local-first developer infrastructure designed to solve two acute problems in modern AI coding:\n1. **Context Token Bloat**: LLMs burning 80%+ of prompt tokens re-reading private implementation bodies.\n2. **Destructive Agent Diffs**: Autonomous agents deleting unit tests or leaking high-entropy secrets to git.\n\n#### \ud83c\udf81 VIP Open-Source Sponsorship Offer:\nWe want to sponsor the entire core team and active code contributors of **cline/cline** with **Permanent Free Pro Lifetime Licenses** (normally $29 solo / $99 team).\n\u2022 **Core Maintainer VIP Code**: `DSS-OSS-VIP-SPONSORSHIP` (100% off lifetime access)\n\u2022 Includes: OmniKernel 5.0 AST Context Slicer, AgentShield Entropy Scanner, Dual MCP Server, and Live Voice Typist.\n\u2022 100% local, runs offline, zero telemetry.\n\n#### \ud83d\udee0\ufe0f MCP Collaboration Blueprint for cline/cline:\nWe noticed your users frequently hit: *High token usage in iterative refactorings*.\n\nWe engineered an open integration blueprint:\n*Native MCP server integration via `.cursor/mcp.json` or `.cline/mcp.json`.*\n\nUsing Tree-Sitter AST grammar pruning:\n\u2022 Function bodies are pruned to `...` stubs while preserving 100% of typed signatures, classes, and return types.\n\u2022 Benchmark: **-83.0% context token reduction** (74k \u2192 12k tokens) in <2.4ms per 1k LOC.\n\u2022 Eliminates Context Rot (Attention Sink Dilution) and keeps local models within KV cache bounds.\n\nYou can inspect the live AST reduction in browser (zero login):\n\ud83d\udc49 https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=cline_cline\n\nCommercial package overview:\n\ud83d\udc49 https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=cline_cline\n\nIf you\u2019d like to claim additional license keys for your team or collaborate on an upstream MCP integration PR, let us know!\n\nWith gratitude,  \nDevSuperSuite Community Guild  \ncommunity@devsupersuite.com | https://devsupersuite.web.app",
+        "utm_sandbox": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=cline_cline",
+        "utm_gumroad": "https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=cline_cline"
+      }
+    },
+    {
+      "target_id": "OSS-007",
+      "repo": "tree-sitter/tree-sitter",
+      "github_stars": 20100,
+      "stars_formatted": "20,100",
+      "maintainer_handle": "@maxbrunsfeld / Maintainers",
+      "category": "Incremental Parser",
+      "primary_stack": "C, Rust",
+      "bottleneck_identified": "Ecosystem adoption for LLM context compression",
+      "mcp_blueprint": "Reference implementation of tree-sitter AST visitors for token reduction.",
+      "sponsorship_vip_code": "DSS-OSS-VIP-SPONSORSHIP",
+      "outreach_status": "QUEUED_FOR_OUTREACH",
+      "last_contact_date": null,
+      "pr_review_status": "PR_PROPOSAL_STAGED",
+      "pitch_payload": {
+        "subject": "OSS Sponsorship & Free Pro Lifetime Licenses for tree-sitter/tree-sitter Core Team",
+        "body": "Hi @maxbrunsfeld / Maintainers,\n\nFirst off, thank you for your incredible stewardship of tree-sitter/tree-sitter! The open-source community benefits immensely from your work.\n\nWe are **DevSuperSuite Community Guild**. We build local-first developer infrastructure designed to solve two acute problems in modern AI coding:\n1. **Context Token Bloat**: LLMs burning 80%+ of prompt tokens re-reading private implementation bodies.\n2. **Destructive Agent Diffs**: Autonomous agents deleting unit tests or leaking high-entropy secrets to git.\n\n#### \ud83c\udf81 VIP Open-Source Sponsorship Offer:\nWe want to sponsor the entire core team and active code contributors of **tree-sitter/tree-sitter** with **Permanent Free Pro Lifetime Licenses** (normally $29 solo / $99 team).\n\u2022 **Core Maintainer VIP Code**: `DSS-OSS-VIP-SPONSORSHIP` (100% off lifetime access)\n\u2022 Includes: OmniKernel 5.0 AST Context Slicer, AgentShield Entropy Scanner, Dual MCP Server, and Live Voice Typist.\n\u2022 100% local, runs offline, zero telemetry.\n\n#### \ud83d\udee0\ufe0f MCP Collaboration Blueprint for tree-sitter/tree-sitter:\nWe noticed your users frequently hit: *Ecosystem adoption for LLM context compression*.\n\nWe engineered an open integration blueprint:\n*Reference implementation of tree-sitter AST visitors for token reduction.*\n\nUsing Tree-Sitter AST grammar pruning:\n\u2022 Function bodies are pruned to `...` stubs while preserving 100% of typed signatures, classes, and return types.\n\u2022 Benchmark: **-83.0% context token reduction** (74k \u2192 12k tokens) in <2.4ms per 1k LOC.\n\u2022 Eliminates Context Rot (Attention Sink Dilution) and keeps local models within KV cache bounds.\n\nYou can inspect the live AST reduction in browser (zero login):\n\ud83d\udc49 https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=tree_sitter_tree_sitter\n\nCommercial package overview:\n\ud83d\udc49 https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=tree_sitter_tree_sitter\n\nIf you\u2019d like to claim additional license keys for your team or collaborate on an upstream MCP integration PR, let us know!\n\nWith gratitude,  \nDevSuperSuite Community Guild  \ncommunity@devsupersuite.com | https://devsupersuite.web.app",
+        "utm_sandbox": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=tree_sitter_tree_sitter",
+        "utm_gumroad": "https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=tree_sitter_tree_sitter"
+      }
+    },
+    {
+      "target_id": "OSS-008",
+      "repo": "modelcontextprotocol/servers",
+      "github_stars": 12800,
+      "stars_formatted": "12,800",
+      "maintainer_handle": "@mcp-team / Anthropic",
+      "category": "Reference MCP Servers",
+      "primary_stack": "TypeScript, Python",
+      "bottleneck_identified": "Standardizing context compression & invariant verification tools",
+      "mcp_blueprint": "Upstream RFC submission for `omnikernel-context-compressor` reference server.",
+      "sponsorship_vip_code": "DSS-OSS-VIP-SPONSORSHIP",
+      "outreach_status": "QUEUED_FOR_OUTREACH",
+      "last_contact_date": null,
+      "pr_review_status": "PR_PROPOSAL_STAGED",
+      "pitch_payload": {
+        "subject": "OSS Sponsorship & Free Pro Lifetime Licenses for modelcontextprotocol/servers Core Team",
+        "body": "Hi @mcp-team / Anthropic,\n\nFirst off, thank you for your incredible stewardship of modelcontextprotocol/servers! The open-source community benefits immensely from your work.\n\nWe are **DevSuperSuite Community Guild**. We build local-first developer infrastructure designed to solve two acute problems in modern AI coding:\n1. **Context Token Bloat**: LLMs burning 80%+ of prompt tokens re-reading private implementation bodies.\n2. **Destructive Agent Diffs**: Autonomous agents deleting unit tests or leaking high-entropy secrets to git.\n\n#### \ud83c\udf81 VIP Open-Source Sponsorship Offer:\nWe want to sponsor the entire core team and active code contributors of **modelcontextprotocol/servers** with **Permanent Free Pro Lifetime Licenses** (normally $29 solo / $99 team).\n\u2022 **Core Maintainer VIP Code**: `DSS-OSS-VIP-SPONSORSHIP` (100% off lifetime access)\n\u2022 Includes: OmniKernel 5.0 AST Context Slicer, AgentShield Entropy Scanner, Dual MCP Server, and Live Voice Typist.\n\u2022 100% local, runs offline, zero telemetry.\n\n#### \ud83d\udee0\ufe0f MCP Collaboration Blueprint for modelcontextprotocol/servers:\nWe noticed your users frequently hit: *Standardizing context compression & invariant verification tools*.\n\nWe engineered an open integration blueprint:\n*Upstream RFC submission for `omnikernel-context-compressor` reference server.*\n\nUsing Tree-Sitter AST grammar pruning:\n\u2022 Function bodies are pruned to `...` stubs while preserving 100% of typed signatures, classes, and return types.\n\u2022 Benchmark: **-83.0% context token reduction** (74k \u2192 12k tokens) in <2.4ms per 1k LOC.\n\u2022 Eliminates Context Rot (Attention Sink Dilution) and keeps local models within KV cache bounds.\n\nYou can inspect the live AST reduction in browser (zero login):\n\ud83d\udc49 https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=modelcontextprotocol_servers\n\nCommercial package overview:\n\ud83d\udc49 https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=modelcontextprotocol_servers\n\nIf you\u2019d like to claim additional license keys for your team or collaborate on an upstream MCP integration PR, let us know!\n\nWith gratitude,  \nDevSuperSuite Community Guild  \ncommunity@devsupersuite.com | https://devsupersuite.web.app",
+        "utm_sandbox": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=modelcontextprotocol_servers",
+        "utm_gumroad": "https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=modelcontextprotocol_servers"
+      }
+    },
+    {
+      "target_id": "OSS-009",
+      "repo": "PyCQA/bandit",
+      "github_stars": 6200,
+      "stars_formatted": "6,200",
+      "maintainer_handle": "@PyCQA / Security Maintainers",
+      "category": "Security Linter",
+      "primary_stack": "Python AST",
+      "bottleneck_identified": "Catching AI-generated security bypasses (verify=False, csrf_exempt)",
+      "mcp_blueprint": "Share AST invariant rules with Bandit test suite for AI generated diff auditing.",
+      "sponsorship_vip_code": "DSS-OSS-VIP-SPONSORSHIP",
+      "outreach_status": "QUEUED_FOR_OUTREACH",
+      "last_contact_date": null,
+      "pr_review_status": "PR_PROPOSAL_STAGED",
+      "pitch_payload": {
+        "subject": "OSS Sponsorship & Free Pro Lifetime Licenses for PyCQA/bandit Core Team",
+        "body": "Hi @PyCQA / Security Maintainers,\n\nFirst off, thank you for your incredible stewardship of PyCQA/bandit! The open-source community benefits immensely from your work.\n\nWe are **DevSuperSuite Community Guild**. We build local-first developer infrastructure designed to solve two acute problems in modern AI coding:\n1. **Context Token Bloat**: LLMs burning 80%+ of prompt tokens re-reading private implementation bodies.\n2. **Destructive Agent Diffs**: Autonomous agents deleting unit tests or leaking high-entropy secrets to git.\n\n#### \ud83c\udf81 VIP Open-Source Sponsorship Offer:\nWe want to sponsor the entire core team and active code contributors of **PyCQA/bandit** with **Permanent Free Pro Lifetime Licenses** (normally $29 solo / $99 team).\n\u2022 **Core Maintainer VIP Code**: `DSS-OSS-VIP-SPONSORSHIP` (100% off lifetime access)\n\u2022 Includes: OmniKernel 5.0 AST Context Slicer, AgentShield Entropy Scanner, Dual MCP Server, and Live Voice Typist.\n\u2022 100% local, runs offline, zero telemetry.\n\n#### \ud83d\udee0\ufe0f MCP Collaboration Blueprint for PyCQA/bandit:\nWe noticed your users frequently hit: *Catching AI-generated security bypasses (verify=False, csrf_exempt)*.\n\nWe engineered an open integration blueprint:\n*Share AST invariant rules with Bandit test suite for AI generated diff auditing.*\n\nUsing Tree-Sitter AST grammar pruning:\n\u2022 Function bodies are pruned to `...` stubs while preserving 100% of typed signatures, classes, and return types.\n\u2022 Benchmark: **-83.0% context token reduction** (74k \u2192 12k tokens) in <2.4ms per 1k LOC.\n\u2022 Eliminates Context Rot (Attention Sink Dilution) and keeps local models within KV cache bounds.\n\nYou can inspect the live AST reduction in browser (zero login):\n\ud83d\udc49 https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=PyCQA_bandit\n\nCommercial package overview:\n\ud83d\udc49 https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=PyCQA_bandit\n\nIf you\u2019d like to claim additional license keys for your team or collaborate on an upstream MCP integration PR, let us know!\n\nWith gratitude,  \nDevSuperSuite Community Guild  \ncommunity@devsupersuite.com | https://devsupersuite.web.app",
+        "utm_sandbox": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=PyCQA_bandit",
+        "utm_gumroad": "https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=PyCQA_bandit"
+      }
+    },
+    {
+      "target_id": "OSS-010",
+      "repo": "GitGuardian/ggshield",
+      "github_stars": 3400,
+      "stars_formatted": "3,400",
+      "maintainer_handle": "@GitGuardian / Core Team",
+      "category": "Git Secret Detection",
+      "primary_stack": "Python, Click",
+      "bottleneck_identified": "High-latency regex checking on massive staged diffs",
+      "mcp_blueprint": "Share sub-0.8ms Shannon Entropy filter benchmarks for high-entropy key pre-filtering.",
+      "sponsorship_vip_code": "DSS-OSS-VIP-SPONSORSHIP",
+      "outreach_status": "QUEUED_FOR_OUTREACH",
+      "last_contact_date": null,
+      "pr_review_status": "PR_PROPOSAL_STAGED",
+      "pitch_payload": {
+        "subject": "OSS Sponsorship & Free Pro Lifetime Licenses for GitGuardian/ggshield Core Team",
+        "body": "Hi @GitGuardian / Core Team,\n\nFirst off, thank you for your incredible stewardship of GitGuardian/ggshield! The open-source community benefits immensely from your work.\n\nWe are **DevSuperSuite Community Guild**. We build local-first developer infrastructure designed to solve two acute problems in modern AI coding:\n1. **Context Token Bloat**: LLMs burning 80%+ of prompt tokens re-reading private implementation bodies.\n2. **Destructive Agent Diffs**: Autonomous agents deleting unit tests or leaking high-entropy secrets to git.\n\n#### \ud83c\udf81 VIP Open-Source Sponsorship Offer:\nWe want to sponsor the entire core team and active code contributors of **GitGuardian/ggshield** with **Permanent Free Pro Lifetime Licenses** (normally $29 solo / $99 team).\n\u2022 **Core Maintainer VIP Code**: `DSS-OSS-VIP-SPONSORSHIP` (100% off lifetime access)\n\u2022 Includes: OmniKernel 5.0 AST Context Slicer, AgentShield Entropy Scanner, Dual MCP Server, and Live Voice Typist.\n\u2022 100% local, runs offline, zero telemetry.\n\n#### \ud83d\udee0\ufe0f MCP Collaboration Blueprint for GitGuardian/ggshield:\nWe noticed your users frequently hit: *High-latency regex checking on massive staged diffs*.\n\nWe engineered an open integration blueprint:\n*Share sub-0.8ms Shannon Entropy filter benchmarks for high-entropy key pre-filtering.*\n\nUsing Tree-Sitter AST grammar pruning:\n\u2022 Function bodies are pruned to `...` stubs while preserving 100% of typed signatures, classes, and return types.\n\u2022 Benchmark: **-83.0% context token reduction** (74k \u2192 12k tokens) in <2.4ms per 1k LOC.\n\u2022 Eliminates Context Rot (Attention Sink Dilution) and keeps local models within KV cache bounds.\n\nYou can inspect the live AST reduction in browser (zero login):\n\ud83d\udc49 https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=GitGuardian_ggshield\n\nCommercial package overview:\n\ud83d\udc49 https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=GitGuardian_ggshield\n\nIf you\u2019d like to claim additional license keys for your team or collaborate on an upstream MCP integration PR, let us know!\n\nWith gratitude,  \nDevSuperSuite Community Guild  \ncommunity@devsupersuite.com | https://devsupersuite.web.app",
+        "utm_sandbox": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=GitGuardian_ggshield",
+        "utm_gumroad": "https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=GitGuardian_ggshield"
+      }
+    },
+    {
+      "target_id": "OSS-011",
+      "repo": "trufflesecurity/trufflehog",
+      "github_stars": 19500,
+      "stars_formatted": "19,500",
+      "maintainer_handle": "@dxa4481 / @trufflesecurity",
+      "category": "Secret Scanner",
+      "primary_stack": "Go",
+      "bottleneck_identified": "Entropy tuning for zero false positives on cryptographic keys",
+      "mcp_blueprint": "Provide entropy density formula dataset: $H(X) > 4.5$ bits/char for modern AI API keys.",
+      "sponsorship_vip_code": "DSS-OSS-VIP-SPONSORSHIP",
+      "outreach_status": "QUEUED_FOR_OUTREACH",
+      "last_contact_date": null,
+      "pr_review_status": "PR_PROPOSAL_STAGED",
+      "pitch_payload": {
+        "subject": "OSS Sponsorship & Free Pro Lifetime Licenses for trufflesecurity/trufflehog Core Team",
+        "body": "Hi @dxa4481 / @trufflesecurity,\n\nFirst off, thank you for your incredible stewardship of trufflesecurity/trufflehog! The open-source community benefits immensely from your work.\n\nWe are **DevSuperSuite Community Guild**. We build local-first developer infrastructure designed to solve two acute problems in modern AI coding:\n1. **Context Token Bloat**: LLMs burning 80%+ of prompt tokens re-reading private implementation bodies.\n2. **Destructive Agent Diffs**: Autonomous agents deleting unit tests or leaking high-entropy secrets to git.\n\n#### \ud83c\udf81 VIP Open-Source Sponsorship Offer:\nWe want to sponsor the entire core team and active code contributors of **trufflesecurity/trufflehog** with **Permanent Free Pro Lifetime Licenses** (normally $29 solo / $99 team).\n\u2022 **Core Maintainer VIP Code**: `DSS-OSS-VIP-SPONSORSHIP` (100% off lifetime access)\n\u2022 Includes: OmniKernel 5.0 AST Context Slicer, AgentShield Entropy Scanner, Dual MCP Server, and Live Voice Typist.\n\u2022 100% local, runs offline, zero telemetry.\n\n#### \ud83d\udee0\ufe0f MCP Collaboration Blueprint for trufflesecurity/trufflehog:\nWe noticed your users frequently hit: *Entropy tuning for zero false positives on cryptographic keys*.\n\nWe engineered an open integration blueprint:\n*Provide entropy density formula dataset: $H(X) > 4.5$ bits/char for modern AI API keys.*\n\nUsing Tree-Sitter AST grammar pruning:\n\u2022 Function bodies are pruned to `...` stubs while preserving 100% of typed signatures, classes, and return types.\n\u2022 Benchmark: **-83.0% context token reduction** (74k \u2192 12k tokens) in <2.4ms per 1k LOC.\n\u2022 Eliminates Context Rot (Attention Sink Dilution) and keeps local models within KV cache bounds.\n\nYou can inspect the live AST reduction in browser (zero login):\n\ud83d\udc49 https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=trufflesecurity_trufflehog\n\nCommercial package overview:\n\ud83d\udc49 https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=trufflesecurity_trufflehog\n\nIf you\u2019d like to claim additional license keys for your team or collaborate on an upstream MCP integration PR, let us know!\n\nWith gratitude,  \nDevSuperSuite Community Guild  \ncommunity@devsupersuite.com | https://devsupersuite.web.app",
+        "utm_sandbox": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=trufflesecurity_trufflehog",
+        "utm_gumroad": "https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=trufflesecurity_trufflehog"
+      }
+    },
+    {
+      "target_id": "OSS-012",
+      "repo": "ast-grep/ast-grep",
+      "github_stars": 8600,
+      "stars_formatted": "8,600",
+      "maintainer_handle": "@HerringtonDarkholme",
+      "category": "Structural Code Search",
+      "primary_stack": "Rust",
+      "bottleneck_identified": "Pruning function bodies while keeping type signatures in TS/Python",
+      "mcp_blueprint": "Combine ast-grep rules with OmniKernel interface skeleton generation.",
+      "sponsorship_vip_code": "DSS-OSS-VIP-SPONSORSHIP",
+      "outreach_status": "QUEUED_FOR_OUTREACH",
+      "last_contact_date": null,
+      "pr_review_status": "PR_PROPOSAL_STAGED",
+      "pitch_payload": {
+        "subject": "OSS Sponsorship & Free Pro Lifetime Licenses for ast-grep/ast-grep Core Team",
+        "body": "Hi @HerringtonDarkholme,\n\nFirst off, thank you for your incredible stewardship of ast-grep/ast-grep! The open-source community benefits immensely from your work.\n\nWe are **DevSuperSuite Community Guild**. We build local-first developer infrastructure designed to solve two acute problems in modern AI coding:\n1. **Context Token Bloat**: LLMs burning 80%+ of prompt tokens re-reading private implementation bodies.\n2. **Destructive Agent Diffs**: Autonomous agents deleting unit tests or leaking high-entropy secrets to git.\n\n#### \ud83c\udf81 VIP Open-Source Sponsorship Offer:\nWe want to sponsor the entire core team and active code contributors of **ast-grep/ast-grep** with **Permanent Free Pro Lifetime Licenses** (normally $29 solo / $99 team).\n\u2022 **Core Maintainer VIP Code**: `DSS-OSS-VIP-SPONSORSHIP` (100% off lifetime access)\n\u2022 Includes: OmniKernel 5.0 AST Context Slicer, AgentShield Entropy Scanner, Dual MCP Server, and Live Voice Typist.\n\u2022 100% local, runs offline, zero telemetry.\n\n#### \ud83d\udee0\ufe0f MCP Collaboration Blueprint for ast-grep/ast-grep:\nWe noticed your users frequently hit: *Pruning function bodies while keeping type signatures in TS/Python*.\n\nWe engineered an open integration blueprint:\n*Combine ast-grep rules with OmniKernel interface skeleton generation.*\n\nUsing Tree-Sitter AST grammar pruning:\n\u2022 Function bodies are pruned to `...` stubs while preserving 100% of typed signatures, classes, and return types.\n\u2022 Benchmark: **-83.0% context token reduction** (74k \u2192 12k tokens) in <2.4ms per 1k LOC.\n\u2022 Eliminates Context Rot (Attention Sink Dilution) and keeps local models within KV cache bounds.\n\nYou can inspect the live AST reduction in browser (zero login):\n\ud83d\udc49 https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=ast_grep_ast_grep\n\nCommercial package overview:\n\ud83d\udc49 https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=ast_grep_ast_grep\n\nIf you\u2019d like to claim additional license keys for your team or collaborate on an upstream MCP integration PR, let us know!\n\nWith gratitude,  \nDevSuperSuite Community Guild  \ncommunity@devsupersuite.com | https://devsupersuite.web.app",
+        "utm_sandbox": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=ast_grep_ast_grep",
+        "utm_gumroad": "https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=ast_grep_ast_grep"
+      }
+    },
+    {
+      "target_id": "OSS-013",
+      "repo": "pre-commit/pre-commit",
+      "github_stars": 12400,
+      "stars_formatted": "12,400",
+      "maintainer_handle": "@asottile",
+      "category": "Git Hook Framework",
+      "primary_stack": "Python",
+      "bottleneck_identified": "Multi-tool pre-commit latency on large repositories",
+      "mcp_blueprint": "Package AgentShield as a zero-dependency 1-second pre-commit mirror hook.",
+      "sponsorship_vip_code": "DSS-OSS-VIP-SPONSORSHIP",
+      "outreach_status": "QUEUED_FOR_OUTREACH",
+      "last_contact_date": null,
+      "pr_review_status": "PR_PROPOSAL_STAGED",
+      "pitch_payload": {
+        "subject": "OSS Sponsorship & Free Pro Lifetime Licenses for pre-commit/pre-commit Core Team",
+        "body": "Hi @asottile,\n\nFirst off, thank you for your incredible stewardship of pre-commit/pre-commit! The open-source community benefits immensely from your work.\n\nWe are **DevSuperSuite Community Guild**. We build local-first developer infrastructure designed to solve two acute problems in modern AI coding:\n1. **Context Token Bloat**: LLMs burning 80%+ of prompt tokens re-reading private implementation bodies.\n2. **Destructive Agent Diffs**: Autonomous agents deleting unit tests or leaking high-entropy secrets to git.\n\n#### \ud83c\udf81 VIP Open-Source Sponsorship Offer:\nWe want to sponsor the entire core team and active code contributors of **pre-commit/pre-commit** with **Permanent Free Pro Lifetime Licenses** (normally $29 solo / $99 team).\n\u2022 **Core Maintainer VIP Code**: `DSS-OSS-VIP-SPONSORSHIP` (100% off lifetime access)\n\u2022 Includes: OmniKernel 5.0 AST Context Slicer, AgentShield Entropy Scanner, Dual MCP Server, and Live Voice Typist.\n\u2022 100% local, runs offline, zero telemetry.\n\n#### \ud83d\udee0\ufe0f MCP Collaboration Blueprint for pre-commit/pre-commit:\nWe noticed your users frequently hit: *Multi-tool pre-commit latency on large repositories*.\n\nWe engineered an open integration blueprint:\n*Package AgentShield as a zero-dependency 1-second pre-commit mirror hook.*\n\nUsing Tree-Sitter AST grammar pruning:\n\u2022 Function bodies are pruned to `...` stubs while preserving 100% of typed signatures, classes, and return types.\n\u2022 Benchmark: **-83.0% context token reduction** (74k \u2192 12k tokens) in <2.4ms per 1k LOC.\n\u2022 Eliminates Context Rot (Attention Sink Dilution) and keeps local models within KV cache bounds.\n\nYou can inspect the live AST reduction in browser (zero login):\n\ud83d\udc49 https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=pre_commit_pre_commit\n\nCommercial package overview:\n\ud83d\udc49 https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=pre_commit_pre_commit\n\nIf you\u2019d like to claim additional license keys for your team or collaborate on an upstream MCP integration PR, let us know!\n\nWith gratitude,  \nDevSuperSuite Community Guild  \ncommunity@devsupersuite.com | https://devsupersuite.web.app",
+        "utm_sandbox": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=pre_commit_pre_commit",
+        "utm_gumroad": "https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=pre_commit_pre_commit"
+      }
+    },
+    {
+      "target_id": "OSS-014",
+      "repo": "AntonOsika/gpt-engineer",
+      "github_stars": 53200,
+      "stars_formatted": "53,200",
+      "maintainer_handle": "@AntonOsika",
+      "category": "Automated Software Generator",
+      "primary_stack": "Python",
+      "bottleneck_identified": "Context overflow during full-project generation",
+      "mcp_blueprint": "Use AST skeletons for cross-file dependency graph resolution.",
+      "sponsorship_vip_code": "DSS-OSS-VIP-SPONSORSHIP",
+      "outreach_status": "QUEUED_FOR_OUTREACH",
+      "last_contact_date": null,
+      "pr_review_status": "PR_PROPOSAL_STAGED",
+      "pitch_payload": {
+        "subject": "OSS Sponsorship & Free Pro Lifetime Licenses for AntonOsika/gpt-engineer Core Team",
+        "body": "Hi @AntonOsika,\n\nFirst off, thank you for your incredible stewardship of AntonOsika/gpt-engineer! The open-source community benefits immensely from your work.\n\nWe are **DevSuperSuite Community Guild**. We build local-first developer infrastructure designed to solve two acute problems in modern AI coding:\n1. **Context Token Bloat**: LLMs burning 80%+ of prompt tokens re-reading private implementation bodies.\n2. **Destructive Agent Diffs**: Autonomous agents deleting unit tests or leaking high-entropy secrets to git.\n\n#### \ud83c\udf81 VIP Open-Source Sponsorship Offer:\nWe want to sponsor the entire core team and active code contributors of **AntonOsika/gpt-engineer** with **Permanent Free Pro Lifetime Licenses** (normally $29 solo / $99 team).\n\u2022 **Core Maintainer VIP Code**: `DSS-OSS-VIP-SPONSORSHIP` (100% off lifetime access)\n\u2022 Includes: OmniKernel 5.0 AST Context Slicer, AgentShield Entropy Scanner, Dual MCP Server, and Live Voice Typist.\n\u2022 100% local, runs offline, zero telemetry.\n\n#### \ud83d\udee0\ufe0f MCP Collaboration Blueprint for AntonOsika/gpt-engineer:\nWe noticed your users frequently hit: *Context overflow during full-project generation*.\n\nWe engineered an open integration blueprint:\n*Use AST skeletons for cross-file dependency graph resolution.*\n\nUsing Tree-Sitter AST grammar pruning:\n\u2022 Function bodies are pruned to `...` stubs while preserving 100% of typed signatures, classes, and return types.\n\u2022 Benchmark: **-83.0% context token reduction** (74k \u2192 12k tokens) in <2.4ms per 1k LOC.\n\u2022 Eliminates Context Rot (Attention Sink Dilution) and keeps local models within KV cache bounds.\n\nYou can inspect the live AST reduction in browser (zero login):\n\ud83d\udc49 https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=AntonOsika_gpt_engineer\n\nCommercial package overview:\n\ud83d\udc49 https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=AntonOsika_gpt_engineer\n\nIf you\u2019d like to claim additional license keys for your team or collaborate on an upstream MCP integration PR, let us know!\n\nWith gratitude,  \nDevSuperSuite Community Guild  \ncommunity@devsupersuite.com | https://devsupersuite.web.app",
+        "utm_sandbox": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=AntonOsika_gpt_engineer",
+        "utm_gumroad": "https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=AntonOsika_gpt_engineer"
+      }
+    },
+    {
+      "target_id": "OSS-015",
+      "repo": "Significant-Gravitas/AutoGPT",
+      "github_stars": 171000,
+      "stars_formatted": "171,000",
+      "maintainer_handle": "@Torantulino / AutoGPT Team",
+      "category": "Autonomous Agent Platform",
+      "primary_stack": "Python, TypeScript",
+      "bottleneck_identified": "Runaway execution loops blowing token budgets",
+      "mcp_blueprint": "Integrate OmniKernel token budgeter & invariant auditor into AutoGPT workspace.",
+      "sponsorship_vip_code": "DSS-OSS-VIP-SPONSORSHIP",
+      "outreach_status": "QUEUED_FOR_OUTREACH",
+      "last_contact_date": null,
+      "pr_review_status": "PR_PROPOSAL_STAGED",
+      "pitch_payload": {
+        "subject": "OSS Sponsorship & Free Pro Lifetime Licenses for Significant-Gravitas/AutoGPT Core Team",
+        "body": "Hi @Torantulino / AutoGPT Team,\n\nFirst off, thank you for your incredible stewardship of Significant-Gravitas/AutoGPT! The open-source community benefits immensely from your work.\n\nWe are **DevSuperSuite Community Guild**. We build local-first developer infrastructure designed to solve two acute problems in modern AI coding:\n1. **Context Token Bloat**: LLMs burning 80%+ of prompt tokens re-reading private implementation bodies.\n2. **Destructive Agent Diffs**: Autonomous agents deleting unit tests or leaking high-entropy secrets to git.\n\n#### \ud83c\udf81 VIP Open-Source Sponsorship Offer:\nWe want to sponsor the entire core team and active code contributors of **Significant-Gravitas/AutoGPT** with **Permanent Free Pro Lifetime Licenses** (normally $29 solo / $99 team).\n\u2022 **Core Maintainer VIP Code**: `DSS-OSS-VIP-SPONSORSHIP` (100% off lifetime access)\n\u2022 Includes: OmniKernel 5.0 AST Context Slicer, AgentShield Entropy Scanner, Dual MCP Server, and Live Voice Typist.\n\u2022 100% local, runs offline, zero telemetry.\n\n#### \ud83d\udee0\ufe0f MCP Collaboration Blueprint for Significant-Gravitas/AutoGPT:\nWe noticed your users frequently hit: *Runaway execution loops blowing token budgets*.\n\nWe engineered an open integration blueprint:\n*Integrate OmniKernel token budgeter & invariant auditor into AutoGPT workspace.*\n\nUsing Tree-Sitter AST grammar pruning:\n\u2022 Function bodies are pruned to `...` stubs while preserving 100% of typed signatures, classes, and return types.\n\u2022 Benchmark: **-83.0% context token reduction** (74k \u2192 12k tokens) in <2.4ms per 1k LOC.\n\u2022 Eliminates Context Rot (Attention Sink Dilution) and keeps local models within KV cache bounds.\n\nYou can inspect the live AST reduction in browser (zero login):\n\ud83d\udc49 https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=Significant_Gravitas_AutoGPT\n\nCommercial package overview:\n\ud83d\udc49 https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=Significant_Gravitas_AutoGPT\n\nIf you\u2019d like to claim additional license keys for your team or collaborate on an upstream MCP integration PR, let us know!\n\nWith gratitude,  \nDevSuperSuite Community Guild  \ncommunity@devsupersuite.com | https://devsupersuite.web.app",
+        "utm_sandbox": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=Significant_Gravitas_AutoGPT",
+        "utm_gumroad": "https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=Significant_Gravitas_AutoGPT"
+      }
+    },
+    {
+      "target_id": "OSS-016",
+      "repo": "yoheinakajima/babyagi",
+      "github_stars": 21800,
+      "stars_formatted": "21,800",
+      "maintainer_handle": "@yoheinakajima",
+      "category": "Task-Driven Autonomous Agent",
+      "primary_stack": "Python",
+      "bottleneck_identified": "Token accumulation in recursive task queues",
+      "mcp_blueprint": "Compress intermediate execution context before task planning steps.",
+      "sponsorship_vip_code": "DSS-OSS-VIP-SPONSORSHIP",
+      "outreach_status": "QUEUED_FOR_OUTREACH",
+      "last_contact_date": null,
+      "pr_review_status": "PR_PROPOSAL_STAGED",
+      "pitch_payload": {
+        "subject": "OSS Sponsorship & Free Pro Lifetime Licenses for yoheinakajima/babyagi Core Team",
+        "body": "Hi @yoheinakajima,\n\nFirst off, thank you for your incredible stewardship of yoheinakajima/babyagi! The open-source community benefits immensely from your work.\n\nWe are **DevSuperSuite Community Guild**. We build local-first developer infrastructure designed to solve two acute problems in modern AI coding:\n1. **Context Token Bloat**: LLMs burning 80%+ of prompt tokens re-reading private implementation bodies.\n2. **Destructive Agent Diffs**: Autonomous agents deleting unit tests or leaking high-entropy secrets to git.\n\n#### \ud83c\udf81 VIP Open-Source Sponsorship Offer:\nWe want to sponsor the entire core team and active code contributors of **yoheinakajima/babyagi** with **Permanent Free Pro Lifetime Licenses** (normally $29 solo / $99 team).\n\u2022 **Core Maintainer VIP Code**: `DSS-OSS-VIP-SPONSORSHIP` (100% off lifetime access)\n\u2022 Includes: OmniKernel 5.0 AST Context Slicer, AgentShield Entropy Scanner, Dual MCP Server, and Live Voice Typist.\n\u2022 100% local, runs offline, zero telemetry.\n\n#### \ud83d\udee0\ufe0f MCP Collaboration Blueprint for yoheinakajima/babyagi:\nWe noticed your users frequently hit: *Token accumulation in recursive task queues*.\n\nWe engineered an open integration blueprint:\n*Compress intermediate execution context before task planning steps.*\n\nUsing Tree-Sitter AST grammar pruning:\n\u2022 Function bodies are pruned to `...` stubs while preserving 100% of typed signatures, classes, and return types.\n\u2022 Benchmark: **-83.0% context token reduction** (74k \u2192 12k tokens) in <2.4ms per 1k LOC.\n\u2022 Eliminates Context Rot (Attention Sink Dilution) and keeps local models within KV cache bounds.\n\nYou can inspect the live AST reduction in browser (zero login):\n\ud83d\udc49 https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=yoheinakajima_babyagi\n\nCommercial package overview:\n\ud83d\udc49 https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=yoheinakajima_babyagi\n\nIf you\u2019d like to claim additional license keys for your team or collaborate on an upstream MCP integration PR, let us know!\n\nWith gratitude,  \nDevSuperSuite Community Guild  \ncommunity@devsupersuite.com | https://devsupersuite.web.app",
+        "utm_sandbox": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=yoheinakajima_babyagi",
+        "utm_gumroad": "https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=yoheinakajima_babyagi"
+      }
+    },
+    {
+      "target_id": "OSS-017",
+      "repo": "e2b-dev/E2B",
+      "github_stars": 7400,
+      "stars_formatted": "7,400",
+      "maintainer_handle": "@mlejva / E2B Team",
+      "category": "Sandboxed AI Execution",
+      "primary_stack": "Python, TypeScript, Go",
+      "bottleneck_identified": "Agents executing destructive file commands inside sandbox",
+      "mcp_blueprint": "Add `INVARIANT_TEST_PRESERVATION` check before sandbox bash execution.",
+      "sponsorship_vip_code": "DSS-OSS-VIP-SPONSORSHIP",
+      "outreach_status": "QUEUED_FOR_OUTREACH",
+      "last_contact_date": null,
+      "pr_review_status": "PR_PROPOSAL_STAGED",
+      "pitch_payload": {
+        "subject": "OSS Sponsorship & Free Pro Lifetime Licenses for e2b-dev/E2B Core Team",
+        "body": "Hi @mlejva / E2B Team,\n\nFirst off, thank you for your incredible stewardship of e2b-dev/E2B! The open-source community benefits immensely from your work.\n\nWe are **DevSuperSuite Community Guild**. We build local-first developer infrastructure designed to solve two acute problems in modern AI coding:\n1. **Context Token Bloat**: LLMs burning 80%+ of prompt tokens re-reading private implementation bodies.\n2. **Destructive Agent Diffs**: Autonomous agents deleting unit tests or leaking high-entropy secrets to git.\n\n#### \ud83c\udf81 VIP Open-Source Sponsorship Offer:\nWe want to sponsor the entire core team and active code contributors of **e2b-dev/E2B** with **Permanent Free Pro Lifetime Licenses** (normally $29 solo / $99 team).\n\u2022 **Core Maintainer VIP Code**: `DSS-OSS-VIP-SPONSORSHIP` (100% off lifetime access)\n\u2022 Includes: OmniKernel 5.0 AST Context Slicer, AgentShield Entropy Scanner, Dual MCP Server, and Live Voice Typist.\n\u2022 100% local, runs offline, zero telemetry.\n\n#### \ud83d\udee0\ufe0f MCP Collaboration Blueprint for e2b-dev/E2B:\nWe noticed your users frequently hit: *Agents executing destructive file commands inside sandbox*.\n\nWe engineered an open integration blueprint:\n*Add `INVARIANT_TEST_PRESERVATION` check before sandbox bash execution.*\n\nUsing Tree-Sitter AST grammar pruning:\n\u2022 Function bodies are pruned to `...` stubs while preserving 100% of typed signatures, classes, and return types.\n\u2022 Benchmark: **-83.0% context token reduction** (74k \u2192 12k tokens) in <2.4ms per 1k LOC.\n\u2022 Eliminates Context Rot (Attention Sink Dilution) and keeps local models within KV cache bounds.\n\nYou can inspect the live AST reduction in browser (zero login):\n\ud83d\udc49 https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=e2b_dev_E2B\n\nCommercial package overview:\n\ud83d\udc49 https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=e2b_dev_E2B\n\nIf you\u2019d like to claim additional license keys for your team or collaborate on an upstream MCP integration PR, let us know!\n\nWith gratitude,  \nDevSuperSuite Community Guild  \ncommunity@devsupersuite.com | https://devsupersuite.web.app",
+        "utm_sandbox": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=e2b_dev_E2B",
+        "utm_gumroad": "https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=e2b_dev_E2B"
+      }
+    },
+    {
+      "target_id": "OSS-018",
+      "repo": "langchain-ai/langchain",
+      "github_stars": 98500,
+      "stars_formatted": "98,500",
+      "maintainer_handle": "@hwchase17 / LangChain Core",
+      "category": "LLM Orchestration Framework",
+      "primary_stack": "Python, TypeScript",
+      "bottleneck_identified": "Document and code context compressors in RAG pipelines",
+      "mcp_blueprint": "Contribute `ASTContextCompressor` document transformer for code RAG.",
+      "sponsorship_vip_code": "DSS-OSS-VIP-SPONSORSHIP",
+      "outreach_status": "QUEUED_FOR_OUTREACH",
+      "last_contact_date": null,
+      "pr_review_status": "PR_PROPOSAL_STAGED",
+      "pitch_payload": {
+        "subject": "OSS Sponsorship & Free Pro Lifetime Licenses for langchain-ai/langchain Core Team",
+        "body": "Hi @hwchase17 / LangChain Core,\n\nFirst off, thank you for your incredible stewardship of langchain-ai/langchain! The open-source community benefits immensely from your work.\n\nWe are **DevSuperSuite Community Guild**. We build local-first developer infrastructure designed to solve two acute problems in modern AI coding:\n1. **Context Token Bloat**: LLMs burning 80%+ of prompt tokens re-reading private implementation bodies.\n2. **Destructive Agent Diffs**: Autonomous agents deleting unit tests or leaking high-entropy secrets to git.\n\n#### \ud83c\udf81 VIP Open-Source Sponsorship Offer:\nWe want to sponsor the entire core team and active code contributors of **langchain-ai/langchain** with **Permanent Free Pro Lifetime Licenses** (normally $29 solo / $99 team).\n\u2022 **Core Maintainer VIP Code**: `DSS-OSS-VIP-SPONSORSHIP` (100% off lifetime access)\n\u2022 Includes: OmniKernel 5.0 AST Context Slicer, AgentShield Entropy Scanner, Dual MCP Server, and Live Voice Typist.\n\u2022 100% local, runs offline, zero telemetry.\n\n#### \ud83d\udee0\ufe0f MCP Collaboration Blueprint for langchain-ai/langchain:\nWe noticed your users frequently hit: *Document and code context compressors in RAG pipelines*.\n\nWe engineered an open integration blueprint:\n*Contribute `ASTContextCompressor` document transformer for code RAG.*\n\nUsing Tree-Sitter AST grammar pruning:\n\u2022 Function bodies are pruned to `...` stubs while preserving 100% of typed signatures, classes, and return types.\n\u2022 Benchmark: **-83.0% context token reduction** (74k \u2192 12k tokens) in <2.4ms per 1k LOC.\n\u2022 Eliminates Context Rot (Attention Sink Dilution) and keeps local models within KV cache bounds.\n\nYou can inspect the live AST reduction in browser (zero login):\n\ud83d\udc49 https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=langchain_ai_langchain\n\nCommercial package overview:\n\ud83d\udc49 https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=langchain_ai_langchain\n\nIf you\u2019d like to claim additional license keys for your team or collaborate on an upstream MCP integration PR, let us know!\n\nWith gratitude,  \nDevSuperSuite Community Guild  \ncommunity@devsupersuite.com | https://devsupersuite.web.app",
+        "utm_sandbox": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=langchain_ai_langchain",
+        "utm_gumroad": "https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=langchain_ai_langchain"
+      }
+    },
+    {
+      "target_id": "OSS-019",
+      "repo": "run-llama/llama_index",
+      "github_stars": 38900,
+      "stars_formatted": "38,900",
+      "maintainer_handle": "@jerryjliu / LlamaIndex Team",
+      "category": "Data Framework for LLMs",
+      "primary_stack": "Python, TypeScript",
+      "bottleneck_identified": "Code hierarchy parsing in index creation",
+      "mcp_blueprint": "Integrate typed AST boundary extractor into LlamaIndex code readers.",
+      "sponsorship_vip_code": "DSS-OSS-VIP-SPONSORSHIP",
+      "outreach_status": "QUEUED_FOR_OUTREACH",
+      "last_contact_date": null,
+      "pr_review_status": "PR_PROPOSAL_STAGED",
+      "pitch_payload": {
+        "subject": "OSS Sponsorship & Free Pro Lifetime Licenses for run-llama/llama_index Core Team",
+        "body": "Hi @jerryjliu / LlamaIndex Team,\n\nFirst off, thank you for your incredible stewardship of run-llama/llama_index! The open-source community benefits immensely from your work.\n\nWe are **DevSuperSuite Community Guild**. We build local-first developer infrastructure designed to solve two acute problems in modern AI coding:\n1. **Context Token Bloat**: LLMs burning 80%+ of prompt tokens re-reading private implementation bodies.\n2. **Destructive Agent Diffs**: Autonomous agents deleting unit tests or leaking high-entropy secrets to git.\n\n#### \ud83c\udf81 VIP Open-Source Sponsorship Offer:\nWe want to sponsor the entire core team and active code contributors of **run-llama/llama_index** with **Permanent Free Pro Lifetime Licenses** (normally $29 solo / $99 team).\n\u2022 **Core Maintainer VIP Code**: `DSS-OSS-VIP-SPONSORSHIP` (100% off lifetime access)\n\u2022 Includes: OmniKernel 5.0 AST Context Slicer, AgentShield Entropy Scanner, Dual MCP Server, and Live Voice Typist.\n\u2022 100% local, runs offline, zero telemetry.\n\n#### \ud83d\udee0\ufe0f MCP Collaboration Blueprint for run-llama/llama_index:\nWe noticed your users frequently hit: *Code hierarchy parsing in index creation*.\n\nWe engineered an open integration blueprint:\n*Integrate typed AST boundary extractor into LlamaIndex code readers.*\n\nUsing Tree-Sitter AST grammar pruning:\n\u2022 Function bodies are pruned to `...` stubs while preserving 100% of typed signatures, classes, and return types.\n\u2022 Benchmark: **-83.0% context token reduction** (74k \u2192 12k tokens) in <2.4ms per 1k LOC.\n\u2022 Eliminates Context Rot (Attention Sink Dilution) and keeps local models within KV cache bounds.\n\nYou can inspect the live AST reduction in browser (zero login):\n\ud83d\udc49 https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=run_llama_llama_index\n\nCommercial package overview:\n\ud83d\udc49 https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=run_llama_llama_index\n\nIf you\u2019d like to claim additional license keys for your team or collaborate on an upstream MCP integration PR, let us know!\n\nWith gratitude,  \nDevSuperSuite Community Guild  \ncommunity@devsupersuite.com | https://devsupersuite.web.app",
+        "utm_sandbox": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=run_llama_llama_index",
+        "utm_gumroad": "https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=run_llama_llama_index"
+      }
+    },
+    {
+      "target_id": "OSS-020",
+      "repo": "microsoft/autogen",
+      "github_stars": 37600,
+      "stars_formatted": "37,600",
+      "maintainer_handle": "@sonichi / AutoGen Team",
+      "category": "Multi-Agent Conversation Framework",
+      "primary_stack": "Python",
+      "bottleneck_identified": "Inter-agent messages repeating massive code blocks turn-by-turn",
+      "mcp_blueprint": "Compress code exchanges between agents using typed AST interface skeletons.",
+      "sponsorship_vip_code": "DSS-OSS-VIP-SPONSORSHIP",
+      "outreach_status": "QUEUED_FOR_OUTREACH",
+      "last_contact_date": null,
+      "pr_review_status": "PR_PROPOSAL_STAGED",
+      "pitch_payload": {
+        "subject": "OSS Sponsorship & Free Pro Lifetime Licenses for microsoft/autogen Core Team",
+        "body": "Hi @sonichi / AutoGen Team,\n\nFirst off, thank you for your incredible stewardship of microsoft/autogen! The open-source community benefits immensely from your work.\n\nWe are **DevSuperSuite Community Guild**. We build local-first developer infrastructure designed to solve two acute problems in modern AI coding:\n1. **Context Token Bloat**: LLMs burning 80%+ of prompt tokens re-reading private implementation bodies.\n2. **Destructive Agent Diffs**: Autonomous agents deleting unit tests or leaking high-entropy secrets to git.\n\n#### \ud83c\udf81 VIP Open-Source Sponsorship Offer:\nWe want to sponsor the entire core team and active code contributors of **microsoft/autogen** with **Permanent Free Pro Lifetime Licenses** (normally $29 solo / $99 team).\n\u2022 **Core Maintainer VIP Code**: `DSS-OSS-VIP-SPONSORSHIP` (100% off lifetime access)\n\u2022 Includes: OmniKernel 5.0 AST Context Slicer, AgentShield Entropy Scanner, Dual MCP Server, and Live Voice Typist.\n\u2022 100% local, runs offline, zero telemetry.\n\n#### \ud83d\udee0\ufe0f MCP Collaboration Blueprint for microsoft/autogen:\nWe noticed your users frequently hit: *Inter-agent messages repeating massive code blocks turn-by-turn*.\n\nWe engineered an open integration blueprint:\n*Compress code exchanges between agents using typed AST interface skeletons.*\n\nUsing Tree-Sitter AST grammar pruning:\n\u2022 Function bodies are pruned to `...` stubs while preserving 100% of typed signatures, classes, and return types.\n\u2022 Benchmark: **-83.0% context token reduction** (74k \u2192 12k tokens) in <2.4ms per 1k LOC.\n\u2022 Eliminates Context Rot (Attention Sink Dilution) and keeps local models within KV cache bounds.\n\nYou can inspect the live AST reduction in browser (zero login):\n\ud83d\udc49 https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=microsoft_autogen\n\nCommercial package overview:\n\ud83d\udc49 https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=microsoft_autogen\n\nIf you\u2019d like to claim additional license keys for your team or collaborate on an upstream MCP integration PR, let us know!\n\nWith gratitude,  \nDevSuperSuite Community Guild  \ncommunity@devsupersuite.com | https://devsupersuite.web.app",
+        "utm_sandbox": "https://devsupersuite.web.app?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=microsoft_autogen",
+        "utm_gumroad": "https://gumroad.com/l/tlzdco?utm_source=github_oss&utm_medium=maintainer_sponsorship&utm_campaign=microsoft_autogen"
+      }
+    }
+  ],
+  "awesome_lists": [
+    {
+      "list_name": "awesome-claude-prompts",
+      "upstream_repo": "f/awesome-claude-prompts",
+      "category": "Context Compression & Token Optimization",
+      "pr_title": "feat: Add OmniKernel AST Context Slicer for Claude 3.5 Sonnet",
+      "pr_branch": "feat/add-omnikernel-ast-slicer"
+    },
+    {
+      "list_name": "awesome-cursor",
+      "upstream_repo": "sualehfarooq/awesome-cursor",
+      "category": "MCP Servers & Workflow Extensions",
+      "pr_title": "feat: Add DevSuperSuite Quad-Engine Toolkit & Dual MCP Server",
+      "pr_branch": "feat/add-devsupersuite-mcp"
+    },
+    {
+      "list_name": "awesome-developer-first-tools",
+      "upstream_repo": "agamm/awesome-developer-first-tools",
+      "category": "Developer Ergonomics & Secret Protection",
+      "pr_title": "feat: Add AgentShield Shannon Entropy Secret Scanner & Voice Typist",
+      "pr_branch": "feat/add-agentshield-security"
+    },
+    {
+      "list_name": "awesome-ai-agents",
+      "upstream_repo": "e2b-dev/awesome-ai-agents",
+      "category": "Invariant Guards & Multi-Agent Safety",
+      "pr_title": "feat: Add Architectural Invariant Guard for Autonomous Code Agents",
+      "pr_branch": "feat/add-invariant-guard"
+    },
+    {
+      "list_name": "awesome-rust-tools",
+      "upstream_repo": "rust-unofficial/awesome-rust",
+      "category": "High-Performance CLI & Code Analysis Utilities",
+      "pr_title": "feat: Add DevSuperSuite Local AST Token Slicer & Pre-Commit Shield",
+      "pr_branch": "feat/add-devsupersuite-cli"
+    }
+  ]
+}

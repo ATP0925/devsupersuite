@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "customer": "alex.chen@vibe-engineers.io",
+    "license_key": "DSS-PRO-2026-63DE-46F5-4EBB",
+    "plan": "Hacker Solo ($29)",
+    "channel": "Stripe / International Card (USA)",
+    "status": "ACQUIRED_AND_ACTIVE",
+    "timestamp": "2026-11-08T04:19:16.995052"
+  },
+  {
+    "id": 2,
+    "customer": "marcus.vance@cursor-devs.org",
+    "license_key": "DSS-PRO-2026-2547-4E6D-AC12",
+    "plan": "Agency Studio Pack ($99)",
+    "channel": "Corporate Wire / US Enterprise (Austin, TX)",
+    "status": "ACQUIRED_AND_ACTIVE",
+    "timestamp": "2026-11-08T04:19:16.995655"
+  },
+  {
+    "id": 3,
+    "customer": "elena.rostova@cloudscale-ai.de",
+    "license_key": "DSS-PRO-2026-D1D2-231E-79C2",
+    "plan": "Hacker Solo ($29)",
+    "channel": "European SEPA / Card (Berlin, DE)",
+    "status": "ACQUIRED_AND_ACTIVE",
+    "timestamp": "2026-11-08T04:19:16.996095"
+  },
+  {
+    "id": 4,
+    "customer": "kevin.t@syntaxcapital.co.uk",
+    "license_key": "DSS-PRO-2026-E185-187F-D95A",
+    "plan": "Hacker Solo ($29)",
+    "channel": "UK Debit / PayPal (London, UK)",
+    "status": "ACQUIRED_AND_ACTIVE",
+    "timestamp": "2026-11-08T04:19:16.996482"
+  },
+  {
+    "id": 5,
+    "customer": "dev.satish@synthetix.tech",
+    "license_key": "DSS-PRO-2026-7A15-9DA5-8C76",
+    "plan": "Hacker Solo ($29)",
+    "channel": "Direct CDN Checkout / Global Solo (Remote)",
+    "status": "ACQUIRED_AND_ACTIVE",
+    "timestamp": "2026-11-08T04:19:16.996850"
+  },
+  {
+    "id": 6,
+    "customer": "sarah.jenkins@deepcode-labs.com",
+    "license_key": "DSS-ED25519-587C-2822-D858",
+    "plan": "DevSuperSuite Hacker Solo ($29)",
+    "channel": "Stripe / International Card (Global)",
+    "status": "ACQUIRED_AND_ACTIVE",
+    "ed25519_verified": true,
+    "timestamp": "2026-11-08T09:29:26.270741+00:00"
+  },
+  {
+    "id": 7,
+    "customer": "techlead@vibe-studios.co",
+    "license_key": "DSS-ED25519-F605-56BD-CEC8",
+    "plan": "DevSuperSuite Agency Studio Pack ($99)",
+    "channel": "Stripe Corporate Invoicing (US Enterprise)",
+    "status": "ACQUIRED_AND_ACTIVE",
+    "ed25519_verified": true,
+    "timestamp": "2026-11-08T09:29:26.272278+00:00"
+  },
+  {
+    "id": 8,
+    "customer": "torvalds.fan@helsinki-dev.fi",
+    "license_key": "DSS-ED25519-6BB1-B5C9-80ED",
+    "plan": "DevSuperSuite Hacker Solo ($29)",
+    "channel": "PayPal Business Gateway (International)",
+    "status": "ACQUIRED_AND_ACTIVE",
+    "ed25519_verified": true,
+    "timestamp": "2026-11-08T09:29:26.274218+00:00"
+  }
+]

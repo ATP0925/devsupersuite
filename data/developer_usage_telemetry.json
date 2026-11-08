@@ -1,0 +1,50 @@
+[
+  {
+    "customer_email": "dev.marcus@quantumcloud.de",
+    "customer_name": "Marcus Vance",
+    "plan_name": "Hacker Solo",
+    "primary_language": "Python",
+    "ide_environment": "Cursor",
+    "days_inactive": 1.5,
+    "ast_volume_drop_pct": 5.0,
+    "precommit_drop_pct": 0.0,
+    "crash_rate_pct": 0.0,
+    "last_active_at": "2026-11-06T22:18:17.679536+00:00"
+  },
+  {
+    "customer_email": "techlead.priya@fintechscale.in",
+    "customer_name": "Priya Sharma",
+    "plan_name": "Team 5-Seat",
+    "primary_language": "TypeScript",
+    "ide_environment": "Claude Code",
+    "days_inactive": 5.0,
+    "ast_volume_drop_pct": 45.0,
+    "precommit_drop_pct": 40.0,
+    "crash_rate_pct": 1.2,
+    "last_active_at": "2026-11-03T10:18:17.679536+00:00"
+  },
+  {
+    "customer_email": "kenji.sato@systems-tokyo.jp",
+    "customer_name": "Kenji Sato",
+    "plan_name": "Hacker Solo",
+    "primary_language": "Rust",
+    "ide_environment": "Windsurf",
+    "days_inactive": 11.0,
+    "ast_volume_drop_pct": 85.0,
+    "precommit_drop_pct": 75.0,
+    "crash_rate_pct": 2.5,
+    "last_active_at": "2026-10-28T10:18:17.679536+00:00"
+  },
+  {
+    "customer_email": "alex.vance@legacycorp.org",
+    "customer_name": "Alex Vance",
+    "plan_name": "Hacker Solo",
+    "primary_language": "C++",
+    "ide_environment": "VS Code",
+    "days_inactive": 18.0,
+    "ast_volume_drop_pct": 100.0,
+    "precommit_drop_pct": 100.0,
+    "crash_rate_pct": 8.0,
+    "last_active_at": "2026-10-21T10:18:17.679536+00:00"
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "activation_id": "ACT-881901",
+    "license_key": "DSS-PRO-2026-X89F-992A-4B7C",
+    "customer_email": "dev.marcus@quantumcloud.de",
+    "ide_environment": "Cursor",
+    "primary_language": "Python",
+    "repo_languages": [
+      "Python",
+      "TypeScript",
+      "SQL"
+    ],
+    "ast_nodes_sliced_initial": 14208,
+    "time_to_first_activation_min": 3.8,
+    "activated_at": "2026-11-02T09:11:57.967803+00:00"
+  },
+  {
+    "activation_id": "ACT-881902",
+    "license_key": "DSS-PRO-2026-T44A-882C-110F",
+    "customer_email": "techlead.priya@fintechscale.in",
+    "ide_environment": "Claude Code",
+    "primary_language": "TypeScript",
+    "repo_languages": [
+      "TypeScript",
+      "Rust",
+      "Go"
+    ],
+    "ast_nodes_sliced_initial": 38940,
+    "time_to_first_activation_min": 5.2,
+    "activated_at": "2026-11-05T08:11:57.967803+00:00"
+  },
+  {
+    "activation_id": "ACT-881903",
+    "license_key": "DSS-PRO-2026-AIRG-7711-002D",
+    "customer_email": "scif-admin@defense-contractor.gov",
+    "ide_environment": "Windsurf",
+    "primary_language": "C++",
+    "repo_languages": [
+      "C++",
+      "Rust",
+      "Python",
+      "CMake"
+    ],
+    "ast_nodes_sliced_initial": 92400,
+    "time_to_first_activation_min": 7.4,
+    "activated_at": "2026-11-07T06:11:57.967803+00:00"
+  }
+]

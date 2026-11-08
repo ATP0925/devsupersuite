@@ -1,0 +1,179 @@
+{
+  "community_desk": {
+    "entity_name": "DevSuperSuite Community Engineering",
+    "contact_email": "community@devsupersuite.com",
+    "website": "https://devsupersuite.web.app",
+    "vouchers": {
+      "discord": "DISCORD-VIP",
+      "slack": "SLACK-DEV"
+    },
+    "compliance": "100% Brand Anonymity Protocol Verified | Zero Founder Personal Disclosures"
+  },
+  "communities": [
+    {
+      "community_id": "COMM-01",
+      "platform": "Discord",
+      "name": "The Primeagen's 'The NeverEnding Story'",
+      "members": 115000,
+      "invite_url": "https://discord.gg/theprimeagen",
+      "target_channels": ["#rust", "#neovim", "#ai-tools", "#dev-talk"],
+      "culture": "Passionate about Rust speed, Neovim keymaps, Vim motions, compiler ASTs, and extreme contempt for bloated JavaScript tooling.",
+      "technical_hook": "Showing sub-2.4ms Tree-sitter interface boundary slicing in native Rust and demonstrating how it prevents Attention Sink Dilution in Cursor.",
+      "voucher": "DISCORD-VIP"
+    },
+    {
+      "community_id": "COMM-02",
+      "platform": "Discord",
+      "name": "Rust Community Discord",
+      "members": 68000,
+      "invite_url": "https://discord.gg/rust-lang",
+      "target_channels": ["#tooling", "#general", "#compiler", "#webassembly"],
+      "culture": "High technical rigor, zero tolerance for unsubstantiated claims, values zero-cost abstractions, SIMD vectorization, and clean memory models.",
+      "technical_hook": "In-memory AST parsing via Tree-sitter Rust bindings and AVX-512 SIMD Shannon entropy calculations on syntax literal nodes.",
+      "voucher": "DISCORD-VIP"
+    },
+    {
+      "community_id": "COMM-03",
+      "platform": "Discord",
+      "name": "Neovim Official Discord",
+      "members": 48000,
+      "invite_url": "https://discord.gg/neovim",
+      "target_channels": ["#plugin-showcase", "#treesitter", "#chat"],
+      "culture": "Modal editing purists, Lua optimization, zero-latency keybindings, local-first air-gapped workflows.",
+      "technical_hook": "devsupersuite.nvim: Local Lua plugin leveraging nvim-treesitter to slice code buffers and scan staged diffs in <2ms.",
+      "voucher": "DISCORD-VIP"
+    },
+    {
+      "community_id": "COMM-04",
+      "platform": "Discord",
+      "name": "LocalLLaMA Discord",
+      "members": 88000,
+      "invite_url": "https://discord.gg/localllama",
+      "target_channels": ["#prompting", "#rag-alternatives", "#local-models", "#hardware"],
+      "culture": "Air-gapped AI purists, quantized GGUF models, context window limits, zero tolerance for cloud telemetry or API markups.",
+      "technical_hook": "How AST skeletonization fits 100k LOC monorepos into 8k/16k context windows of local 7B/14B models with zero context rot.",
+      "voucher": "DISCORD-VIP"
+    },
+    {
+      "community_id": "COMM-05",
+      "platform": "Slack",
+      "name": "Gophers Slack (Official Go Community)",
+      "members": 135000,
+      "invite_url": "https://gophers.slack.com",
+      "target_channels": ["#performance", "#tools", "#architecture", "#general"],
+      "culture": "Pragmatic systems engineers, simple idioms, static interfaces, hatred of unnecessary magic and reflection.",
+      "technical_hook": "Slicing Go struct and interface contracts across 50 microservices to generate clean, minimal prompt contexts without reflection overhead.",
+      "voucher": "SLACK-DEV"
+    },
+    {
+      "community_id": "COMM-06",
+      "platform": "Discord",
+      "name": "Ollama Community Discord",
+      "members": 98000,
+      "invite_url": "https://discord.gg/ollama",
+      "target_channels": ["#models", "#tools-and-agents", "#general-chat"],
+      "culture": "Local LLM engineers running Ollama on Mac/Linux, looking to optimize context payloads and avoid API seat fees.",
+      "technical_hook": "Pre-processing codebases into Tree-sitter interface skeletons to prevent Ollama context overflows during local agent runs.",
+      "voucher": "DISCORD-VIP"
+    },
+    {
+      "community_id": "COMM-07",
+      "platform": "Discord",
+      "name": "Cursor Community Discord",
+      "members": 145000,
+      "invite_url": "https://discord.gg/cursor",
+      "target_channels": ["#prompt-optimization", "#composer", "#rules-and-context"],
+      "culture": "Power users of Cursor Composer wrestling with fast request depletion, 100k LOC context limits, and token billing overages.",
+      "technical_hook": "Hot-keying AST interface contract extraction (Ctrl+Alt+S) to feed Cursor Composer pure architectural contracts instead of 80k raw tokens.",
+      "voucher": "DISCORD-VIP"
+    },
+    {
+      "community_id": "COMM-08",
+      "platform": "Discord",
+      "name": "LangChain Community Discord",
+      "members": 128000,
+      "invite_url": "https://discord.gg/langchain",
+      "target_channels": ["#agents", "#retrievers", "#context-engineering"],
+      "culture": "Developers building multi-agent workflows, hitting attention degradation and broken syntax trees from naive vector chunkers.",
+      "technical_hook": "Why grammar-directed AST slicing beats 512-token vector embeddings on source code by preserving class hierarchy and scope.",
+      "voucher": "DISCORD-VIP"
+    },
+    {
+      "community_id": "COMM-09",
+      "platform": "Discord",
+      "name": "Together AI Community",
+      "members": 78000,
+      "invite_url": "https://discord.gg/together-ai",
+      "target_channels": ["#inference-speed", "#developer-tools", "#benchmarks"],
+      "culture": "Open source model inference, latency optimization, high-throughput batching, developer toolchains.",
+      "technical_hook": "Reducing prompt token payload by 83% to achieve sub-second TTFT (Time To First Token) during open-weights code completion.",
+      "voucher": "DISCORD-VIP"
+    },
+    {
+      "community_id": "COMM-10",
+      "platform": "Discord",
+      "name": "LlamaIndex Community",
+      "members": 62000,
+      "invite_url": "https://discord.gg/llamaindex",
+      "target_channels": ["#code-rag", "#indexing", "#showcase"],
+      "culture": "Data framework engineers focused on indexing and retrieval; interested in novel syntactic parsers for structured data.",
+      "technical_hook": "Replacing line-based document splitters with Tree-sitter concrete syntax tree extractors for structured code indexing.",
+      "voucher": "DISCORD-VIP"
+    },
+    {
+      "community_id": "COMM-11",
+      "platform": "Discord",
+      "name": "Aider AI Discord",
+      "members": 38000,
+      "invite_url": "https://discord.gg/aider",
+      "target_channels": ["#tips-and-tricks", "#git-workflows", "#benchmarks"],
+      "culture": "Terminal CLI power users, git-centric refactoring, deep appreciation for repo maps and token efficiency.",
+      "technical_hook": "Piping DevSuperSuite AST interface contracts into Aider's repo map to fit 50,000 LOC codebases into minimal token budgets.",
+      "voucher": "DISCORD-VIP"
+    },
+    {
+      "community_id": "COMM-12",
+      "platform": "Discord",
+      "name": "Continue.dev Community",
+      "members": 42000,
+      "invite_url": "https://discord.gg/continue",
+      "target_channels": ["#context-providers", "#extensions", "#general"],
+      "culture": "Open-source AI coding assistant enthusiasts, customizing context providers, passionate about local and private LLMs.",
+      "technical_hook": "Building a custom DevSuperSuite local context provider for Continue.dev to supply sliced AST contracts on-demand.",
+      "voucher": "DISCORD-VIP"
+    },
+    {
+      "community_id": "COMM-13",
+      "platform": "Slack",
+      "name": "HangOps / DevOps Community Slack",
+      "members": 74000,
+      "invite_url": "https://hangops.slack.com",
+      "target_channels": ["#security", "#git-hooks", "#ci-cd", "#general"],
+      "culture": "Pragmatic SREs, DevSecOps leads, zero-trust infrastructure, stopping secrets and broken builds before merge.",
+      "technical_hook": "Pre-commit invariant gates that mechanically block autonomous AI tools from deleting test assertions and committing leaked API keys.",
+      "voucher": "SLACK-DEV"
+    },
+    {
+      "community_id": "COMM-14",
+      "platform": "Discord",
+      "name": "Reactiflux Discord",
+      "members": 225000,
+      "invite_url": "https://discord.gg/reactiflux",
+      "target_channels": ["#tools", "#typescript", "#performance", "#general"],
+      "culture": "Massive frontend engineering hub, TypeScript enthusiasts, battling React component state complexity and slow tooling.",
+      "technical_hook": "Slicing React component and hook interfaces to eliminate context caps in Cursor when refactoring complex UI trees.",
+      "voucher": "DISCORD-VIP"
+    },
+    {
+      "community_id": "COMM-15",
+      "platform": "Discord",
+      "name": "Python Discord",
+      "members": 395000,
+      "invite_url": "https://discord.gg/python",
+      "target_channels": ["#project-showcase", "#advanced-python", "#tooling"],
+      "culture": "Largest Python developer gathering; core devs, data engineers, backend FastAPI builders, interested in compiler internals.",
+      "technical_hook": "Why native Tree-sitter C bindings parse and slice Python codebases 8x faster than the standard library `ast` module.",
+      "voucher": "DISCORD-VIP"
+    }
+  ]
+}

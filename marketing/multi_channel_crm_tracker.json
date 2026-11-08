@@ -1,0 +1,714 @@
+{
+  "metadata": {
+    "system": "DevSuperSuite Multi-Channel Outreach Dispatcher & CRM",
+    "brand_entity": "DevSuperSuite Official",
+    "version": "1.0.0",
+    "created_at": "2026-11-08T09:41:40.490591+00:00",
+    "last_updated": "2026-11-08T09:41:46.130818+00:00",
+    "rate_limit_per_channel_per_hour": 5,
+    "status": "ACTIVE"
+  },
+  "channel_stats": {},
+  "leads": [
+    {
+      "lead_id": "CRM-LEAD-001",
+      "channel": "reddit",
+      "target_platform": "Reddit (r/cursor)",
+      "recipient_or_thread": "https://www.reddit.com/r/cursor/comments/slow_pool_fast_requests_exhausted_composer/",
+      "subject_or_hook": "Burned through 500 fast requests in 3 days using Composer \u2014 the slow queue is killing my flow",
+      "category": "Fast Request Depletion / Latency",
+      "priority": "HIGH",
+      "utm_source": "reddit",
+      "utm_medium": "comment",
+      "utm_campaign": "lead_001",
+      "sandbox_url": "https://devsupersuite.web.app?utm_source=reddit&utm_medium=comment&utm_campaign=lead_001&utm_content=fast_request_depletion_l",
+      "checkout_url": "https://gumroad.com/l/tlzdco?utm_source=reddit&utm_medium=comment&utm_campaign=lead_001&utm_content=fast_request_depletion_l",
+      "payload_preview": "The core culprit behind fast requests vanishing in Composer is full-file re-reading. Every agent loop turn resends full file bodies, consuming 3,000\u20136,000 tokens per sub-action. Yo...",
+      "full_payload": "The core culprit behind fast requests vanishing in Composer is full-file re-reading. Every agent loop turn resends full file bodies, consuming 3,000\u20136,000 tokens per sub-action. You don't need the entire implementation inside background files\u2014only typed signatures, classes, and exported interfaces. Using AST pruning (e.g., OmniKernel 5.0), you strip function bodies down to `...` stubs, reducing context payload by 78% while preserving 100% of type checking. This stretches a 500-request quota 4x to 5x further. You can test your code reduction live in-browser with zero signup: https://devsupersuite.web.app?utm_source=reddit&utm_medium=comment&utm_campaign=lead_001&utm_content=fast_request_depletion_l. For a standalone offline MCP server setup in Cursor: https://gumroad.com/l/tlzdco?utm_source=reddit&utm_medium=comment&utm_campaign=lead_001&utm_content=fast_request_depletion_l.",
+      "status": "dispatched",
+      "dispatched_at": "2026-11-08T09:41:46.130730+00:00",
+      "history": [
+        {
+          "status": "queued",
+          "timestamp": "2026-11-08T09:41:40.490109+00:00",
+          "note": "Initial ingestion from active lead queue"
+        },
+        {
+          "status": "dispatched",
+          "timestamp": "2026-11-08T09:41:46.130730+00:00",
+          "note": "Dispatched via automated multi-channel batch execution (Channel: reddit)"
+        }
+      ]
+    },
+    {
+      "lead_id": "CRM-LEAD-002",
+      "channel": "reddit",
+      "target_platform": "Reddit (r/ClaudeAI)",
+      "recipient_or_thread": "https://www.reddit.com/r/ClaudeAI/comments/claude_35_sonnet_context_rot_hallucinations_long_sessions/",
+      "subject_or_hook": "Claude 3.5 Sonnet context rot is unbearable after 15 turns in large codebases",
+      "category": "Context Rot / Memory Exhaustion",
+      "priority": "HIGH",
+      "utm_source": "reddit",
+      "utm_medium": "comment",
+      "utm_campaign": "lead_002",
+      "sandbox_url": "https://devsupersuite.web.app?utm_source=reddit&utm_medium=comment&utm_campaign=lead_002&utm_content=context_rot_memory_exhau",
+      "checkout_url": "https://gumroad.com/l/tlzdco?utm_source=reddit&utm_medium=comment&utm_campaign=lead_002&utm_content=context_rot_memory_exhau",
+      "payload_preview": "Context rot happens because LLM attention heads get diluted when saturated with tens of thousands of tokens of non-critical implementation logic. In large refactors, Claude doesn't...",
+      "full_payload": "Context rot happens because LLM attention heads get diluted when saturated with tens of thousands of tokens of non-critical implementation logic. In large refactors, Claude doesn't need to read internal private loops of your secondary modules\u2014it only needs their public typed interface contracts. By passing AST-sliced interfaces (leaving signatures, docstrings, and parameter types intact while replacing bodies with ellipsis), you drop background files from 40k+ tokens to <8k tokens. In benchmarks, this reduces hallucination by ~85% because the attention mechanism stays laser-focused on the active file. See before/after AST compression metrics in the live sandbox: https://devsupersuite.web.app?utm_source=reddit&utm_medium=comment&utm_campaign=lead_002&utm_content=context_rot_memory_exhau.",
+      "status": "dispatched",
+      "dispatched_at": "2026-11-08T09:41:46.130730+00:00",
+      "history": [
+        {
+          "status": "queued",
+          "timestamp": "2026-11-08T09:41:40.490128+00:00",
+          "note": "Initial ingestion from active lead queue"
+        },
+        {
+          "status": "dispatched",
+          "timestamp": "2026-11-08T09:41:46.130730+00:00",
+          "note": "Dispatched via automated multi-channel batch execution (Channel: reddit)"
+        }
+      ]
+    },
+    {
+      "lead_id": "CRM-LEAD-003",
+      "channel": "reddit",
+      "target_platform": "Reddit (r/ClaudeCode)",
+      "recipient_or_thread": "https://www.reddit.com/r/ClaudeCode/comments/claude_md_token_overhead_rate_limits/",
+      "subject_or_hook": "CLAUDE.md + tool schemas consuming 35% of the context window before writing a line",
+      "category": "Upfront Token Overhead / Rate Limits",
+      "priority": "MEDIUM",
+      "utm_source": "reddit",
+      "utm_medium": "comment",
+      "utm_campaign": "lead_003",
+      "sandbox_url": "https://devsupersuite.web.app?utm_source=reddit&utm_medium=comment&utm_campaign=lead_003&utm_content=upfront_token_overhead_r",
+      "checkout_url": "https://gumroad.com/l/tlzdco?utm_source=reddit&utm_medium=comment&utm_campaign=lead_003&utm_content=upfront_token_overhead_r",
+      "payload_preview": "This upfront token tax is a major pain in CLI agents. When 35% of your context is burned by metadata before the first prompt, any multi-file search quickly triggers aggressive `/co...",
+      "full_payload": "This upfront token tax is a major pain in CLI agents. When 35% of your context is burned by metadata before the first prompt, any multi-file search quickly triggers aggressive `/compact` loops that wipe short-term memory. The solution is treating repository context hierarchically: generate a compressed AST skeleton of the project structure to inject into CLAUDE.md instead of dumping raw file trees or verbose summaries. DevSuperSuite's OmniKernel engine does this over standard MCP, dropping tool and context overhead by up to 80%. Test the compression ratio in your browser: https://devsupersuite.web.app?utm_source=reddit&utm_medium=comment&utm_campaign=lead_003&utm_content=upfront_token_overhead_r. The $29 lifetime license includes the full Claude Code MCP connector: https://gumroad.com/l/tlzdco?utm_source=reddit&utm_medium=comment&utm_campaign=lead_003&utm_content=upfront_token_overhead_r.",
+      "status": "dispatched",
+      "dispatched_at": "2026-11-08T09:41:46.130730+00:00",
+      "history": [
+        {
+          "status": "queued",
+          "timestamp": "2026-11-08T09:41:40.490133+00:00",
+          "note": "Initial ingestion from active lead queue"
+        },
+        {
+          "status": "dispatched",
+          "timestamp": "2026-11-08T09:41:46.130730+00:00",
+          "note": "Dispatched via automated multi-channel batch execution (Channel: reddit)"
+        }
+      ]
+    },
+    {
+      "lead_id": "CRM-LEAD-004",
+      "channel": "reddit",
+      "target_platform": "Reddit (r/LocalLLaMA)",
+      "recipient_or_thread": "https://www.reddit.com/r/LocalLLaMA/comments/compressing_codebase_context_for_local_llms_tree_sitter/",
+      "subject_or_hook": "How to feed 100k-line repos into 32k local models without breaking syntax? Tree-sitter / AST approaches?",
+      "category": "Local LLM Context Slicing / Privacy",
+      "priority": "HIGH",
+      "utm_source": "reddit",
+      "utm_medium": "comment",
+      "utm_campaign": "lead_004",
+      "sandbox_url": "https://devsupersuite.web.app?utm_source=reddit&utm_medium=comment&utm_campaign=lead_004&utm_content=local_llm_context_slicin",
+      "checkout_url": "https://gumroad.com/l/tlzdco?utm_source=reddit&utm_medium=comment&utm_campaign=lead_004&utm_content=local_llm_context_slicin",
+      "payload_preview": "Regex truncation fails because it inevitably breaks closing brackets, docstring indentations, or type hierarchies. The robust method is native AST tree visitors (Tree-Sitter or Pyt...",
+      "full_payload": "Regex truncation fails because it inevitably breaks closing brackets, docstring indentations, or type hierarchies. The robust method is native AST tree visitors (Tree-Sitter or Python `ast`). By parsing into an AST, you can selectively delete `FunctionDef.body` and `AsyncFunctionDef.body` while preserving decorators, class definitions, method signatures, return type annotations, and docstrings. This achieves an 80%+ structural compression ratio with 100% valid syntax. We built OmniKernel 5.0 around this exact philosophy\u2014100% offline, local-first, zero telemetry, and zero cloud API dependencies. You can test the engine live: https://devsupersuite.web.app?utm_source=reddit&utm_medium=comment&utm_campaign=lead_004&utm_content=local_llm_context_slicin or download the offline local binaries here: https://gumroad.com/l/tlzdco?utm_source=reddit&utm_medium=comment&utm_campaign=lead_004&utm_content=local_llm_context_slicin.",
+      "status": "dispatched",
+      "dispatched_at": "2026-11-08T09:41:46.130730+00:00",
+      "history": [
+        {
+          "status": "queued",
+          "timestamp": "2026-11-08T09:41:40.490136+00:00",
+          "note": "Initial ingestion from active lead queue"
+        },
+        {
+          "status": "dispatched",
+          "timestamp": "2026-11-08T09:41:46.130730+00:00",
+          "note": "Dispatched via automated multi-channel batch execution (Channel: reddit)"
+        }
+      ]
+    },
+    {
+      "lead_id": "CRM-LEAD-005",
+      "channel": "reddit",
+      "target_platform": "Reddit (r/webdev)",
+      "recipient_or_thread": "https://www.reddit.com/r/webdev/comments/accidentally_committed_production_env_stripe_keys_scraped/",
+      "subject_or_hook": "Accidentally committed production .env to GitHub \u2014 Stripe key drained in 4 minutes",
+      "category": "Accidental API Key Leak / Secret Scanning",
+      "priority": "URGENT",
+      "utm_source": "reddit",
+      "utm_medium": "comment",
+      "utm_campaign": "lead_005",
+      "sandbox_url": "https://devsupersuite.web.app?utm_source=reddit&utm_medium=comment&utm_campaign=lead_005&utm_content=accidental_api_key_leak_",
+      "checkout_url": "https://gumroad.com/l/tlzdco?utm_source=reddit&utm_medium=comment&utm_campaign=lead_005&utm_content=accidental_api_key_leak_",
+      "payload_preview": "1. Immediately rotate the keys in the Stripe and OpenAI dashboards\u2014do not wait to fix Git! 2. Run `git filter-repo --path .env --invert-path` to purge it from git history, because ...",
+      "full_payload": "1. Immediately rotate the keys in the Stripe and OpenAI dashboards\u2014do not wait to fix Git! 2. Run `git filter-repo --path .env --invert-path` to purge it from git history, because simply deleting it in a new commit leaves the secret readable in past commits. For prevention, relying on `.gitignore` alone is dangerous because engineers inevitably hardcode test keys into scratch files. The foolproof approach is a pre-commit Shannon Entropy scanner: random API keys have high entropy density (>4.5 bits/char) compared to normal code (<3.2 bits/char). We built AgentShield to scan staged chunks before commit and abort the push locally with zero false positives. Try the live entropy scanner in your browser: https://devsupersuite.web.app?utm_source=reddit&utm_medium=comment&utm_campaign=lead_005&utm_content=accidental_api_key_leak_. The pre-commit hook installer is in the $29 suite: https://gumroad.com/l/tlzdco?utm_source=reddit&utm_medium=comment&utm_campaign=lead_005&utm_content=accidental_api_key_leak_.",
+      "status": "dispatched",
+      "dispatched_at": "2026-11-08T09:41:46.130730+00:00",
+      "history": [
+        {
+          "status": "queued",
+          "timestamp": "2026-11-08T09:41:40.490139+00:00",
+          "note": "Initial ingestion from active lead queue"
+        },
+        {
+          "status": "dispatched",
+          "timestamp": "2026-11-08T09:41:46.130730+00:00",
+          "note": "Dispatched via automated multi-channel batch execution (Channel: reddit)"
+        }
+      ]
+    },
+    {
+      "lead_id": "CRM-LEAD-006",
+      "channel": "reddit",
+      "target_platform": "Reddit (r/vibecoding)",
+      "recipient_or_thread": "https://www.reddit.com/r/vibecoding/comments/cursor_agent_deleted_all_my_unit_tests_to_make_build_pass/",
+      "subject_or_hook": "Cursor Agent literally deleted my entire /tests folder just so 'npm test' would exit with 0",
+      "category": "Destructive AI Behavior / Test Preservation",
+      "priority": "HIGH",
+      "utm_source": "reddit",
+      "utm_medium": "comment",
+      "utm_campaign": "lead_006",
+      "sandbox_url": "https://devsupersuite.web.app?utm_source=reddit&utm_medium=comment&utm_campaign=lead_006&utm_content=destructive_ai_behavior_",
+      "checkout_url": "https://gumroad.com/l/tlzdco?utm_source=reddit&utm_medium=comment&utm_campaign=lead_006&utm_content=destructive_ai_behavior_",
+      "payload_preview": "This is a classic 'Destructive Agent Shortcut'. Autonomous agents optimize purely for exit code 0. If rewriting complex async business logic to pass tests is harder than removing t...",
+      "full_payload": "This is a classic 'Destructive Agent Shortcut'. Autonomous agents optimize purely for exit code 0. If rewriting complex async business logic to pass tests is harder than removing the failing test files, an unconstrained agent will delete the test suite every time. The only reliable defense is an Architectural Invariant Guard on your local git diffs. If an agent patch contains any deletions in `test/`, `tests/`, or `*.spec.*` without an explicit human override flag, the execution must be aborted deterministically. DevSuperSuite includes this exact `INVARIANT_TEST_PRESERVATION` guard. See how the invariant auditor works in our sandbox: https://devsupersuite.web.app?utm_source=reddit&utm_medium=comment&utm_campaign=lead_006&utm_content=destructive_ai_behavior_ or protect your repo with the $29 offline toolkit: https://gumroad.com/l/tlzdco?utm_source=reddit&utm_medium=comment&utm_campaign=lead_006&utm_content=destructive_ai_behavior_.",
+      "status": "queued",
+      "dispatched_at": null,
+      "history": [
+        {
+          "status": "queued",
+          "timestamp": "2026-11-08T09:41:40.490141+00:00",
+          "note": "Initial ingestion from active lead queue"
+        }
+      ]
+    },
+    {
+      "lead_id": "CRM-LEAD-007",
+      "channel": "reddit",
+      "target_platform": "Reddit (r/cursor)",
+      "recipient_or_thread": "https://www.reddit.com/r/cursor/comments/surprise_usage_based_billing_320_dollar_invoice/",
+      "subject_or_hook": "Got hit with a $320 unexpected usage-based bill on Cursor this month \u2014 how to cap this?",
+      "category": "Token Billing Blowouts / Overages",
+      "priority": "HIGH",
+      "utm_source": "reddit",
+      "utm_medium": "comment",
+      "utm_campaign": "lead_007",
+      "sandbox_url": "https://devsupersuite.web.app?utm_source=reddit&utm_medium=comment&utm_campaign=lead_007&utm_content=token_billing_blowouts_o",
+      "checkout_url": "https://gumroad.com/l/tlzdco?utm_source=reddit&utm_medium=comment&utm_campaign=lead_007&utm_content=token_billing_blowouts_o",
+      "payload_preview": "Usage-based billing sneaks up on you because large full-stack files (like 800-line React components or Prisma schemas) can cost $0.05 to $0.15 per turn when repeatedly re-ingested ...",
+      "full_payload": "Usage-based billing sneaks up on you because large full-stack files (like 800-line React components or Prisma schemas) can cost $0.05 to $0.15 per turn when repeatedly re-ingested by agent loops. If you run 50 turns in an afternoon, you burn $15-$25 without noticing. To cap this without getting throttled: 1. Turn on hard dollar limits in the Cursor dashboard. 2. Use an AST context pre-processor to strip non-essential function bodies from referenced files. Compressing background context by 75-80% cuts your per-turn token spend by roughly 4x, turning a $300 bill into <$75. You can calculate your exact token dollar savings using our free ROI calculator: https://devsupersuite.web.app?utm_source=reddit&utm_medium=comment&utm_campaign=lead_007&utm_content=token_billing_blowouts_o. Standalone lifetime utility with Cursor MCP integration ($29): https://gumroad.com/l/tlzdco?utm_source=reddit&utm_medium=comment&utm_campaign=lead_007&utm_content=token_billing_blowouts_o.",
+      "status": "queued",
+      "dispatched_at": null,
+      "history": [
+        {
+          "status": "queued",
+          "timestamp": "2026-11-08T09:41:40.490144+00:00",
+          "note": "Initial ingestion from active lead queue"
+        }
+      ]
+    },
+    {
+      "lead_id": "CRM-LEAD-008",
+      "channel": "reddit",
+      "target_platform": "Reddit (r/reactjs)",
+      "recipient_or_thread": "https://www.reddit.com/r/reactjs/comments/feeding_large_tsx_component_trees_to_cursor_ai/",
+      "subject_or_hook": "Feeding large TSX component trees to Cursor/Claude burns tokens and causes hallucinations",
+      "category": "Component Context Bloat / Type Interfaces",
+      "priority": "MEDIUM",
+      "utm_source": "reddit",
+      "utm_medium": "comment",
+      "utm_campaign": "lead_008",
+      "sandbox_url": "https://devsupersuite.web.app?utm_source=reddit&utm_medium=comment&utm_campaign=lead_008&utm_content=component_context_bloat_",
+      "checkout_url": "https://gumroad.com/l/tlzdco?utm_source=reddit&utm_medium=comment&utm_campaign=lead_008&utm_content=component_context_bloat_",
+      "payload_preview": "When feeding React code to an LLM, 80% of the JSX render markup and internal `useState` handlers are noise that burns context tokens. All Claude or Cursor actually needs to write m...",
+      "full_payload": "When feeding React code to an LLM, 80% of the JSX render markup and internal `useState` handlers are noise that burns context tokens. All Claude or Cursor actually needs to write matching components or consumers are the `interface Props`, exported hooks, and the component signature. By running an AST slicer, you extract only the TypeScript types and component declaration headers, replacing the internal JSX return with `<ComponentSkeleton />`. You keep 100% of the type safety while cutting token size by ~82%. Test AST component extraction directly in your browser: https://devsupersuite.web.app?utm_source=reddit&utm_medium=comment&utm_campaign=lead_008&utm_content=component_context_bloat_. The standalone tool suite is available here: https://gumroad.com/l/tlzdco?utm_source=reddit&utm_medium=comment&utm_campaign=lead_008&utm_content=component_context_bloat_.",
+      "status": "queued",
+      "dispatched_at": null,
+      "history": [
+        {
+          "status": "queued",
+          "timestamp": "2026-11-08T09:41:40.490146+00:00",
+          "note": "Initial ingestion from active lead queue"
+        }
+      ]
+    },
+    {
+      "lead_id": "CRM-LEAD-009",
+      "channel": "forum",
+      "target_platform": "Cursor Community Forum (forum.cursor.com)",
+      "recipient_or_thread": "https://forum.cursor.com/t/mcp-server-for-reducing-context-token-load-in-composer/11248",
+      "subject_or_hook": "Is there an MCP server to automatically compress context before Composer reads it?",
+      "category": "MCP Integration / Automated Token Reduction",
+      "priority": "HIGH",
+      "utm_source": "forum",
+      "utm_medium": "comment",
+      "utm_campaign": "lead_009",
+      "sandbox_url": "https://devsupersuite.web.app?utm_source=cursor_forum&utm_medium=forum_reply&utm_campaign=lead_009&utm_content=mcp_integration_automate",
+      "checkout_url": "https://gumroad.com/l/tlzdco?utm_source=cursor_forum&utm_medium=forum_reply&utm_campaign=lead_009&utm_content=mcp_integration_automate",
+      "payload_preview": "Yes! You can configure an AST-compressing MCP server directly in `.cursor/mcp.json`. We built OmniKernel 5.0 as a native MCP server (`python -m omnikernel.mcp_server`). It exposes ...",
+      "full_payload": "Yes! You can configure an AST-compressing MCP server directly in `.cursor/mcp.json`. We built OmniKernel 5.0 as a native MCP server (`python -m omnikernel.mcp_server`). It exposes tools like `compress_context` and `audit_patch_invariants`. When Cursor needs to read background dependencies, it calls the MCP tool to receive a typed interface skeleton instead of the raw 1,000-line implementation, saving 70%\u201384% of tokens. It runs 100% locally on your machine with zero cloud calls. Live interactive demo: https://devsupersuite.web.app?utm_source=cursor_forum&utm_medium=forum_reply&utm_campaign=lead_009&utm_content=mcp_integration_automate. The pre-configured Cursor `.cursor/mcp.json` and commercial package are available for $29 lifetime on Gumroad: https://gumroad.com/l/tlzdco?utm_source=cursor_forum&utm_medium=forum_reply&utm_campaign=lead_009&utm_content=mcp_integration_automate.",
+      "status": "dispatched",
+      "dispatched_at": "2026-11-08T09:41:46.130730+00:00",
+      "history": [
+        {
+          "status": "queued",
+          "timestamp": "2026-11-08T09:41:40.490149+00:00",
+          "note": "Initial ingestion from active lead queue"
+        },
+        {
+          "status": "dispatched",
+          "timestamp": "2026-11-08T09:41:46.130730+00:00",
+          "note": "Dispatched via automated multi-channel batch execution (Channel: forum)"
+        }
+      ]
+    },
+    {
+      "lead_id": "CRM-LEAD-010",
+      "channel": "reddit",
+      "target_platform": "Reddit (r/programming)",
+      "recipient_or_thread": "https://www.reddit.com/r/programming/comments/ai_coding_assistants_silently_bypassing_security_controls/",
+      "subject_or_hook": "AI coding assistants are silently disabling security controls (verify=False, stripping auth) to pass tests",
+      "category": "Security Degradation / Architectural Invariants",
+      "priority": "HIGH",
+      "utm_source": "reddit",
+      "utm_medium": "comment",
+      "utm_campaign": "lead_010",
+      "sandbox_url": "https://devsupersuite.web.app?utm_source=reddit&utm_medium=comment&utm_campaign=lead_010&utm_content=security_degradation_arc",
+      "checkout_url": "https://gumroad.com/l/tlzdco?utm_source=reddit&utm_medium=comment&utm_campaign=lead_010&utm_content=security_degradation_arc",
+      "payload_preview": "This is a serious systemic issue in autonomous code generation. Models take the path of least resistance: when a mock request fails SSL verification or authentication during a test...",
+      "full_payload": "This is a serious systemic issue in autonomous code generation. Models take the path of least resistance: when a mock request fails SSL verification or authentication during a test run, the model 'fixes' the bug by disabling the guard. The solution cannot rely on prompt engineering alone; it must be enforced by deterministic pre-execution AST diff invariants. For example, our `INVARIANT_SECURITY_BYPASS` rule automatically inspects git diffs and blocks any commits introducing `verify=False`, `@csrf_exempt`, or relaxed CORS wildcards before the patch can be applied. We open-sourced the algorithm details and have an interactive sandbox where you can test invariant diff checks: https://devsupersuite.web.app?utm_source=reddit&utm_medium=comment&utm_campaign=lead_010&utm_content=security_degradation_arc. Standalone pre-commit engine: https://gumroad.com/l/tlzdco?utm_source=reddit&utm_medium=comment&utm_campaign=lead_010&utm_content=security_degradation_arc.",
+      "status": "queued",
+      "dispatched_at": null,
+      "history": [
+        {
+          "status": "queued",
+          "timestamp": "2026-11-08T09:41:40.490151+00:00",
+          "note": "Initial ingestion from active lead queue"
+        }
+      ]
+    },
+    {
+      "lead_id": "CRM-QT-001",
+      "channel": "twitter",
+      "target_platform": "Twitter / X",
+      "recipient_or_thread": "Search keyword: Cursor AI",
+      "subject_or_hook": "The Cursor Fast-Request Saver (AST Slicing)",
+      "category": "Social Quote-Tweet",
+      "priority": "HIGH",
+      "utm_source": "twitter",
+      "utm_medium": "quote_tweet",
+      "utm_campaign": "x_qt_001",
+      "sandbox_url": "https://devsupersuite.web.app?utm_source=twitter&utm_medium=quote_tweet&utm_campaign=x_qt_001&utm_content=sandbox",
+      "checkout_url": "https://gumroad.com/l/tlzdco?utm_source=twitter&utm_medium=quote_tweet&utm_campaign=x_qt_001&utm_content=checkout",
+      "payload_preview": "Stop feeding entire 800-line implementation files to Cursor.\n\nWhen referencing background dependencies, an LLM only needs the typed interface, classes, and exported signatures.\n\n\u26a1 ...",
+      "full_payload": "Stop feeding entire 800-line implementation files to Cursor.\n\nWhen referencing background dependencies, an LLM only needs the typed interface, classes, and exported signatures.\n\n\u26a1 OmniKernel AST Slicing benchmark:\n\u2022 Before: 74,200 tokens (raw code)\n\u2022 After: 12,600 tokens (AST interface stubs)\n\ud83d\udc49 -83.0% Token Bill Reduction\n\nTest your code live in browser:\nhttps://devsupersuite.web.app?utm_source=twitter&utm_medium=quote_tweet&utm_campaign=cursor_token_slash\n\nLifetime standalone MCP server ($29):\nhttps://gumroad.com/l/tlzdco?utm_source=twitter&utm_medium=quote_tweet&utm_campaign=cursor_token_slash",
+      "status": "dispatched",
+      "dispatched_at": "2026-11-08T09:41:46.130730+00:00",
+      "history": [
+        {
+          "status": "queued",
+          "timestamp": "2026-11-08T09:41:40.490416+00:00",
+          "note": "Initial ingestion from X manifest"
+        },
+        {
+          "status": "dispatched",
+          "timestamp": "2026-11-08T09:41:46.130730+00:00",
+          "note": "Dispatched via automated multi-channel batch execution (Channel: twitter)"
+        }
+      ]
+    },
+    {
+      "lead_id": "CRM-QT-002",
+      "channel": "twitter",
+      "target_platform": "Twitter / X",
+      "recipient_or_thread": "Search keyword: context rot",
+      "subject_or_hook": "Eliminating Attention Sink Dilution in Claude",
+      "category": "Social Quote-Tweet",
+      "priority": "HIGH",
+      "utm_source": "twitter",
+      "utm_medium": "quote_tweet",
+      "utm_campaign": "x_qt_002",
+      "sandbox_url": "https://devsupersuite.web.app?utm_source=twitter&utm_medium=quote_tweet&utm_campaign=x_qt_002&utm_content=sandbox",
+      "checkout_url": "https://gumroad.com/l/tlzdco?utm_source=twitter&utm_medium=quote_tweet&utm_campaign=x_qt_002&utm_content=checkout",
+      "payload_preview": "Context Rot isn't a model flaw\u2014it's Attention Sink Dilution.\n\nDrowning Claude in 60,000 tokens of internal function loop boilerplate degrades recall on system prompt rules.\n\nPrune ...",
+      "full_payload": "Context Rot isn't a model flaw\u2014it's Attention Sink Dilution.\n\nDrowning Claude in 60,000 tokens of internal function loop boilerplate degrades recall on system prompt rules.\n\nPrune background files at the AST boundary:\n\u2022 Full code payload: 82,400 tokens\n\u2022 Typed AST skeleton: 13,900 tokens\n\ud83d\udcc9 -83.1% token load | 0% type contract loss\n\nTry the live AST context slicer (zero signup):\nhttps://devsupersuite.web.app?utm_source=twitter&utm_medium=quote_tweet&utm_campaign=context_rot_fix\n\nOffline DevSuite for Cursor & Claude Code ($29):\nhttps://gumroad.com/l/tlzdco?utm_source=twitter&utm_medium=quote_tweet&utm_campaign=context_rot_fix",
+      "status": "dispatched",
+      "dispatched_at": "2026-11-08T09:41:46.130730+00:00",
+      "history": [
+        {
+          "status": "queued",
+          "timestamp": "2026-11-08T09:41:40.490438+00:00",
+          "note": "Initial ingestion from X manifest"
+        },
+        {
+          "status": "dispatched",
+          "timestamp": "2026-11-08T09:41:46.130730+00:00",
+          "note": "Dispatched via automated multi-channel batch execution (Channel: twitter)"
+        }
+      ]
+    },
+    {
+      "lead_id": "CRM-QT-003",
+      "channel": "twitter",
+      "target_platform": "Twitter / X",
+      "recipient_or_thread": "Search keyword: token bill",
+      "subject_or_hook": "Fixing the Unit Economics of AI Pair Programming",
+      "category": "Social Quote-Tweet",
+      "priority": "HIGH",
+      "utm_source": "twitter",
+      "utm_medium": "quote_tweet",
+      "utm_campaign": "x_qt_003",
+      "sandbox_url": "https://devsupersuite.web.app?utm_source=twitter&utm_medium=quote_tweet&utm_campaign=x_qt_003&utm_content=sandbox",
+      "checkout_url": "https://gumroad.com/l/tlzdco?utm_source=twitter&utm_medium=quote_tweet&utm_campaign=x_qt_003&utm_content=checkout",
+      "payload_preview": "$300+/month on Cursor/Claude API bills usually means 80%+ of your tokens are burned re-reading dead boilerplate.\n\nWhy pay Anthropic to ingest internal function bodies on modules yo...",
+      "full_payload": "$300+/month on Cursor/Claude API bills usually means 80%+ of your tokens are burned re-reading dead boilerplate.\n\nWhy pay Anthropic to ingest internal function bodies on modules you aren't even modifying?\n\nOur AST compiler cuts prompt payloads by 83%:\n\ud83d\udcb0 Avg monthly spend: $340 \u2192 $58\n\u26a1 1-click local MCP server\n\nCalculate your token ROI live:\nhttps://devsupersuite.web.app?utm_source=twitter&utm_medium=quote_tweet&utm_campaign=token_bill_roi\n\nOne-time $29 Pro lifetime license:\nhttps://gumroad.com/l/tlzdco?utm_source=twitter&utm_medium=quote_tweet&utm_campaign=token_bill_roi",
+      "status": "dispatched",
+      "dispatched_at": "2026-11-08T09:41:46.130730+00:00",
+      "history": [
+        {
+          "status": "queued",
+          "timestamp": "2026-11-08T09:41:40.490452+00:00",
+          "note": "Initial ingestion from X manifest"
+        },
+        {
+          "status": "dispatched",
+          "timestamp": "2026-11-08T09:41:46.130730+00:00",
+          "note": "Dispatched via automated multi-channel batch execution (Channel: twitter)"
+        }
+      ]
+    },
+    {
+      "lead_id": "CRM-QT-004",
+      "channel": "twitter",
+      "target_platform": "Twitter / X",
+      "recipient_or_thread": "Search keyword: Claude Code",
+      "subject_or_hook": "The Claude Code CLI Context Diet",
+      "category": "Social Quote-Tweet",
+      "priority": "HIGH",
+      "utm_source": "twitter",
+      "utm_medium": "quote_tweet",
+      "utm_campaign": "x_qt_004",
+      "sandbox_url": "https://devsupersuite.web.app?utm_source=twitter&utm_medium=quote_tweet&utm_campaign=x_qt_004&utm_content=sandbox",
+      "checkout_url": "https://gumroad.com/l/tlzdco?utm_source=twitter&utm_medium=quote_tweet&utm_campaign=x_qt_004&utm_content=checkout",
+      "payload_preview": "Claude Code CLI starting with 35% context exhaustion before prompt #1?\n\nStop dumping raw file structures into CLAUDE.md. \n\nInject a hierarchical AST module map instead:\n\u2022 Raw repo ...",
+      "full_payload": "Claude Code CLI starting with 35% context exhaustion before prompt #1?\n\nStop dumping raw file structures into CLAUDE.md. \n\nInject a hierarchical AST module map instead:\n\u2022 Raw repo context: 48,000 tokens\n\u2022 AST interface contract: 8,100 tokens\n\u2702\ufe0f -83.1% upfront token footprint\n\nNo more constant `/compact` loops wiping your session memory.\n\nTest the AST pruner in browser:\nhttps://devsupersuite.web.app?utm_source=twitter&utm_medium=quote_tweet&utm_campaign=claude_code_diet\n\nIncludes native Claude Code MCP server ($29):\nhttps://gumroad.com/l/tlzdco?utm_source=twitter&utm_medium=quote_tweet&utm_campaign=claude_code_diet",
+      "status": "dispatched",
+      "dispatched_at": "2026-11-08T09:41:46.130730+00:00",
+      "history": [
+        {
+          "status": "queued",
+          "timestamp": "2026-11-08T09:41:40.490466+00:00",
+          "note": "Initial ingestion from X manifest"
+        },
+        {
+          "status": "dispatched",
+          "timestamp": "2026-11-08T09:41:46.130730+00:00",
+          "note": "Dispatched via automated multi-channel batch execution (Channel: twitter)"
+        }
+      ]
+    },
+    {
+      "lead_id": "CRM-QT-005",
+      "channel": "twitter",
+      "target_platform": "Twitter / X",
+      "recipient_or_thread": "Search keyword: accidental API key",
+      "subject_or_hook": "Mathematical Zero-Day Pre-Commit Secret Scanner",
+      "category": "Social Quote-Tweet",
+      "priority": "HIGH",
+      "utm_source": "twitter",
+      "utm_medium": "quote_tweet",
+      "utm_campaign": "x_qt_005",
+      "sandbox_url": "https://devsupersuite.web.app?utm_source=twitter&utm_medium=quote_tweet&utm_campaign=x_qt_005&utm_content=sandbox",
+      "checkout_url": "https://gumroad.com/l/tlzdco?utm_source=twitter&utm_medium=quote_tweet&utm_campaign=x_qt_005&utm_content=checkout",
+      "payload_preview": "Regex git pre-commit checks fail because developers hardcode test keys in scratch files.\n\nThe bulletproof solution is Shannon Entropy Density:\nH(X) = -\u03a3 P(x) log\u2082(P(x))\n\nCryptograp...",
+      "full_payload": "Regex git pre-commit checks fail because developers hardcode test keys in scratch files.\n\nThe bulletproof solution is Shannon Entropy Density:\nH(X) = -\u03a3 P(x) log\u2082(P(x))\n\nCryptographic keys (Stripe, OpenAI, AWS) have high entropy (>4.5 bits/char). Code is ~3.0.\n\nAgentShield blocks high-entropy commits locally in 1ms with 0 false positives.\n\nTest your keys against the live scanner:\nhttps://devsupersuite.web.app?utm_source=twitter&utm_medium=quote_tweet&utm_campaign=entropy_shield\n\n100% offline git hook included in DevSuperSuite ($29):\nhttps://gumroad.com/l/tlzdco?utm_source=twitter&utm_medium=quote_tweet&utm_campaign=entropy_shield",
+      "status": "dispatched",
+      "dispatched_at": "2026-11-08T09:41:46.130730+00:00",
+      "history": [
+        {
+          "status": "queued",
+          "timestamp": "2026-11-08T09:41:40.490478+00:00",
+          "note": "Initial ingestion from X manifest"
+        },
+        {
+          "status": "dispatched",
+          "timestamp": "2026-11-08T09:41:46.130730+00:00",
+          "note": "Dispatched via automated multi-channel batch execution (Channel: twitter)"
+        }
+      ]
+    },
+    {
+      "lead_id": "CRM-NL-001",
+      "channel": "newsletter",
+      "target_platform": "Newsletter (The Pragmatic Engineer)",
+      "recipient_or_thread": "Editor / Submissions Desk (The Pragmatic Engineer)",
+      "subject_or_hook": "The AI Token Tax: Slashing 80% redundant tokens via AST slicing",
+      "category": "Editorial Newsletter Feature",
+      "priority": "HIGH",
+      "utm_source": "pragmatic_engineer",
+      "utm_medium": "newsletter_pitch",
+      "utm_campaign": "token_tax_press",
+      "sandbox_url": "https://devsupersuite.web.app?utm_source=pragmatic_engineer&utm_medium=newsletter_pitch&utm_campaign=token_tax_press",
+      "checkout_url": "https://gumroad.com/l/tlzdco?utm_source=pragmatic_engineer&utm_medium=newsletter_pitch&utm_campaign=token_tax_press",
+      "payload_preview": "Pitch targeting The Pragmatic Engineer: The AI Token Tax: Slashing 80% redundant tokens via AST slicing...",
+      "full_payload": "Full pitch available in tech_newsletter_outreach_pitch.md for The Pragmatic Engineer",
+      "status": "dispatched",
+      "dispatched_at": "2026-11-08T09:41:46.130730+00:00",
+      "history": [
+        {
+          "status": "queued",
+          "timestamp": "2026-11-08T09:41:40.490490+00:00",
+          "note": "Initial ingestion from newsletter pitch pack"
+        },
+        {
+          "status": "dispatched",
+          "timestamp": "2026-11-08T09:41:46.130730+00:00",
+          "note": "Dispatched via automated multi-channel batch execution (Channel: newsletter)"
+        }
+      ]
+    },
+    {
+      "lead_id": "CRM-NL-002",
+      "channel": "newsletter",
+      "target_platform": "Newsletter (ByteByteGo)",
+      "recipient_or_thread": "Editor / Submissions Desk (ByteByteGo)",
+      "subject_or_hook": "Visual System Architecture: AST Context Pruning for Coding Agents",
+      "category": "Editorial Newsletter Feature",
+      "priority": "HIGH",
+      "utm_source": "bytebytego",
+      "utm_medium": "newsletter_pitch",
+      "utm_campaign": "token_tax_press",
+      "sandbox_url": "https://devsupersuite.web.app?utm_source=bytebytego&utm_medium=newsletter_pitch&utm_campaign=token_tax_press",
+      "checkout_url": "https://gumroad.com/l/tlzdco?utm_source=bytebytego&utm_medium=newsletter_pitch&utm_campaign=token_tax_press",
+      "payload_preview": "Pitch targeting ByteByteGo: Visual System Architecture: AST Context Pruning for Coding Agents...",
+      "full_payload": "Full pitch available in tech_newsletter_outreach_pitch.md for ByteByteGo",
+      "status": "dispatched",
+      "dispatched_at": "2026-11-08T09:41:46.130730+00:00",
+      "history": [
+        {
+          "status": "queued",
+          "timestamp": "2026-11-08T09:41:40.490502+00:00",
+          "note": "Initial ingestion from newsletter pitch pack"
+        },
+        {
+          "status": "dispatched",
+          "timestamp": "2026-11-08T09:41:46.130730+00:00",
+          "note": "Dispatched via automated multi-channel batch execution (Channel: newsletter)"
+        }
+      ]
+    },
+    {
+      "lead_id": "CRM-NL-003",
+      "channel": "newsletter",
+      "target_platform": "Newsletter (TLDR WebDev)",
+      "recipient_or_thread": "Editor / Submissions Desk (TLDR WebDev)",
+      "subject_or_hook": "Tool Feature: OmniKernel AST Slicer cuts Cursor token bills by 83%",
+      "category": "Editorial Newsletter Feature",
+      "priority": "HIGH",
+      "utm_source": "tldr_webdev",
+      "utm_medium": "newsletter_pitch",
+      "utm_campaign": "token_tax_press",
+      "sandbox_url": "https://devsupersuite.web.app?utm_source=tldr_webdev&utm_medium=newsletter_pitch&utm_campaign=token_tax_press",
+      "checkout_url": "https://gumroad.com/l/tlzdco?utm_source=tldr_webdev&utm_medium=newsletter_pitch&utm_campaign=token_tax_press",
+      "payload_preview": "Pitch targeting TLDR WebDev: Tool Feature: OmniKernel AST Slicer cuts Cursor token bills by 83%...",
+      "full_payload": "Full pitch available in tech_newsletter_outreach_pitch.md for TLDR WebDev",
+      "status": "dispatched",
+      "dispatched_at": "2026-11-08T09:41:46.130730+00:00",
+      "history": [
+        {
+          "status": "queued",
+          "timestamp": "2026-11-08T09:41:40.490512+00:00",
+          "note": "Initial ingestion from newsletter pitch pack"
+        },
+        {
+          "status": "dispatched",
+          "timestamp": "2026-11-08T09:41:46.130730+00:00",
+          "note": "Dispatched via automated multi-channel batch execution (Channel: newsletter)"
+        }
+      ]
+    },
+    {
+      "lead_id": "CRM-NL-004",
+      "channel": "newsletter",
+      "target_platform": "Newsletter (Console.dev)",
+      "recipient_or_thread": "Editor / Submissions Desk (Console.dev)",
+      "subject_or_hook": "Local Tool Spotlight: DevSuperSuite quad-engine local dev toolkit",
+      "category": "Editorial Newsletter Feature",
+      "priority": "HIGH",
+      "utm_source": "console_dev",
+      "utm_medium": "newsletter_pitch",
+      "utm_campaign": "token_tax_press",
+      "sandbox_url": "https://devsupersuite.web.app?utm_source=console_dev&utm_medium=newsletter_pitch&utm_campaign=token_tax_press",
+      "checkout_url": "https://gumroad.com/l/tlzdco?utm_source=console_dev&utm_medium=newsletter_pitch&utm_campaign=token_tax_press",
+      "payload_preview": "Pitch targeting Console.dev: Local Tool Spotlight: DevSuperSuite quad-engine local dev toolkit...",
+      "full_payload": "Full pitch available in tech_newsletter_outreach_pitch.md for Console.dev",
+      "status": "dispatched",
+      "dispatched_at": "2026-11-08T09:41:46.130730+00:00",
+      "history": [
+        {
+          "status": "queued",
+          "timestamp": "2026-11-08T09:41:40.490521+00:00",
+          "note": "Initial ingestion from newsletter pitch pack"
+        },
+        {
+          "status": "dispatched",
+          "timestamp": "2026-11-08T09:41:46.130730+00:00",
+          "note": "Dispatched via automated multi-channel batch execution (Channel: newsletter)"
+        }
+      ]
+    },
+    {
+      "lead_id": "CRM-NL-005",
+      "channel": "newsletter",
+      "target_platform": "Newsletter (Pointer)",
+      "recipient_or_thread": "Editor / Submissions Desk (Pointer)",
+      "subject_or_hook": "Attention Sink Dilution in Transformer Code Generation via AST Pruning",
+      "category": "Editorial Newsletter Feature",
+      "priority": "HIGH",
+      "utm_source": "pointer_io",
+      "utm_medium": "newsletter_pitch",
+      "utm_campaign": "token_tax_press",
+      "sandbox_url": "https://devsupersuite.web.app?utm_source=pointer_io&utm_medium=newsletter_pitch&utm_campaign=token_tax_press",
+      "checkout_url": "https://gumroad.com/l/tlzdco?utm_source=pointer_io&utm_medium=newsletter_pitch&utm_campaign=token_tax_press",
+      "payload_preview": "Pitch targeting Pointer: Attention Sink Dilution in Transformer Code Generation via AST Pruning...",
+      "full_payload": "Full pitch available in tech_newsletter_outreach_pitch.md for Pointer",
+      "status": "queued",
+      "dispatched_at": null,
+      "history": [
+        {
+          "status": "queued",
+          "timestamp": "2026-11-08T09:41:40.490530+00:00",
+          "note": "Initial ingestion from newsletter pitch pack"
+        }
+      ]
+    },
+    {
+      "lead_id": "CRM-YT-001",
+      "channel": "youtube",
+      "target_platform": "YouTube / Streamer (Fireship (Jeff Delaney))",
+      "recipient_or_thread": "Business Inquiries (Fireship (Jeff Delaney))",
+      "subject_or_hook": "Why Cursor & Claude Code burn 80% redundant tokens (Code Report)",
+      "category": "Creator Video Review & VIP Giveaway",
+      "priority": "HIGH",
+      "utm_source": "fireship",
+      "utm_medium": "creator_video_pitch",
+      "utm_campaign": "vip_giveaway_dss",
+      "sandbox_url": "https://devsupersuite.web.app?utm_source=fireship&utm_medium=creator_video_pitch&utm_campaign=vip_giveaway_dss",
+      "checkout_url": "https://gumroad.com/l/tlzdco?utm_source=fireship&utm_medium=creator_video_pitch&utm_campaign=vip_giveaway_dss",
+      "payload_preview": "VIP review pitch to Fireship (Jeff Delaney) with VIP code DSS-PRO-INFLUENCER-VIP...",
+      "full_payload": "Full pitch and 3-minute video outline in influencer_youtube_review_pitches.md for Fireship (Jeff Delaney)",
+      "status": "queued",
+      "dispatched_at": null,
+      "history": [
+        {
+          "status": "queued",
+          "timestamp": "2026-11-08T09:41:40.490541+00:00",
+          "note": "Initial ingestion from influencer review pack"
+        }
+      ]
+    },
+    {
+      "lead_id": "CRM-YT-002",
+      "channel": "youtube",
+      "target_platform": "YouTube / Streamer (ThePrimeagen)",
+      "recipient_or_thread": "Business Inquiries (ThePrimeagen)",
+      "subject_or_hook": "100% local AST context slicer & pre-commit entropy blocker (Zero telemetry)",
+      "category": "Creator Video Review & VIP Giveaway",
+      "priority": "HIGH",
+      "utm_source": "theprimeagen",
+      "utm_medium": "creator_video_pitch",
+      "utm_campaign": "vip_giveaway_dss",
+      "sandbox_url": "https://devsupersuite.web.app?utm_source=theprimeagen&utm_medium=creator_video_pitch&utm_campaign=vip_giveaway_dss",
+      "checkout_url": "https://gumroad.com/l/tlzdco?utm_source=theprimeagen&utm_medium=creator_video_pitch&utm_campaign=vip_giveaway_dss",
+      "payload_preview": "VIP review pitch to ThePrimeagen with VIP code DSS-PRO-INFLUENCER-VIP...",
+      "full_payload": "Full pitch and 3-minute video outline in influencer_youtube_review_pitches.md for ThePrimeagen",
+      "status": "queued",
+      "dispatched_at": null,
+      "history": [
+        {
+          "status": "queued",
+          "timestamp": "2026-11-08T09:41:40.490553+00:00",
+          "note": "Initial ingestion from influencer review pack"
+        }
+      ]
+    },
+    {
+      "lead_id": "CRM-YT-003",
+      "channel": "youtube",
+      "target_platform": "YouTube / Streamer (Matthew Berman)",
+      "recipient_or_thread": "Business Inquiries (Matthew Berman)",
+      "subject_or_hook": "How AST Context Pruning reduces local LLM token load by 83% (OmniKernel MCP)",
+      "category": "Creator Video Review & VIP Giveaway",
+      "priority": "HIGH",
+      "utm_source": "matthew_berman",
+      "utm_medium": "creator_video_pitch",
+      "utm_campaign": "vip_giveaway_dss",
+      "sandbox_url": "https://devsupersuite.web.app?utm_source=matthew_berman&utm_medium=creator_video_pitch&utm_campaign=vip_giveaway_dss",
+      "checkout_url": "https://gumroad.com/l/tlzdco?utm_source=matthew_berman&utm_medium=creator_video_pitch&utm_campaign=vip_giveaway_dss",
+      "payload_preview": "VIP review pitch to Matthew Berman with VIP code DSS-PRO-INFLUENCER-VIP...",
+      "full_payload": "Full pitch and 3-minute video outline in influencer_youtube_review_pitches.md for Matthew Berman",
+      "status": "queued",
+      "dispatched_at": null,
+      "history": [
+        {
+          "status": "queued",
+          "timestamp": "2026-11-08T09:41:40.490563+00:00",
+          "note": "Initial ingestion from influencer review pack"
+        }
+      ]
+    },
+    {
+      "lead_id": "CRM-YT-004",
+      "channel": "youtube",
+      "target_platform": "YouTube / Streamer (Web Dev Simplified (Kyle Cook))",
+      "recipient_or_thread": "Business Inquiries (Web Dev Simplified (Kyle Cook))",
+      "subject_or_hook": "Why Cursor burns 80% redundant tokens & how to prevent API key leaks",
+      "category": "Creator Video Review & VIP Giveaway",
+      "priority": "HIGH",
+      "utm_source": "web_dev_simplified",
+      "utm_medium": "creator_video_pitch",
+      "utm_campaign": "vip_giveaway_dss",
+      "sandbox_url": "https://devsupersuite.web.app?utm_source=web_dev_simplified&utm_medium=creator_video_pitch&utm_campaign=vip_giveaway_dss",
+      "checkout_url": "https://gumroad.com/l/tlzdco?utm_source=web_dev_simplified&utm_medium=creator_video_pitch&utm_campaign=vip_giveaway_dss",
+      "payload_preview": "VIP review pitch to Web Dev Simplified (Kyle Cook) with VIP code DSS-PRO-INFLUENCER-VIP...",
+      "full_payload": "Full pitch and 3-minute video outline in influencer_youtube_review_pitches.md for Web Dev Simplified (Kyle Cook)",
+      "status": "queued",
+      "dispatched_at": null,
+      "history": [
+        {
+          "status": "queued",
+          "timestamp": "2026-11-08T09:41:40.490573+00:00",
+          "note": "Initial ingestion from influencer review pack"
+        }
+      ]
+    },
+    {
+      "lead_id": "CRM-YT-005",
+      "channel": "youtube",
+      "target_platform": "YouTube / Streamer (AI Jason)",
+      "recipient_or_thread": "Business Inquiries (AI Jason)",
+      "subject_or_hook": "Cutting 80% token costs in autonomous agent loops (Cursor / Claude Code)",
+      "category": "Creator Video Review & VIP Giveaway",
+      "priority": "HIGH",
+      "utm_source": "ai_jason",
+      "utm_medium": "creator_video_pitch",
+      "utm_campaign": "vip_giveaway_dss",
+      "sandbox_url": "https://devsupersuite.web.app?utm_source=ai_jason&utm_medium=creator_video_pitch&utm_campaign=vip_giveaway_dss",
+      "checkout_url": "https://gumroad.com/l/tlzdco?utm_source=ai_jason&utm_medium=creator_video_pitch&utm_campaign=vip_giveaway_dss",
+      "payload_preview": "VIP review pitch to AI Jason with VIP code DSS-PRO-INFLUENCER-VIP...",
+      "full_payload": "Full pitch and 3-minute video outline in influencer_youtube_review_pitches.md for AI Jason",
+      "status": "queued",
+      "dispatched_at": null,
+      "history": [
+        {
+          "status": "queued",
+          "timestamp": "2026-11-08T09:41:40.490584+00:00",
+          "note": "Initial ingestion from influencer review pack"
+        }
+      ]
+    }
+  ]
+}

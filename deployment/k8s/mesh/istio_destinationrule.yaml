@@ -1,0 +1,40 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# DevSuperSuite Tech Services - Istio DestinationRule (mTLS 1.3 & Circuit Breaker)
+# Consecutive 5xx Outlier Detection & Pod Ejection Invariants
+# Contact: DevSuperSuite Solutions Architecture (solutions@devsupersuite.com)
+# ═══════════════════════════════════════════════════════════════════════════════
+apiVersion: networking.istio.io/v1beta1
+kind: DestinationRule
+metadata:
+  name: devsupersuite-ast-proxy
+  namespace: devsupersuite-system
+  labels:
+    app.kubernetes.io/name: devsupersuite-ast-proxy
+    app.kubernetes.io/part-of: devsupersuite-mesh
+spec:
+  host: devsupersuite-ast-proxy.devsupersuite-system.svc.cluster.local
+  trafficPolicy:
+    tls:
+      mode: ISTIO_MUTUAL
+      minProtocolVersion: TLSV1_3
+    connectionPool:
+      tcp:
+        maxConnections: 1024
+        connectTimeout: 30ms
+      http:
+        http1MaxPendingRequests: 100
+        maxRequestsPerConnection: 10
+        maxRetries: 3
+    outlierDetection:
+      consecutive5xxErrors: 3
+      interval: 1s
+      baseEjectionTime: 30s
+      maxEjectionPercent: 50
+      minHealthPercent: 50
+  subsets:
+  - name: stable
+    labels:
+      version: v2026.2.0
+  - name: canary
+    labels:
+      version: v2026.3.0

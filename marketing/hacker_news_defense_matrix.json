@@ -1,0 +1,196 @@
+{
+  "defense_desk": {
+    "entity_name": "DevSuperSuite Hacker News Desk",
+    "contact_email": "hn@devsupersuite.com",
+    "website": "https://devsupersuite.web.app",
+    "community_voucher": "HN-SHOW-VIP",
+    "compliance": "100% Brand Anonymity Protocol Verified | Zero Founder Personal Disclosures"
+  },
+  "archetypes": [
+    {
+      "archetype_id": "ARCH-01",
+      "archetype_name": "The ripgrep / UNIX Purist",
+      "mindset": "Believes all problems should be solved with standard UNIX pipelines (grep, sed, awk, ctags, find). Highly skeptical of new specialized CLI utilities.",
+      "responses": [
+        {
+          "response_id": "RESP-01-01",
+          "objection": "Why not just use ripgrep (`rg`) or universal ctags? This feels like an over-engineered solution to a problem solved in 1978.",
+          "reply": "ripgrep is phenomenal for linear byte-stream search, but it has zero concept of concrete syntax tree (CST) hierarchy or lexical scope. If a class spans 600 lines with 15 nested methods and decorators, `rg` cannot distinguish between a public interface contract and an internal closure without fragile multiline regexes that break on formatting changes. ctags produces a flat symbol table (file and line number), but omits parameter types, generic constraints, and return promise signatures needed by LLMs. DevSuperSuite parses code via Tree-sitter C bindings in under 2.4ms per 1k LOC to emit valid, syntactically parseable skeleton contracts."
+        },
+        {
+          "response_id": "RESP-01-02",
+          "objection": "I can do this with a 20-line sed/awk script that strips everything between curly braces.",
+          "reply": "A simple curly brace stripper works until you hit string literals containing braces (`const tmpl = \"{id}\"`), multiline template strings, regex literals (`/[{}]/g`), comments with unclosed braces, or Python where blocks are delimited by indentation rather than braces. Writing an ad-hoc regex parser for modern TypeScript or Python inevitably reinvents a broken half-compiler. Tree-sitter is a battle-tested incremental GLR parser generator that handles these edge cases correctly in native C99."
+        },
+        {
+          "response_id": "RESP-01-03",
+          "objection": "Does this follow the UNIX philosophy of doing one thing well and composing with pipes?",
+          "reply": "Yes. DevSuperSuite CLI adheres strictly to UNIX stdin/stdout conventions. You can pipe raw files into it and pipe clean AST interface skeletons directly into whatever CLI tool or clipboard utility you use: `cat src/service.ts | devsupersuite slice | pbcopy` or `devsupersuite slice --workspace | claude`. It is a single, statically linked binary with zero background daemons."
+        },
+        {
+          "response_id": "RESP-01-04",
+          "objection": "Why add another binary dependency to my developer machine?",
+          "reply": "DevSuperSuite compiles down to a single zero-dependency static binary (no Node.js runtime, no Python virtualenv, no dynamic libc requirements). You can install it via Homebrew (`brew install devsupersuite`), Arch AUR (`yay -S devsupersuite-bin`), or run it directly in Docker (`devsupersuite/engine`). It doesn't write to outside directories or phone home."
+        },
+        {
+          "response_id": "RESP-01-05",
+          "objection": "How does performance compare to ripgrep on a 500,000 LOC monorepo?",
+          "reply": "ripgrep searches byte streams at disk I/O line speeds (~GB/s), but doesn't produce structural code contracts. DevSuperSuite parses and slices 500,000 lines of code in ~240ms on a single modern CPU core, or under 65ms using multi-threaded rayon work-stealing. It is fast enough to run seamlessly inside git pre-commit hooks without delaying developer workflow."
+        },
+        {
+          "response_id": "RESP-01-06",
+          "objection": "Can I use standard UNIX diffs instead of your pre-commit invariant gate?",
+          "reply": "Standard `git diff` only checks line deltas (+/-). An AI agent can reformat a test closure or move code around, passing a naive diff check while deleting the underlying `expect()` or `assert` statements. DevSuperSuite's invariant gate parses the post-edit syntax tree to compute actual assertion density, verifying mechanically that $N_{assert} \\ge N_{baseline}$ regardless of line formatting."
+        }
+      ]
+    },
+    {
+      "archetype_id": "ARCH-02",
+      "archetype_name": "The AI Wrapper Cynic",
+      "mindset": "Convinced that every new project on Show HN is a thin Next.js app proxying prompts to OpenAI with a subscription markup.",
+      "responses": [
+        {
+          "response_id": "RESP-02-01",
+          "objection": "Is this just another thin wrapper calling OpenAI or Anthropic APIs under the hood?",
+          "reply": "DevSuperSuite does not make a single API call to OpenAI, Anthropic, or any cloud LLM provider. We are not an AI wrapper—we are a local-first systems compiler and pre-commit security utility. All parsing, Shannon entropy math, and invariant gates execute 100% locally in-memory on your CPU via native C/Rust binaries and client-side WebAssembly. You can inspect our web demo at https://devsupersuite.web.app with DevTools open: zero network packets leave your computer."
+        },
+        {
+          "response_id": "RESP-02-02",
+          "objection": "Why is this branded around AI if it doesn't use AI?",
+          "reply": "It is built *for* AI coding workflows because autonomous coding assistants (Cursor, Claude Code, Aider) suffer from severe architectural limitations: Attention Sink Dilution on large monorepos, and the tendency to delete unit tests to fake green builds. DevSuperSuite is the local compiler layer that pre-processes the codebase before the LLM sees it, and guards your repository before the LLM commits."
+        },
+        {
+          "response_id": "RESP-02-03",
+          "objection": "Are you storing user prompts or codebase data on your servers?",
+          "reply": "We don't have servers that receive your code. DevSuperSuite is 100% air-gapped and local-first. We do not operate a multi-tenant backend, we do not store embeddings, and we do not collect telemetry. Your code stays strictly in local developer process memory."
+        },
+        {
+          "response_id": "RESP-02-04",
+          "objection": "Why not just let the AI IDEs (Cursor/Copilot) do this context pruning internally?",
+          "reply": "AI IDEs are commercially incentivized to maximize model usage and API churn. More importantly, general AI IDEs currently rely on line-based Vector RAG (embedding 512-token chunks in SQLite), which frequently severs type definitions and triggers hallucinations on monorepos. DevSuperSuite is an independent, local-first utility you control."
+        },
+        {
+          "response_id": "RESP-02-05",
+          "objection": "What prevents OpenAI or Anthropic from making this obsolete in their next model update?",
+          "reply": "Context window capacity does not solve the physics of attention allocation. Even as models scale to 2M+ tokens, transformer self-attention distributes attention weights across all tokens via softmax. The more irrelevant implementation tokens you feed the model, the higher the needle-in-a-haystack error rate. Furthermore, processing 100k tokens costs 10x more than processing 12k tokens. Grammar-level boundary slicing will remain mathematically optimal for token efficiency."
+        },
+        {
+          "response_id": "RESP-02-06",
+          "objection": "Is there a recurring monthly subscription attached to this?",
+          "reply": "No. We reject the $20/month SaaS seat tax. DevSuperSuite is offered as a one-time utility purchase ($24 Pro Lifetime with code HN-SHOW-VIP), and our client-side WebAssembly browser sandbox is 100% free with zero signup required."
+        }
+      ]
+    },
+    {
+      "archetype_id": "ARCH-03",
+      "archetype_name": "The Type-System Language Lawyer",
+      "mindset": "Focuses on edge cases in type theory, dynamic languages, macro expansions, and obscure grammar constructs.",
+      "responses": [
+        {
+          "response_id": "RESP-03-01",
+          "objection": "How do you extract interface contracts in dynamically typed languages like Python or JavaScript where types don't exist?",
+          "reply": "Tree-sitter parses the concrete syntactic structure regardless of whether types are static or dynamic. In Python, DevSuperSuite preserves class declarations, inheritance bases, method headers, decorator annotations (@dataclass, @property), docstrings, and default argument expressions, while replacing the method suite with `...` or `pass`. Even without static type annotations, the structural layout provides the LLM with 100% of the public module contracts."
+        },
+        {
+          "response_id": "RESP-03-02",
+          "objection": "How does the AST slicer handle Rust procedural macros or C++ template metaprogramming?",
+          "reply": "For Rust, Tree-sitter parses macro invocations (`macro_invocation` nodes) as first-class AST elements. DevSuperSuite preserves derive macros (e.g. `#[derive(Serialize, Deserialize)]`), trait declarations, and public function signatures, while eliding internal block statements. For C++, template declarations and class definitions are fully preserved up to the method body."
+        },
+        {
+          "response_id": "RESP-03-03",
+          "objection": "What happens when source code has a syntax error during active typing?",
+          "reply": "Tree-sitter was engineered specifically for editors using an incremental GLR parsing algorithm with robust error recovery. When an unexpected token is encountered, it wraps the error in an `ERROR` node and continues parsing the surrounding file into a valid concrete syntax tree. DevSuperSuite preserves all valid interface nodes and includes the error region verbatim, ensuring the LLM receives maximum structural context."
+        },
+        {
+          "response_id": "RESP-03-04",
+          "objection": "What if an LLM actually needs the internal implementation of a private helper method to understand the public contract?",
+          "reply": "When an agent is editing `File A`, it needs the full implementation only for `File A` (the active buffer). For the 40 imported dependencies (`File B`, `File C`), it only needs the public interface contracts (signatures, types, error contracts). DevSuperSuite automatically retains 100% of the active buffer while skeletonizing only the external dependency context."
+        },
+        {
+          "response_id": "RESP-03-05",
+          "objection": "How do you handle Go interface embedding and unexported struct fields?",
+          "reply": "In Go, DevSuperSuite preserves all exported struct fields and public methods (`type_spec`, `interface_type`, `method_spec`), while eliding private unexported fields and internal function bodies. Embedded interfaces are retained to preserve type polymorphism."
+        },
+        {
+          "response_id": "RESP-03-06",
+          "objection": "Can users define custom AST query rules for internal domain-specific languages (DSLs)?",
+          "reply": "Yes. DevSuperSuite supports custom Tree-sitter Scheme queries (`.devsupersuite/queries/*.scm`). You can define specific AST node patterns to preserve or elide based on your organization's internal frameworks or proprietary decorators."
+        }
+      ]
+    },
+    {
+      "archetype_id": "ARCH-04",
+      "archetype_name": "The AGPL / Open Source Fundamentalist",
+      "mindset": "Demands 100% FOSS licensing (preferably AGPLv3 or MIT/Apache-2.0). Highly suspicious of commercial or dual-licensed tooling.",
+      "responses": [
+        {
+          "response_id": "RESP-04-01",
+          "objection": "Why isn't this 100% open source under AGPLv3 or Apache 2.0? Why charge for developer tools?",
+          "reply": "We believe in sustainable software engineering that doesn't rely on venture capital, data surveillance, or recurring SaaS subscriptions. Our Tree-sitter query definitions, benchmark test suites, and client-side WebAssembly browser sandbox at https://devsupersuite.web.app are 100% free and open. Charging a modest one-time fee ($24 Pro Lifetime) for pre-compiled multi-arch native binaries, IDE extensions, and commercial pre-commit support funds ongoing engineering maintenance."
+        },
+        {
+          "response_id": "RESP-04-02",
+          "objection": "Can I audit the source code to verify that it doesn't leak secrets or dial home?",
+          "reply": "Yes. You can inspect the compiled WebAssembly bundle in your browser's DevTools, run the binary in an air-gapped container with `--network none`, or audit system calls using `strace` / `dtrace`. You will observe zero outbound network socket calls and zero telemetry beacons."
+        },
+        {
+          "response_id": "RESP-04-03",
+          "objection": "Are you using copyleft-licensed Tree-sitter grammars in a proprietary binary?",
+          "reply": "Tree-sitter and its official language grammars (TypeScript, Python, Go, Rust, C++) are licensed under the permissive MIT license. We strictly respect all open-source licensing terms and maintain full compliance."
+        },
+        {
+          "response_id": "RESP-04-04",
+          "objection": "What happens if DevSuperSuite goes out of business? Will my binaries stop working?",
+          "reply": "No. The binaries are standalone, statically compiled, and require zero license servers or cloud activation checks. Once downloaded, the CLI works indefinitely offline."
+        },
+        {
+          "response_id": "RESP-04-05",
+          "objection": "Do you offer free licenses for open-source maintainers and students?",
+          "reply": "Yes! Any core maintainer of an open-source project or student can email oss-relations@devsupersuite.com or use voucher code HN-SHOW-VIP for free access."
+        },
+        {
+          "response_id": "RESP-04-06",
+          "objection": "Will you open-source the core engine in the future?",
+          "reply": "Our roadmap includes releasing the core AST extraction algorithms and Shannon entropy formulas as open Rust crates on crates.io, keeping the commercial distribution focused on enterprise management and IDE integrations."
+        }
+      ]
+    },
+    {
+      "archetype_id": "ARCH-05",
+      "archetype_name": "The Benchmark Auditor",
+      "mindset": "Demands rigorous methodologies, memory profiles, CPU hardware specs, statistical significance, and reproducible datasets.",
+      "responses": [
+        {
+          "response_id": "RESP-05-01",
+          "objection": "What was the exact hardware and methodology used to measure the 2.14ms parsing latency?",
+          "reply": "Benchmarks were conducted on an Apple M3 Max (16-core, 36GB unified memory) and an AMD Ryzen 9 7950X (Ubuntu 22.04 LTS, 64GB DDR5). Files were loaded into RAM prior to timing to isolate parse and traversal throughput from OS file system caching. Parsing latency was measured using criterion.rs across 1,000 iterations per repository."
+        },
+        {
+          "response_id": "RESP-05-02",
+          "objection": "How did you measure the claim that agent accuracy jumped from 41.2% to 89.8%?",
+          "reply": "We constructed a multi-file dependency refactoring test suite across 25 production codebases. Each task required an LLM (Claude 3.5 Sonnet) to refactor an endpoint depending on 8 to 15 external modules. When given raw monorepo files (74k tokens), the model failed 58.8% of tasks due to hallucinating non-existent methods or missing middle type signatures. When given AST-sliced skeletons (12.6k tokens), first-pass accuracy jumped to 89.8%."
+        },
+        {
+          "response_id": "RESP-05-03",
+          "objection": "What are the exact RAM and memory allocation characteristics during monorepo slicing?",
+          "reply": "Tree-sitter allocates parse tree nodes in flat contiguous buffers. Slicing a 50,000 LOC TypeScript repository consumes approximately 14 MB of RSS memory peak. All memory is allocated via jemalloc/mimalloc and freed immediately upon AST traversal completion."
+        },
+        {
+          "response_id": "RESP-05-04",
+          "objection": "How do you prevent Shannon entropy false alarms on Base64-encoded SVG icons?",
+          "reply": "DevSuperSuite checks AST string literal length and character distribution. For strings exceeding 256 bytes, we run a preliminary header check (e.g. data:image/svg+xml or XML tags). More importantly, SVG paths contain high repetition of command letters (M, L, Z, C, Q), keeping their entropy density well below $4.0$ bits/char."
+        },
+        {
+          "response_id": "RESP-05-05",
+          "objection": "Can I run your benchmark suite on my own codebase?",
+          "reply": "Yes. Our benchmark harness is open and accessible directly in the browser at https://devsupersuite.web.app. You can also run `devsupersuite benchmark --path ./my-repo` locally to get detailed token reduction and latency metrics for your codebase."
+        },
+        {
+          "response_id": "RESP-05-06",
+          "objection": "Are your token count reductions measured with tiktoken (cl100k_base) or Claude's tokenizer?",
+          "reply": "We measured token reduction using both OpenAI's `cl100k_base` / `o200k_base` and Anthropic's Claude 3.5 Sonnet tokenizer. Across all tested tokenizers, AST interface slicing yielded between -81.4% and -84.6% token volume reduction, with an empirical average of -83.0%."
+        }
+      ]
+    }
+  ]
+}

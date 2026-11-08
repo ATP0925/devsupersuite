@@ -1,0 +1,222 @@
+{
+  "metadata": {
+    "organization": "DevSuperSuite Official",
+    "entity": "DevSuperSuite Tech Services",
+    "treasury_contact": "cfo@devsupersuite.com",
+    "last_updated": "2026-11-08T11:03:18.313836+00:00"
+  },
+  "qoe_audit": {
+    "audit_timestamp": "2026-11-08T11:03:18.313857+00:00",
+    "entity": "DevSuperSuite Official",
+    "ebitda_bridge": {
+      "reported_net_income_usd": 17568.13,
+      "deductions": {
+        "sovereign_treasury_yield_interest_usd": -91.5
+      },
+      "reported_operating_ebit_usd": 17476.63,
+      "reported_ebitda_usd": 17476.63,
+      "reported_ebitda_margin_pct": 52.26,
+      "qoe_normalization_adjustments": {
+        "items": [
+          {
+            "item_id": "NORM-01",
+            "category": "ONE_OFF_STARTUP_AND_LEGAL",
+            "description": "Non-recurring legal formation, Delaware franchise filings, and initial contract IP templates in G&A",
+            "amount_usd": 750.0,
+            "adjustment_type": "ADDBACK"
+          },
+          {
+            "item_id": "NORM-02",
+            "category": "SOC2_AUDIT_READINESS",
+            "description": "Non-recurring SOC 2 Type II / ISO 27001 auditor readiness diagnostic tools and independent gap assessment in G&A",
+            "amount_usd": 450.0,
+            "adjustment_type": "ADDBACK"
+          },
+          {
+            "item_id": "NORM-03",
+            "category": "PRESALES_TESTBED_INFRASTRUCTURE",
+            "description": "One-off presales benchmark sandbox cluster provisioning for Fortune 500 RFP demonstration in Compute COGS",
+            "amount_usd": 150.0,
+            "adjustment_type": "ADDBACK"
+          }
+        ],
+        "total_addbacks_usd": 1350.0
+      },
+      "normalized_qoe_ebitda_usd": 18826.63,
+      "normalized_ebitda_margin_pct": 56.3,
+      "annualized_ebitda_run_rate_usd": 225919.56
+    },
+    "revenue_waterfall": {
+      "commercial_revenue": {
+        "developer_software_licenses_usd": 440.0,
+        "enterprise_turnkey_implementations_usd": 24500.0,
+        "recurring_retainer_pods_usd": 8500.0,
+        "total_commercial_revenue_usd": 33440.0
+      },
+      "gross_profit_usd": 23976.63,
+      "gross_margin_pct": 71.7,
+      "revenue_composition_pct": {
+        "software_licenses_pct": 1.32,
+        "turnkey_implementations_pct": 73.27,
+        "recurring_retainer_pods_pct": 25.42
+      }
+    },
+    "nwc_peg": {
+      "operating_current_assets_usd": 0.0,
+      "operating_current_liabilities_usd": 2.9,
+      "actual_net_working_capital_usd": -2.9,
+      "target_nwc_peg_usd": 0.0,
+      "variance_to_peg_usd": -2.9,
+      "nwc_status": "DEFICIT_COVERED_BY_CASH",
+      "working_capital_dynamics": "Asset-light negative working capital model; customers fund operations through advance billing."
+    },
+    "proof_of_cash": {
+      "invoiced_asc606_revenue_usd": 33440.0,
+      "less_gateway_interchange_fees_usd": -30.5,
+      "expected_net_cash_receipts_usd": 33409.5,
+      "actual_cleared_bank_deposits_usd": 33409.5,
+      "discrepancy_variance_usd": 0.0,
+      "proof_of_cash_verified": true,
+      "bank_cleared_items": [
+        {
+          "ref": "WIRE-2026-NEXUS-M1",
+          "source": "Nexus Enterprise Tech (SWIFT MT103 net)",
+          "amount_usd": 24485.0
+        },
+        {
+          "ref": "WIRE-2026-NEXUS-POD1",
+          "source": "Nexus Retainer Pod Month 1 (Direct Wire)",
+          "amount_usd": 8500.0
+        },
+        {
+          "ref": "STRIPE-BATCH-NOV26",
+          "source": "Stripe & Gumroad Net Developer License Batch",
+          "amount_usd": 424.5
+        }
+      ]
+    },
+    "customer_concentration": {
+      "total_portfolio_arr_usd": 559000.0,
+      "max_single_customer_concentration_pct": 11.21,
+      "concentration_threshold_ceiling_pct": 12.0,
+      "is_concentration_compliant": true,
+      "compliance_status": "COMPLIANT_UNCONCENTRATED",
+      "herfindahl_hirschman_index_hhi": 762.2,
+      "hhi_classification": "UNCONCENTRATED_MARKET (< 1500)",
+      "customer_breakdown": [
+        {
+          "customer_id": "CUST-NEXUS-01",
+          "name": "Nexus Enterprise Tech (Core Pod 1)",
+          "annual_arr_usd": 62667.0,
+          "share_of_arr_pct": 11.21,
+          "exceeds_12pct_threshold": false
+        },
+        {
+          "customer_id": "CUST-DEVELOPER-POOL",
+          "name": "Developer License Self-Service Long-Tail",
+          "annual_arr_usd": 60933.0,
+          "share_of_arr_pct": 10.9,
+          "exceeds_12pct_threshold": false
+        },
+        {
+          "customer_id": "CUST-APEX-01",
+          "name": "Apex Distributed Systems",
+          "annual_arr_usd": 54800.0,
+          "share_of_arr_pct": 9.8,
+          "exceeds_12pct_threshold": false
+        },
+        {
+          "customer_id": "CUST-CYBER-01",
+          "name": "Cyber Defense Aerospace Labs",
+          "annual_arr_usd": 53100.0,
+          "share_of_arr_pct": 9.5,
+          "exceeds_12pct_threshold": false
+        },
+        {
+          "customer_id": "CUST-FINTECH-01",
+          "name": "Global FinTech Systems",
+          "annual_arr_usd": 47000.0,
+          "share_of_arr_pct": 8.41,
+          "exceeds_12pct_threshold": false
+        },
+        {
+          "customer_id": "CUST-VERTEX-01",
+          "name": "Vertex Cloud AI",
+          "annual_arr_usd": 42500.0,
+          "share_of_arr_pct": 7.6,
+          "exceeds_12pct_threshold": false
+        },
+        {
+          "customer_id": "CUST-STRAT-01",
+          "name": "Strategic Cloud Infrastructure Corp",
+          "annual_arr_usd": 38400.0,
+          "share_of_arr_pct": 6.87,
+          "exceeds_12pct_threshold": false
+        },
+        {
+          "customer_id": "CUST-TELECOM-01",
+          "name": "Horizon Telecom Networks",
+          "annual_arr_usd": 32200.0,
+          "share_of_arr_pct": 5.76,
+          "exceeds_12pct_threshold": false
+        },
+        {
+          "customer_id": "CUST-LOGIC-01",
+          "name": "Nordic Logic Solutions",
+          "annual_arr_usd": 29800.0,
+          "share_of_arr_pct": 5.33,
+          "exceeds_12pct_threshold": false
+        },
+        {
+          "customer_id": "CUST-DATANET-01",
+          "name": "DataNet Systems AG",
+          "annual_arr_usd": 27500.0,
+          "share_of_arr_pct": 4.92,
+          "exceeds_12pct_threshold": false
+        },
+        {
+          "customer_id": "CUST-PACIFIC-01",
+          "name": "Pacific Edge Compute Labs",
+          "annual_arr_usd": 25000.0,
+          "share_of_arr_pct": 4.47,
+          "exceeds_12pct_threshold": false
+        },
+        {
+          "customer_id": "CUST-ALPHA-01",
+          "name": "Alpha Stream Trading Tech",
+          "annual_arr_usd": 22500.0,
+          "share_of_arr_pct": 4.03,
+          "exceeds_12pct_threshold": false
+        },
+        {
+          "customer_id": "CUST-QUANTUM-01",
+          "name": "Quantum Secure Enclave Inc",
+          "annual_arr_usd": 21000.0,
+          "share_of_arr_pct": 3.76,
+          "exceeds_12pct_threshold": false
+        },
+        {
+          "customer_id": "CUST-BIOPHARMA-01",
+          "name": "BioPharma Monorepo Labs",
+          "annual_arr_usd": 18200.0,
+          "share_of_arr_pct": 3.26,
+          "exceeds_12pct_threshold": false
+        },
+        {
+          "customer_id": "CUST-AERO-01",
+          "name": "AeroSpace Defense contractor",
+          "annual_arr_usd": 13400.0,
+          "share_of_arr_pct": 2.4,
+          "exceeds_12pct_threshold": false
+        },
+        {
+          "customer_id": "CUST-OMNI-01",
+          "name": "OmniGlobal Services Pod",
+          "annual_arr_usd": 10000.0,
+          "share_of_arr_pct": 1.79,
+          "exceeds_12pct_threshold": false
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,404 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "DevSuperSuite-Enterprise-SBOM",
+  "documentNamespace": "https://devsupersuite.web.app/spdx/urn:uuid:dss-sbom-10dbbd791cf5ec798d0944015a29f563",
+  "creationInfo": {
+    "created": "2026-11-08T11:03:23.017455+00:00",
+    "creators": [
+      "Organization: DevSuperSuite Official",
+      "Tool: DevSuperSuite-SBOM-Generator-5.2"
+    ]
+  },
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-omnikernel-ast-compiler",
+      "name": "omnikernel-ast-compiler",
+      "versionInfo": "5.2.0-airgap",
+      "downloadLocation": "https://devsupersuite.web.app",
+      "filesAnalyzed": true,
+      "licenseConcluded": "Proprietary-Commercial",
+      "licenseDeclared": "Proprietary-Commercial",
+      "supplier": "Organization: DevSuperSuite Official",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c5ce645e077762283cdd0f8c4e057796d1408978bd18c24cecb1cda57702ef82"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "e4c7315966f8cf37c99c82981bd9a41806c95e8fb2190a54431ca3f90c61afaf72e7909f133e7baf08818bdfc3ed843ed4361ef0f9243a9821523971e3d315fe"
+        }
+      ],
+      "description": "DevSuperSuite core engine component: omnikernel-ast-compiler"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-omnikernel-invariant-guard",
+      "name": "omnikernel-invariant-guard",
+      "versionInfo": "5.2.0-airgap",
+      "downloadLocation": "https://devsupersuite.web.app",
+      "filesAnalyzed": true,
+      "licenseConcluded": "Proprietary-Commercial",
+      "licenseDeclared": "Proprietary-Commercial",
+      "supplier": "Organization: DevSuperSuite Official",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5096b05380ea3780e2ed7d5b595017ca0406479ba486767f4c71f9cbac077b7d"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "1a7d2bc88045ebb22facdd1775ab2fa15e5ef7b38d50f1bb00cc147e2b08f292b0d05946946d7ad3fa9fdebe9cb80b8636780420e6be871019dd9fa63fbdcf1f"
+        }
+      ],
+      "description": "DevSuperSuite core engine component: omnikernel-invariant-guard"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-agentshield-entropy-scanner",
+      "name": "agentshield-entropy-scanner",
+      "versionInfo": "5.2.0-airgap",
+      "downloadLocation": "https://devsupersuite.web.app",
+      "filesAnalyzed": true,
+      "licenseConcluded": "Proprietary-Commercial",
+      "licenseDeclared": "Proprietary-Commercial",
+      "supplier": "Organization: DevSuperSuite Official",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "816575ad38fa9cf0bcaa8ec4c61b00d0fbc0b3ebf0cfe5adfc9bf5c5ac030832"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "2afaf830c8d3d891411601e357393d622e79d222037d2e2d4e9bccbf6c771fe722688966c25f169af8784ca930edb0d23d6216f10b0128b5ab21bb5199a96261"
+        }
+      ],
+      "description": "DevSuperSuite core engine component: agentshield-entropy-scanner"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-agentshield-command-gate",
+      "name": "agentshield-command-gate",
+      "versionInfo": "5.2.0-airgap",
+      "downloadLocation": "https://devsupersuite.web.app",
+      "filesAnalyzed": true,
+      "licenseConcluded": "Proprietary-Commercial",
+      "licenseDeclared": "Proprietary-Commercial",
+      "supplier": "Organization: DevSuperSuite Official",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "57aea174af032747766c25f6126ab7ced9d6babf101a4f67cfff0a28dc212cbc"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "c7aeea5a76d304e156506e59e00ca4e6df5d0f61e0a4a69c2202f182015a2fe26a426496582c625391f9df8b4a5af38868b42d49e0570011fc0ef51b03a0fe8b"
+        }
+      ],
+      "description": "DevSuperSuite core engine component: agentshield-command-gate"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-mcp-enterprise-server",
+      "name": "mcp-enterprise-server",
+      "versionInfo": "5.2.0-airgap",
+      "downloadLocation": "https://devsupersuite.web.app",
+      "filesAnalyzed": true,
+      "licenseConcluded": "Proprietary-Commercial",
+      "licenseDeclared": "Proprietary-Commercial",
+      "supplier": "Organization: DevSuperSuite Official",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "877031e15c3b4e8e7f4c3f65b0f706472808e1e05173a25238a2e7e9f9179201"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "3815ecc2f0e05e58dc5d7445404e8b5e37cca90e228841d9bafd9f97fff77d5d52ee4c897550bf4612012bd247a05bbb0a92495a225296300bc0f824da1f13e9"
+        }
+      ],
+      "description": "DevSuperSuite core engine component: mcp-enterprise-server"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-google-genai",
+      "name": "google-genai",
+      "versionInfo": "1.0.0",
+      "downloadLocation": "https://pypi.org/project/google-genai/1.0.0/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache-2.0",
+      "supplier": "Person: Google LLC",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/google-genai@1.0.0"
+        }
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "cf0c5edf674126cc584c91aa4c6aaf69c3c12ba1987e251f8e92d24d55fb9546"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-sounddevice",
+      "name": "sounddevice",
+      "versionInfo": "0.4.6",
+      "downloadLocation": "https://pypi.org/project/sounddevice/0.4.6/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "supplier": "Person: Matthias Geier",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/sounddevice@0.4.6"
+        }
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a882aedeebbd2cf84028ee3b200a2aa886bb420773c1d1413507c62eb48288f7"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-numpy",
+      "name": "numpy",
+      "versionInfo": "1.24.0",
+      "downloadLocation": "https://pypi.org/project/numpy/1.24.0/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "supplier": "Person: NumPy Developers",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/numpy@1.24.0"
+        }
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "25606c75fe696edc96b6fd397bfd93dcacc5347e80ca218e934895a65317abfa"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-scipy",
+      "name": "scipy",
+      "versionInfo": "1.10.0",
+      "downloadLocation": "https://pypi.org/project/scipy/1.10.0/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "supplier": "Person: SciPy Developers",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/scipy@1.10.0"
+        }
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a402aa37195683fc7b94c51828c30739f29d634d1537c382d7b48f5fb1fe1950"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-edge-tts",
+      "name": "edge-tts",
+      "versionInfo": "6.1.0",
+      "downloadLocation": "https://pypi.org/project/edge-tts/6.1.0/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "supplier": "Person: Jordan Chen",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/edge-tts@6.1.0"
+        }
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e4c7e267fb3efb2a5548c02e480c86d76e9948716ff74221e0ab275a20dade8c"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-gtts",
+      "name": "gtts",
+      "versionInfo": "2.5.0",
+      "downloadLocation": "https://pypi.org/project/gtts/2.5.0/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "supplier": "Person: Pierre Nicolas Durette",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/gTTS@2.5.0"
+        }
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "573ece1732742f7d6ae9e14a2e7ca83d462d67922d683b8937e2a4b609dd37a7"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-speechrecognition",
+      "name": "speechrecognition",
+      "versionInfo": "3.10.0",
+      "downloadLocation": "https://pypi.org/project/speechrecognition/3.10.0/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "supplier": "Person: Anthony Zhang",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/SpeechRecognition@3.10.0"
+        }
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ee6d09a6e753b12a00bc13a491d17c883001c73c1c955978c3fa17515f7eb073"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-flask",
+      "name": "flask",
+      "versionInfo": "3.0.0",
+      "downloadLocation": "https://pypi.org/project/flask/3.0.0/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "supplier": "Person: Pallets Projects",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/flask@3.0.0"
+        }
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6c9e3c88b2a287a9be2dedf378624f0c8b2ad6564c7a2a9ede0644ae97198755"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-websockets",
+      "name": "websockets",
+      "versionInfo": "12.0",
+      "downloadLocation": "https://pypi.org/project/websockets/12.0/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "supplier": "Person: Aymeric Augustin",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/websockets@12.0"
+        }
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "11998f45fdfaa01f4e2666fb802cd8752bc13aa1da7cb12e701482882d33715b"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-rich",
+      "name": "rich",
+      "versionInfo": "13.7.0",
+      "downloadLocation": "https://pypi.org/project/rich/13.7.0/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "supplier": "Person: Will McGugan",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/rich@13.7.0"
+        }
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e23ec672ed5763689ee7c31f79e125ae71339a9f6eb96448bee1624b6091310c"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-pynput",
+      "name": "pynput",
+      "versionInfo": "1.7.6",
+      "downloadLocation": "https://pypi.org/project/pynput/1.7.6/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "LGPL-3.0-or-later",
+      "licenseDeclared": "LGPL-3.0-or-later",
+      "supplier": "Person: Moses Palm\u00e9r",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/pynput@1.7.6"
+        }
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "980739bf06d522d3a94ddb1c321657eeb6eb717f88e65d1edcb9b96b07c746c7"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-pywin32",
+      "name": "pywin32",
+      "versionInfo": "306",
+      "downloadLocation": "https://pypi.org/project/pywin32/306/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "PSF-2.0",
+      "licenseDeclared": "PSF-2.0",
+      "supplier": "Person: Mark Hammond",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/pywin32@306"
+        }
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "cd8063f4e36016f30e8aaa7e52f6157825c2c19850d534355da9c81ed1afb72f"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-omnikernel-ast-compiler"
+    }
+  ]
+}

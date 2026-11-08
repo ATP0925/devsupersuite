@@ -1,0 +1,92 @@
+{
+  "metadata": {
+    "engine": "DevSuperSuite X Real-Time Engagement Monitor",
+    "brand": "DevSuperSuite Official",
+    "timestamp": "2026-11-08T09:26:27.097253+00:00",
+    "total_campaigns": 5
+  },
+  "search_feeds": [
+    {
+      "keyword": "Cursor AI",
+      "x_search_url": "https://x.com/search?q=Cursor%20AI&f=live"
+    },
+    {
+      "keyword": "Claude Code",
+      "x_search_url": "https://x.com/search?q=Claude%20Code&f=live"
+    },
+    {
+      "keyword": "context rot",
+      "x_search_url": "https://x.com/search?q=context%20rot&f=live"
+    },
+    {
+      "keyword": "token bill",
+      "x_search_url": "https://x.com/search?q=token%20bill&f=live"
+    },
+    {
+      "keyword": "accidental API key",
+      "x_search_url": "https://x.com/search?q=accidental%20API%20key&f=live"
+    }
+  ],
+  "quote_tweet_campaigns": [
+    {
+      "id": "QT-001",
+      "keyword": "Cursor AI",
+      "target_context": "Developer posting: 'Burned through my 500 fast requests on Cursor in 3 days. Agent mode keeps re-reading 1,000-line files for 2-line edits.'",
+      "hook_title": "The Cursor Fast-Request Saver (AST Slicing)",
+      "tweet_body": "Stop feeding entire 800-line implementation files to Cursor.\n\nWhen referencing background dependencies, an LLM only needs the typed interface, classes, and exported signatures.\n\n\u26a1 OmniKernel AST Slicing benchmark:\n\u2022 Before: 74,200 tokens (raw code)\n\u2022 After: 12,600 tokens (AST interface stubs)\n\ud83d\udc49 -83.0% Token Bill Reduction\n\nTest your code live in browser:\nhttps://devsupersuite.web.app?utm_source=twitter&utm_medium=quote_tweet&utm_campaign=cursor_token_slash\n\nLifetime standalone MCP server ($29):\nhttps://gumroad.com/l/tlzdco?utm_source=twitter&utm_medium=quote_tweet&utm_campaign=cursor_token_slash",
+      "metrics": {
+        "before_tokens": 74200,
+        "after_tokens": 12600,
+        "reduction_pct": "-83.0%"
+      }
+    },
+    {
+      "id": "QT-002",
+      "keyword": "context rot",
+      "target_context": "Influencer/Dev posting: 'Claude 3.5 Sonnet is brilliant for the first 10 prompts, but after 80k tokens, Context Rot sets in and it starts hallucinating imports and breaking working code.'",
+      "hook_title": "Eliminating Attention Sink Dilution in Claude",
+      "tweet_body": "Context Rot isn't a model flaw\u2014it's Attention Sink Dilution.\n\nDrowning Claude in 60,000 tokens of internal function loop boilerplate degrades recall on system prompt rules.\n\nPrune background files at the AST boundary:\n\u2022 Full code payload: 82,400 tokens\n\u2022 Typed AST skeleton: 13,900 tokens\n\ud83d\udcc9 -83.1% token load | 0% type contract loss\n\nTry the live AST context slicer (zero signup):\nhttps://devsupersuite.web.app?utm_source=twitter&utm_medium=quote_tweet&utm_campaign=context_rot_fix\n\nOffline DevSuite for Cursor & Claude Code ($29):\nhttps://gumroad.com/l/tlzdco?utm_source=twitter&utm_medium=quote_tweet&utm_campaign=context_rot_fix",
+      "metrics": {
+        "before_tokens": 82400,
+        "after_tokens": 13900,
+        "reduction_pct": "-83.1%"
+      }
+    },
+    {
+      "id": "QT-003",
+      "keyword": "token bill",
+      "target_context": "Founder/Dev posting: 'Our team's monthly Cursor + Anthropic API invoice hit $340 this month. Vibe coding is fast but the unit economics are getting absurd.'",
+      "hook_title": "Fixing the Unit Economics of AI Pair Programming",
+      "tweet_body": "$300+/month on Cursor/Claude API bills usually means 80%+ of your tokens are burned re-reading dead boilerplate.\n\nWhy pay Anthropic to ingest internal function bodies on modules you aren't even modifying?\n\nOur AST compiler cuts prompt payloads by 83%:\n\ud83d\udcb0 Avg monthly spend: $340 \u2192 $58\n\u26a1 1-click local MCP server\n\nCalculate your token ROI live:\nhttps://devsupersuite.web.app?utm_source=twitter&utm_medium=quote_tweet&utm_campaign=token_bill_roi\n\nOne-time $29 Pro lifetime license:\nhttps://gumroad.com/l/tlzdco?utm_source=twitter&utm_medium=quote_tweet&utm_campaign=token_bill_roi",
+      "metrics": {
+        "before_monthly_cost": "$340",
+        "after_monthly_cost": "$58",
+        "reduction_pct": "-82.9%"
+      }
+    },
+    {
+      "id": "QT-004",
+      "keyword": "Claude Code",
+      "target_context": "Engineer posting: 'Claude Code CLI is powerful, but CLAUDE.md + tool schemas eat 35% of the context window before I run my first command.'",
+      "hook_title": "The Claude Code CLI Context Diet",
+      "tweet_body": "Claude Code CLI starting with 35% context exhaustion before prompt #1?\n\nStop dumping raw file structures into CLAUDE.md. \n\nInject a hierarchical AST module map instead:\n\u2022 Raw repo context: 48,000 tokens\n\u2022 AST interface contract: 8,100 tokens\n\u2702\ufe0f -83.1% upfront token footprint\n\nNo more constant `/compact` loops wiping your session memory.\n\nTest the AST pruner in browser:\nhttps://devsupersuite.web.app?utm_source=twitter&utm_medium=quote_tweet&utm_campaign=claude_code_diet\n\nIncludes native Claude Code MCP server ($29):\nhttps://gumroad.com/l/tlzdco?utm_source=twitter&utm_medium=quote_tweet&utm_campaign=claude_code_diet",
+      "metrics": {
+        "before_tokens": 48000,
+        "after_tokens": 8100,
+        "reduction_pct": "-83.1%"
+      }
+    },
+    {
+      "id": "QT-005",
+      "keyword": "accidental API key",
+      "target_context": "Developer posting: 'Nightmare day. Accidentally pushed a live Stripe and OpenAI key to GitHub. Scrapers got it in 90 seconds. How do you prevent this?'",
+      "hook_title": "Mathematical Zero-Day Pre-Commit Secret Scanner",
+      "tweet_body": "Regex git pre-commit checks fail because developers hardcode test keys in scratch files.\n\nThe bulletproof solution is Shannon Entropy Density:\nH(X) = -\u03a3 P(x) log\u2082(P(x))\n\nCryptographic keys (Stripe, OpenAI, AWS) have high entropy (>4.5 bits/char). Code is ~3.0.\n\nAgentShield blocks high-entropy commits locally in 1ms with 0 false positives.\n\nTest your keys against the live scanner:\nhttps://devsupersuite.web.app?utm_source=twitter&utm_medium=quote_tweet&utm_campaign=entropy_shield\n\n100% offline git hook included in DevSuperSuite ($29):\nhttps://gumroad.com/l/tlzdco?utm_source=twitter&utm_medium=quote_tweet&utm_campaign=entropy_shield",
+      "metrics": {
+        "entropy_threshold": "> 4.5 bits/char",
+        "detection_speed": "< 1ms",
+        "false_positive_rate": "0.0%"
+      }
+    }
+  ]
+}
