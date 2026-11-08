@@ -1,9 +1,9 @@
 {
   "@context": "https://openvex.dev/ns/v0.2.0",
-  "@id": "https://devsupersuite.com/openvex/agent-commerce/v2.4.0/642a12f9-948a-41d4-a470-a5a4a0bf0d8f",
+  "@id": "https://devsupersuite.com/openvex/agent-commerce/v2.4.0/80bd5552-ce5e-486c-87c6-12cae89494e9",
   "author": "DevSuperSuite Information Security",
   "role": "Vendor Security Authority",
-  "timestamp": "2026-11-08T11:39:38.401265+00:00",
+  "timestamp": "2026-11-08T11:45:24.909637+00:00",
   "version": 1,
   "tooling": "DevSuperSuite OpenVEX Generator v2.0",
   "statements": [
@@ -21,7 +21,7 @@
       "justification": "component_not_present",
       "impact_statement": "Affected versions are <2.3.2. DevSuperSuite runtime enforces Flask 3.0.3 with strict session cookie domain isolation.",
       "action_statement": "Continuous dependency audit gate in CI validates Flask >= 3.0.0.",
-      "timestamp": "2026-11-08T11:39:38.401265+00:00"
+      "timestamp": "2026-11-08T11:45:24.909637+00:00"
     },
     {
       "vulnerability": {
@@ -37,7 +37,7 @@
       "justification": "inline_mitigations_exist",
       "impact_statement": "Bleichenbacher timing attack against RSA PKCS#1 v1.5. DevSuperSuite cryptographic policy mandates Ed25519 and ECDSA P-384 exclusively.",
       "action_statement": "RSA PKCS#1 v1.5 is disabled at runtime AST level and rejected in HSM enclave attestation.",
-      "timestamp": "2026-11-08T11:39:38.401265+00:00"
+      "timestamp": "2026-11-08T11:45:24.909637+00:00"
     },
     {
       "vulnerability": {
@@ -53,7 +53,7 @@
       "justification": "vulnerable_code_cannot_be_controlled_by_adversary",
       "impact_statement": "Unintended leak of Proxy-Authorization header during cross-origin redirect. DevSuperSuite internal mTLS proxies do not use Basic Proxy-Authorization.",
       "action_statement": "SPIFFE/SPIRE dynamic SVID workload identities govern all egress communication.",
-      "timestamp": "2026-11-08T11:39:38.401265+00:00"
+      "timestamp": "2026-11-08T11:45:24.909637+00:00"
     }
   ]
 }

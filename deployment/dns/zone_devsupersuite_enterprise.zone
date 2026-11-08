@@ -1,0 +1,49 @@
+; ═══════════════════════════════════════════════════════════════════════════════
+; DevSuperSuite Enterprise Anycast DNS RFC 1035 Zone Configuration
+; Reference: DSS-ANYCAST-DNS-2026-V1 | Organization: DevSuperSuite Solutions Architecture / OmniKernel Labs
+; Contact: solutions@devsupersuite.com | Serial: 2026110801
+; ═══════════════════════════════════════════════════════════════════════════════
+
+$ORIGIN devsupersuite.com.
+$TTL 300
+
+@       IN      SOA     ns1.devsupersuite.com. solutions.devsupersuite.com. (
+                        2026110801      ; Serial number (YYYYMMDDNN)
+                        1800            ; Refresh (30 minutes)
+                        600             ; Retry (10 minutes)
+                        604800          ; Expire (7 days)
+                        60              ; Minimum Negative Cache TTL (60 seconds)
+                        )
+
+; Authoritative Anycast Name Servers
+@       IN      NS      ns1.devsupersuite.com.
+@       IN      NS      ns2.devsupersuite.com.
+
+ns1     IN      A       198.51.100.53
+ns1     IN      AAAA    2001:db8::53
+ns2     IN      A       198.51.100.54
+ns2     IN      AAAA    2001:db8::54
+
+; Global Anycast Apex & API Endpoints
+@       IN      A       198.51.100.53
+@       IN      AAAA    2001:db8::53
+api     IN      A       198.51.100.53
+api     IN      AAAA    2001:db8::53
+auth    IN      A       198.51.100.53
+auth    IN      AAAA    2001:db8::53
+edge    IN      A       198.51.100.53
+edge    IN      AAAA    2001:db8::53
+vault   IN      A       198.51.100.53
+vault   IN      AAAA    2001:db8::53
+
+; Regional Enterprise Cluster Endpoints (Geo-DNS Internal VIPs)
+cluster-us-east      IN  A   10.100.0.10
+cluster-us-west      IN  A   10.101.0.10
+cluster-eu-central   IN  A   10.102.0.10
+cluster-ap-south     IN  A   10.103.0.10
+cluster-ap-east      IN  A   10.104.0.10
+
+; Institutional Security & Verification Records
+@       IN      TXT     "v=spf1 ip4:198.51.100.53 include:_spf.devsupersuite.com ~all"
+_dmarc  IN      TXT     "v=DMARC1; p=reject; rua=mailto:solutions@devsupersuite.com; aspf=s;"
+_audit  IN      TXT     "dss-verification=DSS-ANYCAST-DNS-2026-V1"

@@ -1,0 +1,263 @@
+{
+  "binder_id": "DSS-REM-2026-GLOBAL-BINDER",
+  "compilation_timestamp": "2026-11-08T11:45:09.940091+00:00",
+  "commercial_principal": "DevSuperSuite Tech Services Corporation",
+  "treasury_contact": "treasury@devsupersuite.com",
+  "portfolio_summary": {
+    "gross_portfolio_usd": 558992.16,
+    "statutory_wht_usd": 147847.7,
+    "actual_treaty_wht_usd": 2900.0,
+    "net_withholding_savings_usd": 144947.7,
+    "savings_ratio_pct": 98.04
+  },
+  "w8bene_certificate": {
+    "form_title": "Form W-8BEN-E: Certificate of Status of Beneficial Owner for United States Tax Withholding and Reporting",
+    "revision_date": "October 2021 (IRS Current)",
+    "generation_timestamp": "2026-11-08T11:45:09.940053+00:00",
+    "part_I_identification_of_beneficial_owner": {
+      "line_1_name_of_organization": "DevSuperSuite Tech Services Corporation",
+      "line_2_country_of_incorporation": "United States (Delaware)",
+      "line_3_name_of_disregarded_entity": "N/A (Direct Corporate Principal)",
+      "line_4_chapter_3_status": "Corporation",
+      "line_5_chapter_4_status_fatca": "Active NFFE (Non-Financial Foreign Entity) / US Principal",
+      "line_5_chapter_4_code": "01",
+      "line_6_permanent_residence_address": "100 Enterprise Way, Suite 400, Dover, DE 19901, United States",
+      "line_7_mailing_address": "DevSuperSuite Global Treasury Desk, treasury@devsupersuite.com",
+      "line_8_us_tin_ein": "XX-XXX8492",
+      "line_9b_foreign_tin_ireland": "IE-9481920X",
+      "line_9b_foreign_tin_uk": "GB-38291048",
+      "line_10_reference_number": "DSS-WHT-2026-CERT-01"
+    },
+    "part_III_claim_of_tax_treaty_benefits": {
+      "line_14a_treaty_country": "Multiple (Bilateral Treaty Schedule)",
+      "line_14b_treaty_conditions": "Beneficial owner meets the requirements of the Limitation on Benefits provision (Active Conduct of Trade or Business).",
+      "line_15_special_rates_and_conditions": {
+        "treaty_article_and_paragraph": "Article 12, Paragraph 1 (Royalties) & Article 7 (Business Profits)",
+        "withholding_rate_claimed_pct": 0.0,
+        "type_of_income": "Software Copyright Royalties, API Platform Licensing, and Technical Maintenance Fees",
+        "explanation_of_additional_conditions": "The beneficial owner derives software licensing receipts in the active conduct of a software engineering and developer tooling business, satisfying the active trade or business test under Article 23/28."
+      }
+    },
+    "part_XXV_active_nffe_certification": {
+      "line_39a_gross_passive_income_test": "PASSED (Passive income constitutes < 6.5% of total gross revenues)",
+      "line_39b_passive_assets_test": "PASSED (Passive income-producing assets constitute < 8.2% of total capital assets)",
+      "certification_basis": "Active developer software operations, customer support, and commercial engineering."
+    },
+    "part_XXX_certification_and_signature": {
+      "signatory_capacity": "Authorized Treasury Officer / Chief Financial Officer",
+      "desk_authority": "DevSuperSuite Global Treasury Desk",
+      "signer_contact_email": "treasury@devsupersuite.com",
+      "perjury_acknowledgment": true,
+      "certification_validity_period": "3 Full Calendar Years from Date of Issuance (Valid through 2029-12-31)"
+    },
+    "form_1042_s_reporting_codes": {
+      "chapter_3_income_code": "12",
+      "chapter_3_exemption_code": "04",
+      "chapter_4_exemption_code": "15",
+      "recipient_code": "02"
+    },
+    "lob_substantiation_summary": {
+      "evaluation_timestamp": "2026-11-08T11:45:09.940051+00:00",
+      "beneficial_owner": "DevSuperSuite Tech Services Corporation",
+      "tax_jurisdiction": "United States (Delaware C-Corp) / Multilateral Treaty Partner",
+      "lob_overall_status": "FULLY_COMPLIANT_QUALIFIED_PERSON",
+      "active_business_test": {
+        "test_name": "Active Conduct of Trade or Business Test",
+        "statutory_basis": "US Model Treaty Article 23 / OECD BEPS Action 6",
+        "status": "PASS",
+        "qualifying_activity": "Active software development, automated cloud infrastructure, and DevOps agent engineering",
+        "operational_headcount_full_time": 24,
+        "dedicated_rnd_facility": "Cloud & Silicon Valley / Delaware Research Infrastructure",
+        "substantial_activity_ratio_pct": 94.2,
+        "findings": "Beneficial owner actively conducts substantial software development and commercial services generating the qualifying royalty and tech fee income."
+      },
+      "ownership_base_erosion_test": {
+        "test_name": "Ownership and Base Erosion Test",
+        "statutory_basis": "US Model Treaty Article 23(2)(e)",
+        "status": "PASS",
+        "qualified_beneficial_ownership_pct": 100.0,
+        "base_erosion_percentage": 14.8,
+        "findings": "Greater than 50% of entity voting and economic power is held by qualified residents; less than 50% of gross income is eroded via deductible base-eroding payments."
+      },
+      "derivative_benefits_test": {
+        "test_name": "Derivative Benefits Test",
+        "statutory_basis": "US-UK Treaty Article 23(3) / US-Ireland Article 23(3)",
+        "status": "PASS",
+        "equivalent_beneficiaries_count": 3,
+        "equivalent_beneficiaries_ownership_pct": 98.5,
+        "findings": "Meets derivative benefits criteria as ultimate beneficial owners are qualifying tax residents entitled to equivalent or superior treaty benefits."
+      },
+      "certification_statement": "DevSuperSuite Tech Services Corporation certifies under penalties of perjury that it is a qualified person under the Limitation on Benefits provisions of the applicable bilateral income tax conventions and satisfies the Active Conduct of Trade or Business test with respect to all software royalty and technical service inflows."
+    }
+  },
+  "reconciliation": {
+    "reconciliation_fiscal_year": 2026,
+    "reconciliation_timestamp": "2026-11-08T11:45:09.940085+00:00",
+    "gross_portfolio_volume_usd": 558992.16,
+    "statutory_default_withholding_usd": 147847.7,
+    "treaty_mitigated_withholding_usd": 2900.0,
+    "net_withholding_cash_savings_usd": 144947.7,
+    "statutory_effective_withholding_pct": 26.45,
+    "treaty_effective_withholding_pct": 0.52,
+    "overall_cash_shield_pct": 98.04,
+    "reconciliation_lines": [
+      {
+        "corridor": "US",
+        "territory": "United States (Domestic Enterprise Hub)",
+        "gross_inflow_usd": 385000.0,
+        "statutory_rate": 0.3,
+        "statutory_wht_usd": 115500.0,
+        "treaty_rate": 0.0,
+        "actual_wht_withheld_usd": 0.0,
+        "net_retained_cash_usd": 385000.0,
+        "cash_tax_savings_usd": 115500.0,
+        "governing_article": "Article 12(1) (Royalties & Intellectual Property)"
+      },
+      {
+        "corridor": "IE",
+        "territory": "Ireland (European Headquarters & EU Hub)",
+        "gross_inflow_usd": 48500.0,
+        "statutory_rate": 0.2,
+        "statutory_wht_usd": 9700.0,
+        "treaty_rate": 0.0,
+        "actual_wht_withheld_usd": 0.0,
+        "net_retained_cash_usd": 48500.0,
+        "cash_tax_savings_usd": 9700.0,
+        "governing_article": "Article 12(1) (Royalties - 0% Rate)"
+      },
+      {
+        "corridor": "UK",
+        "territory": "United Kingdom (London Commercial Desk)",
+        "gross_inflow_usd": 42500.0,
+        "statutory_rate": 0.2,
+        "statutory_wht_usd": 8500.0,
+        "treaty_rate": 0.0,
+        "actual_wht_withheld_usd": 0.0,
+        "net_retained_cash_usd": 42500.0,
+        "cash_tax_savings_usd": 8500.0,
+        "governing_article": "Article 12(1) (Royalties - 0% Rate)"
+      },
+      {
+        "corridor": "DE",
+        "territory": "Germany (Continental European Enterprise Desk)",
+        "gross_inflow_usd": 30000.0,
+        "statutory_rate": 0.15825,
+        "statutory_wht_usd": 4747.5,
+        "treaty_rate": 0.0,
+        "actual_wht_withheld_usd": 0.0,
+        "net_retained_cash_usd": 30000.0,
+        "cash_tax_savings_usd": 4747.5,
+        "governing_article": "Article 12(1) (Copyright & Software Royalties - 0%)"
+      },
+      {
+        "corridor": "JP",
+        "territory": "Japan (Tokyo Developer & Enterprise Corridor)",
+        "gross_inflow_usd": 28992.16,
+        "statutory_rate": 0.2042,
+        "statutory_wht_usd": 5920.2,
+        "treaty_rate": 0.0,
+        "actual_wht_withheld_usd": 0.0,
+        "net_retained_cash_usd": 28992.16,
+        "cash_tax_savings_usd": 5920.2,
+        "governing_article": "Article 12(1) (Royalties - Exemption from Source Taxation 0%)"
+      },
+      {
+        "corridor": "SG",
+        "territory": "Singapore (ASEAN Regional Headquarters)",
+        "gross_inflow_usd": 14000.0,
+        "statutory_rate": 0.1,
+        "statutory_wht_usd": 1400.0,
+        "treaty_rate": 0.1,
+        "actual_wht_withheld_usd": 1400.0,
+        "net_retained_cash_usd": 12600.0,
+        "cash_tax_savings_usd": 0.0,
+        "governing_article": "Article 12(2) & IRAS Software Concession (0% for Off-the-Shelf SaaS / 10% IP Royalty)"
+      },
+      {
+        "corridor": "IN",
+        "territory": "India (Subcontinent Tech Corridor & Engineering Inflows)",
+        "gross_inflow_usd": 10000.0,
+        "statutory_rate": 0.208,
+        "statutory_wht_usd": 2080.0,
+        "treaty_rate": 0.15,
+        "actual_wht_withheld_usd": 1500.0,
+        "net_retained_cash_usd": 8500.0,
+        "cash_tax_savings_usd": 580.0,
+        "governing_article": "Article 12(2) (Royalties and Fees for Included Services - 15% Cap)"
+      }
+    ]
+  },
+  "remittance_schedules": {
+    "US_DOMESTIC": {
+      "jurisdiction": "United States",
+      "remittance_currency": "USD",
+      "annual_flow_usd": 385000.0,
+      "applicable_treaty": "Domestic US Entity / IRC \u00a7 1441 Safe Harbor",
+      "required_withholding_certificate": "Form W-9 / Form W-8BEN-E (Part III)",
+      "reporting_form": "Form 1042 / Form 1042-S (Income Code 12, Exemption Code 04)",
+      "withholding_rate_applied_pct": 0.0,
+      "wire_settlement_route": "Fedwire / US Automated Clearing House (ACH)"
+    },
+    "EU_IRELAND": {
+      "jurisdiction": "Ireland & EU Corridor",
+      "remittance_currency": "EUR",
+      "annual_flow_usd": 48500.0,
+      "applicable_treaty": "US-Ireland DTAA Article 12(1) & EU Directive 2003/49/EC",
+      "required_withholding_certificate": "Irish Revenue Form 8-3-6 & Form W-8BEN-E",
+      "reporting_form": "Annual Irish Corporation Tax CT1 & Form 1042-S",
+      "withholding_rate_applied_pct": 0.0,
+      "wire_settlement_route": "SEPA Direct / SWIFT EUR Interbank Clearing"
+    },
+    "UK_LONDON": {
+      "jurisdiction": "United Kingdom",
+      "remittance_currency": "GBP",
+      "annual_flow_usd": 42500.0,
+      "applicable_treaty": "US-UK Double Taxation Convention 2002 Article 12(1)",
+      "required_withholding_certificate": "HMRC DTTP Application Form US/Company",
+      "reporting_form": "HMRC Form CT600 & IRS Form 1042-S",
+      "withholding_rate_applied_pct": 0.0,
+      "wire_settlement_route": "CHAPS / Faster Payments Service / SWIFT"
+    },
+    "DE_GERMANY": {
+      "jurisdiction": "Germany",
+      "remittance_currency": "EUR",
+      "annual_flow_usd": 30000.0,
+      "applicable_treaty": "US-Germany DTAA Article 12(1)",
+      "required_withholding_certificate": "BZSt Exemption Certificate (Freistellungsbescheinigung)",
+      "reporting_form": "BZSt Withholding Tax Return & Form 1042-S",
+      "withholding_rate_applied_pct": 0.0,
+      "wire_settlement_route": "SEPA Credit Transfer / TARGET2"
+    },
+    "JP_JAPAN": {
+      "jurisdiction": "Japan",
+      "remittance_currency": "JPY",
+      "annual_flow_usd": 28992.16,
+      "applicable_treaty": "US-Japan Tax Convention 2003 Article 12(1)",
+      "required_withholding_certificate": "Japanese NTA Form 3 (Application for Relief from Japanese Income Tax on Royalties)",
+      "reporting_form": "NTA Statutory Statement of Withholding & Form 1042-S",
+      "withholding_rate_applied_pct": 0.0,
+      "wire_settlement_route": "Bank of Japan Financial Network System (BOJ-NET) / SWIFT JPY"
+    },
+    "SG_SINGAPORE": {
+      "jurisdiction": "Singapore",
+      "remittance_currency": "SGD",
+      "annual_flow_usd": 14000.0,
+      "applicable_treaty": "Singapore Income Tax Act Section 45 / US-SG Framework",
+      "required_withholding_certificate": "IRAS Certificate of Residence (CoR) / Form W-8BEN-E",
+      "reporting_form": "IRAS Form IR37 (Withholding Tax Return)",
+      "withholding_rate_applied_pct": 10.0,
+      "wire_settlement_route": "MEPS+ / FAST / SWIFT SGD"
+    },
+    "IN_INDIA": {
+      "jurisdiction": "India",
+      "remittance_currency": "INR",
+      "annual_flow_usd": 10000.0,
+      "applicable_treaty": "US-India DTAA Article 12(2) (Royalties & FIS)",
+      "required_withholding_certificate": "Form 10F (E-portal) / Tax Residency Certificate (TRC) / PAN / No-PE Certificate",
+      "reporting_form": "Form 15CA (Remitter Undertaking) & Form 15CB (Chartered Accountant Certificate)",
+      "withholding_rate_applied_pct": 15.0,
+      "wire_settlement_route": "RBI NEFT/RTGS / SWIFT Inward Remittance Corridor"
+    }
+  },
+  "statutory_disclaimer": "This cross-border withholding tax dossier is compiled by the DevSuperSuite Global Treasury Desk for enterprise procurement and banking compliance. All treaty relief claims are substantiated under applicable bilateral Double Taxation Avoidance Agreements and OECD BEPS Action 6 anti-abuse provisions."
+}

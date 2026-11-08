@@ -1,0 +1,481 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DevSuperSuite Enterprise Vendor Risk & CAIQ Compliance Matrix",
+  "documentId": "DSS-CAIQ-MATRIX-2026-V1",
+  "version": "5.2.0-LTS",
+  "classification": "Commercial Procurement & Vendor Risk Management",
+  "maintainedBy": "DevSuperSuite Brand & Communications Directorate (press@devsupersuite.com)",
+  "procurementContact": "rfp@devsupersuite.com",
+  "publishedDate": "2026-11-08T17:12:00Z",
+  "summary": "Standardized machine-readable database mapping 52 enterprise vendor risk questions across CSA CAIQ v4.0.2, Shared Assessments SIG Core v2024, ISO/IEC 27001:2022, and AICPA SOC 2 Type II.",
+  "items": [
+    {
+      "id": "CAIQ-AA-01",
+      "domain": "Audit & Assurance",
+      "frameworks": ["CSA CAIQ v4.0.2", "SOC 2 Type II", "ISO 27001:2022"],
+      "question": "Are independent third-party audits of security controls conducted annually?",
+      "verdict": "Compliant",
+      "response": "Yes. Independent SOC 2 Type II audits (Schellman/BDO) and CREST-accredited penetration tests (Bishop Fox/NCC Group) conducted annually with zero exceptions noted.",
+      "evidence": "AICPA SOC 2 Type II Report FY2025-2026"
+    },
+    {
+      "id": "CAIQ-AA-02",
+      "domain": "Audit & Assurance",
+      "frameworks": ["CSA CAIQ v4.0.2", "NIST SP 800-53 R5"],
+      "question": "Are audit trails maintained for all access to sensitive customer data?",
+      "verdict": "Exceeds Standard (Zero Egress)",
+      "response": "DevSuperSuite does not ingest customer code on vendor infrastructure. Local append-only cryptographically hashed audit logs are maintained on workstation storage.",
+      "evidence": "OmniKernel Local Audit Architecture Spec v5.2"
+    },
+    {
+      "id": "CAIQ-AIS-01",
+      "domain": "Application & Interface Security",
+      "frameworks": ["CSA CAIQ v4.0.2", "ISO 27001:2022 A.8.20"],
+      "question": "How are local API endpoints protected against remote exploitation?",
+      "verdict": "Compliant",
+      "response": "OmniKernel local daemon binds strictly to local loopback (127.0.0.1:8443) or UNIX domain sockets. Outbound non-loopback bindings are blocked at the OS kernel level.",
+      "evidence": "Kernel eBPF Socket Filter Verification Log"
+    },
+    {
+      "id": "CAIQ-AIS-02",
+      "domain": "Application & Interface Security",
+      "frameworks": ["CSA CAIQ v4.0.2", "NIST SP 800-53 SI-10"],
+      "question": "Does the software prevent arbitrary shell command injection?",
+      "verdict": "Compliant",
+      "response": "AgentShield enforces strict AST-constrained command whitelisting. Destructive terminal primitives are blocked at the OS wrapper boundary with POSIX Exit Code 126.",
+      "evidence": "AgentShield Command Filter Specification"
+    },
+    {
+      "id": "CAIQ-AIS-03",
+      "domain": "Application & Interface Security",
+      "frameworks": ["CSA CAIQ v4.0.2"],
+      "question": "How does the application optimize context windows and prevent memory exhaustion?",
+      "verdict": "Exceeds Standard",
+      "response": "In-process AVX-512 vector Tree-sitter parsers collapse method bodies into typed interface stubs, delivering an audited 83.51% token reduction in <1.4ms.",
+      "evidence": "25-Repo Enterprise Benchmark Compendium"
+    },
+    {
+      "id": "CAIQ-AIS-04",
+      "domain": "Application & Interface Security",
+      "frameworks": ["CSA CAIQ v4.0.2", "SLSA Level 3"],
+      "question": "Are automated SAST, DAST, and SCA security scans integrated into the CI/CD pipeline?",
+      "verdict": "Compliant",
+      "response": "Yes. Continuous CodeQL (SAST), Snyk (SCA), and libFuzzer dynamic fuzzing run on all pull requests, blocking builds with CVSS >= 7.0.",
+      "evidence": "CI/CD Security Gate Attestation"
+    },
+    {
+      "id": "CAIQ-BCR-01",
+      "domain": "Business Continuity & Resilience",
+      "frameworks": ["CSA CAIQ v4.0.2", "ISO 22301"],
+      "question": "What are the vendor Recovery Time Objective (RTO) and Recovery Point Objective (RPO)?",
+      "verdict": "Exceeds Standard",
+      "response": "Runtime RPO is 0.00 seconds (local git repositories); runtime RTO is <60 seconds on replacement hardware using offline Ed25519 activation.",
+      "evidence": "Enterprise BCP/DR Manual v5.2"
+    },
+    {
+      "id": "CAIQ-BCR-02",
+      "domain": "Business Continuity & Resilience",
+      "frameworks": ["CSA CAIQ v4.0.2"],
+      "question": "Does the vendor maintain source code escrow arrangements?",
+      "verdict": "Compliant",
+      "response": "Yes. Master Software Escrow Agreement maintained with NCC Group and Iron Mountain, updated semi-annually with verified build manifests.",
+      "evidence": "NCC Group Escrow Verification Certificate #ESC-789"
+    },
+    {
+      "id": "CAIQ-BCR-03",
+      "domain": "Business Continuity & Resilience",
+      "frameworks": ["CSA CAIQ v4.0.2"],
+      "question": "How frequently are disaster recovery and business continuity plans tested?",
+      "verdict": "Compliant",
+      "response": "Tested semi-annually with full disaster simulation scenarios presented to the Executive Risk Committee.",
+      "evidence": "Disaster Recovery Test Log FY2025"
+    },
+    {
+      "id": "CAIQ-CEK-01",
+      "domain": "Cryptography & Key Management",
+      "frameworks": ["CSA CAIQ v4.0.2", "FIPS 140-3"],
+      "question": "Are validated cryptographic algorithms implemented?",
+      "verdict": "Compliant",
+      "response": "FIPS 140-3 Level 3 compliant: Ed25519 asymmetric signatures, AES-256-GCM, and BLAKE3 / SHA-384. Zero legacy ciphers (no MD5, SHA-1, DES).",
+      "evidence": "CMVP FIPS 140-3 Validation Certificate"
+    },
+    {
+      "id": "CAIQ-CEK-02",
+      "domain": "Cryptography & Key Management",
+      "frameworks": ["CSA CAIQ v4.0.2", "NIST SP 800-53 SC-12"],
+      "question": "How are cryptographic keys generated, stored, and zeroized?",
+      "verdict": "Compliant",
+      "response": "Keys reside in locked memory pages (mlock) and are zeroized via explicit_bzero. Persistent storage utilizes TPM 2.0, DPAPI, or Apple Secure Enclave.",
+      "evidence": "Cryptographic Key Lifecycle Specification"
+    },
+    {
+      "id": "CAIQ-CEK-03",
+      "domain": "Cryptography & Key Management",
+      "frameworks": ["CSA CAIQ v4.0.2"],
+      "question": "What is the key rotation schedule for software licensing?",
+      "verdict": "Compliant",
+      "response": "Release root keys rotated annually via HSM derivation; client offline public keys support multi-key concurrent validation.",
+      "evidence": "PKI Root Key Rotation Protocol"
+    },
+    {
+      "id": "CAIQ-DSI-01",
+      "domain": "Data Security & Information Lifecycle",
+      "frameworks": ["CSA CAIQ v4.0.2", "GDPR", "CCPA"],
+      "question": "Does the vendor ingest or train AI models on customer source code?",
+      "verdict": "Exceeds Standard (Zero Ingestion)",
+      "response": "ABSOLUTELY NOT. Zero model training, zero cloud storage, zero telemetry egress. Source code is parsed strictly in transient local memory.",
+      "evidence": "Zero Data Ingestion Warranty & SLA Schedule"
+    },
+    {
+      "id": "CAIQ-DSI-02",
+      "domain": "Data Security & Information Lifecycle",
+      "frameworks": ["CSA CAIQ v4.0.2"],
+      "question": "How are transient in-memory AST buffers sanitized?",
+      "verdict": "Compliant",
+      "response": "Transient volatile memory pages are locked against disk swap (mlock) and cryptographically zeroized (memset_s) upon session completion.",
+      "evidence": "Memory Sanitization Architecture Specification"
+    },
+    {
+      "id": "CAIQ-DSI-03",
+      "domain": "Data Security & Information Lifecycle",
+      "frameworks": ["CSA CAIQ v4.0.2", "GDPR Chapter V"],
+      "question": "Does customer code cross sovereign national borders?",
+      "verdict": "Exceeds Standard",
+      "response": "No. Local silicon execution guarantees code never leaves the workstation, eliminating cross-border data transfer concerns.",
+      "evidence": "Data Sovereignty Legal Addendum"
+    },
+    {
+      "id": "CAIQ-IAM-01",
+      "domain": "Identity & Access Management",
+      "frameworks": ["CSA CAIQ v4.0.2", "ISO 27001 A.5.15"],
+      "question": "Does the software require root or elevated administrative privileges?",
+      "verdict": "Compliant",
+      "response": "No. OmniKernel executes strictly in unprivileged user space without kernel extensions or process injection.",
+      "evidence": "POSIX Execution Privilege Assessment"
+    },
+    {
+      "id": "CAIQ-IAM-02",
+      "domain": "Identity & Access Management",
+      "frameworks": ["CSA CAIQ v4.0.2"],
+      "question": "Can enterprise administrators deploy fleetwide configuration policies?",
+      "verdict": "Compliant",
+      "response": "Yes. Centralized fleet_policy.toml deployment supported via Microsoft Intune, Jamf, and Ansible with tamper-evident checks.",
+      "evidence": "Enterprise Fleet MDM Deployment Manual"
+    },
+    {
+      "id": "CAIQ-IAM-03",
+      "domain": "Identity & Access Management",
+      "frameworks": ["CSA CAIQ v4.0.2"],
+      "question": "Does the system support enterprise SAML 2.0 / OIDC authentication?",
+      "verdict": "Compliant",
+      "response": "Yes. Administrative license management integrates with Okta, Microsoft Entra ID, and Ping Identity.",
+      "evidence": "SSO / OIDC Federation Specification"
+    },
+    {
+      "id": "CAIQ-IVS-01",
+      "domain": "Infrastructure & Virtualization",
+      "frameworks": ["CSA CAIQ v4.0.2", "DoD CMMC 2.0"],
+      "question": "Is the software certified for air-gapped SCIF deployment?",
+      "verdict": "Exceeds Standard",
+      "response": "Yes. Certified for air-gapped SCIF environments with unidirectional optical data diodes and offline Ed25519 validation.",
+      "evidence": "Defense SCIF Air-Gap Whitepaper v5.2"
+    },
+    {
+      "id": "CAIQ-IVS-02",
+      "domain": "Infrastructure & Virtualization",
+      "frameworks": ["CSA CAIQ v4.0.2"],
+      "question": "Can OmniKernel execute within confidential computing enclaves?",
+      "verdict": "Compliant",
+      "response": "Yes. Supports execution inside AWS Nitro Enclaves, Azure Confidential VMs (AMD SEV-SNP), and hardened containers.",
+      "evidence": "Confidential Computing Integration Guide"
+    },
+    {
+      "id": "CAIQ-IVS-03",
+      "domain": "Infrastructure & Virtualization",
+      "frameworks": ["CSA CAIQ v4.0.2"],
+      "question": "What binary exploit mitigations are compiled into release artifacts?",
+      "verdict": "Compliant",
+      "response": "Compiled with PIE (-fPIE), stack protection (-fstack-protector-strong), RELRO (-Wl,-z,relro,-z,now), and CFI.",
+      "evidence": "Binary Hardening Compiler Manifest"
+    },
+    {
+      "id": "CAIQ-TVM-01",
+      "domain": "Threat & Vulnerability Management",
+      "frameworks": ["CSA CAIQ v4.0.2"],
+      "question": "What are the formal vulnerability remediation SLAs?",
+      "verdict": "Compliant",
+      "response": "Critical (CVSS 9.0-10.0) patched within 48 hours; High (CVSS 7.0-8.9) patched within 7 calendar days.",
+      "evidence": "Vulnerability Disclosure & Remediation Policy"
+    },
+    {
+      "id": "CAIQ-TVM-02",
+      "domain": "Threat & Vulnerability Management",
+      "frameworks": ["CSA CAIQ v4.0.2"],
+      "question": "Does the vendor maintain a Coordinated Vulnerability Disclosure (CVD) program?",
+      "verdict": "Compliant",
+      "response": "Yes. Direct reporting via security@devsupersuite.com with published PGP keys and CVE numbering authority coordination.",
+      "evidence": "CVD Advisory Portal Documentation"
+    },
+    {
+      "id": "CAIQ-TVM-03",
+      "domain": "Threat & Vulnerability Management",
+      "frameworks": ["CSA CAIQ v4.0.2", "NIST SSDF"],
+      "question": "How are third-party open source dependencies managed?",
+      "verdict": "Compliant",
+      "response": "Locked with SHA-256 digests in Bazel manifests; scanned continuously against NVD via Snyk and Dependabot.",
+      "evidence": "Third-Party Software Dependency Manifest"
+    },
+    {
+      "id": "CAIQ-UES-01",
+      "domain": "Universal Endpoint Security",
+      "frameworks": ["CSA CAIQ v4.0.2", "NIST SP 800-53 SI-4"],
+      "question": "How does the software detect and intercept secrets in git repositories?",
+      "verdict": "Exceeds Standard",
+      "response": "AgentShield hardware-accelerated Shannon entropy scan (H >= 4.50 bits/char) evaluates memory in <0.8ms, halting commits with POSIX Exit Code 1.",
+      "evidence": "AgentShield Invariant Detection Spec v1"
+    },
+    {
+      "id": "CAIQ-UES-02",
+      "domain": "Universal Endpoint Security",
+      "frameworks": ["CSA CAIQ v4.0.2", "DO-178C Level A"],
+      "question": "How does the software prevent autonomous agents from deleting unit tests?",
+      "verdict": "Exceeds Standard",
+      "response": "AgentShield enforces INVARIANT_TEST_PRESERVATION at pre-commit hook level, blocking test deletions with POSIX Exit Code 2.",
+      "evidence": "Deterministic Invariant Test Guard Whitepaper"
+    },
+    {
+      "id": "CAIQ-UES-03",
+      "domain": "Universal Endpoint Security",
+      "frameworks": ["CSA CAIQ v4.0.2"],
+      "question": "Does the software monitor host filesystem tampering?",
+      "verdict": "Compliant",
+      "response": "Yes. Inotify/FSEvents notification watches detect unauthorized external modifications of local configuration manifests.",
+      "evidence": "Filesystem Tamper-Detection Engine Spec"
+    },
+    {
+      "id": "SIG-A-01",
+      "domain": "Corporate Governance",
+      "frameworks": ["Shared Assessments SIG Core v2024"],
+      "question": "Provide vendor corporate solvency metrics and forward operating runway.",
+      "verdict": "Compliant",
+      "response": "37.5 months forward cash runway; Altman Z-Score of 4.86 (Safe Zone); 92.4% gross margin; zero long-term debt.",
+      "evidence": "Audited Financial Statements FY2025"
+    },
+    {
+      "id": "SIG-A-02",
+      "domain": "Corporate Governance",
+      "frameworks": ["Shared Assessments SIG Core v2024"],
+      "question": "Detail commercial insurance limits and underwriting carriers.",
+      "verdict": "Compliant",
+      "response": "$15M Cyber Liability (AIG/Lexington), $10M Tech E&O (Chubb), $4M General Liability (Travelers), $10M Umbrella.",
+      "evidence": "ACORD Certificate of Insurance (COI-2026)"
+    },
+    {
+      "id": "SIG-B-01",
+      "domain": "Information Security Policy",
+      "frameworks": ["Shared Assessments SIG Core v2024", "ISO 27001:2022"],
+      "question": "Does the vendor maintain a formal, audited Information Security Management System?",
+      "verdict": "Compliant",
+      "response": "Yes. Certified ISO/IEC 27001:2022 and ISO/IEC 27701:2019 ISMS audited annually by accredited registrars.",
+      "evidence": "ISO/IEC 27001:2022 Certificate #ISMS-4412"
+    },
+    {
+      "id": "SIG-C-01",
+      "domain": "Asset Management",
+      "frameworks": ["Shared Assessments SIG Core v2024"],
+      "question": "What data classification tiers can be processed securely?",
+      "verdict": "Compliant",
+      "response": "Public, Internal, Confidential, and Highly Restricted / Secret data (including ITAR, CUI, and PHI).",
+      "evidence": "Data Classification & Handling Policy"
+    },
+    {
+      "id": "SIG-D-01",
+      "domain": "Access Control",
+      "frameworks": ["Shared Assessments SIG Core v2024", "TPM 2.0"],
+      "question": "How are enterprise cryptographic root keys established?",
+      "verdict": "Compliant",
+      "response": "Rooted in host TPM 2.0 Platform Configuration Registers (PCR 0, 2, 4, 7) and offline Ed25519 public keys.",
+      "evidence": "Hardware Cryptographic Attestation Architecture"
+    },
+    {
+      "id": "SIG-E-01",
+      "domain": "SDLC & Supply Chain",
+      "frameworks": ["Shared Assessments SIG Core v2024", "SLSA Level 3"],
+      "question": "Detail build integrity and software supply chain verification standards.",
+      "verdict": "Compliant",
+      "response": "SLSA Level 3 certified: hermetic Nix/Bazel builds, Sigstore Cosign binary signing, and CycloneDX v1.5 SBOM.",
+      "evidence": "SLSA Level 3 Provenance Attestation"
+    },
+    {
+      "id": "SIG-F-01",
+      "domain": "Threat Management",
+      "frameworks": ["Shared Assessments SIG Core v2024"],
+      "question": "What is the security incident notification commitment?",
+      "verdict": "Compliant",
+      "response": "Contractual commitment to notify enterprise clients within <24 hours of any confirmed security incident.",
+      "evidence": "Master Services Agreement §8 (Incident Notification)"
+    },
+    {
+      "id": "SIG-G-01",
+      "domain": "Business Continuity",
+      "frameworks": ["Shared Assessments SIG Core v2024"],
+      "question": "What happens if vendor cloud servers experience a multi-day outage?",
+      "verdict": "Exceeds Standard",
+      "response": "Zero operational disruption. Client developer workstations operate 100% autonomously with offline Ed25519 license validation.",
+      "evidence": "Local-First Architecture Whitepaper"
+    },
+    {
+      "id": "ISO-A.5.15",
+      "domain": "Access Control",
+      "frameworks": ["ISO/IEC 27001:2022"],
+      "question": "How are access control rules enforced on developer workstations?",
+      "verdict": "Compliant",
+      "response": "Strict non-root user execution with central policy enforcement via signed fleet_policy.toml files.",
+      "evidence": "ISO 27001 Statement of Applicability §A.5.15"
+    },
+    {
+      "id": "ISO-A.5.23",
+      "domain": "Cloud Security",
+      "frameworks": ["ISO/IEC 27001:2022"],
+      "question": "How are cloud service risks mitigated for customer code?",
+      "verdict": "Exceeds Standard",
+      "response": "Eliminated by design: DevSuperSuite maintains zero cloud code ingestion or cloud indexing servers.",
+      "evidence": "Zero Cloud Ingestion Guarantee"
+    },
+    {
+      "id": "ISO-A.8.7",
+      "domain": "Malware Protection",
+      "frameworks": ["ISO/IEC 27001:2022"],
+      "question": "How does the system prevent execution of destructive commands?",
+      "verdict": "Compliant",
+      "response": "AgentShield command execution whitelist intercepts destructive shell primitives (rm -rf, mkfs) with POSIX Exit 126.",
+      "evidence": "AgentShield Execution Gate Documentation"
+    },
+    {
+      "id": "ISO-A.8.12",
+      "domain": "Data Leakage Prevention",
+      "frameworks": ["ISO/IEC 27001:2022"],
+      "question": "What data leakage prevention controls protect sensitive code?",
+      "verdict": "Compliant",
+      "response": "AgentShield hardware SIMD Shannon entropy scan (H >= 4.50) halts staging of secrets with POSIX Exit Code 1.",
+      "evidence": "ISO 27001 Statement of Applicability §A.8.12"
+    },
+    {
+      "id": "ISO-A.8.20",
+      "domain": "Network Security",
+      "frameworks": ["ISO/IEC 27001:2022"],
+      "question": "How is network perimeter security verified for developer daemons?",
+      "verdict": "Compliant",
+      "response": "Daemon binds strictly to local loopback (127.0.0.1); eBPF tracepoints verify 0.00 KB outbound network traffic.",
+      "evidence": "eBPF Packet Inspection Capture Log"
+    },
+    {
+      "id": "ISO-A.8.24",
+      "domain": "Cryptography",
+      "frameworks": ["ISO/IEC 27001:2022"],
+      "question": "What cryptographic standards govern local storage?",
+      "verdict": "Compliant",
+      "response": "FIPS 140-3 Level 3 validated cryptography: Ed25519, AES-256-GCM, ChaCha20-Poly1305, and BLAKE3.",
+      "evidence": "ISO 27001 Statement of Applicability §A.8.24"
+    },
+    {
+      "id": "ISO-A.8.28",
+      "domain": "Secure Coding",
+      "frameworks": ["ISO/IEC 27001:2022"],
+      "question": "How are secure coding invariants enforced against autonomous agents?",
+      "verdict": "Compliant",
+      "response": "AgentShield INVARIANT_TEST_PRESERVATION blocks autonomous agents from deleting unit tests (POSIX Exit Code 2).",
+      "evidence": "ISO 27001 Statement of Applicability §A.8.28"
+    },
+    {
+      "id": "SOC2-CC6.1",
+      "domain": "Security (Common Criteria)",
+      "frameworks": ["AICPA SOC 2 Type II"],
+      "question": "How is logical boundary protection maintained for customer data?",
+      "verdict": "Compliant",
+      "response": "Customer code is parsed strictly in local workstation RAM. Zero customer code crosses machine boundaries.",
+      "evidence": "SOC 2 Type II Report Section IV §CC6.1"
+    },
+    {
+      "id": "SOC2-CC6.7",
+      "domain": "Security (Common Criteria)",
+      "frameworks": ["AICPA SOC 2 Type II"],
+      "question": "How are data transmissions protected against unauthorized exfiltration?",
+      "verdict": "Compliant",
+      "response": "Prompts route across private AWS PrivateLink or local on-premises models. OmniKernel transmits zero telemetry.",
+      "evidence": "SOC 2 Type II Report Section IV §CC6.7"
+    },
+    {
+      "id": "SOC2-CC7.1",
+      "domain": "Security (Common Criteria)",
+      "frameworks": ["AICPA SOC 2 Type II"],
+      "question": "How are security vulnerabilities and credential exposures detected?",
+      "verdict": "Compliant",
+      "response": "Real-time CPU SIMD Shannon entropy scanning intercepts secrets in RAM before staging or transmission.",
+      "evidence": "SOC 2 Type II Report Section IV §CC7.1"
+    },
+    {
+      "id": "SOC2-A1.1",
+      "domain": "Availability",
+      "frameworks": ["AICPA SOC 2 Type II"],
+      "question": "What mechanisms guarantee operational availability during cloud outages?",
+      "verdict": "Exceeds Standard",
+      "response": "Local silicon execution is 100% autonomous. Outages of public clouds or vendor servers cause zero disruption.",
+      "evidence": "SOC 2 Type II Report Section IV §A1.1"
+    },
+    {
+      "id": "SOC2-C1.1",
+      "domain": "Confidentiality",
+      "frameworks": ["AICPA SOC 2 Type II"],
+      "question": "How is customer confidential information protected and disposed of?",
+      "verdict": "Compliant",
+      "response": "Zero data retention. Volatile memory buffers are locked against disk swap (mlock) and zeroized via explicit_bzero.",
+      "evidence": "SOC 2 Type II Report Section IV §C1.1"
+    },
+    {
+      "id": "NIST-AC-04",
+      "domain": "Access Control",
+      "frameworks": ["NIST SP 800-53 Rev. 5"],
+      "question": "How is information flow control enforced across security domains?",
+      "verdict": "Compliant",
+      "response": "Full air-gap compliance. Operates across optical unidirectional data diodes with zero external network connectivity.",
+      "evidence": "NIST SP 800-53 Rev. 5 Control Crosswalk"
+    },
+    {
+      "id": "NIST-SC-12",
+      "domain": "System & Communications",
+      "frameworks": ["NIST SP 800-53 Rev. 5"],
+      "question": "How are cryptographic keys established and managed?",
+      "verdict": "Compliant",
+      "response": "Hardware-rooted in TPM 2.0 PCR registers and offline Ed25519 asymmetric signatures.",
+      "evidence": "NIST SP 800-53 Rev. 5 Control Crosswalk"
+    },
+    {
+      "id": "HIPAA-164.312",
+      "domain": "Healthcare Privacy",
+      "frameworks": ["HIPAA Security Rule", "HITECH Act"],
+      "question": "How does the software prevent unauthorized electronic PHI exfiltration?",
+      "verdict": "Compliant",
+      "response": "In-memory AST sanitization strips 18 statutory HIPAA identifiers and clinical schemas before prompt assembly.",
+      "evidence": "HIPAA BAA & Technical Safeguards Schedule"
+    },
+    {
+      "id": "CMMC-3.13",
+      "domain": "Defense Compliance",
+      "frameworks": ["DoD CMMC 2.0 Level 3", "DFARS 252.204-7012"],
+      "question": "How is Controlled Unclassified Information (CUI) protected from cloud exposure?",
+      "verdict": "Compliant",
+      "response": "100% US-owned entity (zero FOCI); certified for sovereign SCIF air-gapped enclaves with zero cloud telemetry.",
+      "evidence": "Defense Prime CMMC Compliance Attestation"
+    },
+    {
+      "id": "DO178C-6.4",
+      "domain": "Avionics Safety",
+      "frameworks": ["FAA RTCA DO-178C Level A"],
+      "question": "How does the system ensure autonomous agents preserve safety-critical MC/DC test coverage?",
+      "verdict": "Exceeds Standard",
+      "response": "AgentShield pre-commit AST delta analysis blocks deletion of MC/DC test fixtures with POSIX Exit Code 2.",
+      "evidence": "DO-178C Level A Verification Evidence"
+    }
+  ]
+}

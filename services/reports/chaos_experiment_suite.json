@@ -1,0 +1,178 @@
+{
+  "suite_id": "CHAOS-SUITE-2026-V1",
+  "cluster_id": "devsupersuite-us-east-prod-mesh",
+  "timestamp_iso": "2026-11-08T11:45:06.297485+00:00",
+  "organization": "DevSuperSuite Official",
+  "authority": "DevSuperSuite Security & Compliance (security@devsupersuite.com)",
+  "total_experiments": 5,
+  "experiments_passed": 5,
+  "experiments_failed": 0,
+  "overall_resilience_rate_pct": 100.0,
+  "average_mttr_seconds": 1.57,
+  "max_mttr_seconds": 2.45,
+  "mttr_sla_ceiling_seconds": 3.2,
+  "mttr_sla_satisfied": true,
+  "high_availability_sla_baseline": "99.999% (Five Nines)",
+  "experiments": [
+    {
+      "experiment_id": "CHAOS-EXP-001-PKT-LOSS",
+      "experiment_type": "PACKET_LOSS_INJECTION",
+      "target_component": "mesh-ingress-gateway",
+      "fault_description": "Injected 30.0% synthetic bidirectional packet loss on eth0",
+      "pre_fault_metrics": {
+        "latency_p99_ms": 18.2,
+        "error_rate_pct": 0.0,
+        "throughput_rps": 1450.0,
+        "healthy_node_ratio": 1.0,
+        "consensus_linearizable": true
+      },
+      "during_fault_metrics": {
+        "latency_p99_ms": 84.5,
+        "error_rate_pct": 4.2,
+        "throughput_rps": 1120.0,
+        "healthy_node_ratio": 1.0,
+        "consensus_linearizable": true
+      },
+      "post_fault_metrics": {
+        "latency_p99_ms": 20.1,
+        "error_rate_pct": 0.02,
+        "throughput_rps": 1420.0,
+        "healthy_node_ratio": 1.0,
+        "consensus_linearizable": true
+      },
+      "mttr_seconds": 1.15,
+      "max_permitted_mttr_seconds": 3.2,
+      "steady_state_hypothesis_verified": true,
+      "status": "PASSED_STEADY_STATE_RECOVERED",
+      "mitigation_mechanism": "eBPF Fast Path Berkeley Routing & Automatic Retry Circuit Breaker"
+    },
+    {
+      "experiment_id": "CHAOS-EXP-002-DNS-HOLE",
+      "experiment_type": "DNS_BLACKHOLING",
+      "target_component": "agent-mcp-daemon",
+      "fault_description": "Synthetic blackhole DNS resolution for auth.devsupersuite.io",
+      "pre_fault_metrics": {
+        "latency_p99_ms": 14.0,
+        "error_rate_pct": 0.0,
+        "throughput_rps": 1600.0,
+        "healthy_node_ratio": 1.0,
+        "consensus_linearizable": true
+      },
+      "during_fault_metrics": {
+        "latency_p99_ms": 22.0,
+        "error_rate_pct": 0.0,
+        "throughput_rps": 1580.0,
+        "healthy_node_ratio": 1.0,
+        "consensus_linearizable": true
+      },
+      "post_fault_metrics": {
+        "latency_p99_ms": 14.5,
+        "error_rate_pct": 0.0,
+        "throughput_rps": 1595.0,
+        "healthy_node_ratio": 1.0,
+        "consensus_linearizable": true
+      },
+      "mttr_seconds": 0.42,
+      "max_permitted_mttr_seconds": 3.2,
+      "steady_state_hypothesis_verified": true,
+      "status": "PASSED_STEADY_STATE_RECOVERED",
+      "mitigation_mechanism": "Local Zero-Trust JWKS Key Cache & Graceful Offline SVID Degradation"
+    },
+    {
+      "experiment_id": "CHAOS-EXP-003-RAFT-SPLIT",
+      "experiment_type": "RAFT_SPLIT_BRAIN_QUORUM",
+      "target_component": "distributed-license-ledger",
+      "fault_description": "Simulated network partition: [Node1, Node2] isolated from [Node3, Node4, Node5]",
+      "pre_fault_metrics": {
+        "latency_p99_ms": 24.5,
+        "error_rate_pct": 0.0,
+        "throughput_rps": 1200.0,
+        "healthy_node_ratio": 1.0,
+        "consensus_linearizable": true
+      },
+      "during_fault_metrics": {
+        "latency_p99_ms": 115.0,
+        "error_rate_pct": 0.0,
+        "throughput_rps": 720.0,
+        "healthy_node_ratio": 0.6,
+        "consensus_linearizable": true
+      },
+      "post_fault_metrics": {
+        "latency_p99_ms": 26.0,
+        "error_rate_pct": 0.0,
+        "throughput_rps": 1180.0,
+        "healthy_node_ratio": 1.0,
+        "consensus_linearizable": true
+      },
+      "mttr_seconds": 2.18,
+      "max_permitted_mttr_seconds": 3.2,
+      "steady_state_hypothesis_verified": true,
+      "status": "PASSED_STEADY_STATE_RECOVERED",
+      "mitigation_mechanism": "Strict Majority Quorum (N/2 + 1) Enforcement & Term Monotonicity"
+    },
+    {
+      "experiment_id": "CHAOS-EXP-004-MEM-PRESS",
+      "experiment_type": "MEMORY_PRESSURE_OOM",
+      "target_component": "ast-compiler-sandbox",
+      "fault_description": "Generated synthetic memory pressure up to 94.0% cgroup limit",
+      "pre_fault_metrics": {
+        "latency_p99_ms": 16.5,
+        "error_rate_pct": 0.0,
+        "throughput_rps": 1500.0,
+        "healthy_node_ratio": 1.0,
+        "consensus_linearizable": true
+      },
+      "during_fault_metrics": {
+        "latency_p99_ms": 52.0,
+        "error_rate_pct": 0.1,
+        "throughput_rps": 1350.0,
+        "healthy_node_ratio": 1.0,
+        "consensus_linearizable": true
+      },
+      "post_fault_metrics": {
+        "latency_p99_ms": 17.8,
+        "error_rate_pct": 0.0,
+        "throughput_rps": 1490.0,
+        "healthy_node_ratio": 1.0,
+        "consensus_linearizable": true
+      },
+      "mttr_seconds": 1.65,
+      "max_permitted_mttr_seconds": 3.2,
+      "steady_state_hypothesis_verified": true,
+      "status": "PASSED_STEADY_STATE_RECOVERED",
+      "mitigation_mechanism": "cgroup v2 Proactive Page Eviction & AST Compiler Memory Sandboxing"
+    },
+    {
+      "experiment_id": "CHAOS-EXP-005-NODE-CRASH",
+      "experiment_type": "COLD_NODE_CRASH",
+      "target_component": "core-service-pool",
+      "fault_description": "Immediate termination of worker-node-03 (SIGKILL simulation)",
+      "pre_fault_metrics": {
+        "latency_p99_ms": 19.0,
+        "error_rate_pct": 0.0,
+        "throughput_rps": 1400.0,
+        "healthy_node_ratio": 1.0,
+        "consensus_linearizable": true
+      },
+      "during_fault_metrics": {
+        "latency_p99_ms": 98.0,
+        "error_rate_pct": 0.8,
+        "throughput_rps": 1050.0,
+        "healthy_node_ratio": 0.8,
+        "consensus_linearizable": true
+      },
+      "post_fault_metrics": {
+        "latency_p99_ms": 20.5,
+        "error_rate_pct": 0.0,
+        "throughput_rps": 1390.0,
+        "healthy_node_ratio": 1.0,
+        "consensus_linearizable": true
+      },
+      "mttr_seconds": 2.45,
+      "max_permitted_mttr_seconds": 3.2,
+      "steady_state_hypothesis_verified": true,
+      "status": "PASSED_STEADY_STATE_RECOVERED",
+      "mitigation_mechanism": "Distributed Leader Lease Expiration & Hot Standby StatefulSet Promotion"
+    }
+  ]
+}

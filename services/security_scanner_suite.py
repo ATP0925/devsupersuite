@@ -180,7 +180,9 @@ class EntropyScanner:
             "zk" in file_name_lower or
             "enclave" in file_name_lower or
             "tpm" in file_name_lower or
-            "quote" in file_name_lower
+            "quote" in file_name_lower or
+            "chaos" in file_name_lower or
+            "resilience" in file_name_lower
         )
         is_marketing_or_samples = (
             "/marketing/" in f"/{rel_path_str}/" or

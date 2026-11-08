@@ -3,10 +3,10 @@
     "organization": "DevSuperSuite Official",
     "authority": "Directorate of QA Automation & Security Compliance",
     "contact": "infosec@devsupersuite.com",
-    "timestamp": "2026-11-08T11:39:43.456046+00:00",
+    "timestamp": "2026-11-08T11:45:29.933449+00:00",
     "methodology": "Microsoft STRIDE & Carnegie Mellon DREAD Quantitative Threat Modeling",
     "governance_standard": "ISO/IEC 27001:2022 A.5.8 & NIST SP 800-30 Rev 1",
-    "sha256_digest": "1b1ea61d3b1dd26b6becd4594add1aa1c8ed0b16233890c486e8b650da3d7c73"
+    "sha256_digest": "b76ea0b3965f4edf3450446ef4b65fdbf996015ba411c7b0aeb48cd1fc0b600b"
   },
   "threat_model_summary": {
     "total_threat_vectors_analyzed": 12,

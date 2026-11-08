@@ -3,9 +3,9 @@
     "organization": "DevSuperSuite Official",
     "authority": "Directorate of QA Automation & Security Compliance",
     "classification": "Sovereign Enterprise Security Telemetry (Restricted)",
-    "generated_at": "2026-11-08T11:39:39.762934+00:00",
+    "generated_at": "2026-11-08T11:45:26.272435+00:00",
     "target_repository": "agent-commerce",
-    "sha256_digest": "736e13fb253f1139e01d08146546d70407bf1a47d90d0c30657ead0bf1f9249b"
+    "sha256_digest": "ee07dee11a49602970f701f0a42a0a52259d092b523323be2509882a8a343ffc"
   },
   "enterprise_trust_index": {
     "composite_score": 100.0,
@@ -18,8 +18,8 @@
       "weight_percentage": 20,
       "score": 100.0,
       "metrics": {
-        "total_suites": 81,
-        "total_tests": 778,
+        "total_suites": 87,
+        "total_tests": 848,
         "pass_rate_percentage": 100.0,
         "fail_count": 0,
         "skipped_count": 0,
@@ -41,6 +41,12 @@
             "test_count": 10,
             "status": "PASS",
             "coverage_domain": "Air-Gapped Isolation & Orchestration"
+          },
+          {
+            "module": "test_anycast_dns_controller.py",
+            "test_count": 12,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
             "module": "test_apm_observability.py",
@@ -77,6 +83,12 @@
             "test_count": 8,
             "status": "PASS",
             "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_chaos_resilience.py",
+            "test_count": 11,
+            "status": "PASS",
+            "coverage_domain": "Business Continuity & Chaos Engineering"
           },
           {
             "module": "test_checkout_gateway_failover.py",
@@ -123,6 +135,12 @@
           {
             "module": "test_cro_frontend_components.py",
             "test_count": 9,
+            "status": "PASS",
+            "coverage_domain": "Conversion Optimization & UX Invariants"
+          },
+          {
+            "module": "test_cross_border_withholding.py",
+            "test_count": 12,
             "status": "PASS",
             "coverage_domain": "Conversion Optimization & UX Invariants"
           },
@@ -179,6 +197,12 @@
             "test_count": 9,
             "status": "PASS",
             "coverage_domain": "Regulatory Compliance & Invariants"
+          },
+          {
+            "module": "test_enterprise_procurement.py",
+            "test_count": 15,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
           },
           {
             "module": "test_enterprise_quote_generator.py",
@@ -291,6 +315,12 @@
           {
             "module": "test_license_autopilot_engine.py",
             "test_count": 13,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
+            "module": "test_linkedin_publisher.py",
+            "test_count": 10,
             "status": "PASS",
             "coverage_domain": "Core Architecture & MCP Harness"
           },
@@ -457,6 +487,12 @@
             "coverage_domain": "Adversarial Fuzzing & SAST/DAST"
           },
           {
+            "module": "test_syndicate_publisher.py",
+            "test_count": 10,
+            "status": "PASS",
+            "coverage_domain": "Core Architecture & MCP Harness"
+          },
+          {
             "module": "test_tax_audit_defense.py",
             "test_count": 11,
             "status": "PASS",
@@ -544,7 +580,7 @@
       "weight_percentage": 15,
       "score": 100.0,
       "metrics": {
-        "redos_execution_time_ms": 0.0142,
+        "redos_execution_time_ms": 0.0149,
         "redos_ceiling_limit_ms": 1.0,
         "redos_immunity": "PASS",
         "ast_max_recursion_depth": 30,

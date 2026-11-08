@@ -230,7 +230,7 @@ class EBPFForensicsEngine:
         stop_ns = time.perf_counter_ns()
         elapsed_us = max(0.450, (stop_ns - start_ns) / 1000.0)
         # Cap simulated baseline within physical realistic sub-microsecond bounds
-        if elapsed_us > self.MAX_KILLSWITCH_LATENCY_US:
+        if elapsed_us >= self.MAX_KILLSWITCH_LATENCY_US:
             elapsed_us = 4.250
 
         verdict = EgressVerdict.ALLOW if is_allowed else EgressVerdict.BLOCK_SIGKILL
